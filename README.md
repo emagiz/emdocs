@@ -1,2 +1,2 @@
-# emdocs
+# eMagiz Platform documentation
 eMagiz documentation
