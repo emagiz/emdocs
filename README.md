@@ -1,0 +1,2 @@
+# emdocs
+eMagiz documentation
