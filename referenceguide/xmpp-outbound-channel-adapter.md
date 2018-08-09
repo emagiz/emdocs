@@ -1,8 +1,6 @@
-# XMPP presence outbound channel adapter
-#### Endpoint that will publish an updated presence state on a XMPP connection.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-roster-outbound-channel-adapter" target="_blank">Documentation</a>
-
-Configures an endpoint that will publish an updated presence state on your XMPP connection object.
+# XMPP outbound channel adapter
+#### Outbound Channel Adapter that sends chat messages over XMPP.
+<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">Documentation</a>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:

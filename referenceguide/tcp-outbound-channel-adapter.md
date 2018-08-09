@@ -1,8 +1,27 @@
-# XMPP presence outbound channel adapter
-#### Endpoint that will publish an updated presence state on a XMPP connection.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-roster-outbound-channel-adapter" target="_blank">Documentation</a>
+# TCP outbound channel adapter
+#### An outbound channel adapter that sends TCP/IP byte-messages.
+<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-adapters" target="_blank">Documentation</a>
 
-Configures an endpoint that will publish an updated presence state on your XMPP connection object.
+
+#### Client mode
+If set to <i>true</i>, causes the adapter to establish a connection when started, rather than when the first message is sent.
+ Requires a "client" connection factory, with <i>single-use</i> set to <i>false</i>.
+
+
+Default is <i>false</i>.
+
+#### Retry interval
+When in client mode, specifies the retry interval (in milliseconds) if a connection
+ cannot be established.
+
+Default is <code>60000</code> (1 minute).
+
+#### Connection factory
+A <i>TCP connection factory</i> is needed by an outbound adapter.
+
+If the connection factory has a type <i>client</i>, the factory is 'owned' by this adapter. 
+
+If it has a type <i>server</i>, it is 'owned' by an inbound channel adapter and this adapter will attempt to correlate messages to the connection on which an original inbound message was received.
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:

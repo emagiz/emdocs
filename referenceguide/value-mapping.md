@@ -1,6 +1,6 @@
-# XPath value mapping
+# Value mapping
 #### Value
-The value to check the XPath evaluation result against.
+The value to check the SpEL evaluation result against.
 
 <i>Required</i>
 
@@ -10,7 +10,7 @@ The channel the outgoing message will be send to.
 <i>Required</i>
 
 #### Value
-The value to check the XPath evaluation result against.
+The value to check the SpEL evaluation result against.
 
 <i>Required</i>
 

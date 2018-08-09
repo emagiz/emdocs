@@ -1,5 +1,5 @@
-
-Filters XML messages based on an XPath expression.
+# XPath filter
+#### Filters XML messages based on an XPath expression.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xml-xpath-filter" target="_blank">Documentation</a>
 
 Defines an XPath-based message filter.
@@ -8,14 +8,12 @@ If the XPath expression will evaluate to a boolean, no configuration attributes 
 
 There are three options for the <i>match value</i>: <i>exact</i>, <i>case-insensitive</i> and <i>regex</i>. These correspond to the <i>equals</i>, <i>equals-ignore-case</i> and <i>matches</i> operations on <code>java.lang.String</code>, respectively. When providing a <i>match type</i> value of <i>regex</i>, the value provided in <i>match value</i> must be a valid regular expression.
 
-
-Match value
+#### Match value
 String value to be matched against the XPath evaluation result.
 
 If this is not provided, then the XPath evaluation <b>must</b> produce a boolean result directly.
 
-
-Match type
+#### Match type
 Type of match to apply between the XPath evaluation result and the <i>match value</i>.
 
 <code>exact</code> - case-sensitive string comparison
@@ -24,14 +22,12 @@ Type of match to apply between the XPath evaluation result and the <i>match valu
 
 Default is <code>exact<code>.
 
-
-Throw exception on rejection
+#### Throw exception on rejection
 Throw an exception when the input message is invalid. This will cause any error handling on the current message flow to trigger.
 
 Note that when set to <code>true</code>, no messages will be send to the <i>discard channel</i>.
 
-
-Discard channel
+#### Discard channel
 Channel where messages should be sent if the filter rejects the message. If no discard channel is set, rejected messages are silently dropped.
 
 <i>Optional</i>
@@ -72,22 +68,19 @@ Namespace URI: <code>http://www.example.org</code>
 
 <a href="https://www.w3schools.com/xml/xml_namespaces.asp" onclick="window.open('https://www.w3schools.com/xml/xml_namespaces.asp');" target="_blank">XML namespace reference</a>
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

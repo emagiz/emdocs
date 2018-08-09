@@ -1,5 +1,5 @@
-
-Transforms XML messages to simple messages based on the result of an XPath expression
+# XPath transformer
+#### Transforms XML messages to simple messages based on the result of an XPath expression
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-transformer" target="_blank">Documentation</a>
 
 The resulting payload message contains the result of the XPath expression evaluation.
@@ -10,36 +10,31 @@ Namspace prefix : <code>ns1 </code>
 Namespace URI:  <code>www.example.org</code>
 
 
-
-Evaluation type
+#### Evaluation type
 The result type expected from the XPath evaluation. This will be the payload type of the output Message.
 
 Conversion to the return type follows XPath conversion rules. 
 
 Default when empty is 'STRING_RESULT'.
 
-
-XPath expression
+#### XPath expression
 XPath expression 
 
 <a href="https://www.w3schools.com/xml/xpath_syntax.asp" onclick="window.open('https://www.w3schools.com/xml/xpath_syntax.asp');" target="_blank">XPath syntax reference</a>
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>
