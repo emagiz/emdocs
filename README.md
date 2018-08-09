@@ -18,6 +18,6 @@
 - Best practices
 
 ---
-- [HTML Version](https://skemagiz.github.io/emdocs/) 
+### [HTML Version](https://skemagiz.github.io/emdocs/) 
 ---
 
