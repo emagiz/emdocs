@@ -73,7 +73,7 @@ JMS does not define a standard wire format - it only defines a programmatic API 
 
 Apache ActiveMQ Artemis provides a fully compliant JMS 1.1 and JMS 2.0 client implementation.
 
-### Sysem specific APIs
+### System specific APIs
 Many systems provide their own programmatic API for which to interact with the messaging system. The advantage of this it allows the full set of system functionality to be exposed to the client application. API's like JMS are not normally rich enough to expose all the extra features that most messaging systems provide.
 
 Apache ActiveMQ Artemis provides its own core client API for clients to use if they wish to have access to functionality over and above that accessible via the JMS API.
