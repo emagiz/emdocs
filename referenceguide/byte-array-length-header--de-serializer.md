@@ -1,19 +1,17 @@
-
-Serializes data preceded by a binary header indicating the data length
+# Byte array length header (de)serializer
+#### Serializes data preceded by a binary header indicating the data length
 Reads data in an <code>InputStream</code> to a <code>byte[]</code>; data must be preceded by a binary length (network byte order, not included in resulting <code>byte[]</code>).
 
 Writes a <code>byte[]</code> to an <code>OutputStream</code> after a binary length.
 
 The length field contains the length of data following the length field (network byte order). The default length field is a 4 byte signed integer. During deserialization, negative values will be rejected. Other options are an unsigned byte, and unsigned short.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Header size
+#### Header size
 Specifies the header size.
 
 Valid header sizes are:
@@ -23,8 +21,7 @@ Valid header sizes are:
 
 Default is <code>4</code>.
 
-
-Max message size
+#### Max message size
 The maximum supported message size (in bytes) for this (de)serializer.
 
 Default is <i>2048</i> (2 KiB).

@@ -1,23 +1,20 @@
-
-Serializes data without doing anything with the payload
+# Byte array raw (de)serializer
+#### Serializes data without doing anything with the payload
 A byte array (de)serializer that does nothing with the payload; sends it raw. Message termination for assembly purposes is signaled by the client closing the connection. The serializer does not, itself, close the connection after writing the bytes.
 
 Because the socket must be closed to indicate message end, this (de)serializer can only be used by uni-directional (non-collaborating) channel adapters, and not by gateways.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Treat timeout as end of message
+#### Treat timeout as end of message
 Set to <code>true</code> to treat socket timeouts as a normal EOF and emit the (possibly partial) message. If <code>false</code>, a <code>SocketTimeoutException</code> is thrown instead.
 
 Default is <code>false</code>.
 
-
-Max message size
+#### Max message size
 The maximum supported message size (in bytes) for this (de)serializer.
 
 Default is <i>2048</i> (2 KiB).

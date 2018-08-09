@@ -1,5 +1,5 @@
-
-Reads files from the (local) filesystem and creates a message for each file.
+# File inbound channel adapter
+#### Reads files from the (local) filesystem and creates a message for each file.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/files.html#file-reading" target="_blank">Documentation</a>
 
 Reads files from the (local) filesystem and creates a message for each file.
@@ -8,8 +8,7 @@ To prevent creating messages for certain files, this channel adapter has differe
 
 A common problem with reading files is that a file may be detected before it is ready. The default <i>prevent duplicates</i> does <b>not</b> prevent this. In most cases, this can be prevented if the file-writing process renames each file as soon as it is ready for reading. A <i>filename pattern</i> or <i>filename regex</i> filter that accepts only files that are ready (e.g. based on a known suffix), coupled with the default <i>prevent duplicates</i> filter, allows for this.
 
-
-Filename regex
+#### Filename regex
 Only files matching this regular expression will be picked up by this adapter.
 
 Examples:
@@ -24,8 +23,7 @@ See the Java documentation about patterns:
 
 
 
-
-Queue size
+#### Queue size
 Specify the maximum number of file names read into memory when scanning the directory. This is useful to limit the memory footprint of this endpoint.
 
 A larger queue size reduces the number of directory listings needed, but it increases the chances of the internal queue being out of whack with the actual files listed in the directory. Use <code>0</code> for small but volatile directories, use a large number for large directories that are only written to.
@@ -36,14 +34,12 @@ If not specified (the default) all files names are read into memory. This makes 
 
 This setting is ignored if a custom <i>scanner</i> is used.
 
-
-Filter
+#### Filter
 You can supply a custom filter to prevent creating messages for certain files. Use this if you need more control over the filtering process than is possible with the <i>filename pattern</i> or <i>filename regex</i> options.
 
 Note that if <i>prevent duplicates</i> is enabled, an <i>accept once file list filter</i> with an unbounded queue is automatically applied before your custom filter is called.
 
-
-Use watch service
+#### Use watch service
 By default this channel adapter will scan all items (files and directories!) in the specified source directory, but not in any of its subdirectories. By enabling this option you can change this default behaviour.
 
 The watch service relies on file system events when new files are added to the directory. During initialization, the directory is registered to generate events; the initial file list is also built. While walking the directory tree, any subdirectories encountered are also registered to generate events. On the first poll, the initial file list from walking the directory is returned. On subsequent polls, files from new creation events are returned. If a new subdirectory is added, its creation event is used to walk the new subtree to find existing files, as well as registering any new subdirectories found.
@@ -52,14 +48,12 @@ Note that any specified filters are still applied after the watch service return
 
 Mutually exclusive with the <i>scanner</i> option.
 
-
-Watch events
+#### Watch events
 Comma-separated list of system event types (<code>CREATE</code>, <code>MODIFY</code>, <code>DELETE</code>) the watch service will listen to.
 
 Default is <code>CREATE</code>.
 
-
-Scanner
+#### Scanner
 By default this channel adapter will scan all items (files and directories!) in the specified source directory, but not in any of its parent or child directories. By specifying a custom directory scanner here, you can change this default behaviour.
 
 When using the <i>recursive leaf-only directory scanner</i> for example, this adapter will scan all files in the specified source directory and all its subdirectories (at any depth). This scanner is now <b>deprecated</b> in favour of the <i>use watch service</i> option, since it is inefficient for large directory trees.
@@ -68,8 +62,7 @@ Note that any filters specified on the adapter are <b>not</b> applied when using
 
 Mutually exclusive with <i>use watch service</i>.
 
-
-Directory
+#### Directory
 Source directory where the files will be read from.
 
 Some examples:
@@ -77,8 +70,7 @@ Some examples:
 - <code>${file.base-dir}/files/in</code>
 - <code>${file.dir.in}</code>
 
-
-Filename pattern
+#### Filename pattern
 Only filenames matching this <i>ant style expression</i> will be picked up by this adapter.
 
 The ant style expression uses the following rules:
@@ -91,24 +83,21 @@ Some examples:
 
 Note: Use <i>filename-regex</i> for  for more advanced patterns.
 
-
-Auto create directory
+#### Auto create directory
 Specify whether to automatically create the source directory if it does not yet exist when this adapter is being initialized. 
 
 If set to <i>false</i> and the directory does not exist upon initialization, an exception will be thrown.
 
 Default is <i>true</i>.
 
-
-Ignore hidden
+#### Ignore hidden
 Whether hidden files shall be ignored by this adapter.
 
 If disabled, hidden files will be processed just like normal files. If enabled, an <code>IgnoreHiddenFileListFilter</code> will be added to filter the hidden files.
 
 Default is <code>true</code>.
 
-
-Prevent duplicates
+#### Prevent duplicates
 Specifies whether duplicates should be prevented, by keeping a (unbounded) list of file names in memory and only passing files the first time they are polled.
 
 If enabled, this duplicate prevention is done before any other filtering, i.e. before applying the <i>filename pattern</i>, the <i>filename regex</i> or a custom <i>filter</i>.
@@ -122,30 +111,26 @@ Specifies when and how the reading task is executed.
 
 Default global poller is used when empty
 
-
-Use default poller
+#### Use default poller
 Specifies if the global (default) poller should be used or an included poller.
 
 The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -160,24 +145,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
@@ -190,8 +171,7 @@ Example patterns:
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -201,21 +181,17 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

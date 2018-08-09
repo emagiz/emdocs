@@ -1,17 +1,15 @@
-
-Serializes data terminated by CR+LF
+# Byte array CR/LF (de)serializer
+#### Serializes data terminated by CR+LF
 Reads data in an <code>InputStream</code> to a <code>byte[]</code>; data must be terminated by <code>\r\n</code> (not included in resulting <code>byte[]</code>).
 
 Writes a <code>byte[]</code> to an <code>OutputStream</code> and adds <code>\r\n</code>.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Max message size
+#### Max message size
 The maximum supported message size (in bytes) for this (de)serializer.
 
 Default is <i>2048</i> (2 KiB).

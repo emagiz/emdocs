@@ -1,23 +1,20 @@
-
-Value
+# Header value mapping
+#### Value
 The value to check the header of the incoming message against.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 The channel the outgoing message will be send to.
 
 <i>Required</i>
 
-
-Value
+#### Value
 The value to check the header of the incoming message against.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 The channel the outgoing message will be send to.
 
 <i>Required</i>

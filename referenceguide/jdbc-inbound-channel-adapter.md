@@ -1,33 +1,29 @@
-
-Generates messages by polling a database using an SQL query.
+# JDBC inbound channel adapter
+#### Generates messages by polling a database using an SQL query.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jdbc.html#jdbc-inbound-channel-adapter" target="_blank">Documentation</a>
 
 Inbound channel adapter that generates messages by executing an SQL SELECT query on a database, creating messages from the query result.
 
 Optionally this adapter can also execute an SQL UPDATE statement to mark the records returned by the SELECT query as processed, so that they don't show up in the next poll.
 
-
-Update per row
+#### Update per row
 Flag to indicate whether the update query should be executed per message, or per row (in the case that a message contains multiple rows).
 
 Default is <code>false</code>, i.e. the update query is executed once per message.
 
-
-SQL data source
+#### SQL data source
 Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
 
 <i>Required</i>
 
-
-SQL query
+#### SQL query
 A SELECT query to execute when a message is polled. The result of this query will be the body of the outgoing message.
 
 The query can return multiple rows; if you want to convert rows in the SELECT query result to individual messages you can use a downstream splitter.
 
 <i>Required</i>
 
-
-SQL update
+#### SQL update
 An optional UPDATE statement that is being used to mark the records returned by the SELECT query as processed, so that they don't show up in the next poll.
 
 Note that you can use the values of columns from the SELECT query result as parameters in the UPDATE query by prefixing the name with a colon.
@@ -38,8 +34,7 @@ An example of an UPDATE query that uses the 'id' values from the SELECT query:
 
 <i>Optional</i>
 
-
-Maximum rows per poll
+#### Maximum rows per poll
 Limits the number of rows extracted per query.
 
 If not specified all rows are extracted into the outgoing message.
@@ -53,30 +48,26 @@ Specifies when and how the reading task is executed.
 
 Default global poller is used when empty
 
-
-Use default poller
+#### Use default poller
 Specifies if the global (default) poller should be used or an included poller.
 
 The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -91,24 +82,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
@@ -121,8 +108,7 @@ Example patterns:
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -132,21 +118,17 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

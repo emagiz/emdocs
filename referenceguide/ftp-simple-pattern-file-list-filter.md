@@ -1,11 +1,10 @@
-
-FTP file filter that matches the name of the file against a simple ant-style pattern.
+# FTP simple pattern file list filter
+#### FTP file filter that matches the name of the file against a simple ant-style pattern.
 FTP file filter that supports ant-style path expressions, which are less powerful but more readable than regular expressions.
 
 This filter only filters on the name of the file, the rest of the path is ignored.
 
-
-Pattern
+#### Pattern
 Ant-style expression that describes a pattern for filtering files by their name. 
 
 The ant style expression uses the following rules:

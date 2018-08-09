@@ -1,11 +1,10 @@
-
-Id
+# Format filename generator
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Format
+#### Format
 Specifies the format for generating a file name.
 
 The following tokens are replaced by the indicated values:
@@ -19,8 +18,7 @@ The following tokens are replaced by the indicated values:
 
 Default is <code>*MSG_TIME* *FILE_NAME* (*MSG_SEQ_NR* of *MSG_SEQ_SIZE*)*FILE_EXT*</code>.
 
-
-Time pattern
+#### Time pattern
 Specifies the pattern to use for formatting a timestamp (when using <code>*MSG_TIME* </code> or <code>*CUR_TIME*</code>). The pattern must follow the <a href="http://joda-time.sourceforge.net/api-release/org/joda/time/format/DateTimeFormat.html" target="_blank">DateTimeFormat</a> syntax.
 
 Default is <code>yyyy-MM-dd HH.mm.ss.SSS</code>.

@@ -1,5 +1,5 @@
-
-Transformer for converting images to different formats, e.g. from GIF to JPEG. 
+# Image transformer
+#### Transformer for converting images to different formats, e.g. from GIF to JPEG. 
 Transformer for converting images to different formats, e.g. from GIF to JPEG. 
 
 The payload of the message to transform must be an image (in one of the supported formats), represented as one of:
@@ -10,28 +10,24 @@ The resulting output image will use the same representation as the given input, 
 
 Formats supported for the input and output images depend on the image readers and writers registered with the Java Image I/O API – see ImageIO.getReaderFormatNames() and ImageIO.getWriterFormatNames() – but at least the formats BMP, GIF, JPEG, PNG and TIFF are supported when using a default eMagiz installation.
 
-
-Format
+#### Format
 The format to transform the image to (i.e. the output format). 
 
 Default is 'PNG'.
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

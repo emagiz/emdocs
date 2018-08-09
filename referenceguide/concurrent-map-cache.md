@@ -1,11 +1,10 @@
-
-Simple cache implementation useful for testing or simple caching scenarios.
+# Concurrent map cache
+#### Simple cache implementation useful for testing or simple caching scenarios.
 Simple cache implementation based on the core Java <code>java.util.concurrent</code> package.
 
 Useful for testing or simple caching scenarios; for more complex caching scenarios, consider using the <i>Ehcache</i> implementation.
 
-
-Name
+#### Name
 The name of the cache.
 
 <i>Note</i>: if you're using this cache for the eMagiz mapping service, the following named caches must exist:
@@ -15,8 +14,7 @@ The name of the cache.
 
 <i>Required</i>
 
-
-Allow null values
+#### Allow null values
 Whether to allow <code>null</code> values (adapting them to an internal null holder value).
 
 Default is <code>true</code>.

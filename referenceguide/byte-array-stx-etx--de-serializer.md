@@ -1,17 +1,15 @@
-
-Serializes data prefixed with STX and terminated by ETX
+# Byte array STX/ETX (de)serializer
+#### Serializes data prefixed with STX and terminated by ETX
 Reads data in an <code>InputStream</code> to a <code>byte[]</code>; data must be prefixed by <i>&lt;stx&gt;</i> and terminated by <i>&lt;etx&gt;</i> (not included in resulting <code>byte[]</code>).
 
 Writes a <code>byte[]</code> to an <code>OutputStream</code> prefixed by <i>&lt;stx&gt;</i> terminated by <i>&lt;etx&gt;</i>.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Max message size
+#### Max message size
 The maximum supported message size (in bytes) for this (de)serializer.
 
 Default is <i>2048</i> (2 KiB).

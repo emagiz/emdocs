@@ -1,5 +1,5 @@
-
-Delete files
+# File to bytes transformer
+#### Delete files
 Specify whether to delete source files after transforming them.
 	
 This will only take effect if the Message payload is the actual source File instance
@@ -7,22 +7,19 @@ This will only take effect if the Message payload is the actual source File inst
 
 Default: <i>false</i>
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

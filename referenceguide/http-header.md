@@ -1,11 +1,10 @@
-
-Name
+# HTTP header
+#### Name
 Name of the message header.
 
 <i>Required</i>
 
-
-Expression
+#### Expression
 SpEL expression that is evaluated in order to determine the header value.
 
 The evaluation context will be populated with an <code>org.springframework.http.HttpEntity</code> instance as the root object, and the following expression variables will also be made available:

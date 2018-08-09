@@ -1,11 +1,10 @@
-
-Result type
+# Base64 decoding transformer
+#### Result type
 Sets the result type for the transformation.
 
 Default is <i>Bytes</i>.
 
-
-Charset
+#### Charset
 Character set that is used to convert bytes into a string value if this transformer is configured to use result type <i>String</i>.
 
 If this transformer is configured to use result type <i>Bytes</i> (the default), this property is not used.
@@ -20,22 +19,19 @@ Additionally, eMagiz contains build-in support for the following two encodings:
  - <b><i>x-UTF-8-BOM</i></b> (eight-bit Unicode Transformation Format, with byte-order mark)
  - <b><i>x-UTF-16BE-BOM</i></b> (sixteen-bit UTF, big-endian byte order, with byte-order mark)
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

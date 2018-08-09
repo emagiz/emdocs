@@ -1,10 +1,9 @@
-
-Transforms file messages to string messages
+# File to string transformer
+#### Transforms file messages to string messages
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/files.html#file-transforming" target="_blank">Documentation</a>
 
 
-
-Charset
+#### Charset
 Character set to be used for reading the file contents into a string.
 
 Default is <code>UTF-8</code>.
@@ -17,8 +16,7 @@ Additionally, eMagiz contains build-in support for the following two encodings:
  - <b><i>x-UTF-8-BOM</i></b> (eight-bit Unicode Transformation Format, with byte-order mark)
  - <b><i>x-UTF-16BE-BOM</i></b> (sixteen-bit UTF, big-endian byte order, with byte-order mark)
 
-
-Delete files
+#### Delete files
 Specify whether to delete source files after transforming them.
 
 This will only take effect if the Message payload is the actual source File instance
@@ -26,22 +24,19 @@ This will only take effect if the Message payload is the actual source File inst
 
 Default: <i> false </i>
 
-
-Output channel
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

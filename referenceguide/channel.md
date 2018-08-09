@@ -1,9 +1,8 @@
-
-Used to transport a message between two endpoints.
+# Channel
+#### Used to transport a message between two endpoints.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-channels-section.html" target="_blank">Documentation</a>
 
-
-Datatype
+#### Datatype
 Specifies the datatype of this channel.
 
 Use to create a Datatype Channel that only accepts messages containing  certain payload types. Leave empty if all datatypes are accepted.
@@ -12,8 +11,7 @@ Set with a comma-delimited list of the fully-qualified class names of the types,
 
 Default: <i>empty</i>
 
-
-Channel type
+#### Channel type
 Specifies the channel type
 
 1. <b>Direct Channel (default)</b>
@@ -31,16 +29,14 @@ Delegates all dispatching invocations to an Executor. Does not block the sender'
 
 NOTE: unlike DirectChannel, the ExecutorChannel does not support a shared transactional context between sender and handler, because the Executor typically does not block the sender's Thread since it uses another Thread for the dispatch. (SyncTaskExecutor is an exception but would provide no value for this channel. If synchronous dispatching is required, a DirectChannel should be used instead).
 
-
-Fixed subscriber
+#### Fixed subscriber
 When <code>true</code>, only one subscriber is allowed; the subscriber must be available at context initialization time, and will be subscribed during bean initialization rather than when being started; "auto-startup" will take no effect on a subscriber to this channel, the subscriber will always be "started". The subscriber cannot be stopped.
 
 Only allowed on a <i>direct channel</i> without a <i>datatype</i>.
 
 Default is <code>false</code>.
 
-
-Capacity
+#### Capacity
 Capacity of the queue channel.
 
 Can <b>not</b> be used when the queue channel is backed by a <i>message store</i>. In this case the capacity should be configured on the <i>message store</i> support object.
@@ -48,18 +44,15 @@ Can <b>not</b> be used when the queue channel is backed by a <i>message store</i
 Default is unlimited (actually: <code>Integer.MAX_VALUE</code>).
 
 
-
-Message store
+#### Message store
 Optional <i>message store</i> to hold the queued messages.
 
 If not set, an in-memory queue is used that does not provide any message persistance.
 
-
-Task executor
+#### Task executor
 TaskExecutor to perform the dispatch.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>

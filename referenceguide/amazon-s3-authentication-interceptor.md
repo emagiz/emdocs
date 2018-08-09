@@ -1,5 +1,5 @@
-
-Adds authentication for Amazon Simple Storage Service (S3) to HTTP requests.
+# Amazon S3 authentication interceptor
+#### Adds authentication for Amazon Simple Storage Service (S3) to HTTP requests.
 This interceptor will provide Amazon signature 4 header authentication for Amazon Simple Storage Service. 
 All single valued headers will be used for signing the request. 
 The signature is added as the Authorization header.
@@ -11,26 +11,22 @@ x-amz-content-sha256
 More information on using version 4 of the signing process can be found here:
 http://docs.aws.amazon.com/AmazonS3/latest/API/sig-v4-header-based-auth.html
 
-
-Access key ID
+#### Access key ID
 Amazon account id
 
 <i>Required</i>
 
-
-Secret access key
+#### Secret access key
 Access key provided by Amazon
 
 <i>Required</i>
 
-
-Region ID
+#### Region ID
 Region id of the amazon site location that will be used
 
 <i>Required</i>
 
-
-Service ID
+#### Service ID
 Service id of the service to be used.
 For Simple Storage Service this is 's3'
 

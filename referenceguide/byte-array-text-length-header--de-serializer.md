@@ -1,23 +1,20 @@
-
-Serializes data preceded by an ASCII header indicating the data length
+# Byte array text length header (de)serializer
+#### Serializes data preceded by an ASCII header indicating the data length
 Extension of <code>ByteArrayLengthHeaderSerializer</code> that reads/writes the length header as a textual (ASCII) representation instead of a "normal" binary representation. 
 
 Example: length <code>'255'</code> (with header size <code>'4'</code>) is represented as <code>'0x00 0x32 0x35 0x35'</code>. In the "normal" binary representation this would have been <code>'0x00 0x00 0x00 0xFF'</code>. Note that the use of this textual representation greatly limits the range of possible values compared to the binary representation, possibly resulting in larger header sizes.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Header size
+#### Header size
 Size of the length header in bytes. A header must be at least one byte long.
 
 <i>Required</i>
 
-
-Max message size
+#### Max message size
 The maximum supported message size (in bytes) for this (de)serializer.
 
 Default is <i>2048</i> (2 KiB).

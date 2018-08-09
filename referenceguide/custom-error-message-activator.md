@@ -1,5 +1,5 @@
-
-Generates and throws a custom error message each time a message arrives.
+# Custom error message activator
+#### Generates and throws a custom error message each time a message arrives.
 Generates and throws a <code>CustomErrorMessage</code> each time a message arrives. The text of the error message is dynamically created using a SpEL expression that is evaluated on the incoming message.
 
 This can be used to trigger the error handling of the message flow with an error message that contains useful information for locating the problem. For example, when throwing a custom error message in a flow that is exposed as a web service, this custom error is send back to the caller as a <i>SOAP fault</i>.
@@ -15,8 +15,7 @@ Advice can be added to change the behaviour of this endpoint, for example to add
 
 By adding multiple advices to this endpoint you can create even more complex combined behaviour. For example, if you add a <i>circuit breaker</i> and a <i>retry advice</i>, you can create a scenario where the circuit breaker only opens when all retries are exhaused. Note that the order of the advice types is important, as switching the order will change the combined behaviour: the first item in the list will be the top of the advice chain, meaning it will be the last advice that is evaluated. Also note that if any advice "traps" exceptions, all advices higher up in the chain won't know about any failures.
 
-
-Expression
+#### Expression
 <i>SpEL</i> expression to be evaluated on each incoming message. The result of this evaluation will be used as the text for the custom error message.
 
 <i>Required</i>
@@ -34,14 +33,12 @@ An example of a more complex SpEL expression that uses header information from t
 'Request for user "' + (headers['example_user'] ?: 'anonymous') + '" failed.'
 </pre>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

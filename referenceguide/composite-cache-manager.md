@@ -1,17 +1,15 @@
-
-Cache manager implementation that delegates to a list of other cache managers.
+# Composite cache manager
+#### Cache manager implementation that delegates to a list of other cache managers.
 Composite cache manager implementation that iterates over a list of cache manager instances.
 
 Allows a no-op cache manager to be automatically added to the list for handling the cache declarations without a backing store.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Fallback to no-op cache
+#### Fallback to no-op cache
 Indicate whether a no-op cache manager should be added at the end of the manager lists. In this case, cache requests not handled by the configured cache managers will be automatically handled by the no-op cache manager (which simply accepts any item without actually caching it).
 
 Default is <code>false</code>.

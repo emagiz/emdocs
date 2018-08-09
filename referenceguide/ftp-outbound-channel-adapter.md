@@ -1,5 +1,5 @@
-
-Write messages to a remote FTP directory.
+# FTP outbound channel adapter
+#### Write messages to a remote FTP directory.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-outbound" target="_blank">Documentation</a>
 
 It connects to the FTP server and initiate an FTP transfer for every file it receives in the payload of incoming Messages. 
@@ -11,8 +11,7 @@ The FTP Outbound Channel Adapter supports the following payloads:
 <code>java.lang.String</code> - text that represents the file contents 
 
 
-
-Mode
+#### Mode
 Determines the behaviour of this adapter when the destination file already exists.
 
 <b>Replace</b> (default): If the target file already exists, it will be overwritten.
@@ -25,8 +24,7 @@ Determines the behaviour of this adapter when the destination file already exist
 
 <b>Ignore</b>: If the target file exists, the message payload is silently ignored.
 
-
-Remote filename generator
+#### Remote filename generator
 Specifies a file name generator.
 
 If empty, the default file name generator will be used. 
@@ -36,72 +34,61 @@ If no name is available it checks if the Message payload is a File instance, and
 
 Mutually exclusive with the <i>remote filename generator expression</i> setting.
 
-
-Remote filename generator expression
+#### Remote filename generator expression
 Allows you to provide SpEL expression which will compute file name of the remote file (e.g., assuming payload is a <code>java.io.File</code>: <code>payload.getName() + '.transfered'</code>).
 
 Mutually exclusive with the <i>remote filename generator</i> setting.
 
-
-Remote file separator
+#### Remote file separator
 Allows you to provide remote file/directory separator character.
 
 Default when empty: <code>/</code>
 
-
-Remote directory expression
+#### Remote directory expression
 Allows you to provide a SpEL expression which will compute the directory path where the files will be transferred to (e.g., <code>headers.['remote_dir'] + '/myTransfers'</code>).
 
 Mutually exclusive with the <i>remote directory</i> setting.
 
-
-Charset
+#### Charset
 Character set to be used in case of a String payload. 
 
 Default when empty: <code>UTF-8</code>
 
-
-Use temporary file name
+#### Use temporary file name
 Allows you to suppress using a temporary file name while writing the file by setting this to false.
 
 Default is <code>true</code>.
 
-
-Temporary file suffix
+#### Temporary file suffix
 Extension used when uploading files. We change it right after we know it's uploaded.
 
 Default is <code>.writing</code>.
 
-
-Temporary remote directory
+#### Temporary remote directory
 Identifies the remote temporary directory path (e.g., <code>/remote/temp/mytransfers</code>).
 
 If not specified (the default), the file (with the <i>temporary file suffix</i>) will be uploaded to the <i>remote directory</i> directly.
 
 Mutually exclusive with the <i>temporary remote directory expression</i> setting.
 
-
-Temporary remote directory expression
+#### Temporary remote directory expression
 Allows you to provide a SpEL expression which will compute the temporary directory path where files will be transferred to before they are moved to the <i>remote directory</i> (e.g., <code>headers.['remote_dir'] + '/temp/myTransfers'</code>).
 
 Mutually exclusive with the <i>temporary remote directory</i> setting.
 
-
-Remote directory
+#### Remote directory
 Identifies directory path where file will be transferred to.
 
 e.g., <code>/temp/mytransfers</code>
 
 Mutually exclusive with the <i>remote directory expression</i> setting.
 
-
-Auto create directory
+#### Auto create directory
 Specify whether to automatically create the remote target directory if it doesn't exist.
 
 Default is <code>false</code>.
 
-
-FTP session factory
+#### FTP session factory
 FTP session factory that provides the FTP(S) connections for this channel adapter.
 
 <i>Required</i>
@@ -115,14 +102,12 @@ Advice can be added to change the behaviour of this endpoint, for example to add
 
 By adding multiple advices to this endpoint you can create even more complex combined behaviour. For example, if you add a <i>circuit breaker</i> and a <i>retry advice</i>, you can create a scenario where the circuit breaker only opens when all retries are exhaused. Note that the order of the advice types is important, as switching the order will change the combined behaviour: the first item in the list will be the top of the advice chain, meaning it will be the last advice that is evaluated. Also note that if any advice "traps" exceptions, all advices higher up in the chain won't know about any failures.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel to consume messages from.
 
 <i>Required</i>

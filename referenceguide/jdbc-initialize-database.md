@@ -1,4 +1,4 @@
-JDBC Initialize database
+# JDBC Initialize database
 Use this if you want to initialize a database on startup (or on exit). This can be use for example for table creation and/or population.
 
 The script locations can also be patterns with wildcards in the usual ant style used. (e.g. classpath*:/com/foo/**/sql/*-data.sql). If a pattern is used the scripts are executed in lexical order of their URL or filename.
@@ -15,15 +15,15 @@ When using a H2 database for Spring Batch (ETL) use this location:
 
 
 
-Enabled
+#### Enabled
 If disabled the scripts will not be executed. Defaults to enabled but can be used to switch on and off script execution using deployment properties for example: ${system.database.initialize}. The property should resolve in <code>true</code> or <code>false</code>.
 
 Default is <code>true</code>.
 
-Separator
+#### Separator
 The default statement separator to use. The default is to use <code>;</code> if it is present in the script, or <code>\n</code> (new line) otherwise.
 
-Ignore failures
+#### Ignore failures
 Should failed SQL statements be ignored during execution? The options are:
 <ul>
 <li><i>None</i>: Do not ignore failures.</li>

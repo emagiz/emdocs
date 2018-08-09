@@ -1,5 +1,5 @@
-
-Used for preparing and sending MIME messages.
+# Java mail sender
+#### Used for preparing and sending MIME messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
 
 Clients should talk to the mail sender through this interface if they need mail functionality beyond SimpleMailMessage. 
@@ -10,46 +10,38 @@ The entire JavaMail Session management is abstracted by the JavaMailSender. Clie
 
 A JavaMailSender client is not as easy to test as a plain MailSender client, but still straightforward compared to traditional JavaMail code: Just let createMimeMessage() return a plain MimeMessage created with a Session.getInstance(new Properties()) call, and check the passed-in messages in your mock implementations of the various send methods.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Host
+#### Host
 Set the mail server host, typically an SMTP host.
 
 Example:
 <code>mail.examplehost.com</code>
 
-
-Username
+#### Username
 Set the username for the account at the mail host, if any.
 
 Note that the mail session has to be configured with the property "mail.smtp.auth" set to true, else the specified username will not be sent to the mail server by the runtime.
 
-
-
-Password
+#### Password
 Set the password for the account at the mail host, if any.
 
 Note that the mail session has to be configured with the property "mail.smtp.auth" set to true, else the specified password will not be sent to the mail server by the runtime.
 
-
-Protocol
+#### Protocol
 Set the mail protocol. 
 
 Default is "smtp". 
 
-
-Port
+#### Port
 Set the mail server port.
 
 Default is DEFAULT_PORT, letting JavaMail use the default SMTP port (25).
 
-
-Default encoding
+#### Default encoding
 Set the default encoding to use for MimeMessages created by this instance.
 
 
