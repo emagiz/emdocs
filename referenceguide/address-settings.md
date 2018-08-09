@@ -7,7 +7,7 @@ A queue is associated with an address. There can be multiple queues per address.
 
 <a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">Documentation</a>
 
-## Match
+#### Match
 A wildcard expression contains words delimited by the character <code>.</code> (full stop).
 
 The special characters <code>#</code> and <code>*</code> also have special meaning and can take the place of a word:
@@ -22,22 +22,22 @@ The wildcard <code>news.*.sport</code> would match <code>news.europe.sport</code
 
 <i>Required</i>
 
-## Auto create queues
+#### Auto create queues
 Whether or not the broker should automatically create a queue when a message is sent or a consumer tries to connect to a queue whose name fits the address match. Queues which are auto-created are durable, non-temporary, and non-transient.
 
 Default is <i>Yes</i>.
 
-Auto delete queues
+#### Auto delete queues
 Whether or not the broker should automatically delete auto-created queues when they have both 0 consumers and 0 messages.
 
 Default is <i>Yes</i>.
 
-Delete queues on restart
+#### Delete queues on restart
 How the broker should handle queues deleted on configuration reload. This delete policy can be set to <i>Off</i> or <i>Force</i>.
 
 Default is <i>Off</i>.
 
-Auto create addresses
+#### Auto create addresses
 When set to true, the broker will create the address requested by the client if it does not exist already.
 
 The default is <i>Yes</i>.
