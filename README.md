@@ -16,3 +16,6 @@
 - Tutorials 
 - How2's
 - Best practices
+
+
+<b>Dit is bold text</b>
