@@ -1,5 +1,5 @@
-
-Registers Message History writer which will track message history.
+# Message history
+#### Registers Message History writer which will track message history.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#message-history" target="_blank">Documentation</a>
 
 Allows to keep track of all traversed components of a message, including the name of each channel and endpoint as well as the timestamp of that traversal.
@@ -9,8 +9,7 @@ A <i> message history </i> header  is added to the Message and is updated every 
 Note: There can 
 only be one Message History writer per ApplicationContext.
 
-
-Tracked components
+#### Tracked components
 Some times you might not want to track all of the components. To accomplish this all you need is provide tracked-components attribute where you can specify comma delimited list of component names and/or patterns you want to track.
 
 Example:

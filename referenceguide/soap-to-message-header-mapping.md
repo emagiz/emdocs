@@ -1,5 +1,5 @@
-
-Id
+# SOAP to message header mapping
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
@@ -34,16 +34,14 @@ Note that the root XML node of the XPath evaluation context is always the <code>
 
 Also note that the XPath expression is always evaluated as a string value: if the resulting string is empty, the message header is not added to the message.
 
-
-Header name
+#### Header name
 Name of the message header to create on the message.
 
 If a header with this name already exists, it will be overwritten with the new value.
 
 <i>Required</i>
 
-
-XPath expression
+#### XPath expression
 XPath expression to determine the value for the message header. The root XML node of the XPath evaluation context is always the <code>&lt;soap:Header&gt;</code> element.
 
 <b>Example XPath expression:</b>
@@ -52,16 +50,14 @@ Note that the XPath expression is evaluated as a string value: if the resulting 
 
 <i>Required</i>
 
-
-Namespace prefix
+#### Namespace prefix
 Optional namespace prefix that is used in the <i>XPath expression</i> specified above.
 
 For example, in the XPath expression mentioned in the previous help text the namespace prefix <code>erp</code> is used.
 
 <i>Optional</i>
 
-
-Namespace URI
+#### Namespace URI
 Optional namespace URI that is referenced by the <i>namespace prefix</i> specified above.
 
 For example, the namespace prefix mentioned in the previous help text could point to the <code>http://www.example.com/ns/erp/1.0/</code> namespace URI.

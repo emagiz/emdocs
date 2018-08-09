@@ -1,12 +1,11 @@
-
-File filter that matches the name of the file against a regular expression.
+# Regex pattern file list filter
+#### File filter that matches the name of the file against a regular expression.
 File filter that matches the name of the file against a pattern that is described by a regular expression.
 
 See the java documentation about patterns:
 <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html" target="_blank">Pattern documentation</a>
 
-
-Pattern
+#### Pattern
 A regular expression that describes the pattern for matching the file names.
 
 Examples:

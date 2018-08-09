@@ -1,9 +1,8 @@
-
-Sends messages as an e-mail to the specified recipient(s).
+# Mail outbound channel adapter
+#### Sends messages as an e-mail to the specified recipient(s).
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
 
-
-Mail sender
+#### Mail sender
 Sender used for sending the e-mail
 
 
@@ -15,14 +14,12 @@ Advice can be added to change the behaviour of this endpoint, for example to add
 
 By adding multiple advices to this endpoint you can create even more complex combined behaviour. For example, if you add a <i>circuit breaker</i> and a <i>retry advice</i>, you can create a scenario where the circuit breaker only opens when all retries are exhaused. Note that the order of the advice types is important, as switching the order will change the combined behaviour: the first item in the list will be the top of the advice chain, meaning it will be the last advice that is evaluated. Also note that if any advice "traps" exceptions, all advices higher up in the chain won't know about any failures.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel to consume messages from.
 
 <i>Required</i>

@@ -1,19 +1,17 @@
-
-Output channel
+# Mikrotik service activator
+#### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
 You can select the <code>nullChannel</code> here to silently drop the output messages.
 
 <i>Required</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Input channel
+#### Input channel
 Channel to consume the input messages from.
 
 <i>Required</i>

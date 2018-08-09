@@ -1,12 +1,11 @@
-
-SFTP file filter that matches the name of the file against a regular expression.
+# SFTP regex pattern file list filter
+#### SFTP file filter that matches the name of the file against a regular expression.
 SFTP file filter that matches the name of the file against a pattern that is described by a regular expression.
 
 See the java documentation about patterns:
 <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html" target="_blank">Pattern documentation</a>
 
-
-Pattern
+#### Pattern
 A regular expression that describes the pattern for matching the file names.
 
 Examples:

@@ -1,5 +1,5 @@
-
-Creates messages from the result of polling attributes of JMX MBeans. 
+# JMX multi attribute polling message source
+#### Creates messages from the result of polling attributes of JMX MBeans. 
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#jmx-attribute-polling-channel-adapter" target="_blank">Documentation</a>
 
 If you don't specify which MBeanServer should be polled, the locally running server is used. The MBeans on this server that will be polled are specified by the given object name pattern. The attributes of these MBeans that are polled are specified by the given list of attribute names. 
@@ -8,28 +8,24 @@ Note that all the attribute values of all the MBeans are returned in a single XM
 The result will be a complete, well-formed XML document as a String (the default), XOM document or DOM document. The layout of this document is defined by the XML schema located at:
 classpath:com/emagiz/components/jmx/emagiz-jmx-1.0.xsd
 
-
-Object name pattern
+#### Object name pattern
 Object name pattern
 If the pattern does not contain text, ObjectName.WILDCARD is used instead.
 
 Required.
 
 
-
-Attributes
+#### Attributes
 Attribute names.
 
 Required.
 
-
-JVM
+#### JVM
 Name used to identify the JVM the polled attributes originate from.
 
 Required.
 
-
-MBean server
+#### MBean server
 Target MBeanServer to use.
 If null the locally running server is used.
 
@@ -42,37 +38,32 @@ Specifies when and how the reading task is executed.
 
 Default global poller is used when empty
 
-
-Use default poller
+#### Use default poller
 Specifies if the global (default) poller should be used or an included poller.
 
 The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
 
-
-Result type
+#### Result type
 Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
 
 Default is <code>String</code>.
 
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -87,24 +78,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
@@ -117,8 +104,7 @@ Example patterns:
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -128,21 +114,17 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

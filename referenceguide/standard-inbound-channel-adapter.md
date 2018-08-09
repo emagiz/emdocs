@@ -1,5 +1,5 @@
-
-Expression
+# Standard inbound channel adapter
+#### Expression
 <i>SpEL</i> expression to be evaluated for each triggered execution.
 
 A message is generated anytime the evaluation result is a <i>non-null</i> value, sending the result of the evaluation as the message payload to the specified channel.
@@ -21,14 +21,12 @@ T(org.joda.time.format.ISODateTimeFormat).dateTime().print(T(System).currentTime
 </pre>
 
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
@@ -42,16 +40,14 @@ Specifies when and how the reading task is executed.
 
 Default global poller is used when empty
 
-
-Use default poller
+#### Use default poller
 Specifies if the global (default) poller should be used or an included poller.
 
 The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -66,24 +62,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
@@ -96,8 +88,7 @@ Example patterns:
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -107,21 +98,17 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

@@ -1,5 +1,5 @@
-
-Synchronizes a remote SFTP directory with a local directory and creates file-messages.
+# SFTP inbound channel adapter
+#### Synchronizes a remote SFTP directory with a local directory and creates file-messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-inbound" target="_blank">Documentation</a>
 
 The SFTP inbound channel adapter has two tasks: 
@@ -28,8 +28,7 @@ Note: SFTP = <b>SSH File Transfer Protocol</b>, an extension of the Secure Shell
 
 Please be aware that, depending on the SSH encryption level used by the server, you might need to install the <i>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files</i> to successfully establish secure connections.
 
-
-Filename regex
+#### Filename regex
 Only files with names matching this regular expression will be picked up by this adapter.
 
 Some examples:
@@ -45,8 +44,7 @@ Note that this filter runs against the <b>remote</b> file system view.
 
 Default is empty (no filter will be applied).
 
-
-Filter
+#### Filter
 A custom <i>file list filter</i> implementation to determine which files this adapter should pick up.
 
 It is not possible to use this option together with a <i>filename regex</i> or a <i>filename pattern</i>.
@@ -55,50 +53,43 @@ Note that this filter runs against the <b>remote</b> file system view.
 
 Default is empty (no filter will be applied).
 
-
-Remote file separator
+#### Remote file separator
 Allows you to provide remote file/directory separator character.
 
 Default is a forward slash (<code>"/"</code>).
 
-
-Temporary file suffix
+#### Temporary file suffix
 Extension used when downloading files. We change it right after we know it's downloaded.
 
 Default is <code>.writing</code>.
 
-
-Local filename generator expression
+#### Local filename generator expression
 Allows you to provide a SpEL expression to generate the file name of the local (transferred) file. The root object of the SpEL evaluation is the name of the original file.
 
 For example, a valid expression would be <code>#this.toUpperCase() + '.a'</code> where <code>#this</code> represents the original name of the remote file.
 
 Note that when the local directory is scanned for unprocessed files, each file name is only accepted once and file names ending with the <i>temporary file suffix</i> are ignored.
 
-
-Local filter
+#### Local filter
 Allows you to specify a reference to a custom <i>file list filter</i>. This filter is applied to files after they have been retrieved, i.e. this filter runs against the <b>local</b> file system view.
 
 The default is an <code>AcceptOnceFileListFilter</code> which means that, even if a new instance of a file is retrieved from the remote server, a message won't be generated.
 
 Any filter provided here is combined with a filter that prevents the message source from processing files that are currently being downloaded.
 
-
-Preserve timestamp
+#### Preserve timestamp
 Specify whether to preserve the modified timestamp from the remote source file on the local file after copying.
 
 Default is <code>false</code>, meaning the remote timestamp will not be preserved.
 
-
-Remote directory
+#### Remote directory
 Identifies the (remote) directory path where files will be transferred <b>from</b>.
 
 For example: <code>/transfers/inbound</code>
 
 <i>Required</i>
 
-
-Local directory
+#### Local directory
 Identifies the (local) directory path where file will be transferred <b>to</b>.
 
 Some examples:
@@ -108,8 +99,7 @@ Some examples:
 
 <i>Required</i>
 
-
-Filename pattern
+#### Filename pattern
 Only files with names matching this <i>ant style expression</i> will be picked up by this adapter.
 
 The ant style expression uses the following rules:
@@ -126,22 +116,19 @@ Note that this filter runs against the <b>remote</b> file system view.
 
 Default is empty (no filter will be applied).
 
-
-Auto create local directory
+#### Auto create local directory
 Specify whether to automatically create the local directory if it does not yet exist when this adapter is being initialized. 
 
 If set to <code>false</code> and the directory does not exist upon initialization, an exception will be thrown.
 
 Default is <code>true</code>.
 
-
-Delete remote files
+#### Delete remote files
 Specify whether to delete the remote source file after copying.
 
 Default is <code>false</code>.
 
-
-SFTP session factory
+#### SFTP session factory
 SFTP session factory that provides the SFTP connections for this channel adapter.
 
 <i>Required</i>
@@ -153,30 +140,26 @@ Specifies when and how the reading task is executed.
 
 Default global poller is used when empty
 
-
-Use default poller
+#### Use default poller
 Specifies if the global (default) poller should be used or an included poller.
 
 The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Channel
+#### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -191,24 +174,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
@@ -221,8 +200,7 @@ Example patterns:
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -232,21 +210,17 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

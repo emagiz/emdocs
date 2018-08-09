@@ -1,25 +1,22 @@
-
-Global poller that specifies when and how scheduled message receive tasks should be executed.
+# Poller
+#### Global poller that specifies when and how scheduled message receive tasks should be executed.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
 
 All the <i>endpoints</i> that have to do a scheduled task like receiving on a queue channel or reading files, need a <i>poller</i> that specifies when and how the task is executed. The scheduled task is executed by the <i>Task Executor</i> if specified. Else the default task executor will be used.
 
 If no <i>poller</i> is specified for an endpoint, the <i>default global poller </i> is used. <i>Currently a <i>global poller</i> can only be used as a default poller. There can only be one default poller in a configuration.</i>
 
-
-Id
+#### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-
-Default
+#### Default
 Set this poller as default poller of the configuration. If set, this poller will be used by all the endpoints that have no poller specified. 
 
 Note: Only one poller can be default in a configuration. 
 
-
-Max messages per poll
+#### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
 The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
@@ -29,26 +26,21 @@ For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPe
 Default is 1.
 
 
-
-Receive timeout
+#### Receive timeout
 Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
 
-
-Send timeout
+#### Send timeout
 Specifies the timeout for sending out messages.
 
-
-Task executor
+#### Task executor
 Task executor to execute the scheduled tasks. 
 
 Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
 
-
-Error channel
+#### Error channel
 The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 
-
-Trigger type
+#### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
 
 Trigger types:
@@ -63,24 +55,20 @@ Triggers with a <i>periodic constant interval</i>. Each execution is scheduled r
 Enables the scheduling of tasks based on <i>cron expressions</i>.  Consider using a cron trigger for hourly, daily, and monthly settings. 
 
 
-
-Time unit
+#### Time unit
 Specifies the time unit of the <i>fixed delay</i> or <i>fixed rate</i> value.
 
 For hourly, daily or monthly settings, consider using a <i>cron trigger</i> instead.
 
 Default is <code>Milliseconds</code>.
 
-
-Fixed delay
+#### Fixed delay
 Time between each two subsequent executions, measured from completion time.
 
-
-Fixed rate
+#### Fixed rate
 Time between each two subsequent executions, measured from start time.
 
-
-Cron
+#### Cron
 Pattern used by a cron-trigger to specify the trigger schedule.
 
 The pattern is a list of six single space-separated fields, representing <code>second minute hour day month weekday</code>. Month and weekday names can be given as the first three letters of the English names.
