@@ -17,3 +17,7 @@
 - How2's
 - Best practices
 
+---
+- [HTML Version](https://skemagiz.github.io/emdocs/) 
+---
+
