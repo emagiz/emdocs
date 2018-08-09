@@ -30,6 +30,7 @@ Set the username for the account at the mail host, if any.
 Note that the mail session has to be configured with the property "mail.smtp.auth" set to true, else the specified username will not be sent to the mail server by the runtime.
 
 
+
 Password
 Set the password for the account at the mail host, if any.
 
