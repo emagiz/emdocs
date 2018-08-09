@@ -1,4 +1,4 @@
-Address settings
+# Address settings
 Artemis has a unique addressing model that is both powerful and flexible and that offers great performance. The addressing model comprises three main concepts: addresses, queues and routing types.
 
 An address represents a messaging endpoint. Within the configuration, a typical address is given a unique name, 0 or more queues, and a routing type.
@@ -7,7 +7,7 @@ A queue is associated with an address. There can be multiple queues per address.
 
 <a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">Documentation</a>
 
-Match
+## Match
 A wildcard expression contains words delimited by the character <code>.</code> (full stop).
 
 The special characters <code>#</code> and <code>*</code> also have special meaning and can take the place of a word:
@@ -22,7 +22,7 @@ The wildcard <code>news.*.sport</code> would match <code>news.europe.sport</code
 
 <i>Required</i>
 
-Auto create queues
+## Auto create queues
 Whether or not the broker should automatically create a queue when a message is sent or a consumer tries to connect to a queue whose name fits the address match. Queues which are auto-created are durable, non-temporary, and non-transient.
 
 Default is <i>Yes</i>.
