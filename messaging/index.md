@@ -147,3 +147,10 @@ Apache ActiveMQ Artemis bridges can be configured with filter expressions to onl
 Apache ActiveMQ Artemis also allows routing between queues to be configured in server side configuration. This allows complex routing networks to be set up forwarding or copying messages from one destination to another, forming a global network of interconnected brokers.
 
 For more information please see Core Bridges and Diverting and Splitting Message Flows.
+
+### Sources
+
+- https://activemq.apache.org/artemis/docs/latest/
+- https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cpoq/index.html
+- https://www.enterpriseintegrationpatterns.com/patterns/messaging/Introduction.html
+- 
