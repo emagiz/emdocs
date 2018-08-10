@@ -153,4 +153,3 @@ For more information please see Core Bridges and Diverting and Splitting Message
 - https://activemq.apache.org/artemis/docs/latest/
 - https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cpoq/index.html
 - https://www.enterpriseintegrationpatterns.com/patterns/messaging/Introduction.html
-- 
