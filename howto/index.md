@@ -1,5 +1,5 @@
-# How2's eMagiz
+# How-to integrate using eMagiz
 
-## list 
+## List of available how-to's  
 
-- [How to make a test file](Add%20new%20test%20file.md)
+- [How to add a multi-tenant system](add-multi-tenant-system.md)
