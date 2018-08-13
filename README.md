@@ -14,7 +14,7 @@
 ---
 
 - Tutorials 
-- How2's
+- [How2's](howto/index.md)
 - Best practices
 
 ---
