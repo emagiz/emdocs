@@ -1,10 +1,8 @@
-#How to upgrade a message bus completely or partially to eMagiz 5 
+# How to upgrade a message bus completely or partially to eMagiz 5 
 
 Background on Artemis with a "reason why" at the end
 
 In order to upgrade to Artemis, 4 conditions must be met:
-
-
 
 
 1) Spring Integration from 2 to 4: the flows' current build number is 2 (or lower) and it is still running on Spring Integration 2 (before Nov 2017) but it should be at least 30 because 
