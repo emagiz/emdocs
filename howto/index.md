@@ -7,6 +7,6 @@
 - [How to add a system](add-a-system.md)
 - [How to add an attribute](add-an-attribute.md)
 
-======================================================================================
+==============================================================
 
-- [How to migrate to eMagiz 5](add-an-attribute.md)
+- [How to migrate to eMagiz 5](upgrade-to-artemis.md)
