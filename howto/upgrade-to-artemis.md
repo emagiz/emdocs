@@ -24,7 +24,7 @@ the whole bus at once
 The steps for migrating to artemis: 
 
 -> using the "upgrade complete bus at once" button 
-	1) Press the orange button. It might take a while until it  finishes upgrading every flow from the bus. 
+	1. Press the orange button. It might take a while until it  finishes upgrading every flow from the bus. 
 	2) Go to the deploy phase and refresh the create phase 
 	3) Create another release and name it "Artemis" and select it as current release
 	4) Go to properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'
