@@ -6,9 +6,9 @@ This tutorial presents the possibilities of migrationg a bus from hornetQ to Art
 
 # 2. Requirements
 
-In order to upgrade to Artemis, 4 conditions must be met //in order//:
+In order to upgrade to Artemis, 4 conditions must be met in order:
 
-2.1) Spring Integration 4: the flows' current build number is 22 (or lower) and it is still running on Spring Integration 2 (before Nov 2017) but it should be at least 32 because the flow is less likely to encounter unforeseen issues. Firstly test your flows and then update them! (recommended to upgrade all of them)
+2.1) Spring Integration 4: It is recommended that all flows have the build number 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
 
 2.2) Java 8: It is needed for meeting the next requirement. Start updating your Java now or update to latest cloud template if you run in cloud slots. 
 
@@ -20,12 +20,9 @@ In order to upgrade to Artemis, 4 conditions must be met //in order//:
 
 # 3. Preparation steps 
 
-3.1) **Go to** the Deploy phase in the bus and click the green button "New release". Now you have a copy of your latest Create phase, "0.0.1: Initial release",  which can be considered the hornetQ backup of this process so rename it accordingly.
+3.1) **Go to** the Deploy phase in the bus and click the green button "New release". Now you have a copy of your latest Create phase, "0.0.1: Initial release",  which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted the other environments in order to have a backup of the process there as well.
 
-//It is advisable to have releases with the information from the acceptance and production deploy environments
-
-3.2) **Go to** properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'.
-//Look at the new recommended values in the acceptance of CAPE Internal messaging
+3.2) **Go to** properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'. The values that should be used for the ports are 8444 for the backup server and 8443 for the other.
 
 3.3) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Here there are two options of migrating: using the 4 steps wizard or just press the orange button in order to upgrade the whole bus at once 
 
@@ -34,7 +31,7 @@ In order to upgrade to Artemis, 4 conditions must be met //in order//:
 
  **4.1 Using the "upgrade complete bus at once" button**
 
-4.1.1) **Press the orange button. It might take a while until it finishes upgrading every flow from the bus. 
+4.1.1) **Press** the orange button. It might take a while until it finishes upgrading every flow from the bus. 
 
 4.1.2) **Go to** the deploy phase and refresh the create phase. 
 
@@ -59,7 +56,7 @@ In order to upgrade to Artemis, 4 conditions must be met //in order//:
 
 4.2.5) **Go to** Releases and press the install button and further install all the flows displayed.
 
-4.2.6) **Go to** runtime dashboard and start the flow(s).
+4.2.6) **Go to** Runtime dashboard and start the flow(s).
 
 4.2.7) **Repeat steps 1-6** for the first three steps of the migraton wizard from the eMagiz portal. Name all the releases according to 
 the step that has been done in that stage.
