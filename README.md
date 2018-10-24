@@ -17,7 +17,4 @@
 - [How2's](howto/index.md)
 - Best practices
 
----
-### [HTML Version](https://skemagiz.github.io/emdocs/) 
----
 
