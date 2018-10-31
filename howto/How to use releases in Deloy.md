@@ -15,11 +15,11 @@ All the other releases have the same funcionalities, which are edit, details, in
 - **Compare.** The release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with the latest version of a release by selecting both the releases. The differences between the releases will be shown in colors:\
   Green: These components are added \
   Grey: Deleted flows compared to the installed release will turn grey. \
-When swiping over the flows, you can see which version number of the flow is released.
+When hovering over the flows, you see which version number of the flow is released.
 
-- **Edit.** When clicking on the edit button, flows can be deleted or added. The deleted flows will turn grey, the added flows will turn green.
+- **Edit.** [alt text] When clicking on the edit button, flows can be deleted or added. To add or delete flows, you have to hover over a flow. Deleted flows will turn grey, the added flows will turn green.
 
-- **Install.** To install your release, you first need to have a running bus. So download your runtimes from the container page and start them. Then click the install button .and your release is installed The release will be locked (there is a lock in front of the release), which means that this release is not editable anymore. If you want to edit this release, you have to select this release and click on the button 'New Release'. Now you can edit the release again.
+- **Install.** To install your release, you first need to have a running bus. So download your runtimes from the container page and start them. Then click the install button and your release is installed. The release will be locked (there is a lock in front of the release), which means that this release is not editable anymore. If you want to edit this release, you have to select this release and click on the button 'New Release'. A duplicate of the release is made and now you can edit the duplicate of the release.
 
 - **Installing a Mendix System.** When you have a Mendix System in your bus, the flows inside this system will not be automatically installed. To install these flows, you have to go to packages and select the accompanying packages and click on install.
 - **Update to next environment.** When clicking on this button, the release will be updated to the next environment. As the pop-up shows, the release is not editable anymore. When switching to that environment, you will see that the release is on that environment.
