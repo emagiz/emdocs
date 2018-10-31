@@ -5,17 +5,18 @@ After finishing the Create phase, it is time to deploy the bus. The main idea be
 After finishing all flows in create, go to Deploy --> Releases. Initially, there is no release yet, so by clicking the ‘New release’ button, an initial release is created. This initial release is added to the list on the right menu of your screen. Currently there are two releases visible: Create Phase and Initial release. 
 
 The Create Phase has two options; refresh and details.
-- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Refresh.JPG) **Refresh:** **everytime** when something has changed in Create and you want to release this, you have to click the button 'Refresh'. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made. 
+- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Refresh.JPG) **Refresh:** **everytime** when something is changed in Create and you want to release this, you have to click the button 'Refresh'. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made. 
 - ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Details.JPG) **Details:**  in this pop-up the details of the release are shown. Open this pop-up to rename or delete the release. To delete a release, there is a button on the bottom of the pop-up 'Delete'.
 
 ## How to install a release?
 All the other releases have the same funcionalities, which are edit, details, install and update to next environment.
-- **Compare:** the release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with the latest version of a release by selecting both the releases. The differences between the releases will be shown in colors:\
-  Green: These components are added \
+- **Compare:** the release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with another release by selecting both the releases. If you want to compare an older version with the Create Phase, do not forget to press the 'Refresh' button. The differences between the releases will be shown in colors:\
+  Green: These components are added. \
   Grey: Deleted flows compared to the installed release will turn grey. \
+  Blue: Versions of the flow have changed. \
 When hovering over the flows, you see which version number of the flow is released.
 
-- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Edit.JPG) **Edit:** when clicking on the edit button, flows can be deleted or added. To do this, you have to hover over a flow or integration. Deleted flows will turn grey, the added flows will turn green.
+- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Edit.JPG) **Edit:** when clicking on the edit button, flows can be deleted, added or adapted. To do this, you have to hover over a flow or integration and click on the flow you want to delete or add. By right clicking on a flow, the available version numbers are shown in a dropdown. The version of the flow can be adapted by selecting the version number you want. Deleted flows will turn grey, the added flows will turn green.
 
 - ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Install.JPG) **Install:** to install your release, you first need to have a running bus. So download your runtimes from the container page and start them. Then click the install button and your release is installed. The release will be locked (there is a lock in front of the release), which means that this release is not editable anymore. If you want to edit this release, you have to select this release and click on the button 'New Release'. A duplicate of the release is made and now you can edit the duplicate of the release.
 
