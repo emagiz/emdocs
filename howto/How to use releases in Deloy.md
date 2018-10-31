@@ -15,8 +15,8 @@ All the other releases have the same funcionalities, which are edit, details, in
 - **Compare.** The release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with the latest version of a release by selecting both the releases. The differences between the releases will be shown in colors.
 Green: These components are added 
 Grey: Deleted flows compared to the installed release will turn grey.
-Blue: 
-- **Edit.** When clicking on the edit button, flows can be deleted. These flows will turn grey.
+
+- **Edit.** When clicking on the edit button, flows can be deleted or added. The deleted flows will turn grey, the added flows will turn green.
 
 - **Install.** To install your release, you first need to have a running bus. So download your runtimes from the container page and start them. Then click the install button and your release is installed. The release will be locked (there is a lock in front of the release), which means that this release is not editable anymore. If you want to edit this release, you have to select this release and click on the button 'New Release'. Now you can edit the release again.
 
