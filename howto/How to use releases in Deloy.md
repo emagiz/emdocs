@@ -11,9 +11,9 @@ The Create Phase has two options; refresh and details.
 ## How to install a release?
 All the other releases have the same funcionalities, which are edit, details, install and update to next environment.
 - **Compare:** the release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with another release by selecting both the releases. If you want to compare an older version with the Create Phase, do not forget to press the 'Refresh' button. The differences between the releases will be shown in colors:\
-  Green: These components are added. \
-  Grey: Deleted flows compared to the installed release will turn grey. \
-  Blue: Versions of the flow have changed. \
+  <i>Green</i>: These components are added. \
+  <i>Grey</i>: Deleted flows compared to the installed release will turn grey. \
+  <i>Blue</i>: Versions of the flow have changed. \
 When hovering over the flows, you see which version number of the flow is released.
 
 - ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Edit.JPG) **Edit:** when clicking on the edit button, flows can be deleted, added or adapted. To do this, you have to hover over a flow or integration and click on the flow you want to delete or add. By right clicking on a flow, the available version numbers are shown in a dropdown. The version of the flow can be adapted by selecting the version number you want. For a special case, namely the flows of an ifra, can only be changed in this dropdown menu. Deleted flows will turn grey, the added flows will turn green.
