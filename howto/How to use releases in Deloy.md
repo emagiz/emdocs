@@ -2,11 +2,11 @@
 After finishing the Create phase, it is time to deploy the bus. The main idea behind the new functionality in eMagiz is that a user does not have to build packages himself anymore, but all flows can be released and installed at once.
 
 ## How to create a release?
-After finishing all flows in create, go to Deploy --> Releases. Initially, there is no release created yet, so by clicking the ‘New release’ button, an initial release will be created. For all flows you can see that this initial release is added to the list in the right corner of your screen. Currently there are two releases visible: Create Phase and Initial release. 
+After finishing all flows in create, go to Deploy --> Releases. Initially, there is no release yet, so by clicking the ‘New release’ button, an initial release is created. This initial release is added to the list on the right menu of your screen. Currently there are two releases visible: Create Phase and Initial release. 
 
-The Create Phase has two buttons; refresh and details.
+The Create Phase has two options; refresh and details.
 - **Refresh.**
-When you are still working on your bus and flows are added in Create, these changes have to be released as well. In this case, you can use the ‘Refresh’ button. This button updates the current release, so all flows which are added in Create are also added in Release as well. 
+When you are still working on your bus and flows or integrations are added in Create, these changes have to be released as well. In this case, you can use the ‘Refresh’ button. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made.  
 - **Details.**
 In this popup the details of the release are shown. Open this popup to rename or delete the release. To delete a release, there is a button on the bottom of the popup 'Delete'.
 
