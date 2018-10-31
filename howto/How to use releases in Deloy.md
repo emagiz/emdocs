@@ -12,9 +12,10 @@ In this popup the details of the release are shown. Open this popup to rename or
 
 ## How to install a release?
 All the other releases have the same funcionalities, which are edit, details, install and update to next environment.
-- **Compare.** The release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with the latest version of a release by selecting both the releases. The differences between the releases will be shown in colors.
-Green: These components are added 
-Grey: Deleted flows compared to the installed release will turn grey.
+- **Compare.** The release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with the latest version of a release by selecting both the releases. The differences between the releases will be shown in colors:\
+  Green: These components are added \
+  Grey: Deleted flows compared to the installed release will turn grey. \
+When swiping over the flows, you can see which version number of the flow is released.
 
 - **Edit.** When clicking on the edit button, flows can be deleted or added. The deleted flows will turn grey, the added flows will turn green.
 
