@@ -10,3 +10,4 @@
 ==============================================================
 
 - [How to migrate to eMagiz 5](upgrade-to-artemis.md)
+- [How to deploy releases](deploy-releases.md.md)
