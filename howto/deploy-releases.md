@@ -25,6 +25,5 @@ When hovering over the flows, you see which version number of the flow is releas
 
 - **Filters:** when the bus is large or you just want to see what flows have been edited, you can filter on tags. These tags function the same as the tags in the phases: Capture, Design and Create.
 
-![How to use releases in Deploy?](https://github.com/emagiz/emdocs/blob/master/howto/Infographic releases - comparing(1).png)
-![alt text](https://github.com/emagiz/emdocs/blob/master/howto/PromoteToNextEnvironment.JPG)
+![How to use releases in Deploy?](https://github.com/emagiz/emdocs/blob/master/howto/Infographic-deploy-releases.png)
 
