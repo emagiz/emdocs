@@ -12,11 +12,11 @@ The Create Phase has two options; refresh and details.
 All the other releases have the same features, which are edit, show details, install and update to next environment.
 - **Compare:** the release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with another release by selecting both the releases. If you want to compare an older version with the Create Phase, do not forget to press the 'Refresh' button. The differences between the releases will be shown in colors:\
   <i>Green</i>: These components are added. \
-  <i>Grey</i>: Deleted flows compared to the installed release will turn grey. \
+  <i>Red</i>: Deleted flows compared to the installed release will turn red. \
   <i>Blue</i>: Versions of the flow have changed. \
 When hovering over the flows, you see which version number of the flow is released.
 
-- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Edit.JPG) **Edit:** when clicking on the edit button, flows can be deleted, added or adapted. To do this, you have to hover over a flow or integration and click on the flow you want to delete or add. By right clicking on a flow, the available version numbers are shown in a dropdown. The version of the flow can be adapted by selecting the version number you want. For a special case, namely the flows of an infra, can only be changed in this dropdown menu. Deleted flows will turn grey, the added flows will turn green.
+- ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Edit.JPG) **Edit:** when clicking on the edit button, flows can be deleted, added or adapted. To do this, you have to hover over a flow or integration and click on the flow you want to delete or add. By right clicking on a flow, the available version numbers are shown in a dropdown. The version of the flow can be adapted by selecting the version number you want. For a special case, namely the flows of an infra, can only be changed in this dropdown menu. Deleted flows will turn red, the added flows will turn green.
 
 - ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Install.JPG) **Install:** to install your release, you first need to have a running bus. So download your runtimes from the container page and start them. Then click the install button and your release is installed. The release will be locked (there is a lock in front of the release), which means that this release is not editable anymore. If you want to edit this release, you have to select this release and click on the button 'New Release'. A duplicate of the release is made and now you can edit the duplicate of the release.
 
@@ -25,5 +25,5 @@ When hovering over the flows, you see which version number of the flow is releas
 
 - **Filters:** when the bus is large or you just want to see what flows have been edited, you can filter on tags. These tags function the same as the tags in the phases: Capture, Design and Create.
 
-![How to use releases in Deploy?](https://github.com/emagiz/emdocs/blob/master/howto/Infographic-deploy-releases.png)
+![How to use releases in Deploy?](https://github.com/emagiz/emdocs/blob/master/howto/Infographic%20releases%20-%20comparing%20v2.png)
 
