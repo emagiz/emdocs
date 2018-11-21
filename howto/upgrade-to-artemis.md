@@ -22,7 +22,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 # 3. Preparation steps 
 
-3.1) **Using the ![releaseas documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well.
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well.
 
 3.2) **Go to** properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'. The values that should be used for the ports are 8444 for the backup server and 8443 for the other.
 
