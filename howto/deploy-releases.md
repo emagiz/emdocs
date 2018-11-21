@@ -5,11 +5,14 @@ After finishing integrations in the Create phase, it is time to deploy the integ
 After finishing all flows in create, go to Deploy --> Releases. Initially, there is no release yet, so by clicking the ‘New release’ button, an initial release is created. This initial release is added to the list on the right menu of your screen. Currently there are two releases visible: Create Phase and Initial release. 
 
 The Create Phase has two options; refresh and details.
+
 1.1 ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Refresh.JPG) **Refresh:** <i>everytime</i> when something is changed in Create and you want to release or compare this, you have to click the button 'Refresh'. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made. 
+
 1.2 ![alt text](https://github.com/emagiz/emdocs/blob/master/howto/Details.JPG) **Details:**  in this pop-up the details of the release are shown. Open this pop-up to rename or delete the release. To delete a release, there is a button on the bottom of the pop-up 'Delete'.
 
 ## How to install a release?
 All the other releases have the same features, which are edit, show details, install and update to next environment.
+
 2.1 **Compare:** the release which is currently selected, is marked green in the menu on the right. It is possible to compare a running release with another release by selecting both the releases. If you want to compare an older version with the Create Phase, do not forget to press the 'Refresh' button. The differences between the releases will be shown in colors:\
   <i>Green</i>: These components are added. \
   <i>Red</i>: Deleted flows compared to the installed release will turn red. \
