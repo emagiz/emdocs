@@ -22,7 +22,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 # 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well.
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted to the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Go to** properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'. The values that should be used for the ports are 8444 for the backup server and 8443 for the other.
 
@@ -45,7 +45,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.1.5) **Go to** releases and press the install button and further install all the flows displayed.  
 
-4.1.6) **Go to** runtime dashboard and start all flows.
+4.1.6) **Go to** each container in the runtime dashboard and start the flow(s).
 
 
  **4.2 Using the "step by step" wizard** 
@@ -60,7 +60,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.2.5) **Go to** Releases and press the install button and further install all the flows displayed.
 
-4.2.6) **Go to** Runtime dashboard and start the flow(s).
+4.2.6) **Go to** each container in runtime dashboard and start the flow(s).
 
 4.2.7) **Repeat steps 1-6** for the first three steps of the migraton wizard from the eMagiz portal. Name all the releases according to 
 the step that has been done in that stage.
