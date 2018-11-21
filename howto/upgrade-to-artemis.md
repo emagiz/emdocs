@@ -14,7 +14,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 2.3) eMagiz runtime 5.0.0 or higher: it requires Java 8. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations or update to latest cloud template .
 
-2.4) enable the Releases functionality in the deploy phase: you need to have this widget enabled in order to firstly make a release of your current CREATE phase (which is fully hornetQ at the moment) to have a safe hornetQ backup of the Create phase in case there will be any problems while upgrading to Artemis.
+2.4) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this widget enabled in order to firstly make a release of your current CREATE phase (which is fully hornetQ at the moment) to have a safe hornetQ backup of the Create phase in case there will be any problems while upgrading to Artemis.
 
   **When you think you meet these requirements, ask your partner manager to allow the migration.**
 
@@ -35,7 +35,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.1.2) **Go to** the deploy phase and refresh the create phase. 
 
-4.1.3) **Create** another release and name it "Artemis" based on the create phase and select it as current release.
+4.1.3) **Create** another release based on the refreshed create phase and name it "Artemis". Aferwards, select it as current release.
 
 4.1.4) **Go to** Containers and download and install the runtimes.
 
