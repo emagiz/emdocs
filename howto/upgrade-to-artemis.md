@@ -1,11 +1,11 @@
 # How to upgrade a message bus completely or partially to eMagiz 5 
 
-# 1. Introduction
+## 1. Introduction
 
 This tutorial presents the possibilities of migrationg a bus from hornetQ to Artemis.
 
 
-# 2. Requirements
+## 2. Requirements
 
 In order to upgrade to Artemis, 4 conditions must be met in order:
 
@@ -20,7 +20,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
   **When you think you meet these requirements, ask your partner manager to allow the migration.**
  
 
-# 3. Preparation steps 
+## 3. Preparation steps 
 
 3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted to the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
@@ -29,9 +29,9 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 3.3) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Here there are two options of migrating: using the 4 steps wizard or just press the orange button in order to upgrade the whole bus at once 
 
 
-# 4.The steps for migrating to artemis: 
+## 4.The steps for migrating to artemis: 
 
- **4.1 Using the "upgrade complete bus at once" button**
+### 4.1 Using the "upgrade complete bus at once" button
 
 4.1.1) **Press** the orange button. It might take a while until it finishes upgrading every flow from the bus. 
 
@@ -48,7 +48,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 4.1.6) **Go to** each container in the runtime dashboard and start the flow(s).
 
 
- **4.2 Using the "step by step" wizard** 
+### 4.2 Using the "step by step" wizard 
 
 4.2.1) **Press** the first button, "Step 1: Upgrade JMS server(s)", and wait for the process to finish
 
