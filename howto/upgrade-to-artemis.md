@@ -24,7 +24,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the hornetQ backup of this process so rename it accordingly. Also, this should be promoted to the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
-3.2) Make sure the runtimes are running no matter you are running on premises or on cloud before starting the migration process.
+3.2) **Make sure** the runtimes are running no matter you are running on premises or on cloud before starting the migration process.
 
 3.2) **Go to** properties and create the new host and port properties by copying the old ones and replacing 'jms' with 'amqp'. The values that should be used for the ports are 8444 for the backup server and 8443 for the other.
 
@@ -45,13 +45,13 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.1.5) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
-4.1.6.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+4.1.5.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
-4.1.6.2) Container(s): if you have multiple containers, you can use any order.
+4.1.5.2) Container(s): if you have multiple containers, you can use any order.
 
-4.1.6.3) Connector(s): if you have multiple connectors, you can use any order.
+4.1.5.3) Connector(s): if you have multiple connectors, you can use any order.
 
-4.1.7) **Go to** Runtime dashboard and check if every flow is still active.
+4.1.6) **Go to** Runtime dashboard and check if every flow is still active.
 
 ### 4.2 Using the "step by step" wizard 
 
