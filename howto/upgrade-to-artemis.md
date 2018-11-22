@@ -51,6 +51,8 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.1.6.3) Connector(s): if you have multiple connectors, you can use any order.
 
+4.1.7) **Go to** Runtime dashboard and check if every flow is still active.
+
 ### 4.2 Using the "step by step" wizard 
 
 4.2.1) **Press** the first button, "Step 1: Upgrade JMS server(s)", and wait for the process to finish
@@ -61,7 +63,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.2.4) **Go to** Releases and press the install button and further install all the flows displayed.
 
-4.2.5) **Go to** each container in runtime dashboard and start the flow(s).
+4.2.5) **Go to** each container in runtime dashboard and start the flow(s). If you have a failover bus, firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
 4.2.6) **Repeat steps 1-6** for the first three steps of the migraton wizard from the eMagiz portal. Name all the releases according to 
 the step that has been done in that stage.
