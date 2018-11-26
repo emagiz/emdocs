@@ -22,7 +22,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly( e.g. eMagiz4 backup). It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly( e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment. It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Make sure** the runtimes you would like to upgrade are running before starting the migration process.
 
@@ -36,19 +36,19 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 3.2.4) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.port”, value: 8444
 
-
-3.3) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Here there are two options of migrating: using the 4 steps wizard or just press the orange button in order to upgrade the whole bus at once 
+3.3) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
 
 
 ## 4.The steps for migrating to eMagiz 5: 
 
-Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
-
+<!--- Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
 - available time for completing the migration process
 - size of the bus
 - failover or normal 
 - type of deploying premises: local, cloud slot or both
 - affordable down time of the bus (ask your partner contact for the estimated value)
+--->
+
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
