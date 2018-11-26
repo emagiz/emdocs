@@ -48,7 +48,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.1.2) **Go to** Deploy -> Releases and [refresh](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) the create phase. 
 
-4.1.3) **Create** another release based on the refreshed create phase and name it "Artemis". Afterwards, select it as current release.
+4.1.3) **Create** another release based on the refreshed create phase and name it "eMagiz5". Afterwards, select it as current release.
 
 4.1.4) **Go to** releases and press the install button and further install all the flows displayed.  
 
@@ -68,7 +68,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.2.2) **Go to** the deploy phase and refresh the create phase. 
 
-4.2.3) **Create** another release and name it "Artemis: Step 1" based on the create phase and select it as current release.
+4.2.3) **Create** another release and name it "eMagiz5: Step 1" based on the create phase and select it as current release.
 
 4.2.4) **Go to** Releases and press the install button and further install all the flows displayed.
 
