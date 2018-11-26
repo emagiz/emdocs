@@ -58,7 +58,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 4.1.2)  **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.2).
 
-4.1.3) **Go to** Deploy -> Releases and click "update to latest versions". Afterwards you can press the install button and further install all the new versions of the flows displayed.
+4.1.3) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards you can press the install button and further install all the new versions of the flows displayed.
 
 4.1.4) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
@@ -83,7 +83,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 4.2.5) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
 
-4.2.6) **Go to** Deploy -> Releases and click "update to latest versions". Afterwards you can press the install button and further install all the new versions of the flows displayed.
+4.2.6) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards you can press the install button and further install all the new versions of the flows displayed.
 
 4.2.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
