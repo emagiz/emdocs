@@ -7,7 +7,7 @@ This tutorial presents the possibilities of migrating a bus from eMagiz 4 to eMa
 
 ## 2. Requirements
 
-In order to upgrade to Artemis, 4 conditions must be met in order:
+In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.1) Spring Integration 4: It is recommended that all flows have the build number 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
 
@@ -22,7 +22,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase which can be considered the eMagiz 4 backup of this process so rename it accordingly. Also, this should be promoted to the other environments (such as acceptance and production) in order to have a backup of the process in those environments as well. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly( e.g. eMagiz4 backup). It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Make sure** the runtimes you would like to upgrade are running before starting the migration process.
 
@@ -41,6 +41,14 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 
 ## 4.The steps for migrating to eMagiz 5: 
+
+Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
+
+- available time for completing the migration process
+- size of the bus
+- failover or normal 
+- type of deploying premises: local, cloud slot or both
+- affordable down time of the bus (ask your partner contact for the estimated value)
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
@@ -72,7 +80,7 @@ In order to upgrade to Artemis, 4 conditions must be met in order:
 
 4.2.4) **Go to** Releases and press the install button and further install all the flows displayed.
 
-4.2.5) **Go to** each container in runtime dashboard and start the flow(s). If you have a failover bus, firstly start the live JMS server, amqp01, and secondly the backup server, amqp01b1. In all other cases just start the jms server before any other flows.
+4.2.5) **Go to** each container in runtime dashboard and start the flow(s). If you have a failover bus, firstly start the live JMS server, amqp01, and secondly the backup server, amqp01b1. For all the other types of buses, just make sure to start the jms server before any other flows.
 
 4.2.6) **Repeat steps 1-6** for the first three steps of the migration wizard from the eMagiz portal. Name all the releases according to 
 the step that has been done in that stage.
