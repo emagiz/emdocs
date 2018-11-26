@@ -19,7 +19,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.4.2) For environments running in cloud you just need to update to the newest template (R3 for AWS Cloud or instance template >= 20 for Root Cloud).
 
-  **In order to proceed further with the migration, a check on meeting with the bus partner contact is needed.**
+  **In order to proceed further with the migration, a validation from your partner contact is needed.**
  
 
 ## 3. Preparation steps 
