@@ -52,40 +52,43 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
-4.1.1) **Press** the orange button. It might take a while until it finishes upgrading every flow from the bus. 
+4.1.1) **Go to** Deploy -> Releases and create a release based on the backup created during 3.1) named "eMagiz 5 migration".
 
-4.1.2) **Go to** Deploy -> Releases and [refresh](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) the create phase. 
+4.1.2)  **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.2).
 
-4.1.3) **Create** another release based on the refreshed create phase and name it "eMagiz5". Afterwards, select it as current release.
+4.1.3) **Go to** Deploy -> Releases and click "update to latest versions". Afterwards you can press the install button and further install all the new versions of the flows displayed.
 
-4.1.4) **Go to** releases and press the install button and further install all the flows displayed.  
+4.1.4) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
-4.1.5) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+4.1.4.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
-4.1.5.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+4.1.4.2) Container(s): if you have multiple containers, you can use any order.
 
-4.1.5.2) Container(s): if you have multiple containers, you can use any order.
+4.1.4.3) Connector(s): if you have multiple connectors, you can use any order.
 
-4.1.5.3) Connector(s): if you have multiple connectors, you can use any order.
+4.1.5) **Go to** Runtime dashboard and check if every flow is still active.
 
-4.1.6) **Go to** Runtime dashboard and check if every flow is still active.
 
 ### 4.2 Using the "step by step" wizard 
 
-4.2.1) **Press** the first button, "Step 1: Upgrade JMS server(s)", and wait for the process to finish
+4.2.1) **Go to** Deploy -> Releases and create a release based on the backup created during 3.1) named "eMagiz 5 migration".
 
-4.2.2) **Go to** the deploy phase and refresh the create phase. 
+4.2.2) **Press** the button "Step 1: Upgrade JMS server(s)", and wait for the process to finish.
 
-4.2.3) **Create** another release and name it "eMagiz5: Step 1" based on the create phase and select it as current release.
+4.2.3) **Press** the button "Step 2: Upgrade process container(s)" and wait for the process to finish.
 
-4.2.4) **Go to** Releases and press the install button and further install all the flows displayed.
+4.2.4) **Press** the button "Step 3: Upgrade connectors" and wait for the process to finish.
 
-4.2.5) **Go to** each container in runtime dashboard and start the flow(s). If you have a failover bus, firstly start the live JMS server, amqp01, and secondly the backup server, amqp01b1. For all the other types of buses, just make sure to start the jms server before any other flows.
+4.2.5) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
 
-4.2.6) **Repeat steps 1-6** for the first three steps of the migration wizard from the eMagiz portal. Name all the releases according to 
-the step that has been done in that stage.
+4.2.6) **Go to** Deploy -> Releases and click "update to latest versions". Afterwards you can press the install button and further install all the new versions of the flows displayed.
 
-4.2.7) **Press** the fourth button, "Step 4: Remove backward compatibility of JMS server", and wait for the process to finish
+4.2.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+
+4.2.7.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+
+4.2.7.2) Container(s): if you have multiple containers, you can use any order.
+
+4.2.7.3) Connector(s): if you have multiple connectors, you can use any order.
 
 4.2.8) **Go to** Runtime dashboard and check if every flow is still active.
-
