@@ -13,9 +13,9 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.2) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this new way of deploying enabled in order to firstly make a release of your current CREATE phase (which is using eMagiz4  at the moment) to have a safe eMagiz4 backup prior to the migration in case there will be any problems while upgrading to eMagiz5.
 
-2.3) Java 8: the new framework works only from java 8 or higher. For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. For environments running in cloud you just need to update to the newest template (R3 for AWS Cloud or instance template >= 20 for Root Cloud).
+2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version.
 
-2.4) eMagiz runtime 5.0.0 or higher: it requires Java 8. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations or update to latest cloud template .
+2.4) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. For environments running in cloud you just need to update to the newest template (R3 for AWS Cloud or instance template >= 20 for Root Cloud).
 
   **In order to proceed further with the migration, a check on meeting with the bus partner contact is needed.**
  
