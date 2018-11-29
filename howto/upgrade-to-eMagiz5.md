@@ -17,7 +17,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
-2.4.2) For environments running in cloud you just need to update to the newest template (R3 for AWS Cloud or instance template >= 20 for Root Cloud).
+2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 20 for Root Cloud).
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
  
