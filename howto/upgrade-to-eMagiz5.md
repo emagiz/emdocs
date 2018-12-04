@@ -9,22 +9,23 @@ This tutorial presents the possibilities of migrating a bus from eMagiz 4 to eMa
 
 In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
-2.1) Spring Integration 4: It is recommended that all flows have the build number 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
+2.1) Spring Integration 4: It is recommended that all flows have the value of the build number higher or equal to 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
 
-2.2) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this new way of deploying enabled in order to firstly make a release of your current CREATE phase (which is using eMagiz4  at the moment) to have a safe eMagiz4 backup prior to the migration in case there will be any problems while upgrading to eMagiz5.
+2.2) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this new way of deploying enabled in order to firstly make a release of the create phase containing only the flows which are currently running on production (be careful to have only what is correctly running on production) in order to have a safe eMagiz4 backup prior to the migration in case there will be any problems while upgrading to eMagiz5.
 
 2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version.
 
 2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
 2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 20 for Root Cloud).
+	
+ <!--- !!! - 2.4.1 and 2.4.2 should be removed because of 4.1.4.1 and 4.1.4.2 --->
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
- 
+  
+  ## 3. Preparation steps 
 
-## 3. Preparation steps 
-
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly( e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment. It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that correctly running on production. It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Make sure** the runtimes you would like to upgrade are running before starting the migration process.
 
@@ -38,10 +39,11 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 3.2.4) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.port”, value: 8444
 
-3.3) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
+3.3) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention because otherwise the migration wizard will encounter problems.
+
+3.4) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
 
 
-## 4.The steps for migrating to eMagiz 5: 
 
 <!--- Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
 - available time for completing the migration process
@@ -51,24 +53,35 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 - affordable down time of the bus (ask your partner contact for the estimated value)
 --->
 
+## 4.The steps for migrating to eMagiz 5: 
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
 4.1.1) **Go to** Deploy -> Releases and create a release based on the backup created during 3.1) named "eMagiz 5 migration".
 
-4.1.2)  **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.2).
+4.1.2) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.2).
 
-4.1.3) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards you can press the install button and further install all the new versions of the flows displayed.
+4.1.3) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, click on the release to set it as an active release.
 
-4.1.4) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+4.1.4.1) **For environments running on premises, go to** Containers -> Containers -> Build new versions -> Download runtime for every runtime that you migrated to eMagiz5.
 
-4.1.4.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+4.1.4.2) **For environments running in a cloud environment, go to** Cloud/AWS Cloud and rebuild the virtual machines where the migrated runtimes are. 
 
-4.1.4.2) Container(s): if you have multiple containers, you can use any order.
+4.1.5) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
 
-4.1.4.3) Connector(s): if you have multiple connectors, you can use any order.
+4.1.6) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. 
 
-4.1.5) **Go to** Runtime dashboard and check if every flow is still active.
+4.1.6.1) Also, if you have custom keystore/trustore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector  
+
+4.1.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+
+4.1.7.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+
+4.1.7.2) Container(s): if you have multiple containers, you can use any order.
+
+4.1.7.3) Connector(s): if you have multiple connectors, you can use any order.
+
+4.1.8) **Go to** Runtime dashboard and check if every flow is still active.
 
 
 ### 4.2 Using the "step by step" wizard 
@@ -83,14 +96,24 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 4.2.5) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
 
-4.2.6) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards you can press the install button and further install all the new versions of the flows displayed.
+4.1.6) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, click on the release to set it as an active release.
 
-4.2.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+4.1.7.1) **For environments running on premises, go to** Containers -> Containers -> Build new versions -> Download runtime for every runtime that you migrated to eMagiz5
 
-4.2.7.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+4.1.7.2) **For environments running in a cloud environment, go to** Cloud/AWS Cloud and rebuild the virtual machines where the migrated runtimes are. 
 
-4.2.7.2) Container(s): if you have multiple containers, you can use any order.
+4.1.8) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
 
-4.2.7.3) Connector(s): if you have multiple connectors, you can use any order.
+4.1.9) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. 
 
-4.2.8) **Go to** Runtime dashboard and check if every flow is still active.
+4.1.9.1) Also, if you have custom keystore/trustore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector  
+
+4.1.10) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
+
+4.1.10.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+
+4.1.10.2) Container(s): if you have multiple containers, you can use any order.
+
+4.1.10.3) Connector(s): if you have multiple connectors, you can use any order.
+
+4.1.11) **Go to** Runtime dashboard and check if every flow is still active.
