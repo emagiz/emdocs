@@ -13,7 +13,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.2) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this new way of deploying enabled in order to firstly make a release of the create phase containing only the flows which are currently running on production (be careful to have only what is correctly running on production) in order to have a safe eMagiz4 backup prior to the migration in case there will be any problems while upgrading to eMagiz5.
 
-2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version.
+2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version or the latest cloud template.
 
 2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
@@ -25,9 +25,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
   
   ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that correctly running on production. It is recommended that the acceptance and production environments are the same. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
-
-3.2) **Make sure** the runtimes you would like to upgrade are running before starting the migration process.
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are correctly running on production. It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Go to** Create -> Settings -> Message bus settings and copy the technical name of the bus. Then go to Deploy -> Properties and create 2 (or 4 if you have a failover bus) new properties for the host and port of the jms server(s). They should all be global, of type string and have the following content:
 
@@ -53,67 +51,49 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 - affordable down time of the bus (ask your partner contact for the estimated value)
 --->
 
+BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development freeze period until the migration process is finished (during the step 4 of the migration) because the wizard is editing all the flows of the bus and has a lock on them.
+
 ## 4.The steps for migrating to eMagiz 5: 
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
-4.1.1) **Go to** Deploy -> Releases and create a release based on the backup created during 3.1) named "eMagiz 5 migration".
+4.1.1) **Go to** Deploy -> Releases and for each environment create a release based on the backup created during 3.1) named "eMagiz 5 migration".
 
-4.1.2) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.2).
+4.1.2) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.1).
 
-4.1.3) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, click on the release to set it as an active release.
+### 4.2 Using the "step by step" wizard
 
-4.1.4.1) **For environments running on premises, go to** Containers -> Containers -> Build new versions -> Download runtime for every runtime that you migrated to eMagiz5.
+4.2.1) **Press** the button "Step 1: Upgrade JMS server(s)", and wait for the process to finish.
 
-4.1.4.2) **For environments running in a cloud environment, go to** Cloud/AWS Cloud and rebuild the virtual machines where the migrated runtimes are. 
+4.2.2) **Press** the button "Step 2: Upgrade process container(s)" and wait for the process to finish.
 
-4.1.5) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
+4.2.3) **Press** the button "Step 3: Upgrade connectors" and wait for the process to finish.
 
-4.1.6) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. 
-
-4.1.6.1) Also, if you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector  
-
-4.1.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
-
-4.1.7.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
-
-4.1.7.2) Container(s): if you have multiple containers, you can use any order.
-
-4.1.7.3) Connector(s): if you have multiple connectors, you can use any order.
-
-4.1.8) **Go to** Runtime dashboard and check if every flow is still active.
+4.2.4) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
 
 
-### 4.2 Using the "step by step" wizard 
+## The deployment of eMagiz5
 
-4.2.1) **Go to** Deploy -> Releases and create a release based on the backup created during 3.1) named "eMagiz 5 migration".
+5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, in the same screen press "Set as active".
 
-4.2.2) **Press** the button "Step 1: Upgrade JMS server(s)", and wait for the process to finish.
+**Note**: If the steps 2.4.1 and 2.4.2 were done previously, the next two steps, 5.2.1 and 5.2.2, are **not mandatory**.
 
-4.2.3) **Press** the button "Step 2: Upgrade process container(s)" and wait for the process to finish.
+5.2.1) **For environments running on premises, go to** Containers -> Containers -> Build new versions -> Download runtime for every runtime that you migrated to eMagiz5.
 
-4.2.4) **Press** the button "Step 3: Upgrade connectors" and wait for the process to finish.
+5.2.2) **For environments running in a cloud environment, go to** Cloud/AWS Cloud and rebuild the virtual machines where the migrated runtimes are installed. 
 
-4.2.5) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
+5.3) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
 
-4.1.6) **Go to** Deploy -> Releases -> Details of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, click on the release to set it as an active release.
+5.4) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4.
 
-4.1.7.1) **For environments running on premises, go to** Containers -> Containers -> Build new versions -> Download runtime for every runtime that you migrated to eMagiz5
+5.4.1) Also, if you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector  
 
-4.1.7.2) **For environments running in a cloud environment, go to** Cloud/AWS Cloud and rebuild the virtual machines where the migrated runtimes are. 
+5.1.7) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
-4.1.8) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
+5.1.7.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
-4.1.9) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. 
+5.1.7.2) Container(s): if you have multiple containers, you can use any order.
 
-4.1.9.1) Also, if you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector  
+5.1.7.3) Connector(s): if you have multiple connectors, firstly start the exit connecotrs and then start the entry connectors.If you do it the other way around, the queues of the exit connectors will be filled up and the bus will have problems.
 
-4.1.10) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
-
-4.1.10.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
-
-4.1.10.2) Container(s): if you have multiple containers, you can use any order.
-
-4.1.10.3) Connector(s): if you have multiple connectors, you can use any order.
-
-4.1.11) **Go to** Runtime dashboard and check if every flow is still active.
+5.1.8) **Go to** Runtime dashboard and check if every flow is still active.
