@@ -18,14 +18,13 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
 2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 20 for Root Cloud).
-	
- <!--- !!! - 2.4.1 and 2.4.2 should be removed because of 4.1.4.1 and 4.1.4.2 --->
+
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
   
   ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are correctly running on production. It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from  [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
+3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
 3.2) **Go to** Create -> Settings -> Message bus settings and copy the technical name of the bus. Then go to Deploy -> Properties and create 2 (or 4 if you have a failover bus) new properties for the host and port of the jms server(s). They should all be global, of type string and have the following content:
 
@@ -72,7 +71,7 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 4.2.4) **Press** the button "Step 4: Remove backward compatibility of JMS server" and wait for the process to finish.
 
 
-## The deployment of eMagiz5
+## 5.The deployment of eMagiz5
 
 5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, in the same screen press "Set as active".
 
