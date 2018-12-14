@@ -17,7 +17,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
-2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 20 for Root Cloud).
+2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 21 for Root Cloud).
 
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
@@ -36,10 +36,9 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 3.2.4) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.port”, value: 8444
 
-3.3) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention because otherwise the migration wizard will encounter problems.
+3.3) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention('in-vm-connection-caching', 'in-vm-connection-plain') because otherwise the migration wizard will encounter problems.
 
 3.4) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
-
 
 
 <!--- Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
@@ -53,6 +52,8 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development freeze period until the migration process is finished (during the step 4 of the migration) because the wizard is editing all the flows of the bus and has a lock on them.
 
 ## 4.The steps for migrating to eMagiz 5: 
+
+**Note** In case you do **not** want to upgrade all your connectors at once pursue points 4.2.1) and 4.2.2) and then **go to** the two data grids below the wizard and upgrade all the connectors you want by selecting them one by one and press "Upgrade container" for each of them.
 
 ### 4.1 Using the "upgrade complete bus at once" button
 
