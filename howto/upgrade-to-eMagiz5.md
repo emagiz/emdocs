@@ -15,7 +15,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version or the latest cloud template.
 
-2.4.1) For on-premise environments only updating your java is not enough, you also need to reinstall the eMagiz5 runtime. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
+2.4.1) For on-premise environments only updating your java is not enough, you also need to install the eMagiz5 runtime. If you already have runtime version 5, a reinstall is not necessary. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
 2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 21 for Root Cloud).
 
