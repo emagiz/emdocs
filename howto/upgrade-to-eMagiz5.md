@@ -17,7 +17,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.4.1) For on-premise environments only updating your java is not enough, you also need to install the eMagiz5 runtime. If you already have runtime version 5, a reinstall is not necessary. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
 
-2.4.2) For environments running in cloud you just need to update to the newest template (R4 for AWS Cloud or instance template >= 21 for Root Cloud).
+2.4.2) For environments running in cloud you just need to update to the newest template (at least R4 for AWS Cloud or instance template >= 21 for Root Cloud).
 
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
@@ -26,28 +26,23 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
 
-3.2) **Go to** Create -> Settings -> Message bus settings and copy the technical name of the bus. Then go to Deploy -> Properties and create 2 (or 4 if you have a failover bus) new properties for the host and port of the jms server(s). They should all be global, of type string and have the following content:
+3.2) For on premise connectors make sure that the firewall has the amqp port 8443 opened
 
-3.2.1) name: technical name + “.amqp01.host”, value: amqp01.cloud000x.emagizcloud.com (in order to replace the ‘x’ in this value you need to contact your partner contact)
+3.3) **Go to** Create -> Settings -> Message bus settings and copy the technical name of the bus. Then go to Deploy -> Properties and create 2 (or 4 if you have a failover bus) new properties for the host and port of the jms server(s). They should all be global, of type string and have the following content:
 
-3.2.2) name: technical name + “.amqp01.port”, value: 8443
+3.3.1) name: technical name + “.amqp01.host”, value: amqp01.cloud000x.emagizcloud.com (in order to replace the ‘x’ in this value you need to contact your partner contact)
+
+3.3.2) name: technical name + “.amqp01.port”, value: 8443
  
-3.2.3) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.host”, value: amqp01b1.cloud000x.emagizcloud.com (in order to replace the ‘x’ in this value you need to contact your partner contact)
+3.3.3) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.host”, value: amqp01b1.cloud000x.emagizcloud.com (in order to replace the ‘x’ in this value you need to contact your partner contact)
 
-3.2.4) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.port”, value: 8444
+3.3.4) (ONLY IF YOU HAVE A FAILOVER BUS) name: technical name + “.amqp01b1.port”, value: 8444
 
-3.3) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention('in-vm-connection-caching', 'in-vm-connection-plain') because otherwise the migration wizard will encounter problems.
+3.4) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention('in-vm-connection-caching', 'in-vm-connection-plain') because otherwise the migration wizard will encounter problems.
 
-3.4) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
+3.5) **Go to** Deploy -> properties and modify the data.dir property, you need to replace "hornetQ" with "artemis" (e.g. "/efs/data/**hornetq**/jms01" to "/efs/data/**artemis**/jms01")
 
-
-<!--- Before choosing one of the two ways of approaching this migration you should take into consideration the following aspects: 
-- available time for completing the migration process
-- size of the bus
-- failover or normal 
-- type of deploying premises: local, cloud slot or both
-- affordable down time of the bus (ask your partner contact for the estimated value)
---->
+3.6) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
 
 BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development freeze period until the migration process is finished (during the step 4 of the migration) because the wizard is editing all the flows of the bus and has a lock on them.
 
