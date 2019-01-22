@@ -1,4 +1,43 @@
-# What Is Messaging?
+# Introduction to integration
+  
+## The need for integration
+  
+  * Enterprises own applications that are: 
+
+    - custom-built
+
+    - acquired from a third-party
+
+    - part of a legacy system, or a combination thereof
+
+    - operating in multiple tiers of different operating system platforms
+
+  * Creating a single, big application to run a complete business is next to impossible (think about the fit of ERP)
+
+  * Vendors offer focused applications around a specific core function
+
+  * To support common business processes and data sharing across applications, these applications need to be integrated
+
+  * Application integration needs to provide efficient, reliable and secure data exchange between multiple enterprise applications
+
+## Integration scenarios
+  * Information portals
+
+  * Data replication
+
+  * Shared business functions
+
+  * Service-Oriented Architectures (SOA)
+
+  * Distributed business processes
+
+  * Business-to-Business (B2B) Integration
+  
+## Integration concept
+
+
+
+## What Is Messaging?
 Messaging is a method of communication between software components or applications. A simple way to understand what messaging does is to consider the telephone system. A telephone call is a synchronous form of communication. I can only communicate with the other party if the other party is available at the time I place the call. Voice mail on the other hand, allows asynchronous communication. With voice mail, when the receiver does not answer, the caller can leave him a message; later the receiver (at his convenience) can listen to the messages queued in his mailbox. Voice mail enables the caller to leave a message now so that the receiver can listen to it later, which is lot easier than trying to get the caller and the receiver on the phone at the same time. Voice mail bundles (at least part of) a phone call into a message and queues it for later consumption; this is essentially how messaging works.
 
 Messaging is a technology that enables high-speed, asynchronous, program-to-program communication with reliable delivery. Programs communicate by sending packets of data called messages to each other. Channels, also known as queues, are logical pathways that connect the programs and convey messages. A channel behaves like a collection or array of messages, but one that is magically shared across multiple computers and can be used concurrently by multiple applications. A sender or producer is a program that sends a message by writing the message to a channel. A receiver or consumer is a program that receives a message by reading (and deleting) it from a channel.
