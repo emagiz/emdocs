@@ -2,19 +2,21 @@
 ---
 
 ---
-- General iPaaS documentation  – How2 use iPaaS
-- ILM Methodology – How2 apply methodology
+- General iPaaS documentation  – How2 use iPaaS 
+- ILM Methodology – How2 apply methodology 
 - [Messaging concepts and patterns](messaging/index.md)
 - [Reference guide for components](/referenceguide/index.md) 
-- Platform API documentation
+<!--- - Platform API documentation
 - Release notes
 
 ---
 
 ---
-
-- Tutorials 
+--->
 - [How2's](howto/index.md)
-- Best practices
+<!--- 
+- Tutorials
+- Best practices 
+--->
 
 
