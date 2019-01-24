@@ -1,9 +1,9 @@
 # eMagiz Platform documentation
 ---  
 ![alttext](resources/eMagiz.png) 
-- [General iPaaS documentation  – How2 use iPaaS](iPaaS/overview.md) 
+<!--- - [General iPaaS documentation  – How2 use iPaaS](iPaaS/overview.md) --->
+- [Integration scenarios and Messaging concepts](messaging/index.md)  
 - [ILM Methodology – How2 apply methodology](ILM/overview.md)
-- [Integration scenarios and Messaging concepts](messaging/index.md)
 - [Reference guide for components](/referenceguide/index.md) 
 - [How2's](howto/index.md)
 ---
