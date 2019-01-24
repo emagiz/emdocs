@@ -3,7 +3,7 @@
 ![alttext](resources/eMagiz.png) 
 - [General iPaaS documentation  – How2 use iPaaS](ILM/overview.md)  
 - [Integration scenarios and Messaging concepts](integration/index.md)  
-- [ILM Methodology – How2 apply methodology](iPaaS/overview.md)
+- [ILM Methodology – How2 apply methodology](iPaaS/ILMindex.md)
 - [Reference guide for components](/referenceguide/index.md) 
 - [How2's](howto/index.md)
 ---
