@@ -32,4 +32,4 @@ ILM is an approach to data and storage management that recognizes that the value
       * Connect the systems with information flows  
     
    * **Result**
-      <p align="center" > <img width=""959" height="114" src="eMagiz-diagram.png"> </p>
+      <p align="center" > <img width=""959" height="114" src="capture-result.png"> </p>
