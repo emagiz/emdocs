@@ -32,4 +32,40 @@ ILM is an approach to data and storage management that recognizes that the value
       * Connect the systems with information flows  
     
    * **Result**
-      <p align="center" > <img width=""959" height="114" src="capture-result.png"> </p>
+      <p align="center" > <img width="959" height="114" src="capture-result.png"> </p>  
+  
+  ## 2. Design
+  
+   * Design phase objective  
+      * Design the solution based on the requirements of the capture phase  
+      * Design tasks:  
+       -> Systems connection settings  
+       -> CDM  
+       -> Message definitions (x 3: CDM, system 1, system 2)  
+       -> Message mappings  
+       -> Architecture  
+      
+   * Results  
+     * Message bus:  
+      <p align="center" > <img width=""960" height="262" src="design-result.png"> </p>  
+     
+     * CDM:  
+      <p align="center" > <img width=""960" height="262" src="CDM-result.png"> </p>  
+     
+     * CDM message definition:  
+      <p align="center" > <img width=""960" height="262" src="CDM-msg-def-result.png"> </p>  
+     
+     * System message:  
+      <p align="center" > <img width=""960" height="262" src="sys-msg-result.png"> </p>  
+     
+     * Message mapping:  
+      <p align="center" > <img width=""960" height="262" src="msg-format-result.png"> </p>  
+     
+     * Architecture:  
+      <p align="center" > <img width=""960" height="262" src="arch-result.png"> </p>  
+     
+   ## 3. Create
+   
+   
+
+
