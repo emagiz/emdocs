@@ -239,7 +239,9 @@ ILM is an approach to data and storage management that recognizes that the value
   
   
 
- 
+<p align="center"> <b> Messaging infrastructure layer </b></p>
+
+<p align="center"> <img width="810" height="300" src="5-layer-model.png"> </p>
 
    ## 4. Deploy 
 
