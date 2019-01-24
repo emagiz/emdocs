@@ -31,9 +31,6 @@ Combining architected models, full lifecycle support and built-in patterns and b
 
 Let’s sum up the key facts and figures about eMagiz and our value proposition:
 
-  * 100% privately owned Dutch iPaaS vendor, established in 2011
-  * 12 active partners, 50+ customers, 2MLN+ transactions per day
-  * 10 FTE R&D team & platform sales
   * 1 Multi-tenant iPaaS, fully supporting Integration Lifecycle Management with 100+ components
   * Managed Services: EDI, ESB & EAI for 80+ food & DIY retailers
   * We help our partners and customers drive bi-modal IT integration:
