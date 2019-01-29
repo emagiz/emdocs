@@ -247,5 +247,93 @@ ILM is an approach to data and storage management that recognizes that the value
 <p align="center"> <img width="810" height="300" src="5-layer-model.png"> </p>
 
    ## 4. Deploy 
+   
+   - **Why** Deploy?
+     - To deploy your bus components in correct runtime environments
+     
+     - "To run what you built"  
+   
+   - **How to** Deploy?
+
+     - Buy a license for your bus from the trainer​
+
+     - Make a new release, based on what is in Create​
+
+     - Press install once
+
+     - Read the message and follow it:
+
+     - Create new properties
+    
+              - Global: name=[mybusname].jms01.host, value=localhost (=the bus runs on my laptop)
+              - Global: name=[mybusname].jms01.port, value=5445
+              
+     <p align="center"> <img width="865 " height="446" src="new-deploy-properties.png"> </p>
+     
+     - Download runtimes, and unpack (preferably in C:/Dev/)
+
+     - Start runtimes (for each unpacked folder-->bin/karaf.bat)
+
+     - Press install again to install the functional flows
+
+     - Start the flows from the Runtime dashboard
+     
+     <p align="center"> <img width="1082" height="309" src="deploy-runtime-dashboard.png"> </p>
+     
+   - **Test** the deploy/the flows:
+   
+     - Checking the flow status in the Runtime dashboard
+     - Check if the message in and out directories have been created
+     - Dropping the order example file in the "in" directory (pickup)
+     - See if it disappears within 6 seconds
+     - See if it shows up in the "out" directory (drop)
+     
+
+   ## 4. Manage 
+    
+   - **Why** manage?  
+   
+     - Pro active service and support based on alerts and notifications
+     - Logs all failed messages, including the:   
+        -> exception that caused the error  
+        -> message headers and payload at the time of the error  
+        -> message history at that moment  
+     - Gives insight into the performance of your bus with statistics
+     - Log entries of runtimes
+   
+   - **Ways of** managing
+   
+     - Monitoring
+     - Alerting & Notifying
+     - Environment management
+
+   - Monitoring statistics
+     - Queue statistics
+        -> Used to determine amount of consumers
+        -> Used to determine amount of processed messages per message type
+     - Runtime statistics
+        -> Used to determine memory usage
+        -> Used to determine CPU usage
+        -> Used to determine if a runtime is connected
+
+   - Error messages & monitoring log entries
+     - Errors and logs of runtimes are send to the eMagiz portal
+     - Errors show functional errors and caught exceptions
+     - Logs show uncaught exceptions, info and warning message 
+
+   - **How to** manage? 
+   
+     - Check the logs to see if your runtime started correctly
+     - Check the queue statistics if messages have been processed
+     - Check error messages if any messages failed
+     - Check alerts and notifications
+     
+   - **Tips&tricks**
+     - Send yourself a notification email (for a failed message)
+        -> Enable the “error message” notification setting
+        -> Generate an error message in your bus
+        -> Wait 2 minutes, and then check your email
+        -> Disable the notification setting again to avoid spam
+
 
 
