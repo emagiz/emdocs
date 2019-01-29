@@ -86,3 +86,19 @@ Then you should edit this script and fill in all the configuration settings.
 | SERVICELOGFILE | Path to the service log file in the example case this would be /opt/emagiz/emagiztest/logs/service.log |
 | USER | User that is going to run the emagiz process. e.g. emagiztest |
 | GROUP | Group that is allowed to start the process. e.g. emagiztest | 
+
+After filling the appropriate settings you can test the script by running it. Make sure you have the license file in place otherwise you will not be able to start your process.
+ 
+admin@community:/opt/emagiz/emagiztest/service$ sudo ./daemon-installer.sh start
+When the service starts succesfully, you can call the same command again except with the stop command to stop the daemon.
+Now all that remains is to install the daemon as a service you can do this by calling the command.
+
+    admin@community:/opt/emagiz/emagiztest/service$ sudo ./daemon-installer.sh install
+
+From now on you can start and stop the service by calling the service <servicename> start/stop
+ 
+    admin@community:/opt/emagiz/emagiztest/service$ sudo service emagizService start
+ 
+ Or
+ 
+    admin@community:/opt/emagiz/emagiztest/service$ sudo initctl emagizService start
