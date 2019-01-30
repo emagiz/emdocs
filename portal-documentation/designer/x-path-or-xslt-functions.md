@@ -1,4 +1,4 @@
-#XPath/XSLT functions
+# XPath/XSLT functions
 
 https://my.emagiz.com/link/documentation/107
 In addition to the standard XPath/XSLT functions (see W3Schools), eMagiz also supports the functions that are listed below. These extension functions are located in following namespaces:
