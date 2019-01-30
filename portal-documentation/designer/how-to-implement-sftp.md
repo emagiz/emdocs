@@ -1,6 +1,6 @@
 # How 2 implement SFTP
 
-https://my.emagiz.com/link/documentation/118
+https://my.emagiz.com/link/documentation/118  
 **In the secured tunnels release we extend our support for file transfer patterns with SFTP. eMagiz already supported FTP and FTPS. So what’s new and different?**
 
  
