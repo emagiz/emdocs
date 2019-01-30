@@ -77,3 +77,32 @@ Specify the web service URL, username and password that should be used for retri
   - **Standalone**: edit the console/run-in-console.cmd (Windows) or *console/run-in-console.sh* (Linux) file, and specify values for the options *SAAS_URL, SAAS_USERNAME* and *SAAS_PASSWORD*
   - **Windows service**: edit the *service/emagiz-service.ini* file, and specify values for the options *emagiz.saas.ws.url*, *emagiz.saas.ws.username* and *emagiz.saas.ws.password*
   - **Mendix**: specify values for the constants *SaasWsUrl*, *SaasWsUsername* and *SaasWsPassword* from the *EMagiz_Runtime* module
+
+# Build-in properties
+
+In addition to any custom properties, eMagiz also contains some built-in properties that are automatically available for use in message flows, provided your flow contains a property placeholder support object. These built-in properties are:  
+
+| **name** | **description** | **availability** |
+| :---: | :---: | :---: |  
+| emagiz.runtime.name | the name of the current JVM | always |
+| emagiz.runtime.environment	| the environment (test, accp or prod) of the current JVM	 | always |
+| emagiz.ws.url	 |  URL for eMagiz iPaaS web services	 | only when the runtime is configured with connection settings to eMagiz iPaaS |
+| emagiz.customer.username	| username for connecting with eMagiz iPaaS | only when the runtime is configured with connection settings to eMagiz iPaaS |
+| emagiz.customer.password	| password for connecting with eMagiz iPaaS | only when the runtime is configured with connection settings to eMagiz iPaaS |  
+
+Note that all the built-in property names start with the prefix emagiz; by convention (and to prevent naming conflicts) user-defined custom properties should **never** start with this prefix.  
+
+# Property source order
+
+As described in the previous sections, there are multiple options for specifying properties. When eMagiz needs to resolve a property placeholder, all possible property sources are checked in this order:  
+
+ 1. Built-in properties
+ 2. https://my.emagiz.com
+ 3. Mendix constants
+ 4. .properties file
+ 5. 'embedded' properties
+ 
+As a result, property sources higher up in this list can override values that are specified in a source lower in this list, but not the other way around. For example, it is impossible to override any of the built-in properties, but 'embedded properties' can be overridden by any of the other property sources (which makes 'embedded' properties a good choice for a 'fall-back' option containing some sort of default values).
+
+ 
+Note that the order of the last two options can be switched by selecting the *local override* option (*advanced* tab-page) of the *property placeholder support object* in your flow.
