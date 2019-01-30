@@ -46,7 +46,7 @@ Create a text-file (the preferred file extension is *.properties*, but this is n
     mendix.ws.username=myUsername
     mendix.ws.password=myPassword
     
-Note that a backslash ('\') is the escape character, so for file paths you should always use forward slashes ('/'), even when running on Windows. For more information about the syntax (including the alternate XML syntax), see the Java [documentation] (https://docs.oracle.com/javase/6/docs/api/java/util/Properties.html).
+Note that a backslash ('\') is the escape character, so for file paths you should always use forward slashes ('/'), even when running on Windows. For more information about the syntax (including the alternate XML syntax), see the Java [documentation](https://docs.oracle.com/javase/6/docs/api/java/util/Properties.html).
 
  
 # Configuring property source
