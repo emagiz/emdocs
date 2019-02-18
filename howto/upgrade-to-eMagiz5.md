@@ -92,3 +92,20 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 5.1.7.3) Connector(s): if you have multiple connectors, firstly start the exit connecotrs and then start the entry connectors.If you do it the other way around, the queues of the exit connectors will be filled up and the bus will have problems.
 
 5.1.8) **Go to** Runtime dashboard and check if every flow is still active.
+
+## Health checks (test cases)
+
+Here are some bus health checks that you should do after the migration is finished and every flow seems to be running in the runtime dashboard:
+
+ #### Large message issues
+  - when sending a message from HornetQ client, a message is considered to be **large** when exceds the default value of **100 KB**
+  - when sending a message from AMQP client, a message is considered to be **large** when exceds the default value of **500 KB**
+  - the issue should not appear because an autorecovery mechanism was developed in order to avoid it but you should check just to make sure there are no unforeseen bugs.
+  
+ <p align="center">
+  <img width="432" height="229" src="artemis-server.png"> <img width="454" height="250" src="artemis-server-settings.png">
+</p>
+
+ #### Custom queues
+ 
+  - when having integrations which contain **custom queues** within the **jms server flow** they should be checked because during the migration they were recreated and they might not be configured the same way they were configured before.  
