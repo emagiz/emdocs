@@ -203,9 +203,25 @@ Apache ActiveMQ Artemis also allows routing between queues to be configured in s
 
 For more information please see Core Bridges and Diverting and Splitting Message Flows.
 
+## QPID
+
+Qpid JMS is a complete Java Message Service 2.0 client built using the Qpid Proton protocol engine.
+
+Features:
+  - JMS 2.0 API
+  - Secure communication via SSL and SASL
+  - Producer flow control
+  - Failover
+  - Pure-Java implementation
+
+Most of the relevant information about QPID is displayed in the helptext of eMagiz right where it is needed.
+
+For more infromation please see [JMS with the strength of AMQP](https://qpid.apache.org/components/jms/index.html#jms-with-the-strength-of-amqp)
+
 ### Sources
 
 - https://activemq.apache.org/artemis/docs/latest/
 - https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cpoq/index.html
 - https://www.enterpriseintegrationpatterns.com/patterns/messaging/Introduction.html
 - https://spring.io/understanding/AMQP
+- https://qpid.apache.org/components/jms/index.html
