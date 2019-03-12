@@ -79,7 +79,7 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 5.3) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
 
-5.4) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4. In order to finish the deployment of the eMagiz Mendix connectors of the bus follow these steps.
+5.4) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4. In order to finish the deployment of the eMagiz Mendix connectors of the bus follow [these steps](https://github.com/emagiz/emdocs/blob/master/howto/upgrade-to-eMagiz5.md#emagiz-mendix-connector-migration-steps).
 
 5.5) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
