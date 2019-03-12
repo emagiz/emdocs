@@ -87,7 +87,7 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 5.5.2) Container(s): if you have multiple containers, you can use any order.
 
-5.5.3) Connector(s): if you have multiple connectors, firstly start the exit connecotrs and then start the entry connectors.If you do it the other way around, the queues of the exit connectors will be filled up and the bus will have problems.
+5.5.3) Connector(s): if you have multiple connectors, firstly start the exit connectors and then start the entry connectors.If you do it the other way around, the queues of the exit connectors will be filled up and the bus will have problems.
 
 5.6) **Go to** Runtime dashboard and check if every flow is still active.
 
@@ -97,15 +97,13 @@ If you have custom keystore/truststore used by the Mendix Connector, you need to
 The upgrading of the eMagiz Mendix connector consists of three parts:  
 
 - upgrading the connector configuration in the portal
-	- the migration of the mx connector(s) flow(s) has been done by the wizard
-	- the user should not need to change anything in the configurations UNLESS they have other settings than the default ones.
+	- the migration of the mx connector(s) flow(s) which has been done by the wizard in step 4
+	- you should not need to change anything in the configurations **unless** they have other settings than the default ones
 
-- upgrading the EMC Mendix app module
-	- should work using current academy documentation(put a link to it or copy it into github?)
-	- test it on an actual migration to see if it needs refinement (tested, does not seem to be needing refinement maybe a bit more explanations/details? ask Samet)
+- upgrading the EMC Mendix app module for which there is a separate [page](upgrade-eMagizMendixConnector.md) 
  
 - starting the new EMC connector:
-	- in deploy ->  releases, press install for the release you want and then, from the popup page that opens, download the emc package needed for starting the mx connector of the corresponding system.
+	- in deploy ->  releases, press install for the release you want and then, from the popup page that opens, download the ".emc" package needed for starting the mx connector of the corresponding system
 	- import the package into the connector the same way as before
 
 
@@ -125,7 +123,7 @@ This test is only applicable if you know that one of the systems in the bus is s
   - when sending a message from a HornetQ client, a message is considered to be **large** when it exceeds the default value of **100KB**
   - when sending a message from an AMQP client, a message is considered to be **large** when it exceeds the default value of **500KB**
 
-The issue with large messages happened when keeping sending large messages to a destination queue. At some point, the consumer of this queue stops processing the messages and messages starts to pile up on the queue. No errors or warnings appeared on the log. The issue has been addressed and should not occur anymore because an auto recovery mechanism has been introduced in eMagiz since build 36 to avoid this problem.
+The issue with large messages happens when the consumer of the destination queue stops processing the messages and they start to pile up on it. No errors or warnings appear on the log. The issue has been addressed and should not occur anymore because an auto recovery mechanism has been introduced in eMagiz since build 36 to avoid this problem.
 
 However, you should test to make sure that the default settings of the auto recovery mechanism work correctly in your use case. The auto recovery mechanism is configured to check every 60 seconds if a message takes longer than 4 minutes to be processed in asynchronous flows and 1 minute for synchronous flows. When that behavior is detected, the connection is reset and afterwards messages are processed again.
 
