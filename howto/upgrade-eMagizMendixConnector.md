@@ -4,7 +4,7 @@ To get a new version of the EMagiz Mendix Connector in a Mendix app, the followi
 
 ##  1. Download the eMagiz Mendix connector
    - The EMagiz Mendix connector can be downloaded via EMagiz. Log in and then go to one of the busses you have access to.    
-   - Under "Deploy | On Premises | Runtime Downloads " the EMagiz Mendix connector can be downloaded. It is important that you look at the column Mendix version. It must correspond to the Mendix version of the project where you want to use the EMagiz Mendix Connector. If you do not do this then the connector will **not** work.  
+   - Go to **Deploy -> On Premises -> Runtime Downloads** the EMagiz Mendix connector can be downloaded. It is important that you look at the column Mendix version. It must correspond to the Mendix version of the project where you want to use the EMagiz Mendix Connector. If you do not do this then the connector will **not** work.  
    
 <p align="center">
   <img  src="resources/emc-runtime-downloads.png"> 
@@ -36,8 +36,13 @@ If it is already present, you get a question where you choose the **override** o
 - Explanation User Interface
 - Version Numbering
 
-##  5. Log errors/warnings 
-There are several situations where you get errors/warnings in your project as a result of the installation/updating the EMagiz Mendix connector. An example of this is when The Mendix project has multiple languages. After the import you will receive multiple errors/warnings. These are easy to solve by following the steps.
+##  5. Possible errors  
+
+There are several situations where you get errors/warnings in your project as a result of the installation/updating the EMagiz Mendix connector.
+
+  - **Log errors/warnings**
+  
+ An example of this is when The Mendix project has multiple languages. After the import you will receive multiple errors/warnings. These are easy to solve by following the steps.
 
 <p align="center">
   <img src="resources/emc-language-operations.png"> 
@@ -47,9 +52,11 @@ There are several situations where you get errors/warnings in your project as a 
   <img src="resources/emc-language-operations-2.png"> 
 </p>  
 
-Another example is the layouts. These can be solved by choosing the layouts that are used within your project.  
 
-##  6. eMagiz cleanup tool
+
+  - **Layout errors that can be solved with the eMagiz cleanup tool**
+  
+Another example is the layouts. These can be solved by choosing the layouts that are used within your project.  
 
 <p align="center">
   <img src="resources/emc-display-project-directory.png"> 
@@ -85,7 +92,7 @@ For reference, all JAR files using the EMagizMendixConnector (version 2.4.1):
   <img src="resources/emc-all-jar-files.png"> 
 </p>
 
-##  7. Cleanup project directory
+  - **Cleanup the project directory to avoid other problems**
 
 The last step is to clean up the project directory and then committing your customization. Ideally, you perform all of these actions in a single commit so that you can perform a rollback and so that you can easily isolate any problems.
 
@@ -93,7 +100,7 @@ The last step is to clean up the project directory and then committing your cust
   <img src="resources/emc-mendix-clean-project-directory.png"> 
 </p>  
 
-##  8. Best practices  
+##  6. Best practices  
 
  - Configure startup time
  - Communication in conjunction with Mendix Inbound/outbound Web services
