@@ -71,7 +71,7 @@ The cleanup is in the project directory Under the Resource folders.
 Click right mouse button (or double click) For "Openings with | Java™ Platform SE Binary
 
 <p align="center">
-  <img src="resources/emc-open-cleanup-tool.png"> 
+  <img src="resources/emc-open-cleanup-tool-2.png"> 
 </p> 
 
 After performing this action it is good to check the userlib for verification. This can be based on the following steps. First open your project folder (see below)
