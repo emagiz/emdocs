@@ -15,7 +15,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met in order:
 
 2.3) Java 8: the new framework works only from java 8 or higher. Java 8 is required for updating to the latest runtime version or the latest cloud template.
 
-2.4.1) For on-premise environments only updating your java is not enough, you also need to install the eMagiz5 runtime. If you already have runtime version 5, a reinstall is not necessary. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz portal if you have on-premise installations. 
+2.4.1) For on-premise environments only updating your java is not enough, you also need to install the eMagiz5 runtime. If you already have runtime version 5, a reinstall is not necessary. Start updating your runtimes now by downloading the latest version of the runtime from the eMagiz iPaaS if you have on-premise installations. 
 
 2.4.2) For environments running in cloud you just need to update to the newest template (at least R4 for AWS Cloud or instance template >= 21 for Root Cloud).
 
@@ -79,11 +79,13 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 5.3.2) Container(s): if you have multiple containers, you can use any order.
 
-5.3.3) Connector(s): if you have multiple connectors, firstly start the exit connectors and then start the entry connectors.If you do it the other way around, the queues of the exit connectors will be filled up and the bus will have problems.
+5.3.3) Connector(s): if you have multiple connectors, firstly start the exit connectors and then start the entry connectors.If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
 
 5.4) **Go to** Runtime dashboard and check if every flow is still active.
 
-5.5) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4. In order to finish the deployment of the eMagiz Mendix connectors of the bus follow [these steps](https://github.com/emagiz/emdocs/blob/master/howto/upgrade-to-eMagiz5.md#emagiz-mendix-connector-migration-steps). **It is recommended** that the migration of the eMagiz Mendix Connector(s) to be done at last because
+**Note:** **It is recommended** that the migration of the eMagiz Mendix Connector(s) to be done at last because it needs to be done 'one connector at a time' and depending on the number of Mendix systems that the bus contains, it might take quite some time. 
+
+5.5) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4. In order to finish the deployment of the eMagiz Mendix connectors of the bus follow [these steps](upgrade-to-eMagiz5.md#emagiz-mendix-connector-migration-steps). 
 
 
 ## Health checks (test cases)
@@ -139,18 +141,42 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
 In order to upgrade the eMagiz Mendix Connector from your project you need to follow these steps:
 
   1) In case the standard configuration of the connector infra has been modified, it should be checked to make sure the desired values are still in place.
-  2) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following [documentation](upgrade-eMagizMendixConnector.md). The eMagiz Mendix Connector version you need to download is 3.0.0.
-  3) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
-     **Note:**  when it comes to the deploy packages, the versions of the connector infra and the request handler of a system MUST have in the version number the last figure 3 (e.g. x.y.z.3) while the versions of the connector (entry or exit flow) can have the 2 or 3 as the last figure (e.g. x.y.z.2 or x.y.z.3)
   
-  4) import the package into the connector the same way as before
+  2) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following [documentation](upgrade-eMagizMendixConnector.md). The eMagiz Mendix Connector version you need to download is 3.0.0. **It is mandatory** to do a cleanup of the project directory after finishing upgrading the eMagiz Mendix Connector.
+  
+  3) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
+  
+     **Note:**  when it comes to the deploy packages, the versions of the connector infra and the request handler of a system MUST have the build number 3 (e.g. x.y.z.3) while the one of the connector (entry or exit flow) can have be 2 or 3 (e.g. x.y.z.2 or x.y.z.3).
+  
+  4) **Run** the Mendix project
+  
+  5) **Go to** the eMagiz Mendix connector tab
+  
+  6) **Press** upload and load there the file you downloaded from the eMagiz iPaas at step 3. 
+  
+  7) **Press** save to return in the eMagiz Mendix connector tab.
+  
+  8) **Start** the flows in the following order:
+  
+     8.1) The connector infra
+    
+     8.2) The request handler
+     
+     8.3) If you have multiple connector flows, firstly start the exit connectors and then the entry connectors. If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
+     
+     8.4) In case your connector does not work check the [EMC health checks section](upgrade-to-eMagiz5.md#emc-health-checks) 
+  
+ ### EMC health checks
  
- <!--- Feedback items left to be fixed: 
-		 - If you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector.  
-		 - mention the cleanup tool as mandatory
-		 - consistency in naming (eMagiz)
-		 - detail more step 4 of emc migration
-		 - explain why the emc migration is last
+   - If you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector.
+ 
+ <!--- Feedback items left to be fixed:
+		 - delete 5.2.1 and 5.2.2 (can be seen in versioning history) - done
+		 - If you have custom keystore/truststore used by the Mendix Connector, you need to download the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector. do something about this info  - done
+		 - consistency in naming (eMagiz) - done
+		 - detail more step 4 of emc migration - done
+		 - mention the cleanup tool as mandatory - done
+		 - explain why the emc migration is last - done
 --->
 
   
