@@ -1,10 +1,10 @@
 # STEP PLAN INSTALLATION EMAGIZ MENDIX CONNECTOR
 
-To get a new version of the EMagiz Mendix Connector in a Mendix app, the following steps need to be performed.  
+To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps need to be performed.  
 
 ##  1. Download the eMagiz Mendix connector
-   - The EMagiz Mendix connector can be downloaded via EMagiz. Log in and then go to one of the busses you have access to.    
-   - Go to **Deploy -> On Premises -> Runtime Downloads** the EMagiz Mendix connector can be downloaded. It is important that you look at the column Mendix version. It must correspond to the Mendix version of the project where you want to use the EMagiz Mendix Connector. If you do not do this then the connector will **not** work.  
+   - The eMagiz Mendix connector can be downloaded via eMagiz. Log in and then go to one of the busses you have access to.    
+   - Go to **Deploy -> On Premises -> Runtime Downloads** the eMagiz Mendix connector can be downloaded. It is important that you look at the column Mendix version. It must correspond to the Mendix version of the project where you want to use the eMagiz Mendix Connector. If you do not do this then the connector will **not** work.  
    
 <p align="center">
   <img  src="resources/emc-runtime-downloads.png"> 
@@ -17,18 +17,44 @@ To get a new version of the EMagiz Mendix Connector in a Mendix app, the followi
   <img src="resources/emc-import-mx-app-module.png"> 
 </p>
 
-   - Select the appropriate EMagizMendix connector.
+   - Select the appropriate eMagiz Mendix connector.
 
 **Please note:**  
 If it is already present, you get a question where you choose the **override** option.
 
 ##  3. Configuration 
-- Afterstartup/before shutdown
-- Rights
-- Navigation
-- Constants
-- Webservices cloud / Webservice user
-- Request handler
+- **Afterstartup/Before shutdown:** In the Mendix Project, go to Project settings -> Runtime -> for the fields After startup and Before shutdown select the coresponding MFs from the eMagizMendixConnector module.
+
+<p align="center">
+  <img src="resources/emc-after-startup-before-shutdown.png"> 
+</p>  
+
+- **Rights** : It is recommended that only the administrator user role has access to the eMagiz Mendix Connector module. In order to do this go to Project Security -> User Roles -> start editing the Administrator User Role -> start editing the Modules roles -> check the box of the eMagiz Mendix Connector module and save. 
+
+<p align="center">
+  <img src="resources/emc-security-rights.png"> 
+</p>
+
+- **Navigation page item:** In the Mendix project, go to Navigation -> Click New Item -> fill in the fields as in the image below.
+
+<p align="center">
+  <img src="resources/new-navigation-item.png"> 
+</p>
+
+- **Constants:** In the Mendix project, go to project settings -> start editing the active configuration -> Constants -> and add there the following constants from the eMagizMendixConnector module: 
+
+<p align="center">
+  <img src="resources/emc-constants.png"> 
+</p>
+
+The values for these constants can be found from the eMagiz iPaaS: Deploy -> On premises -> Runtime connection settings
+<p align="center">
+  <img src="resources/emc-settings-constants.png"> 
+</p>
+
+- **Webservices cloud / Webservice user**
+
+- **Request handler**
 
 ##  4. Usage  
 - Deployment/updating flows
@@ -38,7 +64,7 @@ If it is already present, you get a question where you choose the **override** o
 
 ##  5. Possible errors  
 
-There are several situations where you get errors/warnings in your project as a result of the installation/updating the EMagiz Mendix connector.
+There are several situations where you get errors/warnings in your project as a result of the installation/updating the eMagiz Mendix connector.
 
   - **Log errors/warnings**
   
@@ -80,13 +106,13 @@ After performing this action it is good to check the userlib for verification. T
   <img src="resources/emc-display-project-directory.png"> 
 </p>
 
-Then navigate to Userlib. In this userlib, there should only be one reference to a version of the EMagizMendixConnector. (see below)
+Then navigate to Userlib. In this userlib, there should only be one reference to a version of the eMagizMendixConnector. (see below)
 
 <p align="center">
   <img src="resources/emc-mendix-jar-file.png"> 
 </p>
 
-For reference, all JAR files using the EMagizMendixConnector (version 2.4.1):  
+For reference, all JAR files using the eMagizMendixConnector (version 2.4.1):  
 
 <p align="center">
   <img src="resources/emc-all-jar-files.png"> 
