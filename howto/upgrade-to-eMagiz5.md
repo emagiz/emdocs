@@ -85,8 +85,6 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 **Note:** **It is recommended** that the migration of the eMagiz Mendix Connector(s) to be done at last because it needs to be done 'one connector at a time' and depending on the number of Mendix systems that the bus contains, it might take quite some time. 
 
-5.5) **For Mendix Connectors, go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4. In order to finish the deployment of the eMagiz Mendix connectors of the bus follow [these steps](upgrade-to-eMagiz5.md#emagiz-mendix-connector-migration-steps). 
-
 
 ## Health checks (test cases)
 
@@ -137,34 +135,34 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
 
 
 ## eMagiz Mendix Connector Migration steps
- 
-In order to upgrade the eMagiz Mendix Connector from your project you need to follow these steps:
 
-  1) In case the standard configuration of the connector infra has been modified, it should be checked to make sure the desired values are still in place.
+  1) **Go to** Deploy -> On premises -> Runtime downloads and download the eMagiz Mendix connector with the eMagiz version emc 3.0.0. Be careful, this new version of the eMagiz Mendix Connector is **not** compatible with eMagiz4.
+
+  2) In case the standard configuration of the connector infra has been modified, it should be checked to make sure the desired values are still in place.
   
-  2) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following [documentation](upgrade-eMagizMendixConnector.md). The eMagiz Mendix Connector version you need to download is 3.0.0. **It is mandatory** to do a cleanup of the project directory after finishing upgrading the eMagiz Mendix Connector.
+  3) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following [documentation](upgrade-eMagizMendixConnector.md). The eMagiz Mendix Connector version you need to download is 3.0.0. **It is mandatory** to do a cleanup of the project directory after finishing upgrading the eMagiz Mendix Connector.
   
-  3) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
+  4) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
   
      **Note:**  when it comes to the deploy packages, the versions of the connector infra and the request handler of a system MUST have the build number 3 (e.g. x.y.z.3) while the one of the connector (entry or exit flow) can have be 2 or 3 (e.g. x.y.z.2 or x.y.z.3).
   
-  4) **Run** the Mendix project
+  5) **Run** the Mendix project
   
-  5) **Go to** the eMagiz Mendix connector tab
+  6) **Go to** the eMagiz Mendix connector tab
   
-  6) **Press** upload and load there the file you downloaded from the eMagiz iPaas at step 3. 
+  7) **Press** upload and load there the file you downloaded from the eMagiz iPaas at step 3. 
   
-  7) **Press** save to return in the eMagiz Mendix connector tab.
+  8) **Press** save to return in the eMagiz Mendix connector tab.
   
-  8) **Start** the flows in the following order:
+  9) **Start** the flows in the following order:
   
-     8.1) The connector infra
+     9.1) The connector infra
     
-     8.2) The request handler
+     9.2) The request handler
      
-     8.3) If you have multiple connector flows, firstly start the exit connectors and then the entry connectors. If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
+     9.3) If you have multiple connector flows, firstly start the exit connectors and then the entry connectors. If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
      
-     8.4) In case your connector does not work check the [eMagiz Mendix Connector health checks](upgrade-to-eMagiz5.md#emc-health-checks) 
+     9.4) In case your connector does not work check the [eMagiz Mendix Connector health checks](upgrade-to-eMagiz5.md#emc-health-checks) 
   
  ### eMagiz Mendix Connector Health checks
  
