@@ -164,7 +164,7 @@ In order to upgrade the eMagiz Mendix Connector from your project you need to fo
      
      8.3) If you have multiple connector flows, firstly start the exit connectors and then the entry connectors. If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
      
-     8.4) In case your connector does not work check the [EMC health checks section](upgrade-to-eMagiz5.md#emc-health-checks) 
+     8.4) In case your connector does not work check the [eMagiz Mendix Connector health checks](upgrade-to-eMagiz5.md#emc-health-checks) 
   
  ### eMagiz Mendix Connector Health checks
  
