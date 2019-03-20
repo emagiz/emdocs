@@ -142,13 +142,14 @@ The last step is to clean up the project directory and then committing your cust
  - Error handling
  - Retry mechanisme
  
-#Step plan upgrading the eMagiz Mendix Connector
+# Step plan upgrading the eMagiz Mendix Connector
 
 To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps from above need to be performed:
 
    1) [Step 1](upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
    2) [Step 2](upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
    3) When it comes to [step 3](upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3](upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
-   4) [Step 4](upgrade-eMagizMendixConnector.md#4-usage) <!--- to be detailed later with Samet --->.
+   4) [Step 4](upgrade-eMagizMendixConnector.md#4-usage)   
+   <!--- to be detailed later with Samet --->.
    5) In [step 5](upgrade-eMagizMendixConnector.md#5-possible-errors) there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there
    6) [Step 6](upgrade-eMagizMendixConnector.md#6-best-practices)
