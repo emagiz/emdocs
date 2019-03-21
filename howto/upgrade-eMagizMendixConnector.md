@@ -52,9 +52,19 @@ The values for these constants can be found from the eMagiz iPaaS: Deploy -> On 
   <img src="resources/emc-settings-constants.png"> 
 </p>
 
-- **Webservices cloud / Webservice user**
-
-- **Request handler**
+- **Webservices cloud / Webservice user:** Add the webservice in the could whish is hosting the Mendix project. An webservice user can be created in the Administration Overview page in the Mendix project.
+   
+- **Request handler**: 
+   - Import xml schema into req handler configuration from the eMagiz iPaaS. 
+   - Create consumed web service in Mx project based on the url 'the url to your MX project' + '/emagiz-mendix-connector/' + 'wsdl' (e.g.: http://localhost:8080/emagiz-mendix-connector/wsdl) and then press 'Import'. 
+	**Note:** If your project runs in the Mendix cloud, you need to enable acces to your network for the URLs which contain '/emagiz-mendix-connector/'.
+		       If it runs locally or in another cloud environment make sure to enable acces the acces to the port 5445 or 8443 depending on whether you migrated or not to eMagiz5.	        
+    - Call the webervice in the appropriate MF.   
+      **Note:** If you use secrity, in the HTTP headers tab, you need to fill in the credentials that the Request Handler recognizes (the values of the properties used by the request handler set in the Deploy -> Properties in eMagiz iPaaS)  
+                In the SOAP Request Body you need to fill in the values required for the request.  
+                In the SOAP Response tab you can opt for storing the response into a variable. To do so, you need to create an import mapping which maps the response of the webservicce into an entity from the domain model.
+   
+- **Keystore/Truststore**: In the resources folder of the eMagiz Mendix Connector you need to add the keystore and truststore from the eMagiz iPaaS which can be found in the Resources tab of the Create phase.
 
 ##  4. Usage  
 - Deployment/updating flows
