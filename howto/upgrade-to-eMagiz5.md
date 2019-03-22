@@ -144,7 +144,7 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
   
   4) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
   
-     **Note:**  when it comes to the deploy packages, the versions of the connector infra and the request handler of a system MUST have the build number 3 (e.g. x.y.z.3) while the one of the connector (entry or exit flow) can have be 2 or 3 (e.g. x.y.z.2 or x.y.z.3).
+     **Note:**  when it comes to the deploy packages, the versions of the connector infra and the request handler of a system MUST have the build number 3 (e.g. x.y.z.3) while the one of the connector (entry or exit flow) can be 2 or 3 (e.g. x.y.z.2 or x.y.z.3).
   
   5) **Run** the Mendix project
   
