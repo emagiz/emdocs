@@ -73,7 +73,7 @@ We'll first present a brief overview of what kind of things messaging systems do
 
 If you're already familiar with what a messaging system is and what it's capable of, then you can skip this chapter.
 
-# General Concepts
+## General Concepts
 Messaging systems allow you to loosely couple heterogeneous systems together, whilst typically providing reliability, transactions and many other features.
 
 Unlike systems based on a Remote Procedure Call (RPC) pattern, messaging systems primarily use an asynchronous message passing pattern with no tight relationship between requests and responses. Most messaging systems also support a request-response mode but this is not a primary feature of messaging systems.
@@ -84,10 +84,10 @@ Messaging systems decouple the senders of messages from the consumers of message
 
 Often, large enterprises use a messaging system to implement a message bus which loosely couples heterogeneous systems together. Message buses often form the core of an Enterprise Service Bus. (ESB). Using a message bus to de-couple disparate systems can allow the system to grow and adapt more easily. It also allows more flexibility to add new systems or retire old ones since they don't have brittle dependencies on each other.
 
-# Messaging styles
+## Messaging styles
 Messaging systems normally support two main styles of asynchronous messaging: message queue messaging (also known as point-to-point messaging) and publish subscribe messaging. We'll summarise them briefly here:
 
-## Point-to-Point
+### Point-to-Point
 With this type of messaging you send a message to a queue. The message is then typically persisted to provide a guarantee of delivery, then some time later the messaging system delivers the message to a consumer. The consumer then processes the message and when it is done, it acknowledges the message. Once the message is acknowledged it disappears from the queue and is not available to be delivered again. If the system crashes before the messaging server receives an acknowledgement from the consumer, then on recovery, the message will be available to be delivered to a consumer again.
 
 With point-to-point messaging, there can be many consumers on the queue but a particular message will only ever be consumed by a maximum of one of them. Senders (also known as producers) to the queue are completely decoupled from receivers (also known as consumers) of the queue - they do not know of each other's existence.
@@ -96,7 +96,7 @@ A classic example of point to point messaging would be an order queue in a compa
 
 As an order processor receives a message, it fulfills the order, sends order information to the warehouse system and then updates the order database with the order details. Once it's done that it acknowledges the message to tell the server that the order has been processed and can be forgotten about. Often the send to the warehouse system, update in database and acknowledgement will be completed in a single transaction to ensure ACID properties.
 
-## Publish-Subscribe
+### Publish-Subscribe
 With publish-subscribe messaging many senders can send messages to an entity on the server, often called a topic (e.g. in the JMS world).
 
 There can be many subscriptions on a topic, a subscription is just another word for a consumer of a topic. Each subscription receives a copy of each message sent to the topic. This differs from the message queue pattern where each message is only consumed by a single consumer.
@@ -105,15 +105,15 @@ Subscriptions can optionally be durable which means they retain a copy of each m
 
 An example of publish-subscribe messaging would be a news feed. As news articles are created by different editors around the world they are sent to a news feed topic. There are many subscribers around the world who are interested in receiving news items - each one creates a subscription and the messaging system ensures that a copy of each news message is delivered to each subscription.
 
-## Delivery guarantees
+### Delivery guarantees
 A key feature of most messaging systems is reliable messaging. With reliable messaging the server gives a guarantee that the message will be delivered once and only once to each consumer of a queue or each durable subscription of a topic, even in the event of system failure. This is crucial for many businesses; e.g. you don't want your orders fulfilled more than once or any of your orders to be lost.
 
 In other cases you may not care about a once and only once delivery guarantee and are happy to cope with duplicate deliveries or lost messages - an example of this might be transient stock price updates - which are quickly superseded by the next update on the same stock. The messaging system allows you to configure which delivery guarantees you require.
 
-## Transactions
+### Transactions
 Messaging systems typically support the sending and acknowledgement of multiple messages in a single local transaction. Apache ActiveMQ Artemis also supports the sending and acknowledgement of message as part of a large global transaction - using the Java mapping of XA: JTA.
 
-## Durability
+### Durability
 Messages are either durable or non durable. Durable messages will be persisted in permanent storage and will survive server failure or restart. Non durable messages will not survive server failure or restart. Examples of durable messages might be orders or trades, where they cannot be lost. An example of a non durable message might be a stock price update which is transitory and doesn't need to survive a restart.
 
 ## Messaging APIs and protocols
@@ -157,22 +157,36 @@ AMQP is a specification for interoperable messaging. It also defines a wire form
 
 Apache ActiveMQ Artemis implements the AMQP 1.0 specification. Any client that supports the 1.0 specification will be able to interact with Apache ActiveMQ Artemis.
 
-Please see AMQP for using AMQP with Apache ActiveMQ Artemis.
+Please see AMQP for using AMQP with Apache ActiveMQ Artemis.  
 
-### MQTT
-MQTT is a lightweight connectivity protocol. It is designed to run in environments where device and networks are constrained. Out of the box Apache ActiveMQ Artemis supports version MQTT 3.1.1. Any client supporting this version of the protocol will work against Apache ActiveMQ Artemis.
+## QPID
 
-Please see MQTT for using MQTT with Apache ActiveMQ Artemis.
+Qpid JMS is a complete Java Message Service 2.0 client built using the Qpid Proton protocol engine.
 
-### STOMP
-Stomp is a very simple text protocol for interoperating with messaging systems. It defines a wire format, so theoretically any Stomp client can work with any messaging system that supports Stomp. Stomp clients are available in many different programming languages.
+Features:
+  - JMS 2.0 API
+  - Secure communication via SSL and SASL
+  - Producer flow control
+  - Failover
+  - Pure-Java implementation
 
-Please see Stomp for using STOMP with Apache ActiveMQ Artemis.
+Most of the relevant information about QPID is displayed in the helptext of eMagiz right where it is needed.
 
-### OpenWire
-ActiveMQ 5.x defines it's own wire protocol: OpenWire. In order to support ActiveMQ 5.x clients, Apache ActiveMQ Artemis supports OpenWire. Any ActiveMQ 5.12.x or higher can be used with Apache ActiveMQ Artemis.
+For more infromation please see [JMS with the strength of AMQP](https://qpid.apache.org/components/jms/index.html#jms-with-the-strength-of-amqp)
+<!--- ### MQTT --->
+<!--- MQTT is a lightweight connectivity protocol. It is designed to run in environments where device and networks are constrained. Out of the box Apache ActiveMQ Artemis supports version MQTT 3.1.1. Any client supporting this version of the protocol will work against Apache ActiveMQ Artemis. --->
 
-Please see OpenWire for using OpenWire with Apache ActiveMQ Artemis.
+<!---Please see MQTT for using MQTT with Apache ActiveMQ Artemis.--->
+
+<!---### STOMP--->
+<!---Stomp is a very simple text protocol for interoperating with messaging systems. It defines a wire format, so theoretically any Stomp client can work with any messaging system that supports Stomp. Stomp clients are available in many different programming languages.--->
+
+<!---Please see Stomp for using STOMP with Apache ActiveMQ Artemis.--->
+
+<!---### OpenWire--->
+<!---ActiveMQ 5.x defines it's own wire protocol: OpenWire. In order to support ActiveMQ 5.x clients, Apache ActiveMQ Artemis supports OpenWire. Any ActiveMQ 5.12.x or higher can be used with Apache ActiveMQ Artemis.--->
+
+<!---Please see OpenWire for using OpenWire with Apache ActiveMQ Artemis. --->
 
 ## High Availability
 High Availability (HA) means that the system should remain operational after failure of one or more of the servers. The degree of support for HA varies between various messaging systems.
@@ -202,21 +216,6 @@ Apache ActiveMQ Artemis bridges can be configured with filter expressions to onl
 Apache ActiveMQ Artemis also allows routing between queues to be configured in server side configuration. This allows complex routing networks to be set up forwarding or copying messages from one destination to another, forming a global network of interconnected brokers.
 
 For more information please see Core Bridges and Diverting and Splitting Message Flows.
-
-## QPID
-
-Qpid JMS is a complete Java Message Service 2.0 client built using the Qpid Proton protocol engine.
-
-Features:
-  - JMS 2.0 API
-  - Secure communication via SSL and SASL
-  - Producer flow control
-  - Failover
-  - Pure-Java implementation
-
-Most of the relevant information about QPID is displayed in the helptext of eMagiz right where it is needed.
-
-For more infromation please see [JMS with the strength of AMQP](https://qpid.apache.org/components/jms/index.html#jms-with-the-strength-of-amqp)
 
 ### Sources
 
