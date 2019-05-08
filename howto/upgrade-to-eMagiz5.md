@@ -4,10 +4,11 @@
 
 This tutorial presents the possibilities of migrating a bus from eMagiz 4 to eMagiz 5.
 
+The release notes of eMagiz 5 can be found [here](https://my.emagiz.com/link/releasenote/119).
 
 ## 2. Requirements
 
-In order to upgrade to eMagiz5, 4 conditions must be met in order:
+In order to upgrade to eMagiz5, 4 conditions must be met:
 
 2.1) Spring Integration 4: It is recommended that all flows have the value of the build number higher or equal to 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
 
