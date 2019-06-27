@@ -25,7 +25,7 @@
 - [XMPP inbound channel adapter](/referenceguide/xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](/referenceguide/xmpp-presence-inbound-channel-adapter.md)
 
-### Inbound gateways
+### <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [ActiveMQ security manager gateway](/referenceguide/activemq-security-manager-gateway.md)
 - [Command executor gateway](/referenceguide/command-executor-gateway.md)
 - ~~[HornetQ security manager gateway](/referenceguide/hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
@@ -39,7 +39,7 @@
 - [Web service inbound gateway](/referenceguide/web-service-inbound-gateway.md)
 - [XSLT extension gateway](/referenceguide/xslt-extension-gateway.md)
 
-### Outbound channel adapters
+### <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
 - [File outbound channel adapter](/referenceguide/file-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](/referenceguide/expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](/referenceguide/request-handler-circuit-breaker-advice.md)
@@ -96,7 +96,7 @@
   - [Request handler circuit breaker advice](/referenceguide/request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](/referenceguide/request-handler-retry-advice.md)
 
-### Outbound gateways
+### <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
 - [HTTP outbound gateway](/referenceguide/http-outbound-gateway.md)
   - [Expression evaluating request handler advice](/referenceguide/expression-evaluating-request-handler-advice.md)
   - [HTTP URI variable](/referenceguide/http-uri-variable.md)
@@ -128,7 +128,7 @@
   - [Request handler retry advice](/referenceguide/request-handler-retry-advice.md)
   - [Web service URI variable](/referenceguide/web-service-uri-variable.md)
 
-### Transformers
+### <img src="img/Transformer.png" height="30"/> Transformers
 - [Base64 decoding transformer](/referenceguide/base64-decoding-transformer.md)
 - [Base64 encoding transformer](/referenceguide/base64-encoding-transformer.md)
 - [Character replacing transformer](/referenceguide/character-replacing-transformer.md)
@@ -190,18 +190,18 @@
 - [XSLT transformer](/referenceguide/xslt-transformer.md)
   - [XSLT parameter](/referenceguide/xslt-parameter.md)
 
-### Splitters
+### <img src="img/Splitter.png" height="30"/> Splitters
 - [Standard splitter](/referenceguide/standard-splitter.md)
   - [Groovy variable](/referenceguide/groovy-variable.md)
 - [XPath splitter](/referenceguide/xpath-splitter.md)
 
-### Filters
+### <img src="img/Filter.png" height="30"/> Filters
 - [Standard filter](/referenceguide/standard-filter.md)
   - [Groovy variable](/referenceguide/groovy-variable.md)
 - [XML validating filter](/referenceguide/xml-validating-filter.md)
 - [XPath filter](/referenceguide/xpath-filter.md)
 
-### Routers
+### <img src="img/Router.png" height="30"/> Routers
 - [Header value router](/referenceguide/header-value-router.md)
   - [Header value mapping](/referenceguide/header-value-mapping.md)
 - [Payload type router](/referenceguide/payload-type-router.md)
@@ -214,7 +214,7 @@
 - [XPath router](/referenceguide/xpath-router.md)
   - [XPath value mapping](/referenceguide/xpath-value-mapping.md)
 
-### Service activators
+### <img src="img/ServiceActivator.png" height="30"/> Service activators
 - [Control bus](/referenceguide/control-bus.md)
 - [Custom error message activator](/referenceguide/custom-error-message-activator.md)
   - [Expression evaluating request handler advice](/referenceguide/expression-evaluating-request-handler-advice.md)
@@ -239,14 +239,14 @@
   - [Request handler circuit breaker advice](/referenceguide/request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](/referenceguide/request-handler-retry-advice.md)
 
-### Channels
+### <img src="img/Channel.png" width="30"/> Channels
 - [Default channel](/referenceguide/channel.md)
   - [Debug interceptor](/referenceguide/debug-interceptor.md)
   - ~~[Entry tracking interceptor](/referenceguide/entry-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - ~~[Exit tracking interceptor](/referenceguide/exit-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - [Wire tap](/referenceguide/wire-tap.md)
 
-### Support objects
+### <img src="img/SupportObject.png" height="30"/> Support objects
 - [Apache ActiveMQ Artemis server](/referenceguide/apache-activemq-artemis-server.md)
   - [Address settings](/referenceguide/address-settings.md)
   - [Cluster connection](/referenceguide/cluster-connection.md)
