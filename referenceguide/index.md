@@ -2,7 +2,7 @@
 
 ## Flow components per type
 
-### Inbound channel adapters
+### <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
 - [File inbound channel adapter](/referenceguide/file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](/referenceguide/ftp-inbound-channel-adapter.md)
