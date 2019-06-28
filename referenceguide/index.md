@@ -320,6 +320,7 @@
   - ~~[Netty connector transport configuration](netty-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
   - ~~[Security settings](security-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
   - ~~[Topic configuration](topic-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+- HTTP Components message sender
 - [Java mail sender](java-mail-sender.md)
 - [JDBC BoneCP data source](jdbc-bonecp-data-source.md)
 - [JDBC channel message store](jdbc-channel-message-store.md)
@@ -328,6 +329,7 @@
 - [JDBC initialize database](jdbc-initialize-database.md)
   - [SQL script](sql-script.md)
 - [JDBC OSGi data source reference](jdbc-osgi-data-source-reference.md)
+- Jetty server
 - [JMS caching connection factory](jms-caching-connection-factory.md)
 - [JMS listener container](jms-listener-container.md)
   - [JMS listener](jms-listener.md)
@@ -337,18 +339,24 @@
 - Job manager
 - Job registry bean post processor
 - Job repository
+- Kafka message listener container
+- Kafka template
 - [Management](management.md)
 - Map job registry
 - [MBean export](mbean-export.md)
 - [MBean server](mbean-server.md)
 - Mendix authentication SAAJ SOAP interceptor
 - [Mendix authentication SOAP header mapper](mendix-authentication-soap-header-mapper.md)
+- Merlin crypto
 - [Message history](message-history.md)
 - Metacom authentication SAAJ SOAP interceptor
+- OAuth 2.0 resource
+- OAuth 2.0 REST template
 - [OSGi service](osgi-service.md)
 - [Performance monitor](jvm-performance-monitor.md)
 - [Properties](properties.md)
 - [Property placeholder](property-placeholder.md)
+- Proxy web service message sender
 - [Qpid JMS connection factory](qpid-jms-connection-factory.md)
   - [AMQP connector settings](qpid-amqp-connector-setting.md)
 - [REST template](rest-template.md)
@@ -371,18 +379,26 @@
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
 - Simple job launcher
+- Simple XSD schema
+- Simple WSDL 1.1 definition
 - SOAP action callback
 - [SOAP attachments header mapper](soap-attachments-header-mapper.md)
 - SOAP fault message resolver
 - SOAP message dispatcher
 - ~~[Sonic caching connection factory](sonic-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
 - [Sonic connection factory](sonic-connection-factory.md)
+- SSL web service message sender
 - [Task executor](task-executor.md)
 - [TCP connection factory](tcp-connection-factory.md)
+- ThClient connector
 - [Timestamped file name generator](timestamped-filename-generator.md)
 - [Top level poller](poller.md)
+- Web service message listener
 - ~~[WebSphere caching connection factory](websphere-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
 - [WebSphere connection factory](websphere-connection-factory.md)
+- WS-Addressing action callback
+- WSS4J security interceptor
 - [XMPP connection](xmpp-connection.md)
 - [XPath expression](xpath-expression.md)
+- XSLT view
 - Zimbra authentication SAAJ SOAP interceptor
