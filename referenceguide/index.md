@@ -1,17 +1,11 @@
-# Reference guide - Flow components by type
-- [Inbound channel adapters](#inbound-channel-adapters)
-- [Inbound gateways](#-inbound-gateways)
-- [Outbound channel adapters](#-outbound-channel-adapters)
-- [Outbound gateways](#-outbound-gateways)
-- [Transformers](#-transformers)
-- [Splitters](#-splitters)
-- [Filters](#-filters)
-- [Routers](#-routers)
-- [Service activators](#-service-activators)
-- [Channels](#-channels)
-- [Support objects](#-support-objects)
+# Reference guide - flow components by type
+> Jump to: [Inbound channel adapters](#-inbound-channel-adapters) | [Inbound gateways](#-inbound-gateways) | [Outbound channel adapters](#-outbound-channel-adapters) | [Outbound gateways](#-outbound-gateways) | [Transformers](#-transformers) | [Splitters](#-splitters) | [Filters](#-filters) | [Routers](#-routers) | [Service activators](#-service-activators) | [Channels](#-channels) | [Support objects](#-support-objects)
 
-## <img src="img/InboundChannelAdaptor.png" height="30"/>Inbound channel adapters
+This page lists all components available in the flow designer grouped by *type* (transformer, filter, router, etc). The same list but grouped by *category* (HTTP/REST, web services, EDI, etc) is available [here](index2.md).
+
+A component with ~~strikethrough~~ indicates it is deprecated: hover to see the recommended alternative. Some components in the flow designer have additional settings that are (usually) accessed through new/edit/delete buttons: these "nested" components are listed as sub-items of the relevant component in the list below.
+
+## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
 - [File inbound channel adapter](file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
