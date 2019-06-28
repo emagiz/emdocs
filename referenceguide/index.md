@@ -1,8 +1,17 @@
-# Reference guide
+# Reference guide - Flow components by type
+- [Inbound channel adapters](#inbound-channel-adapters)
+- [Inbound gateways](#-inbound-gateways)
+- [Outbound channel adapters](#-outbound-channel-adapters)
+- [Outbound gateways](#-outbound-gateways)
+- [Transformers](#-transformers)
+- [Splitters](#-splitters)
+- [Filters](#-filters)
+- [Routers](#-routers)
+- [Service activators](#-service-activators)
+- [Channels](#-channels)
+- [Support objects](#-support-objects)
 
-## Flow components per type
-
-### <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
+## <img src="img/InboundChannelAdaptor.png" height="30"/>Inbound channel adapters
 - [File inbound channel adapter](file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
@@ -25,7 +34,7 @@
 - [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
-### <img src="img/InboundGateway.png" height="30"/> Inbound gateways
+## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
 - [Command executor gateway](command-executor-gateway.md)
 - ~~[HornetQ security manager gateway](hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
@@ -39,7 +48,7 @@
 - [Web service inbound gateway](web-service-inbound-gateway.md)
 - [XSLT extension gateway](xslt-extension-gateway.md)
 
-### <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
+## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
 - [File outbound channel adapter](file-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -96,7 +105,7 @@
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 
-### <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
+## <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
 - [HTTP outbound gateway](http-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [HTTP URI variable](http-uri-variable.md)
@@ -128,7 +137,7 @@
   - [Request handler retry advice](request-handler-retry-advice.md)
   - [Web service URI variable](web-service-uri-variable.md)
 
-### <img src="img/Transformer.png" height="30"/> Transformers
+## <img src="img/Transformer.png" height="30"/> Transformers
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
 - [Character replacing transformer](character-replacing-transformer.md)
@@ -190,18 +199,18 @@
 - [XSLT transformer](xslt-transformer.md)
   - [XSLT parameter](xslt-parameter.md)
 
-### <img src="img/Splitter.png" height="30"/> Splitters
+## <img src="img/Splitter.png" height="30"/> Splitters
 - [Standard splitter](standard-splitter.md)
   - [Groovy variable](groovy-variable.md)
 - [XPath splitter](xpath-splitter.md)
 
-### <img src="img/Filter.png" height="30"/> Filters
+## <img src="img/Filter.png" height="30"/> Filters
 - [Standard filter](standard-filter.md)
   - [Groovy variable](groovy-variable.md)
 - [XML validating filter](xml-validating-filter.md)
 - [XPath filter](xpath-filter.md)
 
-### <img src="img/Router.png" height="30"/> Routers
+## <img src="img/Router.png" height="30"/> Routers
 - [Header value router](header-value-router.md)
   - [Header value mapping](header-value-mapping.md)
 - [Payload type router](payload-type-router.md)
@@ -214,7 +223,7 @@
 - [XPath router](xpath-router.md)
   - [XPath value mapping](xpath-value-mapping.md)
 
-### <img src="img/ServiceActivator.png" height="30"/> Service activators
+## <img src="img/ServiceActivator.png" height="30"/> Service activators
 - [Control bus](control-bus.md)
 - [Custom error message activator](custom-error-message-activator.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
@@ -239,14 +248,14 @@
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 
-### <img src="img/Channel.png" width="30"/> Channels
+## <img src="img/Channel.png" width="30"/> Channels
 - [Default channel](channel.md)
   - [Debug interceptor](debug-interceptor.md)
   - ~~[Entry tracking interceptor](entry-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - ~~[Exit tracking interceptor](exit-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - [Wire tap](wire-tap.md)
 
-### <img src="img/SupportObject.png" height="30"/> Support objects
+## <img src="img/SupportObject.png" height="30"/> Support objects
 - [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
   - [Address settings](address-settings.md)
   - [Cluster connection](cluster-connection.md)
