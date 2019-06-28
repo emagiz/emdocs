@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [HTTP/REST](#httprest) | [Mail](#mail) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [HTTP/REST](#httprest) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -58,6 +58,30 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [S/MIME to MIME transformer](s-mime-to-mime-transformer.md)
 - [XML to MIME message transformer](xml-to-mime-message-transformer.md)
 
+## Scripting
+- [Standard filter](standard-filter.md)
+  - [Groovy variable](groovy-variable.md)
+- [Standard header enricher](standard-header-enricher.md)
+  - [Correlation id](standard-header-enricher---correlation-id.md)
+  - [Custom header](standard-header-enricher---custom-header.md)
+  - [Error channel](standard-header-enricher---error-channel.md)
+  - [Expiration date](standard-header-enricher---expiration-date.md)
+  - [Priority](standard-header-enricher---priority.md)
+  - [Reply channel](standard-header-enricher---reply-channel.md)
+- [Standard inbound channel adapter](standard-inbound-channel-adapter.md)
+- [Standard router](standard-router.md)
+  - [Groovy variable](groovy-variable.md)
+  - [Value mapping](value-mapping.md)
+- [Standard service activator](standard-service-activator.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Groovy variable](groovy-variable.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [Standard splitter](standard-splitter.md)
+  - [Groovy variable](groovy-variable.md)
+- [Standard transformer](standard-transformer.md)
+  - [Groovy variable](groovy-variable.md)
+
 ## Web services
 - Complex SOAP header mapper
   - [SOAP to message header mapping](soap-to-message-header-mapping.md)
@@ -92,6 +116,23 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Zimbra authentication SAAJ SOAP interceptor
 
 ## XML
+- [String to wrapped XML transformer](string-to-wrapped-xml-transformer.md)
+- [FOP XSL-FO result factory](fop-xsl-fo-result-factory.md)
+- [FOP XSL-FO result transformer](fop-xsl-fo-result-transformer.md)
+- [Result to document transformer](result-to-document-transformer.md)
+- [Result to string transformer](result-to-string-transformer.md)
+- [XML to string transformer](xml-to-string-transformer.md)
+- [XML validating filter](xml-validating-filter.md)
+- [XPath expression](xpath-expression.md)
+- [XPath filter](xpath-filter.md)
+- [XPath header enricher](xpath-header-enricher.md)
+  - [Header](xpath-header-enricher---header.md)
+- [XPath router](xpath-router.md)
+  - [XPath value mapping](xpath-value-mapping.md)
+- [XPath splitter](xpath-splitter.md)
+- [XPath transformer](xpath-transformer.md)
+- [XSLT transformer](xslt-transformer.md)
+  - [XSLT parameter](xslt-parameter.md)
 
 ---
 
@@ -109,7 +150,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
 - [SFTP inbound channel adapter](sftp-inbound-channel-adapter.md)
-- [Standard inbound channel adapter](standard-inbound-channel-adapter.md)
 - [TCP inbound channel adapter](tcp-inbound-channel-adapter.md)
 - [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
@@ -210,42 +250,15 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [JSON to XML transformer](json-to-xml-transformer.md)
 - [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
 - [Object to string transformer](object-to-string-transformer.md)
-- [Standard header enricher](standard-header-enricher.md)
-  - [Correlation id](standard-header-enricher---correlation-id.md)
-  - [Custom header](standard-header-enricher---custom-header.md)
-  - [Error channel](standard-header-enricher---error-channel.md)
-  - [Expiration date](standard-header-enricher---expiration-date.md)
-  - [Priority](standard-header-enricher---priority.md)
-  - [Reply channel](standard-header-enricher---reply-channel.md)
-- [Standard transformer](standard-transformer.md)
-  - [Groovy variable](groovy-variable.md)
-- [String to wrapped XML transformer](string-to-wrapped-xml-transformer.md)
 - UN/EDIFACT to XML transformer
 - XML to EDI transformer
 - XML to flat file transformer
 - [XML to JSON transformer](xml-to-json-transformer.md)
-- [XML to string transformer](xml-to-string-transformer.md)
 - XML to UN/EDIFACT transformer
 - [XMPP header enricher](xmpp-header-enricher.md)
   - [Chat thread id](xmpp-header-enricher---chat-thread-id.md)
   - [Chat to](xmpp-header-enricher---chat-to.md)
 - [XMPP presence to XML transformer](xmpp-presence-to-xml-transformer.md)
-- [XPath header enricher](xpath-header-enricher.md)
-  - [Header](xpath-header-enricher---header.md)
-- [XPath transformer](xpath-transformer.md)
-- [XSLT transformer](xslt-transformer.md)
-  - [XSLT parameter](xslt-parameter.md)
-
-## <img src="img/Splitter.png" height="30"/> Splitters
-- [Standard splitter](standard-splitter.md)
-  - [Groovy variable](groovy-variable.md)
-- [XPath splitter](xpath-splitter.md)
-
-## <img src="img/Filter.png" height="30"/> Filters
-- [Standard filter](standard-filter.md)
-  - [Groovy variable](groovy-variable.md)
-- [XML validating filter](xml-validating-filter.md)
-- [XPath filter](xpath-filter.md)
 
 ## <img src="img/Router.png" height="30"/> Routers
 - [Header value router](header-value-router.md)
@@ -254,11 +267,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Payload type mapping](payload-type-mapping.md)
 - [Recipient list router](recipient-list-router.md)
   - [Recipient](recipient.md)
-- [Standard router](standard-router.md)
-  - [Groovy variable](groovy-variable.md)
-  - [Value mapping](value-mapping.md)
-- [XPath router](xpath-router.md)
-  - [XPath value mapping](xpath-value-mapping.md)
 
 ## <img src="img/ServiceActivator.png" height="30"/> Service activators
 - [Control bus](control-bus.md)
@@ -269,11 +277,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Message bridge](message-bridge.md)
 - [Mikrotik service activator](mikrotik-service-activator.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [Standard service activator](standard-service-activator.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Groovy variable](groovy-variable.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - ThClient changes reading activator
@@ -333,8 +336,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Ehcache cache](ehcache-cache.md)
 - [Flow controller](flow-controller.md)
 - [Format file name generator](format-filename-generator.md)
-- [FOP XSL-FO result factory](fop-xsl-fo-result-factory.md)
-- [FOP XSL-FO result transformer](fop-xsl-fo-result-transformer.md)
 - [FTP composite file list filter](ftp-composite-file-list-filter.md)
   - [Accept once file list filter](accept-once-file-list-filter.md)
   - [Delaying file list filter](delaying-file-list-filter.md)
@@ -390,8 +391,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Property placeholder](property-placeholder.md)
 - [Qpid JMS connection factory](qpid-jms-connection-factory.md)
   - [AMQP connector settings](qpid-amqp-connector-setting.md)
-- [Result to document transformer](result-to-document-transformer.md)
-- [Result to string transformer](result-to-string-transformer.md)
 - [SFTP composite file list filter](sftp-composite-file-list-filter.md)
   - [Accept once file list filter](accept-once-file-list-filter.md)
   - [Delaying file list filter](delaying-file-list-filter.md)
@@ -415,4 +414,3 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - ~~[WebSphere caching connection factory](websphere-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
 - [WebSphere connection factory](websphere-connection-factory.md)
 - [XMPP connection](xmpp-connection.md)
-- [XPath expression](xpath-expression.md)
