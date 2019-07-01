@@ -1,9 +1,21 @@
 # Reference guide - flow components by category
-> Jump to: [HTTP/REST](#httprest) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
 A component with ~~strikethrough~~ indicates it is deprecated: hover to see the recommended alternative. Some components in the flow designer have additional settings that are (usually) accessed through new/edit/delete buttons: these "nested" components are listed as sub-items of the relevant component in the list below.
+
+## Data pipelines
+- Default execution context serializer
+- Job
+- Job execution listener gateway
+- Job launching outbound gateway
+- Job manager
+- Job registry bean post processor
+- Job repository
+- Map job registry
+- Simple job launcher
+- Step execution listener gateway
 
 ## HTTP/REST
 - [Default HTTP header mapper](default-http-header-mapper.md)
@@ -159,9 +171,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Command executor gateway](command-executor-gateway.md)
 - ~~[HornetQ security manager gateway](hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
 - [JMS inbound gateway](jms-inbound-gateway.md)
-- Job execution listener gateway
 - [Mapping service gateway](mapping-service-gateway.md)
-- Step execution listener gateway
 - [TCP inbound gateway](tcp-inbound-gateway.md)
 - [XSLT extension gateway](xslt-extension-gateway.md)
 
@@ -227,7 +237,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
-- Job launching outbound gateway
 - [TCP outbound gateway](tcp-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -324,7 +333,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Simple pattern file list filter](simple-pattern-file-list-filter.md)
   - [Size file list filter](size-file-list-filter.md)
 - [Concurrent map cache manager](concurrent-map-cache-manager.md)
-- Default execution context serializer
 - [Default FTP caching session factory](default-ftp-caching-session-factory.md)
 - [Default FTP session factory](default-ftp-session-factory.md)
 - [Default FTPS caching session factory](default-ftps-caching-session-factory.md)
@@ -374,14 +382,9 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [JMS listener](jms-listener.md)
 - JMS OSGi connection factory reference
 - [JMS XML message converter](jms-xml-message-converter.md)
-- Job
-- Job manager
-- Job registry bean post processor
-- Job repository
 - Kafka message listener container
 - Kafka template
 - [Management](management.md)
-- Map job registry
 - [MBean export](mbean-export.md)
 - [MBean server](mbean-server.md)
 - [Message history](message-history.md)
@@ -403,7 +406,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [SFTP size file list filter](sftp-size-file-list-filter.md)
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
-- Simple job launcher
 - ~~[Sonic caching connection factory](sonic-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
 - [Sonic connection factory](sonic-connection-factory.md)
 - [Task executor](task-executor.md)
