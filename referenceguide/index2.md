@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
+> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -174,6 +174,15 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - ~~[WebSphere caching connection factory](websphere-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
 - [WebSphere connection factory](websphere-connection-factory.md)
 
+## Kafka
+- Kafka message driven channel adapter
+- Kafka message listener container
+- Kafka outbound channel adapter
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- Kafka template
+
 ## Mail
 - [IMAP idle channel adapter](imap-idle-channel-adapter.md)
 - [Java mail sender](java-mail-sender.md)
@@ -343,17 +352,12 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 
 ## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
-- Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [Command executor gateway](command-executor-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
-- Kafka outbound channel adapter
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - [Logging channel adapter](logging-channel-adapter.md)
 - ~~[Microflow invoking message consumer](microflow-invoking-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
 - ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
@@ -421,8 +425,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Flow controller](flow-controller.md)
 - [Global channel interceptor](global-channel-interceptor.md)
 - [Global wire tap](global-wire-tap.md)
-- Kafka message listener container
-- Kafka template
 - [Management](management.md)
 - [MBean export](mbean-export.md)
 - [MBean server](mbean-server.md)
