@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -78,6 +78,54 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
+
+## JMS/AMQP
+- [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
+- [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
+  - [Address settings](address-settings.md)
+  - [Cluster connection](cluster-connection.md)
+  - [In-VM acceptor](in-vm-acceptor.md)
+  - [In-VM connector](in-vm-connector.md)
+  - [Netty acceptor](netty-acceptor.md)
+  - [Netty connector](netty-connector.md)
+  - [Security settings](security-settings.md)
+- ~~[HornetQ caching connection factory](hornetq-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
+- ~~[HornetQ connection factory](hornetq-connection-factory.md "Deprecated: use Qpid JMS connection factory")~~
+- ~~[HornetQ JMS server manager](hornetq-jms-server-manager.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Address settings](address-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Bridge configuration](bridge-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Cluster connection configuration](cluster-connection-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Connector transport configuration](connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[In-VM acceptor transport configuration](in-vm-acceptor-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[In-VM connector transport configuration](in-vm-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[JMS queue configuration](jms-queue-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Netty acceptor transport configuration](netty-acceptor-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Netty connector transport configuration](netty-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Security settings](security-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+  - ~~[Topic configuration](topic-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
+- ~~[HornetQ security manager gateway](hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
+- [JMS caching connection factory](jms-caching-connection-factory.md)
+- [JMS inbound channel adapter](jms-inbound-channel-adapter.md)
+- [JMS inbound gateway](jms-inbound-gateway.md)
+- [JMS listener container](jms-listener-container.md)
+  - [JMS listener](jms-listener.md)
+- [JMS message driven channel adapter](jms-message-driven-channel-adapter.md)
+- JMS OSGi connection factory reference
+- [JMS outbound channel adapter](jms-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [JMS outbound gateway](jms-outbound-gateway.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [JMS XML message converter](jms-xml-message-converter.md)
+- [Qpid JMS connection factory](qpid-jms-connection-factory.md)
+  - [AMQP connector settings](qpid-amqp-connector-setting.md)
+- ~~[Sonic caching connection factory](sonic-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
+- [Sonic connection factory](sonic-connection-factory.md)
+- ~~[WebSphere caching connection factory](websphere-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
+- [WebSphere connection factory](websphere-connection-factory.md)
 
 ## Mail
 - [IMAP idle channel adapter](imap-idle-channel-adapter.md)
@@ -165,6 +213,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [String to wrapped XML transformer](string-to-wrapped-xml-transformer.md)
 - [FOP XSL-FO result factory](fop-xsl-fo-result-factory.md)
 - [FOP XSL-FO result transformer](fop-xsl-fo-result-transformer.md)
+- [Mapping service gateway](mapping-service-gateway.md)
 - [Result to document transformer](result-to-document-transformer.md)
 - [Result to string transformer](result-to-string-transformer.md)
 - [XML to string transformer](xml-to-string-transformer.md)
@@ -177,6 +226,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [XPath value mapping](xpath-value-mapping.md)
 - [XPath splitter](xpath-splitter.md)
 - [XPath transformer](xpath-transformer.md)
+- [XSLT extension gateway](xslt-extension-gateway.md)
 - [XSLT transformer](xslt-transformer.md)
   - [XSLT parameter](xslt-parameter.md)
 
@@ -186,8 +236,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [File inbound channel adapter](file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
-- [JMS inbound channel adapter](jms-inbound-channel-adapter.md)
-- [JMS message driven channel adapter](jms-message-driven-channel-adapter.md)
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
@@ -197,13 +245,8 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
-- [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
 - [Command executor gateway](command-executor-gateway.md)
-- ~~[HornetQ security manager gateway](hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
-- [JMS inbound gateway](jms-inbound-gateway.md)
-- [Mapping service gateway](mapping-service-gateway.md)
 - [TCP inbound gateway](tcp-inbound-gateway.md)
-- [XSLT extension gateway](xslt-extension-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
 - [File outbound channel adapter](file-outbound-channel-adapter.md)
@@ -211,10 +254,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [FTP outbound channel adapter](ftp-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [JMS outbound channel adapter](jms-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
@@ -243,10 +282,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
-- [JMS outbound gateway](jms-outbound-gateway.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - [TCP outbound gateway](tcp-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -314,14 +349,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Wire tap](wire-tap.md)
 
 ## <img src="img/SupportObject.png" height="30"/> Support objects
-- [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
-  - [Address settings](address-settings.md)
-  - [Cluster connection](cluster-connection.md)
-  - [In-VM acceptor](in-vm-acceptor.md)
-  - [In-VM connector](in-vm-connector.md)
-  - [Netty acceptor](netty-acceptor.md)
-  - [Netty connector](netty-connector.md)
-  - [Security settings](security-settings.md)
 - [Byte array CR/LF (de)serializer](byte-array-cr-lf--de-serializer.md)
 - [Byte array length header (de)serializer](byte-array-length-header--de-serializer.md)
 - [Byte array raw (de)serializer](byte-array-raw--de-serializer.md)
@@ -365,25 +392,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [FTP size file list filter](ftp-size-file-list-filter.md)
 - [Global channel interceptor](global-channel-interceptor.md)
 - [Global wire tap](global-wire-tap.md)
-- ~~[HornetQ caching connection factory](hornetq-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
-- ~~[HornetQ connection factory](hornetq-connection-factory.md "Deprecated: use Qpid JMS connection factory")~~
-- ~~[HornetQ JMS server manager](hornetq-jms-server-manager.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Address settings](address-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Bridge configuration](bridge-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Cluster connection configuration](cluster-connection-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Connector transport configuration](connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[In-VM acceptor transport configuration](in-vm-acceptor-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[In-VM connector transport configuration](in-vm-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[JMS queue configuration](jms-queue-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Netty acceptor transport configuration](netty-acceptor-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Netty connector transport configuration](netty-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Security settings](security-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-  - ~~[Topic configuration](topic-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-- [JMS caching connection factory](jms-caching-connection-factory.md)
-- [JMS listener container](jms-listener-container.md)
-  - [JMS listener](jms-listener.md)
-- JMS OSGi connection factory reference
-- [JMS XML message converter](jms-xml-message-converter.md)
 - Kafka message listener container
 - Kafka template
 - [Management](management.md)
@@ -394,8 +402,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Performance monitor](jvm-performance-monitor.md)
 - [Properties](properties.md)
 - [Property placeholder](property-placeholder.md)
-- [Qpid JMS connection factory](qpid-jms-connection-factory.md)
-  - [AMQP connector settings](qpid-amqp-connector-setting.md)
 - [SFTP composite file list filter](sftp-composite-file-list-filter.md)
   - [Accept once file list filter](accept-once-file-list-filter.md)
   - [Delaying file list filter](delaying-file-list-filter.md)
@@ -408,13 +414,9 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [SFTP size file list filter](sftp-size-file-list-filter.md)
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
-- ~~[Sonic caching connection factory](sonic-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
-- [Sonic connection factory](sonic-connection-factory.md)
 - [Task executor](task-executor.md)
 - [TCP connection factory](tcp-connection-factory.md)
 - ThClient connector
 - [Timestamped file name generator](timestamped-filename-generator.md)
 - [Top level poller](poller.md)
-- ~~[WebSphere caching connection factory](websphere-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
-- [WebSphere connection factory](websphere-connection-factory.md)
 - [XMPP connection](xmpp-connection.md)
