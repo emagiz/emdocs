@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
+> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -34,6 +34,10 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
+- [File to bytes transformer](file-to-bytes-transformer.md)
+- [File to string transformer](file-to-string-transformer.md)
+- [Format file name generator](format-filename-generator.md)
+- [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## FTP(S)
 - [Default FTP caching session factory](default-ftp-caching-session-factory.md)
@@ -219,6 +223,29 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Standard transformer](standard-transformer.md)
   - [Groovy variable](groovy-variable.md)
 
+## SFTP
+- [Default SFTP caching session factory](default-sftp-caching-session-factory.md)
+- [Default SFTP session factory](default-sftp-session-factory.md)
+- [File to bytes transformer](file-to-bytes-transformer.md)
+- [File to string transformer](file-to-string-transformer.md)
+- [Format file name generator](format-filename-generator.md)
+- [SFTP composite file list filter](sftp-composite-file-list-filter.md)
+  - [Accept once file list filter](accept-once-file-list-filter.md)
+  - [Delaying file list filter](delaying-file-list-filter.md)
+  - [SFTP accept once per modification file list filter](sftp-accept-once-per-modification-file-list-filter.md)
+  - [SFTP age file list filter](sftp-age-file-list-filter.md)
+  - [SFTP lock-file file list filter](sftp-lock-file-file-list-filter.md)
+  - [SFTP regex pattern file list filter](sftp-regex-pattern-file-list-filter.md)
+  - SFTP regular files only file list filter
+  - [SFTP simple pattern file list filter](sftp-simple-pattern-file-list-filter.md)
+  - [SFTP size file list filter](sftp-size-file-list-filter.md)
+- [SFTP inbound channel adapter](sftp-inbound-channel-adapter.md)
+- [SFTP outbound channel adapter](sftp-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [Timestamped file name generator](timestamped-filename-generator.md)
+
 ## TCP
 - [Byte array CR/LF (de)serializer](byte-array-cr-lf--de-serializer.md)
 - [Byte array length header (de)serializer](byte-array-length-header--de-serializer.md)
@@ -318,7 +345,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
-- [SFTP inbound channel adapter](sftp-inbound-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [Command executor gateway](command-executor-gateway.md)
@@ -330,10 +356,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [Logging channel adapter](logging-channel-adapter.md)
 - ~~[Microflow invoking message consumer](microflow-invoking-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
-- [SFTP outbound channel adapter](sftp-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
 
 ## <img src="img/Transformer.png" height="30"/> Transformers
@@ -394,8 +416,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Command controller](command-controller.md)
 - [Composite cache manager](composite-cache-manager.md)
 - [Concurrent map cache manager](concurrent-map-cache-manager.md)
-- [Default SFTP caching session factory](default-sftp-caching-session-factory.md)
-- [Default SFTP session factory](default-sftp-session-factory.md)
 - [Ehcache cache manager](ehcache-cache-manager.md)
   - [Ehcache cache](ehcache-cache.md)
 - [Flow controller](flow-controller.md)
@@ -411,16 +431,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Performance monitor](jvm-performance-monitor.md)
 - [Properties](properties.md)
 - [Property placeholder](property-placeholder.md)
-- [SFTP composite file list filter](sftp-composite-file-list-filter.md)
-  - [Accept once file list filter](accept-once-file-list-filter.md)
-  - [Delaying file list filter](delaying-file-list-filter.md)
-  - [SFTP accept once per modification file list filter](sftp-accept-once-per-modification-file-list-filter.md)
-  - [SFTP age file list filter](sftp-age-file-list-filter.md)
-  - [SFTP lock-file file list filter](sftp-lock-file-file-list-filter.md)
-  - [SFTP regex pattern file list filter](sftp-regex-pattern-file-list-filter.md)
-  - SFTP regular files only file list filter
-  - [SFTP simple pattern file list filter](sftp-simple-pattern-file-list-filter.md)
-  - [SFTP size file list filter](sftp-size-file-list-filter.md)
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
 - [Task executor](task-executor.md)
