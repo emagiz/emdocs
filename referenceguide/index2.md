@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -44,6 +44,40 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Azure Storage Services authentication interceptor](azure-storage-services-authentication-interceptor.md)
   - [Basic access authentication interceptor](basic-access-authentication-interceptor.md)
 - XSLT view
+
+## JDBC
+- [JDBC BoneCP data source](jdbc-bonecp-data-source.md)
+- [JDBC channel message store](jdbc-channel-message-store.md)
+- [JDBC data source transaction manager](data-source-transaction-manager.md)
+- JDBC H2 connection pool
+- [JDBC inbound channel adapter](jdbc-inbound-channel-adapter.md)
+- [JDBC initialize database](jdbc-initialize-database.md)
+  - [SQL script](sql-script.md)
+- [JDBC OSGi data source reference](jdbc-osgi-data-source-reference.md)
+- [JDBC outbound channel adapter](jdbc-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [JDBC outbound gateway](jdbc-outbound-gateway.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [JDBC result set to XML transformer](jdbc-result-set-to-xml-transformer.md)
+- [JDBC stored procedure inbound channel adapter](jdbc-stored-procedure-inbound-channel-adapter.md)
+  - [JDBC parameter](jdbc-parameter.md)
+  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
+- [JDBC stored procedure outbound channel adapter](jdbc-stored-procedure-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [JDBC parameter](jdbc-parameter.md)
+  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [JDBC stored procedure outbound gateway](jdbc-stored-procedure-outbound-gateway.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [JDBC parameter](jdbc-parameter.md)
+  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## Mail
 - [IMAP idle channel adapter](imap-idle-channel-adapter.md)
@@ -152,10 +186,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [File inbound channel adapter](file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
-- [JDBC inbound channel adapter](jdbc-inbound-channel-adapter.md)
-- [JDBC stored procedure inbound channel adapter](jdbc-stored-procedure-inbound-channel-adapter.md)
-  - [JDBC parameter](jdbc-parameter.md)
-  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
 - [JMS inbound channel adapter](jms-inbound-channel-adapter.md)
 - [JMS message driven channel adapter](jms-message-driven-channel-adapter.md)
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
@@ -182,16 +212,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [FTP outbound channel adapter](ftp-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [JDBC outbound channel adapter](jdbc-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [JDBC stored procedure outbound channel adapter](jdbc-stored-procedure-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [JDBC parameter](jdbc-parameter.md)
-  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [JMS outbound channel adapter](jms-outbound-channel-adapter.md)
@@ -223,16 +243,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
-- [JDBC outbound gateway](jdbc-outbound-gateway.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [JDBC stored procedure outbound gateway](jdbc-stored-procedure-outbound-gateway.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [JDBC parameter](jdbc-parameter.md)
-  - [JDBC SQL parameter definition](jdbc-sql-parameter-definition.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - [JMS outbound gateway](jms-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -255,7 +265,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Image transformer](image-transformer.md)
 - ISO8583 bytes to XML transformer
 - ISO8583 XML to bytes transformer
-- [JDBC result set to XML transformer](jdbc-result-set-to-xml-transformer.md)
 - [JSON to XML transformer](json-to-xml-transformer.md)
 - [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
 - [Object to string transformer](object-to-string-transformer.md)
@@ -370,13 +379,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - ~~[Netty connector transport configuration](netty-connector-transport-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
   - ~~[Security settings](security-settings.md "Deprecated: use Apache ActiveMQ Artemis server")~~
   - ~~[Topic configuration](topic-configuration.md "Deprecated: use Apache ActiveMQ Artemis server")~~
-- [JDBC BoneCP data source](jdbc-bonecp-data-source.md)
-- [JDBC channel message store](jdbc-channel-message-store.md)
-- [JDBC data source transaction manager](data-source-transaction-manager.md)
-- JDBC H2 connection pool
-- [JDBC initialize database](jdbc-initialize-database.md)
-  - [SQL script](sql-script.md)
-- [JDBC OSGi data source reference](jdbc-osgi-data-source-reference.md)
 - [JMS caching connection factory](jms-caching-connection-factory.md)
 - [JMS listener container](jms-listener-container.md)
   - [JMS listener](jms-listener.md)
