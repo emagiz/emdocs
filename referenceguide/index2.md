@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
+> Jump to: [Data pipelines](#data-pipelines) | [EDI](#edi) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -16,6 +16,15 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Map job registry
 - Simple job launcher
 - Step execution listener gateway
+
+## EDI
+- EDI to XML transformer
+- File item reader message source
+- Flat file to XML transformer
+- UN/EDIFACT to XML transformer
+- XML to EDI transformer
+- XML to flat file transformer
+- XML to UN/EDIFACT transformer
 
 ## File
 - [Composite file list filter](composite-file-list-filter.md)
@@ -366,19 +375,13 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
 - [Character replacing transformer](character-replacing-transformer.md)
-- EDI to XML transformer
 - [Error to XML transformer](error-to-xml-transformer.md)
-- Flat file to XML transformer
 - [Header filter](header-filter.md)
 - [Image transformer](image-transformer.md)
 - [JSON to XML transformer](json-to-xml-transformer.md)
 - [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
 - [Object to string transformer](object-to-string-transformer.md)
-- UN/EDIFACT to XML transformer
-- XML to EDI transformer
-- XML to flat file transformer
 - [XML to JSON transformer](xml-to-json-transformer.md)
-- XML to UN/EDIFACT transformer
 
 ## <img src="img/Router.png" height="30"/> Routers
 - [Header value router](header-value-router.md)
