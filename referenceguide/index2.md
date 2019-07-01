@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -274,6 +274,23 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XSLT transformer](xslt-transformer.md)
   - [XSLT parameter](xslt-parameter.md)
 
+## XMPP
+- [XMPP connection](xmpp-connection.md)
+- [XMPP header enricher](xmpp-header-enricher.md)
+  - [Chat thread id](xmpp-header-enricher---chat-thread-id.md)
+  - [Chat to](xmpp-header-enricher---chat-to.md)
+- [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
+- [XMPP outbound channel adapter](xmpp-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
+- [XMPP presence outbound channel adapter](xmpp-presence-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [XMPP presence to XML transformer](xmpp-presence-to-xml-transformer.md)
+
 ---
 
 ## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
@@ -282,8 +299,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
 - [SFTP inbound channel adapter](sftp-inbound-channel-adapter.md)
-- [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
-- [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [Command executor gateway](command-executor-gateway.md)
@@ -304,14 +319,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
-- [XMPP outbound channel adapter](xmpp-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- [XMPP presence outbound channel adapter](xmpp-presence-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## <img src="img/Transformer.png" height="30"/> Transformers
 - [Base64 decoding transformer](base64-decoding-transformer.md)
@@ -330,10 +337,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - XML to flat file transformer
 - [XML to JSON transformer](xml-to-json-transformer.md)
 - XML to UN/EDIFACT transformer
-- [XMPP header enricher](xmpp-header-enricher.md)
-  - [Chat thread id](xmpp-header-enricher---chat-thread-id.md)
-  - [Chat to](xmpp-header-enricher---chat-to.md)
-- [XMPP presence to XML transformer](xmpp-presence-to-xml-transformer.md)
 
 ## <img src="img/Router.png" height="30"/> Routers
 - [Header value router](header-value-router.md)
@@ -421,4 +424,3 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Task executor](task-executor.md)
 - ThClient connector
 - [Top level poller](poller.md)
-- [XMPP connection](xmpp-connection.md)
