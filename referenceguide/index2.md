@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
+> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -34,9 +34,30 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
+
+## FTP(S)
+- [Default FTP caching session factory](default-ftp-caching-session-factory.md)
+- [Default FTP session factory](default-ftp-session-factory.md)
+- [Default FTPS caching session factory](default-ftps-caching-session-factory.md)
+- [Default FTPS session factory](default-ftps-session-factory.md)
 - [File to bytes transformer](file-to-bytes-transformer.md)
 - [File to string transformer](file-to-string-transformer.md)
 - [Format file name generator](format-filename-generator.md)
+- [FTP composite file list filter](ftp-composite-file-list-filter.md)
+  - [Accept once file list filter](accept-once-file-list-filter.md)
+  - [Delaying file list filter](delaying-file-list-filter.md)
+  - [FTP accept once per modification file list filter](ftp-accept-once-per-modification-file-list-filter.md)
+  - [FTP age file list filter](ftp-age-file-list-filter.md)
+  - [FTP lock-file file list filter](ftp-lock-file-file-list-filter.md)
+  - [FTP regex pattern file list filter](ftp-regex-pattern-file-list-filter.md)
+  - FTP regular files only file list filter
+  - [FTP simple pattern file list filter](ftp-simple-pattern-file-list-filter.md)
+  - [FTP size file list filter](ftp-size-file-list-filter.md)
+- [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
+- [FTP outbound channel adapter](ftp-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
 - [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## HTTP/REST
@@ -294,7 +315,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 ---
 
 ## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
-- [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
@@ -304,10 +324,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Command executor gateway](command-executor-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
-- [FTP outbound channel adapter](ftp-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - Kafka outbound channel adapter
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -378,25 +394,11 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Command controller](command-controller.md)
 - [Composite cache manager](composite-cache-manager.md)
 - [Concurrent map cache manager](concurrent-map-cache-manager.md)
-- [Default FTP caching session factory](default-ftp-caching-session-factory.md)
-- [Default FTP session factory](default-ftp-session-factory.md)
-- [Default FTPS caching session factory](default-ftps-caching-session-factory.md)
-- [Default FTPS session factory](default-ftps-session-factory.md)
 - [Default SFTP caching session factory](default-sftp-caching-session-factory.md)
 - [Default SFTP session factory](default-sftp-session-factory.md)
 - [Ehcache cache manager](ehcache-cache-manager.md)
   - [Ehcache cache](ehcache-cache.md)
 - [Flow controller](flow-controller.md)
-- [FTP composite file list filter](ftp-composite-file-list-filter.md)
-  - [Accept once file list filter](accept-once-file-list-filter.md)
-  - [Delaying file list filter](delaying-file-list-filter.md)
-  - [FTP accept once per modification file list filter](ftp-accept-once-per-modification-file-list-filter.md)
-  - [FTP age file list filter](ftp-age-file-list-filter.md)
-  - [FTP lock-file file list filter](ftp-lock-file-file-list-filter.md)
-  - [FTP regex pattern file list filter](ftp-regex-pattern-file-list-filter.md)
-  - FTP regular files only file list filter
-  - [FTP simple pattern file list filter](ftp-simple-pattern-file-list-filter.md)
-  - [FTP size file list filter](ftp-size-file-list-filter.md)
 - [Global channel interceptor](global-channel-interceptor.md)
 - [Global wire tap](global-wire-tap.md)
 - Kafka message listener container
