@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -176,6 +176,28 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Standard transformer](standard-transformer.md)
   - [Groovy variable](groovy-variable.md)
 
+## TCP
+- [Byte array CR/LF (de)serializer](byte-array-cr-lf--de-serializer.md)
+- [Byte array length header (de)serializer](byte-array-length-header--de-serializer.md)
+- [Byte array raw (de)serializer](byte-array-raw--de-serializer.md)
+- [Byte array single terminator (de)serializer](byte-array-single-terminator--de-serializer.md)
+- [Byte array STX/ETX (de)serializer](byte-array-stx-etx--de-serializer.md)
+- [Byte array text length header (de)serializer](byte-array-text-length-header--de-serializer.md)
+- [Default TCP SSL context support](default-tcp-ssl-context-support.md)
+- ISO8583 bytes to XML transformer
+- ISO8583 XML to bytes transformer
+- [TCP connection factory](tcp-connection-factory.md)
+- [TCP inbound channel adapter](tcp-inbound-channel-adapter.md)
+- [TCP inbound gateway](tcp-inbound-gateway.md)
+- [TCP outbound channel adapter](tcp-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [TCP outbound gateway](tcp-outbound-gateway.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+
 ## Web services
 - Complex SOAP header mapper
   - [SOAP to message header mapping](soap-to-message-header-mapping.md)
@@ -240,13 +262,11 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Kafka message driven channel adapter
 - [Log appender channel adapter](log-appender-channel-adapter.md)
 - [SFTP inbound channel adapter](sftp-inbound-channel-adapter.md)
-- [TCP inbound channel adapter](tcp-inbound-channel-adapter.md)
 - [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
 - [Command executor gateway](command-executor-gateway.md)
-- [TCP inbound gateway](tcp-inbound-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
 - [File outbound channel adapter](file-outbound-channel-adapter.md)
@@ -267,22 +287,12 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
-- [TCP outbound channel adapter](tcp-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
 - [XMPP outbound channel adapter](xmpp-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [XMPP presence outbound channel adapter](xmpp-presence-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-
-## <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
-- [TCP outbound gateway](tcp-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
@@ -298,8 +308,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Flat file to XML transformer
 - [Header filter](header-filter.md)
 - [Image transformer](image-transformer.md)
-- ISO8583 bytes to XML transformer
-- ISO8583 XML to bytes transformer
 - [JSON to XML transformer](json-to-xml-transformer.md)
 - [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
 - [Object to string transformer](object-to-string-transformer.md)
@@ -349,12 +357,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Wire tap](wire-tap.md)
 
 ## <img src="img/SupportObject.png" height="30"/> Support objects
-- [Byte array CR/LF (de)serializer](byte-array-cr-lf--de-serializer.md)
-- [Byte array length header (de)serializer](byte-array-length-header--de-serializer.md)
-- [Byte array raw (de)serializer](byte-array-raw--de-serializer.md)
-- [Byte array single terminator (de)serializer](byte-array-single-terminator--de-serializer.md)
-- [Byte array STX/ETX (de)serializer](byte-array-stx-etx--de-serializer.md)
-- [Byte array text length header (de)serializer](byte-array-text-length-header--de-serializer.md)
 - [Cache annotation driven](cache-annotation-driven.md)
 - [Command controller](command-controller.md)
 - [Composite cache manager](composite-cache-manager.md)
@@ -375,7 +377,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Default FTPS session factory](default-ftps-session-factory.md)
 - [Default SFTP caching session factory](default-sftp-caching-session-factory.md)
 - [Default SFTP session factory](default-sftp-session-factory.md)
-- [Default TCP SSL context support](default-tcp-ssl-context-support.md)
 - [Ehcache cache manager](ehcache-cache-manager.md)
   - [Ehcache cache](ehcache-cache.md)
 - [Flow controller](flow-controller.md)
@@ -415,7 +416,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
 - [Task executor](task-executor.md)
-- [TCP connection factory](tcp-connection-factory.md)
 - ThClient connector
 - [Timestamped file name generator](timestamped-filename-generator.md)
 - [Top level poller](poller.md)
