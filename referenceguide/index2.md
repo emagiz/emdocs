@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [EDI](#edi) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp)
+> Jump to: [Data pipelines](#data-pipelines) | [EDI](#edi) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp) | [Miscellaneous](#miscellaneous)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -323,9 +323,11 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [String to wrapped XML transformer](string-to-wrapped-xml-transformer.md)
 - [FOP XSL-FO result factory](fop-xsl-fo-result-factory.md)
 - [FOP XSL-FO result transformer](fop-xsl-fo-result-transformer.md)
+- [JSON to XML transformer](json-to-xml-transformer.md)
 - [Mapping service gateway](mapping-service-gateway.md)
 - [Result to document transformer](result-to-document-transformer.md)
 - [Result to string transformer](result-to-string-transformer.md)
+- [XML to JSON transformer](xml-to-json-transformer.md)
 - [XML to string transformer](xml-to-string-transformer.md)
 - [XML validating filter](xml-validating-filter.md)
 - [XPath expression](xpath-expression.md)
@@ -357,87 +359,69 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [XMPP presence to XML transformer](xmpp-presence-to-xml-transformer.md)
 
----
-
-## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
-- [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
-- [Log appender channel adapter](log-appender-channel-adapter.md)
-
-## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
-- [Command executor gateway](command-executor-gateway.md)
-
-## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
-- [Logging channel adapter](logging-channel-adapter.md)
-- ~~[Microflow invoking message consumer](microflow-invoking-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
-- ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
-
-## <img src="img/Transformer.png" height="30"/> Transformers
+## Miscellaneous
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
+- [Cache annotation driven](cache-annotation-driven.md)
 - [Character replacing transformer](character-replacing-transformer.md)
-- [Error to XML transformer](error-to-xml-transformer.md)
-- [Header filter](header-filter.md)
-- [Image transformer](image-transformer.md)
-- [JSON to XML transformer](json-to-xml-transformer.md)
-- [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
-- [Object to string transformer](object-to-string-transformer.md)
-- [XML to JSON transformer](xml-to-json-transformer.md)
-
-## <img src="img/Router.png" height="30"/> Routers
-- [Header value router](header-value-router.md)
-  - [Header value mapping](header-value-mapping.md)
-- [Payload type router](payload-type-router.md)
-  - [Payload type mapping](payload-type-mapping.md)
-- [Recipient list router](recipient-list-router.md)
-  - [Recipient](recipient.md)
-
-## <img src="img/ServiceActivator.png" height="30"/> Service activators
+- [Command controller](command-controller.md)
+- [Command executor gateway](command-executor-gateway.md)
+- [Composite cache manager](composite-cache-manager.md)
+- [Concurrent map cache manager](concurrent-map-cache-manager.md)
 - [Control bus](control-bus.md)
 - [Custom error message activator](custom-error-message-activator.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
-- [Message bridge](message-bridge.md)
-- [Mikrotik service activator](mikrotik-service-activator.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- ThClient changes reading activator
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-- ThClient table reading activator
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
-
-## <img src="img/Channel.png" width="30"/> Channels
 - [Default channel](channel.md)
   - [Debug interceptor](debug-interceptor.md)
   - ~~[Entry tracking interceptor](entry-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - ~~[Exit tracking interceptor](exit-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - [Wire tap](wire-tap.md)
-
-## <img src="img/SupportObject.png" height="30"/> Support objects
-- [Cache annotation driven](cache-annotation-driven.md)
-- [Command controller](command-controller.md)
-- [Composite cache manager](composite-cache-manager.md)
-- [Concurrent map cache manager](concurrent-map-cache-manager.md)
 - [Ehcache cache manager](ehcache-cache-manager.md)
   - [Ehcache cache](ehcache-cache.md)
+- [Error to XML transformer](error-to-xml-transformer.md)
 - [Flow controller](flow-controller.md)
 - [Global channel interceptor](global-channel-interceptor.md)
 - [Global wire tap](global-wire-tap.md)
+- [Header filter](header-filter.md)
+- [Header value router](header-value-router.md)
+  - [Header value mapping](header-value-mapping.md)
+- [Image transformer](image-transformer.md)
+- [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
+- [Log appender channel adapter](log-appender-channel-adapter.md)
+- [Logging channel adapter](logging-channel-adapter.md)
 - [Management](management.md)
 - [MBean export](mbean-export.md)
 - [MBean server](mbean-server.md)
+- [Mendix FileDocument WS request transformer](mendix-filedocument-ws-request-transformer.md)
+- [Message bridge](message-bridge.md)
 - [Message history](message-history.md)
+- ~~[Microflow invoking message consumer](microflow-invoking-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
+- [Mikrotik service activator](mikrotik-service-activator.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [Object to string transformer](object-to-string-transformer.md)
 - [OSGi service](osgi-service.md)
+- [Payload type router](payload-type-router.md)
+  - [Payload type mapping](payload-type-mapping.md)
 - [Performance monitor](jvm-performance-monitor.md)
 - [Properties](properties.md)
 - [Property placeholder](property-placeholder.md)
+- [Recipient list router](recipient-list-router.md)
+  - [Recipient](recipient.md)
 - [Simple cache manager](simple-cache-manager.md)
   - [Concurrent map cache](concurrent-map-cache.md)
 - [Task executor](task-executor.md)
+- ThClient changes reading activator
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
 - ThClient connector
+- ThClient table reading activator
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
 - [Top level poller](poller.md)
+- ~~[XML mapping message consumer](xml-mapping-message-consumer.md "Deprecated: use eMagiz Mendix Connector")~~
