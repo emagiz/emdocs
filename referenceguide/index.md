@@ -6,6 +6,7 @@ This page lists all components available in the flow designer grouped by *type* 
 A component with ~~strikethrough~~ indicates it is deprecated: hover to see the recommended alternative. Some components in the flow designer have additional settings that are (usually) accessed through new/edit/delete buttons: these "nested" components are listed as sub-items of the relevant component in the list below.
 
 ## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
+An inbound channel adapter connects a source system to a message flow in an asynchronous (fire-and-forget) fashion. These inbound endpoints can be message-driven or pollable.
 - [File inbound channel adapter](file-inbound-channel-adapter.md)
 - File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
@@ -29,6 +30,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
 ## <img src="img/InboundGateway.png" height="30"/> Inbound gateways
+An inbound gateway connects a source system to a message flow in a synchronous (request-response) fashion. These inbound endpoints are always message-driven.
 - [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
 - [Command executor gateway](command-executor-gateway.md)
 - ~~[HornetQ security manager gateway](hornetq-security-manager-gateway.md "Deprecated: use ActiveMQ security manager gateway")~~
@@ -43,6 +45,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XSLT extension gateway](xslt-extension-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
+An outbound channel adapter connects a message flow to a target system in an asynchronous (fire-and-forget) fashion.
 - [File outbound channel adapter](file-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -100,6 +103,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## <img src="img/OutboundGateway.png" height="30"/> Outbound gateways
+An outbound gateway connects a message flow to a target system in a synchronous (request-response) fashion.
 - [HTTP outbound gateway](http-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [HTTP URI variable](http-uri-variable.md)
@@ -132,6 +136,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Web service URI variable](web-service-uri-variable.md)
 
 ## <img src="img/Transformer.png" height="30"/> Transformers
+A transformer converts a message's content or structure, e.g. by converting the payload of the message from one format to another or modifying the message's header values.
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
 - [Character replacing transformer](character-replacing-transformer.md)
@@ -194,17 +199,20 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [XSLT parameter](xslt-parameter.md)
 
 ## <img src="img/Splitter.png" height="30"/> Splitters
+A splitter converts a single (large) message into multiple (smaller) messages.
 - [Standard splitter](standard-splitter.md)
   - [Groovy variable](groovy-variable.md)
 - [XPath splitter](xpath-splitter.md)
 
 ## <img src="img/Filter.png" height="30"/> Filters
+A filter determines whether a message should be accepted (passed through) or rejected (discarded). Rejected messages can either be silently dropped or trigger the flow's error handling.
 - [Standard filter](standard-filter.md)
   - [Groovy variable](groovy-variable.md)
 - [XML validating filter](xml-validating-filter.md)
 - [XPath filter](xpath-filter.md)
 
 ## <img src="img/Router.png" height="30"/> Routers
+A router decides where a message should go next (if anywhere). Messages can be send to multiple destinations, in which case they are duplicated.
 - [Header value router](header-value-router.md)
   - [Header value mapping](header-value-mapping.md)
 - [Payload type router](payload-type-router.md)
@@ -218,6 +226,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [XPath value mapping](xpath-value-mapping.md)
 
 ## <img src="img/ServiceActivator.png" height="30"/> Service activators
+A service activator triggers a service instance when receiving a message. If this service returns a value the service activator functions similar to a transformer, if not it can be compared to an outbound channel adapter.
 - [Control bus](control-bus.md)
 - [Custom error message activator](custom-error-message-activator.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
@@ -243,6 +252,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## <img src="img/Channel.png" width="30"/> Channels
+Channels connect all the other flow components, decoupling them and also providing a convenient point for interception and monitoring of messages.
 - [Default channel](channel.md)
   - [Debug interceptor](debug-interceptor.md)
   - ~~[Entry tracking interceptor](entry-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
@@ -250,6 +260,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Wire tap](wire-tap.md)
 
 ## <img src="img/SupportObject.png" height="30"/> Support objects
+A support object interacts in some way with other flow components (usually extending their functionality), but is never directly part of a message flow.
 - [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
   - [Address settings](address-settings.md)
   - [Cluster connection](cluster-connection.md)
