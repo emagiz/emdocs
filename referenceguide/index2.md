@@ -6,6 +6,7 @@ This page lists all components available in the flow designer grouped by *catego
 A component with ~~strikethrough~~ indicates it is deprecated: hover to see the recommended alternative. Some components in the flow designer have additional settings that are (usually) accessed through new/edit/delete buttons: these "nested" components are listed as sub-items of the relevant component in the list below.
 
 ## Data pipelines
+Components specific to the data pipelines integration type.
 - Default execution context serializer
 - Job
 - Job execution listener gateway
@@ -18,6 +19,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Step execution listener gateway
 
 ## EDI
+Components for reading and writing EDI (text based) formats.
 - EDI to XML transformer
 - File item reader message source
 - Flat file to XML transformer
@@ -27,6 +29,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - XML to UN/EDIFACT transformer
 
 ## File
+Components that work with files accessible through the local file system.
 - [Composite file list filter](composite-file-list-filter.md)
   - [Accept once file list filter](accept-once-file-list-filter.md)
   - [Accept once per modification file list filter](accept-once-per-modification-file-list-filter.md)
@@ -49,6 +52,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## FTP(S)
+Components that work with files accessible on a remote FTP(S) server.
 - [Default FTP caching session factory](default-ftp-caching-session-factory.md)
 - [Default FTP session factory](default-ftp-session-factory.md)
 - [Default FTPS caching session factory](default-ftps-caching-session-factory.md)
@@ -74,6 +78,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## HTTP/REST
+Components for connecting with other systems using the HTTP (REST) protocol.
 - [Default HTTP header mapper](default-http-header-mapper.md)
 - [HTTP inbound channel adapter](http-inbound-channel-adapter.md)
   - [HTTP header](http-header.md)
@@ -102,6 +107,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - XSLT view
 
 ## JDBC
+Components for reading messages from and writing messages to databases using JDBC.
 - [JDBC BoneCP data source](jdbc-bonecp-data-source.md)
 - [JDBC channel message store](jdbc-channel-message-store.md)
 - [JDBC data source transaction manager](data-source-transaction-manager.md)
@@ -136,6 +142,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## JMS/AMQP
+Components that use the JMS API and/or the AMQP protocol to send and receive messages.
 - [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
 - [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
   - [Address settings](address-settings.md)
@@ -184,6 +191,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [WebSphere connection factory](websphere-connection-factory.md)
 
 ## Kafka
+Components for sending messages to and receiving messages from the Kafka distributed streaming platform.
 - Kafka message driven channel adapter
 - Kafka message listener container
 - Kafka outbound channel adapter
@@ -193,6 +201,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Kafka template
 
 ## Mail
+Components that use e-mail for sending and receiving messages.
 - [IMAP idle channel adapter](imap-idle-channel-adapter.md)
 - [Java mail sender](java-mail-sender.md)
 - [Mail attachment transformer](mail-attachment-transformer.md)
@@ -218,6 +227,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XML to MIME message transformer](xml-to-mime-message-transformer.md)
 
 ## Scripting
+Components that provide extensibility and flexibility through their scripting support.
 - [Standard filter](standard-filter.md)
   - [Groovy variable](groovy-variable.md)
 - [Standard header enricher](standard-header-enricher.md)
@@ -242,6 +252,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Groovy variable](groovy-variable.md)
 
 ## SFTP
+Components that work with files accessible on a remote SFTP (SSH File Transfer Protocol) server.
 - [Default SFTP caching session factory](default-sftp-caching-session-factory.md)
 - [Default SFTP session factory](default-sftp-session-factory.md)
 - [File to bytes transformer](file-to-bytes-transformer.md)
@@ -265,6 +276,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## TCP
+Components for sending and receiving messages as (raw) bytes over TCP connections.
 - [Byte array CR/LF (de)serializer](byte-array-cr-lf--de-serializer.md)
 - [Byte array length header (de)serializer](byte-array-length-header--de-serializer.md)
 - [Byte array raw (de)serializer](byte-array-raw--de-serializer.md)
@@ -287,6 +299,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Request handler retry advice](request-handler-retry-advice.md)
 
 ## Web services
+Components for connecting with other systems using (SOAP) web services.
 - Complex SOAP header mapper
   - [SOAP to message header mapping](soap-to-message-header-mapping.md)
 - Default WSDL 1.1 definition
@@ -320,6 +333,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Zimbra authentication SAAJ SOAP interceptor
 
 ## XML
+Components for working with messages that have an XML payload.
 - [String to wrapped XML transformer](string-to-wrapped-xml-transformer.md)
 - [FOP XSL-FO result factory](fop-xsl-fo-result-factory.md)
 - [FOP XSL-FO result transformer](fop-xsl-fo-result-transformer.md)
@@ -343,6 +357,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [XSLT parameter](xslt-parameter.md)
 
 ## XMPP
+Components that use XMPP (Extensible Messaging and Presence Protocol) for sending and receiving messages.
 - [XMPP connection](xmpp-connection.md)
 - [XMPP header enricher](xmpp-header-enricher.md)
   - [Chat thread id](xmpp-header-enricher---chat-thread-id.md)
@@ -360,6 +375,7 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [XMPP presence to XML transformer](xmpp-presence-to-xml-transformer.md)
 
 ## Miscellaneous
+Components providing very generic or very specialized functionality that do not fit in one of the other categories.
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
 - [Cache annotation driven](cache-annotation-driven.md)
