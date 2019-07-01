@@ -1,5 +1,5 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml)
+> Jump to: [Data pipelines](#data-pipelines) | [File](#file) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Mail](#mail) | [Scripting](#scripting) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml)
 
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
@@ -16,6 +16,28 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - Map job registry
 - Simple job launcher
 - Step execution listener gateway
+
+## File
+- [Composite file list filter](composite-file-list-filter.md)
+  - [Accept once file list filter](accept-once-file-list-filter.md)
+  - [Accept once per modification file list filter](accept-once-per-modification-file-list-filter.md)
+  - [Age file list filter](age-file-list-filter.md)
+  - [Delaying file list filter](delaying-file-list-filter.md)
+  - [Lock-file file list filter](lock-file-file-list-filter.md)
+  - [Regex pattern file list filter](regex-pattern-file-list-filter.md)
+  - Regular files only file list filter
+  - [Simple pattern file list filter](simple-pattern-file-list-filter.md)
+  - [Size file list filter](size-file-list-filter.md)
+- [File inbound channel adapter](file-inbound-channel-adapter.md)
+- File item reader message source
+- [File outbound channel adapter](file-outbound-channel-adapter.md)
+  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
+  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
+  - [Request handler retry advice](request-handler-retry-advice.md)
+- [File to bytes transformer](file-to-bytes-transformer.md)
+- [File to string transformer](file-to-string-transformer.md)
+- [Format file name generator](format-filename-generator.md)
+- [Timestamped file name generator](timestamped-filename-generator.md)
 
 ## HTTP/REST
 - [Default HTTP header mapper](default-http-header-mapper.md)
@@ -255,8 +277,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 ---
 
 ## <img src="img/InboundChannelAdaptor.png" height="30"/> Inbound channel adapters
-- [File inbound channel adapter](file-inbound-channel-adapter.md)
-- File item reader message source
 - [FTP inbound channel adapter](ftp-inbound-channel-adapter.md)
 - [JMX multi attribute polling message source](jmx-multi-attribute-polling-message-source.md)
 - Kafka message driven channel adapter
@@ -269,10 +289,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Command executor gateway](command-executor-gateway.md)
 
 ## <img src="img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
-- [File outbound channel adapter](file-outbound-channel-adapter.md)
-  - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
-  - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
-  - [Request handler retry advice](request-handler-retry-advice.md)
 - [FTP outbound channel adapter](ftp-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
@@ -303,8 +319,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Character replacing transformer](character-replacing-transformer.md)
 - EDI to XML transformer
 - [Error to XML transformer](error-to-xml-transformer.md)
-- [File to bytes transformer](file-to-bytes-transformer.md)
-- [File to string transformer](file-to-string-transformer.md)
 - Flat file to XML transformer
 - [Header filter](header-filter.md)
 - [Image transformer](image-transformer.md)
@@ -360,16 +374,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Cache annotation driven](cache-annotation-driven.md)
 - [Command controller](command-controller.md)
 - [Composite cache manager](composite-cache-manager.md)
-- [Composite file list filter](composite-file-list-filter.md)
-  - [Accept once file list filter](accept-once-file-list-filter.md)
-  - [Accept once per modification file list filter](accept-once-per-modification-file-list-filter.md)
-  - [Age file list filter](age-file-list-filter.md)
-  - [Delaying file list filter](delaying-file-list-filter.md)
-  - [Lock-file file list filter](lock-file-file-list-filter.md)
-  - [Regex pattern file list filter](regex-pattern-file-list-filter.md)
-  - Regular files only file list filter
-  - [Simple pattern file list filter](simple-pattern-file-list-filter.md)
-  - [Size file list filter](size-file-list-filter.md)
 - [Concurrent map cache manager](concurrent-map-cache-manager.md)
 - [Default FTP caching session factory](default-ftp-caching-session-factory.md)
 - [Default FTP session factory](default-ftp-session-factory.md)
@@ -380,7 +384,6 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
 - [Ehcache cache manager](ehcache-cache-manager.md)
   - [Ehcache cache](ehcache-cache.md)
 - [Flow controller](flow-controller.md)
-- [Format file name generator](format-filename-generator.md)
 - [FTP composite file list filter](ftp-composite-file-list-filter.md)
   - [Accept once file list filter](accept-once-file-list-filter.md)
   - [Delaying file list filter](delaying-file-list-filter.md)
@@ -417,6 +420,5 @@ A component with ~~strikethrough~~ indicates it is deprecated: hover to see the 
   - [Concurrent map cache](concurrent-map-cache.md)
 - [Task executor](task-executor.md)
 - ThClient connector
-- [Timestamped file name generator](timestamped-filename-generator.md)
 - [Top level poller](poller.md)
 - [XMPP connection](xmpp-connection.md)
