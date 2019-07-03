@@ -1,4 +1,8 @@
-# Mail header enricher - Attachment filename
+---
+id: mail-header-enricher---attachment-filename
+title: Mail header enricher - Attachment filename
+sidebar_label: Mail header enricher - Attachment filename
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

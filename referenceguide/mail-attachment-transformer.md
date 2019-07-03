@@ -1,4 +1,8 @@
-# Mail attachment transformer
+---
+id: mail-attachment-transformer
+title: Mail attachment transformer
+sidebar_label: Mail attachment transformer
+---
 #### Payload transformer that transforms messages into mail attachment messages.
 Transformer that converts the message payload to a byte array and sets the MailHeaders.ATTACHMENT_FILENAME message header, resulting in a message that will be mapped to an e-mail attachment by downstream mail outbound channel adapters. 
 
@@ -25,13 +29,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

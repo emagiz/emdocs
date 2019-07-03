@@ -1,4 +1,8 @@
-# Standard header enricher - Expiration date
+---
+id: standard-header-enricher---expiration-date
+title: Standard header enricher - Expiration date
+sidebar_label: Standard header enricher - Expiration date
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

@@ -1,4 +1,8 @@
-# FOP XSL-FO result transformer
+---
+id: fop-xsl-fo-result-transformer
+title: FOP XSL-FO result transformer
+sidebar_label: FOP XSL-FO result transformer
+---
 #### Converts the result of an XSL-FO transformation into a PDF document (represented as a byte array).
 Converts the resulting PDF document of a FOP XSL-FO transformation into a byte array (other <code>Result</code> implementations are not supported).
 

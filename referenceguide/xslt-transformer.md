@@ -1,4 +1,8 @@
-# XSLT transformer
+---
+id: xslt-transformer
+title: XSLT transformer
+sidebar_label: XSLT transformer
+---
 #### Transforms XML messages using an XSLT stylesheet.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xml-transformation" target="_blank">Documentation</a>
 
@@ -10,6 +14,23 @@ Transforms the following message payload types:
 <code>javax.xml.transform.Source</code> - results in <code>javax.xml.transform.Result</code>. 
 
 Specify a <i> result transformer</i> to convert to this result to another XML format
+
+#### Custom transformation
+Custom transformation will allow you to specify the location of the resource.
+
+By default this will be the <i>resource</i> folder.
+
+#### Transformation location
+Filename of the XSLT stylesheet file, including the location.
+
+For example: <code>resources/my-transformation.xsl</code>
+
+#### XML Transformation
+Select the xml mapping that will be used to transform your xml message.
+
+This can either be an XML mapping or an xslt.
+
+You can create new xml mappings in the resources tab.
 
 #### Result transformer
 Transformer that transforms the result to an alternative (XML) format before it is send on the channel. 
@@ -40,23 +61,6 @@ An <i>expression</i> should be any valid SpEL expression with <code>Message</cod
 
 A <i>value</i> allows you to specify a simple scalar value. You can also use property placeholders (e.g. <code>${some.value}</code>).
 
-#### Custom transformation
-Custom transformation will allow you to specify the location of the resource.
-
-By default this will be the <i>resource</i> folder.
-
-#### Transformation location
-Filename of the XSLT stylesheet file, including the location.
-
-For example: <code>resources/my-transformation.xsl</code>
-
-#### XML Transformation
-Select the xml mapping that will be used to transform your xml message.
-
-This can either be an XML mapping or an xslt.
-
-You can create new xml mappings in the resources tab.
-
 #### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
@@ -64,13 +68,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

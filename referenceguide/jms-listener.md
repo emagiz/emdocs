@@ -1,4 +1,8 @@
-# JMS listener
+---
+id: jms-listener
+title: JMS listener
+sidebar_label: JMS listener
+---
 #### Receives JMS messages from a specific JMS destination and processes them.
 JMS message listeners are responsible for receiving JMS messages from a specific JMS destination and then processing them.
 

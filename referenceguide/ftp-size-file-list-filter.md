@@ -1,4 +1,8 @@
-# FTP size file list filter
+---
+id: ftp-size-file-list-filter
+title: FTP size file list filter
+sidebar_label: FTP size file list filter
+---
 #### Minimum size
 The minimum size in bytes (inclusive) for files to be accepted by this filter.
 

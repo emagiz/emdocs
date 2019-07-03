@@ -1,4 +1,8 @@
-# XPath value mapping
+---
+id: xpath-value-mapping
+title: XPath value mapping
+sidebar_label: XPath value mapping
+---
 #### Value
 The value to check the XPath evaluation result against.
 

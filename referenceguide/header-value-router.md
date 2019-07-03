@@ -1,4 +1,8 @@
-# Header value router
+---
+id: header-value-router
+title: Header value router
+sidebar_label: Header value router
+---
 #### Routes messages to a channel based on a value in the header.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-headervaluerouter" target="_blank">Documentation</a>
 
@@ -22,6 +26,11 @@ Maps values of the message header to channels.
 If the value is not found in a mapping, the router will look for a channel which name matches the value.
 
 Note that if the header contains multiple values (comma-separated string or a string array), this router will route the message to multiple channels (this duplicates the message).
+
+#### Input channel
+Channel to consume the input messages from.
+
+<i>Required</i>
 
 #### Resolution required
 If set to <i>true</i> and channel resolution fails, a <code>MessageDeliveryException</code> is thrown. If set to <i>false</i> such failures are (silently) ignored, possibly resulting in the router resolving zero channels.
@@ -72,11 +81,6 @@ By default the send will block indefinitely.
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Input channel
-Channel to consume the input messages from.
 
 <i>Required</i>
 

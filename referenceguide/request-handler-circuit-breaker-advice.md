@@ -1,4 +1,8 @@
-# Request handler circuit breaker advice
+---
+id: request-handler-circuit-breaker-advice
+title: Request handler circuit breaker advice
+sidebar_label: Request handler circuit breaker advice
+---
 #### Saves time/resources by "turning off" failing endpoints for some period of time.
 The general idea of the <i>circuit breaker pattern</i> is that, if a service is not currently available, then don't waste time (and resources) trying to use it. When the circuit breaker is in the <i>closed</i> state, the endpoint will attempt to invoke the service. The circuit breaker goes to the <i>open</i> state if a certain number of consecutive attempts fails; when it is in the <i>open</i> state, new requests will "fail fast" and no attempt will be made to invoke the service until some time has expired.
 

@@ -1,4 +1,8 @@
-# Poller
+---
+id: poller
+title: Poller
+sidebar_label: Poller
+---
 #### Global poller that specifies when and how scheduled message receive tasks should be executed.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
 
@@ -6,15 +10,15 @@ All the <i>endpoints</i> that have to do a scheduled task like receiving on a qu
 
 If no <i>poller</i> is specified for an endpoint, the <i>default global poller </i> is used. <i>Currently a <i>global poller</i> can only be used as a default poller. There can only be one default poller in a configuration.</i>
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Default
 Set this poller as default poller of the configuration. If set, this poller will be used by all the endpoints that have no poller specified. 
 
 Note: Only one poller can be default in a configuration. 
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 
 #### Max messages per poll
 Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 

@@ -1,8 +1,60 @@
-# JMS outbound gateway
+---
+id: jms-outbound-gateway
+title: JMS outbound gateway
+sidebar_label: JMS outbound gateway
+---
 #### Sends JMS request messages to a connection and receives JMS reply messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jms.html#jms-outbound-gateway" target="_blank">Documentation</a>
 
 Sends JMS request messages to the specified request destination at the connection created by the <i>connection factory</i>, and receives JMS reply messages from the specified reply destination using the same <i>connection factory</i>.
+
+#### Connection factory
+Reference to a JMS connection factory used for creating connections.
+
+<i>Required</i>
+
+<b>Note</b>: The connection factory should return pooled connections as well as pooled sessions and message producers, otherwise performance of JMS operations is going to suffer. Consider using a <i>caching connection factory</i> to achieve this.
+
+#### Request destination name
+Name of the destination to which JMS request messages will be sent (typically the name of a JMS queue or topic).
+
+This attribute is mutually exclusive with <i>request destination expression</i>.
+
+#### Request pub-sub domain
+Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the request destination name or not.
+
+Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
+
+#### Reply destination name
+Name of the destination from which JMS reply messages will be received (typically the name of a JMS queue or topic).
+
+If not provided, JMS temporary queues will be created.
+
+#### Reply pub-sub domain
+Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the reply destination name or not.
+
+Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
+
+#### Extract request payload
+Applies to the <i>Spring Integration message</i> that is being converted into a <i>JMS message</i> to be sent as a request.
+
+If you want to pass the whole Spring Integration message (as the body of a JMS <code>ObjectMessage</code>) then set this to <code>false</code>. By default, it is <code>true</code> such that the Spring Integration message payload will be converted into a JMS message (e.g. <code>String</code> payload becomes a JMS <code>TextMessage</code>). In both cases, the message headers will be mapped to JMS headers/properties.
+
+Default is <code>true</code>.
+
+#### Extract reply payload
+Applies to the <i>JMS message</i> that is received as a reply and then converted into a <i>Spring Integration message</i>.
+
+Determines whether the received JMS message body will be extracted. If <code>false</code>, the JMS message itself will become the Spring Integration message payload. In both cases, the JMS Message headers/properties will be mapped to message headers.
+
+The default is <code>true</code>.
+
+#### Message converter
+Reference to a converter for converting the <i>Spring Integration message</i> payload to/from a <i>JMS message</i>. 
+
+When not specified, a <i>SimpleMessageConverter</i> will be used. This converter converts a <i>string</i> to a <i>TextMessage</i>, a <i>byte array</i> to a <code>BytesMessage</code>, a <i>Map</i> to a <code>MapMessage</code>, and a <i>serializable object</i>to an <code>ObjectMessage</code>.
+
+Use a <i>JMS XML Message Converter</i> for XML messages that are not already in a string-representation.
 
 #### Request destination expression
 A SpEL expression to be evaluated at runtime against each Spring Integration request message as the root object. The result should be the request destination name.
@@ -169,53 +221,17 @@ Set the timeout to use for receive calls. The default is <code>1000</code> ms (o
 
 Note: this value needs to be smaller than the transaction timeout used by the transaction manager. Value <code>-1</code> indicates no timeout at all; however, this is only feasible if not running within a transaction manager.
 
-#### Connection factory
-Reference to a JMS connection factory used for creating connections.
+#### Request channel
+Channel to consume the request messages from.
 
 <i>Required</i>
 
-<b>Note</b>: The connection factory should return pooled connections as well as pooled sessions and message producers, otherwise performance of JMS operations is going to suffer. Consider using a <i>caching connection factory</i> to achieve this.
+#### Reply channel
+Channel where reply messages should be sent to.
 
-#### Request destination name
-Name of the destination to which JMS request messages will be sent (typically the name of a JMS queue or topic).
+You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
-This attribute is mutually exclusive with <i>request destination expression</i>.
-
-#### Request pub-sub domain
-Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the request destination name or not.
-
-Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
-
-#### Reply destination name
-Name of the destination from which JMS reply messages will be received (typically the name of a JMS queue or topic).
-
-If not provided, JMS temporary queues will be created.
-
-#### Reply pub-sub domain
-Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the reply destination name or not.
-
-Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
-
-#### Extract request payload
-Applies to the <i>Spring Integration message</i> that is being converted into a <i>JMS message</i> to be sent as a request.
-
-If you want to pass the whole Spring Integration message (as the body of a JMS <code>ObjectMessage</code>) then set this to <code>false</code>. By default, it is <code>true</code> such that the Spring Integration message payload will be converted into a JMS message (e.g. <code>String</code> payload becomes a JMS <code>TextMessage</code>). In both cases, the message headers will be mapped to JMS headers/properties.
-
-Default is <code>true</code>.
-
-#### Extract reply payload
-Applies to the <i>JMS message</i> that is received as a reply and then converted into a <i>Spring Integration message</i>.
-
-Determines whether the received JMS message body will be extracted. If <code>false</code>, the JMS message itself will become the Spring Integration message payload. In both cases, the JMS Message headers/properties will be mapped to message headers.
-
-The default is <code>true</code>.
-
-#### Message converter
-Reference to a converter for converting the <i>Spring Integration message</i> payload to/from a <i>JMS message</i>. 
-
-When not specified, a <i>SimpleMessageConverter</i> will be used. This converter converts a <i>string</i> to a <i>TextMessage</i>, a <i>byte array</i> to a <code>BytesMessage</code>, a <i>Map</i> to a <code>MapMessage</code>, and a <i>serializable object</i>to an <code>ObjectMessage</code>.
-
-Use a <i>JMS XML Message Converter</i> for XML messages that are not already in a string-representation.
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -228,18 +244,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Request channel
-Channel to consume the request messages from.
-
-<i>Required</i>
-
-#### Reply channel
-Channel where reply messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
 <i>Required</i>
 

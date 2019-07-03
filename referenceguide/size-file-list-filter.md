@@ -1,4 +1,8 @@
-# Size file list filter
+---
+id: size-file-list-filter
+title: Size file list filter
+sidebar_label: Size file list filter
+---
 #### Minimum size
 The minimum size in bytes (inclusive) for files to be accepted by this filter.
 

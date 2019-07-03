@@ -1,15 +1,14 @@
-# Default FTP caching session factory
+---
+id: default-ftp-caching-session-factory
+title: Default FTP caching session factory
+sidebar_label: Default FTP caching session factory
+---
 #### Session factory for creating connections with an FTP server that uses session caching.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-session-caching" target="_blank">Documentation</a>
 
 FTP session factory that provides session caching/pooling, re-using existing sessions for multiple request.
 
 When used by a <i>FTP inbound channel adapter</i> this only creates a new session + login attempt each time the adapter synchronizes the remote FTP directory and no idle cached session is available. When used by a <i>FTP outbound channel adapter</i> this only creates a new session + login attempt each time the adapter receives a message and no idle cached session is available.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Session cache size
 Controls how many active sessions this adapter will maintain in its cache. If the <i>session cache size</i> threshold has been reached, any attempt to acquire another session will block until either one of the cached sessions becomes available or until the wait time for a session expires.
@@ -20,6 +19,11 @@ Default is unbounded (i.e. an unlimited amount of active sessions is allowed).
 The limit of how long to wait (in milliseconds) for a session to become available.
 
 Default is <code>Integer.MAX_VALUE</code> (i.e. wait indefinitely for a session to become available).
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 
 #### File type
 Indicates how the file(s) being transfered should be treated:

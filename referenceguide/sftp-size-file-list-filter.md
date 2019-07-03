@@ -1,4 +1,8 @@
-# SFTP size file list filter
+---
+id: sftp-size-file-list-filter
+title: SFTP size file list filter
+sidebar_label: SFTP size file list filter
+---
 #### Minimum size
 The minimum size in bytes (inclusive) for files to be accepted by this filter.
 

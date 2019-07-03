@@ -1,12 +1,11 @@
-# Ehcache cache manager
+---
+id: ehcache-cache-manager
+title: Ehcache cache manager
+sidebar_label: Ehcache cache manager
+---
 #### Cache manager based on the Ehcache project.
 <a href="http://ehcache.org/documentation" target="_blank">Documentation</a>
 
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Max bytes local heap
 Constraints the total memory usage of all the caches managed by the cache manager to use at most the specified amount of the local JVM's heap. This specified amount of memory will act as a global pool for all underlying caches: any cache may reserve a specific portion of this pool, or it will be assigned a portion automatically by the cache manager. 
@@ -31,4 +30,9 @@ If not filled it defaults to <i>15</i> seconds.
 The file system directory where any required disk files will be created. Relative paths are resolved against the eMagiz data directory.
 
 Default is <code>ehcache</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

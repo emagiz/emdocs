@@ -1,4 +1,8 @@
-# Value mapping
+---
+id: value-mapping
+title: Value mapping
+sidebar_label: Value mapping
+---
 #### Value
 The value to check the SpEL evaluation result against.
 

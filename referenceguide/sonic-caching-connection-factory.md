@@ -1,4 +1,8 @@
-# Sonic caching connection factory
+---
+id: sonic-caching-connection-factory
+title: Sonic caching connection factory
+sidebar_label: Sonic caching connection factory
+---
 #### A JMS ConnectionFactory used to create cached (non-XA) connections with SonicMQ.
 To use this connection factory, copy the following Java libraries from your <i>Sonic MQ</i> installation location to the <code>extensions</code> directory of the eMagiz runtime:
 
@@ -7,11 +11,6 @@ To use this connection factory, copy the following Java libraries from your <i>S
 - <code>sonic_XMessage.jar</code>
 
 Tested with versions 7.5 and 7.6 of <i>Sonic MQ</i>; should also work with all versions that have a compatible <code>ConnectionFactory</code> interface.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Session cache size
 Specify the desired size for the JMS session cache (per JMS session type).
@@ -55,6 +54,11 @@ Whether connection failure exceptions that are successfully failed over (recogni
 In case of HornetQ, the exception listener is always called on event of connection failure, irrespective of whether the connection was successfully failed over, reconnected or reattached. The error code <code>FAILOVER</code> in such cases indicates that failover was successful, and that we still have a working connection.
 
 Default is <code>false</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 
 #### Connection URLs
 Comma-separated list of broker URLs. Allows a client to connect to the first available broker on a list. 

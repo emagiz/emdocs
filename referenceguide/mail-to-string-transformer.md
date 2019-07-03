@@ -1,4 +1,8 @@
-# Mail to string transformer
+---
+id: mail-to-string-transformer
+title: Mail to string transformer
+sidebar_label: Mail to string transformer
+---
 #### Transforms a mail message to a string message
 Transforms a Message payload of type Message to a String. 
 
@@ -16,13 +20,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

@@ -1,4 +1,8 @@
-# JDBC parameter
+---
+id: jdbc-parameter
+title: JDBC parameter
+sidebar_label: JDBC parameter
+---
 #### Name
 The name of the parameter to be passed into the stored procedure or stored function. 
 

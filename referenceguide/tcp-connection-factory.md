@@ -1,7 +1,40 @@
-# TCP connection factory
+---
+id: tcp-connection-factory
+title: TCP connection factory
+sidebar_label: TCP connection factory
+---
 #### Configures a TCP connection factory that can in turn be referenced by other components.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ip.html#connection-factories" target="_blank">Documentation</a>
 
+
+#### Type
+Connection factories can be <i>client</i> or <i>server</i>.
+
+Client factories open a connection to a server using a host and port.
+
+Server factories listen on a port and create a separate connection for each incoming connection request.
+
+#### Host
+The hostname or IP address to which a client connection factory will connect.
+
+#### Port
+For client factories, the port to which a client connection factory will connect.
+
+For server factories, the port on which the factory will listen for incoming connections.
+
+#### Serializer
+A serializer that converts message payloads to/from output streams/input streams associated with the connection.
+
+Default is <i>byte array CR/LF (de)serializer</i>.
+
+Serializer and deserializer type would normally be the same, but this is not required.
+
+#### Deserializer
+A deserializer that converts message payloads to/from output streams/input streams associated with the connection.
+
+Default is <i>byte array CR/LF (de)serializer</i>.
+
+Serializer and deserializer would normally be the same but this is not required.
 
 #### Using NIO
 If <i>true</i>, the factory will use <code>java.nio.channel.SocketChannel</code> for communication; for a large number of connections on the server side, this can provide better performance and may use fewer threads.
@@ -118,33 +151,4 @@ Default is <code>100</code>.
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-#### Type
-Connection factories can be <i>client</i> or <i>server</i>.
-
-Client factories open a connection to a server using a host and port.
-
-Server factories listen on a port and create a separate connection for each incoming connection request.
-
-#### Host
-The hostname or IP address to which a client connection factory will connect.
-
-#### Port
-For client factories, the port to which a client connection factory will connect.
-
-For server factories, the port on which the factory will listen for incoming connections.
-
-#### Serializer
-A serializer that converts message payloads to/from output streams/input streams associated with the connection.
-
-Default is <i>byte array CR/LF (de)serializer</i>.
-
-Serializer and deserializer type would normally be the same, but this is not required.
-
-#### Deserializer
-A deserializer that converts message payloads to/from output streams/input streams associated with the connection.
-
-Default is <i>byte array CR/LF (de)serializer</i>.
-
-Serializer and deserializer would normally be the same but this is not required.
 

@@ -1,4 +1,8 @@
-# Object to string transformer
+---
+id: object-to-string-transformer
+title: Object to string transformer
+sidebar_label: Object to string transformer
+---
 #### Transformer that converts any message payload to a string payload.
 A simple transformer that creates an outbound payload by invoking the inbound payload's <code>toString()</code> method, unless the payload is a <code>byte[]</code> or <code>char[]</code>.
 
@@ -18,13 +22,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

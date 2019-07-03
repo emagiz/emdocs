@@ -1,13 +1,17 @@
-# REST template
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
+---
+id: rest-template
+title: REST template
+sidebar_label: REST template
+---
 
 Intercepts client-side HTTP requests, providing the opportunity to modify the outgoing HTTP request and/or the incoming HTTP reponse.
 
 This can be used to add authentication to HTTP connections, for example.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 
 #### Type
 By default a <code>RestTemplate</code> relies on standard JDK facilities to establish HTTP connections. This option allows you to switch to a different HTTP library.

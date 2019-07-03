@@ -1,29 +1,8 @@
-# Ehcache cache
-#### Disk spool buffer size
-The size (in MiB) to allocate the DiskStore for a spool buffer. Writes are made to this area and then asynchronously written to disk. Each spool buffer is used only by its cache. If you get <code>OutOfMemory</code> errors consider lowering this value. To improve DiskStore performance consider increasing it. Trace level logging in the <code>DiskStore</code> will show if put back ups are occurring. 
-
-If not filled it defaults to <code>30</code> MiB.
-
-#### Disk access stripes
-Sets the number of concurrent disk access stripes (RandomAccessFiles used to access the data file). 
-
-Default is <code>1</code>.
-
-#### Disk expiry thread interval
-Sets the interval in seconds between runs of the disk expiry thread. This is not the same thing as time to live or time to idle. When the thread runs it checks these settings. So this value is how often we check for expiry. 
-
-If not filled it defaults to <code>120</code> seconds.
-
-#### Name
-The name of the cache.
-
-<i>Note</i>: if you're using this cache for the eMagiz mapping service, the following named caches must exist:
-- <code>emagiz_mapping_cdmCodes</code>
-- <code>emagiz_mapping_systemCodes</code>
-- <code>emagiz_mapping_customAttributes</code>
-
-<i>Required</i>
-
+---
+id: ehcache-cache
+title: Ehcache cache
+sidebar_label: Ehcache cache
+---
 #### Max entries local heap
 Sets the maximum number of objects that will be created in the local JVM's heap memory. Value zero indicates no limit: in practice no limit means <code>Integer.MAX_SIZE (2147483647)</code>. 
 
@@ -94,4 +73,29 @@ If not filled it defaults to <code>0</code>, which indicates that an element can
 Sets the time to live for an element before it expires, i.e. the maximum amount of time in seconds between creation time and when an element expires. Is only used if the element is not eternal. 
 
 If not filled it defaults to <code>0</code>, which indicates that an element can live for infinity.
+
+#### Disk spool buffer size
+The size (in MiB) to allocate the DiskStore for a spool buffer. Writes are made to this area and then asynchronously written to disk. Each spool buffer is used only by its cache. If you get <code>OutOfMemory</code> errors consider lowering this value. To improve DiskStore performance consider increasing it. Trace level logging in the <code>DiskStore</code> will show if put back ups are occurring. 
+
+If not filled it defaults to <code>30</code> MiB.
+
+#### Disk access stripes
+Sets the number of concurrent disk access stripes (RandomAccessFiles used to access the data file). 
+
+Default is <code>1</code>.
+
+#### Disk expiry thread interval
+Sets the interval in seconds between runs of the disk expiry thread. This is not the same thing as time to live or time to idle. When the thread runs it checks these settings. So this value is how often we check for expiry. 
+
+If not filled it defaults to <code>120</code> seconds.
+
+#### Name
+The name of the cache.
+
+<i>Note</i>: if you're using this cache for the eMagiz mapping service, the following named caches must exist:
+- <code>emagiz_mapping_cdmCodes</code>
+- <code>emagiz_mapping_systemCodes</code>
+- <code>emagiz_mapping_customAttributes</code>
+
+<i>Required</i>
 

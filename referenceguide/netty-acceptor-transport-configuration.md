@@ -1,4 +1,8 @@
-# Netty acceptor transport configuration
+---
+id: netty-acceptor-transport-configuration
+title: Netty acceptor transport configuration
+sidebar_label: Netty acceptor transport configuration
+---
 #### Netty implementation of an acceptor.
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">Documentation</a>
 

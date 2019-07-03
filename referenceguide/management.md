@@ -1,4 +1,8 @@
-# Management
+---
+id: management
+title: Management
+sidebar_label: Management
+---
 #### Manages debug logging and the collection of monitoring metrics by components in the flow.
 To enable message channel and message handler metrics, add this support object to the message flow. Be aware that keeping track of metrics can negatively impact the flow's performance.
 

@@ -1,8 +1,30 @@
-# HornetQ connection factory
+---
+id: hornetq-connection-factory
+title: HornetQ connection factory
+sidebar_label: HornetQ connection factory
+---
 #### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
+
+#### Username
+Optional username that is used for creating connections to the JMS server.
+
+If not set (the default), the sending of user credentials is disabled.
+
+#### Password
+Optional password that is used for creating connections to the JMS server.
+
+Must be provided if and only if the <i>username</i> property is also set.
+
+#### High availability
+Determines whether or not the connection should support high availability. <code>true</code> means it will connect to any available server in a cluster and support failover. 
+
+The default value is <code>false</code>.
+
+
+The initial set of servers used to make a connection to the cluster. Each one is tried in turn until a successful connection is made. Once a connection is made, the cluster topology is downloaded and the rest of the list is ignored.
 
 
 <a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">Documentation</a>
@@ -236,22 +258,4 @@ Default is '5'.
 The size of the thread pool.
 
 Default is '-1'.
-
-#### Username
-Optional username that is used for creating connections to the JMS server.
-
-If not set (the default), the sending of user credentials is disabled.
-
-#### Password
-Optional password that is used for creating connections to the JMS server.
-
-Must be provided if and only if the <i>username</i> property is also set.
-
-#### High availability
-Determines whether or not the connection should support high availability. <code>true</code> means it will connect to any available server in a cluster and support failover. 
-
-The default value is <code>false</code>.
-
-
-The initial set of servers used to make a connection to the cluster. Each one is tried in turn until a successful connection is made. Once a connection is made, the cluster topology is downloaded and the rest of the list is ignored.
 

@@ -1,6 +1,15 @@
-# XMPP outbound channel adapter
+---
+id: xmpp-outbound-channel-adapter
+title: XMPP outbound channel adapter
+sidebar_label: XMPP outbound channel adapter
+---
 #### Outbound Channel Adapter that sends chat messages over XMPP.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">Documentation</a>
+
+#### Channel
+Channel to consume messages from.
+
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -13,11 +22,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

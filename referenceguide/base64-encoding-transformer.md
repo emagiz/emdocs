@@ -1,4 +1,8 @@
-# Base64 encoding transformer
+---
+id: base64-encoding-transformer
+title: Base64 encoding transformer
+sidebar_label: Base64 encoding transformer
+---
 #### Charset
 Character set that is used when Base64-encoding string payloads. If the payload is a byte array, this property is not used.
 
@@ -19,13 +23,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

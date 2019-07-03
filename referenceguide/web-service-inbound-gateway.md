@@ -1,4 +1,8 @@
-# Web service inbound gateway
+---
+id: web-service-inbound-gateway
+title: Web service inbound gateway
+sidebar_label: Web service inbound gateway
+---
 #### Used to receive webservice calls and send reply messages.
 Gateway to receive SOAP web service calls over HTTP(S) and send SOAP reply messages. This is used in combination with a servlet container, e.g. <i>Jetty Server</i>, where you have to specify which web service operations are forwarded to this gateway.
 
@@ -49,11 +53,6 @@ A SOAP header mapper that this gateway will use to map between Spring Integratio
 
 Cannot be used in combination with <i>mapped request headers</i> or <i>mapped reply headers</i>.
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Request channel
 Channel where request messages should be sent to.
 
@@ -63,6 +62,11 @@ You can select the <code>nullChannel</code> here to silently drop the request me
 
 #### Reply channel
 Channel to consume the reply messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

@@ -1,7 +1,14 @@
-# TCP outbound gateway
+---
+id: tcp-outbound-gateway
+title: TCP outbound gateway
+sidebar_label: TCP outbound gateway
+---
 #### Used to send TCP/IP byte-messages and receive reply messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-gateways" target="_blank">Documentation</a>
 
+
+#### Connection factory
+A <i>TCP connection factory</i> is needed by an outbound gateway. The connection factory must be of <i>client</i>.
 
 #### Request timeout
 When using a shared socket, specifies the time (in milliseconds) the gateway will wait to get access to the socket to send the request.
@@ -23,8 +30,17 @@ Also, keep in mind that when sending to a <i>direct channel</i>, the invocation 
 
 If not specified, by default the gateway will wait indefinitely.
 
-#### Connection factory
-A <i>TCP connection factory</i> is needed by an outbound gateway. The connection factory must be of <i>client</i>.
+#### Request channel
+Channel to consume the request messages from.
+
+<i>Required</i>
+
+#### Reply channel
+Channel where reply messages should be sent to.
+
+You can select the <code>nullChannel</code> here to silently drop the reply messages.
+
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -37,18 +53,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Request channel
-Channel to consume the request messages from.
-
-<i>Required</i>
-
-#### Reply channel
-Channel where reply messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
 <i>Required</i>
 

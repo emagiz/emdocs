@@ -1,4 +1,8 @@
-# Exit tracking interceptor
+---
+id: exit-tracking-interceptor
+title: Exit tracking interceptor
+sidebar_label: Exit tracking interceptor
+---
 #### Channel interceptor that sends exit tracking messages to the specified tracking channel. 
 Channel interceptor that sends exit tracking messages to the specified tracking channel. 
 
@@ -6,16 +10,6 @@ The generated tracking messages will be complete, well-formed XML documents repr
 classpath:com/emagiz/components/tracking/emagiz-tracking-1.0.xsd 
 
 The tracked message is expected to contain the TrackingHeaders.ID header, which should've been added by an upstream EntryTrackingInterceptor.
-
-#### Channel
-Channel to send tracking message to.
-
-<i>Required</i>
-
-#### Location
-String describing the location of this interceptor.
-
-<i>Required</i>
 
 #### Timeout
 The timeout when sending to the tracking channel.
@@ -37,4 +31,14 @@ Whether this tracking interceptor should exclude the payload content and payload
 Note that the payload content is always converted to a string value for tracking purposes. This is achieved by first trying to convert the payload object using an <code>XmlToStringTransformer</code>, and when this fails calling <code>String.valueOf(Object)</code> on the payload. If this is undesirable because the string conversion is quite expensive or the payload is very large, omitting the payload in the tracking messages can lead to a significant performance increase. 
 
 Default is <code>false</code>.
+
+#### Channel
+Channel to send tracking message to.
+
+<i>Required</i>
+
+#### Location
+String describing the location of this interceptor.
+
+<i>Required</i>
 

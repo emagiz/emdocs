@@ -1,19 +1,8 @@
-# HornetQ caching connection factory
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Username
-Optional username that is used for creating connections to the JMS server.
-
-If not set (the default), the sending of user credentials is disabled.
-
-#### Password
-Optional password that is used for creating connections to the JMS server.
-
-Must be provided if and only if the <i>username</i> property is also set.
-
+---
+id: hornetq-caching-connection-factory
+title: HornetQ caching connection factory
+sidebar_label: HornetQ caching connection factory
+---
 #### Session cache size
 Specify the desired size for the JMS session cache (per JMS session type).
 
@@ -56,6 +45,21 @@ Whether connection failure exceptions that are successfully failed over (recogni
 In case of HornetQ, the exception listener is always called on event of connection failure, irrespective of whether the connection was successfully failed over, reconnected or reattached. The error code <code>FAILOVER</code> in such cases indicates that failover was successful, and that we still have a working connection.
 
 Default is <code>false</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
+
+#### Username
+Optional username that is used for creating connections to the JMS server.
+
+If not set (the default), the sending of user credentials is disabled.
+
+#### Password
+Optional password that is used for creating connections to the JMS server.
+
+Must be provided if and only if the <i>username</i> property is also set.
 
 #### High availability
 Determines whether or not the connection should support high availability. <code>true</code> means it will connect to any available server in a cluster and support failover. 

@@ -1,4 +1,8 @@
-# Request handler retry advice
+---
+id: request-handler-retry-advice
+title: Request handler retry advice
+sidebar_label: Request handler retry advice
+---
 #### Allows configuration of sophisticated retry scenarios when a failure occurs in the endpoint.
 This advice leverages the rich retry mechanisms provided by the <i>Spring Retry</i> project.
 

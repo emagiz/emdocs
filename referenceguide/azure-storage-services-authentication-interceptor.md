@@ -1,4 +1,8 @@
-# Azure Storage Services authentication interceptor
+---
+id: azure-storage-services-authentication-interceptor
+title: Azure Storage Services authentication interceptor
+sidebar_label: Azure Storage Services authentication interceptor
+---
 #### Adds authentication for Microsoft Azure Storage Services to HTTP requests.
 Client HTTP request interceptor that adds authentication for Microsoft Azure's <b>Blob, Queue, and File Services</b> (see <a href="http://msdn.microsoft.com/en-us/library/azure/dd179428.aspx" target="_blank">MSDN</a>). This component was build using <b>version 2014-02-14</b> of the Azure Storage Services specification.
 

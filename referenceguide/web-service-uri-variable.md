@@ -1,4 +1,8 @@
-# Web service URI variable
+---
+id: web-service-uri-variable
+title: Web service URI variable
+sidebar_label: Web service URI variable
+---
 #### Name
 Name of the placeholder to be replaced.
 

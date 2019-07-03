@@ -1,4 +1,8 @@
-# SOAP attachments header mapper
+---
+id: soap-attachments-header-mapper
+title: SOAP attachments header mapper
+sidebar_label: SOAP attachments header mapper
+---
 #### Maps attachments, as used in the SOAP with Attachments specification, to and from message headers.
 <code>SoapHeaderMapper</code> implementation that converts MIME attachments, as used in the <i>SOAP with Attachments</i> (SwA) specification, to and from message headers.
 
@@ -20,11 +24,6 @@ To populate the <code>emagiz_ws_attachments</code> header without using a <i>web
 Note that the first argument for <code>add(...)</code>, the <i>Content-ID</i>, is <code>null</code> in this example: this will result in a randomly generated <code>UUID</code> being used. The second argument, the <i>Content-Type</i>, is also optional: if <code>null</code> it will default to <code>application/octet-stream</code>.
 
 To read from the <code>emagiz_ws_attachments</code> header, you can simply use standard <i>SpEL</i> fuctionality. For example, <code>headers.emagiz_ws_attachments[0].file</code> returns the file containing the content of the first MIME attachment.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Ignore incoming
 Whether to ignore incoming MIME attachments, i.e. not process them at all and (importantly) not save them to disk. If you are only ever <i>sending</i> attachments, set this to <code>true</code>: otherwise you might quickly run out of disk space, because anyone can just send any number of MIME attachments with their requests or responses.
@@ -56,4 +55,9 @@ When sending attachments in a web service <b>request</b>, this header mapper wil
 Regardless of whether you use this feature or not, make sure to periodically cleanup old files as well, otherwise files of messages that do not follow the "happy flow" will remain on disk forever.
 
 Default is <code>true</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

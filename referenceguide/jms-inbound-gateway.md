@@ -1,8 +1,56 @@
-# JMS inbound gateway
+---
+id: jms-inbound-gateway
+title: JMS inbound gateway
+sidebar_label: JMS inbound gateway
+---
 #### Receives JMS request messages from a connection and sends JMS reply messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jms.html#jms-inbound-gateway" target="_blank">Documentation</a>
 
 Receives JMS request messages from the specified request destination at the connection created by the <i>connection factory</i>, and sends JMS reply messages to the specified reply destination using the same <i>connection factory</i>.
+
+#### Connection factory
+Reference to a JMS ConnectionFactory used for creating connections.
+
+<i>Required</i>
+
+<b>Note</b>: Don't use a <i>caching connection factory</i> in combination with dynamic scaling. Ideally, don't use it with a inbound gateway at all, since it is generally preferable to let the gateway itself handle appropriate caching within its lifecycle. Also, stopping and restarting a gateway will only work with an independent, locally cached connection - not with an externally cached one.
+
+#### Request destination name
+A provider-specific destination name, usually either the name of a <i>JMS queue</i> or <i>JMS topic</i>. 
+
+The JMS message providing system is assumed to send request messages to this destination.
+
+#### Request pub-sub domain
+Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the request destination name or not.
+
+Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
+
+#### Default reply queue name
+Name of the JMS queue where replies are send by this gateway when the <i>reply to</i> destination is not specified on the request message.
+
+#### Default reply topic name
+Name of the JMS topic where replies are send by this gateway when the <i>reply to</i> destination is not specified on the request message.
+
+#### Extract request payload
+Applies to the <i>JMS message</i> that is received as a request and then converted into a <i>Spring Integration message</i>.
+
+Determines whether the received JMS message body will be extracted. If <code>false</code>, the JMS message itself will become the Spring Integration message payload.
+
+Default is <code>true</code>.
+
+#### Extract reply payload
+Applies to the <i>Spring Integration message</i> that is being converted into a <i>JMS message</i> to be sent as the reply.
+
+If you want to pass the whole Spring Integration message (as the body of a JMS <code>ObjectMessage</code>) then set this to <code>false</code>. By default, it is <code>true</code> such that the Spring Integration message payload will be converted into a JMS message (e.g. <code>String</code> payload becomes a JMS <code>TextMessage</code>).
+
+Default is <code>true</code>.
+
+#### Message converter
+Reference to a converter for converting the <i>Spring Integration message</i> payload to/from a <i>JMS message</i>. 
+
+When not specified, a <i>SimpleMessageConverter</i> will be used. This converter converts a <i>string</i> to a <i>TextMessage</i>, a <i>byte array</i> to a <code>BytesMessage</code>, a <i>Map</i> to a <code>MapMessage</code>, and a <i>serializable object</i>to an <code>ObjectMessage</code>.
+
+Use a <i>JMS XML Message Converter</i> for XML messages that are not already in a string-representation.
 
 #### Selector
 A JMS message selector boolean expression that evaluates the headers of the messages. Only the messages where this expression evaluates to <code>true</code> are received.
@@ -160,55 +208,6 @@ Since a default value may be defined administratively, this is only used when <i
 
 Default it <i>true</i> (delivery mode <i>PERSISTENT</i>).
 
-#### Connection factory
-Reference to a JMS ConnectionFactory used for creating connections.
-
-<i>Required</i>
-
-<b>Note</b>: Don't use a <i>caching connection factory</i> in combination with dynamic scaling. Ideally, don't use it with a inbound gateway at all, since it is generally preferable to let the gateway itself handle appropriate caching within its lifecycle. Also, stopping and restarting a gateway will only work with an independent, locally cached connection - not with an externally cached one.
-
-#### Request destination name
-A provider-specific destination name, usually either the name of a <i>JMS queue</i> or <i>JMS topic</i>. 
-
-The JMS message providing system is assumed to send request messages to this destination.
-
-#### Request pub-sub domain
-Whether the <i>publish-subscribe</i> domain (JMS Topics) should be used for resolving the request destination name or not.
-
-Default is <i>false</i>, indicating that the <i>point-to-point</i> domain (JMS Queues) should be used.
-
-#### Default reply queue name
-Name of the JMS queue where replies are send by this gateway when the <i>reply to</i> destination is not specified on the request message.
-
-#### Default reply topic name
-Name of the JMS topic where replies are send by this gateway when the <i>reply to</i> destination is not specified on the request message.
-
-#### Extract request payload
-Applies to the <i>JMS message</i> that is received as a request and then converted into a <i>Spring Integration message</i>.
-
-Determines whether the received JMS message body will be extracted. If <code>false</code>, the JMS message itself will become the Spring Integration message payload.
-
-Default is <code>true</code>.
-
-#### Extract reply payload
-Applies to the <i>Spring Integration message</i> that is being converted into a <i>JMS message</i> to be sent as the reply.
-
-If you want to pass the whole Spring Integration message (as the body of a JMS <code>ObjectMessage</code>) then set this to <code>false</code>. By default, it is <code>true</code> such that the Spring Integration message payload will be converted into a JMS message (e.g. <code>String</code> payload becomes a JMS <code>TextMessage</code>).
-
-Default is <code>true</code>.
-
-#### Message converter
-Reference to a converter for converting the <i>Spring Integration message</i> payload to/from a <i>JMS message</i>. 
-
-When not specified, a <i>SimpleMessageConverter</i> will be used. This converter converts a <i>string</i> to a <i>TextMessage</i>, a <i>byte array</i> to a <code>BytesMessage</code>, a <i>Map</i> to a <code>MapMessage</code>, and a <i>serializable object</i>to an <code>ObjectMessage</code>.
-
-Use a <i>JMS XML Message Converter</i> for XML messages that are not already in a string-representation.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Request channel
 Channel where request messages should be sent to.
 
@@ -218,6 +217,11 @@ You can select the <code>nullChannel</code> here to silently drop the request me
 
 #### Reply channel
 Channel to consume the reply messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

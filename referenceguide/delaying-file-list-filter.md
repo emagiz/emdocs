@@ -1,4 +1,8 @@
-# Delaying file list filter
+---
+id: delaying-file-list-filter
+title: Delaying file list filter
+sidebar_label: Delaying file list filter
+---
 #### Delays the filtering process for the specified amount of time.
 File list filter that delays the filtering process for the specified amount of time.
 

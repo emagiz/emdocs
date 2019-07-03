@@ -1,4 +1,8 @@
-# SFTP simple pattern file list filter
+---
+id: sftp-simple-pattern-file-list-filter
+title: SFTP simple pattern file list filter
+sidebar_label: SFTP simple pattern file list filter
+---
 #### SFTP file filter that matches the name of the file against a simple ant-style pattern.
 SFTP file filter that supports ant-style path expressions, which are less powerful but more readable than regular expressions.
 

@@ -1,4 +1,8 @@
-# IMAP idle channel adapter
+---
+id: imap-idle-channel-adapter
+title: IMAP idle channel adapter
+sidebar_label: IMAP idle channel adapter
+---
 #### Defines an event-driven IMAP mail receiving adapter. 
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-namespace" target="_blank">Documentation</a>
 
@@ -9,26 +13,8 @@ It will send a Message to the specified channel as soon as it receives the notif
 
 Specifiy a <i>Task Executor</i> when new mail messages should be processed asynchronously.
 
-#### Store URI
-The URI for the mail store. 
-
-Typically looks like the following (the underlined words need to be replaced by the actual values):
-<code>(pop3[s]|imap[s])://<u>user</u>:<u>password</u>@<u>host</u>[:<u>port</u>]/INBOX</code>
-
-Note that you can use property placeholders within the URI, for example:
-<code>imaps://${username}:${password}@imap.gmail.com/INBOX</code>
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel where the generated messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the messages.
-
-<i>Required</i>
+#### Error channel
+If a (synchronous) downstream exception is thrown and an error channel is specified, the <code>MessagingException</code> will be sent to this channel. Otherwise, any such exception will simply be logged as a warning by the channel adapter.
 
 #### Should delete messages
 Specify whether mail messages should be deleted after retrieval.
@@ -50,6 +36,24 @@ Specify the maximum number of mail messages to fetch per receive call.
 #### Mail properties
 Reference to a <i>Properties</i> entity that contains mail properties.
 
-#### Error channel
-If a (synchronous) downstream exception is thrown and an error channel is specified, the <code>MessagingException</code> will be sent to this channel. Otherwise, any such exception will simply be logged as a warning by the channel adapter.
+#### Store URI
+The URI for the mail store. 
+
+Typically looks like the following (the underlined words need to be replaced by the actual values):
+<code>(pop3[s]|imap[s])://<u>user</u>:<u>password</u>@<u>host</u>[:<u>port</u>]/INBOX</code>
+
+Note that you can use property placeholders within the URI, for example:
+<code>imaps://${username}:${password}@imap.gmail.com/INBOX</code>
+
+#### Channel
+Channel where the generated messages should be sent to.
+
+You can select the <code>nullChannel</code> here to silently drop the messages.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

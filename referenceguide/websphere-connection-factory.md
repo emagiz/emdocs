@@ -1,4 +1,8 @@
-# WebSphere connection factory
+---
+id: websphere-connection-factory
+title: WebSphere connection factory
+sidebar_label: WebSphere connection factory
+---
 #### Creates (non-cached) JMS connections to WebSphere MQ servers.
 To use this connection factory, copy the following Java libraries from your <i>WebSphere MQ</i> installation location to the <code>extensions</code> directory of the eMagiz runtime:
 
@@ -8,10 +12,27 @@ To use this connection factory, copy the following Java libraries from your <i>W
 
 Tested with version 7.1 of <i>WebSphere MQ</i>; should also work with all versions that have a compatible <code>ConnectionFactory</code> interface.
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Host name
+The name of the host.
 
-<i>Required</i>
+#### Port
+The port for a client connection.
+
+#### Queue manager
+The queue manager which is used when selecting a channel definition. This can be in one of the following forms:
+ - <code>"qMgrName"</code>, where the actual name of the required queue manager is passed in. The channel must connect to a queue manager of this name.
+ - <code>"*qMgrName"</code>, where <code>"*"</code> followed by the actual name of the required queue manager is passed in. The channel definition that is used must specify this queue manager name. This full name is passed onto the queueManager during a connect, but the queue manager that is ultimately connected to may not have the same name as specified here after the <code>"*"</code>.
+ - <code>"*"</code> or <code>""</code> or a name which consists entirely of blanks is used. The actual queue manager name is disregarded when a channel definition is being selected.
+
+#### Transport type
+Permitted values are:
+<b>0</b>: WMQ_CM_BINDINGS
+<b>1</b>: WMQ_CM_CLIENT
+<b>2</b>: WMQ_CM_DIRECT_TCPIP
+<b>4</b>: WMQ_CM_DIRECT_HTTP
+
+#### Channel
+The name of the channel; applies to client transport mode only.
 
 #### Username
 Optional username that is used for creating connections to the JMS server.
@@ -28,6 +49,11 @@ To set this property, applications using the WebSphere MQ classes for JMS need t
 Optional password that is used for creating connections to the JMS server.
 
 Must be provided if and only if the <i>username</i> property is also set.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 
 #### Description
 The description for this connection.
@@ -221,26 +247,4 @@ When creating temporary topics, JMS will generate a topic string of the form <co
 
 #### Temp Q prefix
 The prefix to be used to form the name of a WebSphere MQ dynamic queue. This must end with the <code>'*'</code> character.
-
-#### Host name
-The name of the host.
-
-#### Port
-The port for a client connection.
-
-#### Queue manager
-The queue manager which is used when selecting a channel definition. This can be in one of the following forms:
- - <code>"qMgrName"</code>, where the actual name of the required queue manager is passed in. The channel must connect to a queue manager of this name.
- - <code>"*qMgrName"</code>, where <code>"*"</code> followed by the actual name of the required queue manager is passed in. The channel definition that is used must specify this queue manager name. This full name is passed onto the queueManager during a connect, but the queue manager that is ultimately connected to may not have the same name as specified here after the <code>"*"</code>.
- - <code>"*"</code> or <code>""</code> or a name which consists entirely of blanks is used. The actual queue manager name is disregarded when a channel definition is being selected.
-
-#### Transport type
-Permitted values are:
-<b>0</b>: WMQ_CM_BINDINGS
-<b>1</b>: WMQ_CM_CLIENT
-<b>2</b>: WMQ_CM_DIRECT_TCPIP
-<b>4</b>: WMQ_CM_DIRECT_HTTP
-
-#### Channel
-The name of the channel; applies to client transport mode only.
 

@@ -1,9 +1,18 @@
-# Mail outbound channel adapter
+---
+id: mail-outbound-channel-adapter
+title: Mail outbound channel adapter
+sidebar_label: Mail outbound channel adapter
+---
 #### Sends messages as an e-mail to the specified recipient(s).
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
 
 #### Mail sender
 Sender used for sending the e-mail
+
+#### Channel
+Channel to consume messages from.
+
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -16,11 +25,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

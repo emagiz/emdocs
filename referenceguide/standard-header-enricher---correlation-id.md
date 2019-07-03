@@ -1,4 +1,8 @@
-# Standard header enricher - Correlation id
+---
+id: standard-header-enricher---correlation-id
+title: Standard header enricher - Correlation id
+sidebar_label: Standard header enricher - Correlation id
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

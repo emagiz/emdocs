@@ -1,4 +1,8 @@
-# Netty connector transport configuration
+---
+id: netty-connector-transport-configuration
+title: Netty connector transport configuration
+sidebar_label: Netty connector transport configuration
+---
 #### Connects to a (remote) server using the TCP or HTTP protocol.
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">Documentation</a>
 

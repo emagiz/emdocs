@@ -1,7 +1,18 @@
-# TCP outbound channel adapter
+---
+id: tcp-outbound-channel-adapter
+title: TCP outbound channel adapter
+sidebar_label: TCP outbound channel adapter
+---
 #### An outbound channel adapter that sends TCP/IP byte-messages.
 <a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-adapters" target="_blank">Documentation</a>
 
+
+#### Connection factory
+A <i>TCP connection factory</i> is needed by an outbound adapter.
+
+If the connection factory has a type <i>client</i>, the factory is 'owned' by this adapter. 
+
+If it has a type <i>server</i>, it is 'owned' by an inbound channel adapter and this adapter will attempt to correlate messages to the connection on which an original inbound message was received.
 
 #### Client mode
 If set to <i>true</i>, causes the adapter to establish a connection when started, rather than when the first message is sent.
@@ -16,12 +27,10 @@ When in client mode, specifies the retry interval (in milliseconds) if a connect
 
 Default is <code>60000</code> (1 minute).
 
-#### Connection factory
-A <i>TCP connection factory</i> is needed by an outbound adapter.
+#### Channel
+Channel to consume messages from.
 
-If the connection factory has a type <i>client</i>, the factory is 'owned' by this adapter. 
-
-If it has a type <i>server</i>, it is 'owned' by an inbound channel adapter and this adapter will attempt to correlate messages to the connection on which an original inbound message was received.
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -34,11 +43,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

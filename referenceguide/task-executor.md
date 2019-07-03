@@ -1,4 +1,8 @@
-# Task executor
+---
+id: task-executor
+title: Task executor
+sidebar_label: Task executor
+---
 #### Responsible for executing tasks.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/configuration.html#namespace-taskscheduler" target="_blank">Documentation</a>
 
@@ -9,6 +13,22 @@ The executor created is a <i>ThreadPoolTaskExecutor</i>. Each submitted task is 
 When a task is submitted, the executor will first try to use a free thread if the number of active threads is currently less than the <i>core size</i>. If the core size has been reached, then the task will be added to the <i>queue</i> as long as its capacity has not yet been reached. Only then, if the queue's capacity has been reached, will the executor create a new thread beyond the core size. If the max size has also been reached, then the executor will reject the task.
 
 Use the id <i>'taskScheduler'</i> to define the default task scheduler for this configuration. If this scheduler not is specified, a default scheduler will be created.
+
+#### Pool size
+Specifies the number of different tasks executed at the same time by this executor. 
+
+Default when empty: '1-Integer.MAX_VALUE'
+
+<b>(Advanced description)</b>
+Specifies the core and the maximum thread pool size in order to
+ limit the number of concurrent
+ tasks.
+ 
+If a single value is provided then the executor will have a fixed-size thread pool (the core and max sizes are the same). It also accepts a range in the form of "min-max". 
+
+Eg.: 5-10
+
+
 
 #### Queue capacity
 Queue capacity for the executor. 
@@ -46,20 +66,4 @@ Discard the oldest unhandled task request.
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-#### Pool size
-Specifies the number of different tasks executed at the same time by this executor. 
-
-Default when empty: '1-Integer.MAX_VALUE'
-
-<b>(Advanced description)</b>
-Specifies the core and the maximum thread pool size in order to
- limit the number of concurrent
- tasks.
- 
-If a single value is provided then the executor will have a fixed-size thread pool (the core and max sizes are the same). It also accepts a range in the form of "min-max". 
-
-Eg.: 5-10
-
-
 

@@ -1,4 +1,8 @@
-# SFTP outbound channel adapter
+---
+id: sftp-outbound-channel-adapter
+title: SFTP outbound channel adapter
+sidebar_label: SFTP outbound channel adapter
+---
 #### Sends messages securely to a remote directory using the SSH File Transfer Protocol.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-outbound" target="_blank">Documentation</a>
 
@@ -14,6 +18,21 @@ The SFTP outbound channel adapter supports the following payloads:
 Note: SFTP = <b>SSH File Transfer Protocol</b>, an extension of the Secure Shell protocol (SSH) to provide secure file transfer capability. Not to be confused with "regular" FTP(S), which is a completely unrelated (and incompatible) file transfer protocol.
 
 Please be aware that, depending on the SSH encryption level used by the server, you might need to install the <i>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files</i> to successfully establish secure connections.
+
+#### Remote directory
+Identifies the directory path where the files will be transferred to, e.g. <code>/temp/mytransfers</code>.
+
+Mutually exclusive with the <i>remote directory expression</i> setting.
+
+#### Auto create directory
+Specify whether to automatically create the remote target directory if it doesn't exist.
+
+Default is <code>false</code>.
+
+#### SFTP session factory
+SFTP session factory that provides the SFTP connections for this channel adapter.
+
+<i>Required</i>
 
 #### Mode
 Determines the behaviour of this adapter when the destination file already exists.
@@ -49,7 +68,7 @@ Allows you to provide remote file/directory separator character.
 Default when empty: <code>/</code>
 
 #### Remote directory expression
-Allows you to provide a SpEL expression which will compute the directory path where the files will be transferred to (e.g., <code>headers.['remote_dir'] + '/myTransfers'</code>).
+Allows you to provide a SpEL expression which will compute the directory path where the files will be transferred to (e.g., <code>headers['remote_dir'] + '/myTransfers'</code>).
 
 Mutually exclusive with the <i>remote directory</i> setting.
 
@@ -76,7 +95,7 @@ If not specified (the default), the file (with the <i>temporary file suffix</i>)
 Mutually exclusive with the <i>temporary remote directory expression</i> setting.
 
 #### Temporary remote directory expression
-Allows you to provide a SpEL expression which will compute the temporary directory path where files will be transferred to before they are moved to the <i>remote directory</i> (e.g., <code>headers.['remote_dir'] + '/temp/myTransfers'</code>).
+Allows you to provide a SpEL expression which will compute the temporary directory path where files will be transferred to before they are moved to the <i>remote directory</i> (e.g., <code>headers['remote_dir'] + '/temp/myTransfers'</code>).
 
 Mutually exclusive with the <i>temporary remote directory</i> setting.
 
@@ -85,18 +104,8 @@ Change the mode of the remote file after transferring. Integer value expressed i
 
 Default is empty, meaning the mode will not be changed after transferring.
 
-#### Remote directory
-Identifies the directory path where the files will be transferred to, e.g. <code>/temp/mytransfers</code>.
-
-Mutually exclusive with the <i>remote directory expression</i> setting.
-
-#### Auto create directory
-Specify whether to automatically create the remote target directory if it doesn't exist.
-
-Default is <code>false</code>.
-
-#### SFTP session factory
-SFTP session factory that provides the SFTP connections for this channel adapter.
+#### Channel
+Channel to consume messages from.
 
 <i>Required</i>
 
@@ -111,11 +120,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

@@ -1,13 +1,12 @@
-# JVM performance monitor
+---
+id: jvm-performance-monitor
+title: JVM performance monitor
+sidebar_label: JVM performance monitor
+---
 #### Factory class for creating a PerformanceMonitor and registering it as an MBean with the MBean server. 
 Factory class for creating a PerformanceMonitor and registering it as an MBean with the MBean server. 
 
 Requires a license for the monitoring module.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### MBean server
 The MBeanServer the MBean will be registered with. 
@@ -22,4 +21,9 @@ The domain in which the MBean will be registered.
 Default is 'com.emagiz'.
 
 This method can only be called if the the MBean is not registered.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

@@ -1,4 +1,8 @@
-# Standard header enricher - Custom header
+---
+id: standard-header-enricher---custom-header
+title: Standard header enricher - Custom header
+sidebar_label: Standard header enricher - Custom header
+---
 #### Name
 Name (uniquely) identifying this message header.
 

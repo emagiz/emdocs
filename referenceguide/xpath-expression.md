@@ -1,4 +1,8 @@
-# XPath expression
+---
+id: xpath-expression
+title: XPath expression
+sidebar_label: XPath expression
+---
 #### Defines an XPath expression.
 Example:
 XPath expression : <code>/ns1:one/@type</code>
@@ -14,9 +18,9 @@ Name that uniquely identifies this flow component.
 <i>Required</i>
 
 
-Namespace URI of the XML nodes in the XPath expression.
+Namespace prefix of the XML nodes in the XPath expression
 
-<i>Optional, but required when namespace prefix is set</i>
+<i>Optional, but required when namespace URI is set</i>
 
 Example:
 XPath expression : <code>/ns1:one/@type</code>
@@ -26,9 +30,9 @@ Namespace URI: <code>http://www.example.org</code>
 <a href="https://www.w3schools.com/xml/xml_namespaces.asp" onclick="window.open('https://www.w3schools.com/xml/xml_namespaces.asp');" target="_blank">XML namespace reference</a>
 
 
-Namespace prefix of the XML nodes in the XPath expression
+Namespace URI of the XML nodes in the XPath expression.
 
-<i>Optional, but required when namespace URI is set</i>
+<i>Optional, but required when namespace prefix is set</i>
 
 Example:
 XPath expression : <code>/ns1:one/@type</code>

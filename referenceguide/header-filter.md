@@ -1,4 +1,8 @@
-# Header filter
+---
+id: header-filter
+title: Header filter
+sidebar_label: Header filter
+---
 #### Header names
 Specify one or more header names (as a comma separated list) to be removed from the messages handled by this transformer.
 
@@ -18,13 +22,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

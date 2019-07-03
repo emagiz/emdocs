@@ -1,7 +1,53 @@
-# HornetQ JMS server manager
+---
+id: hornetq-jms-server-manager
+title: HornetQ JMS server manager
+sidebar_label: HornetQ JMS server manager
+---
 #### Creates a JMS server for hosting JMS queues and topics.
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#using-jms" target="_blank">Documentation</a>
 
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
+
+Each acceptor defines a way in which connections can be made to the HornetQ server.
+
+Minimal one acceptor is required.
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.connectors" target="_blank">Documentation</a>
+
+Connectors are used by a client to define how it connects to a server.
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
+
+Defines a cluster of HornetQ server that share message processing load.
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">Documentation</a>
+
+The function of a bridge is to consume messages from a source queue, and forward them to a target address, typically on a different HornetQ server.
+
+
+Queue configuration settings which will be applied against any addresses with a name that matches a certain wildcard expression.
+
+When <i>match</i> is <code>jms.queue.example</code> for example, the settings would only be applied to any addresses which exactly match the address <code>jms.queue.example</code>. You can also use wildcards to apply settings against many addresses. For example, if you used the match string <code>jms.queue.#</code>, the settings would be applied to all addresses that start with <code>jms.queue.</code> (which would be all JMS queues).
+
+Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>jms.queue.example</code> (matches one JMS queue), <code>jms.*.example</code> (matches one JMS queue and one JMS topic), <code>jms.queue.#</code> (matches all JMS queues), <code>jms.#</code> (matches all JMS queues and JMS topics).
+
+
+Security settings which will be applied against any addresses with a name that matches a certain wildcard expression.
+
+When <i>match</i> is <code>jms.queue.example</code> for example, the settings would only be applied to any addresses which exactly match the address <code>jms.queue.example</code>. You can also use wildcards to apply settings against many addresses. For example, if you used the match string <code>jms.queue.#</code>, the settings would be applied to all addresses that start with <code>jms.queue.</code> (which would be all JMS queues).
+
+Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>jms.queue.example</code> (matches one JMS queue), <code>jms.*.example</code> (matches one JMS queue and one JMS topic), <code>jms.queue.#</code> (matches all JMS queues), <code>jms.#</code> (matches all JMS queues and JMS topics).
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#jms-core-mapping" target="_blank">Documentation</a>
+
+
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
 
 
 <a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#persistence" target="_blank">Documentation</a>
@@ -374,46 +420,4 @@ Default is 'org.hornetq'.
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
-
-Each acceptor defines a way in which connections can be made to the HornetQ server.
-
-Minimal one acceptor is required.
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.connectors" target="_blank">Documentation</a>
-
-Connectors are used by a client to define how it connects to a server.
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
-
-Defines a cluster of HornetQ server that share message processing load.
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">Documentation</a>
-
-The function of a bridge is to consume messages from a source queue, and forward them to a target address, typically on a different HornetQ server.
-
-
-Queue configuration settings which will be applied against any addresses with a name that matches a certain wildcard expression.
-
-When <i>match</i> is <code>jms.queue.example</code> for example, the settings would only be applied to any addresses which exactly match the address <code>jms.queue.example</code>. You can also use wildcards to apply settings against many addresses. For example, if you used the match string <code>jms.queue.#</code>, the settings would be applied to all addresses that start with <code>jms.queue.</code> (which would be all JMS queues).
-
-Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>jms.queue.example</code> (matches one JMS queue), <code>jms.*.example</code> (matches one JMS queue and one JMS topic), <code>jms.queue.#</code> (matches all JMS queues), <code>jms.#</code> (matches all JMS queues and JMS topics).
-
-
-Security settings which will be applied against any addresses with a name that matches a certain wildcard expression.
-
-When <i>match</i> is <code>jms.queue.example</code> for example, the settings would only be applied to any addresses which exactly match the address <code>jms.queue.example</code>. You can also use wildcards to apply settings against many addresses. For example, if you used the match string <code>jms.queue.#</code>, the settings would be applied to all addresses that start with <code>jms.queue.</code> (which would be all JMS queues).
-
-Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>jms.queue.example</code> (matches one JMS queue), <code>jms.*.example</code> (matches one JMS queue and one JMS topic), <code>jms.queue.#</code> (matches all JMS queues), <code>jms.#</code> (matches all JMS queues and JMS topics).
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#jms-core-mapping" target="_blank">Documentation</a>
-
-
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
 

@@ -1,4 +1,8 @@
-# Standard header enricher - Reply channel
+---
+id: standard-header-enricher---reply-channel
+title: Standard header enricher - Reply channel
+sidebar_label: Standard header enricher - Reply channel
+---
 #### Channel reference
 Specifies the channel which id is used as value for the header.
 

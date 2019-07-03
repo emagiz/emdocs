@@ -1,9 +1,8 @@
-# Command executor gateway
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
+---
+id: command-executor-gateway
+title: Command executor gateway
+sidebar_label: Command executor gateway
+---
 #### Request channel
 Channel where request messages should be sent to.
 
@@ -13,6 +12,11 @@ You can select the <code>nullChannel</code> here to silently drop the request me
 
 #### Reply channel
 Channel to consume the reply messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

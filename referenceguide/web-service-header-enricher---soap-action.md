@@ -1,4 +1,8 @@
-# Web service header enricher - SOAP action
+---
+id: web-service-header-enricher---soap-action
+title: Web service header enricher - SOAP action
+sidebar_label: Web service header enricher - SOAP action
+---
 #### Value
 Value of the header
 

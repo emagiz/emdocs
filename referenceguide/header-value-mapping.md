@@ -1,4 +1,8 @@
-# Header value mapping
+---
+id: header-value-mapping
+title: Header value mapping
+sidebar_label: Header value mapping
+---
 #### Value
 The value to check the header of the incoming message against.
 

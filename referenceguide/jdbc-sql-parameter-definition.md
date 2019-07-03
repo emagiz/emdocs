@@ -1,4 +1,8 @@
-# JDBC SQL parameter definition
+---
+id: jdbc-sql-parameter-definition
+title: JDBC SQL parameter definition
+sidebar_label: JDBC SQL parameter definition
+---
 #### Name
 The name of the SQL parameter definition.
 

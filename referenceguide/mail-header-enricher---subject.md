@@ -1,4 +1,8 @@
-# Mail header enricher - Subject
+---
+id: mail-header-enricher---subject
+title: Mail header enricher - Subject
+sidebar_label: Mail header enricher - Subject
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

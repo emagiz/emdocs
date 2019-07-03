@@ -1,4 +1,8 @@
-# XPath router
+---
+id: xpath-router
+title: XPath router
+sidebar_label: XPath router
+---
 #### Routes messages based on a XPath expression.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-routing" target="_blank">Documentation</a>
 
@@ -12,6 +16,23 @@ Maps result values of the XPath expression to channels.
 If the value is not found in a mapping, the router will look for a channel which name matches the value.
 
 Note that if the XPath expression evaluates to multiple values or the value is a comma-separated string, this router will route the message to multiple channels (this duplicates the message).
+
+#### Evaluate XPath as string
+Specifies if the XPath expression should be evaluated as as <code>String</code> type instead of <code>NODESET</code> type. 
+
+By default XPath expressions are evaluated as <code>NODESET</code type and then converted to a List of channel names. 
+Certain XPath expressions may evaluate as String type from the very beginning,  e.g., <code>name(./node())</code> which will return the name of the root node). 
+It results in the exception if default evaluation type (NODESET) is used.
+
+NODESET returns an <code>list&lt;String&gt;</code>, evaluated as String will return the string value of the first node. 
+
+Default: false
+
+
+#### Input channel
+Channel to consume the input messages from.
+
+<i>Required</i>
 
 #### Resolution required
 If set to <i>true</i> and channel resolution fails, a <code>MessageDeliveryException</code> is thrown. If set to <i>false</i> such failures are (silently) ignored, possibly resulting in the router resolving zero channels.
@@ -60,39 +81,10 @@ Specify the maximum amount of time in milliseconds to wait when sending messages
 
 By default the send will block indefinitely.
 
-#### Evaluate XPath as string
-Specifies if the XPath expression should be evaluated as as <code>String</code> type instead of <code>NODESET</code> type. 
-
-By default XPath expressions are evaluated as <code>NODESET</code type and then converted to a List of channel names. 
-Certain XPath expressions may evaluate as String type from the very beginning,  e.g., <code>name(./node())</code> which will return the name of the root node). 
-It results in the exception if default evaluation type (NODESET) is used.
-
-NODESET returns an <code>list&lt;String&gt;</code>, evaluated as String will return the string value of the first node. 
-
-Default: false
-
-
 #### Id
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-#### Input channel
-Channel to consume the input messages from.
-
-<i>Required</i>
-
-
-XPath expression that returns a value (boolean or string) used for filtering the message. In case of a boolean value, <code>true</code> accepts the message and <code>false</code> discards it. In case of a string value, this decision depends on the value of the <i>match value</i> and <i>match type</i> settings.
-
-<i>Required</i>
-
-Example:
-XPath expression : <code>/ns1:one/@type</code>
-Namespace prefix : <code>ns1</code>
-Namespace URI: <code>http://www.example.org</code>
-
-<a href="https://www.w3schools.com/xml/xpath_syntax.asp" onclick="window.open('https://www.w3schools.com/xml/xpath_syntax.asp');" target="_blank">XPath syntax reference</a>
 
 
 Namespace prefix of the XML nodes in the XPath expression
@@ -117,4 +109,16 @@ Namespace prefix : <code>ns1</code>
 Namespace URI: <code>http://www.example.org</code>
 
 <a href="https://www.w3schools.com/xml/xml_namespaces.asp" onclick="window.open('https://www.w3schools.com/xml/xml_namespaces.asp');" target="_blank">XML namespace reference</a>
+
+
+XPath expression that returns a value (boolean or string) used for filtering the message. In case of a boolean value, <code>true</code> accepts the message and <code>false</code> discards it. In case of a string value, this decision depends on the value of the <i>match value</i> and <i>match type</i> settings.
+
+<i>Required</i>
+
+Example:
+XPath expression : <code>/ns1:one/@type</code>
+Namespace prefix : <code>ns1</code>
+Namespace URI: <code>http://www.example.org</code>
+
+<a href="https://www.w3schools.com/xml/xpath_syntax.asp" onclick="window.open('https://www.w3schools.com/xml/xpath_syntax.asp');" target="_blank">XPath syntax reference</a>
 

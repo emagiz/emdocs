@@ -1,4 +1,8 @@
-# Recipient
+---
+id: recipient
+title: Recipient
+sidebar_label: Recipient
+---
 #### Channel
 The channel (recipient) that the message will be send to.
 

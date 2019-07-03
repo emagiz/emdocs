@@ -1,4 +1,8 @@
-# Mail header enricher - Multipart mode
+---
+id: mail-header-enricher---multipart-mode
+title: Mail header enricher - Multipart mode
+sidebar_label: Mail header enricher - Multipart mode
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

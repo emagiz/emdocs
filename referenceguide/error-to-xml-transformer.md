@@ -1,4 +1,8 @@
-# Error to XML transformer
+---
+id: error-to-xml-transformer
+title: Error to XML transformer
+sidebar_label: Error to XML transformer
+---
 #### Transformer that converts error messages into XML messages.
 Transformer that converts error messages (i.e. a message with a <code>Throwable</code> payload) to XML.
 
@@ -37,6 +41,12 @@ Please be aware that the <i>replyChannel</i> and <i>errorChannel</i> headers tha
 
 Default is <i>restore serializable headers only</i>.
 
+#### Result type
+Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
+
+Default is <code>String</code>.
+
+
 #### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
@@ -44,19 +54,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Result type
-Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
-
-Default is <code>String</code>.
-
-
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

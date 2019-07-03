@@ -1,7 +1,34 @@
-# File outbound channel adapter
+---
+id: file-outbound-channel-adapter
+title: File outbound channel adapter
+sidebar_label: File outbound channel adapter
+---
 #### Write messages to a file in a specified system directory
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/files.html#file-writing" target="_blank">Documentation</a>
 
+
+#### Directory
+Destination directory where the files will be written to.
+
+Some examples:
+- <code>C:/files/out</code>
+- <code>${file.base-dir}/my-files/out</code>
+- <code>${file.dir.out}</code>
+
+#### Auto create directory
+Specify whether to automatically create the destination directory if it does not yet exist when this adapter is being initialized. 
+
+If set to <i>false</i> and the directory does not exist upon initialization, an exception will be thrown.
+
+Default is <i>true</i>.
+
+#### Delete source files
+Specify whether to delete source files after writing to the destination directory.
+
+This will only take effect if the message payload is the actual source <code>File</code> instance
+ or if the original <code>File</code> instance (or its path) is available in the header.
+
+Default: <i>false</i>
 
 #### Mode
 Determines the behaviour of this adapter when the destination file already exists.
@@ -73,28 +100,10 @@ This attribute is mutualy exclusive with mode <i>Append</i>, since the append is
 
 Default is <code>.writing</code>.
 
-#### Directory
-Destination directory where the files will be written to.
+#### Channel
+Channel to consume messages from.
 
-Some examples:
-- <code>C:/files/out</code>
-- <code>${file.base-dir}/my-files/out</code>
-- <code>${file.dir.out}</code>
-
-#### Auto create directory
-Specify whether to automatically create the destination directory if it does not yet exist when this adapter is being initialized. 
-
-If set to <i>false</i> and the directory does not exist upon initialization, an exception will be thrown.
-
-Default is <i>true</i>.
-
-#### Delete source files
-Specify whether to delete source files after writing to the destination directory.
-
-This will only take effect if the message payload is the actual source <code>File</code> instance
- or if the original <code>File</code> instance (or its path) is available in the header.
-
-Default: <i>false</i>
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -107,11 +116,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

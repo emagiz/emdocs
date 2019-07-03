@@ -1,4 +1,8 @@
-# Mendix FileDocument WS request transformer
+---
+id: mendix-filedocument-ws-request-transformer
+title: Mendix FileDocument WS request transformer
+sidebar_label: Mendix FileDocument WS request transformer
+---
 #### Creates web service request messages for passing the payload to Mendix as a System.FileDocument object.
 Transformer that converts the incoming message payload into a Mendix web service request that contains this payload as a <i>Base64</i> encoded string. Such web service requests are compatible with a Mendix published web service operation that has the <code>Contents</code> member of a <code>System.FileDocument</code> entity as its only parameter. 
 
@@ -38,6 +42,12 @@ If the payload of the incoming message is already in byte form (i.e. a <code>byt
 
 Default is <code>UTF-8</code>.
 
+#### Result type
+Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
+
+Default is <code>String</code>.
+
+
 #### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
@@ -45,19 +55,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Result type
-Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
-
-Default is <code>String</code>.
-
-
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

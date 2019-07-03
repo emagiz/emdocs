@@ -1,8 +1,17 @@
-# MBean export
+---
+id: mbean-export
+title: MBean export
+sidebar_label: MBean export
+---
 #### Exports message channels and message handlers as JMX MBeans.
 Exports message channels and message handlers in this message flow as MBeans. This will expose management operations and monitoring metrics of those objects to JMX.
 
 Note that message channels and message handlers do <b>not</b> collect any metrics, unless this message flow contains a <i>management</i> support object that is configured to enable those metrics.
+
+#### Server
+Defines the name of the MBeanServer bean to connect to.
+
+Default is "mbeanServer".
 
 #### Default domain
 The domain can be left out in which case the default domain is "org.springframework.integration".
@@ -26,9 +35,4 @@ Static object properties to be used for this domain. These properties are append
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-#### Server
-Defines the name of the MBeanServer bean to connect to.
-
-Default is "mbeanServer".
 

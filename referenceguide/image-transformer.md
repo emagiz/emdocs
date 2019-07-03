@@ -1,4 +1,8 @@
-# Image transformer
+---
+id: image-transformer
+title: Image transformer
+sidebar_label: Image transformer
+---
 #### Transformer for converting images to different formats, e.g. from GIF to JPEG. 
 Transformer for converting images to different formats, e.g. from GIF to JPEG. 
 
@@ -22,13 +26,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

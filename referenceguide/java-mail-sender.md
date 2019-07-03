@@ -1,4 +1,8 @@
-# Java mail sender
+---
+id: java-mail-sender
+title: Java mail sender
+sidebar_label: Java mail sender
+---
 #### Used for preparing and sending MIME messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
 
@@ -9,11 +13,6 @@ The recommended way of using this interface is the MimeMessagePreparator mechani
 The entire JavaMail Session management is abstracted by the JavaMailSender. Client code should not deal with a Session in any way, rather leave the entire JavaMail configuration and resource handling to the JavaMailSender implementation. This also increases testability.
 
 A JavaMailSender client is not as easy to test as a plain MailSender client, but still straightforward compared to traditional JavaMail code: Just let createMimeMessage() return a plain MimeMessage created with a Session.getInstance(new Properties()) call, and check the passed-in messages in your mock implementations of the various send methods.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Host
 Set the mail server host, typically an SMTP host.
@@ -50,4 +49,9 @@ Set JavaMail properties for the Session.
 A new Session will be created with those properties.
 
 Non-default properties in this instance will override given JavaMail properties.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

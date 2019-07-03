@@ -1,4 +1,8 @@
-# XML mapping message consumer
+---
+id: xml-mapping-message-consumer
+title: XML mapping message consumer
+sidebar_label: XML mapping message consumer
+---
 #### Message consumer that passes the incoming message payload to the specified Mendix XML-to-domain mapping. 
 Message consumer that passes the incoming message payload to the specified Mendix XML-to-domain mapping. 
 
@@ -20,16 +24,6 @@ Example: <code>MyModule.MyXmlToDomainMapping</code>
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
-
-<i>Required</i>
-
 #### Charset
 The name of the character set to be used to encode the string representation of the incoming XML document into a sequence of bytes, which then can be used as the input stream for the Mendix XML-to-domain mapping. 
 
@@ -41,4 +35,14 @@ Whether to immediately logout the Mendix system session after calling the mappin
 From Mendix version 4.8 onwards, setting this to <i>true</i> can potentially prevent out-of-memory exceptions and improve (long term) performance in cases where messages are consumed faster than Mendix can cleanup the sessions.
 
 Default is <i>false</i>.
+
+#### Channel
+Channel to consume messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

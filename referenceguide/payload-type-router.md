@@ -1,4 +1,8 @@
-# Payload type router
+---
+id: payload-type-router
+title: Payload type router
+sidebar_label: Payload type router
+---
 #### Routes messages to channels based on the type of the payload.
 
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-payloadtyperouter" target="_blank">Documentation</a>
@@ -8,6 +12,11 @@
 Maps (Java) payload types of the message to channels. 
 
 Note that because a message always has exactly one payload type, this router is not capable of routing a message to multiple channels.
+
+#### Input channel
+Channel to consume the input messages from.
+
+<i>Required</i>
 
 #### Resolution required
 If set to <i>true</i> and channel resolution fails, a <code>MessageDeliveryException</code> is thrown. If set to <i>false</i> such failures are (silently) ignored, possibly resulting in the router resolving zero channels.
@@ -58,11 +67,6 @@ By default the send will block indefinitely.
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Input channel
-Channel to consume the input messages from.
 
 <i>Required</i>
 

@@ -1,13 +1,12 @@
-# FOP XSL-FO result factory
+---
+id: fop-xsl-fo-result-factory
+title: FOP XSL-FO result factory
+sidebar_label: FOP XSL-FO result factory
+---
 #### Prepares an XSLT transformation for generating PDF documents using XSL-FO.
 Enables a normal XSLT transformation to generate PDF documents instead of XML, by using FOP XSL-FO.
 
 Can be used in combination with <i>FOP XSL-FO result transformer</i> to generate PDF documents using Spring Integration's <i>XSLT transformer</i>.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Base URL
 Specifies the base URL based on which relative URLs will be resolved. 
@@ -48,4 +47,9 @@ Default is <code>false</code>.
 Setting this option to <code>false</code> causes FOP to be more forgiving about XSL-FO validity, for example, you're allowed to specify a border on a region-body which is supported by some FO implementations but is non-standard. Note that such a border would currently have no effect in Apache FOP.
 
 Default is <code>true</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

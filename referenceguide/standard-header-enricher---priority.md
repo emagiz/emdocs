@@ -1,4 +1,8 @@
-# Standard header enricher - Priority
+---
+id: standard-header-enricher---priority
+title: Standard header enricher - Priority
+sidebar_label: Standard header enricher - Priority
+---
 #### Specifies the value for 'priority' header when using PriorityChannel.
 Used to set the priority of a message when the message is going through priority channels
 

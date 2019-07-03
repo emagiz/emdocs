@@ -1,4 +1,8 @@
-# Global channel interceptor
+---
+id: global-channel-interceptor
+title: Global channel interceptor
+sidebar_label: Global channel interceptor
+---
 #### Pattern
 Channel name(s) or patterns this interceptor will be added to.
 
@@ -67,26 +71,6 @@ The intercepted message is not altered at all by this interceptor, nor should th
 This interceptor will start deactivated and can be activated by calling <code>activate(String, long)</code>. When not activated, no debug messages will be produced.
 
 #### Channel
-Channel to send tracking message to.
-
-<i>Required</i>
-
-#### Location
-String describing the location of this interceptor.
-
-<i>Required</i>
-
-#### Channel
-Channel to send tracking message to.
-
-<i>Required</i>
-
-#### Location
-String describing the location of this interceptor.
-
-<i>Required</i>
-
-#### Channel
 Channel to send debug message to.
 
 <i>Required</i>
@@ -139,4 +123,24 @@ Whether this tracking interceptor should exclude the payload content and payload
 Note that the payload content is always converted to a string value for tracking purposes. This is achieved by first trying to convert the payload object using an <code>XmlToStringTransformer</code>, and when this fails calling <code>String.valueOf(Object)</code> on the payload. If this is undesirable because the string conversion is quite expensive or the payload is very large, omitting the payload in the tracking messages can lead to a significant performance increase. 
 
 Default is <code>false</code>.
+
+#### Channel
+Channel to send tracking message to.
+
+<i>Required</i>
+
+#### Location
+String describing the location of this interceptor.
+
+<i>Required</i>
+
+#### Channel
+Channel to send tracking message to.
+
+<i>Required</i>
+
+#### Location
+String describing the location of this interceptor.
+
+<i>Required</i>
 

@@ -1,13 +1,12 @@
-# SFTP composite file list filter
+---
+id: sftp-composite-file-list-filter
+title: SFTP composite file list filter
+sidebar_label: SFTP composite file list filter
+---
 #### Combines any number of SFTP file list filters.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/files.html#file-reading" target="_blank">Documentation</a>
 
 A composite file list filter combines any number of file list filters. Only when all filters in the list accept a file, the composite file list filter will accept it.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 
 Sub filters of this composite filter. A file must pass through each sub filter in order to be accepted by the main composite filter. The filters are applied in the specified order until a filter rejects the file or all filters have accepted the file.
@@ -21,4 +20,9 @@ Sub filters of this composite filter. A file must pass through each sub filter i
 <b>Regular files only</b> - Only accepts regular files, not directories or symbolic links.
 <b>Simple pattern</b> - Matches the name of the file against a simple ant-style pattern.
 <b>Size</b> - Only accepts files with a size within the specified limits.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

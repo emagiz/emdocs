@@ -1,4 +1,8 @@
-# FTP outbound channel adapter
+---
+id: ftp-outbound-channel-adapter
+title: FTP outbound channel adapter
+sidebar_label: FTP outbound channel adapter
+---
 #### Write messages to a remote FTP directory.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-outbound" target="_blank">Documentation</a>
 
@@ -10,6 +14,23 @@ The FTP Outbound Channel Adapter supports the following payloads:
 <code>byte[]</code> - a byte array that represents the file contents
 <code>java.lang.String</code> - text that represents the file contents 
 
+
+#### Remote directory
+Identifies directory path where file will be transferred to.
+
+e.g., <code>/temp/mytransfers</code>
+
+Mutually exclusive with the <i>remote directory expression</i> setting.
+
+#### Auto create directory
+Specify whether to automatically create the remote target directory if it doesn't exist.
+
+Default is <code>false</code>.
+
+#### FTP session factory
+FTP session factory that provides the FTP(S) connections for this channel adapter.
+
+<i>Required</i>
 
 #### Mode
 Determines the behaviour of this adapter when the destination file already exists.
@@ -45,7 +66,7 @@ Allows you to provide remote file/directory separator character.
 Default when empty: <code>/</code>
 
 #### Remote directory expression
-Allows you to provide a SpEL expression which will compute the directory path where the files will be transferred to (e.g., <code>headers.['remote_dir'] + '/myTransfers'</code>).
+Allows you to provide a SpEL expression which will compute the directory path where the files will be transferred to (e.g., <code>headers['remote_dir'] + '/myTransfers'</code>).
 
 Mutually exclusive with the <i>remote directory</i> setting.
 
@@ -72,24 +93,12 @@ If not specified (the default), the file (with the <i>temporary file suffix</i>)
 Mutually exclusive with the <i>temporary remote directory expression</i> setting.
 
 #### Temporary remote directory expression
-Allows you to provide a SpEL expression which will compute the temporary directory path where files will be transferred to before they are moved to the <i>remote directory</i> (e.g., <code>headers.['remote_dir'] + '/temp/myTransfers'</code>).
+Allows you to provide a SpEL expression which will compute the temporary directory path where files will be transferred to before they are moved to the <i>remote directory</i> (e.g., <code>headers['remote_dir'] + '/temp/myTransfers'</code>).
 
 Mutually exclusive with the <i>temporary remote directory</i> setting.
 
-#### Remote directory
-Identifies directory path where file will be transferred to.
-
-e.g., <code>/temp/mytransfers</code>
-
-Mutually exclusive with the <i>remote directory expression</i> setting.
-
-#### Auto create directory
-Specify whether to automatically create the remote target directory if it doesn't exist.
-
-Default is <code>false</code>.
-
-#### FTP session factory
-FTP session factory that provides the FTP(S) connections for this channel adapter.
+#### Channel
+Channel to consume messages from.
 
 <i>Required</i>
 
@@ -104,11 +113,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

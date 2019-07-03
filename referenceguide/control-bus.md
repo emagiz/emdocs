@@ -1,4 +1,8 @@
-# Control bus
+---
+id: control-bus
+title: Control bus
+sidebar_label: Control bus
+---
 #### Service activator for managing components within the messaging framework.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#control-bus" target="_blank">Documentation</a>
 
@@ -15,13 +19,13 @@ If this property is set and the executed command returns a non-<code>null</code>
 
 <i>Optional</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

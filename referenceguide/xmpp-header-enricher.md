@@ -1,4 +1,8 @@
-# XMPP header enricher
+---
+id: xmpp-header-enricher
+title: XMPP header enricher
+sidebar_label: XMPP header enricher
+---
 #### Adds XMPP headers to a message.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">Documentation</a>
 
@@ -13,13 +17,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

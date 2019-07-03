@@ -1,4 +1,8 @@
-# Character replacing transformer
+---
+id: character-replacing-transformer
+title: Character replacing transformer
+sidebar_label: Character replacing transformer
+---
 #### Transformer that replaces certain Unicode code points in the (string) payload.
 Transformer that replaces certain Unicode code points in the (string) payload.
 
@@ -28,13 +32,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

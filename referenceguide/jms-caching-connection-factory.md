@@ -1,9 +1,8 @@
-# JMS caching connection factory
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
+---
+id: jms-caching-connection-factory
+title: JMS caching connection factory
+sidebar_label: JMS caching connection factory
+---
 #### Target connection factory
 The actual JMS connection factory this caching connection factory will delegate to for the creation of connections, sessions, producers and consumers.
 
@@ -53,4 +52,9 @@ Whether connection failure exceptions that are successfully failed over (recogni
 In case of HornetQ, the exception listener is always called on event of connection failure, irrespective of whether the connection was successfully failed over, reconnected or reattached. The error code <code>FAILOVER</code> in such cases indicates that failover was successful, and that we still have a working connection.
 
 Default is <code>false</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

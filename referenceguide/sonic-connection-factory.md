@@ -1,4 +1,8 @@
-# Sonic connection factory
+---
+id: sonic-connection-factory
+title: Sonic connection factory
+sidebar_label: Sonic connection factory
+---
 #### A JMS ConnectionFactory used to create connections with SonicMQ.
 To use this connection factory, copy the following Java libraries from your <i>Sonic MQ</i> installation location to the <code>extensions</code> directory of the eMagiz runtime:
 

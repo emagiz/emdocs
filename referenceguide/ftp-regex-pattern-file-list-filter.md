@@ -1,4 +1,8 @@
-# FTP regex pattern file list filter
+---
+id: ftp-regex-pattern-file-list-filter
+title: FTP regex pattern file list filter
+sidebar_label: FTP regex pattern file list filter
+---
 #### FTP file filter that matches the name of the file against a regular expression.
 FTP file filter that matches the name of the file against a pattern that is described by a regular expression.
 

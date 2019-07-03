@@ -1,4 +1,8 @@
-# Logging channel adapter
+---
+id: logging-channel-adapter
+title: Logging channel adapter
+sidebar_label: Logging channel adapter
+---
 #### Logs messages.
 Use for debugging purposes.
 
@@ -26,13 +30,13 @@ Provide a name for the logger. This is useful when there are multiple <i>logging
 
 By default the logger name will be the fully qualified class name of the <code>LoggingHandler</code> implementation.
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Channel
+Channel to consume messages from.
 
 <i>Required</i>
 
-#### Channel
-Channel to consume messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

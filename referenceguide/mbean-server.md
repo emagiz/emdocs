@@ -1,4 +1,8 @@
-# MBean server
+---
+id: mbean-server
+title: MBean server
+sidebar_label: MBean server
+---
 #### Exposes a default MBean Server for the current platform.
 <a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/jmx.html#jmx-exporting-mbeanserver" target="_blank">Documentation</a>
 

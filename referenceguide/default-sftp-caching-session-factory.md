@@ -1,4 +1,8 @@
-# Default SFTP caching session factory
+---
+id: default-sftp-caching-session-factory
+title: Default SFTP caching session factory
+sidebar_label: Default SFTP caching session factory
+---
 #### Session factory for creating connections with an SFTP server that uses session caching.
 <a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-session-factory" target="_blank">Documentation</a>
 
@@ -10,10 +14,38 @@ Note: SFTP = <b>SSH File Transfer Protocol</b>, an extension of the Secure Shell
 
 Please be aware that, depending on the SSH encryption level used by the server, you might need to install the <i>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files</i> to successfully establish secure connections.
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Timeout
+The timeout property is used as the socket timeout parameter, as well as the default connection timeout.
 
-<i>Required</i>
+Default is <code>0</code>, indicating that no timeout will occur.
+
+#### Client version
+Allows you to set the client version property.
+
+The default depends on the underlying <i>JSch</i> version, but it will look like <code>SSH-2.0-JSCH-0.1.54</code>.
+
+#### Host key alias
+The host key alias, used when comparing the host key to the known hosts list. This is useful when multiple SSH servers with different host keys are located on the same host.
+
+<i>Optional</i>
+
+#### Server alive interval
+The timeout interval (in milliseconds) before a server-alive message is sent, in case no message is received from the server.
+
+#### Server alive count max
+Specifies the number of server-alive messages, which will be sent without any reply from the server before disconnecting.
+
+Default is <code>1</code>.
+
+#### Enable daemon thread
+If enabled all threads will be daemon threads, i.e. their running does not avoid a shutdown of the VM. If disabled normal non-deamon threads will be used (and the VM can only shutdown after disconnecting).
+
+Default is <code>false</code>.
+
+
+Allows you to specify additional (custom) configuration settings on the underlying <i>JSch</i> session.
+
+<i>Optional</i>
 
 #### Session cache size
 Controls how many active sessions this adapter will maintain in its cache. If the <i>session cache size</i> threshold has been reached, any attempt to acquire another session will block until either one of the cached sessions becomes available or until the wait time for a session expires.
@@ -73,36 +105,8 @@ Note that allowing unknown keys makes the connection vulnerable to man-in-the-mi
 
 Default is <code>false</code>.
 
-#### Timeout
-The timeout property is used as the socket timeout parameter, as well as the default connection timeout.
+#### Id
+Name that uniquely identifies this flow component.
 
-Default is <code>0</code>, indicating that no timeout will occur.
-
-#### Client version
-Allows you to set the client version property.
-
-The default depends on the underlying <i>JSch</i> version, but it will look like <code>SSH-2.0-JSCH-0.1.54</code>.
-
-#### Host key alias
-The host key alias, used when comparing the host key to the known hosts list. This is useful when multiple SSH servers with different host keys are located on the same host.
-
-<i>Optional</i>
-
-#### Server alive interval
-The timeout interval (in milliseconds) before a server-alive message is sent, in case no message is received from the server.
-
-#### Server alive count max
-Specifies the number of server-alive messages, which will be sent without any reply from the server before disconnecting.
-
-Default is <code>1</code>.
-
-#### Enable daemon thread
-If enabled all threads will be daemon threads, i.e. their running does not avoid a shutdown of the VM. If disabled normal non-deamon threads will be used (and the VM can only shutdown after disconnecting).
-
-Default is <code>false</code>.
-
-
-Allows you to specify additional (custom) configuration settings on the underlying <i>JSch</i> session.
-
-<i>Optional</i>
+<i>Required</i>
 

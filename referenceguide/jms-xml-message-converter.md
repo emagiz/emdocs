@@ -1,4 +1,8 @@
-# JMS XML message converter
+---
+id: jms-xml-message-converter
+title: JMS XML message converter
+sidebar_label: JMS XML message converter
+---
 #### A message converter for converting between JMS XML messages and Spring messages.
 This converter can transform between JMS  messages and Spring messages in two directions.
 
@@ -15,11 +19,6 @@ The reverse conversion, from JMS Message to String message payload, is only supp
 This conversion just extracts the String body of the message and returns it without any alteration (i.e. non-XML strings won't cause errors).
 
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Content type property name
 Specifies the name of the JMS property that will be added to newly created TextMessages, indicating the content type of the text. 
 
@@ -35,4 +34,9 @@ Sets the value of the JMS property that will be added to newly created TextMessa
 This is only used with conversion from Spring to JMS. Only if both the name and the value are set the JMS property will be added. 
 
 Default is empty, which disables the addition of the JMS property to messages.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

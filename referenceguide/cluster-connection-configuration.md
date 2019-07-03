@@ -1,4 +1,8 @@
-# Cluster connection configuration
+---
+id: cluster-connection-configuration
+title: Cluster connection configuration
+sidebar_label: Cluster connection configuration
+---
 #### Creates a cluster of HornetQ servers that share the message processing load.
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
 

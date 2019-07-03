@@ -1,4 +1,8 @@
-# Message history
+---
+id: message-history
+title: Message history
+sidebar_label: Message history
+---
 #### Registers Message History writer which will track message history.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#message-history" target="_blank">Documentation</a>
 

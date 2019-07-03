@@ -1,4 +1,8 @@
-# Debug interceptor
+---
+id: debug-interceptor
+title: Debug interceptor
+sidebar_label: Debug interceptor
+---
 #### Channel interceptor that sends debug messages to the specified debug channel when activated.
 Channel interceptor that sends debug messages to the specified debug channel.
 

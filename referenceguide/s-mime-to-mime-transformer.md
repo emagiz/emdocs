@@ -1,4 +1,8 @@
-# S/MIME to MIME transformer
+---
+id: s-mime-to-mime-transformer
+title: S/MIME to MIME transformer
+sidebar_label: S/MIME to MIME transformer
+---
 #### Payload transformer that decodes S/MIME messages to MIME messages.
 Transformer that decodes S/MIME messages to MIME messages.
 
@@ -35,13 +39,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

@@ -1,10 +1,32 @@
-# JDBC stored procedure outbound gateway
+---
+id: jdbc-stored-procedure-outbound-gateway
+title: JDBC stored procedure outbound gateway
+sidebar_label: JDBC stored procedure outbound gateway
+---
 #### Sends messages to a database and/or receives messages using a stored prodecure.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-outbound-gateway" target="_blank">Documentation</a>
 
 Outbound Channel Gateway are used for updating a database using a stored procedure. The response of the stored procedure is used to populate the message on the reply channel.
 
 Results of the gateway can be transformed to xml using the <i>JDBC result transformer</i>.
+
+#### Stored procedure name
+Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
+
+#### Is a function
+If <code>true</code>, a SQL function is called. In that case the <i>stored procedure name</i> attribute defines the name of the called function. 
+
+Defaults to <code>false</code>.
+
+e.g. Functions in PostgreSQL require this attribute to be set to <code>true</code>.
+
+#### SQL data source
+Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+
+<i>Required</i>
+
+
+Specify the stored procedure or function call input parameters here.
 
 #### Stored procedure name expression
 The name of the stored procedure provided as a SpEL expression.
@@ -90,23 +112,17 @@ Instead, those parameters can be automatically derived from the JDBC meta-data. 
 
 Note that the <i>order</i>, <i>name</i>, <i>type</i>, <i>direction</i> and <i>scale</i> of the SQL parameters should <b>exactly match</b> the settings specified on the database.
 
-#### Stored procedure name
-Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
-
-#### Is a function
-If <code>true</code>, a SQL function is called. In that case the <i>stored procedure name</i> attribute defines the name of the called function. 
-
-Defaults to <code>false</code>.
-
-e.g. Functions in PostgreSQL require this attribute to be set to <code>true</code>.
-
-#### SQL data source
-Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+#### Request channel
+Channel to consume the request messages from.
 
 <i>Required</i>
 
+#### Reply channel
+Channel where reply messages should be sent to.
 
-Specify the stored procedure or function call input parameters here.
+You can select the <code>nullChannel</code> here to silently drop the reply messages.
+
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -119,18 +135,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Request channel
-Channel to consume the request messages from.
-
-<i>Required</i>
-
-#### Reply channel
-Channel where reply messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
 <i>Required</i>
 

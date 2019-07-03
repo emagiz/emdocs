@@ -1,4 +1,8 @@
-# Bridge configuration
+---
+id: bridge-configuration
+title: Bridge configuration
+sidebar_label: Bridge configuration
+---
 #### Reliably connects two separate HornetQ servers together.
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">Documentation</a>
 

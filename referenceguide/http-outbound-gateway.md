@@ -1,4 +1,8 @@
-# HTTP outbound gateway
+---
+id: http-outbound-gateway
+title: HTTP outbound gateway
+sidebar_label: HTTP outbound gateway
+---
 #### Used to send HTTP requests and receive HTTP response messages.
 A gateway that sends HTTP requests based on incoming messages, and converts the HTTP response (which might just be a HTTP status code) to the result message.
 
@@ -21,6 +25,26 @@ Supported payload types when filling the body of the HTTP request message includ
 - <code>Map&lt;String, ?&gt;</code>: these are written as form data to the body, using either the <code>multipart/form-data</code> format (if so specified by the <code>Content-Type</code>) or the <code>application/x-www-form-urlencoded</code> format otherwise
 
 Note that while rules 3-7 nicely match the supported payload types, by using rule 1 you can create <i>any</i> content type. However, this also allows you to create invalid combinations if you don't correctly match it to the payload type.
+
+#### URL
+URL to which the requests should be sent. It may include <code>{placeholders}</code>.
+
+<i>Required</i>
+
+#### HTTP method
+The HTTP method to use when executing requests with this gateway.
+
+Default is <code>POST</code>.
+
+#### Expected response type
+The expected type to which the response body should be converted. Default is <code>org.springframework.http.ResponseEntity</code>.
+
+To take advantage of the HTTP message converters registered on this gateway provide a different type, such as <code>java.lang.String</code>. This is the recommended value when the expected response is a text-based content type, for example <code>application/json</code> or <code>text/xml</code>.
+
+To access the raw HTTP body of the response without any automatic conversion, use type <code>byte[]</code>. This should work for all content types, even for text-based ones. In some special cases this can be useful in order to manually solve character encoding issues.
+
+
+Expression to be evaluated against the message to replace a URI <code>{placeholder}</code> with the evaluation result.
 
 #### URL expression
 SpEL expression resolving to a URL to which the requests should be sent. The resolved value may include <code>{placeholders}</code> for further evaluation against <i>URI variables</i>.
@@ -92,23 +116,17 @@ Allows for specifying a custom <code>RestTemplate</code>.
 
 A REST template provides a configurable extension point for communicating with HTTP servers using RESTful principles. This can be used to add authentication to HTTP connections, for example.
 
-#### URL
-URL to which the requests should be sent. It may include <code>{placeholders}</code>.
+#### Request channel
+Channel to consume the request messages from.
 
 <i>Required</i>
 
-#### HTTP method
-The HTTP method to use when executing requests with this gateway.
+#### Reply channel
+Channel where reply messages should be sent to.
 
-Default is <code>POST</code>.
+You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
-#### Expected response type
-The expected type to which the response body should be converted. Default is <code>org.springframework.http.ResponseEntity</code>.
-
-To take advantage of the HTTP message converters registered on this gateway provide a different type, for example <code>java.lang.String</code>.
-
-
-Expression to be evaluated against the message to replace a URI <code>{placeholder}</code> with the evaluation result.
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -121,18 +139,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Request channel
-Channel to consume the request messages from.
-
-<i>Required</i>
-
-#### Reply channel
-Channel where reply messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the reply messages.
 
 <i>Required</i>
 

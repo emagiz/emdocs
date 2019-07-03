@@ -1,4 +1,8 @@
-# SFTP accept once per modification file list filter
+---
+id: sftp-accept-once-per-modification-file-list-filter
+title: SFTP accept once per modification file list filter
+sidebar_label: SFTP accept once per modification file list filter
+---
 #### SFTP file filter that passes files only one time per last modified time.
 SFTP file filter that passes files only one time per last modified time or when the internal buffer overflows and the file falls out.
 

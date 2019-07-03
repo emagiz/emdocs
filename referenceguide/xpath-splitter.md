@@ -1,4 +1,8 @@
-# XPath splitter
+---
+id: xpath-splitter
+title: XPath splitter
+sidebar_label: XPath splitter
+---
 #### Uses an XPath expression to split a message into multiple messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-splitting" target="_blank">Documentation</a>
 
@@ -23,18 +27,6 @@ Note: the list contains transformed nodes whereas with the iterator each node is
 Default is <code>true</code>.
 
 
-XPath expression that returns a value (boolean or string) used for filtering the message. In case of a boolean value, <code>true</code> accepts the message and <code>false</code> discards it. In case of a string value, this decision depends on the value of the <i>match value</i> and <i>match type</i> settings.
-
-<i>Required</i>
-
-Example:
-XPath expression : <code>/ns1:one/@type</code>
-Namespace prefix : <code>ns1</code>
-Namespace URI: <code>http://www.example.org</code>
-
-<a href="https://www.w3schools.com/xml/xpath_syntax.asp" onclick="window.open('https://www.w3schools.com/xml/xpath_syntax.asp');" target="_blank">XPath syntax reference</a>
-
-
 Namespace prefix of the XML nodes in the XPath expression
 
 <i>Optional, but required when namespace URI is set</i>
@@ -45,11 +37,6 @@ Namespace prefix : <code>ns1</code>
 Namespace URI: <code>http://www.example.org</code>
 
 <a href="https://www.w3schools.com/xml/xml_namespaces.asp" onclick="window.open('https://www.w3schools.com/xml/xml_namespaces.asp');" target="_blank">XML namespace reference</a>
-
-#### Apply sequence
-Set this flag to <code>false</code> to prevent adding sequence related headers in this splitter. This can be convenient in cases where the set sequence numbers conflict with downstream custom aggregations. When <code>true</code>, existing correlation and sequence related headers (<code>correlationId</code>, <code>sequenceNumber</code> and <code>sequenceSize</code>) are pushed onto a stack; downstream components, such as aggregators may pop the stack to revert the existing headers after aggregation.
-
-Default is <code>true</code>.
 
 
 Namespace URI of the XML nodes in the XPath expression.
@@ -63,6 +50,23 @@ Namespace URI: <code>http://www.example.org</code>
 
 <a href="https://www.w3schools.com/xml/xml_namespaces.asp" onclick="window.open('https://www.w3schools.com/xml/xml_namespaces.asp');" target="_blank">XML namespace reference</a>
 
+
+XPath expression that returns a value (boolean or string) used for filtering the message. In case of a boolean value, <code>true</code> accepts the message and <code>false</code> discards it. In case of a string value, this decision depends on the value of the <i>match value</i> and <i>match type</i> settings.
+
+<i>Required</i>
+
+Example:
+XPath expression : <code>/ns1:one/@type</code>
+Namespace prefix : <code>ns1</code>
+Namespace URI: <code>http://www.example.org</code>
+
+<a href="https://www.w3schools.com/xml/xpath_syntax.asp" onclick="window.open('https://www.w3schools.com/xml/xpath_syntax.asp');" target="_blank">XPath syntax reference</a>
+
+#### Apply sequence
+Set this flag to <code>false</code> to prevent adding sequence related headers in this splitter. This can be convenient in cases where the set sequence numbers conflict with downstream custom aggregations. When <code>true</code>, existing correlation and sequence related headers (<code>correlationId</code>, <code>sequenceNumber</code> and <code>sequenceSize</code>) are pushed onto a stack; downstream components, such as aggregators may pop the stack to revert the existing headers after aggregation.
+
+Default is <code>true</code>.
+
 #### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
@@ -70,13 +74,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

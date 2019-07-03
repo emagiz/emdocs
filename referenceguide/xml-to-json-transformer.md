@@ -1,4 +1,8 @@
-# XML to JSON transformer
+---
+id: xml-to-json-transformer
+title: XML to JSON transformer
+sidebar_label: XML to JSON transformer
+---
 #### Payload transformer that converts XML messages to JSON.
 Transformer that converts XML messages to a JSON string.
 
@@ -47,13 +51,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

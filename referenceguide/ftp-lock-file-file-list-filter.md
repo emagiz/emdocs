@@ -1,4 +1,8 @@
-# FTP lock-file file list filter
+---
+id: ftp-lock-file-file-list-filter
+title: FTP lock-file file list filter
+sidebar_label: FTP lock-file file list filter
+---
 #### Accepts files only when there is no corresponding lock-file present.
 File list filter that passes files only when there is no corresponding lock-file present. A file is recognized as a lock-file by (configurable) naming convention, e.g. having the suffix <code>.lock</code>. Lock-files are usually empty, but this is not a requirement. Lock-files themselves are never passed by this filter.
 

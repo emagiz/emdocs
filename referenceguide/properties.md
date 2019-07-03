@@ -1,4 +1,8 @@
-# Properties
+---
+id: properties
+title: Properties
+sidebar_label: Properties
+---
 #### Properties specified by key/value pairs.
 <a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/beans.html#beans-factory-placeholderconfigurer" target="_blank">Documentation</a>
 

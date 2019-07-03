@@ -1,4 +1,8 @@
-# Recipient list router
+---
+id: recipient-list-router
+title: Recipient list router
+sidebar_label: Recipient list router
+---
 #### Routes messages to a statically defined list of channels.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-recipientlistrouter" target="_blank">Documentation</a>
 
@@ -8,11 +12,6 @@ This basically allows you to split a single channel into multiple channels, by s
 
 
 A list of all the channels this router will try to send incoming messages to.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Input channel
 Channel to consume the input messages from.
@@ -65,4 +64,9 @@ Default is <i>false</i>.
 Specify the maximum amount of time in milliseconds to wait when sending messages to the target message channels.
 
 By default the send will block indefinitely.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

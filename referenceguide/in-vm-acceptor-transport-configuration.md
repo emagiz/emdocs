@@ -1,4 +1,8 @@
-# In-VM acceptor transport configuration
+---
+id: in-vm-acceptor-transport-configuration
+title: In-VM acceptor transport configuration
+sidebar_label: In-VM acceptor transport configuration
+---
 #### Accepts connections from clients running in the same JVM.
 Accepts connections from clients that run in the same Java virtual machine as this server.
 

@@ -1,10 +1,32 @@
-# JDBC stored procedure inbound channel adapter
+---
+id: jdbc-stored-procedure-inbound-channel-adapter
+title: JDBC stored procedure inbound channel adapter
+sidebar_label: JDBC stored procedure inbound channel adapter
+---
 #### Generates messages by polling a database using a stored procedure.
 <a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-inbound-channel-adapter" target="_blank">Documentation</a>
 
 The inbound JDBC stored procedure adapter polls a database using a stored procedure or function call. 
 
 Results of the adapter can be transformed to xml using the <i>JDBC result transformer</i>.
+
+#### Stored procedure name
+Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
+
+#### Is a function
+If <code>true</code>, a SQL function is called. In that case the <i>stored procedure name</i> attribute defines the name of the called function. 
+
+Defaults to <code>false</code>.
+
+e.g. Functions in PostgreSQL require this attribute to be set to <code>true</code>.
+
+#### SQL data source
+Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+
+<i>Required</i>
+
+
+Specify the stored procedure or function call input parameters here.
 
 #### Stored procedure name expression
 The name of the stored procedure provided as a SpEL expression.
@@ -76,23 +98,12 @@ Instead, those parameters can be automatically derived from the JDBC meta-data. 
 
 Note that the <i>order</i>, <i>name</i>, <i>type</i>, <i>direction</i> and <i>scale</i> of the SQL parameters should <b>exactly match</b> the settings specified on the database.
 
-#### Stored procedure name
-Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
+#### Channel
+Channel where the generated messages should be sent to.
 
-#### Is a function
-If <code>true</code>, a SQL function is called. In that case the <i>stored procedure name</i> attribute defines the name of the called function. 
-
-Defaults to <code>false</code>.
-
-e.g. Functions in PostgreSQL require this attribute to be set to <code>true</code>.
-
-#### SQL data source
-Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
-
-
-Specify the stored procedure or function call input parameters here.
 
 
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
@@ -113,12 +124,29 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-#### Channel
-Channel where the generated messages should be sent to.
+#### Max messages per poll
+Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
-You can select the <code>nullChannel</code> here to silently drop the messages.
+The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
 
-<i>Required</i>
+For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
+
+Default is 1.
+
+
+#### Receive timeout
+Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
+
+#### Send timeout
+Specifies the timeout for sending out messages.
+
+#### Task executor
+Task executor to execute the scheduled tasks. 
+
+Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
+
+#### Error channel
+The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 
 #### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
@@ -160,28 +188,4 @@ Example patterns:
 <code>0 0/30 8-10 * * *</code> = 8:00, 8:30, 9:00, 9:30 and 10 o'clock every day
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
-
-#### Max messages per poll
-Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
-
-The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
-
-For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
-
-Default is 1.
-
-
-#### Receive timeout
-Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
-
-#### Send timeout
-Specifies the timeout for sending out messages.
-
-#### Task executor
-Task executor to execute the scheduled tasks. 
-
-Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
-
-#### Error channel
-The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

@@ -1,6 +1,21 @@
-# JDBC stored procedure outbound channel adapter
+---
+id: jdbc-stored-procedure-outbound-channel-adapter
+title: JDBC stored procedure outbound channel adapter
+sidebar_label: JDBC stored procedure outbound channel adapter
+---
 #### Sends messages to a database using a stored procedure.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-outbound-channel-adapter" target="_blank">Documentation</a>
+
+#### Stored procedure name
+Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
+
+#### SQL data source
+Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+
+<i>Required</i>
+
+
+Specify the stored procedure or function call input parameters here.
 
 #### Stored procedure name expression
 The name of the stored procedure provided as a SpEL expression.
@@ -47,16 +62,10 @@ Instead, those parameters can be automatically derived from the JDBC meta-data. 
 
 Note that the <i>order</i>, <i>name</i>, <i>type</i>, <i>direction</i> and <i>scale</i> of the SQL parameters should <b>exactly match</b> the settings specified on the database.
 
-#### Stored procedure name
-Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 
-
-#### SQL data source
-Reference to a JDBC data source, usually including some form of connection pooling, used for accessing the database.
+#### Channel
+Channel to consume messages from.
 
 <i>Required</i>
-
-
-Specify the stored procedure or function call input parameters here.
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -69,11 +78,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

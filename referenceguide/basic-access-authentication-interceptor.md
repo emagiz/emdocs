@@ -1,4 +1,8 @@
-# Basic access authentication interceptor
+---
+id: basic-access-authentication-interceptor
+title: Basic access authentication interceptor
+sidebar_label: Basic access authentication interceptor
+---
 #### Adds basic access authentication to HTTP requests.
 Client HTTP request interceptor that adds basic access authentication to HTTP requests.
 

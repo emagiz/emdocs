@@ -1,4 +1,8 @@
-# Base64 decoding transformer
+---
+id: base64-decoding-transformer
+title: Base64 decoding transformer
+sidebar_label: Base64 decoding transformer
+---
 #### Result type
 Sets the result type for the transformation.
 
@@ -26,13 +30,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

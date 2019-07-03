@@ -1,4 +1,8 @@
-# Amazon S3 authentication interceptor
+---
+id: amazon-s3-authentication-interceptor
+title: Amazon S3 authentication interceptor
+sidebar_label: Amazon S3 authentication interceptor
+---
 #### Adds authentication for Amazon Simple Storage Service (S3) to HTTP requests.
 This interceptor will provide Amazon signature 4 header authentication for Amazon Simple Storage Service. 
 All single valued headers will be used for signing the request. 

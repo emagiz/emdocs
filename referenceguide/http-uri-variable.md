@@ -1,4 +1,8 @@
-# HTTP URI variable
+---
+id: http-uri-variable
+title: HTTP URI variable
+sidebar_label: HTTP URI variable
+---
 #### Name
 Name of the placeholder to be replaced.
 

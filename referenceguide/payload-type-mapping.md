@@ -1,4 +1,8 @@
-# Payload type mapping
+---
+id: payload-type-mapping
+title: Payload type mapping
+sidebar_label: Payload type mapping
+---
 #### Type
 The (Java) type to compare the payload of the incoming message against.
 

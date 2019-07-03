@@ -1,9 +1,8 @@
-# Default TCP SSL context support
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
+---
+id: default-tcp-ssl-context-support
+title: Default TCP SSL context support
+sidebar_label: Default TCP SSL context support
+---
 #### Key store path
 Path to the Java key store file.
 
@@ -38,4 +37,9 @@ Password of the Java trust store file.
 The protocol used. 
 
 Default is <code>TLS</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

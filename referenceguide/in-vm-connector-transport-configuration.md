@@ -1,4 +1,8 @@
-# In-VM connector transport configuration
+---
+id: in-vm-connector-transport-configuration
+title: In-VM connector transport configuration
+sidebar_label: In-VM connector transport configuration
+---
 #### Connects to a server running in the same JVM.
 Connects to a server that runs in the same Java virtual machine as the client making the connection.
 

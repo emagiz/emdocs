@@ -1,4 +1,8 @@
-# Microflow invoking message consumer
+---
+id: microflow-invoking-message-consumer
+title: Microflow invoking message consumer
+sidebar_label: Microflow invoking message consumer
+---
 #### Message consumer that passes incoming messages to a specified Mendix microflow.
 Message consumer that passes incoming messages to a specified <i>Mendix microflow</i>.
 
@@ -22,16 +26,6 @@ Default: <i> empty </i>
 
 <i>If set, the parameter must exist in the microflow. If 'pass payload as path' is enabled this parameter must be of type String, otherwise the type should be that of the (expected) message payload.</i>
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
-
-<i>Required</i>
-
 #### Execute in transaction
 Specifies whether to execute the microflow in a Mendix transaction or not.
 
@@ -40,4 +34,14 @@ Default: <i> true</i>
 #### Pass payload as path
 If set, the message payload will be stored in a temp file and the path (as a string) will be passed to the microflow. 
 Else the message payload will be passed directly to the microflow.
+
+#### Channel
+Channel to consume messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

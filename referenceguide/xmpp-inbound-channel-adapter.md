@@ -1,4 +1,8 @@
-# XMPP inbound channel adapter
+---
+id: xmpp-inbound-channel-adapter
+title: XMPP inbound channel adapter
+sidebar_label: XMPP inbound channel adapter
+---
 #### Receives chat messages sent to a given account.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-inbound-channel-adapter" target="_blank">Documentation</a>
 
@@ -12,15 +16,15 @@ By default a message <i>body</i> is used as <i>payload</i>. The <code>#extension
 #### Error channel
 The channel that error messages will be sent to if a failure occurs in this adapter's invocation.
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

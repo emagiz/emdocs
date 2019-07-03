@@ -1,10 +1,30 @@
-# HTTP outbound channel adapter
+---
+id: http-outbound-channel-adapter
+title: HTTP outbound channel adapter
+sidebar_label: HTTP outbound channel adapter
+---
 #### Used to send (unidirectional) HTTP messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/http.html#http-outbound" target="_blank">Documentation</a>
 
 An adapter that sends HTTP requests in a unidirectional way. This means that a successful HTTP response will simply execute without sending any messages to a reply channel. In the case of any non-successful HTTP response status code, it will throw an exception.
 
 If you <i>are</i> interested in the contents of the response message, use a <i>HTTP outbound gateway</i> instead.
+
+#### URL
+URL to which the requests should be sent. It may include <code>{placeholders}</code> for evaluation against <i>URI variables</i>.
+
+#### HTTP method
+The HTTP method to use when executing requests with this gateway.
+
+Default is <code>POST</code>.
+
+#### Expected response type
+The expected type to which the response body should be converted. Default is <code>org.springframework.http.ResponseEntity</code>.
+
+To take advantage of the HTTP message converters registered on this gateway provide a different type, for example <code>java.lang.String</code>.
+
+
+Expression to be evaluated against the message to replace a URI <code>{placeholder}</code> with the evaluation result.
 
 #### URL expression
 SpEL expression resolving to a URL to which the requests should be sent. The resolved value may include <code>{placeholders}</code> for further evaluation against <i>URI variables</i>.
@@ -55,21 +75,10 @@ Allows for specifying a custom <code>RestTemplate</code>.
 
 A REST template provides a configurable extension point for communicating with HTTP servers using RESTful principles. This can be used to add authentication to HTTP connections, for example.
 
-#### URL
-URL to which the requests should be sent. It may include <code>{placeholders}</code> for evaluation against <i>URI variables</i>.
+#### Channel
+Channel to consume messages from.
 
-#### HTTP method
-The HTTP method to use when executing requests with this gateway.
-
-Default is <code>POST</code>.
-
-#### Expected response type
-The expected type to which the response body should be converted. Default is <code>org.springframework.http.ResponseEntity</code>.
-
-To take advantage of the HTTP message converters registered on this gateway provide a different type, for example <code>java.lang.String</code>.
-
-
-Expression to be evaluated against the message to replace a URI <code>{placeholder}</code> with the evaluation result.
+<i>Required</i>
 
 
 Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
@@ -82,11 +91,6 @@ By adding multiple advices to this endpoint you can create even more complex com
 
 #### Id
 Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel to consume messages from.
 
 <i>Required</i>
 

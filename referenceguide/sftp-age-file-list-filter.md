@@ -1,4 +1,8 @@
-# SFTP age file list filter
+---
+id: sftp-age-file-list-filter
+title: SFTP age file list filter
+sidebar_label: SFTP age file list filter
+---
 #### Minimum age
 The minimum age (time since last modified) in milliseconds (inclusive) for files to be accepted by this filter.
 

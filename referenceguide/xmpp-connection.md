@@ -1,7 +1,20 @@
-# XMPP connection
+---
+id: xmpp-connection
+title: XMPP connection
+sidebar_label: XMPP connection
+---
 #### Configures an XMPP connection that can in turn be referenced by other components.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-connection" target="_blank">Documentation</a>
 
+
+#### User
+The user name (e.g., someuser@gmail.com) that will be used by this connection object.
+
+#### Password
+The user's password.
+
+#### Host
+The host name to connect TO.
 
 #### Port
 The port on which the host is running.
@@ -23,13 +36,4 @@ Default is 'accept_all'.
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-#### User
-The user name (e.g., someuser@gmail.com) that will be used by this connection object.
-
-#### Password
-The user's password.
-
-#### Host
-The host name to connect TO.
 

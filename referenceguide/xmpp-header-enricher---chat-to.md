@@ -1,4 +1,8 @@
-# XMPP header enricher - Chat to
+---
+id: xmpp-header-enricher---chat-to
+title: XMPP header enricher - Chat to
+sidebar_label: XMPP header enricher - Chat to
+---
 #### Expression
 SpEL (Spring Expression Language) expression that computes the value.
 

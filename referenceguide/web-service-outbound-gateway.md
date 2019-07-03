@@ -1,4 +1,8 @@
-# Web service outbound gateway
+---
+id: web-service-outbound-gateway
+title: Web service outbound gateway
+sidebar_label: Web service outbound gateway
+---
 #### Used to request webservice calls and receive reply messages.
 A gateway that sends SOAP requests over HTTP(S) based on incoming messages, and converts the SOAP response to the result message.
 
@@ -15,6 +19,11 @@ and/or
 <code>log4j.logger.org.springframework.ws.client.MessageTracing.received = TRACE</code>
 
 Both methods will cause the (SOAP) requests and responses to be written to the log file. Don't forget to change log levels back to INFO, as TRACE has negative performance impact and can <b>seriously compromise security</b>!
+
+#### URI
+The destination URI for this web service gateway.
+
+This URI may include <code>{placeholders}</code> whose values are determined by evaluating SpEL expressions provided via <i>uri-variable</i> sub-elements. The root object for those evaluations is the actual request message at runtime, i.e. you can access its payload or headers in the expression.
 
 #### Requires reply
 Specify whether this outbound gateway must return a non-<code>null</code> value, i.e. whether every request message must result in a reply message.
@@ -68,9 +77,13 @@ Interceptor based on <a href="http://ws.apache.org/wss4j/" target="_blank">Apach
 - <a href="http://www.ws-i.org/Profiles/BasicSecurityProfile-1.1.html" target="_blank">Basic Security Profile 1.1</a>
 
 #### Request callback
-Callback that will be applied to the request. A web service request callback can change the request message after the payload has been written to it but prior to invocation of the actual web service.
+Callback that will be applied to the request. A web service request callback can change the request message after the payload has been written to it but prior to invocation of the actual web service (and before any interceptors are applied).
 
-For example, the <i>SOAP action callback</i> can be used to add a SOAP Action header to the request message.
+<b>SOAP action callback</b>
+Adds a <code>SOAPAction</code> HTTP header to the request message.
+
+<b>WS-Addressing action callback</b>
+Adds a <code>wsa:Action</code> SOAP header to the request message.
 
 #### Fault message resolver
 Specifies the fault message resolver responsible for handling faults when calling the web service.
@@ -109,25 +122,6 @@ Default is <code>true</code>.
 
 Expression to be evaluated against the message to replace a URI <code>{placeholder}</code> with the evaluation result.
 
-
-Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
-
-<b>Retry advice</b>: allows configuration of sophisticated retry scenarios; this includes specifying policies for retry attemps, backoff periods between attempts and the recovery strategy when retries are exhausted
-<b>Circuit breaker</b>: if a certain number of consecutive attempts fails, new requests will <i>fail fast</i> and no attempt will be made to invoke the request handler again until some time has expired
-<b>Expression evaluating advice</b>: general advice that evaluates a configurable <i>SpEL expression</i> on successful and/or failed attempts, and optionally can send a message to a <i>success channel</i> and/or <i>failure channel</i>
-
-By adding multiple advices to this endpoint you can create even more complex combined behaviour. For example, if you add a <i>circuit breaker</i> and a <i>retry advice</i>, you can create a scenario where the circuit breaker only opens when all retries are exhaused. Note that the order of the advice types is important, as switching the order will change the combined behaviour: the first item in the list will be the top of the advice chain, meaning it will be the last advice that is evaluated. Also note that if any advice "traps" exceptions, all advices higher up in the chain won't know about any failures.
-
-#### URI
-The destination URI for this web service gateway.
-
-This URI may include <code>{placeholders}</code> whose values are determined by evaluating SpEL expressions provided via <i>uri-variable</i> sub-elements. The root object for those evaluations is the actual request message at runtime, i.e. you can access its payload or headers in the expression.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Request channel
 Channel to consume the request messages from.
 
@@ -137,6 +131,20 @@ Channel to consume the request messages from.
 Channel where reply messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the reply messages.
+
+<i>Required</i>
+
+
+Advice can be added to change the behaviour of this endpoint, for example to add retry logic in case of failures. The following types of advice are available:
+
+<b>Retry advice</b>: allows configuration of sophisticated retry scenarios; this includes specifying policies for retry attemps, backoff periods between attempts and the recovery strategy when retries are exhausted
+<b>Circuit breaker</b>: if a certain number of consecutive attempts fails, new requests will <i>fail fast</i> and no attempt will be made to invoke the request handler again until some time has expired
+<b>Expression evaluating advice</b>: general advice that evaluates a configurable <i>SpEL expression</i> on successful and/or failed attempts, and optionally can send a message to a <i>success channel</i> and/or <i>failure channel</i>
+
+By adding multiple advices to this endpoint you can create even more complex combined behaviour. For example, if you add a <i>circuit breaker</i> and a <i>retry advice</i>, you can create a scenario where the circuit breaker only opens when all retries are exhaused. Note that the order of the advice types is important, as switching the order will change the combined behaviour: the first item in the list will be the top of the advice chain, meaning it will be the last advice that is evaluated. Also note that if any advice "traps" exceptions, all advices higher up in the chain won't know about any failures.
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

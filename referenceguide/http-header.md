@@ -1,4 +1,8 @@
-# HTTP header
+---
+id: http-header
+title: HTTP header
+sidebar_label: HTTP header
+---
 #### Name
 Name of the message header.
 

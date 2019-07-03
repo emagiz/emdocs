@@ -1,6 +1,19 @@
-# Channel
+---
+id: channel
+title: Channel
+sidebar_label: Channel
+---
 #### Used to transport a message between two endpoints.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-channels-section.html" target="_blank">Documentation</a>
+
+
+Specifies the interceptors of this channel.
+
+A <i>wire tap</i> can be used to send a copy of the messages of this channel on an other channel, for backup or logging purposes for example.
+
+The <i>entry tracking</i> and <i>exit tracking</i> interceptors are used for message tracking at the first and last channel(s) of a full message flow.
+
+The <i>debug</i> interceptor is used for sending debug messages to the debugger.
 
 #### Datatype
 Specifies the datatype of this channel.
@@ -56,13 +69,4 @@ TaskExecutor to perform the dispatch.
 Name that uniquely identifies this flow component.
 
 <i>Required</i>
-
-
-Specifies the interceptors of this channel.
-
-A <i>wire tap</i> can be used to send a copy of the messages of this channel on an other channel, for backup or logging purposes for example.
-
-The <i>entry tracking</i> and <i>exit tracking</i> interceptors are used for message tracking at the first and last channel(s) of a full message flow.
-
-The <i>debug</i> interceptor is used for sending debug messages to the debugger.
 

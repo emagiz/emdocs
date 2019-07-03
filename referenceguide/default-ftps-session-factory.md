@@ -1,4 +1,8 @@
-# Default FTPS session factory
+---
+id: default-ftps-session-factory
+title: Default FTPS session factory
+sidebar_label: Default FTPS session factory
+---
 #### Session factory for creating connections with an FTPS server.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-session-factory" target="_blank">Documentation</a>
 

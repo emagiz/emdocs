@@ -1,4 +1,8 @@
-# Mail inbound channel adapter
+---
+id: mail-inbound-channel-adapter
+title: Mail inbound channel adapter
+sidebar_label: Mail inbound channel adapter
+---
 #### Defines an inbound Channel Adapter that polls a mailbox for mail messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-inbound" target="_blank">Documentation</a>
 
@@ -26,6 +30,22 @@ Specify the maximum number of mail messages to fetch per receive call.
 #### Mail properties
 Reference to a <i>Properties</i> entity that contains mail properties.
 
+#### Store URI
+The URI for the mail store. 
+
+Typically looks like the following (the underlined words need to be replaced by the actual values):
+<code>(pop3[s]|imap[s])://<u>user</u>:<u>password</u>@<u>host</u>[:<u>port</u>]/INBOX</code>
+
+Note that you can use property placeholders within the URI, for example:
+<code>imaps://${username}:${password}@imap.gmail.com/INBOX</code>
+
+#### Channel
+Channel where the generated messages should be sent to.
+
+You can select the <code>nullChannel</code> here to silently drop the messages.
+
+<i>Required</i>
+
 
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
 
@@ -40,14 +60,34 @@ The poller specifies when and how the reading task is executed.
 
 If the global poller is used it should be added as separate support object.
 
-#### Store URI
-The URI for the mail store. 
+#### Id
+Name that uniquely identifies this flow component.
 
-Typically looks like the following (the underlined words need to be replaced by the actual values):
-<code>(pop3[s]|imap[s])://<u>user</u>:<u>password</u>@<u>host</u>[:<u>port</u>]/INBOX</code>
+<i>Required</i>
 
-Note that you can use property placeholders within the URI, for example:
-<code>imaps://${username}:${password}@imap.gmail.com/INBOX</code>
+#### Max messages per poll
+Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
+
+The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
+
+For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
+
+Default is 1.
+
+
+#### Receive timeout
+Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
+
+#### Send timeout
+Specifies the timeout for sending out messages.
+
+#### Task executor
+Task executor to execute the scheduled tasks. 
+
+Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
+
+#### Error channel
+The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 
 #### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
@@ -89,40 +129,4 @@ Example patterns:
 <code>0 0/30 8-10 * * *</code> = 8:00, 8:30, 9:00, 9:30 and 10 o'clock every day
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
-
-#### Max messages per poll
-Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
-
-The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
-
-For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
-
-Default is 1.
-
-
-#### Receive timeout
-Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
-
-#### Send timeout
-Specifies the timeout for sending out messages.
-
-#### Task executor
-Task executor to execute the scheduled tasks. 
-
-Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
-
-#### Error channel
-The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
-#### Channel
-Channel where the generated messages should be sent to.
-
-You can select the <code>nullChannel</code> here to silently drop the messages.
-
-<i>Required</i>
 

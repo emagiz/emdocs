@@ -1,9 +1,8 @@
-# Default HTTP header mapper
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
+---
+id: default-http-header-mapper
+title: Default HTTP header mapper
+sidebar_label: Default HTTP header mapper
+---
 #### Inbound header names
 Provide the header names that should be mapped from an HTTP request (for inbound adapters) or HTTP response (for outbound adapters) to message headers. The values can also contain simple wildcard patterns (e.g. <code>foo*</code> or <code>*foo</code>) to be matched.
 
@@ -24,4 +23,9 @@ Sets the prefix to use with user-defined (non-standard) headers.
 Historically, by convention non-standard HTTP headers were prefixed with <code>X-</code> to distinguish them from the standard HTTP headers. This convention has been deprecated by the Internet Engineering Task Force (IETF) in June 2012 (RFC6648).
 
 Default is an empty string, matching RFC6648. Use value <code>X-</code> to revert back to the pre-RFC6648 behaviour.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

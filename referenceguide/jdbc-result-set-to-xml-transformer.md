@@ -1,4 +1,8 @@
-# JDBC result set to XML transformer
+---
+id: jdbc-result-set-to-xml-transformer
+title: JDBC result set to XML transformer
+sidebar_label: JDBC result set to XML transformer
+---
 #### Payload transformer that converts results sets created by the JDBC adapters to XML.
 Transformer that converts results sets created by the JDBC adapters to XML.
 
@@ -36,6 +40,12 @@ Usually <code>auto</code> (the default) works fine, but in some cases this can l
 
 Default is <code>auto</code>.
 
+#### Result type
+Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
+
+Default is <code>String</code>.
+
+
 #### Output channel
 Channel where output messages should be sent after (successfully) processing the input message.
 
@@ -43,19 +53,13 @@ You can select the <code>nullChannel</code> here to silently drop the output mes
 
 <i>Required</i>
 
-#### Result type
-Sets the result type (<code>XomDocument</code>, <code>DomDocument</code> or <code>String</code>) for the transformation. 
-
-Default is <code>String</code>.
-
-
-#### Id
-Name that uniquely identifies this flow component.
+#### Input channel
+Channel to consume the input messages from.
 
 <i>Required</i>
 
-#### Input channel
-Channel to consume the input messages from.
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

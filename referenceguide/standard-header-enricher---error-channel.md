@@ -1,4 +1,8 @@
-# Standard header enricher - Error channel
+---
+id: standard-header-enricher---error-channel
+title: Standard header enricher - Error channel
+sidebar_label: Standard header enricher - Error channel
+---
 #### Channel reference
 Specifies the channel which id is used as value for the header.
 

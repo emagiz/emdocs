@@ -1,7 +1,14 @@
-# TCP inbound gateway
+---
+id: tcp-inbound-gateway
+title: TCP inbound gateway
+sidebar_label: TCP inbound gateway
+---
 #### Used to receive TCP/IP byte-messages and send reply messages.
 <a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-gateways" target="_blank">Documentation</a>
 
+
+#### Connection factory
+A <i>TCP connection factory</i> is needed by an inbound gateway. The connection factory must be of type <i>server</i>.
 
 #### Reply timeout
 The timeout value (in milliseconds) for receiving reply messages.
@@ -27,14 +34,6 @@ When in client mode, specifies the retry interval (in milliseconds) if a connect
 
 Default is <code>60000</code> (1 minute).
 
-#### Connection factory
-A <i>TCP connection factory</i> is needed by an inbound gateway. The connection factory must be of type <i>server</i>.
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Request channel
 Channel where request messages should be sent to.
 
@@ -44,6 +43,11 @@ You can select the <code>nullChannel</code> here to silently drop the request me
 
 #### Reply channel
 Channel to consume the reply messages from.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

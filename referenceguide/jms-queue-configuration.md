@@ -1,4 +1,8 @@
-# JMS queue configuration
+---
+id: jms-queue-configuration
+title: JMS queue configuration
+sidebar_label: JMS queue configuration
+---
 #### Specify a JMS queue configuration
 <a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#queue-attributes" target="_blank">Documentation</a>
 

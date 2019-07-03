@@ -1,4 +1,8 @@
-# HTTP inbound channel adapter
+---
+id: http-inbound-channel-adapter
+title: HTTP inbound channel adapter
+sidebar_label: HTTP inbound channel adapter
+---
 #### Channel adapter for receiving messages over HTTP.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/http.html#http-inbound" target="_blank">Documentation</a>
 
@@ -82,15 +86,15 @@ Custom message headers that will be added to messages send by this adapter.
 
 The value is determined by a SpEL expression, which has access to the body and headers of the incoming HTTP request, any path variables (as defined by the <i>path</i> property) and any query parameters from the request URL.
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

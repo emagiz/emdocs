@@ -1,12 +1,11 @@
-# JDBC BoneCP data source
+---
+id: jdbc-bonecp-data-source
+title: JDBC BoneCP data source
+sidebar_label: JDBC BoneCP data source
+---
 #### A data source for SQL databases that connects using JDBC with BoneCP connection pooling.
 <a href="http://www.jolbox.com/" target="_blank">Documentation</a>
 
-
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
 
 #### Driver class
 The name of the JDBC driver to load. This value is driver specific: for details see the documentation of your JDBC driver.
@@ -229,4 +228,9 @@ Default is <code>0</code> (statements are released synchronously).
 If set to <code>true</code>, no attempts at passing in a username/password will be attempted when trying to obtain a raw (driver) connection. Useful for cases when you already have another mechanism on authentication e.g. NTLM.
 
 Default is <code>false</code>.
+
+#### Id
+Name that uniquely identifies this flow component.
+
+<i>Required</i>
 

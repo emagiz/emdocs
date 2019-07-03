@@ -1,4 +1,8 @@
-# Age file list filter
+---
+id: age-file-list-filter
+title: Age file list filter
+sidebar_label: Age file list filter
+---
 #### Minimum age
 The minimum age (time since last modified) in milliseconds (inclusive) for files to be accepted by this filter.
 

@@ -1,4 +1,8 @@
-# XSLT parameter
+---
+id: xslt-parameter
+title: XSLT parameter
+sidebar_label: XSLT parameter
+---
 #### Name
 Name for the XSLT parameter. Must exactly match the name specified in the <code>&lt;xsl:param name="..."/&gt;</code> section of your XSLT.
 

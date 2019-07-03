@@ -1,4 +1,8 @@
-# Accept once per modification file list filter
+---
+id: accept-once-per-modification-file-list-filter
+title: Accept once per modification file list filter
+sidebar_label: Accept once per modification file list filter
+---
 #### File filter that passes files only one time per last modified time.
 File filter that passes files only one time per last modified time or when the internal buffer overflows and the file falls out.
 

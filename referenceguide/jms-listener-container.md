@@ -1,4 +1,8 @@
-# JMS listener container
+---
+id: jms-listener-container
+title: JMS listener container
+sidebar_label: JMS listener container
+---
 #### A container for hosting JMS message listeners that share the same connection settings.
 JMS message listeners are responsible for receiving JMS messages from a specific JMS destination and then processing them.
 

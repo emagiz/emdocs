@@ -1,4 +1,8 @@
-# FTP inbound channel adapter
+---
+id: ftp-inbound-channel-adapter
+title: FTP inbound channel adapter
+sidebar_label: FTP inbound channel adapter
+---
 #### Synchronizes a remote FTP directory with a local directory and creates file-messages.
 <a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-inbound" target="_blank">Documentation</a>
 
@@ -22,6 +26,57 @@ Step-by-step this adapter functions as follows each time it is triggered by the 
 3d - after each successful transfer, the temporary local file is then <b>renamed</b> to the determined local file name and the corresponding remote FTP file is <b>deleted</b> if the adapter is configured to do so
 
 4 - step 1 is tried again: if this now results in a suitable local file a message with this file as the payload is created, otherwise no message is generated
+
+#### Remote directory
+Identifies the (remote) directory path where files will be transferred <b>from</b>.
+
+For example: <code>/transfers/inbound</code>
+
+<i>Required</i>
+
+#### Local directory
+Identifies the (local) directory path where file will be transferred <b>to</b>.
+
+Some examples:
+- <code>D:/transfers/inbound</code>
+- <code>/tmp/transfers/inbound</code>
+- <code>${ftp.dir.local}</code>
+
+<i>Required</i>
+
+#### Filename pattern
+Only files with names matching this <i>ant style expression</i> will be picked up by this adapter.
+
+The ant style expression uses the following rules:
+<code>?</code> - matches one character
+<code>*</code> - matches zero or more characters
+ 
+Some examples:
+<code>t?st.xml</code> - matches <code>test.xml</code> but also <code>tast.xml</code> or <code>txst.xml</code>
+<code>*.xml</code> - matches all <code>.xml</code> files
+
+It is not possible to use this option together with a <i>filename regex</i> or a <i>filter</i>.
+
+Note that this filter runs against the <b>remote</b> file system view.
+
+Default is empty (no filter will be applied).
+
+#### Auto create local directory
+Specify whether to automatically create the local directory if it does not yet exist when this adapter is being initialized. 
+
+If set to <code>false</code> and the directory does not exist upon initialization, an exception will be thrown.
+
+Default is <code>true</code>.
+
+#### Delete remote files
+Specify whether to delete the remote source file after copying.
+
+Default is <code>false</code>.
+
+#### FTP session factory
+FTP session factory that provides the FTP(S) connections for this channel adapter.
+
+<i>Required</i>
 
 #### Filename regex
 Only files with names matching this regular expression will be picked up by this adapter.
@@ -77,54 +132,10 @@ Specify whether to preserve the modified timestamp from the remote source file o
 
 Default is <code>false</code>, meaning the remote timestamp will not be preserved.
 
-#### Remote directory
-Identifies the (remote) directory path where files will be transferred <b>from</b>.
+#### Channel
+Channel where the generated messages should be sent to.
 
-For example: <code>/transfers/inbound</code>
-
-<i>Required</i>
-
-#### Local directory
-Identifies the (local) directory path where file will be transferred <b>to</b>.
-
-Some examples:
-- <code>D:/transfers/inbound</code>
-- <code>/tmp/transfers/inbound</code>
-- <code>${ftp.dir.local}</code>
-
-<i>Required</i>
-
-#### Filename pattern
-Only files with names matching this <i>ant style expression</i> will be picked up by this adapter.
-
-The ant style expression uses the following rules:
-<code>?</code> - matches one character
-<code>*</code> - matches zero or more characters
- 
-Some examples:
-<code>t?st.xml</code> - matches <code>test.xml</code> but also <code>tast.xml</code> or <code>txst.xml</code>
-<code>*.xml</code> - matches all <code>.xml</code> files
-
-It is not possible to use this option together with a <i>filename regex</i> or a <i>filter</i>.
-
-Note that this filter runs against the <b>remote</b> file system view.
-
-Default is empty (no filter will be applied).
-
-#### Auto create local directory
-Specify whether to automatically create the local directory if it does not yet exist when this adapter is being initialized. 
-
-If set to <code>false</code> and the directory does not exist upon initialization, an exception will be thrown.
-
-Default is <code>true</code>.
-
-#### Delete remote files
-Specify whether to delete the remote source file after copying.
-
-Default is <code>false</code>.
-
-#### FTP session factory
-FTP session factory that provides the FTP(S) connections for this channel adapter.
+You can select the <code>nullChannel</code> here to silently drop the messages.
 
 <i>Required</i>
 
@@ -147,12 +158,29 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
-#### Channel
-Channel where the generated messages should be sent to.
+#### Max messages per poll
+Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
 
-You can select the <code>nullChannel</code> here to silently drop the messages.
+The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
 
-<i>Required</i>
+For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
+
+Default is 1.
+
+
+#### Receive timeout
+Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
+
+#### Send timeout
+Specifies the timeout for sending out messages.
+
+#### Task executor
+Task executor to execute the scheduled tasks. 
+
+Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
+
+#### Error channel
+The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 
 #### Trigger type
 A <i>trigger</i> specifies the schedule of the <i>poller</i>.
@@ -194,28 +222,4 @@ Example patterns:
 <code>0 0/30 8-10 * * *</code> = 8:00, 8:30, 9:00, 9:30 and 10 o'clock every day
 <code>0 0 9-17 * * MON-FRI</code> = on the hour nine-to-five weekdays
 <code>0 0 0 25 12 ?</code> = every Christmas Day at midnight
-
-#### Max messages per poll
-Specifies the <i>maximum number of messages</i> to receive within a given poll operation. 
-
-The poller will continue trying to receive without waiting until either no message is available or this maximum is reached.
-
-For example, if a poller has a 10 second interval trigger and a <i>maxMessagesPerPoll</i> setting of 25, and it is polling a channel that has 100 messages in its queue, all 100 messages can be retrieved within 40 seconds. It grabs 25, waits 10 seconds, grabs the next 25, and so on. 
-
-Default is 1.
-
-
-#### Receive timeout
-Specifies the <i>amount of time</i> the poller should wait if no messages are available when receiving.
-
-#### Send timeout
-Specifies the timeout for sending out messages.
-
-#### Task executor
-Task executor to execute the scheduled tasks. 
-
-Default when empty: TaskScheduler with name 'taskScheduler', created if not exists.
-
-#### Error channel
-The channel that error messages will be sent to if a failure occurs in this poller's invocation. To completely suppress exceptions, provide a reference to the <i>nullChannel</i> here.
 

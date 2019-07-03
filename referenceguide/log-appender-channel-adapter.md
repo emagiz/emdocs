@@ -1,4 +1,8 @@
-# Log appender channel adapter
+---
+id: log-appender-channel-adapter
+title: Log appender channel adapter
+sidebar_label: Log appender channel adapter
+---
 #### An event-driven adapter that receives logging events of the application.
 A message producer endpoint that registers itself as an <code>Appender</code> for <i>Logback</i>, sending all received logging events as XML messages to the output channel.
 
@@ -73,15 +77,15 @@ Default is <code>0</code>, i.e. sends should be handled immediately without bloc
 #### Error channel
 If a (synchronous) downstream exception is thrown and an error channel is specified, the <code>MessagingException</code> will be sent to this channel. Otherwise, any such exception will simply be logged as a warning by the channel adapter.
 
-#### Id
-Name that uniquely identifies this flow component.
-
-<i>Required</i>
-
 #### Channel
 Channel where the generated messages should be sent to.
 
 You can select the <code>nullChannel</code> here to silently drop the messages.
+
+<i>Required</i>
+
+#### Id
+Name that uniquely identifies this flow component.
 
 <i>Required</i>
 

@@ -1,4 +1,8 @@
-# Regex pattern file list filter
+---
+id: regex-pattern-file-list-filter
+title: Regex pattern file list filter
+sidebar_label: Regex pattern file list filter
+---
 #### File filter that matches the name of the file against a regular expression.
 File filter that matches the name of the file against a pattern that is described by a regular expression.
 

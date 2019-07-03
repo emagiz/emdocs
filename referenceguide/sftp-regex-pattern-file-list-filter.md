@@ -1,4 +1,8 @@
-# SFTP regex pattern file list filter
+---
+id: sftp-regex-pattern-file-list-filter
+title: SFTP regex pattern file list filter
+sidebar_label: SFTP regex pattern file list filter
+---
 #### SFTP file filter that matches the name of the file against a regular expression.
 SFTP file filter that matches the name of the file against a pattern that is described by a regular expression.
 

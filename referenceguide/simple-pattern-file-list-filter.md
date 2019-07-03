@@ -1,4 +1,8 @@
-# Simple pattern file list filter
+---
+id: simple-pattern-file-list-filter
+title: Simple pattern file list filter
+sidebar_label: Simple pattern file list filter
+---
 #### File filter that matches the name of the file against a simple ant-style pattern.
 Filter that supports ant-style path expressions, which are less powerful but more readable than regular expressions.
 
