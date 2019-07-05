@@ -1,35 +1,28 @@
 # XPath/XSLT functions
 
-https://my.emagiz.com/link/documentation/107
-In addition to the standard XPath/XSLT functions (see W3Schools), eMagiz also supports the functions that are listed below. These extension functions are located in following namespaces:
+In addition to the standard XPath/XSLT functions (see [W3Schools](https://www.w3schools.com/xml/xsl_functions.asp)), eMagiz also supports the functions that are listed below. These extension functions are located in following namespaces:
+- `"http://www.emagiz.com/ns/mapping/1.0/"` for the mapping functions (prefixed with `mapping` in this document)  
+- `"http://www.emagiz.com/ns/xml/1.0/"` for generic eMagiz extension functions (prefixed with `ezx` in this document)
 
-`"http://www.emagiz.com/ns/mapping/1.0/"` for the mapping functions (prefixed with `"mapping"` in this document)  
-`"http://www.emagiz.com/ns/xml/1.0/"` for generic eMagiz extension functions (prefixed with `"ezx"` in this document)
-
-
-
-
-`string mapping:lookup-cdm-code(string system, string codeType, string systemCode, boolean mustExist)`  
-
+## lookup-cdm-code
+```xquery
+string mapping:lookup-cdm-code(string system, string codeType, string systemCode, boolean mustExist)
+```
 Looks up the CDM code for the given system code. If caching is enabled, the CDM code will be returned from the cache if possible, otherwise it will be added to the cache after performing the lookup so subsequent calls can use this cached value.
 
-**Parameters:**
+#### Parameters:
+- **system** identifier of the system to do the lookup for (not null or empty, max length 64)  
+- **codeType** type of code to do the lookup for (not null or empty, max length 64)  
+- **systemCode** system code to do the lookup for (not null or empty, max length 64)  
+- **mustExist** if true, a MappingException is thrown when the resulting CDM code would be null or empty  
 
-**system** identifier of the system to do the lookup for (not null or empty, max length 64)  
-**codeType** type of code to do the lookup for (not null or empty, max length 64)  
-**systemCode** system code to do the lookup for (not null or empty, max length 64)  
-**mustExist** if true, a MappingException is thrown when the resulting CDM code would be null or empty  
-
-**Returns:**
-
+#### Returns:
 the requested CDM code (if mustExist is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
 
-
-
-
-
-`string mapping:lookup-system-code(string system, string codeType, string cdmCode, boolean mustExist)`
-
+## lookup-system-code
+```xquery
+string mapping:lookup-system-code(string system, string codeType, string cdmCode, boolean mustExist)
+```
 Looks up the system code for the given CDM code. If caching is enabled, the system code will be returned from the cache if possible, otherwise it will be added to the cache after performing the lookup so subsequent calls can use this cached value.
 
 **Parameters:**
