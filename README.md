@@ -1,11 +1,11 @@
 # eMagiz Platform documentation
 ---  
-![alttext](resources/eMagiz.png) 
-- [General iPaaS documentation  – How2 use iPaaS](ILM/overview.md)  
-- [Integration scenarios and Messaging concepts](integration/index.md)  
-- [ILM Methodology – How2 apply methodology](iPaaS/ILMindex.md)
-- [Reference guide for components](/referenceguide/index.md) 
-- [How2's](howto/index.md)
+![alttext](img/eMagiz.png) 
+- [General iPaaS documentation  – How2 use iPaaS](mds/ILM/index.md)  
+- [Integration scenarios and Messaging concepts](mds/integration/index.md)  
+- [ILM Methodology – How2 apply methodology](mds/iPaaS/index.md)
+- [Reference guide for components](mds/referenceguide/index.md) 
+- [How2's](mds/howto/index.md)
 ---
 
  
@@ -46,3 +46,4 @@ Let’s sum up the key facts and figures about eMagiz and our value proposition:
 - Release notes
 --->
 
+<!-- This page is NOT taken into account automatically in our build process! -->
