@@ -1,6 +1,6 @@
 # XPath/XSLT functions
 
-In addition to the standard XPath/XSLT functions (see [W3Schools](https://www.w3schools.com/xml/xsl_functions.asp)), eMagiz also supports the functions that are listed below. These extension functions are located in following namespaces:
+In addition to the standard XPath/XSLT functions (see [W3Schools]), eMagiz also supports the functions that are listed below. These extension functions are located in following namespaces:
 - `"http://www.emagiz.com/ns/mapping/1.0/"` for the mapping functions (prefixed with `mapping` in this document)  
 - `"http://www.emagiz.com/ns/xml/1.0/"` for generic eMagiz extension functions (prefixed with `ezx` in this document)
 
@@ -14,10 +14,10 @@ Looks up the CDM code for the given system code. If caching is enabled, the CDM 
 - **system** identifier of the system to do the lookup for (not null or empty, max length 64)  
 - **codeType** type of code to do the lookup for (not null or empty, max length 64)  
 - **systemCode** system code to do the lookup for (not null or empty, max length 64)  
-- **mustExist** if true, a MappingException is thrown when the resulting CDM code would be null or empty  
+- **mustExist** if true, a `MappingException` is thrown when the resulting CDM code would be null or empty  
 
 #### Returns:
-the requested CDM code (if mustExist is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
+the requested CDM code (if *mustExist* is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
 
 ## lookup-system-code
 ```xquery
@@ -29,10 +29,10 @@ Looks up the system code for the given CDM code. If caching is enabled, the syst
 - **system** identifier of the system to do the lookup for (not null or empty, max length 64)
 - **codeType** type of code to do the lookup for (not null or empty, max length 64)
 - **cdmCode** CDM code to do the lookup for (not null or empty, max length 64)
-- **mustExist** if true, a MappingException is thrown when the resulting system code would be null or empty
+- **mustExist** if true, a `MappingException` is thrown when the resulting system code would be null or empty
 
 #### Returns:
-the requested system code (if mustExist is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
+the requested system code (if *mustExist* is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
 
 ## lookup-custom-attribute
 ```xquery
@@ -44,10 +44,10 @@ Looks up the value for the specified custom attribute of the given CDM code. If 
 - **codeType** type of code to do the lookup for (not null or empty, max length 64)  
 - **cdmCode** CDM code to do the lookup for (not null or empty, max length 64)  
 - **customAttribute** custom attribute to do the lookup for (not null or empty, max length 64)  
-- **mustExist** if true, a MappingException is thrown when the resulting custom attribute value would be null or empty  
+- **mustExist** if true, a `MappingException` is thrown when the resulting custom attribute value would be null or empty  
 
 #### Returns:
-the value of the requested custom attribute (if mustExist is false, the value might be null or empty, indicating no value element was present in the mapping service response or the value element was present but didn't have a value)
+the value of the requested custom attribute (if *mustExist* is false, the value might be null or empty, indicating no value element was present in the mapping service response or the value element was present but didn't have a value)
 
 ## format-dateTime
 ```xquery
@@ -59,8 +59,8 @@ Formats a given date/time as a string using the specified pattern.
 
 #### Parameters:
 - **dateTime** the date/time to format  
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the date/time   
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when formatting the output; if not specified the time zone of the input date/time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:dateTime or the JVM local time zone otherwise)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for formatting the date/time   
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when formatting the output; if not specified the time zone of the input date/time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:dateTime or the JVM local time zone otherwise)  
 
 #### Returns:
 The formatted date/time as a string value.
@@ -85,8 +85,8 @@ Formats a given date as a string using the specified pattern.
 
 #### Parameters:
 - **date** the date to format  
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the date   
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when formatting the output; if not specified the time zone of the input date is used (which, when unspecified, defaults to UTC if the input is an instance of xs:date or the JVM local time zone otherwise)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for formatting the date   
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when formatting the output; if not specified the time zone of the input date is used (which, when unspecified, defaults to UTC if the input is an instance of xs:date or the JVM local time zone otherwise)  
 
 #### Returns:
 The formatted date as a string value.
@@ -111,8 +111,8 @@ Formats a given time as a string using the specified pattern.
 
 #### Parameters:
 - **time** the time to format  
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the time  
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when formatting the output; if not specified the time zone of the input time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:time or the JVM local time zone otherwise)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for formatting the time  
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when formatting the output; if not specified the time zone of the input time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:time or the JVM local time zone otherwise)  
 
 #### Returns:
 The formatted time as a string value.
@@ -137,8 +137,8 @@ Parses a given string value into a date/time using the specified pattern.
 
 #### Parameters:
 - **stringValue** the string value to parse into a date/time   
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for parsing the string value into a date/time  
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for parsing the string value into a date/time  
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
 
 #### Returns:
 The parsed date/time as a dateTime value.
@@ -163,8 +163,8 @@ Parses a given string value into a date using the specified pattern.
 
 #### Parameters:
 - **stringValue** the string value to parse into a date   
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for parsing the string value into a date  
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for parsing the string value into a date  
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
 
 #### Returns:
 The parsed date as a date value.
@@ -189,8 +189,8 @@ Parses a given string value into a time using the specified pattern.
 
 #### Parameters:
 - **stringValue** the string value to parse into a time   
-- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for parsing the string value into a time  
-- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
+- **pattern** the pattern (a string following the [DateTimeFormat pattern syntax]) to use for parsing the string value into a time  
+- **timeZone** [Optional] the time zone (a string as accepted by [DateTimeZone.forID(String)]) to use when parsing the input, completely ignoring any time zone information in the string value; if not specified the time zone information in the string value is used (which, when not present, defaults to the JVM local time zone)  
 
 #### Returns:
 The parsed time as a time value.
@@ -264,7 +264,7 @@ Adjusts the given date/time to the specified timezone (respecting the original t
 
 #### Parameters:
 - **dateTime** the date/time to adjust to a timezone; when the timezone of this date/time is unspecified, it defaults to UTC if the input is an instance of xs:dateTime or the JVM local time zone otherwise   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to adjust the date/time to  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to adjust the date/time to  
 
 #### Returns:
 The adjusted date/time as a dateTime value.
@@ -282,7 +282,7 @@ Adjusts the given date to the specified timezone (respecting the original timezo
 
 #### Parameters:
 - **date** the date to adjust to a timezone; when the timezone of this date is unspecified, it defaults to UTC if the input is an instance of xs:date or the JVM local time zone otherwise   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to adjust the date to  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to adjust the date to  
 
 #### Returns:
 The adjusted date as a date value.
@@ -300,7 +300,7 @@ Adjusts the given time to the specified timezone (respecting the original timezo
 
 #### Parameters:
 - **time** the time to adjust to a timezone; when the timezone of this time is unspecified, it defaults to UTC if the input is an instance of xs:time or the JVM local time zone otherwise   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to adjust the time to  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to adjust the time to  
 
 #### Returns:
 The adjusted time as a time value.
@@ -318,7 +318,7 @@ Overrides the timezone of the given date/time with the specified timezone (ignor
 
 #### Parameters:
 - **dateTime** the date/time to override the timezone of; whether this date/time specifies a timezone or not is irrelevant, as it will be overridden anyway   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to override the date/time with  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to override the date/time with  
 
 #### Returns:
 The date/time with the new timezone as a dateTime value.
@@ -336,7 +336,7 @@ Overrides the timezone of the given date with the specified timezone (ignoring t
 
 #### Parameters:
 - **date** the date to override the timezone of; whether this date specifies a timezone or not is irrelevant, as it will be overridden anyway   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to override the date with  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to override the date with  
 
 #### Returns:
 The date with the new timezone as a date value.
@@ -354,7 +354,7 @@ Overrides the timezone of the given time with the specified timezone (ignoring t
 
 #### Parameters:
 - **time** the time to override the timezone of; whether this time specifies a timezone or not is irrelevant, as it will be overridden anyway   
-- **timeZone** the time zone (a string as accepted by DateTimeZone.forID(String)) to override the time with  
+- **timeZone** the time zone (a string as accepted by [DateTimeZone.forID(String)]) to override the time with  
 
 #### Returns:
 The time with the new timezone as a time value.
@@ -371,7 +371,7 @@ node ezx:call-xslt-extension-gateway(gateway gateway, node request)
 Calls the given XSLT extension gateway and returns the response XML message.
 
 #### Parameters:
-- **gateway** the XSLT extension gateway to call (should be passed to the stylesheet as an <xsl:param/> value)  
+- **gateway** the XSLT extension gateway to call (should be passed to the stylesheet as an `<xsl:param/>` value)  
 - **request** the request message (a single XML node) to send to the gateway; this XML node will be serialized into a string value before sending it to the gateway   
 
 #### Returns:
@@ -381,3 +381,7 @@ The response message (a single XML node) received from the gateway; the gateway'
 `ezx:call-xslt-extension-gateway($gateway, //Customer[1]) `
 
 *Result:* `<CustomerDetails>...</CustomerDetails>`
+
+[W3Schools]: https://www.w3schools.com/xml/xsl_functions.asp
+[DateTimeFormat pattern syntax]: http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html
+[DateTimeZone.forID(String)]: http://joda-time.sourceforge.net/apidocs/org/joda/time/DateTimeZone.html#forID(java.lang.String)
