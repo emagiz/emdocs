@@ -25,79 +25,65 @@ string mapping:lookup-system-code(string system, string codeType, string cdmCode
 ```
 Looks up the system code for the given CDM code. If caching is enabled, the system code will be returned from the cache if possible, otherwise it will be added to the cache after performing the lookup so subsequent calls can use this cached value.
 
-**Parameters:**
+#### Parameters:
+- **system** identifier of the system to do the lookup for (not null or empty, max length 64)
+- **codeType** type of code to do the lookup for (not null or empty, max length 64)
+- **cdmCode** CDM code to do the lookup for (not null or empty, max length 64)
+- **mustExist** if true, a MappingException is thrown when the resulting system code would be null or empty
 
-**system** identifier of the system to do the lookup for (not null or empty, max length 64)
-**codeType** type of code to do the lookup for (not null or empty, max length 64)
-**cdmCode** CDM code to do the lookup for (not null or empty, max length 64)
-**mustExist** if true, a MappingException is thrown when the resulting system code would be null or empty
-
-**Returns:**
-
+#### Returns:
 the requested system code (if mustExist is false, the value might be null or empty, indicating no code element was present in the mapping service response or the code element was present but didn't have a value)
 
-
-
-
-
-`string mapping:lookup-custom-attribute(string codeType, string cdmCode, string customAttribute, boolean mustExist)`
-
+## lookup-custom-attribute
+```xquery
+string mapping:lookup-custom-attribute(string codeType, string cdmCode, string customAttribute, boolean mustExist)
+```
 Looks up the value for the specified custom attribute of the given CDM code. If caching is enabled, the custom attribute value will be returned from the cache if possible, otherwise it will be added to the cache after performing the lookup so subsequent calls can use this cached value.
 
-**Parameters:**
+#### Parameters:
+- **codeType** type of code to do the lookup for (not null or empty, max length 64)  
+- **cdmCode** CDM code to do the lookup for (not null or empty, max length 64)  
+- **customAttribute** custom attribute to do the lookup for (not null or empty, max length 64)  
+- **mustExist** if true, a MappingException is thrown when the resulting custom attribute value would be null or empty  
 
-**codeType** type of code to do the lookup for (not null or empty, max length 64)  
-**cdmCode** CDM code to do the lookup for (not null or empty, max length 64)  
-**customAttribute** custom attribute to do the lookup for (not null or empty, max length 64)  
-**mustExist** if true, a MappingException is thrown when the resulting custom attribute value would be null or empty  
-
-**Returns:**
-
+#### Returns:
 the value of the requested custom attribute (if mustExist is false, the value might be null or empty, indicating no value element was present in the mapping service response or the value element was present but didn't have a value)
 
+## format-dateTime
+```query
+string ezx:format-dateTime(dateTime dateTime, string pattern)
 
-
-
-
-`string ezx:format-dateTime(dateTime dateTime, string pattern)`
-
-`string ezx:format-dateTime(dateTime dateTime, string pattern, string timeZone)`
-
+string ezx:format-dateTime(dateTime dateTime, string pattern, string timeZone)
+```
 Formats a given date/time as a string using the specified pattern.
 
-**Parameters:**
+#### Parameters:
+- **dateTime** the date/time to format  
+- **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the date/time   
+- **timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when formatting the output; if not specified the time zone of the input date/time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:dateTime or the JVM local time zone otherwise)  
 
-**dateTime** the date/time to format  
-**pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the date/time   
-**timeZone** [Optional] the time zone (a string as accepted by DateTimeZone.forID(String)) to use when formatting the output; if not specified the time zone of the input date/time is used (which, when unspecified, defaults to UTC if the input is an instance of xs:dateTime or the JVM local time zone otherwise)  
-
-**Returns:**
-
+#### Returns:
 The formatted date/time as a string value.
 
-**Example:**
-
+#### Example:
 `ezx:format-dateTime('2014-01-01T04:45:30.000+01:00', 'E MMM dd yyyy h:mma Z')`
 
-**Result:** Wed Jan 01 2014 4:45AM +0100
+*Result:* `Wed Jan 01 2014 4:45AM +0100`
 
-**Example:**
-
+#### Example:
 `ezx:format-dateTime('2014-01-01T04:45:30.000+01:00', 'E MMM dd yyyy h:mma Z', 'America/New_York')`
 
-**Result:** `Tue Dec 31 2013 10:45PM -0500`
+*Result:* `Tue Dec 31 2013 10:45PM -0500`
 
+## format-date
+```query
+string ezx:format-date(date date, string pattern)
 
-
-
-
-`string ezx:format-date(date date, string pattern)`
-
-`string ezx:format-date(date date, string pattern, string timeZone)`
-
+string ezx:format-date(date date, string pattern, string timeZone)
+```
 Formats a given date as a string using the specified pattern.
 
-**Parameters:**
+#### Parameters:
 
 **date** the date to format  
 **pattern** the pattern (a string following the DateTimeFormat pattern syntax) to use for formatting the date   
