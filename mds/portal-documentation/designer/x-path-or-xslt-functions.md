@@ -50,7 +50,7 @@ Looks up the value for the specified custom attribute of the given CDM code. If 
 the value of the requested custom attribute (if mustExist is false, the value might be null or empty, indicating no value element was present in the mapping service response or the value element was present but didn't have a value)
 
 ## format-dateTime
-```query
+```xquery
 string ezx:format-dateTime(dateTime dateTime, string pattern)
 
 string ezx:format-dateTime(dateTime dateTime, string pattern, string timeZone)
@@ -76,7 +76,7 @@ The formatted date/time as a string value.
 *Result:* `Tue Dec 31 2013 10:45PM -0500`
 
 ## format-date
-```query
+```xquery
 string ezx:format-date(date date, string pattern)
 
 string ezx:format-date(date date, string pattern, string timeZone)
