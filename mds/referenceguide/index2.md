@@ -1,6 +1,4 @@
 # Reference guide - flow components by category
-> Jump to: [Data pipelines](#data-pipelines) | [EDI](#edi) | [File](#file) | [FTP(S)](#ftps) | [HTTP/REST](#httprest) | [JDBC](#jdbc) | [JMS/AMQP](#jmsamqp) | [Kafka](#kafka) | [Mail](#mail) | [Scripting](#scripting) | [SFTP](#sftp) | [TCP](#tcp) | [Web services](#web-services) | [XML](#xml) | [XMPP](#xmpp) | [Miscellaneous](#miscellaneous)
-
 This page lists all components available in the flow designer grouped by *category* (HTTP/REST, web services, EDI, etc). The same list but grouped by *type* (transformer, filter, router, etc) is available [here](index.md).
 
 A component with ~~strikethrough~~ indicates it is deprecated: hover to see the recommended alternative. Some components in the flow designer have additional settings that are (usually) accessed through new/edit/delete buttons: these "nested" components are listed as sub-items of the relevant component in the list below.
@@ -183,6 +181,7 @@ Components that use the JMS API and/or the AMQP protocol to send and receive mes
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 - [JMS XML message converter](jms-xml-message-converter.md)
+- No-op JMS header mapper
 - [Qpid JMS connection factory](qpid-jms-connection-factory.md)
   - [AMQP connector settings](qpid-amqp-connector-setting.md)
 - ~~[Sonic caching connection factory](sonic-caching-connection-factory.md "Deprecated: use JMS caching connection factory")~~
