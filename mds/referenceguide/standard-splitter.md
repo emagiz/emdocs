@@ -1,3 +1,9 @@
+---
+id: standard-splitter
+title: Standard Splitter
+sidebar_label: Standard Splitter
+---
+
 # Standard splitter
 Splits incoming messages into multiple outgoing messages in one of the following ways:
 - by splitting list-based messages into its containing items

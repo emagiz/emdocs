@@ -1,3 +1,10 @@
+---
+id: jdbc-initialize-database
+title: JDBC initialize database
+sidebar_label: JDBC initialize database
+---
+
+
 # JDBC Initialize database
 Use this if you want to initialize a database on startup (or on exit). This can be use for example for table creation and/or population.
 

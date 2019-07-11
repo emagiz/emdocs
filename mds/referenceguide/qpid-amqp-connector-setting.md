@@ -1,3 +1,9 @@
+---
+id: qpid-amqp-connector-setting
+title: QPID AMQP connector setting
+sidebar_label: QPID AMQP connector setting
+---
+
 # JDBC H2 connection pool
 A simple standalone JDBC connection pool.
 

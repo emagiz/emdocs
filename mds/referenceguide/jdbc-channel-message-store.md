@@ -1,3 +1,9 @@
+---
+id: jdbc-channel-message-store
+title: JDBC channel message store
+sidebar_label: JDBC channel message store
+---
+
 # JDBC channel message store
 Channel-specific implementation of <code>MessageGroupStore</code> using a relational database via JDBC. This message store shall be used for message channels only.
 

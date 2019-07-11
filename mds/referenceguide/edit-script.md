@@ -1,3 +1,9 @@
+---
+id: edit-script
+title: Edit Script
+sidebar_label: Edit Script
+---
+
 # SQL Script
 SQL script to execute to populate, initialize, or clean up the database.
 

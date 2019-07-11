@@ -1,3 +1,10 @@
+---
+id: standard-transformer
+title: Standard transformer
+sidebar_label: Standard transformer
+---
+
+
 # Standard transformer
 Transforms messages by executing a SpEL expression or Groovy script on each incoming message.
 

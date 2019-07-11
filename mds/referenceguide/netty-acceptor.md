@@ -1,3 +1,9 @@
+---
+id: netty-acceptor
+title: Netty Acceptor
+sidebar_label: Netty Acceptor
+---
+
 # Netty acceptor
 An acceptor defines a way in which connections can be made to the Artemis server.
 

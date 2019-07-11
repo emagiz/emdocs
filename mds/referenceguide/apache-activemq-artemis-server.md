@@ -1,3 +1,9 @@
+---
+id: apache-activemq-artemis-server
+title: Apache activemq artemis server
+sidebar_label: Apache activemq artemis server
+---
+
 # Apache ActiveMQ Artemis server
 Creates an Apache ActiveMQ Artemis server for hosting message queues.
 

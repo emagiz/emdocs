@@ -1,3 +1,9 @@
+---
+id: address-settings
+title: Address Settings
+sidebar_label: Address Settings
+---
+
 # Address settings
 Artemis has a unique addressing model that is both powerful and flexible and that offers great performance. The addressing model comprises three main concepts: addresses, queues and routing types.
 

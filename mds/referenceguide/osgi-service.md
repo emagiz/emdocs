@@ -1,3 +1,10 @@
+---
+id: osgi-service
+title: OSGI service
+sidebar_label: OSGI service
+---
+
+
 # OSGi service 
 Exports the referenced bean as an OSGi service so it can be used by other flows.
 

@@ -1,3 +1,9 @@
+---
+id: standard-filter
+title: Standard filter
+sidebar_label: Standard filter
+---
+
 # Standard filter
 Filters messages based on the evaluation of a (boolean) SpEL expression or Groovy script for each incoming message. If the expression or script evaluates to <code>true</code> the message will be send to the <i>output channel</i>, otherwise it will be dropped, rejected or send to the <i>discard channel</i>.
 

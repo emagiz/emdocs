@@ -1,3 +1,10 @@
+---
+id: qpid-jms-connection-factory
+title: QPID JMS connection factory
+sidebar_label: QPID JMS connection factory
+---
+
+
 # Qpid AMQP connection factory
 Creates a Qpid JMS client connection factory. This can be used to connect to (remote) servers using the AMQP protocol. Advanced Message Queuing Protocol (AMQP) is an open internet protocol for reliably sending and receiving messages.
 

@@ -1,3 +1,10 @@
+---
+id: standard-service-activator
+title: Standard service activator
+sidebar_label: Standard service activator
+---
+
+
 # Standard service activator
 Service activator that evaluates a SpEL expression or Groovy script for each incoming message.
 

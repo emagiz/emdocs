@@ -1,3 +1,10 @@
+---
+id: cluster-connection
+title: Cluster Connection
+sidebar_label: Cluster Connection
+---
+
+
 # Cluster connection
 <a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">Documentation</a>
 

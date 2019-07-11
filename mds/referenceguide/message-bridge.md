@@ -1,3 +1,10 @@
+---
+id: message-bridge
+title: Message bridge
+sidebar_label: Message bridge
+---
+
+
 # Message bridge
 A Message bridge is a relatively trivial endpoint that simply connects two channels or channel adapters. For example, you may want to connect a channel of type queue to a reqular channel so that the endpoint does not have to worry about any polling configuration. Instead, the messaging bridge provides the polling configuration.
 

@@ -1,3 +1,9 @@
+---
+id: security-settings
+title: Security settings
+sidebar_label: Security settings
+---
+
 # Security settings
 #### Security settings that are applied on the address level.
 Security settings which will be applied against any addresses with a name that matches a certain wildcard expression.

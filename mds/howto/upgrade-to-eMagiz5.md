@@ -112,14 +112,14 @@ However, you should test to make sure that the default settings of the auto reco
 
 You can identify an auto recovery action by checking searching the log for Auto-recovery. 
   
-<p align="center">
-  <img width="432" height="229" src="artemis-server-settings.png"> 
+<p>
+  <img width="432" height="229" src="../../img/howto/artemis-server-settings.png"> 
 </p>
 
 If a change in the autorecovery mechanism settings are needed, you can do it in the advanced tab of the artemis-server support object of the JMS server flow of the bus. You can find more information in the helptext about the different configurations.
 
-<p align="center">
- <img width="454" height="250" src="artemis-server.png">
+<p >
+ <img width="454" height="250" src="../../img/howto/artemis-server.png">
 </p>
 
  #### Manually added queues

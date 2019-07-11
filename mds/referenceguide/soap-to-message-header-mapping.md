@@ -1,3 +1,9 @@
+---
+id: soap-to-message-header-mapping
+title: Soap to message header mapping
+sidebar_label: Soap to message header mapping
+---
+
 # SOAP to message header mapping
 #### Id
 Name that uniquely identifies this flow component.

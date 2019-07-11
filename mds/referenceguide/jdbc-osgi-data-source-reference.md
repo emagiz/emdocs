@@ -1,3 +1,10 @@
+---
+id: jdbc-osgi-data-source-reference
+title: JDC OSGI data source reference
+sidebar_label: JDC OSGI data srouce reference
+---
+
+
 # JDBC OSGi data source reference
 Defines a reference to a service obtained via the OSGi service registry.
 

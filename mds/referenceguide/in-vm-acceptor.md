@@ -1,3 +1,10 @@
+---
+id: in-vm-acceptor
+title: In VM acceptor
+sidebar_label: In VM acceptor
+---
+
+
 # In VM acceptor
 Accepts connections from clients that run in the same Java virtual machine as this server.
 

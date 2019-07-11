@@ -1,3 +1,9 @@
+---
+id: standard-router
+title: Standard router
+sidebar_label: Standard Router
+---
+
 # Standard router
 Routes messages to channels based on the evaluation of a SpEL expression or Groovy script for each incoming message.
 

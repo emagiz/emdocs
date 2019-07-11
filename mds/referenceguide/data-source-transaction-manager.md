@@ -1,3 +1,10 @@
+---
+id: data-source-transaction-manager
+title: Data source transaction manager
+sidebar_label: Data source transaction manager
+---
+
+
 #### Id
 Name that uniquely identifies this flow component.
 

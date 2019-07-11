@@ -33,7 +33,7 @@ An inbound channel adapter connects a source system to a message flow in an asyn
 - [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
 
-## <img src="../../img/InboundGateway.png" height="30"/> Inbound gateways
+## ![alttextl](../../img/referenceguide/InboundGateway.png) Inbound gateways
 An inbound gateway connects a source system to a message flow in a synchronous (request-response) fashion. These inbound endpoints are always message-driven.
 - [ActiveMQ security manager gateway](activemq-security-manager-gateway.md)
 - [Command executor gateway](command-executor-gateway.md)
@@ -48,7 +48,7 @@ An inbound gateway connects a source system to a message flow in a synchronous (
 - [Web service inbound gateway](web-service-inbound-gateway.md)
 - [XSLT extension gateway](xslt-extension-gateway.md)
 
-## <img src="../../img/OutboundChannelAdaptor.png" height="30"/> Outbound channel adapters
+## ![alt textl](../../img/referenceguide/OutboundChannelAdaptor.png) Outbound channel adapters
 An outbound channel adapter connects a message flow to a target system in an asynchronous (fire-and-forget) fashion.
 - [File outbound channel adapter](file-outbound-channel-adapter.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
@@ -106,7 +106,7 @@ An outbound channel adapter connects a message flow to a target system in an asy
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 
-## <img src="../../img/OutboundGateway.png" height="30"/> Outbound gateways
+## ![alt textl](../../img/referenceguide/OutboundGateway.png) Outbound gateways
 An outbound gateway connects a message flow to a target system in a synchronous (request-response) fashion.
 - [HTTP outbound gateway](http-outbound-gateway.md)
   - [Expression evaluating request handler advice](expression-evaluating-request-handler-advice.md)
@@ -139,7 +139,7 @@ An outbound gateway connects a message flow to a target system in a synchronous 
   - [Request handler retry advice](request-handler-retry-advice.md)
   - [Web service URI variable](web-service-uri-variable.md)
 
-## <img src="../../img/Transformer.png" height="30"/> Transformers
+## ![alt textl](../../img/referenceguide/Transformer.png) Transformers
 A transformer converts a message's content or structure, e.g. by converting the payload of the message from one format to another or modifying the message's header values.
 - [Base64 decoding transformer](base64-decoding-transformer.md)
 - [Base64 encoding transformer](base64-encoding-transformer.md)
@@ -202,20 +202,20 @@ A transformer converts a message's content or structure, e.g. by converting the 
 - [XSLT transformer](xslt-transformer.md)
   - [XSLT parameter](xslt-parameter.md)
 
-## <img src="../../img/Splitter.png" height="30"/> Splitters
+## ![alt textl](../../img/referenceguide/Splitter.png) Splitters
 A splitter converts a single (large) message into multiple (smaller) messages.
 - [Standard splitter](standard-splitter.md)
   - [Groovy variable](groovy-variable.md)
 - [XPath splitter](xpath-splitter.md)
 
-## <img src="../../img/Filter.png" height="30"/> Filters
+## ![alt textl](../../img/referenceguide/Filter.png) Filters
 A filter determines whether a message should be accepted (passed through) or rejected (discarded). Rejected messages can either be silently dropped or trigger the flow's error handling.
 - [Standard filter](standard-filter.md)
   - [Groovy variable](groovy-variable.md)
 - [XML validating filter](xml-validating-filter.md)
 - [XPath filter](xpath-filter.md)
 
-## <img src="../../img/Router.png" height="30"/> Routers
+## ![alt textl](../../img/referenceguide/Router.png) Routers
 A router decides where a message should go next (if anywhere). Messages can be send to multiple destinations, in which case they are duplicated.
 - [Header value router](header-value-router.md)
   - [Header value mapping](header-value-mapping.md)
@@ -229,7 +229,7 @@ A router decides where a message should go next (if anywhere). Messages can be s
 - [XPath router](xpath-router.md)
   - [XPath value mapping](xpath-value-mapping.md)
 
-## <img src="../../img/ServiceActivator.png" height="30"/> Service activators
+## ![alt textl](../../img/referenceguide/ServiceActivator.png) Service activators
 A service activator triggers a service instance when receiving a message. If this service returns a value the service activator functions similar to a transformer, if not it can be compared to an outbound channel adapter.
 - [Control bus](control-bus.md)
 - [Custom error message activator](custom-error-message-activator.md)
@@ -255,7 +255,7 @@ A service activator triggers a service instance when receiving a message. If thi
   - [Request handler circuit breaker advice](request-handler-circuit-breaker-advice.md)
   - [Request handler retry advice](request-handler-retry-advice.md)
 
-## <img src="../../img/Channel.png" width="30"/> Channels
+## ![alt textl](../../img/referenceguide/Channel.png) Channels
 Channels connect all the other flow components, decoupling them and also providing a convenient point for interception and monitoring of messages.
 - [Default channel](channel.md)
   - [Debug interceptor](debug-interceptor.md)
@@ -263,7 +263,7 @@ Channels connect all the other flow components, decoupling them and also providi
   - ~~[Exit tracking interceptor](exit-tracking-interceptor.md "Deprecated: functionality replaced by debugging, flow testing, message archiving")~~
   - [Wire tap](wire-tap.md)
 
-## <img src="../../img/SupportObject.png" height="30"/> Support objects
+## ![alt textl](../../img/referenceguide/SupportObject.png) Support objects
 A support object interacts in some way with other flow components (usually extending their functionality), but is never directly part of a message flow.
 - [Apache ActiveMQ Artemis server](apache-activemq-artemis-server.md)
   - [Address settings](address-settings.md)

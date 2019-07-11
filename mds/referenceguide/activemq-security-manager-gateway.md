@@ -1,3 +1,10 @@
+---
+id: activemq-security-manager-gateway
+title: ActiveMQ security manager gateway
+sidebar_label: ActiveMQ security manager gateway
+---
+
+
 # ActiveMQ security manager gateway
 A <code>&lt;si:gateway&gt;</code> that implements the <code>ActiveMQSecurityManager</code> interface.
 

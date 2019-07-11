@@ -1,3 +1,10 @@
+---
+id: netty-connector
+title: Netty connector
+sidebar_label: Netty connector
+---
+
+
 # Netty connector
 <a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">Documentation</a>
 
