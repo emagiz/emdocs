@@ -368,6 +368,7 @@ A support object interacts in some way with other flow components (usually exten
 - Merlin crypto
 - [Message history](message-history.md)
 - Metacom authentication SAAJ SOAP interceptor
+- No-op JMS header mapper
 - OAuth 2.0 resource
 - OAuth 2.0 REST template
 - [OSGi service](osgi-service.md)
