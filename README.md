@@ -1,7 +1,7 @@
 # eMagiz Platform documentation
 ---  
 ![alttext](img/eMagizHIP.png) 
-- [General iPaaS documentation  – How2 use iPaaS](mds/ILM/index.md)  
+- [General HIP documentation  – How2 use eMagiz HIP](mds/ILM/index.md)  
 - [Integration scenarios and Messaging concepts](mds/integration/index.md)  
 - [ILM Methodology – How2 apply methodology](mds/iPaaS/index.md)
 - [Reference guide for components](mds/referenceguide/index.md) 
