@@ -1,4 +1,4 @@
-# eMagiz as an iPaaS
+# eMagiz as an HIP
 
 | point to point | many to many | 
 | :------------: | :----------: | 
