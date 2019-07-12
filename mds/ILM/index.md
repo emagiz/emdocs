@@ -1,4 +1,4 @@
-# eMagiz as an HIP
+# eMagiz as a HIP
 
 | point to point | many to many | 
 | :------------: | :----------: | 
