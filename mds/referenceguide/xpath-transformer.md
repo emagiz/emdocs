@@ -4,7 +4,7 @@ title: XPath transformer
 sidebar_label: XPath transformer
 ---
 #### Transforms XML messages to simple messages based on the result of an XPath expression
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-transformer" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xpath-transformer" target="_blank">External documentation</a>
 
 The resulting payload message contains the result of the XPath expression evaluation.
 

@@ -4,7 +4,7 @@ title: Mail inbound channel adapter
 sidebar_label: Mail inbound channel adapter
 ---
 #### Defines an inbound Channel Adapter that polls a mailbox for mail messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-inbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/mail.html#mail-inbound" target="_blank">External documentation</a>
 
 Hint: If you do have IMAP idle support, use "imap-idle-channel-adapter" element instead. 
 
@@ -47,7 +47,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

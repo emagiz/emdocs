@@ -4,7 +4,7 @@ title: Default FTPS session factory
 sidebar_label: Default FTPS session factory
 ---
 #### Session factory for creating connections with an FTPS server.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-session-factory" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ftp.html#ftp-session-factory" target="_blank">External documentation</a>
 
 Simple FTPS session factory that doesn't provide session caching/pooling, but creates a new session for every request.
 

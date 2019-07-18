@@ -4,7 +4,7 @@ title: Mail outbound channel adapter
 sidebar_label: Mail outbound channel adapter
 ---
 #### Sends messages as an e-mail to the specified recipient(s).
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/mail.html#mail-outbound" target="_blank">External documentation</a>
 
 #### Mail sender
 Sender used for sending the e-mail

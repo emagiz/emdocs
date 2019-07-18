@@ -4,7 +4,7 @@ title: XMPP outbound channel adapter
 sidebar_label: XMPP outbound channel adapter
 ---
 #### Outbound Channel Adapter that sends chat messages over XMPP.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">External documentation</a>
 
 #### Channel
 Channel to consume messages from.

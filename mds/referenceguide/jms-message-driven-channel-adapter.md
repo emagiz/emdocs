@@ -4,7 +4,7 @@ title: JMS message driven channel adapter
 sidebar_label: JMS message driven channel adapter
 ---
 #### Actively receives messages from a specific destination on a JMS server.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jms.html#jms-message-driven-channel-adapter" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jms.html#jms-message-driven-channel-adapter" target="_blank">External documentation</a>
 
 Receives JMS messages from the specified destination at the connection created by the <i>connection factory</i>.
 
@@ -154,7 +154,7 @@ The timeout value for sending messages.
 If not explicitly configured, the default is <code>1000</code> ms (one second).
 
 #### Polls a specific destination on a JMS server for messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jms.html#jms-inbound-channel-adapter" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jms.html#jms-inbound-channel-adapter" target="_blank">External documentation</a>
 
 Receives JMS messages from the specified destination at the connection created by the <i>connection factory</i>.
 
@@ -231,7 +231,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

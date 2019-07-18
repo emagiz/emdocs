@@ -4,7 +4,7 @@ title: XPath router
 sidebar_label: XPath router
 ---
 #### Routes messages based on a XPath expression.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-routing" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xpath-routing" target="_blank">External documentation</a>
 
 Routes XML messages  based on the result of an <i>XPath expression</i>.
 

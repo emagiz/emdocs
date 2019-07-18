@@ -4,7 +4,7 @@ title: Control bus
 sidebar_label: Control bus
 ---
 #### Service activator for managing components within the messaging framework.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#control-bus" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/system-management-chapter.html#control-bus" target="_blank">External documentation</a>
 
 The control bus is a service activator for managing components within the messaging framework itself. It receives command messages on its <i>input channel</i> in the form of SpEL expressions, which are then executed in the application context.
 

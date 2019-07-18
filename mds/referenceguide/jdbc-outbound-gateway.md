@@ -4,7 +4,7 @@ title: JDBC outbound gateway
 sidebar_label: JDBC outbound gateway
 ---
 #### Sends messages to a database and/or receives messages using an SQL query.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jdbc.html#jdbc-outbound-gateway" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jdbc.html#jdbc-outbound-gateway" target="_blank">External documentation</a>
 
 Defines an outbound gateway for updating a database in response to a message on the request channel, and/or for retrieving data from the database using the input message as a source of parameters for the specified SQL select query.
 

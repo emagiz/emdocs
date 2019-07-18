@@ -4,7 +4,7 @@ title: XPath header enricher
 sidebar_label: XPath header enricher
 ---
 #### Adds headers to messages based on XPath expressions. 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">External documentation</a>
 
 Defines a Header Enricher Message Transformer that evaluates XPath expressions against the message payload and inserts the result of the evaluation into a messsage header.
 

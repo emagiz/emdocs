@@ -4,7 +4,7 @@ title: HTTP outbound channel adapter
 sidebar_label: HTTP outbound channel adapter
 ---
 #### Used to send (unidirectional) HTTP messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/http.html#http-outbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/http.html#http-outbound" target="_blank">External documentation</a>
 
 An adapter that sends HTTP requests in a unidirectional way. This means that a successful HTTP response will simply execute without sending any messages to a reply channel. In the case of any non-successful HTTP response status code, it will throw an exception.
 

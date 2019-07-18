@@ -4,7 +4,7 @@ title: Recipient list router
 sidebar_label: Recipient list router
 ---
 #### Routes messages to a statically defined list of channels.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-recipientlistrouter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-routing-chapter.html#router-implementations-recipientlistrouter" target="_blank">External documentation</a>
 
 A <i>recipient list router</i> will send each received message to a statically defined list of message channels.
 

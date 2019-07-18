@@ -4,7 +4,7 @@ title: Java mail sender
 sidebar_label: Java mail sender
 ---
 #### Used for preparing and sending MIME messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-outbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/mail.html#mail-outbound" target="_blank">External documentation</a>
 
 Clients should talk to the mail sender through this interface if they need mail functionality beyond SimpleMailMessage. 
 

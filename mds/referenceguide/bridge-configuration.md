@@ -4,7 +4,7 @@ title: Bridge configuration
 sidebar_label: Bridge configuration
 ---
 #### Reliably connects two separate HornetQ servers together.
-<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">External documentation</a>
 
 The function of a bridge is to consume messages from a source queue, and forward them to a target address, typically on a different HornetQ server.
 

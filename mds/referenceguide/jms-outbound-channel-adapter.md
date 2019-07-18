@@ -1,6 +1,6 @@
 # JMS outbound channel adapter
 #### Sends messages to a JMS destination.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jms.html#jms-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/jms.html#jms-outbound-channel-adapter" target="_blank">External documentation</a>
 
 Sends JMS messages to the specified destination at the connection created by the <i>Connection factory</i>
 
@@ -93,7 +93,7 @@ Channel to consume messages from.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

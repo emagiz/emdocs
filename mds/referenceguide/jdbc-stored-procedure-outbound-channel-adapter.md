@@ -4,7 +4,7 @@ title: JDBC stored procedure outbound channel adapter
 sidebar_label: JDBC stored procedure outbound channel adapter
 ---
 #### Sends messages to a database using a stored procedure.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/jdbc.html#stored-procedure-outbound-channel-adapter" target="_blank">External documentation</a>
 
 #### Stored procedure name
 Specifies the name of the stored procedure. If the stored procedure is a function, this attribute specifies the function name. 

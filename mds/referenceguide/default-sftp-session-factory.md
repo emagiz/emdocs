@@ -4,7 +4,7 @@ title: Default SFTP session factory
 sidebar_label: Default SFTP session factory
 ---
 #### Session factory for creating connections with an SFTP server.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-session-factory" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-session-factory" target="_blank">External documentation</a>
 
 Simple SFTP session factory that doesn't provide session caching/pooling, but creates a new session for every request.
 

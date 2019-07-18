@@ -4,7 +4,7 @@ title: Servlet context handler
 sidebar_label: Servlet context handler
 ---
 #### Context handler that groups a Servlet handler below a particular URI context path 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">External documentation</a>
 
 Extension to the <i>Context Handler</i> allows for simple construction of a context with a <i>Servlet Handler </i> 
 

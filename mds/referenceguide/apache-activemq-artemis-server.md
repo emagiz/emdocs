@@ -10,26 +10,26 @@ Creates an Apache ActiveMQ Artemis server for hosting message queues.
 
 Each acceptor defines a way in which connections can be made to the Artemis server.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html#acceptors" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html#acceptors" target="_blank">External documentation</a>
 
 
 
 
 Connectors are used by a client to define how to connect to a server. Connectors are also used to create bridges between servers or create clusters of servers.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html#connectors" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html#connectors" target="_blank">External documentation</a>
 
 
 Defines a cluster of servers that share message processing load.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">External documentation</a>
 
 
 When <i>match</i> is <code>async.example.message.onramp</code> for example, the settings would only be applied to any addresses which exactly matches the address <code>async.example.message.onramp</code>. You can also use wildcards to apply settings against many addresses. For example, if you used the match string <code>async.#</code>, the settings would be applied to all addresses that start with <code>async.</code> (which would be all asynchronous queues).
 
 Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>sync.example.message.onramp</code> (matches one queue), <code>async.example.*.onramp</code> (matches all onramp flow for the <code>example</code> system), <code>async.example.#</code> (matches all synchronous flow for the <code>example</code> system), <code>async.#</code>.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">External documentation</a>
 
 
 Security settings which will be applied against any addresses with a name that matches a certain wildcard expression.
@@ -38,93 +38,93 @@ When <i>match</i> is <code>async.example.message.onramp</code> for example, the 
 
 Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>sync.example.message.onramp</code> (matches one queue), <code>async.example.*.onramp</code> (matches all onramp flow for the <code>example</code> system), <code>async.example.#</code> (matches all synchronous flow for the <code>example</code> system), <code>async.#</code>.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/security.html#role-based-security-for-addresses" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/security.html#role-based-security-for-addresses" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html" target="_blank">External documentation</a>
 
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html#standard-files" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html#standard-files" target="_blank">External documentation</a>
 
 
 
 When creating connections between nodes of a cluster to form a cluster connection, Artemis uses a cluster user and cluster password.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#cluster-user-credentials" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#cluster-user-credentials" target="_blank">External documentation</a>
 
 
 In normal use, Artemis does not update delivery count persistently until a message is rolled back (i.e. the delivery count is not updated before the message is delivered to the consumer).
 
 In most messaging use cases, the messages are consumed, acknowledged and forgotten as soon as they are consumed. In these cases, updating the delivery count persistently before delivering the message would add an extra persistent step for each message delivered, implying a significant performance penalty.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/undelivered-messages.html#delivery-count-persistence" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/undelivered-messages.html#delivery-count-persistence" target="_blank">External documentation</a>
 
 
 
 Artemis has an extensive management API that allows a user to modify a server configuration, create new resources (e.g. addresses and queues), inspect these resources (e.g. how many messages are currently held in a queue) and interact with it (e.g. to remove messages from a queue). Artemis also allows clients to subscribe to management notifications.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/management.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/management.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/thread-pooling.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/thread-pooling.html" target="_blank">External documentation</a>
 
 
 Two different strategies for backing up a server are supported: shared store and replication. This configures which strategy a cluster should use to provide the backing up of a servers data. Within this configuration element a server acts either as a master (live), slave (backup).
 
-<a href="https://activemq.apache.org/artemis/docs/latest/ha.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/ha.html" target="_blank">External documentation</a>
 
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/connection-ttl.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/connection-ttl.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/duplicate-detection.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/duplicate-detection.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html#configuring-the-message-journal" target="_blank">Documentation</a>
-
-
-
-
-<a href="https://activemq.apache.org/artemis/docs/latest/paging.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/persistence.html#configuring-the-message-journal" target="_blank">External documentation</a>
 
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/large-messages.html" target="_blank">Documentation</a>
+
+<a href="https://activemq.apache.org/artemis/docs/latest/paging.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/transaction-config.html" target="_blank">Documentation</a>
+
+<a href="https://activemq.apache.org/artemis/docs/latest/large-messages.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/management.html#configuring-message-counters" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/transaction-config.html" target="_blank">External documentation</a>
+
+
+<a href="https://activemq.apache.org/artemis/docs/latest/management.html#configuring-message-counters" target="_blank">External documentation</a>
 
 
 The reaper thread will periodically inspect the queues to check if messages have expired.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/message-expiry.html#configuring-the-expiry-reaper-thread" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/message-expiry.html#configuring-the-expiry-reaper-thread" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/security.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/security.html" target="_blank">External documentation</a>
 
 
 You may configure one more addresses that are part of your network topology, that will be pinged through the life cycle of the server. The server will stop itself until the network is back on such case.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/network-isolation.html#pinging-the-network" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/network-isolation.html#pinging-the-network" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/critical-analysis.html" target="_blank">Documentation</a>
-
-
-
-<a href="https://activemq.apache.org/artemis/docs/latest/graceful-shutdown.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/critical-analysis.html" target="_blank">External documentation</a>
 
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/protocols-interoperability.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/graceful-shutdown.html" target="_blank">External documentation</a>
 
 
-<a href="https://activemq.apache.org/artemis/docs/latest/perf-tuning.html#tuning-the-vm" target="_blank">Documentation</a>
+
+<a href="https://activemq.apache.org/artemis/docs/latest/protocols-interoperability.html" target="_blank">External documentation</a>
+
+
+<a href="https://activemq.apache.org/artemis/docs/latest/perf-tuning.html#tuning-the-vm" target="_blank">External documentation</a>
 
 
 #### Persistence enabled

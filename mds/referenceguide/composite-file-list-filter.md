@@ -4,7 +4,7 @@ title: Composite file list filter
 sidebar_label: Composite file list filter
 ---
 #### Combines any number of file list filters.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/files.html#file-reading" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/files.html#file-reading" target="_blank">External documentation</a>
 
 A composite file list filter combines any number of file list filters. Only when all filters in the list accept a file, the composite file list filter will accept it.
 

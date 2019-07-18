@@ -4,7 +4,7 @@ title: FTP outbound channel adapter
 sidebar_label: FTP outbound channel adapter
 ---
 #### Write messages to a remote FTP directory.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-outbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ftp.html#ftp-outbound" target="_blank">External documentation</a>
 
 It connects to the FTP server and initiate an FTP transfer for every file it receives in the payload of incoming Messages. 
 

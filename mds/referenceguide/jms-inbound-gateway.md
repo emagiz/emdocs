@@ -4,7 +4,7 @@ title: JMS inbound gateway
 sidebar_label: JMS inbound gateway
 ---
 #### Receives JMS request messages from a connection and sends JMS reply messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jms.html#jms-inbound-gateway" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/jms.html#jms-inbound-gateway" target="_blank">External documentation</a>
 
 Receives JMS request messages from the specified request destination at the connection created by the <i>connection factory</i>, and sends JMS reply messages to the specified reply destination using the same <i>connection factory</i>.
 

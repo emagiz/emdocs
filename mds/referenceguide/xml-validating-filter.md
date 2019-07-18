@@ -4,7 +4,7 @@ title: XML validating filter
 sidebar_label: XML validating filter
 ---
 #### Filters XML messages by validating them against a pre-defined XSD.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xml-validating-filter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xml-validating-filter" target="_blank">External documentation</a>
 
 Filters XML messages by validating them against an XSD schema. If the XML is valid, the message will be send to the <i>output channel</i>, otherwise it will be dropped, rejected or send to the <i>discard channel</i>.
 

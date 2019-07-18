@@ -4,7 +4,7 @@ title: Simple dispatcher servlet
 sidebar_label: Simple dispatcher servlet
 ---
 #### An HTTP servlet that delegates all HTTP requests to a single handler.
-<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/mvc.html#mvc-servlet" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/mvc.html#mvc-servlet" target="_blank">External documentation</a>
 
 Creates a HTTP servlet that delegates all request handling to a single Spring Web MVC <code>Controller</code> or Spring Web <code>HttpRequestHandler</code>, for example a <i>HTTP inbound gateway</i> or a <i>HTTP inbound channel adapter</i>.
 

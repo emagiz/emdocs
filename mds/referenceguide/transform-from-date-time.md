@@ -54,7 +54,7 @@ The time zone to use when formatting the output string. If the input has time zo
 ### 
 Pattern to use for formatting the output of a date/time data type. The pattern is created based on your date, time, timezone, and delimiters selection. You can create your own custom format by using the generated pattern as a starting point.
 
-More information about the pattern format syntax can be found in the <u><a href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html" target="_blank">Documentation</a></u>
+More information about the pattern format syntax can be found in the <u><a href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html" target="_blank">External documentation</a></u>
 
 ### 
 Date/time and zone format delimiter

@@ -4,7 +4,7 @@ title: XMPP presence inbound channel adapter
 sidebar_label: XMPP presence inbound channel adapter
 ---
 #### Receives presence states over a XMPP connection.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-roster-inbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xmpp.html#xmpp-roster-inbound-channel-adapter" target="_blank">External documentation</a>
 
 Configures an endpoint that will forward Presence state changes to a MessageChannel.
 

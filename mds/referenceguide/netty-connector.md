@@ -6,7 +6,7 @@ sidebar_label: Netty connector
 
 
 # Netty connector
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">External documentation</a>
 
 
 Netty Native Transport support exists for selected OS platforms. This allows Apache ActiveMQ Artemis to use native sockets/io instead of Java NIO.
@@ -155,12 +155,12 @@ This parameter determines the high water mark of the Netty write buffer. If the 
 #### Use epoll
 Enables the use of epoll if a supported linux platform is running a 64bit JVM is detected. Setting this to <i>No</i> will force the use of Java NIO instead of epoll. Default is <i>Yes</i>.
 
-<a href="https://en.wikipedia.org/wiki/Epoll">Documentation</a>
+<a href="https://en.wikipedia.org/wiki/Epoll">External documentation</a>
 
 #### Use kqueue
 Enables the use of kqueue if a supported MacOS platform running a 64bit JVM is detected. Setting this to <i>No</i> will force the use of Java NIO instead of kqueue. Default is<i>Yes</i>
 
-<a href="https://en.wikipedia.org/wiki/Kqueue">Documentation</a>
+<a href="https://en.wikipedia.org/wiki/Kqueue">External documentation</a>
 
 #### Keystore provider
 If not provided the default is <code>JKS</code>, based on the constant value: <code>DEFAULT_KEYSTORE_PROVIDER</code>
@@ -221,7 +221,7 @@ Used to change the SSL Provider between <code>JDK</code> and <code>OPENSSL</code
 
 If used with OPENSSL you can add netty-tcnative to your classpath to use the native installed openssl. This can be useful if you want to use special ciphersuite - elliptic curve combinations which are support through openssl but not through the JDK provider. 
 
-For more information, see <a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations">Documentation</a>
+For more information, see <a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations">External documentation</a>
 
 
 

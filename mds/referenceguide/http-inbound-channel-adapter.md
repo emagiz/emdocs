@@ -4,7 +4,7 @@ title: HTTP inbound channel adapter
 sidebar_label: HTTP inbound channel adapter
 ---
 #### Channel adapter for receiving messages over HTTP.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/http.html#http-inbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/http.html#http-inbound" target="_blank">External documentation</a>
 
 The HTTP inbound adapters need to be deployed within a servlet container. 
 

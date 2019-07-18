@@ -4,7 +4,7 @@ title: FTP inbound channel adapter
 sidebar_label: FTP inbound channel adapter
 ---
 #### Synchronizes a remote FTP directory with a local directory and creates file-messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-inbound" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ftp.html#ftp-inbound" target="_blank">External documentation</a>
 
 The FTP inbound channel adapter has two tasks: 
 - communicate with a remote server in order to transfer files from a remote directory to a local directory
@@ -86,7 +86,7 @@ Some examples:
 <code>^test\d{4}\.xml$</code> - matches all filenames that start with <code>test</code> followed by 4 digits and end with <code> .xml</code>
 <code>${FILENAME_REGEX}</code> - matches all files that match the regular expression inside the global <code>FILENAME_REGEX</code> property
 
-See also the <a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html" target="_blank">Java documentation</a> about patterns.
+See also the <a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html" target="_blank">Java documentation</a> about patterns.
 
 It is not possible to use this option together with a <i>filename pattern</i> or a <i>filter</i>.
 
@@ -140,7 +140,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

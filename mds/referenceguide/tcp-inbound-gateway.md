@@ -4,7 +4,7 @@ title: TCP inbound gateway
 sidebar_label: TCP inbound gateway
 ---
 #### Used to receive TCP/IP byte-messages and send reply messages.
-<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-gateways" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-gateways" target="_blank">External documentation</a>
 
 
 #### Connection factory

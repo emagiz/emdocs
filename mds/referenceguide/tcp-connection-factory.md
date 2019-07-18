@@ -4,7 +4,7 @@ title: TCP connection factory
 sidebar_label: TCP connection factory
 ---
 #### Configures a TCP connection factory that can in turn be referenced by other components.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ip.html#connection-factories" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ip.html#connection-factories" target="_blank">External documentation</a>
 
 
 #### Type

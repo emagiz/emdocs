@@ -7,7 +7,7 @@ sidebar_label: Netty Acceptor
 # Netty acceptor
 An acceptor defines a way in which connections can be made to the Artemis server.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">External documentation</a>
 
 
 
@@ -61,7 +61,7 @@ Accepts client connections using the Simple Text Oriented Messaging Protocol (ST
 
 By default, any protocol with a loaded module is supported. The CORE protocol module is <i>always</i> loaded when the server starts, other protocol modules are added when you explicitly set the protocol in <i>any</i> of this server's acceptors. For example: when you add one acceptor for just the AMQP protocol and a second acceptor without specifying a protocol, the second acceptor will support both the CORE and AMQP protocols.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/protocols-interoperability.html">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/protocols-interoperability.html">External documentation</a>
 
 #### STOMP consumer credits
 When consuming messages in stomp, the server will flow control the channel as messages are acknowledged. The default value is <code>10K</code>. The server won't send more messages than 10K bytes until you ack more messages. 
@@ -137,14 +137,14 @@ Enables the use of epoll if a supported linux platform is running a 64bit JVM is
 
 Default is <i>Yes</i>.
 
-<a href="https://en.wikipedia.org/wiki/Epoll">Documentation</a>
+<a href="https://en.wikipedia.org/wiki/Epoll">External documentation</a>
 
 #### Use kqueue
 Enables the use of kqueue if a supported MacOS platform running a 64bit JVM is detected. Setting this to <i>No</i> will force the use of Java NIO instead of kqueue.
 
 Default is<i>Yes</i>
 
-<a href="https://en.wikipedia.org/wiki/Kqueue">Documentation</a>
+<a href="https://en.wikipedia.org/wiki/Kqueue">External documentation</a>
 
 #### Enabled cipher suites
 Whether used on an acceptor or connector this is a comma separated list of cipher suites used for SSL communication. The default value is null which means the JVM's default will be used.
@@ -220,7 +220,7 @@ Used to change the SSL Provider between <code>JDK</code> and <code>OPENSSL</code
 
 If used with OPENSSL you can add netty-tcnative to your classpath to use the native installed openssl. This can be useful if you want to use special ciphersuite - elliptic curve combinations which are support through openssl but not through the JDK provider. 
 
-For more information, see <a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations">Documentation</a>
+For more information, see <a href="https://en.wikipedia.org/wiki/Comparison_of_TLS_implementations">External documentation</a>
 
 
 

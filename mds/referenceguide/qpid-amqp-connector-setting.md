@@ -13,7 +13,7 @@ The URL used to stablished a connection with an h2 database. A new database is a
 Example: jdbc:h2:${emagiz.data}/h2/messagestore
 
 More information related to the URL syntax can be found in the 
-<a href="http://www.h2database.com/html/features.html#database_url" target="_blank">documentation</a>.
+<a href="http://www.h2database.com/html/features.html#database_url" target="_blank">External documentation</a>.
 
 
 
@@ -101,7 +101,7 @@ Default is -1 (disabled).
 #### TCP keep alive
 Enables the TCP keep alive value to prevent connections from timing out at the TCP level.
  
-For more information, see <a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">Documentation</a>
+For more information, see <a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">External documentation</a>
 
 Default is false.
 

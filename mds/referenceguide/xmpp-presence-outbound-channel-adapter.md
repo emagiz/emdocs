@@ -4,7 +4,7 @@ title: XMPP presence outbound channel adapter
 sidebar_label: XMPP presence outbound channel adapter
 ---
 #### Endpoint that will publish an updated presence state on a XMPP connection.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-roster-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xmpp.html#xmpp-roster-outbound-channel-adapter" target="_blank">External documentation</a>
 
 Configures an endpoint that will publish an updated presence state on your XMPP connection object.
 

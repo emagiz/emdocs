@@ -4,7 +4,7 @@ title: JDBC BoneCP data source
 sidebar_label: JDBC BoneCP data source
 ---
 #### A data source for SQL databases that connects using JDBC with BoneCP connection pooling.
-<a href="http://www.jolbox.com/" target="_blank">Documentation</a>
+<a href="http://www.jolbox.com/" target="_blank">External documentation</a>
 
 
 #### Driver class

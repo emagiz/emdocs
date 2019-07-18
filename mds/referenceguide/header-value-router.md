@@ -4,7 +4,7 @@ title: Header value router
 sidebar_label: Header value router
 ---
 #### Routes messages to a channel based on a value in the header.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-headervaluerouter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-routing-chapter.html#router-implementations-headervaluerouter" target="_blank">External documentation</a>
 
 The <i>header name</i> attribute specifies which
  header value to lookup. That header value can then provide the name of a

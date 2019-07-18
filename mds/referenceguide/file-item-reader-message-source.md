@@ -96,7 +96,7 @@ Examples:
 
 See the Java documentation about patterns:
 
-<a href="http://java.sun.com/javase/6/docs/api/java/util/regex/Pattern.html" target="_blank">Pattern documentation</a>
+<a href="https://docs.oracle.com/javase/8/docs/api/java/util/regex/Pattern.html" target="_blank">Pattern documentation</a>
 
 
 
@@ -125,7 +125,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

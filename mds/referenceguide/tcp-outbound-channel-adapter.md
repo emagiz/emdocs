@@ -4,7 +4,7 @@ title: TCP outbound channel adapter
 sidebar_label: TCP outbound channel adapter
 ---
 #### An outbound channel adapter that sends TCP/IP byte-messages.
-<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-adapters" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-adapters" target="_blank">External documentation</a>
 
 
 #### Connection factory

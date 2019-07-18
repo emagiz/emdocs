@@ -8,7 +8,7 @@ sidebar_label: QPID JMS connection factory
 # Qpid AMQP connection factory
 Creates a Qpid JMS client connection factory. This can be used to connect to (remote) servers using the AMQP protocol. Advanced Message Queuing Protocol (AMQP) is an open internet protocol for reliably sending and receiving messages.
 
-<a href="https://qpid.apache.org/overview.html" target="_blank">Documentation</a>
+<a href="https://qpid.apache.org/overview.html" target="_blank">External documentation</a>
 
 
 The Prefetch Policy controls how many messages the broker can send to the client and be held in a prefetch buffer for each consumer instance.
@@ -409,7 +409,7 @@ Default is -1 (disabled).
 #### TCP keep alive
 Enables the TCP keep alive value to prevent connections from timing out at the TCP level.
 
-For more information, see <a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">Documentation</a>
+For more information, see <a href="http://tldp.org/HOWTO/TCP-Keepalive-HOWTO/overview.html">External documentation</a>
 
 Default is false.
 

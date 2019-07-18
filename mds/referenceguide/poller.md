@@ -4,7 +4,7 @@ title: Poller
 sidebar_label: Poller
 ---
 #### Global poller that specifies when and how scheduled message receive tasks should be executed.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 All the <i>endpoints</i> that have to do a scheduled task like receiving on a queue channel or reading files, need a <i>poller</i> that specifies when and how the task is executed. The scheduled task is executed by the <i>Task Executor</i> if specified. Else the default task executor will be used.
 

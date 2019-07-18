@@ -4,7 +4,7 @@ title: Netty acceptor transport configuration
 sidebar_label: Netty acceptor transport configuration
 ---
 #### Netty implementation of an acceptor.
-<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">External documentation</a>
 
 An acceptor defines a way in which connections can be made to the HornetQ server.
 
@@ -28,11 +28,11 @@ Default
 
 <b>STOMP</b> 
 Stomp is a text-orientated wire protocol that allows Stomp clients to communicate with Stomp Brokers.
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#stomp" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#stomp" target="_blank">External documentation</a>
 
 <b>STOMP_WS</b>
 With this configuration, HornetQ will accept Stomp connections over Web Sockets. 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#stomp.websockets" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#stomp.websockets" target="_blank">External documentation</a>
 
 <b>AMQP </b>
 AMQP support coming soon!

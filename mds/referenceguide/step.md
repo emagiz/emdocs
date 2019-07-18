@@ -43,7 +43,7 @@ Item writer that uses the batching features from NamedParameterJdbcTemplate to e
 The user must select at least a data source support object and provide column names and a table name or a complete SQL query. 
 You can use either named parameters or the traditional indexed parameters by using the '?' placeholder. The parameter type selection has influence on the number of supported item types.
 
-<a href="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/item/database/JdbcBatchItemWriter.html">documentation</a>
+<a href="https://docs.spring.io/spring-batch/trunk/apidocs/org/springframework/batch/item/database/JdbcBatchItemWriter.html">External documentation</a>
 
 ### _id
 Select a data source that provides the connections to the destination database.

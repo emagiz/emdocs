@@ -4,7 +4,7 @@ title: XPath splitter
 sidebar_label: XPath splitter
 ---
 #### Uses an XPath expression to split a message into multiple messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xpath-splitting" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xpath-splitting" target="_blank">External documentation</a>
 
 The splitter uses the provided <i>XPath expression</i> to split the payload into a number of nodes. By default this will result in each Node becoming the payload of a new message. 
 

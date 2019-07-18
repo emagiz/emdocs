@@ -70,7 +70,7 @@ The default value is <code>false</code>.
 The initial set of servers used to make a connection to the cluster. Each one is tried in turn until a successful connection is made. Once a connection is made, the cluster topology is downloaded and the rest of the list is ignored.
 
 
-<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">External documentation</a>
 
 #### Signature
 Determines (together with the value for <i>XA</i>) the connection factory type that is used:
@@ -107,7 +107,7 @@ Sets the initial size of messages created through this factory. Value must be gr
 Default is '1500'.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#message-grouping" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#message-grouping" target="_blank">External documentation</a>
 
 #### Auto group
 Whether or not message grouping is automatically used.
@@ -118,7 +118,7 @@ Default is 'false'.
 Sets the group ID that will be set on each message sent through this factory.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#large-messages" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#large-messages" target="_blank">External documentation</a>
 
 #### Cache large messages client
 If <code>true</code> clients using this connection factory will hold the large message body on temporary files.
@@ -138,7 +138,7 @@ Whether to compress large messages.
 Default is <code>false</code>.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#connection-ttl" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#connection-ttl" target="_blank">External documentation</a>
 
 #### Client failure check period
 The period (in ms) after which the client will consider the connection failed after not receiving packets from the server.
@@ -163,7 +163,7 @@ Similar to <i>call timeout</i> but used when a call is made during a failover at
 Default is <code>-1</code> (no timeout).
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#flow-control" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#flow-control" target="_blank">External documentation</a>
 
 #### Consumer max rate
 The fastest rate a consumer may consume messages per second.
@@ -203,7 +203,7 @@ Default is <code>-1</code>, which disables buffering and prevents re-attachment 
 To enable transparent session re-attachment, enter a positive value, e.g. <code>1048576</code> (1 MiB).
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#send-guarantees" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#send-guarantees" target="_blank">External documentation</a>
 
 #### Block on acknowledge
 Whether or not messages are acknowledged synchronously.
@@ -241,7 +241,7 @@ When receiving messages in a transaction it makes it possible to configure the c
 Default is 1048576 (1 MiB).
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#pre-acknowledge" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#pre-acknowledge" target="_blank">External documentation</a>
 
 #### Pre-acknowledge
 Whether messages are pre acknowledged by the server before sending.
@@ -249,7 +249,7 @@ Whether messages are pre acknowledged by the server before sending.
 Default is 'false'.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#client-reconnection" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#client-reconnection" target="_blank">External documentation</a>
 
 #### Retry interval
 The time (in ms) to retry a connection after failing.
@@ -272,7 +272,7 @@ Maximum number of retry attempts, '-1' signifies infinite.
 Default is '0'.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#failover" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#failover" target="_blank">External documentation</a>
 
 #### Initial connect attempts
 Since the client doesn't learn about the full topology until after the first connection is made there is a window where it doesn't know about the backup. If a failure happens at this point the client can only try reconnecting to the original live server. This property configures how many attempts the client will make: once this number of attempts has been made without success an exception will be thrown.
@@ -285,7 +285,7 @@ Whether or not to failover to backup on event that initial connection to live se
 Default is <code>false</code>.
 
 
-<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#thread-pooling.client.side" target="_blank">Documentation</a>
+<a href="http://hornetq.sourceforge.net/docs/hornetq-2.1.2.Final/user-manual/en/html_single/index.html#thread-pooling.client.side" target="_blank">External documentation</a>
 
 #### Use global pools
 Whether or not to use a global thread pool for threads.

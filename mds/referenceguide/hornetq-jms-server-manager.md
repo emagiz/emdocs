@@ -4,28 +4,28 @@ title: HornetQ JMS server manager
 sidebar_label: HornetQ JMS server manager
 ---
 #### Creates a JMS server for hosting JMS queues and topics.
-<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#using-jms" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#using-jms" target="_blank">External documentation</a>
 
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">External documentation</a>
 
 Each acceptor defines a way in which connections can be made to the HornetQ server.
 
 Minimal one acceptor is required.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.connectors" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.connectors" target="_blank">External documentation</a>
 
 Connectors are used by a client to define how it connects to a server.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">External documentation</a>
 
 Defines a cluster of HornetQ server that share message processing load.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#core-bridges" target="_blank">External documentation</a>
 
 The function of a bridge is to consume messages from a source queue, and forward them to a target address, typically on a different HornetQ server.
 
@@ -44,13 +44,13 @@ When <i>match</i> is <code>jms.queue.example</code> for example, the settings wo
 Note that only the most specific match is applied for each address. Some examples from most specific to least specific: <code>jms.queue.example</code> (matches one JMS queue), <code>jms.*.example</code> (matches one JMS queue and one JMS topic), <code>jms.queue.#</code> (matches all JMS queues), <code>jms.#</code> (matches all JMS queues and JMS topics).
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#jms-core-mapping" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#jms-core-mapping" target="_blank">External documentation</a>
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring-transports.acceptors" target="_blank">External documentation</a>
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#persistence" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#persistence" target="_blank">External documentation</a>
 
 
 #### Persistence enabled
@@ -59,7 +59,7 @@ Whether this server is using persistence and store data.
 Default is 'true'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring.bindings.journal" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring.bindings.journal" target="_blank">External documentation</a>
 
 
 #### Bindings directory
@@ -73,7 +73,7 @@ Whether the bindings directory is created on this server startup.
 Default is 'true'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#clusters" target="_blank">External documentation</a>
 
 
 #### Cluster user
@@ -87,7 +87,7 @@ The cluster password for this server.
 Default is 'CHANGE ME!!'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#undelivered-messages" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#undelivered-messages" target="_blank">External documentation</a>
 
 
 #### Persist delivery count before delivery
@@ -96,7 +96,7 @@ Whether delivery count is persisted before messages are delivered to consumers.
 Default is 'false'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#undelivered-messages" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#undelivered-messages" target="_blank">External documentation</a>
 
 
 #### Shared store
@@ -159,7 +159,7 @@ Name of the cluster configuration to use for replication. This setting is only n
 <i>This setting only applies to replicated servers (servers with shared-store use the shared journal to detect each other).</i>
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#thread-pooling" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#thread-pooling" target="_blank">External documentation</a>
 
 
 #### Thread pool max size
@@ -173,7 +173,7 @@ The maximum number of threads in the scheduled thread pool of this server.
 Default is '5'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#management" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#management" target="_blank">External documentation</a>
 
 
 #### JMX management enabled
@@ -199,7 +199,7 @@ the management notification address of this server. Clients can bind queues to t
 Default value is 'hornetq.notifications'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#connection-ttl" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#connection-ttl" target="_blank">External documentation</a>
 
 
 #### Connection TTL override
@@ -213,7 +213,7 @@ By default, packets received on the server side are executed on the remoting thr
 It is possible instead to use a thread from a thread pool to handle some packets so that the remoting thread is not tied up for too long. However, please note that processing operations asynchronously on another thread adds a little more latency. Please note that most short running operations are always handled on the remoting thread for performance reasons.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#duplicate-detection" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#duplicate-detection" target="_blank">External documentation</a>
 
 
 #### ID cache size
@@ -227,7 +227,7 @@ Whether message ID cache is persisted.
 Default is 'true'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring.message.journal" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#configuring.message.journal" target="_blank">External documentation</a>
 
 
 #### Journal directory
@@ -318,7 +318,7 @@ The buffer size (in bytes) for NIO.
 Default is '501760' (490 KiB).
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#paging" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#paging" target="_blank">External documentation</a>
 
 
 #### Paging directory
@@ -332,7 +332,7 @@ The maximum number of concurrent reads the system can make on paged files. You m
 Default is <code>5</code>.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#large-messages" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#large-messages" target="_blank">External documentation</a>
 
 
 #### Large messages directory
@@ -346,7 +346,7 @@ Whether wildcard routing is supported by this server.
 Default is 'true'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#transaction-config" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#transaction-config" target="_blank">External documentation</a>
 
 
 #### Transaction timeout
@@ -360,7 +360,7 @@ The frequency (in milliseconds)  to scan transactions to detect which transactio
 Default is '1000' (1 second).
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#management.message-counters" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#management.message-counters" target="_blank">External documentation</a>
 
 
 #### Message counter enabled
@@ -379,7 +379,7 @@ The maximum number of days kept in memory for message counter.
 Default is '10'.
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#message-expiry" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#message-expiry" target="_blank">External documentation</a>
 
 
 #### Message expiry scan period
@@ -393,7 +393,7 @@ The frequency (in milliseconds) to scan messages to detect which messages have e
 Default is '30000' (30 seconds).
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#security" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.5.Final/user-manual/en/html_single/index.html#security" target="_blank">External documentation</a>
 
 
 #### Security enabled
