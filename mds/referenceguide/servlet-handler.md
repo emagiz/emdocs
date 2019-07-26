@@ -4,7 +4,7 @@ title: Servlet handler
 sidebar_label: Servlet handler
 ---
 #### Handler that generates content by passing the request to a Servlet mapped by a URI pattern. 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">External documentation</a>
 
 The ServletHandler generates content by passing the request to a <i>Servlet</i> mapped by a <i>URI pattern</i>. 
 

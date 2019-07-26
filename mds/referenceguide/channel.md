@@ -4,7 +4,7 @@ title: Channel
 sidebar_label: Channel
 ---
 #### Used to transport a message between two endpoints.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-channels-section.html" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-channels-section.html" target="_blank">External documentation</a>
 
 
 Specifies the interceptors of this channel.

@@ -5,7 +5,7 @@ sidebar_label: Payload type router
 ---
 #### Routes messages to channels based on the type of the payload.
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-routing-chapter.html#router-implementations-payloadtyperouter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-routing-chapter.html#router-implementations-payloadtyperouter" target="_blank">External documentation</a>
 
 
 

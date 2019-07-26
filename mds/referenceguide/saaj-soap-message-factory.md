@@ -4,7 +4,7 @@ title: SAAJ SOAP message factory
 sidebar_label: SAAJ SOAP message factory
 ---
 #### Factory for creating SOAP messages using SAAJ (SOAP with Attachments API for Java).
-<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/common.html#d0e1162" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/common.html#d0e1162" target="_blank">External documentation</a>
 
 SAAJ (SOAP with Attachments API for Java) specific implementation of the <i>WebServiceMessageFactory</i>. Uses SOAP version 1.1 by default, but can be configured to use SOAP version 1.2 instead.
 

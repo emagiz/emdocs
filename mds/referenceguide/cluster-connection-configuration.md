@@ -4,7 +4,7 @@ title: Cluster connection configuration
 sidebar_label: Cluster connection configuration
 ---
 #### Creates a cluster of HornetQ servers that share the message processing load.
-<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#clusters" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#clusters" target="_blank">External documentation</a>
 
 HornetQ clusters allow groups of HornetQ servers to be grouped together in order to share message processing load. Each active node in the cluster is an active HornetQ server which manages its own messages and handles its own connections. A server must be configured to be clustered, you will need to set the <i>clustered</i> property to <code>true</code>, this is <code>false</code> by default.
 

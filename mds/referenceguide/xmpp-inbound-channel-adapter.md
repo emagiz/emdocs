@@ -4,7 +4,7 @@ title: XMPP inbound channel adapter
 sidebar_label: XMPP inbound channel adapter
 ---
 #### Receives chat messages sent to a given account.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-inbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xmpp.html#xmpp-message-inbound-channel-adapter" target="_blank">External documentation</a>
 
 Configures an endpoint that will receive chat messages sent to a given account and then forward those messages to a MessageChannel.
 

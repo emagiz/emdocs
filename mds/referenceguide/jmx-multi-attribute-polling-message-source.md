@@ -4,7 +4,7 @@ title: JMX multi attribute polling message source
 sidebar_label: JMX multi attribute polling message source
 ---
 #### Creates messages from the result of polling attributes of JMX MBeans. 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#jmx-attribute-polling-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/system-management-chapter.html#jmx-attribute-polling-channel-adapter" target="_blank">External documentation</a>
 
 If you don't specify which MBeanServer should be polled, the locally running server is used. The MBeans on this server that will be polled are specified by the given object name pattern. The attributes of these MBeans that are polled are specified by the given list of attribute names. 
 Note that all the attribute values of all the MBeans are returned in a single XML document, so you probably want set max-messages-per-poll to 1.
@@ -49,7 +49,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

@@ -67,7 +67,7 @@ Note that the <i>cluster user</i> of the HornetQ server always has full privileg
 # Security settings
 Artemis contains a flexible role-based security model for applying security to queues, based on their addresses. The security settings on this page will be applied against any address with a name that matches the <i>Address match</i> wildcard expression.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/security.html#role-based-security-for-addresses" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/security.html#role-based-security-for-addresses" target="_blank">External documentation</a>
 
 
 Artemis contains a flexible role-based security model for applying security to queues, based on their addresses.

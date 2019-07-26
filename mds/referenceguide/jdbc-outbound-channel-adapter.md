@@ -4,7 +4,7 @@ title: JDBC outbound channel adapter
 sidebar_label: JDBC outbound channel adapter
 ---
 #### Sends messages to a database using an SQL query.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jdbc.html#jdbc-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.x/reference/html/jdbc.html#jdbc-outbound-channel-adapter" target="_blank">External documentation</a>
 
 Executes an SQL query for each incoming message. The message payload and headers are available by as input parameters to the query.
 

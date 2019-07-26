@@ -4,7 +4,7 @@ title: SOAP message dispatcher
 sidebar_label: SOAP message dispatcher
 ---
 #### Dispatches SOAP web service messages to registered endpoints.
-<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#message-dispatcher-servlet" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#message-dispatcher-servlet" target="_blank">External documentation</a>
 
 SOAP-specific message dispatcher. 
 

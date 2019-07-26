@@ -4,7 +4,7 @@ title: Connector transport configuration
 sidebar_label: Connector transport configuration
 ---
 #### Connectors are used by a client to define how it connects to a server.
-<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">External documentation</a>
 
 
 #### Name
@@ -23,7 +23,7 @@ Required.
 Connect to a server inside of this configuration
 
 
-<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">Documentation</a>
+<a href="http://docs.jboss.org/hornetq/2.2.14.Final/user-manual/en/html_single/index.html#d0e3087" target="_blank">External documentation</a>
 
 Netty is a high performance low level network library.
 

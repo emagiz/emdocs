@@ -4,7 +4,7 @@ title: Proxy web service message sender
 sidebar_label: Proxy web service message sender
 ---
 #### Extension of HTTP Components message sender that uses a proxy for the HTTP connection.
-<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/client.html#d4e1703" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/client.html#d4e1703" target="_blank">External documentation</a>
 
 WebServiceMessageSender implementation that uses a proxy and a Apache HTTP Components HttpClient to execute POST requests. 
 

@@ -4,7 +4,7 @@ title: Task executor
 sidebar_label: Task executor
 ---
 #### Responsible for executing tasks.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/configuration.html#namespace-taskscheduler" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/configuration.html#namespace-taskscheduler" target="_blank">External documentation</a>
 
 (<b>Advanced</b>)
 

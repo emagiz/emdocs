@@ -2,11 +2,11 @@
   
 ## The need for integration
 * Enterprises own applications that are: 
-  - custom-built
+  - custom-build
   - acquired from a third-party
   - part of a legacy system, or a combination thereof
   - operating in multiple tiers of different operating system platforms
-* Creating a single, big application to run a complete business is next to impossible (think about the fit of ERP)
+* Creating a single, big application to run a complete business is next to impossible (think about the fit of [ERP](https://en.wikipedia.org/wiki/Enterprise_resource_planning "Enterprice Resource Planning"))
 * Vendors offer focused applications around a specific core function
 * To support common business processes and data sharing across applications, these applications need to be integrated
 * Application integration needs to provide efficient, reliable and secure data exchange between multiple enterprise applications
@@ -157,7 +157,7 @@ Apache ActiveMQ Artemis bridges can be configured with filter expressions to onl
 
 Apache ActiveMQ Artemis also allows routing between queues to be configured in server side configuration. This allows complex routing networks to be set up forwarding or copying messages from one destination to another, forming a global network of interconnected brokers.
 
-### Sources
+## Sources
 - https://activemq.apache.org/artemis/docs/latest/
 - https://docs.oracle.com/cd/E19798-01/821-1841/6nmq2cpoq/index.html
 - https://www.enterpriseintegrationpatterns.com/patterns/messaging/Introduction.html

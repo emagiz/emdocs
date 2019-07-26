@@ -4,7 +4,7 @@ title: JDBC stored procedure outbound gateway
 sidebar_label: JDBC stored procedure outbound gateway
 ---
 #### Sends messages to a database and/or receives messages using a stored prodecure.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-outbound-gateway" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/jdbc.html#stored-procedure-outbound-gateway" target="_blank">External documentation</a>
 
 Outbound Channel Gateway are used for updating a database using a stored procedure. The response of the stored procedure is used to populate the message on the reply channel.
 

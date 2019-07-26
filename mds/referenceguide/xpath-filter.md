@@ -4,7 +4,7 @@ title: XPath filter
 sidebar_label: XPath filter
 ---
 #### Filters XML messages based on an XPath expression.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xml-xpath-filter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xml-xpath-filter" target="_blank">External documentation</a>
 
 Defines an XPath-based message filter.
 

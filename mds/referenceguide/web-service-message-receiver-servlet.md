@@ -4,7 +4,7 @@ title: Web service message receiver servlet
 sidebar_label: Web service message receiver servlet
 ---
 #### Delegates all request handling to the specified Web Service Message Receiver.
-<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#message-dispatcher-servlet" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#message-dispatcher-servlet" target="_blank">External documentation</a>
 
 A Http Servlet implementation that delegates all request handling to the specified Spring Web Services Web Service Message Receiver.
 

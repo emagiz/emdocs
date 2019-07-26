@@ -4,7 +4,7 @@ title: JMS outbound gateway
 sidebar_label: JMS outbound gateway
 ---
 #### Sends JMS request messages to a connection and receives JMS reply messages.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/jms.html#jms-outbound-gateway" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/jms.html#jms-outbound-gateway" target="_blank">External documentation</a>
 
 Sends JMS request messages to the specified request destination at the connection created by the <i>connection factory</i>, and receives JMS reply messages from the specified reply destination using the same <i>connection factory</i>.
 

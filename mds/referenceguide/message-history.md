@@ -4,7 +4,7 @@ title: Message history
 sidebar_label: Message history
 ---
 #### Registers Message History writer which will track message history.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/system-management-chapter.html#message-history" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/system-management-chapter.html#message-history" target="_blank">External documentation</a>
 
 Allows to keep track of all traversed components of a message, including the name of each channel and endpoint as well as the timestamp of that traversal.
 

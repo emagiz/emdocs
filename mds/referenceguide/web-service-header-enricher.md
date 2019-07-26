@@ -4,7 +4,7 @@ title: Web service header enricher
 sidebar_label: Web service header enricher
 ---
 #### Enriches the header of messages by adding a SOAP Action value.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">External documentation</a>
 
 Header enricher for adding web service specific message headers.
 

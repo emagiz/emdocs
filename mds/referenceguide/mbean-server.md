@@ -4,7 +4,7 @@ title: MBean server
 sidebar_label: MBean server
 ---
 #### Exposes a default MBean Server for the current platform.
-<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/jmx.html#jmx-exporting-mbeanserver" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/jmx.html#jmx-exporting-mbeanserver" target="_blank">External documentation</a>
 
 Exposes a default MBeanServer for the current platform. Autodetects WebLogic 9+, WebSphere 6.1+ and the JDK 1.5+ platform MBeanServer.
 

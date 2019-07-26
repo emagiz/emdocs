@@ -4,7 +4,7 @@ title: Mail header enricher
 sidebar_label: Mail header enricher
 ---
 #### Configures an outbound MAIL message by adding mail headers.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/mail.html" target="_blank">External documentation</a>
 
 The outbound MailMessage is configured with certain header values. If available, values will be mapped to the outbound mail's properties.
 

@@ -6,7 +6,7 @@ sidebar_label: Cluster Connection
 
 
 # Cluster connection
-<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">External documentation</a>
 
 Cluster connections group servers together in order to share message processing load. Each active node in the cluster is an active Artemis server which manages its own messages and handles its own connections.
 

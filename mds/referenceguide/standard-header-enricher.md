@@ -4,7 +4,7 @@ title: Standard header enricher
 sidebar_label: Standard header enricher
 ---
 #### Adds headers to a message that are not determined by the Message content.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-transformation-chapter.html#header-enricher" target="_blank">External documentation</a>
 
 Use when you need to add headers to a Message.
 

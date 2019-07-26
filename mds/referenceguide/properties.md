@@ -4,7 +4,7 @@ title: Properties
 sidebar_label: Properties
 ---
 #### Properties specified by key/value pairs.
-<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/beans.html#beans-factory-placeholderconfigurer" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring/docs/3.1.x/spring-framework-reference/html/beans.html#beans-factory-placeholderconfigurer" target="_blank">External documentation</a>
 
 The Properties class represents a persistent set of properties. Each key and its corresponding value in the property list is a string.
 

@@ -66,7 +66,7 @@ The time zone to use when converting the input string. If the input string has t
 ### 
 Pattern to use for converting the string value into a date/time data type. The pattern is created based on your date, time,  timezone, and delimiters selection. You can create your own custom format by using the generated pattern as a starting point.
 
-More information about the pattern format syntax can be found in the <a href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html" target="_blank">Documentation</a>
+More information about the pattern format syntax can be found in the <a href="http://joda-time.sourceforge.net/apidocs/org/joda/time/format/DateTimeFormat.html" target="_blank">External documentation</a>
 
 ### 
 Date/time and zone format delimiter

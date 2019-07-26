@@ -4,7 +4,7 @@ title: XMPP header enricher
 sidebar_label: XMPP header enricher
 ---
 #### Adds XMPP headers to a message.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xmpp.html#xmpp-message-outbound-channel-adapter" target="_blank">External documentation</a>
 
 When sending chat messages to other users on XMPP using the Outbound Message Channel Adapter, the XMPP headers of the messages are used. 
 

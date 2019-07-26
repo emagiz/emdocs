@@ -4,7 +4,7 @@ title: IMAP idle channel adapter
 sidebar_label: IMAP idle channel adapter
 ---
 #### Defines an event-driven IMAP mail receiving adapter. 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/mail.html#mail-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/mail.html#mail-namespace" target="_blank">External documentation</a>
 
 Use this adapter when your server supports IMAP IDLE. If not, use an <i>Mail Inbound Channel Adapter</i> instead.
 

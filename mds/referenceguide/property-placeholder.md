@@ -4,7 +4,7 @@ title: Property placeholder
 sidebar_label: Property placeholder
 ---
 #### Enables the use of placeholders (${...}) for properties in this configuration.
-<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/xsd-config.html#xsd-config-body-schemas-context-pphc" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/xsd-config.html#xsd-config-body-schemas-context-pphc" target="_blank">External documentation</a>
 
 Activates replacement of <code>${...}</code> placeholders by registering a <code>PropertySourcesPlaceholderConfigurer</code> within the application context.
 

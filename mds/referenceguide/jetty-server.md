@@ -4,7 +4,7 @@ title: Jetty Server
 sidebar_label: Jetty Server
 ---
 #### Jetty HTTP Servlet Server. 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Jetty_7_Architecture" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Jetty_7_Architecture" target="_blank">External documentation</a>
 
 This server aggregates <i>Connectors </i>(HTTP request receivers) and <i>request Handlers</i>. 
 
@@ -60,7 +60,7 @@ Wether to include the <code>Server</code> HTTP header in all responses.
 Default is <code>false</code>.
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 The resource handler is passed the request first and looks for a matching file in the local directory to serve. 
 If a file is not found, then the request is passed to the default handler which generates a 404 (or favicon.ico). 
@@ -77,13 +77,13 @@ Set if resource aliases (eg symlink, 8.3 names, case insensitivity) are allowed.
 Allowing aliases can significantly increase security vulnerabilities. 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">External documentation</a>
 
 Generates content by passing the request to a <i>Servlet</i> mapped by a URI pattern. Intended to be used when a full web application is not required. Specifically filters and request wrapping are not supported.
 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">External documentation</a>
 
 Context handler that groups a Servlet handler below a particular URI context path 
 
@@ -93,7 +93,7 @@ Defines which requests are handled by this handler.
  eg: /myapp  
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 List of handlers which are called in turn until either an exception is thrown, the response is committed or a positive response status is set.
 
@@ -108,7 +108,7 @@ Looks for a matching file in the local directory to serve.
 Generates content by passing the request to a <i>Servlet</i> mapped by a URI pattern. Intended to be used when a full web application is not required. Specifically filters and request wrapping are not supported.
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 Collection of <i>Context Handlers</i> of which some are selected by best match for the context path. 
 Multiple contexts may have the same context path and they are called in order until one handles the request.
@@ -124,7 +124,7 @@ Looks for a matching file in the local directory to serve.
 Generates content by passing the request to a <i>Servlet</i> mapped by a URI pattern. Intended to be used when a full web application is not required. Specifically filters and request wrapping are not supported.
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Context" target="_blank">External documentation</a>
 
 A ContextHandler is a HandlerWrapper that responds only to requests that have a URI prefix that matches the configured context path.
 
@@ -146,7 +146,7 @@ Generates content by passing the request to a <i>Servlet</i> mapped by a URI pat
 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 The resource handler is passed the request first and looks for a matching file in the local directory to serve. If a file is not found, then the request is passed to the default handler which generates a 404 (or favicon.ico). 
 
@@ -162,7 +162,7 @@ Set if resource aliases (eg symlink, 8.3 names, case insensitivity) are allowed.
 Allowing aliases can significantly increase security vulnerabilities. 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">External documentation</a>
 
 The ServletHandler generates content by passing the request to a <i>Servlet</i> mapped by a <i>URI pattern</i>. 
 
@@ -192,7 +192,7 @@ Looks for a matching file in the local directory to serve. If a file is not foun
 Generates content by passing the request to a <i>Servlet</i> mapped by a URI pattern.
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 The resource handler is passed the request first and looks for a matching file in the local directory to serve. If a file is not found, then the request is passed to the default handler which generates a 404 (or favicon.ico). 
 
@@ -208,7 +208,7 @@ Set if resource aliases (eg symlink, 8.3 names, case insensitivity) are allowed.
 Allowing aliases can significantly increase security vulnerabilities. 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">External documentation</a>
 
 The ServletHandler generates content by passing the request to a <i>Servlet</i> mapped by a <i>URI pattern</i>. 
 

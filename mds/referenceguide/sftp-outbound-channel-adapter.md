@@ -4,7 +4,7 @@ title: SFTP outbound channel adapter
 sidebar_label: SFTP outbound channel adapter
 ---
 #### Sends messages securely to a remote directory using the SSH File Transfer Protocol.
-<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-outbound" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-integration/docs/2.2.6.RELEASE/reference/html/sftp.html#sftp-outbound" target="_blank">External documentation</a>
 
 Sends messages securely to a remote directory using the SSH File Transfer Protocol. It connects to the SFTP server and initiates an SFTP transfer for every file it receives in the payload of incoming messages.
 

@@ -23,7 +23,7 @@ Looks for a matching file in the local directory to serve. If a file is not foun
 Generates content by passing the request to a <i>Servlet</i> mapped by a URI pattern.
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 The resource handler is passed the request first and looks for a matching file in the local directory to serve. If a file is not found, then the request is passed to the default handler which generates a 404 (or favicon.ico). 
 
@@ -39,7 +39,7 @@ Set if resource aliases (eg symlink, 8.3 names, case insensitivity) are allowed.
 Allowing aliases can significantly increase security vulnerabilities. 
 
 
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Servlets" target="_blank">External documentation</a>
 
 The ServletHandler generates content by passing the request to a <i>Servlet</i> mapped by a <i>URI pattern</i>. 
 

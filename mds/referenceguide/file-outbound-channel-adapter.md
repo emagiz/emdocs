@@ -4,7 +4,7 @@ title: File outbound channel adapter
 sidebar_label: File outbound channel adapter
 ---
 #### Write messages to a file in a specified system directory
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/files.html#file-writing" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/files.html#file-writing" target="_blank">External documentation</a>
 
 
 #### Directory

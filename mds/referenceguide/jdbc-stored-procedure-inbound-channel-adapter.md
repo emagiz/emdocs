@@ -4,7 +4,7 @@ title: JDBC stored procedure inbound channel adapter
 sidebar_label: JDBC stored procedure inbound channel adapter
 ---
 #### Generates messages by polling a database using a stored procedure.
-<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-inbound-channel-adapter" target="_blank">Documentation</a>
+<a href="http://static.springsource.org/spring-integration/docs/2.1.x/reference/html/jdbc.html#stored-procedure-inbound-channel-adapter" target="_blank">External documentation</a>
 
 The inbound JDBC stored procedure adapter polls a database using a stored procedure or function call. 
 
@@ -106,7 +106,7 @@ You can select the <code>nullChannel</code> here to silently drop the messages.
 <i>Required</i>
 
 
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/messaging-endpoints-chapter.html#endpoint-namespace" target="_blank">External documentation</a>
 
 Specifies when and how the reading task is executed.
 

@@ -4,7 +4,7 @@ title: Default FTPS caching session factory
 sidebar_label: Default FTPS caching session factory
 ---
 #### Session factory for creating connections with an FTPS server that uses session caching.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ftp.html#ftp-session-factory" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ftp.html#ftp-session-factory" target="_blank">External documentation</a>
 
 FTPS session factory that provides session caching/pooling, re-using existing sessions for multiple request.
 

@@ -4,7 +4,7 @@ title: XSLT view
 sidebar_label: XSLT view
 ---
 #### View that renderes a response as the result of an XSLT transformation.
-<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring/docs/3.1.x/spring-framework-reference/html/" target="_blank">External documentation</a>
 
 XSLT-driven View that allows for response context to be rendered as the result of an XSLT transformation.
 

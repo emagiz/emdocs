@@ -11,7 +11,7 @@ An address represents a messaging endpoint. Within the configuration, a typical 
 
 A queue is associated with an address. There can be multiple queues per address. Once an incoming message is matched to an address, the message will be sent on to one or more of its queues, depending on the routing type configured. Queues can be configured to be automatically created and deleted.
 
-<a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">Documentation</a>
+<a href="https://activemq.apache.org/artemis/docs/latest/address-model.html" target="_blank">External documentation</a>
 
 #### Match
 A wildcard expression contains words delimited by the character <code>.</code> (full stop).

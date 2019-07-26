@@ -4,7 +4,7 @@ title: XSLT transformer
 sidebar_label: XSLT transformer
 ---
 #### Transforms XML messages using an XSLT stylesheet.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/xml.html#xml-transformation" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/xml.html#xml-transformation" target="_blank">External documentation</a>
 
 Transforms XML messages using an XSLT stylesheet.
 

@@ -4,7 +4,7 @@ title: Ehcache cache manager
 sidebar_label: Ehcache cache manager
 ---
 #### Cache manager based on the Ehcache project.
-<a href="http://ehcache.org/documentation" target="_blank">Documentation</a>
+<a href="http://ehcache.org/documentation" target="_blank">External documentation</a>
 
 
 #### Max bytes local heap

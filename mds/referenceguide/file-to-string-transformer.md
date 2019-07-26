@@ -4,7 +4,7 @@ title: File to string transformer
 sidebar_label: File to string transformer
 ---
 #### Transforms file messages to string messages
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/files.html#file-transforming" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/files.html#file-transforming" target="_blank">External documentation</a>
 
 
 #### Delete files

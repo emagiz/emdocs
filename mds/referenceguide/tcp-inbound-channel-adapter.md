@@ -4,7 +4,7 @@ title: TCP inbound channel adapter
 sidebar_label: TCP inbound channel adapter
 ---
 #### Defines an event-driven TCP/IP byte-message receiving adapter.
-<a href="http://docs.spring.io/spring-integration/docs/2.1.x/reference/html/ip.html#tcp-adapters" target="_blank">Documentation</a>
+<a href="https://docs.spring.io/spring-integration/docs/4.3.x/reference/html/ip.html#tcp-adapters" target="_blank">External documentation</a>
 
 
 #### Connection factory

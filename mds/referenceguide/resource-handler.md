@@ -4,7 +4,7 @@ title: Resource handler
 sidebar_label: Resource handler
 ---
 #### Handler that looks for a matching file in the local directory to serve.
-<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">Documentation</a>
+<a href="http://wiki.eclipse.org/Jetty/Reference/Jetty_Architecture#Handlers" target="_blank">External documentation</a>
 
 The resource handler is passed the request first and looks for a matching file in the local directory to serve. If a file is not found, then the request is passed to the default handler which generates a 404 (or favicon.ico). 
 

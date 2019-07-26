@@ -4,7 +4,7 @@ title: Default WSDL 1.1 definition
 sidebar_label: Default WSDL 1.1 definition
 ---
 #### Dynamic WSDL definition that creates a SOAP binding based on XSD schemas.
-<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#server-automatic-wsdl-exposure" target="_blank">Documentation</a>
+<a href="http://docs.spring.io/spring-ws/sites/2.0/reference/html/server.html#server-automatic-wsdl-exposure" target="_blank">External documentation</a>
 
 The <i>Default Wsdl11 Definition </i>builds a WSDL from a XSD schema.  
 This definition iterates over all element elements found in the schema, and creates a message for all elements. Next, it creates <i>WSDL operation </i> for all messages that end with the defined request or response suffix. (The default request suffix is <i>Request</i>; the default response suffix is <i>Response</i>)
