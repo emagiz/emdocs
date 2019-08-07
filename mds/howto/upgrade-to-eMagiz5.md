@@ -73,19 +73,21 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 ## 5.The deployment of eMagiz5
 
-5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
+5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
 
 5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
 
 5.3) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
-5.3.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+5.3.1) In case of a failover bus firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
 5.3.2) Container(s): if you have multiple containers, you can use any order.
 
 5.3.3) Connector(s): if you have multiple connectors, firstly start the exit connectors and then start the entry connectors.If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
 
-5.4) **Go to** Runtime dashboard and check if every flow is still active.
+5.4) The final step: Update AWS. Deploy -> Architecture -> Start Editing -> right click the screen -> Update AWS.
+
+5.5) **Go to** Runtime dashboard and check if every flow is still active.
 
 **Note:** **It is recommended** that the migration of the eMagiz Mendix Connector(s) to be done at last because it needs to be done 'one connector at a time' and depending on the number of Mendix systems that the bus contains, it might take quite some time. 
 
