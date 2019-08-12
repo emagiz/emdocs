@@ -41,7 +41,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met:
 
 3.4) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention('in-vm-connection-caching', 'in-vm-connection-plain') because otherwise the migration wizard will encounter problems.
 
-3.5) **Go to** Deploy -> Properties and modify the data.dir property, you need to replace "hornetQ" with "artemis" (e.g. "/efs/data/**hornetq**/jms01" to "/efs/data/**artemis**/jms01")
+3.5) **Go to** Deploy -> Properties and modify the datadir property, you need to replace "hornetQ" with "artemis" (e.g. "/efs/data/**hornetq**/jms01" to "/efs/data/**artemis**/jms01")
 
 3.6) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2. (After completing either 4.1 or 4.2, please proceed with 3.7.
 
