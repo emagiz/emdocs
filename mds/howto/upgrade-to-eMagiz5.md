@@ -41,9 +41,9 @@ In order to upgrade to eMagiz5, 4 conditions must be met:
 
 3.4) BE AWARE: If you ever changed the names of the connection factories, you should change them back to follow the convention('in-vm-connection-caching', 'in-vm-connection-plain') because otherwise the migration wizard will encounter problems.
 
-3.5) **Go to** Deploy -> Properties and modify the data.dir property, you need to replace "hornetQ" with "artemis" (e.g. "/efs/data/**hornetq**/jms01" to "/efs/data/**artemis**/jms01")
+3.5) **Go to** Deploy -> Properties and modify the datadir property, you need to replace "hornetQ" with "artemis" (e.g. "/efs/data/**hornetq**/jms01" to "/efs/data/**artemis**/jms01")
 
-3.6) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2.
+3.6) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. It is recommended to upgrade the bus by using the method 4.1. If it does not succeed, then it is recommended to make use of the method from 4.2. (After completing either 4.1 or 4.2, please proceed with 3.7.
 
 3.7) For environments where you have enabled debugging, **go to** Deploy -> Properties and create property "debug.channel-pattern" with value "*.*" and property "debug.bridge-poller-interval" with value "0/5 * * * * \*". The first value will make the debugger only intercept channels which have a channel that matches the channel pattern, in this way excluding the debugger channels. The second value will make that the debugger messages are polled once every 5 seconds. For disabling the debugger functionality, set the value           "(disabled)" to the "debug.channel-pattern" property and the value "0 0 0 24 12 2"  to the "bridge-poller-interval" property. Since there is no way to disable the polling of the debugger messages, the above expression will ensure that it is only triggered at midnight whenever the 24th of December is a Tuesday.
 
@@ -73,19 +73,21 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 ## 5.The deployment of eMagiz5
 
-5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Advanced actions -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
+5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
 
-5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". 
+5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". (Make sure that required properties are not being removed during this step).
 
 5.3) **Go to** each container in the runtime dashboard and start the flow(s) in the following order:
 
-5.3.1) If you have a failover bus: Firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
+5.3.1) In case of a failover bus firstly start the live JMS server, amqp01, and secondly the back up server, amqp01b1. In all other cases just start the jms server before any other flows.
 
 5.3.2) Container(s): if you have multiple containers, you can use any order.
 
 5.3.3) Connector(s): if you have multiple connectors, firstly start the exit connectors and then start the entry connectors.If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
 
-5.4) **Go to** Runtime dashboard and check if every flow is still active.
+5.4) In case of an AWS cloud: Update AWS. Deploy -> Architecture -> Start Editing -> right click the screen -> Update AWS.
+
+5.5) **Go to** Runtime dashboard and check if every flow is still active.
 
 **Note:** **It is recommended** that the migration of the eMagiz Mendix Connector(s) to be done at last because it needs to be done 'one connector at a time' and depending on the number of Mendix systems that the bus contains, it might take quite some time. 
 
