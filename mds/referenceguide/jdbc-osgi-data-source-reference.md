@@ -38,15 +38,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: jdbc-osgi-data-source-reference
-title: JDBC OSGi data source reference
-sidebar_label: JDBC OSGi data source reference
----
-
-Defines a reference to a service obtained via the OSGi service registry.
-
-This reference uniquely references the <code>javax.sql.DataSource</code> interface.
-
-
-

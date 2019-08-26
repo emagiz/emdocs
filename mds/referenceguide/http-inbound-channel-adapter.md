@@ -98,20 +98,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: http-inbound-channel-adapter
-title: HTTP inbound channel adapter
-sidebar_label: HTTP inbound channel adapter
----
-
-Channel adapter for receiving messages over HTTP.
-
-This adapter will simply acknowledge that the request was received by sending a <code>200 OK</code> status code back (this can be customized to use other status codes). If you want to send a response message back, use a <i>HTTP inbound gateway</i> instead.
-
-To support this HTTP inbound endpoint, it needs to be deployed within a servlet container. The recommended way to do this is to use the <i>HTTP inbound endpoint dispatcher servlet</i> in a <i>Jetty server</i> support object.
-
-
-Custom message headers that will be added to messages send by this adapter.
-
-The value is determined by a SpEL expression, which has access to the body and headers of the incoming HTTP request, any path variables (as defined by the <i>path</i> property) and any query parameters from the request URL.
-

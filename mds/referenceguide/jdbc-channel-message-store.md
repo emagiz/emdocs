@@ -42,15 +42,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: jdbc-channel-message-store
-title: JDBC channel message store
-sidebar_label: JDBC channel message store
----
-
-Channel-specific implementation of <code>MessageGroupStore</code> using a relational database via JDBC. This message store shall be used for message channels only.
-
-As such, the JdbcChannelMessageStore uses database specific SQL queries.
-
-Contrary to the JdbcMessageStore, this implementation uses a single database table, optimized to operate like a queue. The SQL scripts for creating the table are packaged under org/springframework/integration/jdbc/schema-*.sql, where * denotes the target database type.
-

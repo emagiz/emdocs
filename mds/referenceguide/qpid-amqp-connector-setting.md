@@ -183,13 +183,3 @@ Controls whether an AMQP connection will allow for a redirect to an alternative 
 
 Default is false.
 
----
-id: qpid-amqp-connector-setting
-title: Qpid AMQP connector setting
-sidebar_label: Qpid AMQP connector settings
----
-
-Qpid JMS client connector settings that are part of a connection factory supporting AMQP.
-
-These setting contain host, port and optionally (WebSockets only) path for the URI used per connector. In addition, the default connection settings can be overriden per individual connector.
-

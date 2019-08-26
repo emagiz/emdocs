@@ -70,38 +70,3 @@ For example, the namespace prefix mentioned in the previous help text could poin
 
 <i>Optional</i>
 
----
-id: soap-to-message-header-mapping
-title: SOAP to message header mapping
-sidebar_label: SOAP to message header mapping
----
-#### Header name
-Name of the message header to create on the message.
-
-If a header with this name already exists, it will be overwritten with the new value.
-
-<i>Required</i>
-
-#### XPath expression
-XPath expression to determine the value for the message header. The root XML node of the XPath evaluation context is always the <code>&lt;soap:Header&gt;</code> element.
-
-<b>Example XPath expression:</b>
-<pre>erp:authentication/erp:user</pre>
-Note that the XPath expression is evaluated as a string value: if the resulting string is empty, the message header is not added to the message.
-
-<i>Required</i>
-
-#### Namespace prefix
-Optional namespace prefix that is used in the <i>XPath expression</i> specified above.
-
-For example, in the XPath expression mentioned in the previous help text the namespace prefix <code>erp</code> is used.
-
-<i>Optional</i>
-
-#### Namespace URI
-Optional namespace URI that is referenced by the <i>namespace prefix</i> specified above.
-
-For example, the namespace prefix mentioned in the previous help text could point to the <code>http://www.example.com/ns/erp/1.0/</code> namespace URI.
-
-<i>Optional</i>
-

@@ -9,7 +9,7 @@
 
  
 
-We position eMagiz as the model driven integration platform as a service, driving the [bi-modal](https://www.gartner.com/it-glossary/bimodal) IT strategy of Gartner. 
+We position eMagiz as the model driven integration platform as a service, driving the [bi-modal](https://www.gartner.com/it-glossary/bimodal/) IT strategy of Gartner. 
 
 Our positioning is based on 3 pillars:
 
@@ -17,7 +17,7 @@ Our positioning is based on 3 pillars:
 Pillar 2: full lifecycle support.  
 Pillar 3: built-in patterns and best practices.** 
 
-**1. Pillar 1: architected models.** We empower citizen developers (working on [mode 2](https://www.gartner.com/it-glossary/bimodal) initiatives) with architected, model driven design tools that   
+**1. Pillar 1: architected models.** We empower citizen developers (working on [mode 2](https://www.gartner.com/it-glossary/bimodal/) initiatives) with architected, model driven design tools that   
   * add abstraction and automation to delivery and support processes  
   * mitigate the risk of accidental architectures  
   * create a common language to collaborate with architects and IT pros  

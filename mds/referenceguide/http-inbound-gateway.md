@@ -133,20 +133,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: http-inbound-gateway
-title: HTTP inbound gateway
-sidebar_label: HTTP inbound gateway
----
-
-Gateway for receiving messages over HTTP and sending back replies.
-
-In sending a response to the client there are a number of ways to customize the behavior of the gateway. If you simply want to acknowledge the received HTTP request without sending a response message back, use a <i>HTTP inbound channel adapter</i> instead.
-
-To support this HTTP inbound endpoint, it needs to be deployed within a servlet container. The recommended way to do this is to use the <i>HTTP inbound endpoint dispatcher servlet</i> in a <i>Jetty server</i> support object.
-
-
-Custom message headers that will be added to request messages send by this gateway.
-
-The value is determined by a SpEL expression, which has access to the body and headers of the incoming HTTP request, any path variables (as defined by the <i>path</i> property) and any query parameters from the request URL.
-

@@ -301,35 +301,3 @@ Path where the Certificate Revocation List (CRL) is located. A  CRL is a list of
 
 Default value for this property is <code>null</code>
 
----
-id: netty-acceptor
-title: Netty acceptor
-sidebar_label: Netty acceptor
----
-
-An acceptor defines a way in which connections can be made to the Artemis server.
-
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">Documentation</a>
-
-
-
-Netty Native Transport support exists for selected OS platforms. This allows Apache ActiveMQ Artemis to use native sockets/io instead of Java NIO.
-
-These Native transports add features specific to a particular platform, generate less garbage, and generally improve performance when compared to Java NIO based transport.
-
-Both Clients and Server can benefit from this.
-
-Current Supported Platforms:
-- Linux running 64bit JVM
-- MacOS running 64bit JVM
-- Apache ActiveMQ Artemis will by default enable the corresponding native transport if a supported platform is detected.
-
-If running on an unsupported platform or any issues loading native libs, Apache ActiveMQ Artemis will fallback onto Java NIO.
-
-
-Normally, if the broker receives a message sent to a particular address, that has both anycast and multicast routing types enable, it will route a copy of the message to <i>one</i> of the anycast queues and to <i>all</i> of the multicast queues.
-
-However, clients can specify a special prefix when connecting to an address to indicate which kind of routing type to use
-
-The prefixes are custom values that are designated using the <i>anycastPrefix</i> and <i>multicastPrefix</i>.
-

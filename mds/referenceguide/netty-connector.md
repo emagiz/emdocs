@@ -231,25 +231,3 @@ Overwrites the specified <i>host name</i> value at the moment of host verificati
 #### Name
 Name of this connector.
 
----
-id: netty-connector
-title: Netty connector
-sidebar_label: Netty connector
----
-
-<a href="https://activemq.apache.org/artemis/docs/latest/configuring-transports.html">Documentation</a>
-
-
-Netty Native Transport support exists for selected OS platforms. This allows Apache ActiveMQ Artemis to use native sockets/io instead of Java NIO.
-
-These Native transports add features specific to a particular platform, generate less garbage, and generally improve performance when compared to Java NIO based transport.
-
-Both Clients and Server can benefit from this.
-
-Current Supported Platforms:
-- Linux running 64bit JVM
-- MacOS running 64bit JVM
-- Apache ActiveMQ Artemis will by default enable the corresponding native transport if a supported platform is detected.
-
-If running on an unsupported platform or any issues loading native libs, Apache ActiveMQ Artemis will fallback onto Java NIO.
-

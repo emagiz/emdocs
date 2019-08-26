@@ -22,13 +22,3 @@ The evaluation context will be populated with an <code>org.springframework.http.
 
 <i>Required</i>
 
----
-id: http-header
-title: HTTP header
-sidebar_label: HTTP header
----
-
-Custom message headers that will be added to messages created by this HTTP inbound endpoint.
-
-The value is determined by a SpEL expression, which has access to the body and headers of the incoming HTTP request, any path variables (as defined by the <i>path</i> property) and any query parameters from the request URL.
-

@@ -37,23 +37,3 @@ The custom attributes that are defined for the selected code type: you can speci
 
 <i>Optional</i>
 
----
-id: cdm-code
-title: CDM code
-sidebar_label: Custom attributes
----
-
-The custom attributes that are defined for the selected code type: you can specify the values for these attributes here.
-
-<i>Optional</i>
-
----
-id: cdm-code
-title: CDM code
-sidebar_label: Custom attributes
----
-
-The custom attributes that are defined for the selected code type: you can specify the values for these attributes here.
-
-<i>Optional</i>
-

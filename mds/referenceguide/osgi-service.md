@@ -29,11 +29,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: osgi-service
-title: OSGi service
-sidebar_label: OSGi service 
----
-
-Exports the referenced bean as an OSGi service so it can be used by other flows.
-

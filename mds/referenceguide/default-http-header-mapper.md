@@ -29,11 +29,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: default-http-header-mapper
-title: Default HTTP header mapper
-sidebar_label: Default HTTP header mapper
----
-
-Maps message headers to/from HTTP headers.
-

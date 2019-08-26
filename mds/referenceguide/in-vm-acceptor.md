@@ -26,11 +26,3 @@ If you define more than one cluster connection, you may define what cluster conn
 
 The default value is the first cluster connection defined at the main configuration.
 
----
-id: in-vm-acceptor
-title: In-VM acceptor
-sidebar_label: In VM acceptor
----
-
-Accepts connections from clients that run in the same Java virtual machine as this server.
-

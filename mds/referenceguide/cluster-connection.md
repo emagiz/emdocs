@@ -157,15 +157,3 @@ The number of times the system will try to connect a node in the cluster initial
 #### Producer window size
 The size for producer flow control over cluster connection. it's by default disabled through the cluster connection bridge but you may want to set a value if you are using really large messages in cluster. The default value of -1 means no window.
 
----
-id: cluster-connection
-title: Cluster connection
-sidebar_label: Cluster connection
----
-
-<a href="https://activemq.apache.org/artemis/docs/latest/clusters.html#configuring-cluster-connections" target="_blank">Documentation</a>
-
-Cluster connections group servers together in order to share message processing load. Each active node in the cluster is an active Artemis server which manages its own messages and handles its own connections.
-
-
-

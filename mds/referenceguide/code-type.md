@@ -31,27 +31,3 @@ Any custom attribute definitions are specified here; the values must then be spe
 
 <i>Optional</i>
 
----
-id: code-type
-title: Code type
-sidebar_label: Custom attributes
----
-
-Custom attributes are name/value pairs containing additional information of a code type.
-
-Any custom attribute definitions are specified here; the values must then be specified on the corresponding CDM codes.
-
-<i>Optional</i>
-
----
-id: code-type
-title: Code type
-sidebar_label: Custom attributes
----
-
-Custom attributes are name/value pairs containing additional information of a code type.
-
-Any custom attribute definitions are specified here; the values must then be specified on the corresponding CDM codes.
-
-<i>Optional</i>
-

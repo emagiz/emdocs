@@ -47,15 +47,3 @@ Name that uniquely identifies this flow component.
 
 <i>Required</i>
 
----
-id: activemq-security-manager-gateway
-title: ActiveMQ security manager gateway
-sidebar_label: ActiveMQ security manager gateway
----
-
-A <code>&lt;si:gateway&gt;</code> that implements the <code>ActiveMQSecurityManager</code> interface.
-
-This gateway can be used as a custom security manager in an ActiveMQ Artemis server to handle validation of user credentials (authentication) and user roles (authorization).
-
-Note that the <i>cluster user</i> of the ActiveMQ Artemis server always has full privileges and the validation of his credentials is done internally (never even reaching the security manager).
-
