@@ -32,6 +32,7 @@ An inbound channel adapter connects a source system to a message flow in an asyn
 - [TCP inbound channel adapter](tcp-inbound-channel-adapter.md)
 - [XMPP inbound channel adapter](xmpp-inbound-channel-adapter.md)
 - [XMPP presence inbound channel adapter](xmpp-presence-inbound-channel-adapter.md)
+- [HTTP inbound endpoint dispatcher servlet](http-inbound-endpoint-dispatcher-servlet.md)
 
 ## ![alttextl](../../img/referenceguide/InboundGateway.png) Inbound gateways
 An inbound gateway connects a source system to a message flow in a synchronous (request-response) fashion. These inbound endpoints are always message-driven.
