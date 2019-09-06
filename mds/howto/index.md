@@ -5,6 +5,7 @@
 - [How to deploy releases to environments](deploy-releases.md)
 - [How to install an eMagiz Mendix Connector](upgrade-eMagizMendixConnector.md)
 - [How to upgrade an eMagiz Mendix Connector](upgrade-eMagizMendixConnector.md#step-plan-upgrading-the-emagiz-mendix-connector)
+- [Best practices when using SFTP](sftp-best-practice.md)
 
 ==============================================================
 
