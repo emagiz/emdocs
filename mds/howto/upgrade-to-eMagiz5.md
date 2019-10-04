@@ -10,7 +10,7 @@ The release notes of eMagiz 5 can be found [here](https://my.emagiz.com/link/rel
 
 In order to upgrade to eMagiz5, 4 conditions must be met:
 
-2.1) Spring Integration 4: It is recommended that all flows have the value of the build number higher or equal to 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more errorprone. Firstly test your flows and then update them!
+2.1) Spring Integration 4: It is recommended that all flows have the value of the build number higher or equal to 32. All flows with a build number 22 or lower are not going to be able to upgrade and the ones between 22 and 32 are more error prone. Firstly test your flows and then update them!
 
 2.2) enable the Releases functionality in the deploy phase (this can be done by contacting your partner contact): you need to have this new way of deploying enabled in order to firstly make a release of the create phase containing only the flows which are currently running on production (be careful to have only what is correctly running on production) in order to have a safe eMagiz4 backup prior to the migration in case there will be any problems while upgrading to eMagiz5.
 
@@ -25,7 +25,7 @@ In order to upgrade to eMagiz5, 4 conditions must be met:
   
   ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md)
+3.1) **Using the [releases documentation](deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](deploy-releases.md)
 
 3.2) For on premise connectors make sure that the firewall has the amqp port 8443 opened
 
@@ -54,17 +54,17 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 **Note** In case you do **not** want to upgrade all your connectors at once, pursue points 4.2.1) and 4.2.2) and then **go to** the two data grids below the wizard and upgrade all the connectors you want by selecting them one by one and press "Upgrade container" for each of them.
 
-### 4.1 Using the "upgrade complete bus at once" button
+### 4.1 Using the "Upgrade complete bus at once" button (NOT advised for buses with more than one flow pack)
 
 4.1.1) **Go to** Deploy -> Releases and for each environment create a release based on the backup created during 3.1) named "eMagiz 5 migration".
 
-4.1.2) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus.  If it does not succeed, try again using the method from 4.2, starting with the point 4.2.1).
+4.1.2) **Go to** Create -> Settings -> AMQP -> Upgrade to AMQP wizard. Press the "upgrade complete bus at once" button. It might take a while until it finishes upgrading every flow from the bus. If it does not succeed, try again using the method from 4.2, starting with the point 4.2.1.
 
 ### 4.2 Using the "step by step" wizard
 
 4.2.1) **Press** the button "Step 1: Upgrade JMS server(s)", and wait for the process to finish.
 
-4.2.2) **Press** the button "Step 2: Upgrade process container(s)" and wait for the process to finish.
+4.2.2) **Press** the button "Step 2: Upgrade process container(s)" and wait for the process to finish (might take a very long time, especially on large buses).
 
 4.2.3) **Press** the button "Step 3: Upgrade connectors" and wait for the process to finish.
 
@@ -73,7 +73,7 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 ## 5.The deployment of eMagiz5
 
-5.1) **Go to** Deploy -> Releases -> [Details](https://github.com/emagiz/emdocs/blob/master/howto/deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
+5.1) **Go to** Deploy -> Releases -> [Details](deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
 
 5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". (Make sure that required properties are not being removed during this step).
 
@@ -98,7 +98,7 @@ Here are some bus health checks that you should do after the migration is finish
 
  - **Test the most ‘critical-integrations-chains’ of your bus. After the migration everything should work as before without the need of doing any manual change.**
 
- -  **Test any flow where the user made any change related to the HornetQ JMS settings OR customised the autogenerated flows(jms server, container infra, connector infra) OR the autogenerated part of the flows(onramp, offramp, entry connector, exit connector, routing flow, error flow).**
+ -  **Test any flow where the user made any change related to the HornetQ JMS settings OR customised the auto-generated flows(jms server, container infra, connector infra) OR the auto-generated part of the flows(onramp, offramp, entry connector, exit connector, routing flow, error flow).**
  
  -  **Test all the flows which contain unusual structures such as an entry/exit connector and combined entry connectors**
 
@@ -118,7 +118,7 @@ You can identify an auto recovery action by checking searching the log for Auto-
   <img width="432" height="229" src="../../img/howto/artemis-server-settings.png"> 
 </p>
 
-If a change in the autorecovery mechanism settings are needed, you can do it in the advanced tab of the artemis-server support object of the JMS server flow of the bus. You can find more information in the helptext about the different configurations.
+If a change in the auto-recovery mechanism settings are needed, you can do it in the advanced tab of the Artemis-server support object of the JMS server flow of the bus. You can find more information in the help text about the different configurations.
 
 <p >
  <img width="454" height="250" src="../../img/howto/artemis-server.png">
@@ -126,10 +126,10 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
 
  #### Manually added queues
  
-  - when having integrations which contain **manually added queues** within the **jms server flow** they should be checked.
+  - when having integrations which contain **manually added queues** within the **JMS server flow** they should be checked.
   - usually used in entry flows which split messages. After the migration has ended, the manually added queues will be replaced with the message bridge and the h2 message store which might change the result delivered by the flow.  
   
-  Note that Artemis does not have the JMS queue configurations settings section as HornetQ component anymore. In Artemis a queue is linked to an address. In eMagiz we configured that queues are created automatically and deleted automatically when needed. That means that you don’t need to configure anything to make this work. Your manually added queue will be created when a message is sent to that destination or a consumer tries to connect to that queue. On the other hand, the queue will be deleted when they have both 0 consumers and 0 messages. You will notice that the queue is deleted when you see in the logging “No Dead Letter Address configured for queue”.  
+  Note that Artemis does not have the JMS queue configurations settings section as HornetQ component anymore. In Artemis a queue is linked to an address. In eMagiz, we configured that queues are created automatically and deleted automatically when needed. That means that you don’t need to configure anything to make this work. Your manually added queue will be created when a message is sent to that destination or a consumer tries to connect to that queue. On the other hand, queues will be deleted when they have both 0 consumers and 0 messages. You will notice that the queue has been deleted when you see in the logging “No Dead Letter Address configured for queue”.  
 
 
  #### Special HornetQ headers
@@ -172,7 +172,7 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
   
  ### eMagiz Mendix Connector Health checks
  
-   - If the communication between the eMagiz Mendix Connector and the eMagiz HIP does not work it might be the case that you have custom keystore/truststore used by the eMagiz Mendix Connector, so you should try downloading the new autogenerated ones (Create -> Resources) and put them in the resources folder of the Mendix Connector.
+   - If the communication between the eMagiz Mendix Connector and the eMagiz HIP does not work it might be the case that you have custom keystore/truststore used by the eMagiz Mendix Connector, so you should try downloading the new auto-generated ones (Create -> Resources) and put them in the resources folder of the eMagiz Mendix Connector.
  
  <!--- Feedback items left to be fixed:
 		 - delete 5.2.1 and 5.2.2 (can be seen in versioning history) - done
@@ -181,6 +181,7 @@ If a change in the autorecovery mechanism settings are needed, you can do it in 
 		 - detail more step 4 of emc migration - done
 		 - mention the cleanup tool as mandatory - done
 		 - explain why the emc migration is last - done
+		 - explain throttling, and the effects on batch processes, as well as how to "fix" those
 --->
 
   
