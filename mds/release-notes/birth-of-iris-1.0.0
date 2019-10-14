@@ -1,0 +1,4 @@
+New features
+Initial release
+Known issues
+when running in Mendix, relative paths for input/output directories of file inbound/outbound channel adapters are resolved against the Mendix server directory (and not the Iris working directory); this cannot be fixed (changing the "user.dir" Java system property would be required, but causes all kinds of problems), so use absolute paths instead
