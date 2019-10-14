@@ -1,0 +1,59 @@
+Major release adding continuous availability, message tracking, monitoring and PAAS.
+# New features
+- added support for configuring HornetQ JMS servers in Iris using the GUI
+- JMS message queues and topics
+- message persistency using NIO or very fast ASYNCIO (only on Linux)
+- last value queues
+- message expiry policy
+- message redelivery policy
+- settings for configuring individual queue sizes and policy when a queue is full (page, drop or block)
+- failover using live/backup server pairs
+- JMX management
+- in-VM, TCP or HTTP connections
+- message bridges, connecting two HornetQ servers over (unreliable) network connections
+- added support for running HornetQ fully embedded in Iris configurations
+- logging is redirected to Iris log
+- file paths are resolved relative to Iris working directory
+- lifecycle management tied to Iris configuration
+- small memory footprint, making it feasible to run HornetQ in adapters/connectors
+- added support for the (client) use of HornetQ JMS messaging by Iris message flows
+- retrying of failed connections
+- switching to a backup server
+- consumer/producer flow control
+- client side message caching
+- connect using in-VM, TCP or HTTP transport
+- added entry tracking and exit tracking channel interceptors, enabling message flow tracking
+- added module Iris_Tracking, providing a (Mendix) web application for persistent message tracking
+- shows tracked messages (the incoming message, the flow through Iris and the outgoing message)
+- shows error messages (the exception, the failed message and the message history)
+- added the XML mapping message consumer, providing a way to directly map XML messages to Mendix objects
+- better validation of configuration entities in Mendix development environment
+- IDs of configuration entities in Mendix development environment are now auto-filled with a 'best practice' suggestion
+- added modules continuous availability, message tracking, montoring and extended security to Iris licenses (this makes Iris 1.x license files incompatible with 2.x)
+- JMS inbound channel adapter now supports acknowledge mode and error channel, which in combination can be used to receive messages in JMS transactions
+- added a JMX multi attribute polling message source, used for periodically polling the values of multiple attributes of multiple JMX administered objects
+- added module Iris_Monitoring, providing a simple (Mendix) web application for monitoring Iris applications using JMX
+- monitors JVM performance (CPU, memory, threads)
+- monitors JMS queues (number of messages and consumers)
+- monitors message handlers (number of calls, errors and duration)
+- monitors message channels (number of sends, errors, send rate, error rate, duration and error ratio)
+- view data per year, per month, per day, per hour or per minute
+- added a JVM performance monitor for monitoring JVM process CPU / memory / thread usage using JMX
+- added module Iris_PAAS, providing a platform where partners can create configurations for their customers and manage their own user accounts (this first version is mainly intended for internal testing/use, which will undoubtedly lead to expanding the functionality of this module significantly)
+# Minor changes
+- Mendix configurations now contain the required Name attribute
+- replaced all occurrences of Class.getName() with Class.getCanonicalName(), resulting in clearer error messages
+- string values (in design time) containing only whitespaces are now also considered 'empty' and therefore skipped in the XML export
+- used a different encryption technique for encrypting Iris licenses that doesn't require the JCE unrestricted policy files to be installed
+- the order in which auto-load configurations are loaded when starting the Mendix server is now configurable
+- sequences of two underscore characters ('__') in enum values (design time) are now replaced by one hyphen character ('-') in the XML export
+- error messages caused by an XML validation exception now contain a list of the XML validation errors
+- default value for omit stack trace of the error to XML transformer changed from false to true
+- loaded configurations (Iris Mendix runtime) cannot be deleted
+- split the new support object menu into two, making it fit on the screen at most resolutions
+# Bug fixes
+- support object map based channel resolver is now removed from the development environment GUI, because using it caused a ClassNotFoundException
+- setting property maxBufferSize of a File/FTP accept once per modification file list filter no longer results in a constructor argument exception
+# Known issues
+- the continue button on the new configuration pop-up form reacts very slowly; this is fixed in Mendix v2.5.4
+- see 1.0.0
