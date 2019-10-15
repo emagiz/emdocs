@@ -7,16 +7,16 @@ This page contains all the release notes. The release notes consists of four dif
 ## Portal release notes
 |Release number |Release name |Release date |
 |---|---|---|
-|[8.11.0](8.11.0-safe-patterns.md)| Safe patters| | 
-|[8.10.0](8.10.0-play-safe.md)| Play safe| | 
-|[8.9.0](8.9.0-split-portal.md)| Split portal| | 
-|[8.8.0](8.8.0-eleventyone.md)| Eleventyone| | 
-|[8.7.0](8.7.0-hooray-hooray.md)| Hooray hooray| | 
-|[8.6.0](8.6.0-knock-knock!-whos-there?.md)| Knock Knock! Who's there?| | 
-|[8.5.0](8.5.0-whats-up?-docs!.md)| What's up Docs| | 
-|[8.4.0](8.4.0-jolly-jumbuck.md)| Jolly jumbuck| | 
-|[8.3.1](8.3.1-ponco.md)| Ponco| | 
-|[8.2.0](8.2.0-xperience.md)| Xperience| | 
+|[8.11.0](8.11.0-safe-patterns.md)| Safe patterns| 2019-10-02| 
+|[8.10.0](8.10.0-play-safe.md)| Play safe| 2019-09-27| 
+|[8.9.0](8.9.0-split-portal.md)| Split portal| 2019-09-06| 
+|[8.8.0](8.8.0-eleventyone.md)| Eleventyone| 2019-08-23| 
+|[8.7.0](8.7.0-hooray-hooray.md)| Hooray hooray| 2019-08-09| 
+|[8.6.0](8.6.0-knock-knock!-whos-there?.md)| Knock Knock! Who's there?| 2019-07-26| 
+|[8.5.0](8.5.0-whats-up?-docs!.md)| What's up? Docs!| 2019-07-12| 
+|[8.4.0](8.4.0-jolly-jumbuck.md)| Jolly jumbuck| 2019-06-28| 
+|[8.3.1](8.3.1-ponco.md)| Ponco| 2019-06-14| 
+|[8.2.0](8.2.0-xperience.md)| Xperience| 2019-05-31| 
 |[8.1.0](8.1.0-paratásso.md)| Paratásso| | 
 |[8.0.0](8.0.0-artemis.md)| Artemis| | 
 |[7.43.0](7.43.0-kosmos.md)| Kosmos| | 
