@@ -92,6 +92,5 @@
 |[5.1.0](5.1.0-smooth-streams.md)| Smooth streams| 2013-06-18| 
 |[5.0.0](5.0.0-signals-&-pulses.md)| Signals  pulses| 2013-05-12| 
 |[4.4.1](4.4.1-riverbanks.md)| Riverbanks| 2013-03-21| 
-|[3.8.0](3.8.0-freshwater-shrimps.md)| Freshwater shrimps| 2013-03-11| 
-|[3.7.3](3.7.3-inland-streams.md)| Inland streams| 2013-02-24| 
+|[4.4.0](4.4.0-freshwater-shrimps.md)| Freshwater shrimps| 2013-03-11| 
 |[4.3.0](4.3.0-mechanoreceptors.md)| Mechanoreceptors| 2013-02-17| 
