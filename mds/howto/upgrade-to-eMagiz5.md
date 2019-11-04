@@ -20,6 +20,8 @@ In order to upgrade to eMagiz5, 4 conditions must be met:
 
 2.4.2) For environments running in cloud you just need to update to the newest template (at least R4 for AWS Cloud or instance template >= 21 for Root Cloud).
 
+CAUTION: Updating to Java 8 and upgrading to Artemis will result in a higher Heap Memory usage. Before performing upgrades please consult the Runtime Statistics of the JMS to check if enough memory is available.
+
 
   **In order to proceed further with the migration, a validation from your partner contact is needed.**
   
