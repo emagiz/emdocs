@@ -75,6 +75,8 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 ## 5.The deployment of eMagiz5
 
+**Note** Since the Januari 10 2020 eMagiz portal deployment, buses that run on deprecated HornetQ technology are using a Proxy server to connect to the portal. This means that your runtime dashboard will stop working the moment that you start the Artemis jms server for the first time. Please contact the eMagiz team to inform them of you upcomming migration to Artemis, so they can prepare and help you fix the runtime dashboard when you do so.
+
 5.1) **Go to** Deploy -> Releases -> [Details](deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
 
 5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". (Make sure that required properties are not being removed during this step).
