@@ -4,7 +4,7 @@ In the sections below, you will find some online documents that are relevant for
 
 | Deployment & Migration| Best Practices|
 | ------ | ------ |
-| - How to migratie to eMagiz 5 (Artemis)| -Best practices for SFTP|
+| - [How to migratie to eMagiz 5 (Artemis)](upgrade-to-eMagiz5.md)| -Best practices for SFTP|
 | - How to install eMagiz Mendix Connector| - Typical errors in eMagiz|
 | - How to upgrade eMagiz Mendix Connector | - Mini reference SOAP-UI in context eMagiz|
 
