@@ -10,7 +10,6 @@
 - [Typical errors in eMagiz during integration Development](typical_errors_emagiz.md)
 - [SOAPUI mini reference](Mini-reference SOAP-UI.md)
 
-
 ==============================================================
 
 - [How to add a multi-tenant system](add-multi-tenant-system.md)
