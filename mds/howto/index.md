@@ -6,6 +6,9 @@
 - [How to install an eMagiz Mendix Connector](upgrade-eMagizMendixConnector.md)
 - [How to upgrade an eMagiz Mendix Connector](upgrade-eMagizMendixConnector.md#step-plan-upgrading-the-emagiz-mendix-connector)
 - [Best practices when using SFTP](sftp-best-practice.md)
+- [Mini reference SOAPUI](Mini-reference SOAP-UI.md)
+- [Typical errors in eMagiz during integration Development](typical_errors_emagiz.md)
+- [SOAPUI mini reference](minireference SOAPUI.md)
 
 ==============================================================
 
