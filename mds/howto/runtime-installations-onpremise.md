@@ -50,9 +50,9 @@ V = Compatible
 With runtime we mean the version of the eMagiz runtime. Not only flows do have a version number, eMagiz is also continuously developing their runtime as well. The newest runtime version above 5.x is only compatible with Java 8. You can check your runtime version in eMagiz Manage -> Monitoring. Search for ‘uptime’ in the message search field. The results will show what the runtime version of the runtime is. Runtime versions above 5.x show also the version number in the log lines when starting the runtime.
 With build number we mean the flow build number is eMagiz. You can check them either in Deploy -> Releases or in your Runtime Dashboard.
 Check before your installation what runtime should be used. Most preferable is to use Java 8 and the newest eMagiz runtime. If that is not possible, please check if your situation is applicable above. 
-If you have a situation that you end up with the yellow exclamation mark or you are unsure, please check with your eMagiz consultant or contact person (emagizcc@capegroep.nl) about what the possibilities are.
+If you have a situation that you end up with the yellow exclamation mark or you are unsure, please check with your eMagiz consultant or Partner Manager (info@emagiz.com) about what the possibilities are.
  
-## How to install runtime
+## How to install runtime for Windows
 This chapter will discuss a step to step guideline of how to install a new eMagiz runtime of 5.X or higher. This how to is only applicable for a Windows environment. Please see the How to Linux installation further 
 If you need to install an earlier version, please also read the extra information ‘Installing an older version of the eMagiz runtime’
 1)	The first step of this How-To is to make sure before installing that the requirements as stated above are met. 
@@ -130,6 +130,61 @@ In the Tab Log On, you are able to change the user that starts this service, if 
 15)	Test the connection by sending test messages over the bus. In case of the live environment, contact your technical contact to test for you.
 
 16)	If everything is working correctly, document the steps to access the server and environment and the credentials.
+
+## How to install for Linux
+
+How to install runtime
+This chapter will discuss a step to step guideline of how to install a new eMagiz runtime of 5.X or higher. This how to is only applicable for a Linux environment.
+1)	Log in via Putty  by typing in the host and the port and press load
+
+2)	When asked for credentials fill in credentials (Be aware, Linux does not accept ctrl+v and does not show the password or an indication of the password). Right mouse click to copy the password and press enter
+
+
+3)	Create folder in which the installation needs to happen. Use the following command via Putty: sudo mkdir -p {directory.to.place.file} (When asked for password supply it)
+
+4)	Download the correct runtime from the correct environment you want to install
+
+5)	Place the zip file in a folder (probably tmp) from which you can copy it to the directory you created in step 3
+
+6)	Navigate to the folder in which you placed the zip file (Command is: cd {directory structure}). Copy the zip file to the directory you created in step 3. Command for this is: sudo cp ./{filename of zip} {directory you created in step 3}
+
+7)	Navigate to the folder to which you copied the zip file (Command is: cd {directory structure}) and unzip the zip file. Command for this is: sudo unzip {name of zip file}
+
+8)	Check whether the unzip action worked correctly. This can be done by running the command ls -al. This shows all the folder/files in the directory. After conforming, check if you see the directory you expect, the unzip action worked remove the zip file from the folder. This can be done based on the following command: sudo rm -r {name of zipfile}. Check whether removal worked
+
+
+9)	Navigate to tmp folder and remove zip from there as well.
+
+10)	Navigate back to the folder in which you placed the directory you want to install
+
+11)	Install the service for eMagiz by running “install-service” in the “bin” folder of the unzipped runtime by following the below outlined steps:
+i.	Check files in “bin” folder are executable (There should be an x when you type: “ls -al” for files: setenv, install-service)(if not then type: sudo chmod a+x setenv install-service karaf shell)
+ii.	Type: “sudo ./install-service”
+iii.	The output of this command shows the command necessary to finish the install as a service. Linux will show you which version of the command you need.
+1.	Systemd (newer/most systems)(use full path) Type: 
+sudo systemctl enable <INSTALL_DIR>/bin/<SERVICENAME>.service
+2.	SystemV (older systems)(use full path) Type:
+sudo ln -s <INSTALL_DIR>/bin/<SERVICE_NAME>-service /etc/init.d/; sudo update-rc.d <SERVICE_NAME>-service defaults
+
+12)	As administrator, start the eMagiz service (or restart the system, as the service is configured to run “Automatic” at startup):
+i.	systemd type: sudo systemctl start <SERVICE_NAME>
+ii.	SystemV Type: sudo /etc/init.d/<SERVICE_NAME>-service start
+
+13)	Done: Use the runtime dashboard in the portal to monitor and control the started runtime (e.g. deploy/undeploy flows).
+
+## Setting Java Home addendum for Linux
+
+Before setting JAVA_HOME first check if JAVA_HOME is already set
+1) Open Console via Putty
+2) Execute the following command line: echo $JAVA_HOME
+3) If output is a path, then your JAVA_HOME is set, make sure the path is correct. If the path is correct no further action is needed
+4) If output is empty or path is incorrect execute the following: vi ~/.bashrc OR vi ~/.bash_profile
+5) Add line: export JAVA_HOME=/usr/java/java-version
+6) Save the file
+7) Source ~/.bashrc OR source ~/.bash_profile
+8) Execute: echo $JAVA_HOME
+9) Output should print the path
+
 
 ## Sizing upgrade addendum
 
