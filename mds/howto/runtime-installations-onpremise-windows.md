@@ -1,11 +1,8 @@
 # On-premise eMagiz runtime installation document
 
 This document describes what the requirements are for a eMagiz runtime installation on-premise as well as a step by step guideline how to install a runtime on-premise. An on-premise installation often occurs in an architecture where the runtime should run within your own or your customer’s network. This is recommended for all connectors that communicate with a system that is located inside your network or if you would like to test locally on your computer. For an installation of a runtime on a Linux system please see Linux runtime installations
-
-[toc]
-
-
-### Requirements
+ 
+## Requirements
 To install a runtime, please be aware that eMagiz needs an environment that satisfies certain requirements. These requirements can be different depending on your architectural choices. Most common is the connector inside your network and a JMS and container running outside the network. In that case, if you are running only connectors on this environment, please keep the following requirements in mind:
 1.	OS with support for Java 
 2.	OS user with granted security rights to run startup services (Windows and/or Linux services) 
@@ -40,12 +37,12 @@ The above is the bare minimum needed to run. As the number of flows running on a
 
 
 If you install your JMS and container as well within your network and not in the cloud, please keep in mind that you need to open port 8443 (and 8444 in case of failover) as well for incoming communication.
-
-### Java runtime and eMagiz runtime compatibility
-
+ 
+## Java runtime and eMagiz runtime compatibility
 Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. However,  Oracle will stop supporting older version of Java at some point in time. This behavior we saw when Oracle stop the support for Java 7. This chapter will discuss the implications of a new version of Java or a new eMagiz runtime version. 
 Different elements will be discussed. The following schema will show the compatibility of eMagiz in relation with Java and the flow build numbers. 
- 
+<p align="center"><img  src="../../img/howto/runtime-win-compatible.png"></p>
+
 X = Not compatible 
 ! = Caution, either not compatible or not tested 
 V = Compatible
@@ -53,9 +50,9 @@ V = Compatible
 With runtime we mean the version of the eMagiz runtime. Not only flows do have a version number, eMagiz is also continuously developing their runtime as well. The newest runtime version above 5.x is only compatible with Java 8. You can check your runtime version in eMagiz Manage -> Monitoring. Search for ‘uptime’ in the message search field. The results will show what the runtime version of the runtime is. Runtime versions above 5.x show also the version number in the log lines when starting the runtime.
 With build number we mean the flow build number is eMagiz. You can check them either in Deploy -> Releases or in your Runtime Dashboard.
 Check before your installation what runtime should be used. Most preferable is to use Java 8 and the newest eMagiz runtime. If that is not possible, please check if your situation is applicable above. 
-If you have a situation that you end up with the yellow exclamation mark or you are unsure, please check with your eMagiz consultant or contact person of eMagiz about what the possibilities are.
-
-### How to install runtime
+If you have a situation that you end up with the yellow exclamation mark or you are unsure, please check with your eMagiz consultant or contact person (emagizcc@capegroep.nl) about what the possibilities are.
+ 
+## How to install runtime
 This chapter will discuss a step to step guideline of how to install a new eMagiz runtime of 5.X or higher. This how to is only applicable for a Windows environment. Please see the How to Linux installation further 
 If you need to install an earlier version, please also read the extra information ‘Installing an older version of the eMagiz runtime’
 1)	The first step of this How-To is to make sure before installing that the requirements as stated above are met. 
@@ -63,15 +60,26 @@ If you need to install an earlier version, please also read the extra informatio
 2)	Go to the server where you need to install the runtime.
 
 3)	Check the JAVA_HOME system variable if it is set and is directed to the correct folder. You can do this by going to ‘This Computer’.
-   - Click with your right mouse button on This PC and go to Properties. The following screen pops up and go to Advanced System Settings.
-   - Go to Environment Variables.
-   - Check if the JAVA_HOME system veriable exists and it directs to the correct JAVA directory. If it does not exists, please add it.
- 
+
+<p align="center"><img  src="../../img/howto/runtime-win-install-step3-1.png"></p>
+
+
+Click with your right mouse button on This PC and go to Properties. The following screen pops up and go to Advanced System Settings.
+<p align="center"><img  src="../../img/howto/runtime-win-install-step3-2.png"></p>
+
+
+Go to Environment Variables.
+<p align="center"><img  src="../../img/howto/runtime-win-install-step3-3.png"></p>
+
+Check if the JAVA_HOME system veriable exists and it directs to the correct JAVA directory. If it does not exists, please add it.
+<p align="center"><img  src="../../img/howto/runtime-win-install-step3-4.png"></p>
+
+
 
 4)	Download the eMagiz runtime of your connector, JMS or container via eMagiz Deploy phase in the Containers tab on the server where it needs to be installed. 
 Please note the environment you want the runtime of. If you download the runtime of the wrong environment you will send to or receive of the wrong environment, for example you are testing and sending test messages on the live environment
 In this case below, we see the that we are downloading a connector runtime Appeee for the Test environment.
- 
+<p align="center"><img  src="../../img/howto/runtime-win-install-step4-1.png"></p>
 
 5)	Unzip your download package into a directory which is not too deep into the directory structure. A directory structure which is too deep will cause issues when extracting the runtime.
 For example use: C://eMagiz/test
@@ -82,12 +90,11 @@ Do not use: C://Programs/eMagiz/test/connector/appeee/installation
 7)	In the Bin folder, you can validate if the service can make a connection via karaf.bat. 
 To check the connection of the service, use right mouse button the execute the file as Administrator.
 Please make sure that if you are installing a connector or a container that the JMS runtime is running.
-
- 
-
-
+<p align="center"><img  src="../../img/howto/runtime-win-install-step4-2.png"></p>
 
 8)	A screen will pop up and will show you the following:
+<p align="center"><img  src="../../img/howto/runtime-win-install-step8-1.png"></p>
+
 
 Use the command ‘log:tail’ to see the full log. You will see the full stack trace. If the installation is successful, you should see as result:
 67 - org.eclipse.gemini.blueprint.extender - 2.1.0.RELEASE | Application context successfully refreshed (OsgiBundleXmlApplicationContext(bundle=nl.capesystemsintegration.cape.bus.emagcc.jms-server-01.spring, config=nl.capesystemsintegration.cape.bus.emagcc.jms-server-01.spring_1.0.3.28.xml))
@@ -101,15 +108,21 @@ If you see an error or the popup closes itself immediately, please check the abo
 10)	Close the popup that is shown (Stop your karaf executable). This makes sure that you stop the karaf.bat from working
 
 11)	Install the windows service to ensure that the runtime will automatically start and stop when the server starts, stops or restarts.
-You can do this by running the ‘install-service.bat’. 
+You can do this by running the ‘install-service.bat’.
+<p align="center"><img  src="../../img/howto/runtime-win-install-step11-1.png"></p>
  
+
 12)	Please check if the service is created. This can be viewed via Services in Windows. You can find Services by using the navigation bar of Windows and searching for Services or typ-in ‘Services.msc’ in your run-window (WINDOWS+R) and press enter.
 You will find in the list of services your eMagiz runtime service.
- If you click on the service, you can either start, stop or restart the service.
+
+<p align="center"><img  src="../../img/howto/runtime-win-install-step12-1.png"></p>
+If you click on the service, you can either start, stop or restart the service.
 
 13)	Click with your right mouse button on the service and select Properties.
 You will see the following screen.
- 
+<p align="center"><img  src="../../img/howto/runtime-win-install-step13-1.png"></p>
+
+
 For the start up type, please check Automatically (delayed start)
 In the Tab Log On, you are able to change the user that starts this service, if necessary. This mostly occurs when you are requested to use a different user for the service than your windows user due to security reasons.
 
@@ -118,13 +131,12 @@ In the Tab Log On, you are able to change the user that starts this service, if 
 
 16)	If everything is working correctly, document the steps to access the server and environment and the credentials.
 
-Sizing upgrade addendum
+## Sizing upgrade addendum
 
 1)	Estimate the size and the predicted load of the runtime and decide if the default memory settings are enough. If you need more memory, for example when you use more than 20 flows on one connector or if some of the flows running on your connector use up more memory as predicted / default. In these cases go to your etc folder of your runtime installation. In this folder you will find a wrapper.log file. See below where you can change the memory settings. Restart the runtime afterwards to make sure that the new settings are applied
+<p align="center"><img  src="../../img/howto/runtime-win-install-sizing.png"></p>
 
- 
-
-### Multiple Java versions on same server addendum
+## Multiple Java versions on same server addendum
 
 When confronted with a situation in which you have to support multiple runtime versions with multiple Java versions. This is mainly the case when both Acceptance and Production connectors are running on the same server on-premise or when you migrate environments in steps. To determine the correct Java version needed for your runtime please see the attached picture detailed under Java runtime and eMagiz runtime compatibility. 
 Be warned: These steps need to be taken before you install a runtime. If you have already installed the runtime please use the uninstall-service.bat action to uninstall the service before proceeding. When confronted with this situation on a live environment please first discuss your actions with CAPE support.
@@ -134,5 +146,3 @@ Be warned: These steps need to be taken before you install a runtime. If you hav
 4) Search (CTRL + F) for: rem SET JAVA_HOME and change this to SET JAVA_HOME=<Java path>      The Java path refers to the location (path) where Java (8) is installed. Commonly this path will look like: 	 ‘C:\Program Files\Java\jre1.8.x_xxx’ of ‘C:\Program Files\Java\jdk1.8.x_xxx’.
 Be warned: Make sure no spaces are surrounding the ‘=’ character
 5) Save the file as administrator to ensure that changes made in the file are also represented in 
-
-
