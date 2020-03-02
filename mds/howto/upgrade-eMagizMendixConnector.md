@@ -173,7 +173,7 @@ The last step is to clean up the project directory and then committing your cust
  - Error handling
  - Retry mechanisme
  
-# Step plan upgrading the eMagiz Mendix Connector
+## Step by step plan to upgrade the eMagiz Mendix Connector
 
 To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps from above need to be performed:
 
