@@ -10,6 +10,8 @@ This packages has been created to support clients that are moving towards Mendix
 
 To take benefit from this, eMagiz has released this version to take the first steps in this direction. Below are some more details and instructions to use this new version. Please read these carefully.
 
+Please find the package on the usual location: Under Deploy --> On-premise --> Runtime downloads tab
+
 ## Comparing eMagiz Mendix connector
 
 | Mendix V6/V7 Connector| Mendix V8 Connector|
