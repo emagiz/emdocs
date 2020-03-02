@@ -9,7 +9,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [On-premise eMagiz runtime installation for Windows](runtime-installations-onpremise-windows.md) | - [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)|
 |  | - [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) |
 
-| Product specifics| to be determined|
+| Product specifics| How2 Documents|
 | ------ | ------ |
 |- [eMagiz Connector for Mendix 8](emagizmendix-V8.md)| - [Configuring keystores en truststores in eMagiz](how2-for-keystores.md)|
 |- [How to deploy using Releases](deploy-releases.md) | |
