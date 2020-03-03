@@ -46,3 +46,8 @@ These are the items that the eMagiz team is planning to improve in the course of
     - Auto download correct EMC version
     - “Download single file” only contains infra component	
 - Remove infra component all together 
+
+## Migration from Mendix 7 to Mendix 8
+These are the steps and notes that you need to take in order to migrate an existing Mendix model to use the new version of the eMagiz Connector for Mendiux 8. 
+
+<<tba>>
