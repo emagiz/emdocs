@@ -77,7 +77,7 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 - **Webservices cloud:**  Add the webservice in the cloud which is hosting the Mendix Project. If your project is hosted in the Mendix cloud, you need to enable acces to your network for the URLs which contain '/emagiz-mendix-connector/'. If it runs locally or is hosted in another cloud environment make sure to enable acces the acces in the firewall to the port 5445 or 8443 depending on whether you migrated or not to eMagiz5.
    
-- **Request handler** (only for Mendix version proir to V8): 
+- **Request handler** (only for Mendix version prior to V8): 
    - Import xml schema into req handler configuration from the eMagiz HIP. 
    - Create consumed web service in Mx project based on the url 'the url to your MX project' + '/emagiz-mendix-connector/' + 'wsdl' (e.g.: http://localhost:8080/emagiz-mendix-connector/wsdl) and then press 'Import'.  	        
     - Call the webervice in the appropriate MF.   
@@ -89,7 +89,7 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 ##  4. Usage  
 - Deployment/updating flows
-- Starting/stopping flows
+- Starting/stopping flows (for version of Mendix prior to V8)
 - Explanation User Interface
 - Version Numbering
 
