@@ -1,3 +1,9 @@
+# Introduction
+
+This document is valid for all eMagiz Mendix connector versions that are currently supported. That includes the most recent addition that support Mendix version 8, which brings some changes in the way the Connector is used.
+
+Last update on March 6th, 2020
+
 # eMagiz Mendix Connector
 
 The eMagiz Mendix Connector (EMC) is a Mendix Project module that you can import into your application to make it communicate with eMagiz. To make this connector work correctly, you need to follow the steps presented below. But before starting to follow these steps there are a few things that should be known. Even though the EMC module is imported in the Mendix project, Mendix does not know that it has an EMC inside and neither does the EMC know it is inside a Mendix Project. So, the way to make them communicate is using the webservice calls that Mendix supports. But first, in order for the EMC to be able to communicate with the bus, it needs to know the credentials with which it can connect to the HIP bus so that it can retrieve the list of properties. These credentials are referred as constants below in the steps.
@@ -71,7 +77,7 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 - **Webservices cloud:**  Add the webservice in the cloud which is hosting the Mendix Project. If your project is hosted in the Mendix cloud, you need to enable acces to your network for the URLs which contain '/emagiz-mendix-connector/'. If it runs locally or is hosted in another cloud environment make sure to enable acces the acces in the firewall to the port 5445 or 8443 depending on whether you migrated or not to eMagiz5.
    
-- **Request handler**: 
+- **Request handler** (only for Mendix version prior to V8): 
    - Import xml schema into req handler configuration from the eMagiz HIP. 
    - Create consumed web service in Mx project based on the url 'the url to your MX project' + '/emagiz-mendix-connector/' + 'wsdl' (e.g.: http://localhost:8080/emagiz-mendix-connector/wsdl) and then press 'Import'.  	        
     - Call the webervice in the appropriate MF.   
@@ -83,7 +89,7 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 ##  4. Usage  
 - Deployment/updating flows
-- Starting/stopping flows
+- Starting/stopping flows (for version of Mendix prior to V8)
 - Explanation User Interface
 - Version Numbering
 
@@ -167,7 +173,7 @@ The last step is to clean up the project directory and then committing your cust
  - Error handling
  - Retry mechanisme
  
-# Step plan upgrading the eMagiz Mendix Connector
+## Step by step plan to upgrade the eMagiz Mendix Connector
 
 To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps from above need to be performed:
 
