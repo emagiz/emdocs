@@ -1,8 +1,7 @@
 # eMagiz How-to documentation site
 In the sections below, you will find some online documents that are relevant for eMagiz users. Please contact eMagiz Product Management at info@emagiz.com for further questions and suggestions.
 
-
-| Deployment & Migration| Best Practices|
+| **Deployment & Migration**| **Best Practices**|
 | ------ | ------ |
 |<img width=800/>|<img width=800/>|
 | - [Migrate to eMagiz 5 (Artemis)](upgrade-to-eMagiz5.md)| - [Best practices for SFTP](sftp-best-practice.md)|
@@ -10,7 +9,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [On-premise eMagiz runtime installation (Linux & Windows)](runtime-installations-onpremise.md) |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) |
 | - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) |  |
 
-| Product specifics| How2 Documents|
+| **Product specifics**| **How2 Documents**|
 | ------ | ------ |
 |<img width=800/>|<img width=800/>|
 |- [eMagiz Connector for Mendix 8](emagizmendix-V8.md)| - [Configuring keystores en truststores in eMagiz](how2-for-keystores.md)|
