@@ -34,9 +34,15 @@ Please refer to the eMagiz Community page, under Academy to find the session whe
 ## Key notes in using this package
 
 Please take care of the following items
-- tba
+- These 2 libraries could cause issues with the current version of the Connector - please evaluate the necessity of these. 
+  - lib x
+  - lib x
 
 ## Planned improvements for 2020
-
-- tba
-
+These are the items that the eMagiz team is planning to improve in the course of 2020
+- eMagiz Portal changes as related to the display & configuration of this Connector: 
+    - Register Mendix version
+    - Remove specific older items from the eMagiz portal (e.g. Request Handler)		
+    - Auto download correct EMC version
+    - “Download single file” only contains infra component	
+- Remove infra component all together 
