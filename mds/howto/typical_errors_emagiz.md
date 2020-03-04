@@ -14,5 +14,3 @@ Below are some common error messages in eMagiz that can help to understand these
 |6|Message RejectedException|Message was rejected due to XML Validation errors|cvc-complex-type.2.4.d: Invalid content was found starting with element X. No child element is expected at this point.|The message contains element X but according to the definition it’s expected on a different location sequence wise|Change the location only when agreed between both systems|
 |7|Message DeliveryException |no channel resolved by router and no default output channel defined
 |xxx|In the routing process, eMagiz can’t put the message to any of the channels, nor is there a default output channel for unhandled messages|Please add a default channel for unmanaged messages in the Routing. The null Channel will result in a silent disappearance of the message.|
-|8|xxx|xxx|xxx|xxx|xxx|
-|9|xxx|xxx|xxx|xxx|xxx|
