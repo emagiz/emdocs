@@ -10,6 +10,8 @@ This packages has been created to support clients that are moving towards Mendix
 
 To take benefit from this, eMagiz has released this version to take the first steps in this direction. Below are some more details and instructions to use this new version. Please read these carefully.
 
+**IMPORTANT NOTE**: This version removes the web service layer from the eMagiz Mendix Connector. Mendix now connects to the eMagiz bus directly using Java Actions in microflows. The first upgrade to this new version may take more time for development and testing than previous updates of the eMagiz Mendix Connector. After that, however, it should be easier in use for both Mendix and eMagiz developers. 
+
 Please find the package on the usual location: Under Deploy --> On-premise --> Runtime downloads tab
 
 ## Comparing eMagiz Mendix connector
@@ -42,8 +44,3 @@ These are the items that the eMagiz team is planning to improve in the course of
     - Auto download correct EMC version
     - “Download single file” only contains infra component	
 - Remove infra component all together 
-
-## Migration from Mendix 7 to Mendix 8
-These are the steps and notes that you need to take in order to migrate an existing Mendix model to use the new version of the eMagiz Connector for Mendiux 8. 
-
-<<tba>>
