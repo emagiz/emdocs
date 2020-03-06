@@ -86,92 +86,6 @@ These constants are used by the Mendix Connector to get access to the HIP servic
                 In the SOAP Response tab you can opt for storing the response into a variable. To do so, you need to create an import mapping which maps the response of the webservicce into an entity from the domain model.
    
 
-
-##  4. Usage  
-- Deployment/updating flows
-- Starting/stopping flows (for version of Mendix prior to V8)
-- Explanation User Interface
-- Version Numbering
-
-##  5. Possible errors  
-
-There are several situations where you get errors/warnings in your project as a result of the installation/updating the eMagiz Mendix connector.
-
-  - **Log errors/warnings**
-  
- An example of this is when The Mendix project has multiple languages. After the import you will receive multiple errors/warnings. These are easy to solve by following the steps.
-
-<p align="center">
-  <img src="../../img/howto/emc-language-operations.png"> 
-</p>
-
-<p align="center">
-  <img src="../../img/howto/emc-language-operations-2.png"> 
-</p>  
-
-
-
-  - **Layout errors that can be solved with the eMagiz cleanup tool**
-  
-Another example is the layouts. These can be solved by choosing the layouts that are used within your project.  
-
-<p align="center">
-  <img src="../../img/howto/emc-display-project-directory.png"> 
-</p> 
-
-The cleanup is in the project directory Under the Resource folders.
-
-<p align="center">
-  <img src="../../img/howto/emc-cleanup-tool.png"> 
-</p> 
-
-Click right mouse button (or double click) For "Openings with | Java™ Platform SE Binary
-
-<p align="center">
-  <img src="../../img/howto/emc-open-cleanup-tool-2.png"> 
-</p> 
-
-After performing this action it is good to check the userlib for verification. This can be based on the following steps. First open your project folder (see below)
-
-<p align="center">
-  <img src="../../img/howto/emc-display-project-directory.png"> 
-</p>
-
-Then navigate to Userlib. In this userlib, there should only be one reference to a version of the eMagizMendixConnector. (see below)
-
-<p align="center">
-  <img src="../../img/howto/emc-mendix-jar-file.png"> 
-</p>
-
-For reference, all JAR files using the eMagizMendixConnector (version 2.4.1):  
-
-<p align="center">
-  <img src="../../img/howto/emc-all-jar-files.png"> 
-</p>
-
-  - **Cleanup the project directory to avoid other problems**
-
-The last step is to clean up the project directory and then committing your customization. Ideally, you perform all of these actions in a single commit so that you can perform a rollback and so that you can easily isolate any problems.
-
-<p align="center">
-  <img src="../../img/howto/emc-mendix-clean-project-directory.png"> 
-</p>  
-
-##  6. Best practices  
-
- - Configure startup time
- - Communication in conjunction with Mendix Inbound/outbound Web services
- - Conflicting userlib AppStore Modules
- - Tracing WebServices Lognode at debugging
- - Deployments – updates request handler
- - Restart
- - Stop
- - Start
- - OnDersteunde Mendix Versions
- - What to consider
- - Multithreading
- - Error handling
- - Retry mechanisme
  
 ## Step by step plan to upgrade the eMagiz Mendix Connector
 
@@ -180,7 +94,4 @@ To get a new version of the eMagiz Mendix Connector in a Mendix app, the followi
    1) [Step 1](upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
    2) [Step 2](upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
    3) When it comes to [step 3](upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3](upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
-   4) [Step 4](upgrade-eMagizMendixConnector.md#4-usage)   
-   <!--- to be detailed later with Samet --->
-   5) In [step 5](upgrade-eMagizMendixConnector.md#5-possible-errors) there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there. It is highly recommended to try the eMagiz Cleanup Tool.
-   6) [Step 6](upgrade-eMagizMendixConnector.md#6-best-practices)
+   4) In the best practice document for the eMagiz Mendix Connector there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there. It is highly recommended to try the eMagiz Cleanup Tool.
