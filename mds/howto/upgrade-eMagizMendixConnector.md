@@ -73,9 +73,9 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 - **Keystore/Truststore:** In the resources folder of the eMagiz Mendix Connector you need to add the keystore and truststore from the eMagiz HIP which can be found in the Resources tab of the Create phase.
 
- - **Webservice user:** In order for the eMagiz Mendix Connector flow you need to create a user of the consumed webservice in the Mendix project (Administration Overview page) and use these credentials as the values of the username and password values of the connector flow (they can be defined in Deploy -> Properties).
+ - **Webservice user** (only for Mendix version prior to V8): In order for the eMagiz Mendix Connector flow you need to create a user of the consumed webservice in the Mendix project (Administration Overview page) and use these credentials as the values of the username and password values of the connector flow (they can be defined in Deploy -> Properties).
 
-- **Webservices cloud:**  Add the webservice in the cloud which is hosting the Mendix Project. If your project is hosted in the Mendix cloud, you need to enable acces to your network for the URLs which contain '/emagiz-mendix-connector/'. If it runs locally or is hosted in another cloud environment make sure to enable acces the acces in the firewall to the port 5445 or 8443 depending on whether you migrated or not to eMagiz5.
+- **Webservices cloud** (only for Mendix version prior to V8): Add the webservice in the cloud which is hosting the Mendix Project. If your project is hosted in the Mendix cloud, you need to enable acces to your network for the URLs which contain '/emagiz-mendix-connector/'. If it runs locally or is hosted in another cloud environment make sure to enable acces the acces in the firewall to the port 5445 or 8443 depending on whether you migrated or not to eMagiz5.
    
 - **Request handler** (only for Mendix version prior to V8): 
    - Import xml schema into req handler configuration from the eMagiz HIP. 
@@ -91,7 +91,8 @@ These constants are used by the Mendix Connector to get access to the HIP servic
 
 To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps from above need to be performed:
 
-   1) [Step 1](upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
-   2) [Step 2](upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
-   3) When it comes to [step 3](upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3](upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
-   4) In the best practice document for the eMagiz Mendix Connector there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there. It is highly recommended to try the eMagiz Cleanup Tool.
+   1) [Step 1 - Download](upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
+   2) [Step 2 - Import](upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
+   3) When it comes to [step 3 - Configuration](upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3 - Configuration](upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
+   4) Ensure to double check the functioning of the eMagiz Connector in case Mendix V8 is used - please refer to the [Release note for the eMagiz Connector for Mendix 8](relnotes-emagizmendix-V8.md) for more information
+   5) In the [best practice document for the eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there. It is highly recommended to try the eMagiz Cleanup Tool.
