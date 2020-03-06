@@ -4,7 +4,7 @@ This document is valid for all eMagiz Mendix connector versions that are current
 
 Last update on March 6th, 2020
 
-## Positoning of the eMagiz Connector for Mendix 8 package
+## Positioning of the eMagiz Connector for Mendix 8 package
 
 This packages has been created to support clients that are moving towards Mendix 8 in their environment. The latest version of eMagiz ha bee upgraded to use AMQP queues, which effectively means that direct connections from Mendix to onramp and offramp queues can be made. This has a positive effect as less effort is required in Mendix to interact with eMagiz and there is an easier management of the environment as only the infra flows need to be deployed (no exit and entry flows managed in Mendix).
 
@@ -29,18 +29,15 @@ Please refer to the eMagiz Community page, under Academy to find the session whe
 
 ## Key notes in using this package
 
-Please take care of the following items when you start to use this version of the Connector to ensure you use it properluy
+Please take care of the following items when you start to use this version of the Connector to ensure you use it properly
 - Use supplied Java actions in the eMagiz Mendix connector to set up the connections
 - Make a single microflow to register all Message Listeners. Link it to the After Startup microflow
-- These 2 libraries could cause issues with the current version of the Connector - please evaluate the necessity of these before deleteing them
+- These 2 libraries could cause issues with the current version of the Connector - please evaluate the necessity of these before deleting them
   - xerces.xercesImpl.2.8.1.jar
   - xmlbeans-3.0.1.jar.ExcelImporter.jar
 
 ## Planned improvements for 2020
 These are the items that the eMagiz team is planning to improve in the course of 2020
-- eMagiz Portal changes as related to the display & configuration of this Connector: 
-    - Register Mendix version
-    - Remove specific older items from the eMagiz portal (e.g. Request Handler)		
-    - Auto download correct EMC version
-    - “Download single file” only contains infra component	
-- Remove infra component all together 
+- eMagiz Portal changes (e.g. removing deprecated artifacts like the request handlers)  
+- Remove the infra configuration and simplify the "Configuration overview" snippet
+- Exposing the java-actions as microflow actions
