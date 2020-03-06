@@ -21,22 +21,18 @@ Please find the package on the usual location: Under Deploy --> On-premise --> R
 | Each flow (exit, entry and infra) needs to be deployed | Only infra flow needs to be deployed once, microflows connected to the queues directly |
 |Incoming webservice <p align="center"><img  src="../../img/howto/eMM Connector - Old view webservice.png"></p>| Microflow - Java action details<p align="center"><img  src="../../img/howto/eMM Connector - New view webservice.png"></p>|
 
-## Best practices eMagiz Connector for Mendix 8
-
-- Make one microflow to register all queues. Link it to the After Startup microflow
-- Use supplied Java actions in the eMagiz Mendix connector to set up the connections
-- Use Alerting to inform Support / Customer when a Job Failed. Can be done based on logging created by the data pipeline
-
 ## Short instruction video
 
 Please refer to the eMagiz Community page, under Academy to find the session where the eMagiz Mendix Connector is introduced, and where a short example is worked out. In the Module eMagiz ABL Block 1 (Beta sessions) you can find this session.
 
 ## Key notes in using this package
 
-Please take care of the following items
-- These 2 libraries could cause issues with the current version of the Connector - please evaluate the necessity of these. 
-  - lib x
-  - lib x
+Please take care of the following items when you start to use this version of the Connector to ensure you use it properluy
+- Use supplied Java actions in the eMagiz Mendix connector to set up the connections
+- Make a single microflow to register all Message Listeners. Link it to the After Startup microflow
+- These 2 libraries could cause issues with the current version of the Connector - please evaluate the necessity of these before deleteing them
+  - xerces.xercesImpl.2.8.1.jar
+  - xmlbeans-3.0.1.jar.ExcelImporter.jar
 
 ## Planned improvements for 2020
 These are the items that the eMagiz team is planning to improve in the course of 2020
