@@ -60,22 +60,27 @@ Below the example of the Send Message microflow that contains this Java Action.
 
 **Request**
 1. Request Queue - enter the proper value for the offramp request queue of eMagiz where the request message needs to be put on.
-2. Validate request - 
-3. Request Import Mapping - 
+2. Validate request - Whether the request needs to be validated - works only for XML (not JSON)
+3. Request Import Mapping - Import mapping document that contains the mapping from XML or JSON to the domain model object
+4. Request limit - The maximum number of objects in the request. When set to 0-1, it means unlimited. When set to 1 the microflow will only be called when the import mapping is not empty. Other values means that the microflow is always called regardless whether the import mapping is empty or not
 
 **Response**
-1. Generate Response Microflow - 
-2. Response Limit - 
-3. Response export mapping
-4. Validate Response -
+1. Generate Response Microflow - Microflow that is called when the message is received
+2. Response Limit - See request limit above
+3. Response export mapping - Export mapping that maps XML/JSON to the domain model object
+4. Validate Response - Whether the request needs to be validated - works only for XML (not JSON)
  
-**Message Listeners**
-1. Error handling
-2. max attempts
-3. Back off period
-4. Concurrent cinsumers
-5. Max concurrent users
-6. Idle cosumer limit
+**Message Listeners Option**
+1. Error handling - Optional, default ERROR-MESSAGE. There are four options to influence the behavior when an error message is generated: 
+	a. Generate an error message
+	b. Ignore error message
+	c. Log error message only
+	d. Rollback changes
+2. Max. attempts - Optional, default 1. When a delivery problem arises, number of attempts to redeliver the message
+3. Back off period - Optional, default 1. Period between the different attempts to redeliver the message
+4. Concurrent consumers - Optional, default 1. Static number of consumer that listen to the registered queue - option used to tweak/tune the performance
+5. Max. concurrent users - Optional, default 1. Dynamic number of consumer that listen to the registered queue - option used to tweak/tune the performance
+6. Idle consumer limit - Optional, default 1. Minimum number of consumers that listen to the registered queue 
 
 
 ### Sending synchronous message request via provided Java actions ###
@@ -83,16 +88,16 @@ Below the example of the Send Message microflow that contains this Java Action.
 ![](../../img/howto/emmxv8_java_action_sendmsgasynch2.png)
 
 **Request**
-1. Request Mapping parameter - 
-2. Request Export mapping - 
-3. validate Request - 
+1. Request Mapping parameter - Mendix Domain Model object to export JSON or XML using specified export mapping
+2. Request Export mapping - Contains the export mapping from domain model object to XML or JSON
+3. Validate Request - Whether request should be validated or not
 4. Request Queue - enter the proper value for the onramp request queue of eMagiz where the request message needs to be put on.
 
 **Response**
 1. Response queue - enter the proper value for the onramp queue of eMagiz where the response message needs to be picked up from
-2. Validate Response - 
-3. Response import mapping
-4. Response Object type -
+2. Validate Response - Whether response should be validated or not
+3. Response import mapping - Mapping object from XML/JSON to domain model object
+4. Response Object type - Output domain model object of the import mapping and input for the microflow
 
 
 ## Key notes in using this package

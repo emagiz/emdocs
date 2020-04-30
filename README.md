@@ -1,38 +1,54 @@
 # eMagiz Platform documentation
 ---  
-![alttext](img/eMagiz_enterprise_ipaas.png) 
-- [Integration scenarios and Messaging concepts](mds/integration/index.md)  
-- [ILM Methodology – How2 apply methodology](mds/iPaaS/index.md)
-- [Reference guide for components](mds/referenceguide/index.md) 
-- [How2's](mds/howto/index.md)
+
+This is a simple readme file - The real home page is located in the website part of the Reference tool to create the documentation
+
+<p align="center"><font size="5" face="verdana" color="green"><b>eMagiz Platform Documentation Portal</b></font></p>
+Positioning of eMagiz as a Lowcode, Enterprise Integration Platform as Service:
+		<ul>
+		<li><font size="2" face="verdana" color="green"><b>Low-Code</b></font>: no development skills required</li>
+		<li><font size="2" face="verdana" color="green"><b>Enterprise</b></font>: services full enterprise – all integration patterns</li>
+		<li><font size="2" face="verdana" color="green"><b>Integration</b></font>: connecting all types of software applications</li>
+		<li><font size="2" face="verdana" color="green"><b>Platform</b></font>: all-in-one development, execution and governance</li>
+		<li><font size="2" face="verdana" color="green"><b>as a Service</b></font>: cloud based with automated cloud hosting</li>
+		</ul>
+		In the following pages you will find various topics to support your activities in eMagiz. 
+		
+		<ul>
+		<li><a href="/docs/referenceguide/">Technical reference guide for Integration Model Components</a></li>
+		<li><a href="/docs/integration/">Key concepts - Integration patterns</a></li>
+		<li><a href="/docs/iPaaS/">ILM Methodology</a></li>
+		<li><a href="/docs/howto/">User Guides</a></li>
+		</ul>
+
 ---
-
+<table>
+			<thead>
+				<td colspan="3"><font size="5" face="verdana"><b>eMagiz Integration Types</b></font></td>
+				
+			</thead>
+			<tbody>
+				<tr>
+					<td><b>API Gateway</b><p align="center"><img src="../img/API_Gateway.png" alt="API Gateway"/></p></td>
+					<td>
+					An API gateway allows to speed up your API development and lift your integration landscape to a next level. eMagiz support this integration patterns inside the iPaaS platform and provides a powerful solution for API Management features. API gateways are often used to channel synchronous request from other applications, and provide responses back to these applications in the form of data of other outcomes that allow the business process to continue. Inside microservices architectures, messages are processed using standard protocols and formats with all the required security (authentication & authorization).
+					eMagiz has the API Gateway functionality with a Release To Market (RTM) version available. In de course of Q2, the API Gateway will be made GA including the required documentation and training. Please see www.emagiz.com for more information and read more about API Gateway in the Key Concepts section.
+					</td>
+				</tr>
+				<tr>
+					<td><b>Messaging</b><p align="center"><img src="../img/Messaging.png" alt="API Gateway"/></p></td>
+					<td>Organizations use many applications to support their business processes, and in regular landscape all of these applications are required to exchange data with each other to complete business processes. Some of the required data might be outside the organization. The messaging integration pattern allows to process messages that contain data in a secure, reliable manner. Whether that is processed synchronously or asynchronously – both are handled in the Messaging in eMagiz. Nearly all message formats and exchange protocols are supported. Please see www.emagiz.com for more information and read more about Messaging in the Key Concepts section.
+					</td>
+				</tr>
+				<tr>
+					<td><b>Event Streaming</b><p align="center"><img src="../img/EventStreaming.png" alt="API Gateway"/></p></td>
+					<td>
+					Event Streaming allows to publish data to potential subscribers of that data. Modern microservices architectures are in need for a generic data exchange so that micro services can be more easily changed, the associated user interface updated with no need to change the complete application landscape or user interface. eMagiz provides means to manage these event mesh in solid, but easy way. Please see www.emagiz.com for more information and read more about Event Streaming in the Key Concepts section.
+					</td>
+				</tr>
+			</tbody>
+		</table>
  
-
-We position GEERT as the low-code Enterprise Integration Platform as Service (iPaaS), driving the [bi-modal](https://www.gartner.com/it-glossary/bimodal/) IT strategy of Gartner. 
-
-Our positioning is based on 3 pillars:
-
-**1. Pillar 1: Architected models.** We empower citizen integrators (working on [mode 2](https://www.gartner.com/it-glossary/bimodal/) initiatives) with architected, model driven design tools that   
-  * add abstraction and automation to delivery and support processes  
-  * mitigate the risk of accidental architectures  
-  * create a common language to collaborate with architects and IT pros  
-  
-**2. Pillar 2: Full Integration Lifecycle Management support.** At https://my.emagiz.com we fully support the lifecycle of integrations, strongly focused on jointly collecting and sharing the required information to rapidly connect mode 2 initiatives to the mode 1 ecosystem  
-
-**3. Pillar 3: Built-in patterns and best practices.** We visualize the evolvement of enterprise architectures with models throughout the several lifecycle phases and implemented an extensive set of enterprise integration patterns and best practices  
-
-Combining architected models, full lifecycle support and built-in patterns and best practices, we drive the delivery of bi-modal IT. We help our customers increase their revenue and margins by reducing the time to market of mode 2 integrations and lowering the total costs of ownership to connect with the mode 1 ecosystem.  
-
-Let’s sum up the key facts and figures about eMagiz and our value proposition:
-
-  * 1 Multi-tenant iPaaS, fully supporting Integration Lifecycle Management with 100+ components
-  * Managed Services: [EDI](https://en.wikipedia.org/wiki/Electronic_data_interchange "Electronic Data Interchange"), [ESB](https://en.wikipedia.org/wiki/Enterprise_service_bus "Enterprise Service Bus") & [EAI](https://en.wikipedia.org/wiki/Enterprise_application_integration "Enterprise Application Integration") for 80+ food & [DIY](https://en.wikipedia.org/wiki/Do_it_yourself "Do It Yourself") retailers
-  * We help our partners and customers drive bi-modal IT integration:
-    * Reducing [TTM](https://en.wikipedia.org/wiki/Time_to_market "Time To Market") of mode 1 application  integration, increasing revenue and margins of mode 2 initiatives
-    * Lowering [TCO](https://en.wikipedia.org/wiki/Total_cost_of_ownership "Total Cost of Ownership") of integration: smaller teams, faster implementation, reducing maintenance costs
-
-
 <!--- 
 - Tutorials
 - Best practices 

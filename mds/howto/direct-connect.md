@@ -20,7 +20,7 @@ The private addresses which are resolved by above endpoint need to be added to t
 - Comparable solutions exist for Microsoft DNS servers: https://blog.simonw.se/override-a-single-external-hostname-with-internal-dns-entry/
 
 ## Example implementation with BIND
-An example customer has cloudslot 0128 and service endpoint vpce-01234567890123456-io3z36gk allocated to their private endpoint over Direct Connect. A DNS lookup before the change results connecting to the public internet endpoint of the eMagiz Platform Instance:
+An example customer has cloudslot123 and service endpoint vpce-01234567890123456-io3z36gk allocated to their private endpoint over Direct Connect. A DNS lookup before the change results connecting to the public internet endpoint of the eMagiz Platform Instance:
 
 <p align="center"><img  src="../../img/howto/directconnect_picture2.png"></p>
 
