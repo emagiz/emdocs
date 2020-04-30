@@ -41,7 +41,8 @@ If you install your JMS and container as well within your network and not in the
 ## Java runtime and eMagiz runtime compatibility
 Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. However,  Oracle will stop supporting older version of Java at some point in time. This behavior we saw when Oracle stop the support for Java 7. This chapter will discuss the implications of a new version of Java or a new eMagiz runtime version. 
 Different elements will be discussed. The following schema will show the compatibility of eMagiz in relation with Java and the flow build numbers. 
-<p align="center"><img  src="../../img/howto/runtime-win-compatible.png"></p>
+
+![](../../img/howto/runtime-win-compatible.png)
 
 X = Not compatible 
 ! = Caution, either not compatible or not tested 
@@ -61,25 +62,31 @@ If you need to install an earlier version, please also read the extra informatio
 
 3)	Check the JAVA_HOME system variable if it is set and is directed to the correct folder. You can do this by going to ‘This Computer’.
 
-<p align="center"><img  src="../../img/howto/runtime-win-install-step3-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step3-1.png)
 
 
 Click with your right mouse button on This PC and go to Properties. The following screen pops up and go to Advanced System Settings.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step3-2.png"></p>
+
+![](../../img/howto/runtime-win-install-step3-2.png)
+
 
 
 Go to Environment Variables.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step3-3.png"></p>
+
+![](../../img/howto/runtime-win-install-step3-3.png)
 
 Check if the JAVA_HOME system veriable exists and it directs to the correct JAVA directory. If it does not exists, please add it.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step3-4.png"></p>
+
+![](../../img/howto/runtime-win-install-step3-4.png)
 
 
 
 4)	Download the eMagiz runtime of your connector, JMS or container via eMagiz Deploy phase in the Containers tab on the server where it needs to be installed. 
 Please note the environment you want the runtime of. If you download the runtime of the wrong environment you will send to or receive of the wrong environment, for example you are testing and sending test messages on the live environment
 In this case below, we see the that we are downloading a connector runtime Appeee for the Test environment.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step4-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step4-1.png)
 
 5)	Unzip your download package into a directory which is not too deep into the directory structure. A directory structure which is too deep will cause issues when extracting the runtime.
 For example use: C://eMagiz/test
@@ -90,10 +97,12 @@ Do not use: C://Programs/eMagiz/test/connector/appeee/installation
 7)	In the Bin folder, you can validate if the service can make a connection via karaf.bat. 
 To check the connection of the service, use right mouse button the execute the file as Administrator.
 Please make sure that if you are installing a connector or a container that the JMS runtime is running.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step4-2.png"></p>
+
+![](../../img/howto/runtime-win-install-step4-2.png)
 
 8)	A screen will pop up and will show you the following:
-<p align="center"><img  src="../../img/howto/runtime-win-install-step8-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step4-1.png)
 
 
 Use the command ‘log:tail’ to see the full log. You will see the full stack trace. If the installation is successful, you should see as result:
@@ -109,18 +118,22 @@ If you see an error or the popup closes itself immediately, please check the abo
 
 11)	Install the windows service to ensure that the runtime will automatically start and stop when the server starts, stops or restarts.
 You can do this by running the ‘install-service.bat’.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step11-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step11-1.png)
  
 
 12)	Please check if the service is created. This can be viewed via Services in Windows. You can find Services by using the navigation bar of Windows and searching for Services or typ-in ‘Services.msc’ in your run-window (WINDOWS+R) and press enter.
 You will find in the list of services your eMagiz runtime service.
 
-<p align="center"><img  src="../../img/howto/runtime-win-install-step12-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step12-1.png)
+
 If you click on the service, you can either start, stop or restart the service.
 
 13)	Click with your right mouse button on the service and select Properties.
 You will see the following screen.
-<p align="center"><img  src="../../img/howto/runtime-win-install-step13-1.png"></p>
+
+![](../../img/howto/runtime-win-install-step13-1.png)
 
 
 For the start up type, please check Automatically (delayed start)

@@ -6,9 +6,13 @@ After finishing all flows in create, go to Deploy --> Releases. Initially, there
 
 The Create Phase has two options; refresh and details.
 
-1.1 ![alt text](../../img/howto/Refresh.JPG) **Refresh:** <i>everytime</i> when something is changed in Create and you want to release or compare this, you have to click the button 'Refresh'. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made. 
+1.1 
+![alt text](../../img/howto/Refresh.JPG) 
+**Refresh:** <i>everytime</i> when something is changed in Create and you want to release or compare this, you have to click the button 'Refresh'. This button updates the Create Phase release. When clicking on the 'New Release' button, a new release from Create is made. 
 
-1.2 ![alt text](../../img/howto/Details.JPG) **Details:**  in this pop-up the details of the release are shown. Open this pop-up to rename or delete the release. To delete a release, there is a button on the bottom of the pop-up 'Delete'.
+1.2 
+![alt text](../../img/howto/Details.JPG) 
+**Details:**  in this pop-up the details of the release are shown. Open this pop-up to rename or delete the release. To delete a release, there is a button on the bottom of the pop-up 'Delete'.
 
 ## How to install a release?
 All the other releases have the same features, which are edit (2.2), show details (1.2), install (2.3), update to next environment(2.4), filter (2.5).

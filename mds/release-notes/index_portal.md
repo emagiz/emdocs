@@ -6,8 +6,8 @@
 |[8.9.0](8.9.0-split-portal.md)| Split portal| 2019-09-06| 
 |[8.8.0](8.8.0-eleventyone.md)| Eleventyone| 2019-08-23| 
 |[8.7.0](8.7.0-hooray-hooray.md)| Hooray hooray| 2019-08-09| 
-|[8.6.0](8.6.0-knock-knock!-whos-there?.md)| Knock Knock! Who's there?| 2019-07-26| 
-|[8.5.0](8.5.0-whats-up?-docs!.md)| What's up? Docs!| 2019-07-12| 
+|[8.6.0](8.6.0-knock-knock!-whos-there.md)| Knock Knock! Who's there?| 2019-07-26| 
+|[8.5.0](8.5.0-whats-up-docs.md)| What's up? Docs!| 2019-07-12| 
 |[8.4.0](8.4.0-jolly-jumbuck.md)| Jolly jumbuck| 2019-06-28| 
 |[8.3.1](8.3.1-ponco.md)| Ponco| 2019-06-14| 
 |[8.2.0](8.2.0-xperience.md)| Xperience| 2019-05-31| 
@@ -74,7 +74,7 @@
 |[5.16.0](5.16.0-secured-tunnels.md)| Secured tunnels| 2014-09-12| 
 |[5.15.0](5.15.0-water-ripples.md)| Water ripples| 2014-08-14| 
 |[5.14.0](5.14.0-crural-gland.md)| Crural gland| 2014-07-18| 
-|[5.13.1](5.13.1-dive-&-float.md)| Dive & Float| 2014-06-28| 
+|[5.13.1](5.13.0-nest-extensions.md)| Dive & Float| 2014-06-28| 
 |[5.13.0](5.13.0-nest-extensions.md)| Nest extensions| 2014-06-23| 
 |[5.12.0](5.12.0-stream-acceleration.md)| Stream accelartion| 2014-05-19| 
 |[5.11.1](5.11.1-spur-drips.md)| Spur dips| 2014-04-22| 

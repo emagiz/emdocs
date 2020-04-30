@@ -1,6 +1,6 @@
 # Introduction to integration
   
-## The need for integration
+## The need for integration speed
 * Enterprises own applications that are: 
   - custom-build
   - acquired from a third-party
