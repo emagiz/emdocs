@@ -20,4 +20,5 @@ In the sections below, you will find some online documents that are relevant for
 |- [How toadd a relation between two entities](add-a-relation-between-two-entities.md) | - [Creating a network share to drop files into](create-networkshare-win.md)|
 |- [How to add a System](add-a-system.md) | - [Adding MFA to your account](add-mfa-userlevel.md)|
 |- [How to add an attribute](add-an-attribute.md) | - [Transforming Flat Files to XML](flatfile-transformations.md) |
+|- [How to store your Mendix data in AWS Redshift](store-your-mendix-data-in-redshift.md) |  |
 
