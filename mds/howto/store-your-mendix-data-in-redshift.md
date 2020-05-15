@@ -5,11 +5,12 @@ This document explains how to setup a data pipeline between Mendix and AWS Redsh
  
 ## 2. Getting started
 1. Publish the data using OData service in your Mendix project.
-1. Use the Mendix PostgreSQL data structure to create the target table in Redshift (Recommended).
-1. Import the 'Mendix to Redshift' datapipeline flow from the store.
+2. Use the Mendix PostgreSQL data structure to create the target table in Redshift (Recommended).
+3. Import the 'Mendix to Redshift' datapipeline flow from the store.
    <p align="center"><img src="../../img/howto/datapipeline-store-item.png"></p>
-1. Follow the store items instructions to setup the data pipeline.
-1. Follow the rest of this how-to to start using AWS materialized views.
+
+4. Follow the store items instructions to setup the data pipeline.
+5. Follow the rest of this how-to to start using AWS materialized views.
 
 ## 3. Create a materialized view
 1. Use SQL Workbench or the AWS Console to connect to the Redshift database.
