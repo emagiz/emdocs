@@ -14,9 +14,35 @@ In other scenarios please consult an eMagiz consultant local to your region.
 - Save the passwords you set for the keystores in a KeePass password file (or similar tools) so you have a backup for the key store passwords in case someone changes or deletes your properties.
 - Save the certificates in an client internal support application so you can set a notification for when the certificate is about to expire.
 
- 
+
+
 ## 3.	HOW-TO STEPS FOR KEYSTORE IN EMAGIZ FLOWS
-Starting point of this part is that you have already received (either from the customer a .p12 file containing the keypair and a .cer file containing the to be trusted certificate. Please obtain these before proceeding to the next step. Follow these steps carefully in order to acquire the desired result. Before you head into the how-to steps make sure you have downloaded the program Keystore Explorer from the internet. We will use this program to create our trust- and keystore.
+Starting point of this part is that you have already received a certificate file (.pfx, .abc, etc.). Please obtain this before proceeding to the next step. Follow these steps carefully in order to acquire the desired result. Before you head into the how-to steps make sure you have downloaded the program Keystore Explorer from the internet. We will use this program to create our trust- and keystore.
+
+***How to create the proper certificate file (.CER)***
+
+1. Open keystore Explorer
+2. Browse to the PFX or ABC file on your machine and open it
+3. Apply the password in order to open it
+4. Right click on the key, select View Details, Certificate Chain Details. 
+5. Select the top level in the certificate Chain and press Export
+6. Export settings: select the X.509 option
+7. Select folder where to store the .cer file
+
+***How to create the P12 file containing the keypair***
+
+1. Open keystore Explorer
+2. Browse to the PFX or ABC file on your machine and open it
+3. Apply the password in order to open it
+4. Right click on the key, and select Export Keypair
+5. Enter the password of the PFX or ABC file
+6. Enter the new password for the keypair you are going to export
+7. Save the file locally on your disk as a .p12 file
+
+8. Open the .p12 file and using the password just created
+9. Right click on the key, select Edit Certificate Chain, and then Remove Certificate (it will remove the top level certificate of the certificate chain)
+10. Save file
+
 
 ***How to create a Java Trust Store – containing your trusted certificate(s)***
 
@@ -36,63 +62,66 @@ You have now created a key store file containing the trust store.
 
 ***How to create a java keystore – containing your keypair***
 
-9.	Open Keystore Explorer.
-10.	Select Create a new key store file.
-11.	Select JKS (Java Key Store) and press OK.
-12.	Click the Import Key Pair as can be seen below.
+1.	Open Keystore Explorer.
+2.	Select Create a new key store file.
+3.	Select JKS (Java Key Store) and press OK.
+4.	Click the Import Key Pair as can be seen below.
 
 <p align="center"><img  src="../../img/howto/keystores-section3-2.png"></p>
 
-13.	Select PKCS #12 (assuming you received a .p12 file)
-14.	Type in the Decryption Password and select the .p12 file 
-15.	Save the file and secure it with an appropriate password that matches the password of the keystore (step 7)
-16.	Give the keystore file an appropriate password.
-17.	Save the keystore file with an appropriate name as an .jks file. Ensure to use something to recognize this is a key store file
+5.	Select PKCS #12 (assuming you received a .p12 file)
+6.	Type in the Decryption Password and select the .p12 file 
+7.	Save the file and secure it with an appropriate password that matches the password of the keystore (step 7)
+8.	Give the keystore file an appropriate password.
+9.	Save the keystore file with an appropriate name as an .jks file. Ensure to use something to recognize this is a key store file
 
 ***How to use a SSL web service message sender in your eMagiz flow to set-up a Two-Way SSL Authentication: Same key- and truststore for all environments***
 
-18.	Open your flow and start editing.
-19.	Create your web service outbound gateway if you have not done that already.
-20.	Upload the key- and truststore in the Resources tab.
-21.	Create your SSL web service message sender.
-22.	Select your key- and truststore in the key- and truststore paths.
-23.	Create your key- and truststore password properties and type them in the appropriate fields.
+1.	Open your flow and start editing.
+2.	Create your web service outbound gateway if you have not done that already.
+3.	Upload the key- and truststore in the Resources tab.
+4.	Create your SSL web service message sender.
+	- in case you update this object, please validate in the Advanced tab if the Certificate Alias is used. Select the proper value
+5.	Select your key- and truststore in the key- and truststore paths.
+6.	Create your key- and truststore password properties and type them in the appropriate fields.
 
 <p align="center"><img  src="../../img/howto/keystores-section3-3.png"></p>
 
-24.	Open your web service outbound gateway, go to the advanced tab and select your SSL web service message sender in the Message sender field.
+7.	Open your web service outbound gateway, go to the advanced tab and select your SSL web service message sender in the Message sender field.
 
 ***How to use a SSL web service message sender in your eMagiz flow to set-up a Two-Way SSL Authentication: Different key- and truststores for every environment***
 
-25.	Open your flow and start editing.
-26.	Create your web service outbound gateway if you have not done that already.
-27.	Upload all the key- and truststores in the Resources tab (in this case we have different key- and truststores for acceptance and production).
+1.	Open your flow and start editing.
+2.	Create your web service outbound gateway if you have not done that already.
+3.	Upload all the key- and truststores in the Resources tab (in this case we have different key- and truststores for acceptance and production).
 
 <p align="center"><img  src="../../img/howto/keystores-section3-4.png"></p>
 
-28.	Now download all your key- and truststores to know what their paths will be.
+4.	Now download all your key- and truststores to know what their paths will be.
 
 <p align="center"><img  src="../../img/howto/keystores-section3-5.png"></p>
 
-29.	For each environment create a key- and trustore property containing the path to your key- and truststore. The value should be: “resources/[filename of the key- or truststore]”. So in the case of the acceptance keystore this would be:
+5.	For each environment create a key- and trustore property containing the path to your key- and truststore. The value should be: “resources/[filename of the key- or truststore]”. So in the case of the acceptance keystore this would be:
 “resources/00-103915_emagiz_esb_a19_keystore.jks”
 <p align="center"><img  src="../../img/howto/keystores-section3-6.png"></p>
 
-30.	Create your SSL web service message sender.
-31.	Type in your key- and truststore path properties.
-32.	Create your key- and truststore password properties and type them in the appropriate fields.
+6.	Create your SSL web service message sender.
+7.	Type in your key- and truststore path properties.
+	- in case you update this object, please validate in the Advanced tab if the Certificate Alias is used. Select the proper value
+8.	Create your key- and truststore password properties and type them in the appropriate fields.
 
 <p align="center"><img  src="../../img/howto/keystores-section3-7.png"></p>
 
-33.	Open your web service outbound gateway, go to the advanced tab and select your SSL web service message sender in the Message sender field.
+9.	Open your web service outbound gateway, go to the advanced tab and select your SSL web service message sender in the Message sender field.
 
 ## 4. HOW-TO STEPS FOR CERTIFICATES IN EMAGIZ CLOUD
  
 These how to steps are valid for both updates and for new certificates for web services hosted in eMagiz. 
 
 Key Assumptions:
-- Webservice for which the certificate is meant, is already created and is successfully deployed in the environment for which the certificate is valid 
+- Webservice for which the certificate is meant, is already created and is successfully deployed in the environment for which the certificate is to be updated 
 - Routes in the Deploy Architecture have been configured for this specific web service
+- eMagiz Support will deploy the actual certificate in the eMagiz Cloud - focus here is to ensure the linkage between that certificate and the eMagiz platform instance
 
 1. In order to use the certificate for the web service, it needs to be signed by eMagiz. Please contact your eMagiz Partner to obtain such a certificate. Ensure to have a Common Name for the Certificate as a reference
 2. Log on to the eMagiz Portal
@@ -102,7 +131,7 @@ Key Assumptions:
 6. Right click in the whitespace and select Certificates
 7. Click on New and enter the Common Name and a Client Name - click Save
 8. Remove the popup screen and right the white space to select Routes.
-9. Open the route of the webservice for which the certificae is to be set
+9. Open the route of the webservice for which the certificate is to be set
 10. Upload the certificate via Certificate click Save.
 11. Click apply to environment bottom left in the Architecture page.
 

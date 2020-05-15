@@ -6,7 +6,7 @@ This document describes what the requirements are for a eMagiz runtime installat
 To install a runtime, please be aware that eMagiz needs an environment that satisfies certain requirements. These requirements can be different depending on your architectural choices. Most common is the connector inside your network and a JMS and container running outside the network. In that case, if you are running only connectors on this environment, please keep the following requirements in mind:
 1.	OS with support for Java 
 2.	OS user with granted security rights to run startup services (Windows and/or Linux services) 
-3.	The correct Java installation (Java 8 SE JRE for example, https://adoptopenjdk.net) with NO automatic updates 
+3.	The correct Java installation (Java 8 SE JRE for example, https://adoptopenjdk.net) with NO automatic updates OpenJDK 8 is currently the recommended version
 4.	NTP synchronization – all eMagiz service instances should use the same time and settings. 
 5.	Access to internet 
 6.	Outbound JMS traffic - port 8443 (and 8444 in case of failover situation) - messaging.emagiz.com / cloudXXXX.emagizcloud.com 

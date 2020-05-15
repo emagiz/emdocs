@@ -1,10 +1,10 @@
-## Introduction User Guide
+## 1. Introduction User Guide
 
 This document is valid for all eMagiz Mendix connector versions that are currently supported. That includes the most recent addition that support Mendix version 8, which brings some changes in the way the Connector is used.
 
-Last update on March 30th, 2020
+Last update on May 4th , 2020
 
-## Positioning of the eMagiz Connector for Mendix 8 package
+## 2. Positioning of the eMagiz Connector for Mendix 8 package
 
 This packages has been created to support clients that are moving towards Mendix 8 in their environment. The latest version of eMagiz ha bee upgraded to use AMQP queues, which effectively means that direct connections from Mendix to onramp and offramp queues can be made. This has a positive effect as less effort is required in Mendix to interact with eMagiz and there is an easier management of the environment as only the infra flows need to be deployed (no exit and entry flows managed in Mendix).
 
@@ -14,7 +14,7 @@ To take benefit from this, eMagiz has released this version to take the first st
 
 Please find the package on the usual location: Under Deploy --> On-premise --> Runtime downloads tab
 
-## Comparing eMagiz Mendix connector
+## 3. Comparing eMagiz Mendix connector
 
 | Mendix V6/V7 Connector| Mendix V8 Connector|
 | ------ | ------ |
@@ -23,11 +23,11 @@ Please find the package on the usual location: Under Deploy --> On-premise --> R
 | Each flow (exit, entry and infra) needs to be deployed | Only infra flow needs to be deployed once, microflows connected to the queues directly|
 |Incoming webservice|Microflow - Java action details |
 
-## Short instruction video
+## 4. Short instruction video
 
 Please refer to the eMagiz Community page, under Academy to find the session where the eMagiz Mendix Connector is introduced, and where a short example is worked out. In the Module eMagiz ABL Block 1 (Beta sessions) you can find this session.
 
-## Java actions
+## 5. Java actions
 
 In essence, there are 2 types of Java actions available that allow to Send and to Receive messages from eMagiz. Both types come in 3 flavors to support the use cases that the Mendix developer needs to interact with eMagiz. After creating the required components in Mendix, the Java actions provided in the package can be configured.
 
@@ -62,7 +62,7 @@ Below the example of the Send Message microflow that contains this Java Action.
 1. Request Queue - enter the proper value for the offramp request queue of eMagiz where the request message needs to be put on.
 2. Validate request - Whether the request needs to be validated - works only for XML (not JSON)
 3. Request Import Mapping - Import mapping document that contains the mapping from XML or JSON to the domain model object
-4. Request limit - The maximum number of objects in the request. When set to 0-1, it means unlimited. When set to 1 the microflow will only be called when the import mapping is not empty. Other values means that the microflow is always called regardless whether the import mapping is empty or not
+4. Request limit - The maximum number of objects in the request. When set to -1, it means unlimited. When set to 1 the microflow will only be called when the import mapping is not empty. Other values means that the microflow is always called regardless whether the import mapping is empty or not
 
 **Response**
 1. Generate Response Microflow - Microflow that is called when the message is received
@@ -100,7 +100,23 @@ Below the example of the Send Message microflow that contains this Java Action.
 4. Response Object type - Output domain model object of the import mapping and input for the microflow
 
 
-## Key notes in using this package
+## 6. General steps to move from previous eMagiz Connector versions to this version
+
+1. Locate the name of the queue that interacts with Mendix web service currently in place
+2. Remove the Web service components in the Mendix model
+3. At the point where this web service component was called, replace it with the appropriate Java action from the Connector module. Use the queue name located in step 1
+4. Use the configuration items of the Java action as described in the previous section
+5. Leave the eMagiz Request Handler intact for now
+6. Test if the messages are properly working
+
+**Key considerations**
+- Check if [%CurrentUser%] is not used in the microflow when processing incoming messages. Mendix loses this value when using a Java action microflow. An error message is generated and the message is not processed.
+- Understand the impact of the user that is updating/creating the domain model object. The web service user is no longer used to update/create the domain model object
+- A best practice can be to store the XSDs of the various integrations into the resources folder of the mendix project so that the entire team has access to the latest
+- During restart of the Mendix application, there is no consumer on the synchronous response queues. Once the first message is processed, the consumer will become active. eMagiz alerting will trigger on this scenario which can be considered a false positive.
+ 
+
+## 7. Key notes in using this package
 
 Please take care of the following items when you start to use this version of the Connector to ensure you can use it properly
 - Use supplied Java actions in the eMagiz Mendix connector to set up the connections
@@ -111,9 +127,3 @@ Please take care of the following items when you start to use this version of th
 - In eMagiz the request handler needs to be set with a dummy name. The Request Handler is no longer used, but there is a value expected for now (to fix in future releases of this package).
 ![](../../img/howto/emmxv8_dummy_requesthandler.png)
   
-
-## Planned improvements for 2020
-These are the items that the eMagiz team is planning to improve in the course of 2020
-- eMagiz Portal changes (e.g. removing deprecated artifacts like the request handlers)  
-- Remove the infra configuration and simplify the "Configuration overview" snippet
-- Exposing the java-actions as microflow actions
