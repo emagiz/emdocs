@@ -53,13 +53,17 @@ Stop all running connector, container and firewall machines and delete them one 
 -	Connector
 -	Container
 -	Firewall
+
 Step 7: Remove association between Bus environment and Root cloud slot (eMagiz admin needed!!!!) (per environment)
 Make an appointment with your partner manager to remove the link between the bus environment and a root cloud slot. When they have removed this link you can continue with the next step
+
 Step 8: Apply to environment  (per environment)
 Navigate to Deploy -> Architecture and press apply to environment. If you have not execute the previous steps correctly you will get a warning that you are not allowed to do this. If you get this warning go back to Step 1 and check your work. When everything goes okay you will see the pop up you are all familiar with saying that eMagiz is updating/creating the AWS environment. You can monitor this process by clicking on Details away from any machine and looking at Last known state
 <p align="center"><img  src="../../img/howto/root2aws-step8.png"></p>
+
 Step 9: Set Scheduled Sleep (eMagiz admin needed) (per environment)
 If you are migrating an Test and Acceptance environment set Scheduled Sleep to yes, unless specific deals are made between the customer and Cape.
+
 Step 10: Check your work
 If all previous steps have been executed correctly you should no go to Manage and see the logging of runtimes starting up again and you will be able to once again reach these runtimes via the Runtime Dashboard.
 
