@@ -4,18 +4,20 @@ eMagiz offers the possibility to migrate your infrastructure from one cloud prov
 Requirements
 Assitance is needed from the eMagiz development team so plan ahead and contact your partner manager early on to make this work.
 
- 
+
 ## 2.	BEST PRACTICES
 In this chapter the best practices are outlined for when you want to migrate from Root to AWS.
-•	Plan ahead as some steps require the assistance of an eMagiz development team colleague
-•	Consult your partner manager beforehand to see if there is a possible cloud slot which you can use for your solution
-•	Always update the JMS as this is mandatory
-•	Store the settings you used in Root as you need to remove the complete Root setup before you can switch over to AWS
-•	Test your actions in Test and Acceptance before moving to Production
+- Plan ahead as some steps require the assistance of an eMagiz development team colleague
+- Consult your partner manager beforehand to see if there is a possible cloud slot which you can use for your solution
+- Always update the JMS as this is mandatory
+- Store the settings you used in Root as you need to remove the complete Root setup before you can switch over to AWS
+- Test your actions in Test and Acceptance before moving to Production
+- Ensure to have the property for the data directory for JMS created. <bus_technical_name>.jmsserver.datadir=/efs/data/artemis/jms01
 
 
 ## 3.	HOW-TO STEPS MIGRATE FROM ROOT TO AWS
-Follow these steps carefully in order to acquire the desired result. If a step is unclear or you are not able to follow it, please contact CAPE Academy.
+Follow these steps carefully in order to acquire the desired result.
+
 Step 1: Edit the settings in Design (once)
 Navigate, for your bus, to the Design page and click on Settings in the right top hand corner
 
@@ -60,3 +62,4 @@ Step 9: Set Scheduled Sleep (eMagiz admin needed) (per environment)
 If you are migrating an Test and Acceptance environment set Scheduled Sleep to yes, unless specific deals are made between the customer and Cape.
 Step 10: Check your work
 If all previous steps have been executed correctly you should no go to Manage and see the logging of runtimes starting up again and you will be able to once again reach these runtimes via the Runtime Dashboard.
+
