@@ -10,7 +10,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) | - [Effective Alerting with eMagiz](effective-alerting.md) |
 | - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [Lifecycle Management - Cross Check Integration Model](life-cycle-management.md)|
 | - [Configuring Connection to AWS Direct Connect](direct-connect.md)| - [End to End testing in eMagiz](end2end-testing.md)|
-| | - [Daily monitoring with eMagiz](daily-monitoring.md)|
+| - [eMagiz Cloud Management](managing-emagizcloud.md)| - [Daily monitoring with eMagiz](daily-monitoring.md)|
 
 | <p align="center">**User guides**</p>| <p align="center">**How2 Documents**</p>|
 | ------ | ------ |
