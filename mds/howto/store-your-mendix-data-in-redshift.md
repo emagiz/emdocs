@@ -1,39 +1,41 @@
 # How to store your Mendix data in AWS Redshift using eMagiz
 
 ## 1. Introduction
-This document explains how to setup a data pipeline between Mendix and AWS Redshift using eMagiz and how to publish the AWS Redshift data using AWS materialized views.
- 
-## 2. Getting started
-1. Publish the data using OData service in your Mendix project.
-2. Use the Mendix PostgreSQL data structure to create the target table in Redshift (Recommended).
-3. Import the 'Mendix to Redshift' datapipeline flow from the store.
-   <p align="center"><img src="../../img/howto/datapipeline-store-item.png"></p>
+This document explains how to setup a data pipeline between Mendix and AWS Redshift using eMagiz and how to publish the AWS Redshift data using AWS materialized views. eMagiz data pipelines are flows that support high-volume data transfer using <a href="_new">Spring Batch</a> technology. The data is retrieved from Mendix by using an OData webservice. The data is written to AWS Redshift using the AWS recommended way: Intermediate storage of comma-separates data in AWS S3.
 
-4. Follow the store items instructions to setup the data pipeline.
-5. Follow the rest of this how-to to start using AWS materialized views.
+Advantages of eMagiz data pipelines
+ * Supports very large tables
+ * Fast Mendix to Redshift-integration development compared to message bus integrations
+
+Disadvantages of eMagiz data pipelines
+ * Does not support complex data structures (one table per data pipeline)
+ * Does not support complex transformations (only column selection/renaming)
+ * Data structure changes need to be applied to both source and target tables
+
+## 2. Getting started
+1. Publish the data using an OData service in your Mendix project.
+1. Use the Mendix PostgreSQL data structure to create the target table in Redshift (Recommended).
+1. Import the 'Mendix to Redshift' datapipeline flow from the store.
+   <p align="center"><img src="../../img/howto/datapipeline-store-item.png"></p>
+1. Follow the store items instructions to setup the data pipeline.
+1. Follow the rest of this how-to to start using AWS materialized views.
 
 ## 3. Create a materialized view
 1. Use SQL Workbench or the AWS Console to connect to the Redshift database.
-1. Write and test the SQL statement. If you need help joining tables look at the 
-<a target="_new" href="https://www.w3schools.com/sql/sql_join_inner.asp">w3school tutorials</a>.
+1. Write and test the SQL statement to select data from the Redshift database. If you need help joining tables look at the 
+    <a target="_new" href="https://www.w3schools.com/sql/sql_join_inner.asp">w3school tutorials</a>.
 1. Execute the following statement to create the materialized view:</br>
-<code>CREATE MATERIALIZED VIEW {viewname} AS {your query};</code>
+    <code>CREATE MATERIALIZED VIEW {viewname} AS {your query};</code>
+    <p align="center"><img  src="../../img/howto/datapipeline-create-materialized-view.png"></p>
 1. For more info see the AWS documentation: 
-<a target="_new" href="https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html">Creating materialized views in Amazon Redshift</a>
+    <a target="_new" href="https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-overview.html">Creating materialized views in Amazon Redshift</a>
 
 ## 4. Refresh the materialized view
-1. Add a JDBC outbound channel adapter to your data pipeline flow and connect it to existing JDBC redshift data source. Enter the query:</br>
-<code>REFRESH MATERIALIZED VIEW ${dp.jdbc.message.mvtablename}</code>
-1. Use your own trigger mechanism or add a 'Job execution listener gateway' to trigger the refresh after the data pipeline job is done.
-1. Add a standard filter in between to only trigger on succesfull job executions. Filter expression:</br>
-<code>payload.status == T(org.springframework.batch.core.BatchStatus).COMPLETED</code>
-1. If you have executed step 1, 2 and 3 you have extended your flow with these components:
+1. The example data pipeline flow from the store contains a job listener structure to refresh the AWS Materialized view after the job is complete. In this structure the <i>send.jdbc-refresh</i> component send the <code>REFRESH MATERIALIZED VIEW</code> command to AWS Redshift.
     <p align="center"><img  src="../../img/howto/datapipeline-listener-structure.png"></p>
-1. Make sure to register the job listener gateway in the job configuration (advanced tab).
-    <p align="center"><img  src="../../img/howto/datapipeline-job-listeners.png"></p>
-1. It is highly recommended to have only on data pipeline in one eMagiz flow. If you have materialized views using data from different data pipelines, refresh the materialized view after each pipeline or create a custom refresh mechanism.
+1. It is highly recommended to have only one data pipeline in one eMagiz flow. If you have materialized views using data from different data pipelines, by default, the materialized view will be refreshed after each pipeline. If this causes invalid data in the materialized view, consider removing the refresh structure from all but the last scheduled data pipeline.
 
-## 4. Delete the Materialized view
+## 5. Delete the Materialized view
 1. Use SQL Workbench or the AWS Console to connect to the Redshift database.
 1. Execute the following statement to delete the materialized view:</br>
 <code>DROP MATERIALIZED VIEW {viewname};</code>
