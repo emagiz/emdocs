@@ -1,25 +1,26 @@
 # eMagiz How-to documentation site
 In the sections below, you will find some online documents that are relevant for eMagiz users. Please contact eMagiz Product Management at info@emagiz.com for further questions and suggestions.
 
-| <p align="center">**Deployment & Migration**</p>| <p align="center">**Best Practices**</p>|
-| ------ | ------ |
-|<img width=900/><p align="center"><img src="../../img/howto/Deployment_icon.png">|<img width=900/><p align="center"><img src="../../img/howto/BestPractice_icon.jpg"></p>|
-| - [Migrate to eMagiz 5 (Artemis)](upgrade-to-eMagiz5.md)| - [Best practices for SFTP](sftp-best-practice.md)|
-| - [Install & upgrade the eMagiz Connector for Mendix](upgrade-eMagizMendixConnector.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md)|
-| - [On-premise eMagiz runtime installation (Linux & Windows)](runtime-installations-onpremise.md) |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) |
-| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) | - [Effective Alerting with eMagiz](effective-alerting.md) |
-| - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [Lifecycle Management - Cross Check Integration Model](life-cycle-management.md)|
-| - [Configuring Connection to AWS Direct Connect](direct-connect.md)| - [End to End testing in eMagiz](end2end-testing.md)|
-| - [eMagiz Cloud Management](managing-emagizcloud.md)| - [Daily monitoring with eMagiz](daily-monitoring.md)|
+| <p align="center">**Deployment & Migration**</p>| <p align="center">**Best Practices**</p>| <p align="center">**Implementation**</p>|
+| ------ | ------ | ------ |
+|<img width=600/><p align="center"><img src="../../img/howto/Deployment_icon.png">|<img width=600/><p align="center"><img src="../../img/howto/BestPractice_icon.jpg"></p>|<img width=600/><p align="center"><img src="../../img/howto/How2_icon.png"></p>|
+| - [Migrate to eMagiz 5 (Artemis)](upgrade-to-eMagiz5.md)| - [Best practices for SFTP](sftp-best-practice.md)|- [Daily monitoring with eMagiz](daily-monitoring.md) |
+| - [Install guide eMagiz Connector for Mendix](upgrade-eMagizMendixConnector.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md)| - [End to End testing in eMagiz](end2end-testing.md)|
+| - [On-premise eMagiz runtime installation](runtime-installations-onpremise.md) |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | - [Using ILM tollgates in your sprints](emagiz-tollgates.md)|
+| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) | - [Effective Alerting with eMagiz](effective-alerting.md) | |
+| - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| |
+| - [Configuring AWS Direct Connect](direct-connect.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| |
+| |- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| |
+| |- [Mini reference Postman in context eMagiz](minireference-Postman.md)| |
 
-| <p align="center">**User guides**</p>| <p align="center">**How2 Documents**</p>|
-| ------ | ------ |
-|<img width=800/><p align="center"><img  src="../../img/howto/UserGuide_icon.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/How2_icon.png"></p>|
-|- [User guide for the eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md)| - [Configuring Certificates in eMagiz](configure-certificates.md)|
-|- [How to deploy using Releases](deploy-releases.md) | - [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)|
-|- [How to add multi tenant system](add-multi-tenant-system.md) | - [Mini reference Postman in context eMagiz](minireference-Postman.md)|
-|- [How toadd a relation between two entities](add-a-relation-between-two-entities.md) | - [Creating a network share to drop files into](create-networkshare-win.md)|
-|- [How to add a System](add-a-system.md) | - [Adding MFA to your account](add-mfa-userlevel.md)|
-|- [How to add an attribute](add-an-attribute.md) | - [Transforming Flat Files to XML](flatfile-transformations.md) |
-|- [How to store your Mendix data in AWS Redshift](store-your-mendix-data-in-redshift.md) | - [How to setup a REST web service hosted in eMagiz](hosting-rest-webservice.md)|
 
+| <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
+| ------ | ------ | ------ |
+|<img width=800/><p align="center"><img  src="../../img/howto/UserGuide_icon.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/EventStreaming.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/API_Gateway.png"></p>|
+|- [eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md)| Expected approx. July 1st 2020 | Expected approx. July 1st 2020 |
+|- [Storing Mendix data in AWS Redshift](store-your-mendix-data-in-redshift.md)| | |
+|- [Configuring Certificates in eMagiz](configure-certificates.md)| | |
+|- [Transforming Flat Files to XML](flatfile-transformations.md)| | |
+| - [How to setup a REST web service in eMagiz](hosting-rest-webservice.md) | | |
+|- [Creating a network share to drop files into](create-networkshare-win.md)| | |
+|- [eMagiz Cloud Management](managing-emagizcloud.md) | | |

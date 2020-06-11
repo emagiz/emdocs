@@ -1,7 +1,7 @@
 # On-premise eMagiz runtime installation document
 
 This document describes what the requirements are for a eMagiz runtime installation on-premise as well as a step by step guideline how to install a runtime on-premise. An on-premise installation often occurs in an architecture where the runtime should run within your own or your customer’s network. This is recommended for all connectors that communicate with a system that is located inside your network or if you would like to test locally on your computer. For an installation of a runtime on a Linux system please see Linux runtime installations
- 
+
 ## Requirements
 To install a runtime, please be aware that eMagiz needs an environment that satisfies certain requirements. These requirements can be different depending on your architectural choices. Most common is the connector inside your network and a JMS and container running outside the network. In that case, if you are running only connectors on this environment, please keep the following requirements in mind:
 1.	OS with support for Java 
@@ -9,7 +9,7 @@ To install a runtime, please be aware that eMagiz needs an environment that sati
 3.	The correct Java installation (Java 8 SE JRE for example, https://adoptopenjdk.net) with NO automatic updates OpenJDK 8 is currently the recommended version
 4.	NTP synchronization – all eMagiz service instances should use the same time and settings. 
 5.	Access to internet 
-6.	Outbound JMS traffic - port 8443 (and 8444 in case of failover situation) - messaging.emagiz.com / cloudXXXX.emagizcloud.com 
+6.	Outbound JMS traffic - port 8443 (and 8444 in case of failover situation) - amqp.emagiz.com / cloudXXXX.emagizcloud.com 
 a.	General monitoring data to eMagiz iPaaS 
 b.	Specific JMS traffic to eMagiz JMS Server 
 7.	Outbound HTTPS traffic – port 443 – Specific provisioning data- https://rts.emagiz.com/ws/ / https://repository.emagiz.com    
@@ -37,7 +37,9 @@ The above is the bare minimum needed to run. As the number of flows running on a
 
 
 If you install your JMS and container as well within your network and not in the cloud, please keep in mind that you need to open port 8443 (and 8444 in case of failover) as well for incoming communication.
- 
+
+![](../../img/howto/localconnector-infrastructure-view.png)
+
 ## Java runtime and eMagiz runtime compatibility
 Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. However,  Oracle will stop supporting older version of Java at some point in time. This behavior we saw when Oracle stop the support for Java 7. This chapter will discuss the implications of a new version of Java or a new eMagiz runtime version. 
 Different elements will be discussed. The following schema will show the compatibility of eMagiz in relation with Java and the flow build numbers. 
