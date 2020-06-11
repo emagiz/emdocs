@@ -2,6 +2,9 @@
 
 |Release number | Release name| Release date|
 |---|---|---|
+|[emc 4.1.0](emc4.1.0.md)| Lift me Up| 2020-05-01|
+|[emc 4.0.1](emc4.0.1.md)| We remain| 2020-03-20|
+|[emc 4.0.0](emc4.0.0.md)| Four Eight| 2020-03-06|
 |[5.0.3](5.0.3-paratásso.md)| Paratásso| 2019-05-17|
 |[emc 3.0.2](emc3.0.2-artemis.md)| Artemis| 2019-05-03|
 |[5.0.2](5.0.2-cryptic-coloration.md)| Cryptic coloration| 2018-10-19|

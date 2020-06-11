@@ -1,6 +1,8 @@
 # Build numbers
 |Build number | Release date|
 |---|---|
+|[48](build48.md)| 2019-05-15|
+|[47](build47.md)| 2020-01-10|
 |[46](build46.md)| 2019-09-06|
 |[45](build45.md)| 2019-08-23|
 |[44](build44.md)| 2019-08-09|

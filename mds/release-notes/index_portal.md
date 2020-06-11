@@ -1,6 +1,21 @@
 ## Portal release notes
 |Release number |Release name |Release date |
-|---|---|---|
+| ------ | ------ | ------ |
+|[9.14.0](9.14.0.md)| Right Moves| 2020-05-29| 
+|[9.13.0](9.13.0.md)| These are Special Times| 2020-05-15| 
+|[9.12.0](9.12.0.md)| Lift me Up| 2020-05-01| 
+|[9.11.0](9.11.0.md)| Can't Hold Us Down| 2020-04-17| 
+|[9.10.0](9.10.0.md)| Here to Stay| 2020-04-03| 
+|[9.9.0](9.9.0.md)| We remain| 2020-03-20| 
+|[9.8.0](9.8.0.md)| Four Eight| 2020-03-06| 
+|[9.7.0](9.7.0.md)| Beautiful Numbers| 2020-02-21| 
+|[9.6.0](9.6.0.md)| Prepare to jump| 2020-02-07| 
+|[9.5.0](9.5.0.md)| Rawhide| 2020-01-10| 
+|[9.4.0](9.4.0.md)| Foggy Tree| 2019-12-13| 
+|[9.3.0](9.3.0.md)| Open Doors| 2019-11-29| 
+|[9.2.0](9.2.0.md)| Tick (s)Tack toe| 2019-11-13| 
+|[9.1.0](9.1.0.md)| Meep meep| 2019-11-01|
+|[9.0.0](9.0.0.md)| Nine under| 2019-10-18| 
 |[8.11.0](8.11.0-safe-patterns.md)| Safe patterns| 2019-10-02| 
 |[8.10.0](8.10.0-play-safe.md)| Play safe| 2019-09-27| 
 |[8.9.0](8.9.0-split-portal.md)| Split portal| 2019-09-06| 
