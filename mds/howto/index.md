@@ -1,5 +1,5 @@
 # eMagiz How-to documentation site
-In the sections below, you will find some online documents that are relevant for eMagiz users. Please contact eMagiz Product Management at info@emagiz.com for further questions and suggestions.
+In the sections below, you will find some online documents that are relevant for eMagiz users. Please contact eMagiz Product Management at productmanagement@emagiz.com for further questions and suggestions.
 
 | <p align="center">**Deployment & Migration**</p>| <p align="center">**Best Practices**</p>| <p align="center">**Implementation**</p>|
 | ------ | ------ | ------ |
