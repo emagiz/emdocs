@@ -1,6 +1,7 @@
 ## Portal release notes
 |Release number |Release name |Release date |
 | ------ | ------ | ------ |
+|[9.14.1](9.14.1.md)| Express| 2020-06-12| 
 |[9.14.0](9.14.0.md)| Right Moves| 2020-05-29| 
 |[9.13.0](9.13.0.md)| These are Special Times| 2020-05-15| 
 |[9.12.0](9.12.0.md)| Lift me Up| 2020-05-01| 

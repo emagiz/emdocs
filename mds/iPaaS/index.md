@@ -183,8 +183,8 @@ ILM is an approach to data and storage management that recognizes that the value
 - Press install once
 - Read the message and follow it:
 - Create new properties
-  - Global: name=[mybusname].jms01.host, value=localhost (=the bus runs on my laptop)
-  - Global: name=[mybusname].jms01.port, value=5445
+  - Global: name=[mybusname].amqp.host, value=localhost (=the bus runs on my laptop)
+  - Global: name=[mybusname].amqp.port, value=8443
   <p align="center"><img width="865" height="446" src="../../img/iPaaS/new-deploy-properties.png"></p>
 - Download runtimes, and unpack (preferably in C:/Dev/)
 - Start runtimes (for each unpacked folder-->bin/karaf.bat)
