@@ -17,7 +17,7 @@ In the sections below, you will find some online documents that are relevant for
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
 | ------ | ------ | ------ |
 |<img width=800/><p align="center"><img  src="../../img/howto/UserGuide_icon.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/EventStreaming.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/API_Gateway.png"></p>|
-|- [eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md)| Expected approx. July 1st 2020 | Expected approx. July 1st 2020 |
+|- [eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md)| Expected approx. July 1st 2020 | - Expected approx. July 1st 2020 |
 |- [Storing Mendix data in AWS Redshift](store-your-mendix-data-in-redshift.md)| | |
 |- [Configuring Certificates in eMagiz](configure-certificates.md)| | |
 |- [Transforming Flat Files to XML](flatfile-transformations.md)| | |
