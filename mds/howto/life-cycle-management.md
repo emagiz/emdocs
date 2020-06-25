@@ -10,15 +10,6 @@ To summarize, life cycle management gives you:
 -	Everyone should be involved
 
 
-**Requirements**
-This document discusses the practical implementation of Life Cycle Management within eMagiz.
-The main idea behind Life Cycle Management in general and in eMagiz is to stay in control of the integration landscape we are developing alongside our customers. Life Cycle Management does not only entail deleting flows and information when a certain integration has reached its end of life but also keeping your integration landscape up to date with new features and developments as made by the eMagiz product development team.
-Life Cycle Management should be a conscious part of everyday life for everyone that plays a part within a team, project or program. This way the team, and not the individual, will add the most value to the process.
-To summarize, life cycle management gives you:
--	Tools to stay in control of your integration landscape.
--	A way to keep up to date with the latest developments within the eMagiz portal.
--	Everyone should be involved
-
 ## Best Practices
 -	Remove flows   as part of completing your production deployment (after a grace period in which you conform that everything works as expected). This to avoid a backlog of delete actions. A standard grace period would be two weeks. One could deviate from this standard if they have discussed this with the business owner.
 -	Remove flows only after a written approval of the business owner of the process
