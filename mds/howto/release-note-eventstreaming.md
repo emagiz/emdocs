@@ -20,7 +20,7 @@ One of the first angles to consider Event Streaming is when an integration in as
 
 <p align="center"><img src="../../img/howto/releasenote-es-1.png"></p>
 
-The other important angle when to consider Event Streaming is when IoT devices are producing large event based data such as environments conditions, logging, GPS data or alike. These events can be used in combination with data from other business process to become valueable.
+The other important angle when to consider Event Streaming is when IoT devices are producing large event based data such as environments conditions, logging, GPS data or alike. These events can be used in combination with data from other business process to become valuable.
 Other considerations or key notes when to use an Event Streaming are:
 - Data is event based - facts are produced towards a topic
 - Data can be processed in an asynchronous nature

@@ -24,3 +24,4 @@ In the sections below, you will find some online documents that are relevant for
 | - [How to setup a REST web service in eMagiz](hosting-rest-webservice.md) | | |
 |- [Creating a network share to drop files into](create-networkshare-win.md)| | |
 |- [eMagiz Cloud Management](managing-emagizcloud.md) | | |
+|- [Handling EDIFACT](edifact-how2.md) | | |

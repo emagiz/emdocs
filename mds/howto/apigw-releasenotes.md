@@ -7,10 +7,10 @@ Release per July 13rd, 2020.
 
 ## Positioning & Key Concepts
 
-The API Gateway is one of the key Integration patterns that eMagiz supports in the platform. Key concepts of the API Gateway in this context is that it allows to create an entry point for all published API's inside an IT landscape. Backend systems, micro-services or access to external systems can be published, so that either internal development teams and applications can access the specific APIs as part of business process execution.
+The API Gateway is one of the key Integration patterns that eMagiz supports in the platform. Key concepts of the API Gateway in this context is that it allows to create an entry point for all published API's inside an IT landscape. Backend systems, micro-services or access to external systems can be published, so that internal development teams and applications can access the specific APIs as part of business process execution.
 
 A typical landscape could look like this. 
-The API Gateway is located in the secured eMagiz Cloud and provides the ability to access it from external application users. A client of ACME Ltd. could be sending in Sales Orders directly from their own systems. The incoming Sales order is then delivered back to the back office system of ACME and could send a response back with a successful delivery. Inside the ACME LTd. organization, various developments teams are processing the sales order further. One of the things that need to take place is to perform an external credit check of that specific client. Service C might be responsible for that, and is processing the request/response in a synchronous manner. 
+The API Gateway is located in the secured eMagiz Cloud and provides the ability to access it from external application users. A client of ACME Ltd. could be sending in Sales Orders directly from their own systems (incoming integration 1). The incoming Sales order is then delivered back to the back office system of ACME and could send a response back with a successful delivery. Inside the ACME Ltd. organization, various developments teams are processing the sales order further. One of the things that need to take place is to perform an external credit check of that specific client (integration 2). Service C might be responsible for that, and is processing the request/response in a synchronous manner. 
 
 <p align="center"><img src="../../img/howto/releasenote-apigw-1.png"></p>
 
