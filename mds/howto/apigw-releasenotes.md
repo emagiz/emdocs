@@ -2,7 +2,7 @@
 
 This document describes the overall positioning and use of the API Gateway embedded into the Low-code, Enterprise iPaaS platform eMagiz. You will find a short description of this part of the product to understand the overall capability. This release will complement the User Guide also available in the User Guides section. 
 
-Release per July 1st, 2020. 
+Release per July 13rd, 2020. 
 
 
 ## Positioning & Key Concepts

@@ -29,13 +29,13 @@ Follow these steps carefully in order to acquire the desired result. If a step i
 1.	Identify the flow in question you want to remove. Be aware that the removal of a flow is done in pairs. You cannot delete an onramp without deleting the entry. Obviously the same applies to the offramp and exit combination
 2.	When you have identified the flow you want to delete navigate to Manage -> Alerting
 3.	Within this Tab navigate to Triggers (look at the Tag name when following these instructions)
-a.	If you have configured the alerting following the best practice outlined here (nog link toevoegen) the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
-i.	Standard – Queue consumers too high
-ii.	Standard – Queue consumers too low
-b.	If you are removing the last flow belonging to a system and you have followed the best practice outlined here the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
-i.	Standard – Data measurements missing
-ii.	Standard – Log entries missing
-iii.	Standard – Error log entry
+	-	If you have configured the alerting following the best practice outlined in the user guide for Alerting, the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
+		- Standard – Queue consumers too high
+		- Standard – Queue consumers too low
+	- If you are removing the last flow belonging to a system and you have followed the best practice outlined here the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
+		- Standard – Data measurements missing
+		- Standard – Log entries missing
+		- Standard – Error log entry
 4.	After you have removed the flow, and possibly runtime, from all relevant triggers you navigate to Deploy -> Releases
 5.	In this page you create a new release (naming it according to the naming conventions) in which you remove the flow you want to remove from your integration landscape.
 6.	Deploy this release to the environment(s) you already have executed step 1 through 5 for. It is advisable to leave a grace period between removing things from Test before removing them from Production just to be sure.
