@@ -1,6 +1,9 @@
 ## Portal release notes
 |Release number |Release name |Release date |
 | ------ | ------ | ------ |
+|[10.2.0](10.2.0.md)| I want to Break Free| 2020-07	-17| 
+|[10.1.0](10.1.0.md)| Keeps Getting Better| 2020-07-10| 
+|[10.0.0](10.0.0.md)| Change| 2020-07-01| 
 |[9.14.1](9.14.1.md)| Express| 2020-06-12| 
 |[9.14.0](9.14.0.md)| Right Moves| 2020-05-29| 
 |[9.13.0](9.13.0.md)| These are Special Times| 2020-05-15| 

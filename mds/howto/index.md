@@ -27,3 +27,4 @@ In the sections below, you will find some online documents that are relevant for
 |- [Handling EDIFACT](edifact-how2.md) | | |
 |- [How2 for basic SPeL Expressions](spelexpr-simpleguide.md) | | |
 |- [Using the QA Section](qa-community-guide.md) | | |
+|- [User Guide Unit testing](userguide-unitttest.md) | | |
