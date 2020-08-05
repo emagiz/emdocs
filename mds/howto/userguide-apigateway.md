@@ -192,6 +192,37 @@ In the remainder of this section we will look at various scenarios that can occu
 Design and Deploy Architecture work the same as is now the case for projects that only include messaging flows. In Design eMagiz will add one or more runtimes for the API Gateway components based on your API Gateway settings. Advice would be to deploy this runtime on a separate machine in the AWS cloud to keep API Gateway components separate from messaging and/or event streaming components.
 Changes made via Design Architecture will be actualized in the same manner as you are used to in eMagiz via Deploy Architecture.
 
+#### Error handling API Gateway
+The API gateway gives back the error to the client that he receives from the backend system if you as a user don’t do anything. 
+This is not always desirable because it gives the client information on the backend operation and could show sensitive information. 
+Any technical error message that would go to the asynchronous error flow in messaging will result in a http 500 error including the error for the API Gateway. 
+In the swagger UI this will look something like this.
+
+<p align="center"><img src="../../img/howto/userguide-apigw-38.png"></p>
+
+Apart from a technical http 500 error responses given back from the client will be shown to the client the same way eMagiz receives them, whether it is a 404, 301, 403, 401, etc.
+As a user you now have the option to catch three types of error and specify what eMagiz should give back to the user:
+-	Default
+-	Timeout
+-	Validation
+
+Under the API Gateway tab you can select Edit Catalog. 
+
+<p align="center"><img src="../../img/howto/userguide-apigw-39.png"></p>
+
+In the screen that will follow you can define the responses. For example you could define a 422 (Unprocessable entity) every time a validation error occurs. 
+When you have defined this the client will always receive a 422 along with the message specified here.
+
+<p align="center"><img src="../../img/howto/userguide-apigw-40.png"></p>
+
+See below for how this will look in the Swagger UI to the client
+
+<p align="center"><img src="../../img/howto/userguide-apigw-41.png"></p>
+
+Another default setup is the check in eMagiz with regards to authentication. In other words is the client calling the API Gateway authorized to execute that specific operation. If not you will get a standard error from eMagiz back including a http 401 response
+
+<p align="center"><img src="../../img/howto/userguide-apigw-42.png"></p>
+
 ## Create
 
 ### Scenario 1: Adding an integration
