@@ -28,3 +28,4 @@ In the sections below, you will find some online documents that are relevant for
 |- [How2 for basic SPeL Expressions](spelexpr-simpleguide.md) | | |
 |- [Using the QA Section](qa-community-guide.md) | | |
 |- [User Guide Unit testing](userguide-unitttest.md) | | |
+|- [Identifying Legacy Constructs](userguide-legacyconstructs.md) | | |
