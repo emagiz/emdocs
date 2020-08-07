@@ -9,11 +9,11 @@ Last update: August 8th 2020
 
 
 
-## Old Transformation Tooling
+## 1. Old Transformation Tooling
 A key feature of eMagiz always has been the manner in which you can visually see what you need to transform from A to B. At a certain point eMagiz provided a new way of Designing the transformation. This meant two things. The Design phase in eMagiz has now become the place to set up your transformations instead of doing everything in Create. This way your process of developing an integration became more intuitive and less complex.
 
 
-### Legacy
+### Legacy approach
 You can identify Legacy resources (transformation or validation) by navigating to Create -> Resources. In here you can search for XML definition (classic) or XML transformation (classic). All results given back mean that these resources are created with the old transformation tooling and need to be migrated if the resource in question is still being used in a flow. You can see whether they are still used by looking at the configuration column.
 
 <p align="center"><img src="../../img/howto/userguide-legacy-1.png"></p>
@@ -22,7 +22,7 @@ Opening a definition in the old tooling will look like this
 
 <p align="center"><img src="../../img/howto/userguide-legacy-2.png"></p>
 
-### New
+### New approach
 You can identify New resources (transformation or validation) by navigating to Create -> Resources. In here you can search for Message Definition or Message Transformation. All results given back mean that these resources are created with the new transformation tooling. These resources don’t need to be migrated. You can see whether they are still used by looking at the configuration column. If not used you can remove, after verifying if they are indeed not used anymore, these resources as part of your lifecycle management process.
 
 <p align="center"><img src="../../img/howto/userguide-legacy-3.png"></p>
@@ -31,7 +31,7 @@ Opening a definition in the new tooling will look something like this
 
 <p align="center"><img src="../../img/howto/userguide-legacy-4.png"></p>
 
-### Migration
+### How to get to the new approach
 Migrating from the old tooling to the new tooling takes several steps to make it work correctly. Below you will find all these steps. Follow them carefully to achieve the desired result
 1.	Download the XSD, from Create -> Resources, of the system message for the flow you want to migrate
 2.	Download the XSD, from Create -> Resources, of the CDM message for the flow you want to migrate
@@ -86,7 +86,7 @@ Now you have migrated from the old to the new tooling. Last step will be to veri
 -	If changes exists, analyze them and make changes to the transformation until you have reached the correct result
 Congratulation, you have successfully migrated your flow from the old transformation tooling to the new transformation tooling.
 
-## Error handling synchronous flows
+## 2. Error handling synchronous flows
 
 To properly manage an eMagiz project you need to have robust and stable error handling. This process of error handling was the same for both asynchronous and synchronous flows. In this process all errors that were thrown by a flow would be routed via the asynchronous error process each eMagiz project has. For synchronous flows this meant that apart from the actual error each step in the process that did not receive a message within the set timeframe would subsequently throw an timeout error.
 This process had three disadvantages
@@ -95,17 +95,17 @@ This process had three disadvantages
 -	Any synchronous error could lead to up to five separate error messages making it more confusing and difficult to properly analyze what was going wrong
 Based on these consideration the way errors are handled in a synchronous flow has changed. See below for the old way, the new way and how to migrate to the new way
 
-### Legacy
+### Legacy approach
 
 In the legacy situation the flow would handle its error message asynchronously. See a picture below for how this is configured in the flow. That way the other flows in the chain are still waiting for an answer that will never come.
 <p align="center"><img src="../../img/howto/userguide-legacy-5.png"></p>
 
-### New
+### New approach
 
 In the new situation all (error) messages are given back to the flow preceding the current flow. This way the error message is given back to the client so they know what went wrong. This looks as follows in a flow
 <p align="center"><img src="../../img/howto/userguide-legacy-6.png"></p>
 
-### Migration
+### How to get to the new approach
 
 Migrating from the old way of handling errors in a synchronous flow to the new way of handling errors in a synchronous flow takes several steps to make it work correctly. Below you will find all these steps. Follow them carefully to achieve the desired result
 1.	Identify the synchronous flow in your eMagiz project that you want to change
@@ -143,21 +143,21 @@ Of course it is possible to use a combination of the suggestion made in step 11,
 
 Congratulations, you have successfully migrated the error handling of your synchronous flows to the new best practice
 
-## Error flow
+## 3. Error flow
 
 The error flow is part of the default in any eMagiz project. This flow handles all errors that are thrown by (a)synchronous flows within your project and passes them through to the iPaaS so they show up under Manage -> Error Messages. Recently we have made some changes to make the error flow work even more optimal.
 
-### Legacy
+### Legacy approach
 
 In the legacy situation the flow would determine for each message whether or not message tracking was enabled. Based on that the error handling responded in a slightly different manner.
 <p align="center"><img src="../../img/howto/userguide-legacy-10.png"></p>
 
-### New
+### New approach
 
 In the new situation the flow treats all messages the same and removes all headers to reduce the chance the error message will cause problems downstream for the iPaaS or the portal.
 <p align="center"><img src="../../img/howto/userguide-legacy-11.png"></p>
 
-### Migration
+### How to get to the new approach
 
 Migrating from the old error flow to the new error flow takes several steps to make it work correctly. Below you will find all these steps. Follow them carefully to achieve the desired result.
 1.	Determine if you made any custom changes to the error handling
