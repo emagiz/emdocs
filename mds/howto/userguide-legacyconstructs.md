@@ -182,3 +182,67 @@ Congratulations, you have successfully migrated the error flow to the new setup
 -	If the result is the same you are finished
 -	If changes exists, analyze them and make changes where necessary
 Congratulations, you have successfully migrated the error flow to the new setup
+
+## 4. JSON related transformations
+
+Within eMagiz you have the option to transform messages from JSON to XML, XML to JSON and from JSON to JSON. In all these scenario’s you had to resort to using at least a custom XSLT. Sometimes even in combination with standard components provided by eMagiz. With the new functionality it has become to possible to define what the input and/or output of a message transformation is as well as having the option to interpret the input against which can be validated.
+
+### Legacy approach
+
+In the Legacy situation you would need to have at least one custom XSLT to transform between JSON and XML (or JSON). A traditional example of transforming from JSON to XML looks as follows.
+<p align="center"><img src="../../img/howto/userguide-legacy-12.png"></p>
+
+
+In here you would use the standard component to transform from JSON to XML followed by a standardized XSLT that was available through the store. A similar setup was needed when transforming XML to JSON.
+
+
+### New approach
+
+In the new situation you can start your work in Design as you are used to do when transforming XML to XML. The same can now be done with JSON to XML transformations. Note that the definition should have a additional root element (by default eMagiz calls the element root) to make the validation and transformation work as it should be. After you have set your system message and message mapping as you are just to you can navigate to Create and build the flow. Within the flow some small changes are needed. See below for a representation of how this looks in Create
+
+<p align="center"><img src="../../img/howto/userguide-legacy-13.png"></p>
+
+
+### How to get to the new approach
+
+Migrating from the old way of transforming messages with regards to JSON to the new way of transforming messages with regards to JSON takes several steps to make it work correctly. Below you will find all these steps. Follow them carefully to achieve the desired result.
+
+1.	Navigate to Design -> System message for the flow you are currently want to change to determine whether you already have a system message with a specific added root element
+a)	If yes, continue with step 9
+b)	If no, continue with step 2
+2.	See if you have a XSD against which you could validate the JSON messages against.
+a)	If yes, continue with step 2
+b)	If not, continue with step 6
+3.	Open the XSD via Notepad++ (or any other tooling that is capable to show XSD messages) and add a element to the root of the message. Default name would be root but can be anything you want it to be.
+4.	Navigate to Capture
+5.	Upload the XSD to the message flow you are currently working on
+6.	Navigate to Design
+7.	Import the XSD via the option From Capture in your system message if you have one. If not, create the system message by hand (Don’t forget to add a specific root element)
+8.	Navigate to Design -> Message mapping to create the message mapping between system and CDM message
+9.	Navigate to Create
+10.	Open the flow for which you have changed the system message and the message mapping
+11.	Press Start Editing
+12.	Determine whether any validation component in your flow has a JSON message as input. For example:
+o	In an asynchronous onramp this would be the validation you encounter first in your flow. 
+o	In a asynchronous offramp no validations need to be changed because in here you validate the CDM and that is still based on XML. 
+o	This logic applies the same for other asynchronous and synchronous flows. 
+13.	If the answer is yes for the flow you are currently editing you should add a support object called JSON source factory and couple this to the validation. See below for how this looks
+<p align="center"><img src="../../img/howto/userguide-legacy-14.png"></p>
+14.	Determine whether any transformation component in your flow has a JSON message as input. For example:
+a)	In an asynchronous onramp this would be the standard transformation based on your message mapping made in Design
+b)	In a asynchronous offramp no transformation will have JSON as input because in here you transform message from CDM to system message and the CDM and that is still based on XML. 
+c)	This logic applies the same for other asynchronous and synchronous flows. 
+15.	If the answer is yes for the flow you are currently editing you have a choice to make
+a)	If output is JSON you have to add two support objects. One support object called JSON result transformer and the other called JSON result factory. See step 16 for more details
+b)	If output is XML you have to add one support object. This support object is called result to string transformer. See step 17 for more details
+16.	Couple the just created support objects to your transformation as shown below
+
+<p align="center"><img src="../../img/howto/userguide-legacy-15.png"></p>
+
+Congratulations, you have successfully migrated your current flow to transform JSON message
+17.	Couple the just created support object to your transformation as shown below
+
+<p align="center"><img src="../../img/howto/userguide-legacy-16.png"></p>
+
+Congratulations, you have successfully migrated your current flow to transform JSON message
+
