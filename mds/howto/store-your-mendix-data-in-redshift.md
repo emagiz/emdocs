@@ -34,6 +34,7 @@ Disadvantages of eMagiz data pipelines
 1. The example data pipeline flow from the store contains a job listener structure to refresh the AWS Materialized view after the job is complete. In this structure the <i>send.jdbc-refresh</i> component send the <code>REFRESH MATERIALIZED VIEW</code> command to AWS Redshift.
     <p align="center"><img  src="../../img/howto/datapipeline-listener-structure.png"></p>
 1. It is highly recommended to have only one data pipeline in one eMagiz flow. If you have materialized views using data from different data pipelines, by default, the materialized view will be refreshed after each pipeline. If this causes invalid data in the materialized view, consider removing the refresh structure from all but the last scheduled data pipeline.
+1. In case you are not using a Materialized View from the standard Store component, you have the option to remove this section alltogether or change the SQL statement where the refresh takes place to a non-functional (such as SELECT NOW() or SELECT true).
 
 ## 5. Delete the Materialized view
 1. Use SQL Workbench or the AWS Console to connect to the Redshift database.
