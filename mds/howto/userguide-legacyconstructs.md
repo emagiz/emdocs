@@ -246,3 +246,21 @@ Congratulations, you have successfully migrated your current flow to transform J
 
 Congratulations, you have successfully migrated your current flow to transform JSON message
 
+
+## 5. Legacy flow components
+
+Below you will find a list of flow components that are deemed legacy by eMagiz. If you are using any of the components listed below your partner will contact you about valid alternatives or a migration path to remove these components from your flows.
+
+- HornetQ componenten -> in-vm connection
+
+- HTTP parameter map to XML transformer
+
+- Image transformer
+
+- ISO8583 componenten
+
+- Mendix FileDocument WS request transformer
+
+- ThClient componenten
+
+- Sonic en WebSphere componenten
