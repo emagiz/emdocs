@@ -246,8 +246,64 @@ Congratulations, you have successfully migrated your current flow to transform J
 
 Congratulations, you have successfully migrated your current flow to transform JSON message
 
+## 5. Hosting a custom REST webservice (and using parameters)
 
-## 5. Legacy flow components
+Within eMagiz you have the option to host a SOAP and a REST webservice. When dealing with REST webservices the advised choice is the API Gateway in case the call is synchronous in nature. Not in all cases however the API Gateway completely suits your needs. For example when the process is asynchronous in nature. In these situations you will need to build your own REST webservice that eMagiz can host. With the new functionality it has become more intuitive to host a custom REST webservice via eMagiz.
+
+### Legacy approach
+
+In the old situation you would use a Simple Dispatcher servlet to define the correct endpoints that would be hosted by the REST webservice. See below for how this looks
+<p align="center"><img src="../../img/howto/userguide-legacy-17.png"></p>
+Furthermore when dealing with parameters you needed to use the HTTP parameter to XML component to map HTTP parameters to XML. See below for an illustration of this component.
+<p align="center"><img src="../../img/howto/userguide-legacy-18.png"></p>
+This component resulted in a xml that needed to be transformed to a correct system message afterwards.
+
+
+### New approach
+
+In the new situation you can more intuitively set up your REST webservice. On the jetty server you choose the option HTTP Inbound Endpoint Dispatcher Servlet. This gives you the option to define the first part of your endpoint in the Jetty server.
+<p align="center"><img src="../../img/howto/userguide-legacy-19.png"></p>
+
+The remainder of your endpoint (as well as the correct operations and payload types) can now be defined on the Inbound gateway. 
+<p align="center"><img src="../../img/howto/userguide-legacy-20.png"></p>
+In the advanced tab of the Inbound gateway you furthermore have the option to add all path and query parameters to separate headers (one header per path or query parameter). This means you can easily use this information further downstream in your mapping the moment you will need it.
+<p align="center"><img src="../../img/howto/userguide-legacy-21.png"></p>
+
+
+### How to get to the new approach
+
+Migrating from the old way of hosting a custom REST webservice to the new way of hosting a custom REST webservices needs several steps to make it work correctly. Follow them carefully to achieve the desired result.
+In this case a detailed user guide is already available within the portal. So instead of listing the steps once more we advice you to read that user guide. Please go to [Hosting a REST Webservice](hosting-rest-webservice.md)
+
+## 6. Removing headers from your message
+
+Within eMagiz you can place headers on your message and you can subsequently also remove these headers again. For example when some form of authentication is placed in headers you do not want to send this information to an external party that you are connecting to another system. Removing headers has been a tedious process but with some new functionality it makes it easier and more evident to remove these headers.
+
+### Legacy approach
+
+In the old situation you would need to add a standard header enricher to your flow and set the header to null via a SPeL expression.
+<p align="center"><img src="../../img/howto/userguide-legacy-22.png"></p>
+
+<p align="center"><img src="../../img/howto/userguide-legacy-23.png"></p>
+
+### New approach
+
+In the new situation you can more intuitively set up the removal of these headers. This can be done by using a new and specific component that has as sole purpose to remove headers from your message. The component is called header filter and in it you can define the names of all headers you want to remove. A wildcard search using a * is also possible. This way you remove all custom set headers from your message. See below for an illustration.
+<p align="center"><img src="../../img/howto/userguide-legacy-24.png"></p>
+
+### How to get to the new approach
+
+Migrating from the old way of removing headers from messages to the new way of removing headers from messages takes several steps to make it work correctly. Below you will find all these steps. Follow them carefully to achieve the desired result.
+
+1.	Identify a flow where you remove a header in the old way or don’t remove the header at all where it would be wise to do so (in case of authentication for example or privacy sensitive information)
+2.	Add the header filter component to the flow
+3.	Add the correct header names (or a wildcard) to the header names field
+4.	Press Save
+5.	Remove the old functionality where you set the value to null for a specific header.
+
+Congratulations, you have successfully migrated to a good and easy way to remove headers from your message
+
+## 7. Legacy flow components
 
 Below you will find a list of flow components that are deemed legacy by eMagiz. If you are using any of the components listed below your partner will contact you about valid alternatives or a migration path to remove these components from your flows.
 
@@ -264,3 +320,4 @@ Below you will find a list of flow components that are deemed legacy by eMagiz. 
 - ThClient componenten
 
 - Sonic en WebSphere componenten
+
