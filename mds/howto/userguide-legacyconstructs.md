@@ -172,7 +172,7 @@ Migrating from the old error flow to the new error flow takes several steps to m
 Congratulations, you have successfully migrated the error flow to the new setup
 6.	Determine if these changes are still justified
 -	If no, execute steps 2, 3, 4 and 5
--	If yes, continue with step 6
+-	If yes, continue with step 7
 7.	Write down all manually changes you still need
 8.	Navigate to Create
 9.	Right click on the Error process and press Reset flow
