@@ -2,13 +2,11 @@
 This document discusses how to create a network share and give users or AD groups rights to access those shares.
 The main idea behind network shares is to give users located somewhere else in the network the ability to see and possibly write documents in a certain folder. To make sure not everyone is able to do so the access rules of such a network share need to be configured properly. This how to will guide you to correctly create a network share and configure the access rights correctly 
 
- 
 ## 2.	BEST PRACTICES
 •	Give rights to AD Groups on the Production and Acceptance environment and not to specific users
 •	Name all network shares according to a pre-defined naming convention
 
 
- 
 ## 3.	HOW-TO STEPS
 Follow these steps carefully in order to acquire the desired result. If a step is unclear or you are not able to follow it, please contact CAPE Academy.
 **3.1 How to create a network share?**
@@ -60,3 +58,13 @@ Follow these steps carefully in order to acquire the desired result. If a step i
   •	If you are done, Press Apply and then OK, else press Add to add a new AD group that needs rights to the share.
   •	Press Close
   •	You are done.
+
+
+## Key note
+Since build 50 the underlying frameworks of eMagiz is using an updated version of Java, which uses a different approach (Java method) for verification. In previous versions, bullet 1 below is used; in the current version bullet 2 is used as approach. This are code extracts with some explainations, but in essence the recent version is checking whether the JVM has sufficient rights via the Windows permission structure. This has an impact on current implementations, as certain permission structures are no longer sufficient. One known example is that the service user of the eMagiz Connector need to have write access to the entire network path configured. In the past, the windows permission structure was not used to determine whether the JVM could write a file to a network share or not.
+
+1. https://docs.oracle.com/javase/7/docs/api/java/io/File.html#canWrite()
+2. https://docs.oracle.com/javase/10/docs/api/java/nio/file/Files.html#isWritable(java.nio.file.Path)
+
+Some relevant reading:
+a. https://www.geeksforgeeks.org/files-iswritable-method-in-java-with-examples/
