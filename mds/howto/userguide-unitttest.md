@@ -8,7 +8,7 @@ Below the user guide for Unit Testing. In this guide we will focus on the follow
 
 Should you have any questions, please contact productmanagement@emagiz.com.
 
-Last update: July 24th 2020
+Last update: September 4th 2020
 
 ## Pre-requisites
 - Basic knowledge of the eMagiz platform
@@ -86,3 +86,8 @@ eMagiz will also give you feedback on how the message looks like in every compon
 <p align="center"><img src="../../img/howto/unittest-image11.png"></p>
 
 Now you have successfully learned how to implement a unit test within eMagiz and test it you can develop more effectively and more robust.
+
+## Key notes
+
+1. Please make sure that you have a valid configuration to test. In case the flow is invalid, it will not be able to run on the unit test environment. You will get a pop-up explaining that the flow was unable to start, and the unit test can't run. You bus owner will be able to request the error message as these are not yet displayed in the unit test page.
+
