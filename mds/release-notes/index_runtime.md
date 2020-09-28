@@ -2,6 +2,8 @@
 
 |Release number | Release name| Release date|
 |---|---|---|
+
+|[emc 4.1.1](emc4.1.1.md)| Accelerate| 2020-09-04|
 |[emc 4.1.0](emc4.1.0.md)| Lift me Up| 2020-05-01|
 |[emc 4.0.1](emc4.0.1.md)| We remain| 2020-03-20|
 |[emc 4.0.0](emc4.0.0.md)| Four Eight| 2020-03-06|

@@ -1,7 +1,11 @@
 ## Portal release notes
 |Release number |Release name |Release date |
 | ------ | ------ | ------ |
-|[10.2.0](10.2.0.md)| I want to Break Free| 2020-07	-17| 
+|[10.6.0](10.6.0.md)| You Are What You Are| 2020-09-18|
+|[10.5.0](10.5.0.md)| Accelerate| 2020-09-04|
+|[10.4.0](10.4.0.md)| Back In The Day| 2020-08-21|
+|[10.3.0](10.3.0.md)| Go With the Flow| 2020-08-07|
+|[10.2.0](10.2.0.md)| I want to Break Free| 2020-07-24| 
 |[10.1.0](10.1.0.md)| Keeps Getting Better| 2020-07-10| 
 |[10.0.0](10.0.0.md)| Change| 2020-07-01| 
 |[9.14.1](9.14.1.md)| Express| 2020-06-12| 
