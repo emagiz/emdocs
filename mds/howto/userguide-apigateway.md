@@ -82,7 +82,7 @@ In the remainder of this section we will look at various scenarios that can occu
  
 <p align="center"><img src="../../img/howto/userguide-apigw-13.png"></p>
 
-4.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](Importing-a-backend-operation-of-the-API-Gateway.md)) or by adding them manually in this screen.
+4.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway.md)) or by adding them manually in this screen.
 
 5.	Following this you will select Add integration.
  
@@ -110,7 +110,7 @@ In the remainder of this section we will look at various scenarios that can occu
  
 <p align="center"><img src="../../img/howto/userguide-apigw-19.png"></p>
 
-3.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](Importing-a-backend-operation-of-the-API-Gateway.md)) or by adding them manually in this screen.
+3.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway.md)) or by adding them manually in this screen.
 
 4.	Following this you will select Add integration.
  
