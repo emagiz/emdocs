@@ -1,11 +1,12 @@
 ## User Guide Event Streaming eMagiz
 
 Below the user guide for Event Streaming. In this guide we will focus on the following parts:
--	Using the portal to set up an eMagiz Managed Kafka for your project
--	Designing an Event Stream (Topic)
--	Produce messages on a event stream (Topic)
--	Consume messages from a event stream (Topic)
--	Transform messages between event streams (Topics)
+- Using the portal to set up an eMagiz Managed Kafka for your project
+- Designing an Event Stream (Topic)
+- Produce messages on a event stream (Topic)
+- Consume messages from a event stream (Topic)
+- Transform messages between event streams (Topics)
+
 Should you have any questions, please contact productmanagement@emagiz.com.
 Last update: September 29th 2020
 
@@ -15,7 +16,7 @@ Last update: September 29th 2020
 - Toggle Feature – Event streaming made available via your partner manager for your environment
 - eMagiz Managed Kafka cluster available for your project (requires proper licensing by eMagiz)
 
-## Using the portal to set up an eMagiz Managed Kafka for your project
+## 1. Using the portal to set up an eMagiz Managed Kafka for your project
 
 To set up an eMagiz managed Kafka cluster, for the first time, you need to follow this process
 
@@ -94,7 +95,7 @@ To make sure that an external user can indeed connect to the topic(s) you have c
 -	Access Certification (possible in combination with the Key as a .p12 resource)
 -	Bootstrap server
 
-## Designing an Event Stream (Topic) ##
+## 2. Designing an Event Stream (Topic) ##
 
 Apart from providing an eMagiz Managed Kafka solution it is also possible to produce and/or consume messages from topics in eMagiz itself. This way you have another integration pattern to select from to better support the business processes.
 
@@ -169,7 +170,7 @@ To set up such a processor follow the following steps:
 5. Fill in the message mapping as you are used to from other integration patterns.
 
 
-## Produce messages on a event stream (Topic)
+## 3. Produce messages on a event stream (Topic)
 
 After you have designed the event Stream (Topic) in Capture and Design you can move the integration to Create. 
 In here eMagiz creates all the required information for you based on the choices you made in Design. So in case of a passthrough case in which eMagiz is a producer eMagiz creates the Kafka template and the Kafka outbound channel adapter for you.
@@ -201,7 +202,7 @@ To produce messages on a Topic you need two components in eMagiz:
   
  <p align="center"><img src="../../img/howto/userguide-es-7.png"></p>
  
-## Consume messages from a event stream (Topic)
+## 4. Consume messages from a event stream (Topic)
 
 After you have designed the event Stream (Topic) in Capture and Design you can move the integration to Create. 
 In here eMagiz creates all the required information for you based on the choices you made in Design. So in case of a passthrough case in which eMagiz is a consumer eMagiz creates the Kafka message listener container and the Kafka message driven channel adapter for you.
@@ -228,7 +229,7 @@ To consume messages from a Topic you need two components in eMagiz:
   
  <p align="center"><img src="../../img/howto/userguide-es-9.png"></p>
  
-## Transform messages between event streams (Topics)
+## 5. Transform messages between event streams (Topics)
 
 With the help of the Processor option you can set up via Design you have the option to transform messages between topics. For example when you gather the weather information from American and European sources and want to present those in one generic format (Celcius) to be consumed you want to transform the topic containing the American weather information to the European (Celcius) format.
 
