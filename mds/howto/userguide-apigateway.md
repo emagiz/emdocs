@@ -141,7 +141,7 @@ When transforming from and to JSON eMagiz will automatically add the components 
 Design and Deploy Architecture work the same as is now the case for projects that only include messaging flows. In Design eMagiz will add one or more runtimes for the API Gateway components based on your API Gateway settings. Advice would be to deploy this runtime on a separate machine in the AWS cloud to keep API Gateway components separate from messaging and/or event streaming components.
 Changes made via Design Architecture will be actualized in the same manner as you are used to in eMagiz via Deploy Architecture.
 
-#### Error handling API Gateway
+### Error handling API Gateway
 The API gateway gives back the error to the client that he receives from the backend system if you as a user don’t do anything. 
 This is not always desirable because it gives the client information on the backend operation and could show sensitive information. 
 Any technical error message that would go to the asynchronous error flow in messaging will result in a http 500 error including the error for the API Gateway. 
@@ -199,11 +199,11 @@ Another default setup is the check in eMagiz with regards to authentication. In 
 
 2.	Select the all.entry flow related to your API Gateway and click on the Reset flow button. This way the new integration is added to the entry. If you configured everything correctly no changes are needed in this flow.
 3.	Select the exit related to your integration (I.e. jira.storyget.exit) and open it by double clicking.
-4.	eMagiz generates the flow based on what you defined in Design. In most cases no changes have to be made in the Create phase. In cases where you want to deviate from the chosen authentication method in Design eMagiz still provides you with this opportunity in Create. When in editing mode in Create you still have the same components at your disposal as when building an integration. These components can be added the same way as you would do for any integration (I.e. using support objects or headers on the message). For an example see the picture below
+4.	eMagiz generates the flow based on what you defined in Design. In most cases no changes have to be made in the Create phase. In cases where you want to deviate from the chosen authentication method in Design eMagiz still provides you with this opportunity in Create. When in editing mode in Create you still have the same components at your disposal as when building an integration. These components can be added the same way as you would do for any integration (i.e. using support objects or headers on the message). For an example see the picture below
  
 <p align="center"><img src="../../img/howto/userguide-apigw-31.png"></p>
 
-5.	hen you are finished with the create phase (which should be fast if you filled in Design correctly) press Stop Editing and create a new version for Deploy. This way the newest version will be available for your Releases in Deploy 
+5.	When you are finished with the Create phase (which should be fast if you filled in Design correctly) press Stop Editing and create a new version for Deploy. This way the newest version will be available for your Releases in Deploy 
 <p align="center"><img src="../../img/howto/userguide-apigw-29.png"></p>
 
 ## Deploy

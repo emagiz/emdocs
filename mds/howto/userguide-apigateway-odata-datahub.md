@@ -1,7 +1,8 @@
 ## User Guide API Gateway eMagiz
 
-Below the user guide for oData section of the eMagiz API Gateway. One of the implementation for this solution is connecting with the Mendix DataHub. The guide is split up per ILM phase of eMagiz (Capture, Design, Create, Deploy and Manage), and per section the specific step by step plans and best practices are discussed. Should you have any questions, please contact productmanagement@emagiz.com.
-Last update: June 30th 2020
+Below the user guide for OData section of the eMagiz API Gateway. One of the implementation for this solution is connecting with the Mendix DataHub. The guide is split up per ILM phase of eMagiz (Capture, Design, Create, Deploy and Manage), and per section the specific step by step plans and best practices are discussed. Should you have any questions, please contact productmanagement@emagiz.com.
+
+Last update: October 7th 2020
 
 ## Pre-requisites
 - Basic knowledge of the eMagiz platform
@@ -26,26 +27,24 @@ Besides this addition Capture has not changed and still should be filled in acco
 
 <p align="center"><img src="../../img/howto/userguide-apigw-2.png"></p>
 
-One distinct differences between setting up Capture for an API Gateway in comparison to lets see messaging is that with the help of Capture you can visualize the clients calling an API Gateway.
+One distinct differences between setting up Capture for an API Gateway in comparison to Messaging for instance is that with the help of Capture you can visualize the clients calling an API Gateway. In upcoming release, more capabilities could be added to Design this system further. In this document, this system is not further discussed in terms of configuration(s).
 
 <p align="center"><img src="../../img/howto/userguide-apigw-43.png"></p>
 
 ## Design
 
-The focus point of configuring the API Gateway to be used via the eMagiz platform lies in Design. 
-In this ILM phase you set up the structure of your API Gateway. 
-The API Gateway consists of a front end (client facing) and a (series of) back end system(s). 
-Each operation created on the front end (client facing) has a link to a back end operation hosted by an external party. 
+The focus point of configuring the API Gateway to be used via the eMagiz platform lies in Design. In this ILM phase you set up the structure of your API Gateway. The API Gateway consists of a front end (client facing) and a (series of) back end system(s). Each operation created on the front end (client facing) has a link to a back end operation hosted by an external party. 
 The Design phase gives you the tools that are needed to set up both the front end as the various back end operations. 
 On Integration Level you can add, change and delete operations (GET, POST, PUT, etc.). 
 For each opeartion you can select both front end (exposed) and back end (endpoint) in one screen. 
 Security of your API Gateway can be defined under the Secutiry tab. 
 This is accessible via a right mouse click on the API Icon in your overview page and selecting security. 
-For oData calls eMagiz uses the oLingo Standard for the front end (client facing). To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
+For OData calls eMagiz uses the Apache OLingo Standard for the front end (client facing). To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
 
 ### Importing API specifications
 eMagiz provides you with the option to import a JSON file containing the API specification of a specific system you want to connect with via the API Gateway. This functionality is only available for backend opeartions. For the front end you link the front end with the correct backend operation. This way eMagiz handles the rest.
 Be aware, not all API specifications are accepted by the tooling. Only OpenAPI 3.0 specifications are accepted (more information on OpenAPI can be found here.)
+
 ### Importing a backend operation of the API Gateway
 To import an OpenAPI specification via eMagiz for a backend system please follow these steps:
 1.	Navigate to Design and right click on the correct system
@@ -230,6 +229,8 @@ List of relevant properties API Gateway
 	- authentication.{technicalname-system}.{technicalname-integration}.api-key. One property with all approved API Keys for a certain integration. Needed if authorization method via ApiKey is used. See Creating and managing API Keys for how to generate these automatically
 
 ### Exposing the operation in the Mendix DataHub
+Objective of this step is to create the link between the entity in eMagiz as defined in the Gateway Model, and the Mendix datahub. A CSDL (Conceptual Schema Definition Language) file contains the required definitions to let Mendix Data Hub understand what exactly is in the entity defined. So that the Catalog of the Mendix Data Hub can displayed this properly. It also contains the required connection details for the runtime of Mendix to reach the OData Gateway located in the all.entry.
+
 1. Navigate to Deploy -> API Gateway
 2. Press the button called Publish to DataHub
 3. Press the button located at the bottom of the page called Export contract as a file

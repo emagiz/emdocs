@@ -19,7 +19,7 @@ In the sections below, you will find some online documents that are relevant for
 |<img width=800/><p align="center"><img  src="../../img/howto/UserGuide_icon.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/EventStreaming.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/API_Gateway.png"></p>|
 |- [eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md)| - [Features & capabilities Event Streaming](release-note-eventstreaming.md) | - [Features & capabilities API Gateway](apigw-releasenotes.md)|
 |- [Storing Mendix data in AWS Redshift](store-your-mendix-data-in-redshift.md)| - [Basic User Guide Event Streaming](userguide-eventstreaming.md) | - [ User Guide API Gateway](userguide-apigateway.md)|
-|- [Configuring Certificates in eMagiz](configure-certificates.md)| | |
+|- [Configuring Certificates in eMagiz](configure-certificates.md)| | - [ User Guide API Gateway for Mendix Data Hub](userguide-apigateway-odata-datahub.md)|
 |- [Transforming Flat Files to XML](flatfile-transformations.md)| | |
 | - [How to setup a REST web service in eMagiz](hosting-rest-webservice.md) | | |
 |- [Creating a network share to drop files into](create-networkshare-win.md)| | |
