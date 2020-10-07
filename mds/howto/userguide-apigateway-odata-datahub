@@ -1,11 +1,12 @@
 ## User Guide API Gateway eMagiz
 
-Below the user guide for the eMagiz API Gateway. The guide is split up per ILM phase of eMagiz (Capture, Design, Create, Deploy and Manage), and per section the specific step by step plans and best practices are discussed. Should you have any questions, please contact productmanagement@emagiz.com.
+Below the user guide for oData section of the eMagiz API Gateway. One of the implementation for this solution is connecting with the Mendix DataHub. The guide is split up per ILM phase of eMagiz (Capture, Design, Create, Deploy and Manage), and per section the specific step by step plans and best practices are discussed. Should you have any questions, please contact productmanagement@emagiz.com.
 Last update: June 30th 2020
 
 ## Pre-requisites
 - Basic knowledge of the eMagiz platform
 - Understanding of API concept
+- Understanding of oData concept
 - Understanding of Authentication methods
 - Understanding and use of Releases
 - Understanding and use of Deployment Plan
@@ -27,11 +28,20 @@ Besides this addition Capture has not changed and still should be filled in acco
 
 One distinct differences between setting up Capture for an API Gateway in comparison to lets see messaging is that with the help of Capture you can visualize the clients calling an API Gateway.
 
-<p align="center"><img src="../../img/howto/userguide-apigw-38.png"></p>
+<p align="center"><img src="../../img/howto/userguide-apigw-43.png"></p>
 
 ## Design
 
-The focus point of configuring the API Gateway to be used via the eMagiz platform lies in Design. In this ILM phase you set up the structure of your API Gateway. The API Gateway consists of a front end (client facing) and a (series of) back end system(s). Each operation created on the front end (client facing) has a link to a back end operation hosted by an external party. The Design phase gives you the tools that are needed to set up both the front end as the various back end operations. On Integration Level you can add, change and delete operations (GET, POST, PUT, etc.). For each opeartion you can select both front end (exposed) and back end (endpoint) in one screen. Security of your API Gateway can be defined under the Secutiry tab. This is accessible via a right mouse click on the API Icon in your overview page and selecting security. eMagiz uses the Open API Standard (The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to RESTful APIs) for the API Gateway. To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
+The focus point of configuring the API Gateway to be used via the eMagiz platform lies in Design. 
+In this ILM phase you set up the structure of your API Gateway. 
+The API Gateway consists of a front end (client facing) and a (series of) back end system(s). 
+Each operation created on the front end (client facing) has a link to a back end operation hosted by an external party. 
+The Design phase gives you the tools that are needed to set up both the front end as the various back end operations. 
+On Integration Level you can add, change and delete operations (GET, POST, PUT, etc.). 
+For each opeartion you can select both front end (exposed) and back end (endpoint) in one screen. 
+Security of your API Gateway can be defined under the Secutiry tab. 
+This is accessible via a right mouse click on the API Icon in your overview page and selecting security. 
+For oData calls eMagiz uses the oLingo Standard for the front end (client facing). To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
 
 ### Importing API specifications
 eMagiz provides you with the option to import a JSON file containing the API specification of a specific system you want to connect with via the API Gateway. This functionality is only available for backend opeartions. For the front end you link the front end with the correct backend operation. This way eMagiz handles the rest.
@@ -62,11 +72,11 @@ Each project comes with his one API Gateway settings. These settings are the sam
  
 <p align="center"><img src="../../img/howto/userguide-apigw-8.png"></p>
 
-2.	In the popup that is presented select REST as API Type and choose transformation or passthrough. Furthermore fill in the display name and technical name
+2.	In the popup that is presented select OData as API Type and choose transformation. Furthermore fill in the display name and technical name
  
-<p align="center"><img src="../../img/howto/userguide-apigw-9.png"></p>
+<p align="center"><img src="../../img/howto/userguide-apigw-44.png"></p>
 
-3.	Choose the right operation and choose the path for the front end side. In case passthrough is chosen a backend operation also needs to be selected. When satisfied press Save.
+3.	Choose the right operation and choose the path for the front end side. When satisfied press Save.
 
 4.	The result would be something like this. For each added operation the counter will increase and the operation will become visible
  
@@ -91,7 +101,7 @@ In the remainder of this section we will look at various scenarios that can occu
 
 5.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
  
-6.	Configure the general settings for this system (I.e. Security). This can be done via a right mouse click on the API icon in the center of your Design overview and pressing security.
+6.	Configure the general settings for the API Gateway (I.e. Security). This can be done via a right mouse click on the API icon in the center of your Design overview and pressing security.
 	- For Security you choose the type of Authentication that is required by eMagiz (ApiKey + Client Certificate is the advised standard)
 
 
@@ -110,7 +120,7 @@ In the remainder of this section we will look at various scenarios that can occu
 3.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway.md)) or by adding them manually in this screen.
 
 4.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
-
+ 
 
 #### Scenario 3: Existing API Gateway, Existing System and New API Resource/Operation
 1.	Select Edit and check whether Integration Pattern API Gateway is selected. If not change it via the change pattern button. Below is an example of what the screen looks like.
@@ -122,7 +132,7 @@ In the remainder of this section we will look at various scenarios that can occu
 <p align="center"><img src="../../img/howto/userguide-apigw-8.png"></p>
 
 3.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
- 
+
 
 #### Scenario 4: Existing API Gateway, Existing System and Existing API Resource/Operation
 1.	Changes can be made on two levels. One for the exposed part. This can be done via the API Catalog. This can be done by right clicking on the API icon in the middle of your project overview and selecting Edit Catalog. Here you can change endpoints, parameters, responses, etc.
@@ -133,44 +143,17 @@ In the remainder of this section we will look at various scenarios that can occu
 
 ### Transforming data API Gateway
 
-Transforming data can be set up in a similar way as for messaging and event streaming. This means that you can define and/or upload system messages and draw lines between entities and attributes indicating what needs to be translated to what. 
-When transforming from and to JSON eMagiz will automatically add the components needed to your flow in Create.
+Transforming data can be set up in a similar way as for messaging and event streaming. This means that you can define and/or upload system messages and draw lines between entities and attributes indicating what needs to be translated to what.
+When dealing with OData you have to take two things into account when setting up your Gateway message:
+-	An ID field (as integer) is mandatory for OData. Therefore you need to add this to your gateway message
+-	An OData response consist of an EntitySet and a Entity. The relation between both needs to be named as such that the gateway message says value for the entity that is a list. See below for an explanation:
 
+<p align="center"><img src="../../img/howto/userguide-apigw-45.png"></p>
 
 ### Design Architecture <-> Deploy Architecture
 Design and Deploy Architecture work the same as is now the case for projects that only include messaging flows. In Design eMagiz will add one or more runtimes for the API Gateway components based on your API Gateway settings. Advice would be to deploy this runtime on a separate machine in the AWS cloud to keep API Gateway components separate from messaging and/or event streaming components.
 Changes made via Design Architecture will be actualized in the same manner as you are used to in eMagiz via Deploy Architecture.
 
-#### Error handling API Gateway
-The API gateway gives back the error to the client that he receives from the backend system if you as a user don’t do anything. 
-This is not always desirable because it gives the client information on the backend operation and could show sensitive information. 
-Any technical error message that would go to the asynchronous error flow in messaging will result in a http 500 error including the error for the API Gateway. 
-In the swagger UI this will look something like this.
-
-<p align="center"><img src="../../img/howto/userguide-apigw-38.png"></p>
-
-Apart from a technical http 500 error responses given back from the client will be shown to the client the same way eMagiz receives them, whether it is a 404, 301, 403, 401, etc.
-As a user you now have the option to catch three types of error and specify what eMagiz should give back to the user:
--	Default
--	Timeout
--	Validation
-
-Under the API Gateway tab you can select Edit Catalog. 
-
-<p align="center"><img src="../../img/howto/userguide-apigw-39.png"></p>
-
-In the screen that will follow you can define the responses. For example you could define a 422 (Unprocessable entity) every time a validation error occurs. 
-When you have defined this the client will always receive a 422 along with the message specified here.
-
-<p align="center"><img src="../../img/howto/userguide-apigw-40.png"></p>
-
-See below for how this will look in the Swagger UI to the client
-
-<p align="center"><img src="../../img/howto/userguide-apigw-41.png"></p>
-
-Another default setup is the check in eMagiz with regards to authentication. In other words is the client calling the API Gateway authorized to execute that specific operation. If not you will get a standard error from eMagiz back including a http 401 response
-
-<p align="center"><img src="../../img/howto/userguide-apigw-42.png"></p>
 
 ## Create
 
@@ -181,7 +164,8 @@ Another default setup is the check in eMagiz with regards to authentication. In 
  
 <p align="center"><img src="../../img/howto/userguide-apigw-27.png"></p>
 
-4.	Select the all.entry flow related to your API Gateway and click on the Reset flow button. This way the new integration is added to the entry. If you configured everything correctly no changes are needed in this flow.
+4.	Select the all.entry flow related to your API Gateway and click on the Reset flow button. This way the new integration is added to the entry. 
+If you configured everything correctly no changes are needed in this flow.
 5.	Select the exit related to your integration (I.e. jira.storyget.exit) and open it by double clicking or a right mouse click and selecting Open exit gate flow.
 6.	eMagiz generates the flow based on what you defined in Design. In most cases no changes have to be made in the Create phase. In cases where you want to deviate from the chosen authentication method in Design eMagiz still provides you with this opportunity in Create. When in editing mode in Create you still have the same components at your disposal as when building an integration. These components can be added the same way as you would do for any integration (I.e. using support objects or headers on the message). For an example see the picture below
  
@@ -244,6 +228,13 @@ List of relevant properties API Gateway
 	- {technicalname -system}.exit.{systemname}. Defines the host for the API of the external system. One needed per external system linked to the API Gateway
 	- {technicalname -system}.entry.port. Defines the port on which the API Gateway is running
 	- authentication.{technicalname-system}.{technicalname-integration}.api-key. One property with all approved API Keys for a certain integration. Needed if authorization method via ApiKey is used. See Creating and managing API Keys for how to generate these automatically
+
+### Exposing the operation in the Mendix DataHub
+1. Navigate to Deploy -> API Gateway
+2. Press the button called Publish to DataHub
+3. Press the button located at the bottom of the page called Export contract as a file
+4. Navigate to hub.mendix.com via the browser and log in
+5. Press Register new service and follow the wizard
 
 
 ## Manage
