@@ -136,18 +136,27 @@ The default setting eMagiz provides you is 168 hours (7 days). For your use case
 
 #### Retention Bytes
 
-Retention Bytes is the number of bytes available on the topic before a FiFo principle of removing the first entry in the log kicks in. The moment your topic holds more bytes as compared to the retention byte setting it will automatically start deleting the data.
-The default setting eMagiz provides you is roughly 524 MB. This might be too low for you if you have millions of messages passing over your topic a day. If so you need to adjust this setting here.
+Retention Bytes is the number of bytes available per partition on that topic before a FiFo principle of removing the first entry in the log kicks in. The moment your topic holds more bytes as compared to the retention byte setting it will automatically start deleting the data.
+The default setting eMagiz provides you is roughly 500 MB. This might be too low for you if you have millions of messages passing over your topic a day. If so you need to adjust this setting here. Calculating the correct value is explained in the following two sections.
 
-#### Calculating Storage Capacity of Topic
+#### Calculating Storage Capacity of a Topic
 
-A general rule of thumb would be that the Retention Hours and Retention Bytes need to be balanced out. A calculation example of this would be:
+A calculation example to derive at how many storage capacity of your cluster is being reserved for this specific topic is shown below:
 
 - 100000 messages per day
 - 3 days retention
 - 5 kB average size of a message placed on the topic
 
-Results in 100000 * 3 * 5 = 1.5 GB in Retention Bytes per topic.
+Results in 100000 * 3 * 5 = 1.5 GB in Storage capacity per topic.
+
+#### Calculating Retention Bytes based on Storage Capacity
+
+Based on the previous calculation and the number of partitions (more partitions equals higher throughput) on your topic you can calculate the Retention Bytes setting
+
+- 1.5 GB Storage capacity
+- 3 partitions
+
+Results in 1.5 / 3 = 0.5 GB in Retention Bytes. As the name indicates this value needs to be added in bytes. For this example we end up with 524288000 bytes.
 
 ### Data Model
 
