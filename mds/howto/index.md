@@ -10,7 +10,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) | - [Effective Alerting with eMagiz](effective-alerting.md) | - [Promote flows from Create to Deploy](promote-to-deploy-from-create.md)|
 | - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| - [Set up your Deployment Plan](deployment-plan.md) |
 | - [Configuring AWS Direct Connect](direct-connect.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
-| - [eMagiz Platform release considerations](emagiz_platform_release_considerations.md) |- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
+| - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) |- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
 | |- [Mini reference Postman in context eMagiz](minireference-Postman.md)| |
 
 
