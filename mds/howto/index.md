@@ -6,12 +6,12 @@ In the sections below, you will find some online documents that are relevant for
 |<img width=600/><p align="center"><img src="../../img/howto/Deployment_icon.png">|<img width=600/><p align="center"><img src="../../img/howto/BestPractice_icon.jpg"></p>|<img width=600/><p align="center"><img src="../../img/howto/How2_icon.png"></p>|
 | - [Migrate to eMagiz 5 (Artemis)](upgrade-to-eMagiz5.md)| - [Best practices for SFTP](sftp-best-practice.md)|- [Daily monitoring with eMagiz](daily-monitoring.md) |
 | - [Install guide eMagiz Connector for Mendix](upgrade-eMagizMendixConnector.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md)| - [End to End testing in eMagiz](end2end-testing.md)|
-| - [On-premise eMagiz runtime installation](runtime-installations-onpremise.md) |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | - [Using ILM tollgates in your sprints](emagiz-tollgates.md)|
-| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md) | - [Effective Alerting with eMagiz](effective-alerting.md) | - [Promote flows from Create to Deploy](promote-to-deploy-from-create.md)|
-| - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| - [Set up your Deployment Plan](deployment-plan.md) |
-| - [Configuring AWS Direct Connect](direct-connect.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
-| - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) |- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
-| |- [Mini reference Postman in context eMagiz](minireference-Postman.md)| |
+| - [On-premise eMagiz runtime installation Windows](runtime-installations-onpremise-windows.md)|- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | - [Using ILM tollgates in your sprints](emagiz-tollgates.md)|
+| - [On-premise eMagiz runtime installation Linux](runtime-installations-onpremise-linux.md)| - [Effective Alerting with eMagiz](effective-alerting.md) | - [Promote flows from Create to Deploy](promote-to-deploy-from-create.md)|
+| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| - [Set up your Deployment Plan](deployment-plan.md) |
+| - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
+| - [Configuring AWS Direct Connect](direct-connect.md)|- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
+| - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) |- [Mini reference Postman in context eMagiz](minireference-Postman.md)| |
 
 
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
