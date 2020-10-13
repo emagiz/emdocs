@@ -12,6 +12,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
 | - [Configuring AWS Direct Connect](direct-connect.md)|- [Mini reference SOAPUI in context eMagiz](minireference-SOAPUI.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
 | - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) |- [Mini reference Postman in context eMagiz](minireference-Postman.md)| |
+| |- [Debugging guidelines](debugging-guidelines.md)| |
 
 
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
