@@ -55,20 +55,9 @@ If you install your JMS and container as well within your network and not in the
 ![](../../img/howto/localconnector-infrastructure-view.png)
 
 ## Java runtime and eMagiz runtime compatibility
-Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. This means that at some point in time older versions of Java and older parts of eMagiz are not supported anymore. In this chapter we will discuss which java version works with which runtime version. 
-Different elements will be discussed. The following schema will show the compatibility of eMagiz in relation with Java and the flow build numbers. 
+Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. This means that at some point in time older versions of Java and older parts of eMagiz are not supported anymore. 
 
-![](../../img/howto/runtime-win-compatible.png)
-
-X = Not compatible
-! = Caution, not supported anymore 
-V = Compatible
-
-With runtime we mean the version of the eMagiz runtime. Not only flows do have a version number, eMagiz is also continuously developing their runtime as well. The newest runtime version above 5.x is only compatible with Java 8. You can check your runtime version in eMagiz Manage -> Monitoring. Search for ‘uptime’ in the message search field. 
-The results will show what the runtime version of the runtime is. Runtime versions above 5.x show also the version number in the log lines when starting the runtime.
-With build number we mean the flow build number is eMagiz. You can check them either in Deploy -> Releases or in your Runtime Dashboard.
-Check before your installation what runtime should be used. Advice and supported option from eMagiz standpoint is to use Java 8 and the newest eMagiz runtime. If that is not possible, please check if your situation is applicable above. 
-If you have a situation that you end up with the yellow exclamation mark or you are unsure, please check with your eMagiz consultant or Product Manager (productmanamgent@emagiz.com) about what the possibilities are.
+Please see the [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) which runtime version, buildnumbers, Java version and so forth are still supported within the eMagiz platform.
 
 ## How to install
 
