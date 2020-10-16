@@ -140,3 +140,54 @@ Support engineers have the ability to see more in order to analyze problems on a
 
 All other users don't have access to the cloud setup as there is no need for access because they can perform the relevant actions on the cloud via the eMagiz portal. For more information on how please see [eMagiz Cloud Management](managing-emagizcloud.md)
 
+
+## eMagiz iPaaS Portal Security considerations
+The eMagiz Portal provides access to users to manage their eMagiz integration configurations. It provides access to all the features to develop, deploy and manage integrations across Test, Acceptance and Production environments.
+
+### User access to https://my.emagiz.com
+User can be added with their email adress by the eMagiz Partner Manager, upon which the user gets an email to sign-in. A temporary password is created and emailed as well, which has to be changed at the first login to the iPaaS Portal. Users are connected to organizations in eMagiz.
+
+### Users access to Integration Projects
+Users can be added to Integration projects, which hold all the configurations required to run the different integrations for the TAP environments. Integration projects are connected to organizations in eMagiz to ensure the integration project remains within limits of the license agreeements. Users can be added to integration projects of the organization where the user belongs to. Users can't be added to integration projects of other clients. 
+
+### User authorizations to Integration projects.
+Every integration project has a bus owner who can distribute rights across functionalities and environments. In the picture below, one can see the various options available across the Integration Life Cycle (ILM) Phases Capture through Manage. The bus owner manages the user permissions and needs to have the MFA authentication level passed before making any changes. 
+In case an Edit permission is granted on a ILM phase, all the sub-options can be used. Bus owners are assigned to integration projects by eMagiz Administrators
+
+<p align="center"><img src="../../img/howto/security-guide-accessrights.png"></p>
+
+### Partner user access to Client environments
+Partner organizations exit in eMagiz. Bus owners can select user from their own organization or from the connected partner organization. The connection between client and partners organization is managed by eMagiz administrators
+
+### Summary of relevant access to environments for eMagiz Administrators
+eMagiz Administrators can view all integration projects, and has the bus owner rights for all integration projects. 
+
+
+## eMagiz GDPR compliancy
+
+### Personal Data we process
+We process the following Personal Data as a controller
+
+| Personal Data | Purpose | Legal basis | Additional Information | Retention Period |
+| Invitations to the eMagiz Platform |  Allow you to join the platform. | Legitimate interest | If you choose to invite another person to the eMagiz Platform, we will ask you for the name and email address of that person. We will automatically send that person an invitation email to visit the eMagiz site, to create an account or join your bus. | | 
+| Data you leave on our sites at our blog, Q&A or Store | Interaction with our users. Providing our users with information about the service. | Legitimate interest | 
+Note that information you leave on the blog or Q&A is public and can also be seen and used by others. We are not responsible for the Personal Data you choose to submit in these blogs and forums.| As long as it provides useful information for our users.| 
+| IP address, your activity on our site and device and browser information | Insight in behavior of website visitors. | Legitimate interest | We use Google Analytics to provide website visitors with an optimal user experience. See the section on Google Analytics for more information. | | 
+| IP address, your activity on our site and device and browser information
+| Correct display, optimization and maintenance of our websites. | Legitimate interest | Maintained by our website hosting provider. | 6 months |
+| Contact details | Direct marketing |Legitimate interest | We process this information to contact you about our products and services. You can opt out at any time | Until we have no more use for the data, or you opt out.| 
+
+We do not make use of automated decision-making based on personal data.
+
+###Protection of Personal Data
+We make reasonable efforts to ensure a level of security appropriate to the risk associated with the processing of Personal Data. We maintain organizational, technical and administrative measures designed to protect Personal Data within our organization against unauthorized access, destruction, loss, alteration or misuse. Our Information Security Management System is ISO 27001 certified. Your Personal Data is only accessible to a limited number of personnel who need access to the information to perform their duties. Unfortunately, no data transmission or storage system can be guaranteed to be 100% secure.
+We store your Personal Data within the European Union. We ensure that our service providers do the same. In case your Personal Data is processed or stored in the United States of America, we ensure that our service provider is certified under the EU-U.S. Privacy Shield Framework.
+
+###Personal Data we share
+We may share your personal data with our service providers (for example our hosting providers). We make reasonable efforts to ensure that they have a level of security appropriate to the risk associated with the processing of personal data. We have a Data Processor Agreement with our service providers to ensure that their processing of your data is according to our instructions and within the bounds of the GDPR.
+
+
+### Personal data in messages processed by the platform
+
+
+

@@ -29,7 +29,7 @@
 |[8.9.0](8.9.0-split-portal.md)| Split portal| 2019-09-06| 
 |[8.8.0](8.8.0-eleventyone.md)| Eleventyone| 2019-08-23| 
 |[8.7.0](8.7.0-hooray-hooray.md)| Hooray hooray| 2019-08-09| 
-|[8.6.0](8.6.0-knock-knock!-whos-there.md)| Knock Knock! Who's there?| 2019-07-26| 
+|[8.6.0](8.6.0-knock-knock-whos-there.md)| Knock Knock! Who's there?| 2019-07-26| 
 |[8.5.0](8.5.0-whats-up-docs.md)| What's up? Docs!| 2019-07-12| 
 |[8.4.0](8.4.0-jolly-jumbuck.md)| Jolly jumbuck| 2019-06-28| 
 |[8.3.1](8.3.1-ponco.md)| Ponco| 2019-06-14| 

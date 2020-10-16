@@ -96,9 +96,9 @@ In the remainder of this section we will look at various scenarios that can occu
  
 <p align="center"><img src="../../img/howto/userguide-apigw-13.png"></p>
 
-4.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway.md)) or by adding them manually in this screen.
+4.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway)) or by adding them manually in this screen.
 
-5.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
+5.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration) and follow the steps outlined there.
  
 6.	Configure the general settings for the API Gateway (I.e. Security). This can be done via a right mouse click on the API icon in the center of your Design overview and pressing security.
 	- For Security you choose the type of Authentication that is required by eMagiz (ApiKey + Client Certificate is the advised standard)
@@ -116,9 +116,9 @@ In the remainder of this section we will look at various scenarios that can occu
  
 <p align="center"><img src="../../img/howto/userguide-apigw-19.png"></p>
 
-3.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway.md)) or by adding them manually in this screen.
+3.	Final step would be to either import the Open API specification of this system ([Importing a backend operation of the API Gateway](#importing-a-backend-operation-of-the-api-gateway)) or by adding them manually in this screen.
 
-4.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
+4.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration) and follow the steps outlined there.
  
 
 #### Scenario 3: Existing API Gateway, Existing System and New API Resource/Operation
@@ -130,7 +130,7 @@ In the remainder of this section we will look at various scenarios that can occu
   
 <p align="center"><img src="../../img/howto/userguide-apigw-8.png"></p>
 
-3.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration.md) and follow the steps outlined there.
+3.	Following this you will select Add integration [Add / Edit integration](#add-/-edit-integration) and follow the steps outlined there.
 
 
 #### Scenario 4: Existing API Gateway, Existing System and Existing API Resource/Operation
