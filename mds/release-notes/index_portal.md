@@ -1,6 +1,8 @@
 ## Portal release notes
 |Release number |Release name |Release date |
 | ------ | ------ | ------ |
+|[10.8.0](10.8.0.md)| Cosmic Egg| 2020-10-16|
+|[10.7.0](10.7.0.md)| Hidden Event| 2020-10-02|
 |[10.6.0](10.6.0.md)| You Are What You Are| 2020-09-18|
 |[10.5.0](10.5.0.md)| Accelerate| 2020-09-04|
 |[10.4.0](10.4.0.md)| Back In The Day| 2020-08-21|
