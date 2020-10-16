@@ -21,6 +21,8 @@ Monitoring your (Production) environment helps you monitor and detect deviations
 
 ## Strengthen your data's security with encryption during transport
 
+### Data 'in transit'
+
 As an integration provider we transport data between applications. To ensure that the transport of this data is as secure as possible several measurements have been set up to keep the data confidential.
 
 Let us first look at the data 'in transit'. This is the phase of the process where data is interchanged between flows within the eMagiz platform (i.e from entry to onramp or offramp to exit) via the orchestration of the JMS server on the messaging layer. This is nicely shown in the picture below.
@@ -33,8 +35,12 @@ For on-premise runtime installations eMagiz uses the AES-128 encryption algorith
 These algorithms make sure that even if outside sources should be able to get to the data on that encrypted filesystem they won’t be able to read the data.
 That way the data is kept confidential.
 
+### Transport Layer Security
+
 To ensure the integrity of data in the transport layer of eMagiz, eMagiz uses the TLS protocol. This means that all client-server communication is secured via TLS. In eMagiz this is implemented as follows: The necessary certificates of the client(s) are trusted by the server and the server is trusted by the client(s). The relevant information is stored in keystores and truststores that are unique per project. This ensures that data cannot be send to other client projects or to other environments within your project.
 In other words it prevents others from eavesdropping on your channels. eMagiz follows the standard guidelines when setting up TLS by making sure that the configured trusted certificate authority (CA) bundle that your messaging server uses to verify client connections, is limited to only the CA used for your nodes, preferably an internally managed CA.
+
+### Data exchange between application and integration
 
 Because eMagiz provides the integration between two or more applications via the eMagiz platform the point at which the data is interchanged between application and integration is a critical part of the integration in terms of security.
 eMagiz offers users the tools to set up integrations and end-points in a secure manner. eMagiz supports well-known market standards, including:
@@ -48,9 +54,34 @@ eMagiz offers users the tools to set up integrations and end-points in a secure 
 	
 This way each connection between the application and the integration (end-point) can be secured in a proper manner and gives the flexibility to confer with the external application which method suits their needs the best. 
 
-The availability of data in eMagiz is quaranteed due to the queue (messaging) and topic (event streaming) functionality that are used to transport data. In case a consuming entity (which can be another queue, topic, external application or else) is not able to consume the data the data will be temporarily stored in a secure manner in the encrypted filesystem we discussed above.
+### Availability of data
 
+The availability of data in eMagiz is quaranteed due to the queue (messaging) and topic (event streaming) functionality that are used to transport data. In case a consuming entity (which can be another queue, topic, external application or else) is not able to consume the data the data will be temporarily stored in a secure manner in the encrypted filesystem we discussed above.
 In case of event streaming the data is temporarily kept on the topic within the kafka cluster. For more detailed information on the security surrounding our kafka event streaming solutions please see ........
+
+## Access to runtime / machine
+
+In the last section we looked at data 'in transit'. In this section we take a step back and look at access to the runtime / machine that holds the process flows that process your data. As you can imagine anyone with access to a machine where runtimes are running on can influence the availability, integrity and confidentiality of data.
+
+<p align="center"><img src="../../img/howto/definition-emagiz-model.png"></p>
+
+eMagiz offers two 'places' were you can install runtimes. Per 'place' we will look a bit deeper at which security measures are taken and should be taken in accordance with you to ensure the availability, integrity and confidentiality of the data
+
+### On-premise
+
+On-premise means that the runtimes are running on a machine outside the direct control of eMagiz. This means that the machine is running under the control of the customer that implements eMagiz within their IT landscape.
+
+Because the machine is outside the direct scope of control of eMagiz it becomes a joint effort between eMagiz and you as a customer to make sure that not everyone can access this server. This because even more important when working with files as part of your integration.
+
+
+### Cloud
+
+In the eMagiz cloud the access is restricted to those who have a legitimate reason to access it based on SLA level agreements. This means support engineers, consignment employees and your bus owner have access to your specific cloud setup.
+This access is per role furthermore limited. This means that consignment employees and bus owners can only see the logging of the runtimes on the machine and the ability to start/stop machines.
+
+Support engineers have the ability to see more in order to analyze problems on a lower level.
+
+All other users don't have access to the cloud setup as there is no need for access because they can perform the relevant actions on the cloud via the eMagiz portal. For more information on how please see [eMagiz Cloud Management](managing-emagizcloud.md)
 
 ## Security guidelines for cloud deployments
 
