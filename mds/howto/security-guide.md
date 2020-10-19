@@ -21,11 +21,15 @@ Evaluator
 
 eMagiz consists of various systems communicating with each other to make the process of developing the process layer and subsequently running the message layer as secure and stable as possible for our customers.
 
-The picture shown below shows how these various entities interact with each other on both process aswell as messaging layer.
+The picture shown below shows how these various entities interact with each other on both process aswell as messaging layer. The bottom part of the picture depicts the user interaction with our portal (https://my.emagiz.com). 
+In this portal a user can build and configure flows. For more information on the security of the portal please see [5. eMagiz iPaaS Portal Security considerations](#5.-emagiz-ipaas-portal-security-considerations)
+
+The middle part of the picture consists of the messaging layer in eMagiz between connector(s), client instances and the eMagiz iPaaS. As you can see all incoming traffic on a client instance goes through a so called carwash. This carwash ensures that non-trusted data is blocked at the gate before it can inflict any damage. 
+For more information on the security of the messaging layer please see [4. Strengthen your data's security with encryption during transport](#4.-strengthen-your-datas-security-with-encryption-during-transport) 
+
+The top part of the picture depicts the eMagiz repository. Within this repository all relevant (open-source) libraries that are needed to run flows on a connector are stored. GJW --> How is this secured?
 
 <p align="center"><img src="../../img/howto/localconnector-infrastructure-view.png"></p>
-
-Carwash toelichten
 
 ## 2. Security guidelines for cloud setups
 
@@ -67,15 +71,6 @@ The following parts of the cloud setup are configured here:
 
 Staying on the latest cloud template version guards yourself against vulnerabilities in older versions of Java and OS for example. In addition it gives the user more options for monitoring the health of the cloud environment reducing the risk of a loss of availability of data (in a timely manner) without comprimising the integrity of the data.
 
-### Cloud access
-
-In the eMagiz cloud the access is restricted to those who have a legitimate reason to access it based on SLA level agreements. This means support engineers, consignment employees and your bus owner have access to your specific cloud setup.
-This access is per role furthermore limited. This means that consignment employees and bus owners can only see the logging of the runtimes on the machine and the ability to start/stop machines.
-
-Support engineers have the ability to see more in order to analyze problems on a lower level.
-
-All other users don't have access to the cloud setup as there is no need for access because they can perform the relevant actions on the cloud via the eMagiz portal. For more information on how please see [eMagiz Cloud Management](managing-emagizcloud.md)
-
 
 ## 3. Access to runtime / machine
 
@@ -94,9 +89,20 @@ On-premise means that the runtimes are running on a machine outside the direct c
 Because the machine is outside the direct scope of control of eMagiz it becomes a joint effort between eMagiz and you as a customer to make sure that not everyone can access this machine. This becomes even more important when working with file based actions as part of your integration. 
 Advice would be to govern this via an IDP (i.e. Azure AD) so you can set up roles that have access to the machine or parts of the machine (i.e. some files).
 
-To add
-- What rights are needed for installing and running the runtimes
-- 
+
+#### Rights for installing
+
+To install a runtime on a on-premise you need sufficient rights to execute (batch) programs. This means that the user needs administrator rights on that specific machine to correctly perform the installation of the runtime.
+
+#### Rights for running
+
+In Windows a service account is needed to be able to run a Windows Service (in this case the runtime you have installed). This service account is different compared to the user that does the installing of the runtime.
+There are two options on this level:
+	
+	-	Use the local system account. This account has sufficient rights to run the service and can therefore be used for everything. Less work to configure, more impact on the integrity of data when the account gets compromised.
+	-	Use a specific service account per runtime. This way you limit the power of users to a specific runtime making you less vulnerable if this account gets compromised.
+
+In Linux the service will be running under the local system account as per default.
 
 ### Cloud
 
@@ -107,6 +113,13 @@ Support engineers have the ability to see more in order to analyze problems on a
 
 All other users don't have access to the cloud setup as there is no need for access because they can perform the relevant actions on the cloud via the eMagiz portal. For more information on how please see [eMagiz Cloud Management](managing-emagizcloud.md)
 
+#### Rights for installing
+
+To install a runtime in the cloud you need sufficient rights within the Deploy phase of eMagiz. For more information on that subject please see [5. eMagiz iPaaS Portal Security considerations](#5.-emagiz-ipaas-portal-security-considerations)
+
+#### Rights for running
+
+The VPC in the cloud runs on a Linux environment. Therefore the same logic applies as specified above for Linux systems. In Linux the service will be running under the local system account as per default.
 
 
 ## 4. Strengthen your data's security with encryption during transport
@@ -125,14 +138,38 @@ For on-premise runtime installations eMagiz uses the AES-128 encryption algorith
 These algorithms make sure that even if outside sources should be able to get to the data on that encrypted filesystem they won’t be able to read the data.
 That way the data is kept confidential.
 
+Above we mentioned that data 'in transit' is temporarily stored. This can happen at two places:
+
+	-	On JMS level (EFS)
+	-	Before the message is placed on a queue (H2)
+
+#### EFS
+
+Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. It is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth.
+
+All data within the EFS is encrypted via an encryption algorithm (AES-256) and data will only be retained here untill the next step in the process is ready to consume the data.
+
+#### H2
+
+H2 is a type of database that is standard available within eMagiz. To guarantee the delivery of data before it reaches an eMagiz queue a H2 database is implemented to temporarily store data till the queue is ready to consume data. 
+
+A user can configure the frequence with which eMagiz will look for new messages in the H2 database and the number of messages retrieved per iteration.
+
+All data within the H2 is encrypted via an encryption algorithm (AES-128). The data is retained within this H2 database till the moment it is retrieved from the H2 database. Depending on input received and throughput achieved by polling the database this can range between seconds and minutes that a message is kept in the H2 database.
+
 ### Transport Layer Security
 
 To ensure the integrity of data in the transport layer of eMagiz, eMagiz uses the TLS protocol. This means that all client-server communication is secured via TLS. In eMagiz this is implemented as follows: The necessary certificates of the client(s) are trusted by the server and the server is trusted by the client(s). The relevant information is stored in keystores and truststores that are unique per project. This ensures that data cannot be send to other client projects or to other environments within your project.
 In other words it prevents others from eavesdropping on your channels. eMagiz follows the standard guidelines when setting up TLS by making sure that the configured trusted certificate authority (CA) bundle that your messaging server uses to verify client connections, is limited to only the CA used for your nodes, preferably an internally managed CA.
 
-### Data exchange between application and integration
+### Data exchange between application and integration pattern
 
 Because eMagiz provides the integration between two or more applications via the eMagiz platform the point at which the data is interchanged between application and integration is a critical part of the integration in terms of security.
+Within eMagiz there are three main integration patterns a user can configure to support their business case in the most optimal manner. In this section we will look at all three of these integration types in detail and specify the security measures.
+
+#### Messaging
+
+Messaging is the most flexible option of the three. Therefore a wide range of options is available within eMagiz to secure the connections.
 eMagiz offers users the tools to set up integrations and end-points in a secure manner. eMagiz supports well-known market standards, including:
 
 	-	OpenID Connect
@@ -144,14 +181,57 @@ eMagiz offers users the tools to set up integrations and end-points in a secure 
 	
 This way each connection between the application and the integration (end-point) can be secured in a proper manner and gives the flexibility to confer with the external application which method suits their needs the best. 
 
-To be added
-- Add H2 database spul
-- What does the Carwash do?
+#### API Gateway
+
+To secure the front end of the API Gateway in eMagiz a structure with roles and rights per role can be specified within the portal or via an external IDP. 
+
+##### Portal
+As you can see in the picture shown below the roles are defined in such a manner that the Read role can only access two integrations available for this specific API Gateway. If a client has insufficient rights they will receive a 401 Unauthorized
+
+<p align="center"><img src="../../img/howto/security-guide-2.png"></p>
+
+##### External IDP
+Apart from configuring the roles, users and rights within the portal itself it is also possible to hook the API Gateway up to an external IDP. 
+By communicating with this IDP via the OAuth2.0 protocol a check is done everytime a client calls a specific operation to see whether that client has sufficient rights to access the operation. 
+If so the process continues. If not the client receives a 401 Unauthorized.
+- Rolen en rechten toelichten
+- OAuth met externe IDP toelichten
+
+For the backend of the API Gateway the same logic applies as stated above for messaging. Meaning that eMagiz supports the industry standard and you as a user should confer with the external party about the correct method.
+
+##### Error handling
+To prevent that the error message if it occurs is send straight back to the client you can configure the front end of the API Gateway in such a manner that correct HTTP Status codes are given back to the client including a descriptive message.
+
+#### Event Streaming
+Within the managed Kafka solution eMagiz provides Event Streaming users and topics can be created.
+Access to a topic within a cluster is governed by an Access Control List (ACL). This ACL links users to a topic and defines what the user can do on a topic (consume, produce, both).
+
+Only users with sufficient rights in the Deploy phase of eMagiz can add users, topics and change the ACL entries specific to the Event Streaming cluster of a customer.
+
+Apart from being able to produce or consume on a specific topica based on the ACL, users also need to have a valid keystore (containing the key and cert generated automatically) and a valid truststore (containing the CA certificate of the kafka cluster) in order to produce or consume data.
+
+These are all security measures to prevent that outside sources can get unauthorized access to the data that is stored on the topics
+
 
 ### Availability of data
 
 The availability of data in eMagiz is quaranteed due to the queue (messaging) and topic (event streaming) functionality that are used to transport data. In case a consuming entity (which can be another queue, topic, external application or else) is not able to consume the data the data will be temporarily stored in a secure manner in the encrypted filesystem we discussed above.
-In case of event streaming the data is temporarily kept on the topic within the kafka cluster. For more detailed information on the security surrounding our kafka event streaming solutions please see ........
+In case of event streaming the data is temporarily kept on the topic within the kafka cluster. 
+
+As specified above access to a topic is secured with the help of certificates and by setting the ACL to guard against a loss of integrity of data.
+
+#### Data retention Event Streaming
+With regards for Event Streaming data is retained for a longer period of times (often days) to make sure that consumers have plenty of time to read the data before it is deleted. This does mean that the data on these topics can not be easily accessed from unauthorized sources
+
+Service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key per each instance and each volume. The key is never re-used and will be trashed at the destruction of the instance, so there's a natural key rotation with roll-forward upgrades. We use the LUKS default mode aes-xts-plain64:sha256 with a 512-bit key.
+
+Backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with RSA key-encryption key-pair and stored in the header section of each backup segment. The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key. 
+
+These backup files are stored in the object storage in the same region where the service virtual machines are located.
+
+### Carwash
+
+All data that is interchanged with a cloud instance goes through the carwash that protects all client instances from harm and route data to the correct client instance.
 
 ## 5. eMagiz iPaaS Portal Security considerations
 The eMagiz Portal provides access to users to manage their eMagiz integration configurations. It provides access to all the features to develop, deploy and manage integrations across Test, Acceptance and Production environments.
@@ -235,21 +315,7 @@ Encryptie aangeven
 Opnieuw opstarten en H2 database leeg
 
 
-
-## 8. Authorization & Authentication for integration
-
-### Considerations for API Gateways
-
-- Rolen en rechten toelichten
-- OAuth met externe IDP toelichten
-
-### Considerations for Event Streamking
-- Wijze + certificaten
-
-EB
-
-
-## 9. Compliancy
+## 8. Compliancy
 
 TBA
 - Mention ISO and SOC and others...
