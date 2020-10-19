@@ -3,6 +3,13 @@
 eMagiz is built with security in mind to protect your data. Protecting your data is a joint responsibility between you and eMagiz. The eMagiz security features enable you to empower your users to do their jobs safely and efficiently and gives you the opportunity to transport data safely between applications.
 
 
+TBA
+REading hguideline per reader role
+
+Integration Architect
+Developer
+Support engineer
+Evaluator
 
 
 ## 1. Architectural setup eMagiz
@@ -12,6 +19,8 @@ eMagiz consists of various systems communicating with each other to make the pro
 The picture shown below shows how these various entities interact with each other on both process aswell as messaging layer.
 
 <p align="center"><img src="../../img/howto/localconnector-infrastructure-view.png"></p>
+
+Carwash toelichten
 
 ## 2. Security guidelines for cloud setups
 
@@ -71,12 +80,18 @@ In the last section we looked at data 'in transit'. In this section we take a st
 
 eMagiz offers two 'places' were you can install runtimes. Per 'place' we will look a bit deeper at which security measures are taken and should be taken in accordance with you to ensure the availability, integrity and confidentiality of the data
 
+
+
 ### On-premise
 
 On-premise means that the runtimes are running on a machine outside the direct control of eMagiz. This means that the machine is running under the control of the customer that implements eMagiz within their IT landscape.
 
 Because the machine is outside the direct scope of control of eMagiz it becomes a joint effort between eMagiz and you as a customer to make sure that not everyone can access this machine. This becomes even more important when working with file based actions as part of your integration. 
 Advice would be to govern this via an IDP (i.e. Azure AD) so you can set up roles that have access to the machine or parts of the machine (i.e. some files).
+
+To add
+- What rights are needed for installing and running the runtimes
+- 
 
 ### Cloud
 
@@ -124,6 +139,10 @@ eMagiz offers users the tools to set up integrations and end-points in a secure 
 	
 This way each connection between the application and the integration (end-point) can be secured in a proper manner and gives the flexibility to confer with the external application which method suits their needs the best. 
 
+To be added
+- Add H2 database spul
+- What does the Carwash do?
+
 ### Availability of data
 
 The availability of data in eMagiz is quaranteed due to the queue (messaging) and topic (event streaming) functionality that are used to transport data. In case a consuming entity (which can be another queue, topic, external application or else) is not able to consume the data the data will be temporarily stored in a secure manner in the encrypted filesystem we discussed above.
@@ -135,12 +154,17 @@ The eMagiz Portal provides access to users to manage their eMagiz integration co
 ### User access to https://my.emagiz.com
 User can be added with their email adress by the eMagiz Partner Manager, upon which the user gets an email to sign-in. A temporary password is created and emailed as well, which has to be changed at the first login to the iPaaS Portal. Users are connected to organizations in eMagiz.
 
+
+TBA = Explain MFA approach. Op productie en permissions noet zonder MFA
+
 ### Users access to Integration Projects
 Users can be added to Integration projects, which hold all the configurations required to run the different integrations for the TAP environments. Integration projects are connected to organizations in eMagiz to ensure the integration project remains within limits of the license agreeements. Users can be added to integration projects of the organization where the user belongs to. Users can't be added to integration projects of other clients. 
 
 ### User authorizations to Integration projects.
 Every integration project has a bus owner who can distribute rights across functionalities and environments. In the picture below, one can see the various options available across the Integration Life Cycle (ILM) Phases Capture through Manage. The bus owner manages the user permissions and needs to have the MFA authentication level passed before making any changes. 
-- In case an Edit permission is granted on a ILM phase, all the sub-options can be used
+- In case an Edit permission is granted on a ILM phase, all the sub-options can be used to configured
+- View rights mean that all options can be viewed only
+- In case the user has no Edit or View rights to a certain IL:M phase, the phase will not be displayed at all in the eMagiz iPaaS Portal
 - Bus owners are assigned to integration projects by eMagiz Administrators
 - An audit trail is kept of the changes made in the project permission structure
 
@@ -151,6 +175,22 @@ Partner organizations exit in eMagiz. Bus owners can select user from their own 
 
 ### Summary of relevant access to environments for eMagiz Administrators
 eMagiz Administrators can view all integration projects, and has the bus owner rights for all integration projects. 
+
+
+
+### eMagiz Monitoring in Manage phase & Security
+
+Monitoring your (Production) environment helps you monitor and detect deviations within your environment in near real-time. All errors and relevant logging is stored for a limited period within eMagiz for auditing or reporting purposes. Furthermore notifications can be send to people to alert them of a potential loss of data integrity.
+
+<more to add?!>
+
+TBA
+- Audit trail op flow wijzigingen, architectuur, system messages, CDM. Minor/major en patch
+- Password change policy & process
+
+
+
+
 
 
 ## 6. eMagiz GDPR compliancy
@@ -183,16 +223,36 @@ TBA
 
 
 
-## 7. eMagiz Monitoring in Manage phase & Security
 
-Monitoring your (Production) environment helps you monitor and detect deviations within your environment in near real-time. All errors and relevant logging is stored for a limited period within eMagiz for auditing or reporting purposes. Furthermore notifications can be send to people to alert them of a potential loss of data integrity.
+## 7. Data retention policies 
 
-<more to add?!>
+Data verwerker positionering
+Dan per patroon aangeven wat de wijze van oplsag en security is
 
-## 8. Data retention policies for Event Streaming
+GJW
+
+
+## 8. Authorization & Authentication for integration
+
+### Considerations for API Gateways
+
+- Rolen en rechten toelichten
+- OAuth met externe IDP toelichten
+
+### Considerations for Event Streamking
+- Wijze + certificaten
+
+EB
+
+
+## 9. Compliancy
 
 TBA
+- Mention ISO and SOC and others...
 
-## 9. Authorization & Authentication considerations for API Gateways
+FJJ
 
-TBA
+## Other
+
+- Pen testing - how, what when
+EB
