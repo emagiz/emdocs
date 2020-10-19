@@ -30,3 +30,4 @@ In the sections below, you will find some online documents that are relevant for
 |- [Using the QA Section](qa-community-guide.md) | | |
 |- [User Guide Unit testing](userguide-unitttest.md) | | |
 |- [Identifying Legacy Constructs](userguide-legacyconstructs.md) | | |
+|- [User Guide Data Pipelines](userguide-data-pipelines.md) | | |
