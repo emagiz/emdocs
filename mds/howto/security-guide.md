@@ -3,18 +3,19 @@
 eMagiz is built with security in mind to protect your data. Protecting your data is a joint responsibility between you and eMagiz. The eMagiz security features enable you to empower your users to do their jobs safely and efficiently and gives you the opportunity to transport data safely between applications.
 
 
-TBA
-REading hguideline per reader role
+## Reading guidelines
+Below the different interested readers and the key section relevant to the role:
+- Integration Architect
+- Developer
+- Support engineer
+- Evaluator
 
-Integration Architect
-Developer
-Support engineer
-Evaluator
+<** FINISH TOWARDS END REVIEW**>
 
 ## Key definitions
 - Integration project: all the integration configurations made to a single eMagiz instance spread across the ILM Phase from Capture to Manage
 
-
+<** FINISH TOWARDS END REVIEW**>
 
 
 ## 1. Architectural setup eMagiz
@@ -31,11 +32,13 @@ The top part of the picture depicts the eMagiz repository. Within this repositor
 
 <p align="center"><img src="../../img/howto/localconnector-infrastructure-view.png"></p>
 
+** VERMELDEN REPOSITORY ZAKEN??**
+
 ## 2. Security guidelines for cloud setups
 
 In this section we take a closer look at the cloud setup in general. Here we will focus on high level security measurements because specifying security measumerents at the data leve are already discussed in the previous section.
 
-### Cloud setup
+### 2.1 Cloud setup
 
 In the picture shown below you see a standard dual-lane setup of an eMagiz instance within the eMagiz Cloud. A single-lane setup looks similar but only consists of one core machine.
 This gives a good insight in how messages are flowing through the cloud, which measure are taken for monitoring and auto healing and where data is temporarily stored 'in transit'. 
@@ -44,20 +47,20 @@ This gives a good insight in how messages are flowing through the cloud, which m
 
 We would like to use this picture to explain certain components within the cloud from a security perspective. We will start at the outside and work our way inwards.
 
-### Cloud location
+### 2.2 Cloud location
 
 Within the AWS cloud there are a number of regions were your cloud setup can be running. Examples of these regions are us-east-1, af-south-1, ap-northeast-1, eu-central-1.
 
 As you can see in the picture eMagiz cloud slots are running within the eu-central-1 region. This region is located in Frankfurt and falls therefore under european data and security laws such as the GDPR.
 
-### Cloud slot (VPC)
+### 2.3 Cloud slot (VPC)
 
 Within this region a unique cloud slot per customer is assigned. In the picture this is represented as a Virtual Private Cloud (VPC). Setting up a VPC lets you provision a logically isolated section of the AWS Cloud where you can launch AWS resources in a virtual network that you define. You have complete control over your virtual networking environment, including selection of your own IP address range, creation of subnets, and configuration of route tables and network gateways.
 
 Incoming data from the internet passes through a load balancer to route data randomly to one of the core machines containing the runtimes holding the process flows. The setup of a VPC is governed by what we call a cloud template.
 
 
-### Cloud template
+### 2.4 Cloud template
  
 This cloud template, designed by eMagiz defines the setup of your cloud instance.
 The following parts of the cloud setup are configured here:
@@ -80,9 +83,7 @@ In the last section we looked at data 'in transit'. In this section we take a st
 
 eMagiz offers two 'places' were you can install runtimes. Per 'place' we will look a bit deeper at which security measures are taken and should be taken in accordance with you to ensure the availability, integrity and confidentiality of the data
 
-
-
-### On-premise
+### 3.1 On-premise
 
 On-premise means that the runtimes are running on a machine outside the direct control of eMagiz. This means that the machine is running under the control of the customer that implements eMagiz within their IT landscape.
 
@@ -104,7 +105,7 @@ There are two options on this level:
 
 In Linux the service will be running under the local system account as per default.
 
-### Cloud
+### 3.2 Cloud
 
 In the eMagiz cloud the access is restricted to those who have a legitimate reason to access it based on SLA level agreements. This means support engineers, consignment employees and your bus owner have access to your specific cloud setup.
 This access is per role furthermore limited. This means that consignment employees and bus owners can only see the logging of the runtimes on the machine and the ability to start/stop machines.
@@ -124,7 +125,7 @@ The VPC in the cloud runs on a Linux environment. Therefore the same logic appli
 
 ## 4. Strengthen your data's security with encryption during transport
 
-### Data 'in transit'
+### 4.1 Data 'in transit'
 
 As an integration provider we transport data between applications. To ensure that the transport of this data is as secure as possible several measurements have been set up to keep the data confidential.
 
@@ -143,31 +144,18 @@ Above we mentioned that data 'in transit' is temporarily stored. This can happen
 	-	On JMS level (EFS)
 	-	Before the message is placed on a queue (H2)
 
-#### EFS
 
-Amazon Elastic File System (Amazon EFS) provides a simple, scalable, fully managed elastic NFS file system for use with AWS Cloud services and on-premises resources. It is built to scale on demand to petabytes without disrupting applications, growing and shrinking automatically as you add and remove files, eliminating the need to provision and manage capacity to accommodate growth.
-
-All data within the EFS is encrypted via an encryption algorithm (AES-256) and data will only be retained here untill the next step in the process is ready to consume the data.
-
-#### H2
-
-H2 is a type of database that is standard available within eMagiz. To guarantee the delivery of data before it reaches an eMagiz queue a H2 database is implemented to temporarily store data till the queue is ready to consume data. 
-
-A user can configure the frequence with which eMagiz will look for new messages in the H2 database and the number of messages retrieved per iteration.
-
-All data within the H2 is encrypted via an encryption algorithm (AES-128). The data is retained within this H2 database till the moment it is retrieved from the H2 database. Depending on input received and throughput achieved by polling the database this can range between seconds and minutes that a message is kept in the H2 database.
-
-### Transport Layer Security
+### 4.2 Transport Layer Security
 
 To ensure the integrity of data in the transport layer of eMagiz, eMagiz uses the TLS protocol. This means that all client-server communication is secured via TLS. In eMagiz this is implemented as follows: The necessary certificates of the client(s) are trusted by the server and the server is trusted by the client(s). The relevant information is stored in keystores and truststores that are unique per project. This ensures that data cannot be send to other client projects or to other environments within your project.
 In other words it prevents others from eavesdropping on your channels. eMagiz follows the standard guidelines when setting up TLS by making sure that the configured trusted certificate authority (CA) bundle that your messaging server uses to verify client connections, is limited to only the CA used for your nodes, preferably an internally managed CA.
 
-### Data exchange between application and integration pattern
+## 5. Data exchange with external systems & parties 
 
 Because eMagiz provides the integration between two or more applications via the eMagiz platform the point at which the data is interchanged between application and integration is a critical part of the integration in terms of security.
 Within eMagiz there are three main integration patterns a user can configure to support their business case in the most optimal manner. In this section we will look at all three of these integration types in detail and specify the security measures.
 
-#### Messaging
+### 5.1 Messaging
 
 Messaging is the most flexible option of the three. Therefore a wide range of options is available within eMagiz to secure the connections.
 eMagiz offers users the tools to set up integrations and end-points in a secure manner. eMagiz supports well-known market standards, including:
@@ -181,7 +169,7 @@ eMagiz offers users the tools to set up integrations and end-points in a secure 
 	
 This way each connection between the application and the integration (end-point) can be secured in a proper manner and gives the flexibility to confer with the external application which method suits their needs the best. 
 
-#### API Gateway
+#### 5.2 API Gateway
 
 To secure the front end of the API Gateway in eMagiz a structure with roles and rights per role can be specified within the portal or via an external IDP. 
 
@@ -202,41 +190,25 @@ For the backend of the API Gateway the same logic applies as stated above for me
 ##### Error handling
 To prevent that the error message if it occurs is send straight back to the client you can configure the front end of the API Gateway in such a manner that correct HTTP Status codes are given back to the client including a descriptive message.
 
-#### Event Streaming
+### 5.3 Event Streaming
 Within the managed Kafka solution eMagiz provides Event Streaming users and topics can be created.
 Access to a topic within a cluster is governed by an Access Control List (ACL). This ACL links users to a topic and defines what the user can do on a topic (consume, produce, both).
 
 Only users with sufficient rights in the Deploy phase of eMagiz can add users, topics and change the ACL entries specific to the Event Streaming cluster of a customer.
 
-Apart from being able to produce or consume on a specific topica based on the ACL, users also need to have a valid keystore (containing the key and cert generated automatically) and a valid truststore (containing the CA certificate of the kafka cluster) in order to produce or consume data.
+Apart from being able to produce or consume on a specific topics based on the ACL, users also need to have a valid keystore (containing the key and cert generated automatically) and a valid truststore (containing the CA certificate of the kafka cluster) in order to produce or consume data.
 
 These are all security measures to prevent that outside sources can get unauthorized access to the data that is stored on the topics
 
-
-### Availability of data
-
-The availability of data in eMagiz is quaranteed due to the queue (messaging) and topic (event streaming) functionality that are used to transport data. In case a consuming entity (which can be another queue, topic, external application or else) is not able to consume the data the data will be temporarily stored in a secure manner in the encrypted filesystem we discussed above.
-In case of event streaming the data is temporarily kept on the topic within the kafka cluster. 
-
-As specified above access to a topic is secured with the help of certificates and by setting the ACL to guard against a loss of integrity of data.
-
-#### Data retention Event Streaming
-With regards for Event Streaming data is retained for a longer period of times (often days) to make sure that consumers have plenty of time to read the data before it is deleted. This does mean that the data on these topics can not be easily accessed from unauthorized sources
-
-Service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key per each instance and each volume. The key is never re-used and will be trashed at the destruction of the instance, so there's a natural key rotation with roll-forward upgrades. We use the LUKS default mode aes-xts-plain64:sha256 with a 512-bit key.
-
-Backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with RSA key-encryption key-pair and stored in the header section of each backup segment. The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key. 
-
-These backup files are stored in the object storage in the same region where the service virtual machines are located.
-
-### Carwash
+### 5.4 Carwash
 
 All data that is interchanged with a cloud instance goes through the carwash that protects all client instances from harm and route data to the correct client instance.
+**CHECK MORE DETAILS**
 
-## 5. eMagiz iPaaS Portal Security considerations
+## 6. eMagiz iPaaS Portal Security considerations
 The eMagiz Portal provides access to users to manage their eMagiz integration configurations. It provides access to all the features to develop, deploy and manage integrations across Test, Acceptance and Production environments.
 
-### 5.1 Authentication & Authorization for ILM Phases
+### 6.1 Authentication & Authorization for ILM Phases
 
 #### User access to https://my.emagiz.com
 User can be added with their email adress by the eMagiz Partner Manager, upon which the user gets an email to sign-in. A temporary password is created and emailed as well, which has to be changed at the first login to the iPaaS Portal. Users are connected to organizations in eMagiz.
@@ -267,7 +239,7 @@ eMagiz Administrators can view all integration projects, and has the bus owner r
 - **<describe password policy>**
 
 
-### 5.2 Integration project versioning & audit trails
+### 6.2 Integration project versioning & audit trails
 - In all the relevant parts of the integration project, developers can version the changes that are made. The type (major, minor or patch) can be indicated as well as a comment to describe the change. Once the version is created, that particular version will be available for Deployment and is then kept in the history of changes on a flow level. Both are illustrated in the pictures below.
 
 <p align="left"><img src="../../img/howto/security-guide-10.png"></p><p align="right"><img src="../../img/howto/security-guide-11.png"></p>
@@ -276,14 +248,14 @@ eMagiz Administrators can view all integration projects, and has the bus owner r
 
 - In Design, the required architecture of the different eMagiz components can be created. An audit trail is kept to see who has made what change, so actual realization issues of this architecture can be resolved faster. In Deply, the architecture is actually implemented t to the Cloud, and a similar audit trail is kept there.
 
-### 5.3 eMagiz Monitoring capabilities & Security features
+### 6.3 eMagiz Monitoring capabilities & Security features
 
 Monitoring your (Production) environment helps you monitor and detect deviations within your environment in near real-time. The ILM phase Manage provides access to errors logs generated in message processing by the platform, as welll as to monitoring logs of the Cloud components and eMagiz runtimes. All errors and relevant logging is stored for a limited period (two weeks) within eMagiz for auditing or reporting purposes. Furthermore notifications can be send to people to alert them of a potential loss of data integrity. These alerts can contain a notification or the actual error that occured. 
 
 In case certain messages are processed but result into validation errors or other errors, the message is then send to the error stack. The actual message including the content can be viewed by the developer to understand the error reported properly. The eMagiz store holds a specific transformation (Mask XSLT) that can mask all the fields of the XML message send to the error stack. It can mask all the fields or only specific fields that contain sensitive data. Clients are requested to make this assessment per integration adviced by the eMagiz Partner. In future versions of eMagiz, specific attributes of entities in System Messages or CDM messages can be flagged so the platform takes care of this feature automatically.
 
 
-## 6. GDPR compliancy
+## 7. GDPR compliancy
 
 Our privacy policy is mentioned on this page: https://www.emagiz.com/privacy-policy/. The eMagiz platform holds for registered users only the username and password. The user name is the company email address, and no other data is kept on a personal user level. 
 
@@ -292,40 +264,35 @@ The eMagiz Portal at https://my.emagiz.com does not store any session or cookies
 
 
 
-## 7. Data retention policies 
+## 8. Data retention policies 
 eMagiz stores in specific integration scenario's data held in messages processed. eMagiz only processes the data and doesn't keep any data from these message streams. All messages are treated in the same way and the platform doesn't distinguish between regular, personal or sensitive data. Clients are requested to make such assessments and take precousionary measures.
 
-### 7.1 Messaging
-In the integrations where the Messaging pattern is selected, the entry connectors (runtimes that receive or pull messages) are equipped with a small temporary database to enure the messages are preserved in this phase. In case of temporary downtime of consecutive components where these messages are processed, these messages are preserved. This is one part of the Guaranteed Delivery mechanism in eMagiz. MEssages are encrypted and stored - restart of the entry connector results in a cleanse of the database. Only users that have sufficient permissions can restart.
+### 8.1 Messaging
+In the integrations where the Messaging pattern is selected, the entry connectors (runtimes that receive or pull messages) are equipped with a small temporary database to enure the messages are preserved in this phase. In case of temporary downtime of consecutive components where these messages are processed, these messages are preserved. This is one part of the Guaranteed Delivery mechanism in eMagiz. Messages are encrypted (AES-128) and stored until the message is processed - database can only be fully cleansed if needed by removing the datafile of this database. Only users that have sufficient permissions can restart. Depending on input received and throughput achieved by polling the database this can range between seconds and minutes that a message is kept in the database.
 
-### 7.2 Event Streaming
+The eMagiz JMS component is managing the queues between the differents steps in the integration flow. All data within these queues are encrypted via an encryption algorithm (AES-256) and data will only be retained here untill the next step in the process is ready to consume the data.
 
+### 8.2 Event Streaming
 
+In case of event streaming the data is temporarily kept on the topic within the event streaming cluster. As specified above access to a topic is secured with the help of certificates and by setting the ACL to guard against a loss of integrity of data. With regards for Event Streaming data is retained for a longer period of times (often days) to make sure that consumers have sufficient time to consume the data before it is deleted. This does mean that the data on these topics can not be easily accessed from unauthorized sources. Authorized users can edit the retention bytes and retention hours on topic level.
 
-### 7.3 API Gateway
-
-
-Data verwerker positionering --> Client decides what is stored and how that is managed. The platform doesn't know the contents, and treats every messag ethe same way.
-
-Dan per patroon aangeven wat de wijze van oplsag en security is
-
-GJW
-
-Aangeven dat we data opslaan en hoe. Focus op functionele zaken, focus op waar gebruikers iets kunnen doen
-Techniek aangeven hoe we dat te configuren
-Bewaartermijnen
-Encryptie aangeven
-Opnieuw opstarten en H2 database leeg
+- Service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key per each instance and each volume. The key is never re-used and will be trashed at the destruction of the instance, so there's a natural key rotation with roll-forward upgrades. We use the LUKS default mode aes-xts-plain64:sha256 with a 512-bit key.
+- Backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with RSA key-encryption key-pair and stored in the header section of each backup segment. The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key. 
+- These backup files are stored in the object storage in the same region where the service virtual machines are located.
 
 
-## 8. Compliancy
+### 8.3 API Gateway
+
+At this moment, there is no data stored in eMagiz API Gateways configurations. Backend flows that connect to the API's being called use the same queuing mechanism as mentioned in the previous section around Messaging.
+
+## 9. Compliancy
 
 TBA
 - Mention ISO and SOC and others...
 
 FJJ
 
-## Other
+## 10. Other
 
 ### Pen testing
 
