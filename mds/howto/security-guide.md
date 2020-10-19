@@ -216,10 +216,13 @@ The eMagiz Portal at https://my.emagiz.com does not store any session or cookies
 eMagiz stores in specific integration scenario's data held in messages processed. eMagiz only processes the data and doesn't keep any data from these message streams. All messages are treated in the same way and the platform doesn't distinguish between regular, personal or sensitive data. Clients are requested to make such assessments and take precousionary measures.
 
 ### 7.1 Messaging
-In the integrations where the Messaging pattern is selected, the entry connectors (runtimes that receive or pull messages) are equipped with a small temporary database to enure the messages are preserved in this phase. In case of temporary downtime of consecutive components where these messages are processed, these messages are preserved. This is one part of the Guaranteed Delivery mechanism in eMagiz.
+In the integrations where the Messaging pattern is selected, the entry connectors (runtimes that receive or pull messages) are equipped with a small temporary database to enure the messages are preserved in this phase. In case of temporary downtime of consecutive components where these messages are processed, these messages are preserved. This is one part of the Guaranteed Delivery mechanism in eMagiz. MEssages are encrypted and stored - restart of the entry connector results in a cleanse of the database. Only users that have sufficient permissions can restart.
 
 ### 7.2 Event Streaming
 
+
+
+### 7.3 API Gateway
 
 
 Data verwerker positionering --> Client decides what is stored and how that is managed. The platform doesn't know the contents, and treats every messag ethe same way.
