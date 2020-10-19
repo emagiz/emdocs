@@ -324,5 +324,8 @@ FJJ
 
 ## Other
 
-- Pen testing - how, what when
-EB
+### Pen testing
+
+eMagiz services are periodically assessed and penetration tested for any security issues by an independent professional cyber security vendor.
+
+During these tests the auditor will try to achieve goals (penetration of the target system on various levels) by undertaking various means. Such a test can help determine whether a system is vulnerable to attack if the defenses were sufficient, and which defenses (if any) the test defeated.
