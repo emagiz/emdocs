@@ -32,30 +32,52 @@ To summarize, controlling the eMagiz Cloud gives you:
 -	In case of a so-called double lane bus (failover available) you have the option to first update the failover setup (Availibility Zone B) and at a later stage the ‘live’ setup (Availability Zone A). This to prevent down-time of the platform instance
 
 ## How-to steps Upgrade Cloud Template
-Follow these steps carefully in order to acquire the desired result. Before we explain step by step which actions to take to upgrade a cloud template let us first consider why you want to update a cloud template in the first place. 
+Follow these steps carefully in order to acquire the desired result. 
+Before we explain step by step which actions to take to upgrade a cloud template let us first consider why you want to update a cloud template in the first place. 
  
-A Cloud template is the configuration, specified by eMagiz, how deploy Architecture will run in AWS and which supporting tools (such as auto healing, auto recovery and improved alerting for instance) are available for your environment. With each new cloud template these functionalities will improve autonomous use and stability of the instance. Which changes exactly are made in a particular cloud template can be found in the Release notes section under Community -> Documentation in the eMagiz portal. 
+A Cloud template is the configuration, specified by eMagiz, how deploy Architecture will run in AWS and which supporting tools (such as auto healing, auto recovery and improved alerting for instance) are available for your environment. 
+With each new cloud template these functionalities will improve autonomous use and stability of the instance. 
+Which changes exactly are made in a particular cloud template can be found in the Release notes section under Community -> Documentation in the eMagiz portal. 
 
-What is important to understand is that the update of a Cloud template can be done without any downtime in case your particular environment runs in a failover scenario. You can simply update zone A and zone B in sequence so that all services can continue to work without interruption. In case you run in a single lane scenario, you will have to plan a short downtime of the environment to perform the update which takes between 1 or 4 minutes. There will be no loss of messages.
+What is important to understand is that the update of a Cloud template can be done without any downtime in case your particular environment runs in a failover scenario. 
+You can simply update zone A and zone B in sequence so that all services can continue to work without interruption. 
+In case you run in a single lane scenario, you will have to plan a short downtime of the environment to perform the update which takes between 1 or 4 minutes. There will be no loss of messages.
 
-Below the steps to update a Cloud template automatically or at the moment the pop-up appears. 
-0. Please switch off Root Monitoring off before proceeding. 
+To make this possible we give you three choices to upgrade your cloud template. These choices are accessible via a context menu on the Deploy Architecture page under the section Upgrade.
+
+Note: For Production you should switch off the Root monitoring therefore the Manual step is advisable for Production. Also don't forget to turn the Root monitoring back on if you are finished and Root has the correct information.
+
+<p align="center"><img src="../../img/howto/managing-emagizcloud-9.png"></p>
+
+<p align="center"><img src="../../img/howto/managing-emagizcloud-10.png"></p>
+
+   
+### Manual
 1.	Navigate to Deploy -> Architecture for the bus you want to perform this action
-2.	If a new template has been made available you will see a popup screen asking if you want to update to the latest cloud template. If this fits you can execute the upgrade of the cloud template by pressing the green button at the bottom of the popup. If you however which to delay it you can silence the pop up for a day by pressing the other button. Another option (manually) to update your cloud template can be found starting at step 5
-3.	By pressing the button in step 2 eMagiz will now automatically update the cloud template for you. You can follow the progress of this update by right clicking on the white part of the canvas and selecting details you will see the cloud template number and the state of the last update. See figure below. If it says update complete the update has been successful. 
-4.	Execute all standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard
-5.  Switch root monitoring on.
+2.	Select Start Editing
+3.	Select the context menu and select Upgrade
+4.	Select the newly available Cloud template
+5.	Press Save & Upgrade
+6.	eMagiz will handle the update and will notify you when the update is successfully finished
 
-In case you decide to run the update the later, here are the steps to perform this update manually.
-0.  Switch root monitoring off.
-1.	Select the correct environment for which you want to perform this action. 
-2.	Press Start Editing button. Located on the left bottom of the screen
-3.	Right click on the white canvas and select details
-4.	Select the cloud template of your choosing in the dropdown. Be aware, eMagiz will only let you choose the next GA version apart from your current version.
-5.	Don’t forget to press Apply to environment on the left bottom of the screen to make sure that your changes are applied to the AWS cloud
-6.	Verify if the update has been successful. This can be seen in the details screen by looking at the Last known state
-7.	Execute all standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard
-8.  Switch root monitoring on.
+### Planned
+1.	Navigate to Deploy -> Architecture for the bus you want to perform this action
+2.	Select Start Editing
+3.	Select the context menu and select Upgrade
+4.	Select the newly available Cloud template
+5.	Select a specific future date and time on which you want to execute the cloud template upgrade
+6.	Press Save
+7.	eMagiz will handle the update and will notify you when the update is started and when it is successfully finished
+
+### Scheduled
+1.	Navigate to Deploy -> Architecture for the bus you want to perform this action
+2.	Select Start Editing
+3.	Select the context menu and select Upgrade
+4.	Enable Automatic Upgrades
+5.	Select the day of the week and the time you want the scheduled deployment to be executed
+6.	Press Save
+7.	eMagiz will handle the update (if one is available) and will notify you when the update is started and when it is successfully finished
+
 
 ## How-to steps Add / Update Runtimes
 Follow these steps carefully in order to acquire the desired result. Each time you want to add, change the location of a runtime on a VM or want to remove a runtime you will need to follow the steps outlined below to make sure that what you have envisioned is actualized in the eMagiz Cloud (in AWS)
