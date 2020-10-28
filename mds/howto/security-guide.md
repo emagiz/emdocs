@@ -160,11 +160,6 @@ Apart from configuring the roles, users and rights within the portal itself it i
 By communicating with this IDP via the OAuth2.0 protocol a check is done everytime a client calls a specific operation to see whether that client has sufficient rights to access the operation. 
 If so the process continues. If not the client receives a 401 Unauthorized.
 
-<to do>
-- Rolen en rechten toelichten
-- OAuth met externe IDP toelichten
-</to do>
-
 For the backend of the API Gateway the same logic applies as stated above for messaging. Meaning that eMagiz supports the industry standard and you as a user should confer with the external party about the correct method.
 
 ##### Error handling
@@ -184,7 +179,7 @@ These are all security measures to prevent that third parties can get unauthoriz
 
 All data that is exchanged between an external system and a cloud instance goes through the carwash that protects all client instances from harm and routes data to the correct client instance.
 <to do>
-**CHECK MORE DETAILS**
+Probably need to add more details here - action pending
 </to do>
 
 ## 6. eMagiz iPaaS Portal Security considerations
@@ -216,11 +211,11 @@ Partner organizations are supported in eMagiz. Bus owners can select user from t
 eMagiz Administrators can view all integration projects, and has the bus owner rights for all integration projects. 
 
 #### Password policy & Validity 
+Below the relevant items for the password policy in eMagiz Portal
 
-<to do>
 - There is no expiry policy on the password - eMagiz has a Forget Password functionality. 
-- **<describe password policy>**
-</to do>
+- Password must be 8 - 20 characters long, cannot contain white spaces, and must contain at least one digit, one upper case and one lower case letter."
+
 
 ### 6.2 Integration project versioning & audit trails
 - In all the relevant parts of the integration project, developers can version the changes that are made. The type (major, minor or patch) can be indicated as well as a comment to describe the change. Once the version is created, that particular version will be available for Deployment and is then kept in the history of changes on a flow level. Both are illustrated in the pictures below.
@@ -241,9 +236,7 @@ In case certain messages are processed but result into validation errors or othe
 ## 7. GDPR compliancy
 Our privacy policy is mentioned on this page: https://www.emagiz.com/privacy-policy/. The eMagiz platform holds for registered users only the username and password. The user name is the company email address, and no other data is kept on a personal user level. 
 
-<To check>
-The eMagiz Portal at https://my.emagiz.com does not store any session or cookies.
-
+The eMagiz Portal at https://my.emagiz.com does not store any cookies. There are functional items only kept in the session data of the user once active in the eMagiz Portal. Specific logs are created in the eMagiz Portal that display functional issues a user has in using the Portal. These logs are only viewable by eMagiz users and contain no personal data.
 
 
 ## 8. Data retention  
@@ -270,7 +263,7 @@ At this moment, there is no data stored in eMagiz API Gateways configurations. B
 ## 9. Compliancy
 
 <to do> 
-- Mention ISO and SOC and others...
+- Do we need a list of all compliancy certificates here?
 </to do>
 
 ## 10. Other
