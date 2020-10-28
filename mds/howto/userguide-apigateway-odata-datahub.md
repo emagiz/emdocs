@@ -245,3 +245,25 @@ This can be seen in more detail under the section API Gateway Statistics (Under 
  
 <p align="center"><img src="../../img/howto/userguide-apigw-37.png"></p>
 
+
+## 5. Reference videos
+
+Here are some short videos for each phase how to configure the Data Hub properly. Videos dated October 2020:
+
+Capture
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/mUWcZyb5JOg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Design
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/hm0M7qXd1TM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Create
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/f-bZX8XDdIY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Deploy
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/AZZwEwKkaR4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Publish
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/_dPcRbU3fUI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+

@@ -46,7 +46,7 @@ In case you run in a single lane scenario, you will have to plan a short downtim
 ### New way (Beta release)
 To make this possible we give you three choices to upgrade your cloud template. These choices are accessible via a context menu on the Deploy Architecture page under the section Upgrade.
 
-Note: For Production you should switch off the Root monitoring therefore the Manual step is advisable for Production. Also don't forget to turn the Root monitoring back on if you are finished and Root has the correct information.
+Note for Root Cloud users: For Production you should switch off the Root monitoring therefore the Manual step is advisable for Production. Also don't forget to turn the Root Cloud monitoring back on if you are finished and Root has the correct information.
 
 <p align="center"><img src="../../img/howto/managing-emagizcloud-9.png"></p>
 
@@ -79,7 +79,7 @@ Note: For Production you should switch off the Root monitoring therefore the Man
 7.	eMagiz will handle the update (if one is available) and will notify you when the update is started and when it is successfully finished
 
 
-### Current way (Depricated)
+### Current way (to deprecate)
 
 Below the steps to update a Cloud template automatically or at the moment the pop-up appears. 
 0. Please switch off Root Monitoring off before proceeding. 
