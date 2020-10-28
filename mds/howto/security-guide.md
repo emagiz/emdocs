@@ -10,11 +10,9 @@ eMagiz consists of various components communicating with each other to make the 
 2.	These flows are then deployed together with a specific build number (contains framework components to make these flows work), into a runtime (java based application container). 
 3.	These runtimes run on Cloud machines that contain Cloud templates (all required components to make the Cloud machine operational such as OS, Java runtime version, etc).
 
-The top part of the picture depicts the eMagiz repository. Within this repository all relevant (open-source) libraries that are needed to run flows on a connector are stored. GJW --> How is this secured?
+The top part of the picture depicts the eMagiz repository. Within this repository all relevant (open-source) libraries that are needed to run flows on a connector are stored.
 
 <p align="center"><img src="../../img/howto/definition-emagiz-model.png"></p>
-
-** VERMELDEN REPOSITORY ZAKEN??**
 
 ## 2. Security guidelines for the eMagiz Cloud
 
@@ -77,8 +75,8 @@ To install a runtime on a on-premise you need sufficient rights to execute (batc
 In Windows a service account is needed to be able to run a Windows Service (in this case the runtime you have installed). This service account is different compared to the user that does the installing of the runtime.
 There are two options on this level:
 	
-	-	Use the local system account. This account has sufficient rights to run the service and can therefore be used for everything. Less work to configure, more impact on the integrity of data when the account gets compromised.
-	-	Use a specific service account per runtime. This way you limit the power of users to a specific runtime making you less vulnerable if this account gets compromised.
+- Use the local system account. This account has sufficient rights to run the service and can therefore be used for everything. Less work to configure, more impact on the integrity of data when the account gets compromised.
+- Use a specific service account per runtime. This way you limit the power of users to a specific runtime making you less vulnerable if this account gets compromised.
 
 In Linux the service will be running under the local system account as per default.
 
@@ -137,12 +135,12 @@ Within eMagiz there are three main integration patterns a user can configure to 
 Messaging is the most flexible option of the three. Therefore a wide range of options is available within eMagiz to secure the connections.
 eMagiz offers users the tools to set up integrations and end-points in a secure manner. eMagiz supports well-known market standards, including:
 
-	-	OpenID Connect
-	-	WS-Security
-	-	API Keys in combination with HTTPS/SSL
-	-	SOAP Authentication
-	-	OAuth2.0
-	-	Basic Authentication
+- OpenID Connect
+- WS-Security
+- API Keys in combination with HTTPS/SSL
+- SOAP Authentication
+- OAuth2.0
+- Basic Authentication
 	
 This way each connection between the application and the integration (end-point) can be secured in a proper manner and gives the flexibility to confer with the external application which method suits their needs the best. 
 
