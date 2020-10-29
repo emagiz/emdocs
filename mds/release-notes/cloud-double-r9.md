@@ -27,4 +27,4 @@ Features R8 release:
 8) Java runtime environment is updated to OpenJdk 8u222 (AdoptOpenJDK, 8u222-b10, HotSpot)
 
 Features R9 release:
-9) Fixed the resource limit error on cloudformation deployment (for very large cloud slots)
+1) Fixed the resource limit error on cloudformation deployment (for very large cloud slots)
