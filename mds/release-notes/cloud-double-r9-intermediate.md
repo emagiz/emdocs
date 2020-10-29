@@ -11,7 +11,7 @@ Steps:
 - This step will remove all the machines in your cloudslot
 - The network drive containing the Artemis queue store and your Elastic IPs will remain.
 
-2) Use the final template (restoring services) (duration: 4 minutes)
+2) Use the final template (service affecting) (duration: 4 minutes)
 - This step will recreate all the machines in your cloudslot 
 - The runtimes on the machines will be restored using the active release in the eMagiz portal
    
