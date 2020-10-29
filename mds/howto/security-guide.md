@@ -176,9 +176,6 @@ These are all security measures to prevent that third parties can get unauthoriz
 ### 5.4 Carwash
 
 All data that is exchanged between an external system and a cloud instance goes through the carwash that protects all client instances from harm and routes data to the correct client instance.
-<to do>
-Probably need to add more details here - action pending
-</to do>
 
 ## 6. eMagiz iPaaS Portal Security considerations
 The eMagiz Portal provides access to users to manage their eMagiz integration configurations. It provides access to all the features to develop, deploy and manage integrations across Test, Acceptance and Production environments.
@@ -260,9 +257,7 @@ At this moment, there is no data stored in eMagiz API Gateways configurations. B
 
 ## 9. Compliancy
 
-<to do> 
-- Do we need a list of all compliancy certificates here?
-</to do>
+- eMagiz has the ISO-27001 certification at this moment.
 
 ## 10. Other
 
