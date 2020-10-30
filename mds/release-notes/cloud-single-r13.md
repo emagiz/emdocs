@@ -7,7 +7,7 @@ Process:
 To use the new R13 release of our cloud template we upgrade in two steps.
 
 Final step:
-2) Use this final template (restoring services) (duration: 4 minutes)
+1) Use this final template (restoring services) (duration: 4 minutes)
 - This step will recreate all the machines in your cloudslot 
 - The runtimes on the machines will be restored using the active release in the eMagiz portal
    
