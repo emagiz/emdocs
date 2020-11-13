@@ -49,26 +49,29 @@ Below the example of the Send Message microflow that contains this Java Action.
 
 ![](../../img/howto/emmxv8_java_action_receivemsg.png)
 
-1. Queue - enter the proper value for the onramp queue of eMagiz where the message needs to be put on. Below an example of an onramp queue / select the destination name as queue name.
+1. Queue - enter the proper value for the exit queue of eMagiz that needs to be registered so you can retrieve messages from that queue.
 2. Validate - select if message needs to be validate in Mendix
 3. Mapping parameter - select the entity that holds the data to be send to eMagiz for further processing
 4. Export mapping - ensure to have created a Mendix mapping object so that the data can be properly processed by eMagiz. Consider sequence, data types, etc. of attributes to ensure the message can be properly processed
 
 ### Receiving synchronous message request via provided Java actions ###
 
-![](../../img/howto/emmxv8_java_action_sendmsgasynch.png)
+![](../../img/howto/emmxv8_java_action_sendmsgasynch-request.png)
 
 **Request**
-1. Request Queue - enter the proper value for the offramp request queue of eMagiz where the request message needs to be put on.
+1. Request Queue - enter the proper value for the exit request queue of eMagiz where the request message needs to be retrieved from.
 2. Validate request - Whether the request needs to be validated - works only for XML (not JSON)
 3. Request Import Mapping - Import mapping document that contains the mapping from XML or JSON to the domain model object
 4. Request limit - The maximum number of objects in the request. When set to -1, it means unlimited. When set to 1 the microflow will only be called when the import mapping is not empty. Other values means that the microflow is always called regardless whether the import mapping is empty or not
+
+![](../../img/howto/emmxv8_java_action_sendmsgasynch-response.png)
 
 **Response**
 1. Generate Response Microflow - Microflow that is called when the message is received
 2. Response Limit - See request limit above
 3. Response export mapping - Export mapping that maps XML/JSON to the domain model object
 4. Validate Response - Whether the request needs to be validated - works only for XML (not JSON)
+5. Response Queue - enter the proper value for the exit response queue of eMagiz where the response message needs to be put on.
  
 **Message Listeners Option**
 1. Error handling - Optional, default ERROR-MESSAGE. There are four options to influence the behavior when an error message is generated: 
@@ -85,7 +88,7 @@ Below the example of the Send Message microflow that contains this Java Action.
 
 ### Sending synchronous message request via provided Java actions ###
 
-![](../../img/howto/emmxv8_java_action_sendmsgasynch2.png)
+![](../../img/howto/emmxv8_java_action_sendmsgsynch.png)
 
 **Request**
 1. Request Mapping parameter - Mendix Domain Model object to export JSON or XML using specified export mapping
