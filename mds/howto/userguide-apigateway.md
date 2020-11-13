@@ -29,6 +29,9 @@ One distinct differences between setting up Capture for an API Gateway in compar
 
 <p align="center"><img src="../../img/howto/userguide-apigw-38.png"></p>
 
+### User Management
+In Capture you can correctly setup 'consuming' entities of your API Gateway. For more information please read [this](user-management.md) document
+
 ## Design
 
 The focus point of configuring the API Gateway to be used via the eMagiz platform lies in Design. In this ILM phase you set up the structure of your API Gateway. The API Gateway consists of a front end (client facing) and a (series of) back end system(s). Each operation created on the front end (client facing) has a link to a back end operation hosted by an external party. The Design phase gives you the tools that are needed to set up both the front end as the various back end operations. On Integration Level you can add, change and delete operations (GET, POST, PUT, etc.). For each opeartion you can select both front end (exposed) and back end (endpoint) in one screen. Security of your API Gateway can be defined under the Secutiry tab. This is accessible via a right mouse click on the API Icon in your overview page and selecting security. eMagiz uses the Open API Standard (The OpenAPI Specification (OAS) defines a standard, language-agnostic interface to RESTful APIs) for the API Gateway. To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
@@ -71,6 +74,9 @@ Each project comes with his one API Gateway settings. These settings are the sam
 4.	The result would be something like this. For each added operation the counter will increase and the operation will become visible
  
 <p align="center"><img src="../../img/howto/userguide-apigw-11.png"></p>
+
+### User Management
+In Design you can correctly assign roles and rights to 'consuming' entities of your API Gateway. For more information please read [this](user-management.md) document
 
 In the remainder of this section we will look at various scenarios that can occur in Design based on the phase your project is in.
  
@@ -209,41 +215,12 @@ Another default setup is the check in eMagiz with regards to authentication. In 
 ## Deploy
 1.	Navigate to Deploy -> Releases
 2.	Create a new Release based on the currently active release and add to the new release all new flow versions based on the changes made in the Create phase of eMagiz.
-3.	Adding and updating flows can be done in a slightly different way in comparison to what you are used when adding /updating a messaging flow.
-4.	Click on the details icon (the three dots) and select Details
- 
-<p align="center"><img src="../../img/howto/userguide-apigw-33.png"></p>
-
-5.	When adding an integration navigate to the integrations tab and Click on Add
- 
-<p align="center"><img src="../../img/howto/userguide-apigw-34.png"></p>
-
-6.	After you have added the integration select the tab Flow versions. In this tab the newly added integration will show up with the latest version
-7.	If you want to update a flow you will need to be in the same screen as in step 5 (Flow versions). Here you can easily change the version of a certain flow to the version you want
-8.	Click on Save
-9.	If this is the first time ever you are about to host an API Gateway please first read the section around Creating and managing API Keys (see right-hand panel menu)
-10.	Press Deploy in the drop-down menu to deploy the various new / updated flow to the correct runtimes. When confronted with the pop up that properties are missing fill them in according to the relevant best practices. A list of relevant properties always needed for an API Gateway are listed under the list of Relevant Properties (see right-hand panel menu)
-11.	Verify via the usual steps, checking runtime dashboard and manage, whether all flows are running correctly and as expected.
-
-
-### Creating and managing API Keys
-
-1.	Navigate to Deploy -> API Gateway
-2.	Here you can add Users and Roles. The way this works is that you can assign a Role to a User and based on a Role you can grant access to specific exposed operations.
-3.	If you want to add an User click on New. Click on edit if you want to edit an User and /or accompanying Authentication Key or Delete if you want to revoke a certain Authentication Key / delete a user
- 
-<p align="center"><img src="../../img/howto/userguide-apigw-35.png"></p>
-
-4.	If you want to add an Role click on New. Click on edit if you want to edit an Role or Delete if you want to revoke a certain Role 
-<p align="center"><img src="../../img/howto/userguide-apigw-36.png"></p>
-
-5.	Assign a Role to a specific integrations / operation
-6.	Assign a User to a Role to link authentication keys to operations.
-7.	After you have assigned the integration the Deploy phase refreshes so you can check under Deploy -> Properties if the key is generated correctly for the gateway
-List of relevant properties API Gateway
-	- {technicalname -system}.exit.{systemname}. Defines the host for the API of the external system. One needed per external system linked to the API Gateway
-	- {technicalname -system}.entry.port. Defines the port on which the API Gateway is running
-	- authentication.{technicalname-system}.{technicalname-integration}.api-key. One property with all approved API Keys for a certain integration. Needed if authorization method via ApiKey is used. See Creating and managing API Keys for how to generate these automatically
+3.	Adding and updating flows can be done by selecting the Deploy widget for API and selecting the correct version just as you are used to with messaging
+4.	Click on Save
+5.	If you have added or updated rights in Design please read [this](user-management.md) document
+6.	Press Deploy in the drop-down menu to deploy the various new / updated flow to the correct runtimes. When confronted with the pop up that properties are missing fill them in according to the relevant best practices. A list of relevant properties always needed for an API Gateway are listed under the list of Relevant Properties (see right-hand panel menu)
+7.	Verify via the usual steps, checking runtime dashboard and manage, whether all flows are running correctly and as expected.
+8. You can test your API Gateway via the SwaggerUI by pressing the View SwaggerUI button located in the runtime dashboard of the gateway container.
 
 
 ## Manage
