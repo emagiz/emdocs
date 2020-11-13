@@ -1,6 +1,6 @@
 # Community management
 
-This document is intended to support eMagiz users to direct their questions, issues en feedbacks to the eMagiz team. 
+This document is intended to support eMagiz users to direct their questions, incidents en feedbacks to the eMagiz team. 
 
 ## 1. Questions
 
@@ -35,7 +35,7 @@ The eMagiz team is dedicated to provide answers to these question within 36 hour
 
 ## 2. Incidents
 
-In case you have an issue with your instance that are blocking the use of the platform, and there are deadlines that result in pressure to have resolutions faster.  
+In case you have an issue with your instance that are blocking the use of the platform, and there are deadlines that result in pressure to have resolutions faster, you need to register an incident in our eMagiz Support Portal.
 
 Typical examples of incidents are the non-function of key features in eMagiz (properties, deployment, version management, etc) that are not working. Or larger performance issues in the eMagiz portal that are preventing to use key features. 
 
@@ -43,7 +43,7 @@ These kinds of incidents can be registered at https://support.emagiz.com/ and ar
 
 The eMagiz Support team is dedicated to resolve your incident and is in direct contact with eMagiz Expert Services in case needed. Please consult your eMagiz SLA owner in your organization to understand specific agreements in place around response times.
 
-## Improvements
+## 3. Improvements
 
 Whilst using the platform, you may notice that there are more minor-like feedbacks you will have. Specific behavior of the functionalities offered are not exactly working as expected yet do not result in an incident. Futhermore, you may have specific ideas for improving the use of the platform. 
 
