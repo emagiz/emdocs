@@ -12,7 +12,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Installation of Root Cloud Connectors](rootcloud-runtime-install.md)| - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
 | - [Configuring AWS Direct Connect](direct-connect.md)| - [Best practices for SFTP](sftp-best-practice.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
 | - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) | - [Debugging guidelines](debugging-guidelines.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md) |
-
+| | | - [User management](user-management.md) |
 
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
 | ------ | ------ | ------ |
