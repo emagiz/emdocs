@@ -12,6 +12,13 @@ eMagiz consists of various components communicating with each other to make the 
 
 The top part of the picture depicts the eMagiz repository. Within this repository all relevant (open-source) libraries that are needed to run flows on a connector are stored.
 
+To prevent unauthorized access of this repository the following measures have been taken
+-	Client runtimes can access the repository via a username/password combination through a one-way SSL connection (encrypted) and read the contents of the repository
+-	eMagiz developers that need to upload bundles can access the repository through a one-way SSL connection (encrypted)
+-	A bitbucket pipeline will be created in the near future to enable automatic updates. This datapipeline will also need a unique username/password combination along with the fact that the connection itself is a one-way SSL connection (encrypted)
+-	The repository is read-only for clients. This means that even if someone gets there hands on a username/password combination they do not have sufficient rights to alter anything in the repository. They can only read the data that is kept in the repository.
+
+
 <p align="center"><img src="../../img/howto/definition-emagiz-model.png"></p>
 
 ## 2. Security guidelines for the eMagiz Cloud
@@ -176,6 +183,12 @@ These are all security measures to prevent that third parties can get unauthoriz
 ### 5.4 Carwash
 
 All data that is exchanged between an external system and a cloud instance goes through the carwash that protects all client instances from harm and routes data to the correct client instance.
+
+In terms of security this means the following benefits from being behind the carwash:
+
+- The connection is https instead of http via the emagiz.com certificate
+- Your VMs are protected due to the fact that only the necessary that need to allow traffic let traffic through
+- It gives you the ability to submit a certificate request via the Support portal to ensure two way SSL (both server as well as client certificate validation).
 
 ## 6. eMagiz iPaaS Portal Security considerations
 The eMagiz Portal provides access to users to manage their eMagiz integration configurations. It provides access to all the features to develop, deploy and manage integrations across Test, Acceptance and Production environments.
