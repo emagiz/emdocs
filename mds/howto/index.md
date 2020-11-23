@@ -28,4 +28,4 @@ In the sections below, you will find some online documents that are relevant for
 |- [How2 for basic SPeL Expressions](spelexpr-simpleguide.md) | | |
 |- [User Guide Unit testing](userguide-unitttest.md) | | |
 |- [User Guide Data Pipelines](userguide-data-pipelines.md) | | |
-|- [User Guide eMagiz Store](userguide-emagiz-store.md) | | |
+|- [User Guide eMagiz Store](userguide-emagizstore.md) | | |
