@@ -81,12 +81,23 @@ This can be done by activating the checkbox in Design. By activating the checkbo
 ### Deploy
 Changes made in Design are automatically updated in Deploy when you navigate to the User management tab.
 This means that when you open the User management tab you will see all users and roles in the correct configuration based on the checkboxes selected in Design.
-In this screen you do have to create a authentication string (i.e ApiKey) per user.
-After you have done this and are satisfied with the manner in which the rights per role and user are configured you can update these settings per environment by pressing the Apply to environment button.
+
+After you have verified the settings and are satisfied with the manner in which the rights per role and user are configured you can update these settings per environment by pressing the Apply to environment button.
 By pressing this button you indicate that the choices you made in Design can be actualized in Deploy for that particular environment.
 
 <p align="center"><img  src="../../img/howto/user-management-deploy.png"></p>
 
-After you have pressed the Apply to environment button you can retrieve the correct ApiKey per user under the corresponding property and you can test the settings via the Swagger UI which you can access via the Runtime Dashboard -> View Swagger UI
+After you have pressed the Apply to environment button you can retrieve the correct ApiKey per user under the corresponding property so you can communicate this value with the external party that needs to call the API.
+
+#### Test the API as portal user
+In case you want to test the API operations yourself you now have the option to create an API user based on your portal user. This can be done via the Import button in the User management tab.
+By using this functionality you do not mix the authentication and authorization of your own test with tests of an external systems.
+
+After you have pressed the import button you can select for which user you want to create a User. After you have created the User you can assign roles.
+
+After you have verified the settings and are satisfied with the manner in which the rights per role and user are configured you can update these settings per environment by pressing the Apply to environment button.
+By pressing this button you indicate that the choices you made in Design can be actualized in Deploy for that particular environment.
+
+After you have restarted the all.entry flow you can test the settings via the Swagger UI which you can access via the Runtime Dashboard -> View Swagger UI
 
 
