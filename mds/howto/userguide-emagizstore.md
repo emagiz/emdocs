@@ -68,7 +68,7 @@ If you want to submit something to the flow the following restrictions might app
 ### Export to the store
 
 For resources and flows there is a different approach how to export these functionalities to the store. Below we specify per type what the method is to export something to the store. 
-Please keep the above mentioned guidelines and restrictions in mind whilst exporting to the store.
+Please keep the above mentioned guidelines and restrictions in mind whilst exporting to the store. You can export only to your own Company store. 
 
 #### Resources
 
