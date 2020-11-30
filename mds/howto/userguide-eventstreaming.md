@@ -9,7 +9,7 @@ Last update: November 26th 2020
 - Basic knowledge of the eMagiz platform
 - Understanding of Event streaming concepts
 - Toggle Feature – Event streaming made available via your partner manager for your environment
-- eMagiz Managed Kafka cluster available for your project (requires proper licensing by eMagiz)
+- eMagiz Event Streaming cluster available for your project (requires proper licensing by eMagiz)
 
 ## Capture
 
@@ -34,7 +34,7 @@ and see the topic storage for your project to determine if this is sufficient or
 
 ### Event Streaming Settings
 
-When you navigate to Settings -> Event Streaming you can configure the amount of Event Processing containers. In most cases the default of one is adequate for your needs
+When you navigate to Settings -> Event Streaming you can configure the amount of Event Processing containers. In most cases the default of one is adequate for your needs. Only in cases where there is a larger number of event processors and a need for failover, these settings can be influenced. The size is determined by the number of flows running on the container - similar to the messaging approach.
 
 ### Design overview
 
@@ -58,7 +58,7 @@ Apart from the naming of the topic eMagiz also provides you with a set of defaul
 - Retention Hours
 - Retention Bytes
 
-These two settings mainly determine the amount of GB in storage is necessary on the eMagiz Managed Kafka cluster to run all topics. 
+These two settings mainly determine the amount of GB in storage is necessary on the eMagiz Event Streaming cluster to run all topics. 
 As you can imagine the longer you retain data and the more data you retain the higher the costs will be.
 You have the option to change these properties by right clicking on the integration to show the context menu so you can select the topic properties option.
 
