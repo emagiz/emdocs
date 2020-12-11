@@ -173,6 +173,16 @@ The overview will look something like this
 
 <p align="center"><img src="../../img/howto/userguide-es-create-overview.png"></p>
 
+You can zoom into specific parts of your Event Streaming solution by clicking on systems, topics or processors. This way you can, for example see which topics are linked to which systems, which topics are linked to a event processor, etc.
+
+See for some examples below:
+
+<p align="center"><img src="../../img/howto/userguide-es-create-overview-zoomed-in-topic.png"></p>
+
+<p align="center"><img src="../../img/howto/userguide-es-create-overview-zoomed-in-system.png"></p>
+
+<p align="center"><img src="../../img/howto/userguide-es-create-overview-zoomed-in-event-processor.png"></p>
+
 ### Adding integrations
 
 Just as with messasing and API Gateway you have the option to transfer a integration (topic) and/or an event processor via the Add integration option in Create. 
