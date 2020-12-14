@@ -63,5 +63,12 @@ b.	If the answer is no, leave the attribute in the CDM.
 20.	Navigate to Capture
 21.	Right click on the message type you want to remove and select Delete integration. If no integrations are connected to the system anymore you can delete the system by right clicking on the system and pressing Delete system. 
 
-When you have done this the last step is to remove the runtime from the runtime dashboard. This can be done by any eMagiz administrator (productmanagement@emagiz.com). These also provides an extra check that you have followed this how to correctly. If you have missed something they will let you know.
+### Transfer settings from Design to Create (Optional, only relevant in fringe cases)
+22. There are fringe case where it could be that you, for example, have changed the number of runtimes of a specific system after this system has been moved to Create. 
+If you have done so you can synchronize Design and Create afterwards by navigating to Create -> Settings and selecting the tab called Transfer settings from Design.
+23. Under this tab there is the option to select Multi-runtime connectors. Search for the runtime you are trying to clean up.
+24. Select the runtime and press Transfer nr of runtimes. This will make sure that all ILM phases are synced up in terms of how many runtimes belong to a system.
+
+When you have done this the last step is to remove the runtime from the runtime dashboard. This can be done by any eMagiz administrator (productmanagement@emagiz.com). 
+This also provides an extra check that you have followed this how to correctly. If you have missed something they will let you know.
 
