@@ -42,7 +42,7 @@ On Integration Level you can add, change and delete operations (GET, POST, PUT, 
 For each opeartion you can select both front end (exposed) and back end (endpoint) in one screen. 
 Security of your API Gateway can be defined under the Secutiry tab. 
 This is accessible via a right mouse click on the API Icon in your overview page and selecting security. 
-For OData calls eMagiz uses the Apache OLingo Standard for the front end (client facing). To illustrate this further we have written down four separate scenarios suited for each phase of your API Gateway
+For OData calls eMagiz uses the Apache OLingo Standard for the front end (client facing).
 
 ### Importing API specifications
 eMagiz provides you with the option to import a JSON file containing the API specification of a specific system you want to connect with via the API Gateway. This functionality is only available for backend opeartions. For the front end you link the front end with the correct backend operation. This way eMagiz handles the rest.
@@ -83,6 +83,38 @@ Each project comes with his one API Gateway settings. These settings are the sam
 4.	The result would be something like this. For each added operation the counter will increase and the operation will become visible
  
 <p align="center"><img src="../../img/howto/userguide-apigw-11.png"></p>
+
+### Security
+
+A vital part of setting up your API Gateway is securing your operations and therefore your data. eMagiz provides you with two options when it comes to securing your API Gateway setup. These options are:
+
+-oAuth2.0
+-ApiKey
+
+Both of these options are discussed in more detail below. Defining which client(s) have access to certain operations is handled via the User management functionality and will be explained accordingly.
+
+#### oAuth2.0
+
+oAuth2.0 is considered a industry standard when it comes to securing REST webservices. This method is implemented by the likes of Google, Amazon and Microsoft to secure their REST webservices. 
+eMagiz also provides you with the option to secure your API Gateway via the oAuth2.0 protocol. To do follow these simple steps:
+
+1. Right click on the API icon in the middle of the Design Solution view
+2. Select the Security option
+3. Select oAuth under the Type option and press Save
+
+<p align="center"><img src="../../img/howto/userguide-apigw-oauth-security-choice.png"></p>
+
+#### ApiKey
+
+Although oAuth2.0 is considered an industry standard it is also very complex to implement for a client. Therefore we want to offer an alternative method of securing the API Gateway. 
+This is done with the help of the ApiKey method. With this method we verify the identity of the client by checking whether the supplied token is valid for that operation. To activate this method follow these simple steps:
+
+1. Right click on the API icon in the middle of the Design Solution view
+2. Select the Security option
+3. Select apiKey under the Type option, select header under the option In and press Save
+
+<p align="center"><img src="../../img/howto/userguide-apigw-apikey-security-choice.png"></p>
+
 
 ### User Management
 In Design you can correctly assign roles and rights to 'consuming' entities of your API Gateway. For more information please read [this](user-management.md) document
