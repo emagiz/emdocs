@@ -125,7 +125,7 @@ When you are satisfied press Save. If you have doubts about the choice you made 
 
 ## Assignment
 
-Create a test message for a onramp or offramp flow within your (Academy) project based on a eMagiz definition.
+Create a test message for a onramp or offramp flow within your (Academy) project based on a eMagiz definition and create a test message for a onramp or offramp flow within your (Academy) project based on a example message.
 
 ## Key takeaways
 
