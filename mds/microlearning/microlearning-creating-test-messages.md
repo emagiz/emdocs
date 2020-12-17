@@ -5,7 +5,7 @@ In this microlearning we will focus on the creation of test messages which you c
 - Last update: December 17th 2020
 - Required reading time: 5 minutes
 
-## 1. Pre-requisites
+## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 - Understanding of Unit testing concept
 - On- or offramp (without splitter or router) that needs to be tested

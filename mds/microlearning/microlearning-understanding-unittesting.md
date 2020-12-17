@@ -1,4 +1,4 @@
-# Creating Test Messages for Unit Testing
+# Understanding Unit Testing
 
 In this microlearning we will focus on the positioning of Unit Testing in the eMagiz platform. Should you have any questions, please contact academy@emagiz.com.
 
