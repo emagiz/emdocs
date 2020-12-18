@@ -13,10 +13,19 @@ In this microlearning we will focus on the positioning of Unit Testing in the eM
 ## 2. Key concepts
 Unit testing refers to the idea that units of developed code, or in this case integration flows/components, are tested agains fit for use. Often these unit test are run automatically to verify each individual component, but in this case the unit test are also supporting the actual development of a eMagiz flows. Unit test are always combined with specific pieces of elements that make the unit operational, such as test data, test messages, or access to services that produce data. Sometimes specific mock services are used to simulate real time behavior.
 
+<p align="center"><img src="../../img/microlearning/understanding-unittesting-pict1.png"></p>
+
 
 ## 3. Creating Unit tests in eMagiz
 
+Unit tests in eMagiz are created in the Create phase while developing your flow. Key reason is that this will allow the eMagiz developer to validate the correction function of the flow without the need to deploy. 
 
+1. It will speed up the developement of the flow itself
+2. The unit test allows to have a better reference for other team members how the flow should behave
+3. The unit test can help to validate the entire integration flow during User Acceptance Testing
+4. During issue resolution, the unit test can be reused with the attached test messages to pinpoint issues.
+
+Configuring the right test messages to validate the flow are key in eMagiz. These test messages allow to represent the specific user scenario's that the business has provide for validation.
 
 ## 4. Assignment
 
@@ -34,4 +43,6 @@ Unit tests are a powerful way in which flows components can be tested without th
 ## 7. Silent demonstration video
 
 There is no specific demonstration video for this Micro Learning
+
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
