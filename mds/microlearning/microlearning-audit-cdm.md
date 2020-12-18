@@ -8,11 +8,11 @@ Last update: December 17th 2020
 
 Required reading time: 3 minutes
 
-## Pre-requisites
+## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 - Understanding of CDM concept
 
-## Key concepts
+## 2. Key concepts
 This micro learning centers around auditing your eMagiz project on CDM level.
 
 With audit we mean: Making it clear who changed the CDM at a certain moment in time.
@@ -21,7 +21,7 @@ With CDM we mean: The canonical data model that defines the data structure and r
 
 Auditing the CDM can be done by navigating to the CDM in the Design phase and selecting the button called History located in the bottom bar.
 
-## Audit the CDM
+## 3. Audit the CDM
 
 If you want to audit the CDM (look at the history of changes made to the CDM by whom) you can navigate to the Design phase of your project and open the CDM. 
 In this CDM view you have a button on the lower bottom bar called History.
@@ -36,7 +36,7 @@ Within this overview you have the option to search on several indicators such as
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--search-history-overview.png"></p>
 
-### Editing the CDM
+### 3.1 Editing the CDM
 
 Having a view on the history of the CDM adds value if you can register certain changes made on CDM level. 
 To correctly describe these changes made you rely on the person making the change. This is why it is of utmost importance that when you edit the CDM
@@ -56,16 +56,20 @@ In this popup you have define whether you have made a major change, minor change
 
 As you can see what you write down in terms of what you have changed is crucial so others can easily see what exactly has been changed.
 
-## Assignment
+## 4. Assignment
 
 Edit the CDM within your (Academy) project and describe what you have changed after you are satisfied with your change. 
 After this ask a colleague for a peer review to see if they can determine by looking at the History what has been changed.
 
-## Key takeaways
+## 5. Key takeaways
 
 Having audit functionality on CDM level provides tracibility and accountability for a key aspect of messaging integrations.
 To make sure that auditing can be done correctly it is crucial that the person that does the editing makes it clear what has been changed.
 
-## Suggested Additional Readings
+## 6. Suggested Additional Readings
 
 -
+
+## 7. Silent demonstration video
+
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-audit-cdm.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

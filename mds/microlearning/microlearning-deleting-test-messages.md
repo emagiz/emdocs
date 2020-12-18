@@ -8,18 +8,18 @@ Last update: December 17th 2020
 
 Required reading time: 2 minutes
 
-## Pre-requisites
+## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 - Understanding of Unit testing concept
 - On- or offramp (without splitter or router) that needs to be tested
 
-## Key concepts
+## 2. Key concepts
 This micro learning centers around deleting test messages for unit testing.
 With unit testing we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
 
 Deleting a test message can be done via the left hand panel menu showing all messages related to that specific flow and selecting the message you want to delete by hoovering over it.
 
-## Deleting Test messages
+## 3. Deleting Test messages
 
 To delete a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz you open the flow where you want to delete a test message from.
 After you have opened the flow you should press the button on the bottom bar called Configure tests 
@@ -37,14 +37,18 @@ Be aware that when a test message is already used as input or output of a specif
 
 <p align="center"><img src="../../img/microlearning/ml-deleting-test-messages--delete-test-message-result.png"></p>
 
-## Assignment
+## 4. Assignment
 
 Delete one of the test messages for a onramp or offramp flow within your (Academy) project.
 
-## Key takeaways
+## 5. Key takeaways
 
 Deleting a test message is easy and can be quickly done by clicking the X icon. Be aware that gone is gone and there is no undo button after you have deleted something.
 
-## Suggested Additional Readings
+## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
+
+## 7. Silent demonstration video
+
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-deleting-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
