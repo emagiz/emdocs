@@ -1,5 +1,8 @@
 # Creating Test Messages for Unit Testing
 
+<previous onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">PREVIOUS</previous>|<next onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">NEXT</next>
+
+
 In this microlearning we will focus on the creation of test messages which you can use while configuring and executing unit tests. Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: December 17th 2020
@@ -144,4 +147,3 @@ If you are interested in this topic and want more information on it please read 
 <iframe width="1280" height="720" src="../../vid/microlearning/microlearning-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-<button name="Previous" onclick="http://www.google.com">Previous</button> | <button name="Next" onclick="http://my.emagiz.com/">Next</button>
