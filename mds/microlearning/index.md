@@ -7,6 +7,8 @@
 | - [Creating test messages](microlearning-creating-test-messages.md)| | |
 | - [Editing test messages](microlearning-editing-test-messages.md)| | |
 | - [Deleting test messages](microlearning-deleting-test-messages.md)| | |
+| - [Configuring a unit test](microlearning-configuring-unit-test.md)| | |
+| - [Running a unit test](microlearning-running-unit-test.md)| | |
 
 
 
