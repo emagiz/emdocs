@@ -10,8 +10,8 @@
 
 In this microlearning we will focus on the creation of test messages which you can use while configuring and executing unit tests. Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: December 17th 2020
-- Required reading time: 5 minutes
+- Last update: January 7th 2021
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
