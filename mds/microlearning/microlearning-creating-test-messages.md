@@ -1,9 +1,7 @@
 
 <div>
-<br>
-<home class="button" style="width:100%" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Module Home</home>
-</br></br>
-<previous class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">PREVIOUS</previous>    <next class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">NEXT</next></br>
+<previous class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Previous</previous><home class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Module Home</home><next class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Next</next>
+</br>
 
 </div>
 
