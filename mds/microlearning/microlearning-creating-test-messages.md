@@ -31,7 +31,9 @@ To create test messages you can use for unit testing in eMagiz we provide you wi
 
 By choosing one of these option as your starting point you can easily create a test message.
 
-Below we will explain how you can best use each of these methods to your advantage
+Next we will explain how you can best use each of these methods to your advantage
+
+---------------------------------------------------
 
 ## 3. Creating Test messages
 
@@ -99,10 +101,12 @@ Remember our definition of what a unit test is. Based on that definition it is l
 
 <p align="center"><img src="../../img/microlearning/ml-creating-test-messages--select-from-emagiz-definition.png"></p>
 
-Furthermore you have to make a choice between Minimal or Complete. By selecting Complete you get an example message based on all elements and attributes. 
+Furthermore you have to select the correct message format (XML or JSON) and make a choice between Minimal or Complete. 
+
+By selecting Complete you get an example message based on all elements and attributes. 
 If you choose Minimal you get an example message based on all required elements and attributes.
 
-Regardless of the chosen option, the moment you are satisfied with your choice you should select the message and press Select. After you have selected one specific message you press Create. 
+Regardless of the chosen options, the moment you are satisfied with your choice you should select the message and press Select. After you have selected one specific message you press Create. 
 eMagiz will now create a new test message based on your selection. In the pop-up that follows verify the name (make it clear what the message is about) and check the content.
 
 <p align="center"><img src="../../img/microlearning/ml-creating-test-messages--create-from-emagiz-definition-minimal.png"></p>
@@ -114,7 +118,15 @@ When you are satisfied press Save. If you have doubts about the choice you made 
 ### 3.4 Create message based on external definition
 
 If you have an external definition (.XSD) that is not yet attached to Capture nor the basis of a eMagiz definition you have the option to manually upload this definition so it can be the basis of your test message.
-To do so you have to select the option External definition. Within this context you have to press the Upload button and select the file you want to Upload.
+To do so you have to select the option External definition.
+
+Just as with the previous option you have two choices to make before (or after) you upload the XSD. These choices are:
+
+- Defining the message format (XML or JSON)
+- Defining whether the example message will only hold the minimal set of required entities and attributes (Minimal) or all entities and attributes (Complete)
+
+
+Regardless of the chosen options, within this context you have to press the Upload button and select the file you want to Upload.
 
 <p align="center"><img src="../../img/microlearning/ml-creating-test-messages--select-from-external-definition.png"></p>
 
@@ -127,6 +139,8 @@ After you press Create eMagiz will create a new test message based on your selec
 <p align="center"><img src="../../img/microlearning/ml-creating-test-messages--create-from-external-definition.png"></p>
 
 When you are satisfied press Save. If you have doubts about the choice you made press back. If you made a mistake and want to start over again completly press Cancel.
+
+---------------------------------------------------
 
 ## 4. Assignment
 
@@ -147,7 +161,11 @@ By choosing one of these option as your starting point you can easily create a t
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
 
+---------------------------------------------------
+
 ## 7. Silent demonstration video
+
+This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/microlearning-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
