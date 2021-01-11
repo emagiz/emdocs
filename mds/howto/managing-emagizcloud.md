@@ -14,6 +14,7 @@ This functionality enables users to make the following configuration changes to 
 - Clean Store
 - Slot Standby / Slot wakeup
 - Mendix stand by connector
+- Fixed IP
 
 In this page we will discuss each of these actions separately to make it even easier for you, the user, to control the eMagiz Cloud.
 To summarize, controlling the eMagiz Cloud gives you:
@@ -249,3 +250,13 @@ Follow these steps carefully in order to acquire the desired result. With this b
 <p align="center"><img src="../../img/howto/managing-emagizcloud-8.png"></p>
 
 6.	Read the confirmation pop up and if you agree press Yes. eMagiz will now start all runtimes in the correct order and makes sure that all messages are being transported again.
+
+## Fixed IP
+Under design there is one custom configuration that can be activated with the help of a eMagiz admin. 
+By setting this custom configuration to Yes eMagiz will automatically reserve an IP in AWS which you can communicate to external parties in case they make use of IP whitelisting for incoming traffic.
+
+<p align="center"><img src="../../img/howto/managing-emagizcloud-11.png"></p>
+
+### Limit on Number of Fixed IP
+Be aware that this custom configuration comes with a limit. You can only activate this option if you have five connector machines or less without any help needed from eMagiz.
+The moment that you exceed this limit of five separate connector machines within your project you need to contact your partner manager beforehand so we can increase that limit
