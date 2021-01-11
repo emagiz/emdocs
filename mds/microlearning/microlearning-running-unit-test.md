@@ -23,103 +23,66 @@ After you have pressed the Run Test button and there are properties used in your
 
 ## 3. Running a Unit Test
 
-Configuration of a unit test can happen on two occassions. On the one hand you want to add a new unit test to test a scenario for which you have not yet a unit test available. 
-On the other hand you want to be able to edit a existing unit test to alter the input, output or naming of the existing unit test.
+You can simple run a unit test by pressing the Run test button. After this eMagiz will show you the following popup. 
+In case properties are used in the flow you are about to test you need to add values for these properties.
 
-### 3.1 Add a Unit Test
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--run-test-popup.png"></p>
 
-To add a unit test you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz you open the flow you want to unit test.
-After you have opened the flow you should press the button on the bottom bar called Configure tests 
+Adding properties is relatively simple. You can Edit the value (meaning you only want to use this value for this particular unit test) 
+or you can define a default value that will be used in all unit tests. 
+In both cases you first select the data type (i.e. String) and subsequently fill in the value of the property. Be aware that currently the value of a property cannot exceed 200 characters.
 
-In this overview you will see the flow as you have build it and in the right hand panel there is a button located called Add test. 
-By pressing this button you add a new unit test to the context of the flow on which you are currently working on.
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--adding-a-property-value.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--add-test-button.png"></p>
+After you have done so the result should look something along what is shown below.
 
-After you have pressed this button a new entry in your list of unit tests will appear. Obviously when your list is still empty this will be your first entry, congrats!
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--added-a-property-value.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--added-a-test.png"></p>
+Whether you have properties or not just press Run Test (Note: When you are the first of the day using the functionality the Unit Testing bus needs to wake up. Therefore it can take a while until you get a result)
 
-As you can see from the picture above you are now in a mode ready to configure your unit test.
+When no popup indicating an error shows up the test has run successfully. 
+Congratulations! The color of the backscreen indicates the result of the test. How you should interpret this result is detailed in the next section.
 
-To properly configure a unit test you should follow these steps:
+### 3.1 Validate result of unit test
+After you ran the test eMagiz gives you, the user, feedback in two ways:
+1.	The color of the background of the screen (red means failed, green means success)
+2.	Showing the state of the message in each component it passes
+Let’s look into these two ways with a little bit more detail
 
-- Select the input for the unit test that fits the scenario you want to test. 
-	- This can be done by navigating with your mouse to the input component of the flow and clicking on the document icon. Here you will be presented with a list of options from which you can choose the correct input message. (The same process works for the output components)
-- If available and relevant for your scenario select the test message that embodies the expected outcome of the scenario you want to test. Be aware this is an optional step.
-- When you are content with your selection press Done.
+#### 3.1.1 Feedback through color of background
+As specified before the color of the background is a quick indicator to the user telling the user if the executed test was successful or not. If the background turns red it means the test was not successful. 
+Be aware, when you do not define an expected outcome the result of the test will always be a fail and therefore the color will also be red. For an example see below
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--selecting-the-input.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--unsuccessful-result.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--selected-input-output.png"></p>
+After you have specified the expected outcome of the flow the screen will turn green if the actual result equals (in every detail) the expected outcome. 
+If the actual message does not match the expected outcome the background will turn red. See below for a green result!
 
-As you can see from the picture above the view has changed again. To finish the configuration please add a descriptive name to the unit test. This way you and others that work with you can keep them apart.
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--successful-result.png"></p>
 
-To enter a name of the unit test you simply hover over the just created unit test on the point just before the - icon and click on the edit icon (pencil)
+#### 3.1.2 State of message throughout the flow
+eMagiz will also give you feedback on how the message looks like in every component of the flow it passed. 
+This way you can validate if certain headers are set correctly and if certain transformations were successful. 
+Below is an example of comparing the input and output of the transformation component shown in the flow. 
+In here you can see in detail what the transformation has done. 
+This way you can determine whether the change you have just made was indeed successful.
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entering-a-name.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--comparison-between-stages.png"></p>
 
-This action makes it possible for you to enter a name. As mentioned before keep the name as descriptive as possible. For an example see below.
-
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entered-a-name.png"></p>
-
-The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
-
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-test-message-icon.png"></p>
-
-When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit.
-If you are satisfied with your name simply select the checkmark icon. In case you have doubts or want to cancel press the X icon.
-
-By following these steps you have succesfully added a unit test to your flow.
-
-### 3.2 Edit a Unit Test
-
-Apart from Adding a Unit test you can also edit a unit test if you for example would like to change the input, output and/or name of the unit test.
-
-To edit the name of the unit test you simply hover over the just created unit test on the point just before the - icon and click on the edit icon (pencil)
-
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entering-a-name.png"></p>
-
-This action makes it possible for you to enter a name. As mentioned before keep the name as descriptive as possible. For an example see below.
-
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entered-a-name.png"></p>
-
-The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
-
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-test-message-icon.png"></p>
-
-When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit.
-If you are satisfied with your name simply select the checkmark icon. In case you have doubts or want to cancel press the X icon.
-
-To edit the input and/or output message that will be used in your unit test you press the Edit button
-
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-input-output.png"></p>
-
-After you have pressed this button you can select another input (and/or output) message just as we have learned in the Add a unit test segment.
-
-The moment you are satisfied with your changes you press Done and your changes have been saved.
-
-### 3.3 Removing a Unit Test
-
-Sometimes you even want to get rid of certain unit test. Maybe they have become obsolete due to changes within the flow, or maybe multiple test were created with the same intent.
-Whatever the reason may be you can remove a unit test from the list of unit tests that is linked to the flow.
-
-To do so simply press the Remove button for the unit test that you want to remove. After you pressed this button the unit test is gone from the list.
+Congratulations, you have successfully learned how to implement a unit test within eMagiz and run it in order for you to develop more effectively and more robust.
 
 ## 4. Assignment
 
-Configure two unit tests. One unit test should have as input a complete representation of the system message in Design. 
-The second unit test should have as input a minimal representation of the system message in Design and as output the expected CDM message. This assignment can be completed within a onramp or offramp flow within your (Academy) project that you have created in the previous assignment.
+Run the unit test with only a input. Validate the result and make changes to the unit test in order to get a green result. 
+This assignment can be completed within a onramp or offramp flow within your (Academy) project that you have created in the previous assignment.
 
 ## 5. Key takeaways
 
-- Configuring a unit test can mean three things:
-	- Add a unit test
-	- Edit a unit test
-	- Remove a unit test
-- Always give each unit test a descriptive name so it becomes clear what you are trying to test
-- Selecting an input message is mandatory
-- Selecting an output message is optional
+- You can run a unit test by pressing on the Run Test button
+- Values for properties can be specific or uniform but need to be less than 200 characters
+- Feedback is given on the result in the form of:
+	- background color
+	- state of message
 
 ## 6. Suggested Additional Readings
 
@@ -129,4 +92,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-running-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
