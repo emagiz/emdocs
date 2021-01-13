@@ -8,7 +8,7 @@
 
 
 
-| <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
+| <p align="center">**Event Streaming Connectors**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
 | ------ | ------ | ------ |
 |<img width=800/><p align="center"><img  src="../../img/howto/UserGuide_icon.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/EventStreaming.png"></p>|<img width=800/><p align="center"><img  src="../../img/howto/API_Gateway.png"></p>|
-| tba | tba | tba|
+| - [Event Streaming Connectors](index-event-streaming-connectors.md)| tba | tba|
