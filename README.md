@@ -16,8 +16,8 @@ Positioning of eMagiz as a Lowcode, Enterprise Integration Platform as Service:
 		
 		<ul>
 		<li><a href="/docs/referenceguide/">Technical reference guide for Integration Model Components</a></li>
-		<li><a href="/docs/integration/">Key concepts - Integration patterns</a></li>
-		<li><a href="/docs/iPaaS/">ILM Methodology</a></li>
+		<li><a href="https://www.emagiz.com/features-of-the-platform/">Platform features</a></li>
+
 		<li><a href="/docs/howto/">User Guides</a></li>
 		</ul>
 
