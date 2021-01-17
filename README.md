@@ -6,19 +6,18 @@ This is a simple readme file - The real home page is located in the website part
 <p align="center"><font size="5" face="verdana" color="green"><b>eMagiz Platform Documentation Portal</b></font></p>
 Positioning of eMagiz as a Lowcode, Enterprise Integration Platform as Service:
 		<ul>
-		<li><font size="2" face="verdana" color="green"><b>Low-Code</b></font>: no development skills required</li>
-		<li><font size="2" face="verdana" color="green"><b>Enterprise</b></font>: services full enterprise – all integration patterns</li>
-		<li><font size="2" face="verdana" color="green"><b>Integration</b></font>: connecting all types of software applications</li>
-		<li><font size="2" face="verdana" color="green"><b>Platform</b></font>: all-in-one development, execution and governance</li>
-		<li><font size="2" face="verdana" color="green"><b>as a Service</b></font>: cloud based with automated cloud hosting</li>
+			<li><font size="2" face="verdana" color="green"><b>Low-Code</b></font>: no development skills required</li>
+			<li><font size="2" face="verdana" color="green"><b>Enterprise</b></font>: services full enterprise – all integration patterns</li>
+			<li><font size="2" face="verdana" color="green"><b>Integration</b></font>: connecting all types of software applications</li>
+			<li><font size="2" face="verdana" color="green"><b>Platform</b></font>: all-in-one development, execution and governance</li>
+			<li><font size="2" face="verdana" color="green"><b>as a Service</b></font>: cloud based with automated cloud hosting</li>
 		</ul>
 		In the following pages you will find various topics to support your activities in eMagiz. 
 		
 		<ul>
-		<li><a href="/docs/referenceguide/">Technical reference guide for Integration Model Components</a></li>
-		<li><a href="https://www.emagiz.com/features-of-the-platform/">Platform features</a></li>
-
-		<li><a href="/docs/howto/">User Guides</a></li>
+			<li><a href="/docs/referenceguide/">Technical reference guide for Integration Model Components</a></li>
+			<li><a href='https://www.emagiz.com/features-of-the-platform/'>Key features platform</a></li>
+			<li><a href="/docs/howto/">User Guides</a></li>
 		</ul>
 
 ---
