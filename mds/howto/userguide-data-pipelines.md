@@ -87,6 +87,40 @@ This information is then showed to the user via a popup were you can see all exe
 
 <p align="center"><img src="../../img/howto/job-dashboard-data-pipeline-2.png"></p>
 
+### 5.2 Cleaning up the Job Dashboard
+
+The moment you run a lot of Jobs within your eMagiz solution, to keep an overview, you need a way to clean up old jobs. 
+This is now made possible via a simple addition to the standard store template that is available to process your data, for example the Mendix -> Redshift example.
+
+<p align="center"><img src="../../img/howto/job-dashboard-data-pipeline-3.png"></p>
+
+In case you already have a running data pipeline you cannot simply update automatically to this new version. In this case you will have to do so manually. 
+Recreating the components in the picture is not that hard luckily. You simply have to follow these steps:
+
+- Create a channel called clean
+- Add a standard inbound channel adapter with the expression 'clean' and a cron trigger that will trigger each day at five o'clock in the morning 0 0 5 * * *
+- Use the channel called clean as the output channel of this standard inbound channel adapter.
+- Add a second standard inbound channel adapter the expression 'clean' and a fixed delay trigger of 999999999 seconds. This means it will only trigger at startup.
+- Use the channel called clean as the output channel of this standard inbound channel adapter.
+- Add a JDBC outbound channel adapter and link it to the h2 database as the SQL data source
+- Enter the following query. This query makes sure that all jobs older then one month are removed from the job dashboard
+
+DELETE FROM BATCH_JOB_EXECUTION_CONTEXT WHERE
+JOB_EXECUTION_ID IN (SELECT JOB_EXECUTION_ID FROM BATCH_JOB_EXECUTION WHERE DATEADD(MONTH, 1, CREATE_TIME) < CURDATE());
+DELETE FROM BATCH_JOB_EXECUTION_PARAMS WHERE
+JOB_EXECUTION_ID IN (SELECT JOB_EXECUTION_ID FROM BATCH_JOB_EXECUTION WHERE DATEADD(MONTH, 1, CREATE_TIME) < CURDATE());
+DELETE FROM BATCH_STEP_EXECUTION_CONTEXT WHERE
+STEP_EXECUTION_ID IN (SELECT STEP_EXECUTION_ID FROM BATCH_STEP_EXECUTION WHERE
+JOB_EXECUTION_ID IN (SELECT JOB_EXECUTION_ID FROM BATCH_JOB_EXECUTION WHERE DATEADD(MONTH, 1, CREATE_TIME) < CURDATE()));
+DELETE FROM BATCH_STEP_EXECUTION WHERE
+JOB_EXECUTION_ID IN (SELECT JOB_EXECUTION_ID FROM BATCH_JOB_EXECUTION WHERE DATEADD(MONTH, 1, CREATE_TIME) < CURDATE());
+DELETE FROM BATCH_JOB_EXECUTION WHERE DATEADD(MONTH, 1, CREATE_TIME) < CURDATE();
+DELETE FROM BATCH_JOB_INSTANCE WHERE
+JOB_INSTANCE_ID NOT IN (SELECT JOB_INSTANCE_ID FROM BATCH_JOB_EXECUTION);
+
+If you have followed all these steps you can deploy your new version of the flow to your environment and eMagiz will clean up your Job dashboard 
+ensuring that you always have a clean overview of what is happening with your Jobs.
+
 ### Best practices
 
 - Create a separate H2 database per data pipeline you build within your project. For example if you have 10 data pipelines you should create 10 separate H2 databases. As stated in the documentation of the store component: 
