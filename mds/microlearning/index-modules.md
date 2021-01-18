@@ -1,5 +1,3 @@
-# eMagiz Academy Modules
-<!-- Side navigation -->
 <div class="sidenav">
 </br>
 </br>
@@ -8,6 +6,10 @@
   <a href="#">Support Engineer</a>
   
 </div>
+ 
+# eMagiz Academy Modules
+
+  
 
 | <p align="center">**Unit testing in eMagiz**</p>| <p align="center">**Defining your message structures**</p>| <p align="center">**Active Monitoring in eMagiz**</p>|
 | ------ | ------ | ------ |
