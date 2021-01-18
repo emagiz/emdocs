@@ -46,7 +46,13 @@ Via a different port, your connector will communicate with your container and it
 The above is the bare minimum needed to run. As the number of flows running on a connector increases the memory also needs to be increased. The same logic applies to flows that use up a lot of memory because multiple steps are executed within that flow. Both are solid reasons to use 1GB as a general rule of thumb but at the same time always take into account new developments when setting up the sizing.
 
 
-If you install your JMS and container as well within your network and not in the cloud, please keep in mind that you need to open port 8443 (and 8444 in case of failover) as well for incoming communication.
+## Deployment view and whitelisting
+If you install your JMS and container as well within your network and not in the cloud, please keep in mind that you need to open port 8443 (and 8444 in case of failover) as well for incoming communication. For Whitelisting of the eMagiz landscape that clients in some cases require, here is the list of the specific dns entries to whitelisting. Specific IP addresses for IP Whitelisting are available on request - contact your partner manager for this.
+
+1. repository.emagiz.com:443
+2. *.cloudxxx.emagizcloud.com:8443/8444
+3. rts.emagiz.com:443
+4. my.emagiz.com:443
 
 ![](../../img/howto/localconnector-infrastructure-view.png)
 
