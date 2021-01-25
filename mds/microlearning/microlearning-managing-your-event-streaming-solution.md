@@ -5,7 +5,7 @@ In this microlearning we will focus on how you can manage your event streaming s
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 22th 2021
-- Required reading time: 5 minutes
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -56,8 +56,7 @@ Simply sum up the retention bytes per partition and you have the actual retentio
 With that piece of information you can see how much it differs from the configured retention size. 
 
 The moment there is a big gap between what is configured and what is actually used you should adapt your configuration based on what is actually used.
-If you fail to do so you can run out of Topic Storage for other topics which will mean that you cannot further extend your event streaming solution 
-or it might happen that you need to pay a premium for GB storage outside of your contract.
+If you fail to do so you can run out of Topic Storage for other topics which will mean that you cannot further extend your event streaming solution.
 
 
 ### 3.3 Per topic, per consumer group overview how many message those consumers are behind
