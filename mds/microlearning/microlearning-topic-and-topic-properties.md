@@ -5,7 +5,7 @@ In this microlearning we will focus on topics and the properties of these topics
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 22th 2021
-- Required reading time: 3 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -14,13 +14,13 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 This micro learning centers around topics and the properties of these topics.
 With topic we mean: A category/feed name to which event records are stored and published.
-With topic properties we mean:
+With topic properties we mean: A piece of the whole configuration of a topic
 
 Knowing what topics are and which properties of these topics you can and should think about before 
 creating them is a crucial part of succesfully implementing a event streaming pattern via the eMagiz platform.
 
 With regards to the properties of a topic there are two crucial properties that can significantly impact the cost of your implementation.
-These properties are:
+These properties are: 
 
 - Retention Hours
 - Retention Bytes
@@ -118,7 +118,7 @@ With this entry you can easily see the amount of GB that is configured (based on
 ## 4. Assignment
 
 Set the retention hours to 8 hours and the number of retention bytes to 262144000
-This assignment can be completed within the Deploy phase of your (Academy) project that you have created/used in the previous assignment.
+This assignment can be completed within the Design phase of your (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
@@ -134,7 +134,6 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and browse through the following links:
 
 - https://www.cloudkarafka.com/blog/2016-11-30-part1-kafka-for-beginners-what-is-apache-kafka.html
-- 
 
 ## 7. Silent demonstration video
 
