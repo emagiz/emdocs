@@ -25,7 +25,10 @@ These properties are:
 - Retention Hours
 - Retention Bytes
 
-Below we will discuss what a topic is in more depth and we will zoom in on the topic properties, especially on the retention hours and the retention bytes
+Below we will discuss what a topic is in more depth and we will zoom in on the topic properties, especially on the retention hours and the retention bytes.
+
+After you have configured your topic(s) the way you had in mind you can check your work via the Design Architecture overview. 
+In this overview you can see whether there is enough room available in terms of GB's of Topic Storage.
 
 ## 3. Topic and Topic Properties
 
@@ -97,6 +100,21 @@ Based on the previous calculation and the number of partitions (more partitions 
 
 Results in 1.5 / 3 = 0.5 GB in Retention Bytes. As the name indicates this value needs to be added in bytes. For this example we end up with 524288000 bytes.
 
+### 3.3 Check available topic storage via Design Architecture
+
+When you are finished with configuring the properties per topic you can validate whether the expected data storage based on your configuration fits within the available amount of topic storage.
+You can do this with the help of Design Architecture.
+
+<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--design-architecture.png"></p>
+
+As you can see in the picture above the Design Architecture represents not only the runtimes needed to run your flows 
+but also defines the amount of configured and the amount of recommended topic storage by eMagiz.
+
+If we zoom in on the right hand panel you can see on the bottom of that panel a entry that is relevant for Event Streaming. 
+With this entry you can easily see the amount of GB that is configured (based on the topic property settings) and see how much GB is still available based on your current contractual agreements.
+
+<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--design-architecture-topic-storage-available.png"></p>
+
 ## 4. Assignment
 
 Set the retention hours to 8 hours and the number of retention bytes to 262144000
@@ -109,6 +127,7 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 	- The amount of GB needed for your solution is the biggest cost driver
 	- Topics are automatically generated in eMagiz when you draw the line in Capture
 - Think about your retention policy when implementing the Event Streaming solution to get a grip on the cost aspect of Event Streaming
+- Check your configuration with the help of Design Architecture to make sure that the configured amount of GB is allowed under your current contract
 
 ## 6. Suggested Additional Readings
 
