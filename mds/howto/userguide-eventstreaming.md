@@ -1,6 +1,7 @@
 ## User Guide Event Streaming eMagiz
 
-Below the user guide for Event Streaming. In this guide we will walk you through the various ILM phases of eMagiz and guide you on which actions to take in each of these phase to implement Event Streaming successfully.
+Below the user guide for Event Streaming. 
+In this guide we will walk you through the various ILM phases of eMagiz and guide you on which actions to take in each of these phase to implement Event Streaming successfully.
 
 Should you have any questions, please contact productmanagement@emagiz.com.
 Last update: November 26th 2020

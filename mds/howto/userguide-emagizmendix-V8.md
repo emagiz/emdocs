@@ -129,4 +129,31 @@ Please take care of the following items when you start to use this version of th
   - xmlbeans-3.0.1.jar.ExcelImporter.jar
 - In eMagiz the request handler needs to be set with a dummy name. The Request Handler is no longer used, but there is a value expected for now (to fix in future releases of this package).
 ![](../../img/howto/emmxv8_dummy_requesthandler.png)
+
+## 8. Addendum eMagiz Mendix Connector 4.2.0
+
+With the release of the newewst version of the eMagiz Mendix Connector a couple of things have changed.
+
+- On project startup the connector-infra configuration is downloaded, installed, and started automatically.
+	- When it is not possible to retrieve the active release, the previous connector-infra will be used.
+	- The Configuration Overview snippet is not necessary anymore and therefore removed from the module.
+- Improved exception handling for synchronous entry integrations.
+	- Standard eMagiz bus exceptions are recognized and converted into Mendix exceptions.
+	
+### 8.1 Infra download, installation and starting
+
+In previous versions of the eMagiz Mendix Connector you always needed to download the .emc package, manually upload it in Mendix and start the Infra flow by hand.
+With the introduction of this release we have made a change that automatically downloads, installs and starts the Infra flow belonging to this specific Mendix application.
+
+<p align="center"><img src="../../img/howto/userguide-emc8-after-startup-retrieve-infra.png"></p>
+
+This way you never have to execute those steps and eMagiz ensures that the Infra flow is the first to start up before any exits are registered. 
+To make this possible we have added logic to the AfterStartup microflow of eMagiz to retrieve the properties from eMagiz, download the infra and start the infra.
+
+In case there is a problem with internet connectivity or you simply cannot reach eMagiz, the microflow ensures that the latest known infra will be started up.
+
+### 8.2 Improved exception handling synchronous entry
+
+Apart from that we have also improved the error handling for synchronous entry to make sure that standard eMagiz exceptions are presented correctly to the user in Mendix.
+
   
