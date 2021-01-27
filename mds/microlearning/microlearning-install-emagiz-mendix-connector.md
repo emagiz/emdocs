@@ -6,7 +6,7 @@ With the help of this Mendix module created by the eMagiz team you can easily co
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 27th 2021
-- Required reading time: 3 minutes
+- Required reading time: 2 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -14,7 +14,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - Access to the Deploy phase of your eMagiz project
 
 ## 2. Key concepts
-This micro learning centers around making installing a eMagiz Mendix Connector
+This micro learning centers around installing a eMagiz Mendix Connector
 With eMagiz Mendix Connector we mean: A Mendix module developed and maintained by eMagiz that simplifies connect a Mendix application to a eMagiz project for data traffic between both systems.
 
 To install a eMagiz Mendix Connector you need the following:
