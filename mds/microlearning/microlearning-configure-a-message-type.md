@@ -5,7 +5,7 @@ Configuring a message type is the second step in designing a integration within 
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 29th 2021
+- Last update: February 1th 2021
 - Required reading time: 4 minutes
 
 ## 1. Prerequisites

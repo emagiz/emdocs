@@ -5,7 +5,7 @@ Configuring a system is the first step in designing a integration within eMagiz
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 27th 2021
+- Last update: January 29th 2021
 - Required reading time: 2 minutes
 
 ## 1. Prerequisites

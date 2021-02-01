@@ -7,7 +7,7 @@ In this microlearning we will look into how you can use the tagging functionalit
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 1th 2021
-- Required reading time: 4 minutes
+- Required reading time: 2 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
