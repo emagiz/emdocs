@@ -21,7 +21,7 @@ To configure a integration you need the following:
 - Content information (what are you going to exchange)
 - Security information (how are you going to secure the data exchange)
 
-## 3. Configure a message type
+## 3. Configure a integration
 
 As specified before with configure we mean adding, editing and/or deleting a integration. Below we will detail per action what you should do.
 
