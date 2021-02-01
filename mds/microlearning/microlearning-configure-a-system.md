@@ -55,7 +55,7 @@ For example, you could change the Status to Done or add a Remark. Editing a syst
 
 ### 3.3 Deleting a system
 
-Adding is the starting point of your integration and both editing and deleting a system can be happen at any given moment.
+Adding a system is the starting point of your integration and both editing and deleting a system can be happen at any given moment.
 Although editing a system has no impact regardless of the state of the system in subsequent phases of the ILM the same does not apply for deleting a system.
 
 When a system has been transferred to Create you cannot delete the system anymore in Capture without removing it first from Create. 
@@ -69,14 +69,15 @@ To delete a system in such a scenario you can simply open the context menu and p
 
 ## 4. Assignment
 
-The assignment is simple this time. Simply add / edit and subsequently delete a system called Microlearning.
+The assignment is simple this time. Simply add, edit and subsequently delete a system called Microlearning. 
+After you have succesfully deleted add a new system that you can use in the following assignment(s).
 This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
 - Adding a system is the starting point of building a integration via emagiz
 - Editing system information can be done at any given time without impact on other ILM phases
-- Deleting a system can only be done (without special steps in preparation) when the system has **not** yet been transferred to Create.
+- Deleting a system can only be done (without special steps in preparation) when the system has **not** yet been transferred to Create or has been untransferred from Create.
 
 ## 6. Suggested Additional Readings
 
