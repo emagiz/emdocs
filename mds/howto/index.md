@@ -13,7 +13,8 @@ In the sections below, you will find some online documents that are relevant for
 | - [Configuring AWS Direct Connect](direct-connect.md)| - [Best practices for SFTP](sftp-best-practice.md)| - [Runtime Statistics Explained](runtime-statistics-explained.md)  |
 | - [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) | - [Debugging guidelines](debugging-guidelines.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md) |
 | | - [WS-Security Explained](ws-security.md) | - [User management](user-management.md) |
-| | - [WS-Addressing Explained](ws-addressing.md) | |
+| | - [WS-Addressing Explained](ws-addressing.md) | - [Migration Path - Job Dashboard Cleanup](migration-path-job-dashboard-cleanup.md) |
+| | | - [Migration Path - AWS Redshift Refresh](migration-path-aws-redshift-refresh.md) |
 
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
 | ------ | ------ | ------ |
