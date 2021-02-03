@@ -1,6 +1,9 @@
 ## Portal release notes
 |Release number |Release name |Release date |
 | ------ | ------ | ------ |
+|[10.15.0](10.15.0.md)| Teddy Bear | 2020-01-22|
+|[10.14.0](10.14.0.md)| The Best is Yet to Come | 2021-01-08|
+|[10.12.0](10.12.0.md)| Frosty night | 2020-12-11|
 |[10.11.0](10.11.0.md)| Biofluorescent | 2020-11-27|
 |[10.10.0](10.10.0.md)| Suspicious Minds | 2020-11-13|
 |[10.9.0](10.9.0.md)| Quick Wins| 2020-10-30|
