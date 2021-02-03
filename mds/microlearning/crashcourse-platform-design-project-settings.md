@@ -1,6 +1,6 @@
-# Understanding Design Architecture - Basic
+# Project Settings
 
-In this microlearning we will educate you on what the Design Architecture is, what you can use it for and how it can help you.
+In this microlearning we will educate you on which project settings you need to define in Design to ensure that you can transfer your solution to Create.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -11,83 +11,125 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning centers around understanding what the Design Architecture overview is and how it can help you
+This micro learning centers around the Project Settings in Design
 
-With Design Architecture we mean: A desired overview of where the instances are deployed, on which machines and how many resources it takes to deploy these instances
+With Project settings we mean: A set of configuration items that defines how the setup of the project will look like.
 
-The Design Architecture gives you insights into:
-- Where do my instances run (cloud, on-premise)
-- What is the machine size needed to run my instances
-- Can I still develop more integration solutions within the current sizing parameters
+The Project settings define:
+- Technical name
+- Namespace URL
+- Enforce CDM best practices
+- Nr. of process containers
+- IaaS where is your eMagiz project deployed)
+- Use failover
+- Use cluster
+- Connection type
 
-## 3. Understanding Design Architecture
+## 3. Project Settings
 
-The Design Architecture overview is accessible under Design. In Design you can click on Architecture to get to the overview. 
-The following Design Architecture could look similar to what you would see the first time you open this page. A lot to improve as you can see.
+In this microlearning we will discuss how to configure the project settings to represent the correct structure of how your project will be running.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--rough-overview.png"></p> 
+eMagiz will fill in several settings for you and those you don't need to change. These settings are:
 
-As you can see in the overview of the architecture we have several machines within our integration landscape (i.e. localhost, local machine, External 01, etc.) and each machine has several systems running on it.
+- Enforce CDM best practices
+- Use cluster
+- Connection type
 
-### 3.1 Core Machine
-The machine called localhost in this example is a so called core machine. This machine (or machines if you scale up) plays host to the core functionalities of eMagiz:
-- JMS
-- Process Container (holds all onramps, offramps, routers and error for messaging processes)
-- Event Streaming Container (holds all onramps and offramps for event stream processes)
+The other settings can be divided into two segments. The first segment defines settings that you need to set once and never have to change anymore.
+Under this segment we define the following settings:
+- Technical name
+- Namespace url
 
-Depending on your specific implementation you are in need of some of them or all of them. If you do not need them eMagiz will grey them out indicating that the system in question can be ignored.
+The second segment defines settings that might change over time as your integration landscape is growing which leads to different choices:
+- Nr. of process containers
+- IaaS (where is your eMagiz project deployed)
+- Use failover
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--core-machine.png"></p>
+Editing either one of these settings can be done via the Edit Settings button:
 
-### 3.2 Connector Machine(s)
-The machine called local machine in this example is a so called connector machines. 
-These machines are connected to the internet as this is the place where you exchange data with other systems.
+<p align="center"><img src="../../img/microlearning/ml-project-settings--edit-project-settings.png"></p> 
 
-Within eMagiz we make a distinction between two types of connector machine(s):
-- Connector machine(s) running in the eMagiz Cloud managed by eMagiz
-- Connector machine(s) running on-premise in the data center of the client themselves
+### 3.1 Generic Project Settings
 
-Both are also represented differently within this picture. The on-premise systems are blue and behind one firewall. 
+The generic project settings that need to be defined once are the technical name and the namespace url. 
+The advice is to shorten your display name within seven characters to represent the technical name and let the namespace url reflect what your eMagiz project is about (i.e name of a business, organizational unit, etc.).
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--on-prem-connector-machine.png"></p>
+An example of such a implementation would be:
 
-The connector machine(s) in the eMagiz Cloud are running in between firewalls and are green.
+<p align="center"><img src="../../img/microlearning/ml-project-settings--generic-project-settings.png"></p> 
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--emagiz-cloud-connector-machine.png"></p>
+### 3.2 Specific Project Settings
 
-Cleaning the picture up and removing the systems that are unnecessary gives us a way nicer overview
+The specific project settings could change over time as your integration landscape is growing leading to other decisions being made.
+Let us take a look at each of these settings one by one to see what they are about and how they can change over time.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--nice-overview.png"></p>
+#### 3.2.1 Nr. of process containers
+The number of process containers defines how many runtimes will be used to run your core flows (i.e. onramp, offramp, routing, error). 
+The default setting is 1 process container. 
 
-### 3.3 Determining size
-Apart from determining where a instance (runtime) should be running (cloud or on-premise) the Design Architecture 
-also helps in determining the size a machine would need to have to support the processes running on it.
+<p align="center"><img src="../../img/microlearning/ml-project-settings--number-of-process-containers.png"></p> 
 
-When you activate the Start Editing mode you will notice that you can alter the size of the green machines (those that are managed by eMagiz) 
+However the moment your integration landscape grows beyond a certain number of flows you should think about dividing the load between multiple process containers.
+The current limit we advise is a maximum of 60 flows per process container.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--core-machine-start-editing.png"></p>
+#### 3.2.1 IaaS
+We offer two choices when it comes to where you are deploying your integration (eMagiz Cloud in AWS or On-premise). The third option (Root) is deemed end of life
 
-To help you determine the size of the machine eMagiz has the option to check the size status
+<p align="center"><img src="../../img/microlearning/ml-project-settings--IaaS-options.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--check-size-status.png"></p>
+Best practice for test projects and academy related projects is to run them on-premise (meaning in this case your own laptop). 
+Best practice for actual projects is to run them in the eMagiz Cloud (AWS)
 
-In the pop-up that follows we specify how the memory advice of eMagiz is calculated (the figure on the left above a machine). 
-This can help you determine the correct sizing for your machine, now and in the future
+#### 3.2.1 Use failover
+The third setting that could change over time is the setting to use a failover or not.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--check-size-status-popup.png"></p>
+Using failover will add high availability and redundancy of the JMS servers to the solution, but also requires more hardware to deploy on.
+Note that in most cases using failover with only a single process container is not very useful, as this makes the process container a single point of failure.
 
-Obviously there is much more to tell about the Design Architecture but more on that in later microlearnings.
+This means that you have to decide whether your project should be always up and running (also in case of trouble on one of the JMS servers) or if it is okay that downtime can occur in those situation.
+Furthermore it means that this setting also impacts the setting for the nr. of process containers. 
+
+If you use failover and have less then 60 flows you should have 2 process containers. 
+If you have between 60-120 flows and use failover you should have 4 process containers. As you can imagine the logic continues onwards if you continue to grow.
+
+
+### 3.3 Applying Settings
+The moment you are satisfied with your settings you need to apply the settings in order for the Design Architecture to reflect your choices.
+The first time you set up these settings you can press the Apply Settings button in this overview as it will immediately apply the settings to Test, Acceptance and Production.
+
+However the moment you are already running your eMagiz integration landscape on these environments on Test, Acceptance and Production 
+we strongly advice that you apply the change in settings **per** environment.
+
+You can apply these settings **per** environment via the Design Architecture overview by selecting the option Apply settings.
+
+<p align="center"><img src="../../img/microlearning/ml-project-settings--apply-settings-design-architecture.png"></p>
+
+### 3.4 Transfer settings to Create
+Furthermore the moment you change your project settings **after** you have transferred atleast one flow to Create you should also update the settings in Create to reflect the new reality.
+You can do so by navigating to Create -> Settings -> Transfer Settings from Design.
+
+If there are differences on one of the specified categories you should press the Transfer button to sync Design and Create.
+
+<p align="center"><img src="../../img/microlearning/ml-project-settings--transfer-settings-from-design.png"></p>
+
+Be aware that changing these settings can have a impact on a multitude of flows, therefore proceed with caution and be patient to see results
 
 ## 4. Assignment
 
-Navigate to Deploy -> Architecture and determine for your environment whether the adviced size matches the size that is currently configured by the user.
-This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
+Navigate to Design -> Settings and check if all settings are filled in. If not fill in the required settings (technical name and namespace url) 
+and set IaaS to on-premise **(only if you use a Academy project and not a real project for this assignment)**
+This assignment can be completed within the Academy project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Design Architecture gives you context on which instances run where (on-premise or cloud)
-- Design Architecture gives you the tools that you need to determine a correct sizing for your environment
-- Machines are divided in so called core and connector machines
+- Some project settings need to be defined once
+	- Technical name
+	- Namespace URL
+- Other settings can change over time
+	- Nr. of process containers
+	- IaaS
+	- Use failover
+- Applying them should be done with caution and with reason
 
 ## 6. Suggested Additional Readings
 
@@ -97,4 +139,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-understanding-design-architecture-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-project-settings.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
