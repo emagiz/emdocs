@@ -34,9 +34,9 @@
 		</div>
 	</li>
 	<li class="moduleitem">
-		<div class="moduleitemgreen">Unit testing</div>
+		<div class="moduleitemgreen">Crash course Platform - Introduction</div>
 		<div class="moduleitemdetail">
-			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/index-unit-testing-in-emagiz';">Start</modbutton></a></div>
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/index-crashcourse-platform-intro.md';">Start</modbutton></a></div>
 		</div>
 	</li>
 	<li class="moduleitem">
