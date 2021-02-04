@@ -5,7 +5,7 @@
 | ---- | ---- | ---- | ---- | ---- | ---- |
 |1. |[What is a message definition](crashcourse-platform-design-what-is-a-message-definition.md)| 2 min | X | X | X |
 |2. |[Creating a message definition](crashcourse-platform-design-creating-a-message-definition.md)| 4 min | X | | |
-|3. |[Defining a message format](crashcourse-platform-design-defining-a-message-format.md)| 2 min | X | | |
+|3. |[Defining a message format](crashcourse-platform-design-defining-a-message-format.md)| 4 min | X | | |
 |4. |[Importing a message definition](crashcourse-platform-design-import-message-definition.md)| 5 min | X | | | 
 |5. |[What is a message mapping](crashcourse-platform-design-what-is-a-message-mapping.md)| 2 min | X | X | X |
 |6. |[Drawing lines in message mapping](crashcourse-platform-design-drawing-lines-in-message-mapping.md)| 3 min | X | | |
