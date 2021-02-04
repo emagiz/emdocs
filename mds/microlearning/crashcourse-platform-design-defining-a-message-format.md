@@ -65,4 +65,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-importing-a-message-definition.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-defining-a-message-format.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
