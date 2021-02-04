@@ -7,7 +7,7 @@ In this microlearning we will learn which options you have for defining a messag
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 4th 2021
-- Required reading time: 1 minutes
+- Required reading time: 2 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

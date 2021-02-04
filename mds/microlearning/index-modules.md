@@ -40,6 +40,18 @@
 		</div>
 	</li>
 	<li class="moduleitem">
+		<div class="moduleitemgreen">Crash course Platform - Capture</div>
+		<div class="moduleitemdetail">
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-intro-capture';">Start</modbutton></a></div>
+		</div>
+	</li>
+	<li class="moduleitem">
+		<div class="moduleitemgreen">Crash course Platform - Design</div>
+		<div class="moduleitemdetail">
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-intro-design';">Start</modbutton></a></div>
+		</div>
+	</li>
+	<li class="moduleitem">
 		<div class="moduleitemdarkgreen">Unit testing</div>
 		<div class="moduleitemdetail">
 			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/index-unit-testing-in-emagiz';">Start</modbutton></a></div>
