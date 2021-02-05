@@ -40,6 +40,12 @@ If you are satisfied with the choices you have made you can press Save selection
 To verify that your integration has been added you can navigate to the Create overview belonging to your integration pattern to verify the result
 
 <p align="center"><img src="../../img/microlearning/ml-adding-flows-to-create--add-flow-result.png"></p>
+
+### 3.1 Generate infra flows
+To ensure that all your flows are running correctly and can connect to the JMS properly you need so-called Infra flows. 
+The first time you start in Create and everytime after you add a new system to Create don't forget to press the button called Generate all infras.
+
+<p align="center"><img src="../../img/microlearning/ml-adding-flows-to-create--generate-all-infras.png"></p>
  
 ## 4. Assignment
 
