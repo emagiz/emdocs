@@ -30,7 +30,7 @@
 	<li class="moduleitem">
 		<div class="moduleitemgreen">Crash Course Event Streaming</div>
 		<div class="moduleitemdetail">
-			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/index-crashcourse-eventstreaming';">Start</modbutton></a></div>
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-eventstreaming-index';">Start</modbutton></a></div>
 		</div>
 	</li>
 	<li class="moduleitem">
@@ -42,13 +42,25 @@
 	<li class="moduleitem">
 		<div class="moduleitemgreen">Crash course Platform - Capture</div>
 		<div class="moduleitemdetail">
-			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-intro-capture';">Start</modbutton></a></div>
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-capture-index';">Start</modbutton></a></div>
 		</div>
 	</li>
 	<li class="moduleitem">
 		<div class="moduleitemgreen">Crash course Platform - Design</div>
 		<div class="moduleitemdetail">
-			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-intro-design';">Start</modbutton></a></div>
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-design-index';">Start</modbutton></a></div>
+		</div>
+	</li>
+	<li class="moduleitem">
+		<div class="moduleitemgreen">Crash course Platform - Create</div>
+		<div class="moduleitemdetail">
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-create-index';">Start</modbutton></a></div>
+		</div>
+	</li>
+	<li class="moduleitem">
+		<div class="moduleitemgreen">Crash course Platform - Deploy</div>
+		<div class="moduleitemdetail">
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/crashcourse-platform-deploy-index';">Start</modbutton></a></div>
 		</div>
 	</li>
 	<li class="moduleitem">
