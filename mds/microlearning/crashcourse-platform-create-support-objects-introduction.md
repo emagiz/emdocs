@@ -7,7 +7,7 @@ In this microlearning we will focus on what they conceptually mean and discuss a
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 8th 2021
-- Required reading time: 2 minutes
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -21,7 +21,7 @@ With support objects we mean: Component that help the functional components do t
 Apart from having components in the flow editor that make sure that the message is received, validated, transformed and/or send you can also use so called support objects while building your flow.
 There are a lot of support objects in various categories. As this is a introduction we are not going to discuss all of them in detail.
 
-A support objects can be linked to a functional component to aid the working of such components. Some areas in which a support object could help:
+A support objects can be linked to a functional component to aid the working of that component. Some areas in which a support object could help:
 
 - Connectivity (i.e. JDBC, FTP, SFTP)
 - Authentication (i..e Basic, OAuth2.0, Metacom, Azure)
