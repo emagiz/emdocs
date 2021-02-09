@@ -13,7 +13,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - Access to a Mendix application
 - Access to the Deploy phase of your eMagiz project
 - A connection between Mendix and eMagiz Designed and Created
-- Using eMagiz Mendix version 4.2.0 or higher. For legacy configuration please see [Install guide eMagiz Connector for Mendix](upgrade-eMagizMendixConnector.md)
+- Using eMagiz Mendix version 4.2.0 or higher. For legacy configuration please see the user guide **Install guide eMagiz Connector for Mendix**
 
 ## 2. Key concepts
 This micro learning centers around configuring a eMagiz Mendix Connector

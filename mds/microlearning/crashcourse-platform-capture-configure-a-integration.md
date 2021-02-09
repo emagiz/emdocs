@@ -38,7 +38,7 @@ After you have connected the system to eMagiz (located in the center) you will i
 
 <p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-first-popup.png"></p>
 
-In case you want to add a new message type, please study the microlearning [Configure a message type](microlearning-configure-a-message-type.md).
+In case you want to add a new message type, please study the microlearning **Configure a message type**.
 
 In this microlearning we will assume that the message type you want to use for this particular integration is already available within your eMagiz project.
 Therefore we will select the message type Configure a message type from the drop down menu
