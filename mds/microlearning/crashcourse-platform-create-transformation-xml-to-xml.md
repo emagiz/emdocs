@@ -9,8 +9,8 @@ Within Create you can transform between multiple message formats. In this microl
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 5th 2021
-- Required reading time: 7 minutes
+- Last update: February 9th 2021
+- Required reading time: 8 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
