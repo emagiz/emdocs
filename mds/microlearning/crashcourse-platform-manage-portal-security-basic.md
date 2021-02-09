@@ -1,208 +1,82 @@
-## Alerting in eMagiz
-Assessing the health of your systems is critical in a stable and robust integration solution. 
-Getting alerts when something deviates is a crucial part of guaranteeing the stable and robust integration solution.
+## Portal Security - Basic
+Securing your solution and your data is a shared responsibiliy between eMagiz and you. 
 
-In this microlearning we will educate you on Alerting within the Manage phase of eMagiz.
+In this microlearning we will educate you on the basics of the security of the eMagiz Portal.
 
 - Last update: February 9th 2021
-- Required reading time: 11 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around setting up the alerting in eMagiz.
-With alerting we mean: Configure thresholds that raise an alert when the threshold is passed
+This microlearning centers around eMagiz portal security.
+With portal security we mean: Ensuring that your model is not accessible for those who have no right to access your project.
 
-There are four areas on which you can configure alerting:
-- Error Messages
-- Log Entries
-- Measurement Data
-- Missing Data
+The portal security consists of multiple parts:
+- User access to Portal
+- User access to Integration Projects
+- User authorizations to Integration Projects
+- Partner user access to Client environments
+- Password Policy & Validity
 
-Setting up the alerting in these four areas has common steps and specific steps
+For each aspect it is good to know how the security is set up by eMagiz.
 
-## 3. Alerting in eMagiz
-Assessing the health of your systems is critical in a stable and robust integration solution. 
-Getting alerts when something deviates is a crucial part of guaranteeing the stable and robust integration solution.
+## 3. Portal Security - Basic
+Securing the portal is done in various ways. 
+In this microlearning the focus will be on user access to the portal, to projects and how to determine that a user has exactly the rights he/she needs to execute their job.
+We will discuss each of these aspects below one by one.
 
-First we take a look at the general process of creating, updating and deleting a alerting in a general manner. 
-Afterwards we explain per area how you can configure the alerting correctly for that specific area.
+### 3.1 User access to https://my.emagiz.com
+User can be added with their email address by the eMagiz Partner Manager, upon which the user gets an email to sign-in. 
+A temporary password is created and emailed as well, which has to be changed at the first login to the iPaaS Portal. Users are connected to organizations in eMagiz.
+In the adminstration section of the user, a MFA token can be used to enble the Multifactor Authentication on a user level. 
+Typical authenticators on a smartphone can be used such as Google Authenticator. 
+An MFA reponse is required for bus owners to manage the permissions on a project level and for any Edit activity in Production environments. See next sections for more details on these functions.
 
-To access the Alerting overview you navigate to Manage -> Alerting.
+### 3.2 Users access to Integration Projects
+Users can be added to Integration projects, which hold all the configurations required to run the different integrations for the TAP environments. 
+Integration projects are connected to organizations in eMagiz to ensure the integration project remains within limits of the license agreements. 
+Users can be added to integration projects of the organization where the user belongs to. Users can't be added to integration projects of other clients. 
 
-### 3.1 Best practices
--	Use the standard as described here to correctly set up the alerting
--	Always stay in contact with the business, preferable as early as possible on which triggers they deem relevant
--	eMagiz already provides you, from the start point, with a set of relevant triggers
--	Always send alerts to generic mailboxes or multiple persons. This to prevent problems when someone is unable to check their email. 
--	Use the include option. This means that you select all flows or runtimes for which a certain trigger is relevant. This prevents unnecessary triggers the moment you add an integration to Create. See figure below for an example
+### 3.3 User authorizations to Integration projects.
+Every integration project has a bus owner who can distribute rights across functionalities and environments. 
+In the picture below, one can see the various options available across the Integration Life Cycle (ILM) Phases Capture through Manage. 
+The bus owner manages the user permissions and needs to have the MFA authentication level activated before making any changes. 
+- In case an Edit permission is granted on a ILM phase, all the sub-options can be configured
+- View rights mean that all options can be viewed only
+- In case the user has no Edit or View rights to a certain ILM phase, the phase will not be displayed at all in the eMagiz iPaaS Portal
+- Bus owners are assigned to integration projects by eMagiz Administrators
+- An audit trail is kept of the changes made in the project permission structure
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--include-option.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-portal-security-basic--integration-project-rights.png"></p>
 
--	Always link a tag with a trigger. Tags can be re-used. Triggers need to be as specific as possible
--	Always use a generic description for your trigger so it is clear to all what the function of the trigger is
--	When naming the tags please consider this naming convention
--	All standard tags are prefixed with Standard. This with the exception of the Error messages and Cloud alert tag. Those are used by eMagiz for separate purposes
--	All business tags are prefixed with Business
--	Use the deployment plan to tell you which alerts you might need to update based on your Production deployment
+### 3.4 Partner user access to Client environments
+Partner organizations are supported in eMagiz. 
+Bus owners can select user from their own organization or from the connected partner organization. 
+The connection between client and partners organization is managed by eMagiz administrators
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--deployment-plan-help.png"></p>
+### 3.5 Password policy & Validity 
+Below the relevant items for the password policy in eMagiz Portal
 
-### 3.2 Create or Update alerting
-
-1.	Navigate to Manage -> Alerting -> Triggers
-2.	Check if there is already an trigger that determines a threshold for your use case
-	- If yes, double click on the alert in question and add the runtime, flow, statistic etc. to the alert and press save. No need to continue any further.
-	- If no, continue with step 3
-3.	Navigate to Tags
-4.	Check if there is already a tag for your use case. See best practice on tag names for more information.
-	- If yes, then continue with step 5
-	- If no, create a new tag conform the best practice and continue with step 5
-5.	Navigate back to Triggers
-6.	Press the New button and determine the type of trigger
-	- If you want to raise alerts on **error messages** which you received from all queues that are running on your environment select the option Error Messages
-	- If you want to raise alerts on any type of **logging** that is generated on your environment select the option Log Entries
-	- If you want to raise alerts on all **statistics (runtime and queue)** that is generated on your environment select the option Measurement Data
-	- If you want to raise alerts on all **statistics (runtime and queue)** that is **not** generated on your environment select the option Missing Data
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--the-four-options.png"></p>
-
-7.	Link the tag to the trigger you have just created and enable the trigger
-
-### 3.3 Trigger Error Messages
-1.	After you have selected the option Error messages as trigger type you will see the following pop up.
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up.png"></p>
-
-2.	For triggers on error message you have three options as you can see from the above pop up:
-	- The exception class. If you want to use this trigger condition continue with step 3
-	- The exception message. If you want to use this trigger condition continue with step 6
-	- The header with name. If you want to use this trigger condition continue with step 9
-3.	Select the checkbox before the exception class. The screen will change to the following
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-exception-class.png"></p>
-
-4.	Select if you want the exception class to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
-5.	Select the correct exception class for which the trigger needs to raise an alert. Examples are:
-	- org.springframework.integration.MessageRejectedException
-	- org.springframework.messaging.MessageHandlingException
-	- org.springframework.web.client.HttpClientErrorException
-	- com.emagiz.components.error.ErrorToXmlTransformer.RestErrorResponseBody
-6.	Select the checkbox before the exception message. The screen will change to the following
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-exception-message.png"></p>
-
-7.	Select if you want the exception message to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
-8.	Select the correct exception message for which the trigger needs to raise an alert. Examples are:
-	- 400 Bad Request
-	- Message was rejected due to XML Validation errors
-	- failed to receive JMS response within timeout of
-9.	Select the checkbox before the header with name. The screen will change to the following
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-header-with-name.png"></p>
-
-10.	Select if you want the name of the header to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
-11.	Select the correct name of the header for which the trigger needs to raise an alert. Examples are:
-	- xxx_sourceSystem
-	- xxx_targetSystems
-	- xxx_messageTypes
-12.	Select the correct value of the header for which the trigger needs to raise an alert. Examples are:
-	- Project
-	- Order
-	- WMS
-	- TMS
-	
-### 3.4 Trigger Log entries
-1.	After you have selected the option Log entries as trigger type you will see the following pop up
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-log-entries-pop-up.png"></p>
-
-2.	Select to which runtimes you will apply the trigger. For this also select the most specific option (advice is the following objects). Options are:
-	- The following objects
-	- All objects
-	- All objects, except for
-3.	Select on which trigger condition you want the alert to be raised. Options are:
-	- The level. If you want to use this continue with step 4
-	- The bundle. Don’t use this option. It has no practical use
-	- The flow. Don’t use this option. The trigger would we too specific but yet at the same time to generic.
-	- The message. If you want to use this continue with step 5
-	- The stack trace. If you want to use this continue with step
-4.	Log entries can be send in three forms i.e. Info, Warning or Error. The Error option is the most relevant one to select as other forms are only relevant in combination with other triggers conditions
-5.	Select if you want the message to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
-6.	Select the correct exception message for which the trigger needs to raise an alert. Examples are:
-	- org.springframework.transaction.CannotCreateTransactionException
-	- Application exception overridden by rollback exception
-7.	Select if you want the stack trace to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible but due to the nature of stack traces we advise to use the contains function on a specific section relevant to that flow.
-8.	Select the correct part of the stack trace for which the trigger needs to raise an alert. Examples are:
-	- org.springframework.messaging.MessageHandlingException: error occurred in message handler
-	- AMQ224095: Error updating Consumer Count
-	
-### 3.5 Trigger measurement data
-1.	Select which evaluated object type you want to start your trigger with. Two options are predominantly used:
-	- Runtime. If you want to select this option continue with step 2
-	- JMS queue. If you want to select JMS queue continue with step 5
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-choice.png"></p>
-
-2.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advise is to use the following objects option
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-runtimes-pop-up.png"></p>
-
-3.	Next step would be to select the Trigger condition on which you want the trigger to raise an error. For each option you have furthermore the option to select is greater than or is less than. 
-4.	Use the runtime statistics of the runtime(s) for which you want to configure the trigger to determine the correct thresholds.
-5.	You will be prompted with the following pop up. First step is to select the JMS queues for which the trigger will be executed. Once again the advise is to use the following objects option
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-jms-queue-pop-up.png"></p>
-
-6.	Next step would be to select the Trigger condition on which you want the trigger to raise an error. For each option you have furthermore the option to select is greater than or is less than. 
-7.	Mainly the two following options are used in all busses (and are supplied standard by eMagiz):
-	- One for queued messages
-	- One for number of consumers
-8.	Use the queue statistics of the jms queue(s) for which you want to configure the trigger to determine the correct thresholds (in combination with common sense)
-
-### 3.6 Trigger missing data
-1.	Select which evaluated object type you want to start your trigger with. Two options are predominantly used:
-	- Runtime. If you want to select this option continue with step 2
-	- JMS queue. If you want to select JMS queue continue with step 6
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-choice.png"></p>
-
-2.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advice is to use the following objects option
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-runtimes-pop-up.png"></p>
-
-3.	The two following options are used in all busses (and are supplied standard by eMagiz):
-	- One for data measurements
-	- One for log entries
-4.	If you feel you need to change and/or add/adapt triggers of this kind please take a look at those eMagiz generated for you. Those are generated based on the best practice
-5.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advice is to use the following objects option
-
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-jms-queue-pop-up.png"></p>
-
-6.	For trigger conditions you have the following options:
-	- Data measurements. Loss of data measurements is already covered on runtime level, with the queued messages and number of consumers trigger. Therefore this is not needed unless you have a specific scenario.
-	- Messages. In some cases it can be handy if you receive an alert when messages are missing over a certain period of time. For example when you have an integration that is always running, each day, between 19:00 and 20:00 and needs to deliver data. If not someone needs to know. Continue with step 8 in which we elaborate on this example further.
-7.	Select messages for Trigger when the following option: messages
-8.	Select for are missing over the last the following option: 15 minutes
-9.	Check continuously on yes
-10.	Evaluate only on: Select all days (default option)
-Between: 19:00 and 20:00. Be aware eMagiz talks UTC time so take that into account when selecting the correct values.
+- There is no expiry policy on the password - eMagiz has a Forget Password functionality. 
+- Password must be 8 - 20 characters long, cannot contain white spaces, and must contain at least one digit, one upper case and one lower case letter."
 
 ## 4. Assignment
 
-The assignment is simple this time. Simply navigate to the trigger (Manage -> Alerting -> Triggers) overview in eMagiz and analyze the default triggers eMagiz generates by default and spot the improvements.
+The assignment is simple this time. Simply navigate to the permissions (Project Dashboard -> Permissions) overview in eMagiz and analyze who has access to the project and what they can do within your project.
 This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-There are four areas on which you can configure alerting:
-- Error Messages
-- Log Entries
-- Measurement Data
-- Missing Data
+The portal security consists of multiple parts:
+- User access to Portal
+- User access to Integration Projects
+- User authorizations to Integration Projects
+- Partner user access to Client environments
+- Password Policy & Validity
 
-Setting up the alerting in these four areas has common steps and specific steps
+For each aspect it is good to know how the security is set up by eMagiz.
 
 ## 6. Suggested Additional Readings
 
@@ -212,4 +86,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-alerting-in-emagiz.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-portal-security-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
