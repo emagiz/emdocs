@@ -46,7 +46,7 @@ This time we have a two part assignment:
 - Add a tag identifying the scope of a project or sprint and link it to the systems and integrations that are part of this scope
 - Filter the Capture overview based on this tag to see what tagging can do for you
 
-This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
+This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
