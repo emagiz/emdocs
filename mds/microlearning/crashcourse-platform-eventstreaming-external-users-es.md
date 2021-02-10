@@ -39,9 +39,13 @@ On this page you can add a external user by selecting the New button and giving 
 
 Best practice would be to use the technical name or the display name of the systems you have created in the phases before.
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-pop-up.png"></p>   ----------TO-DO-------------
+<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-pop-up-filled-in.png"></p>
 
 Obviously if you want to get rid of a certain user you can select it and press Delete. After that the user is gone.
+
+The result of adding two external users that fit our use case will look as follows:
+
+<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-result.png"></p>
 
 ### 3.2 Handing out rights to a user on a topic
 
