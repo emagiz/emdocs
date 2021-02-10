@@ -3,7 +3,7 @@
 | id | Microlearning | Duration | Developer | Architect | Support<br>Engineer |
 | ---- | ---- | ---- | ---- | ---- | ---- |
 |1. |[What is a message definition](crashcourse-platform-design-what-is-a-message-definition.md)| 2 min | X | X | X |
-|2. |[Creating a message definition - TO ADD](crashcourse-platform-design-creating-a-message-definition.md)| 4 min | X | | |
+|2. |[Creating a message definition](crashcourse-platform-design-creating-a-message-definition.md)| 8 min | X | | |
 |3. |[Defining a message format](crashcourse-platform-design-defining-a-message-format.md)| 4 min | X | | |
 |4. |[Importing a message definition](crashcourse-platform-design-import-message-definition.md)| 5 min | X | | | 
 |5. |[What is a message mapping](crashcourse-platform-design-what-is-a-message-mapping.md)| 2 min | X | X | X |
