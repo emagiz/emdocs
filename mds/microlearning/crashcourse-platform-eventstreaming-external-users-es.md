@@ -61,7 +61,7 @@ This way you can make sure that a party that is supposed to only consume data on
 
 When you press Add ACL entry you can fill in the following pop-up. In this pop-up you select the user, the topic and the rights said user must have on a topic.
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-pop-up.png"></p>   ----------TO-DO-------------
+<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-acl-config-pop-up.png"></p>
 
 The moment you are happy with your choices you can press Save and eMagiz will make sure that the user has access to that topic from that point on.
 
@@ -101,4 +101,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-external-users-es.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  ----------TO-DO-------------
+<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-external-users-es.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
