@@ -48,7 +48,7 @@ You can view who made what (temporary) version when you navigate to the History 
 
 <p align="center"><img src="../../img/microlearning/ml-promote-flows-to-deploy--history-of-flow.png"></p>
 
-This history of the changes in the flow is not only usefull for auditing purposes but it also helps you identify who you should ask about the latest changes.
+This history of the changes in the flow is not only useful for auditing purposes but it also helps you identify who you should ask about the latest changes.
 As you can see the default description of a autosaved version is Autosaved version. You can give such a version a more descriptive name by selecting it and pressing Edit.
 
 <p align="center"><img src="../../img/microlearning/ml-promote-flows-to-deploy--edit-description-auto-saved-version.png"></p>
