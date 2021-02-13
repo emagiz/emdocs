@@ -1,3 +1,20 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="master">
+		<!-- <div class="dropdown">
+			<select class="dropdown__dropdown">
+			<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
+				<option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
+				<option value="moving-onto-the-next-step">Moving onto the next step</option>    
+			</select>
+			<div class="dropdown__nav">
+			<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
+			<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
+		</div> -->
+		</main>
+	</div>
+</div>
+
 # Technical requirements before starting in eMagiz
 
 In this microlearning we will focus on learning how to start off with the eMagiz environment before entering into the Capture phase. What things to I need to know before starting?
@@ -46,9 +63,13 @@ None to date
 Please take a moment to view these integration pattern video's to help create the right solution.
 
 
+
+
 <iframe width="500" height="250" src="https://www.youtube.com/embed/VRGz3z_T3mw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <iframe width="500" height="250" src="https://www.youtube.com/embed/8TBXq9SVdL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <iframe width="500" height="250" src="https://www.youtube.com/embed/Dy7hDzdE3tI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
