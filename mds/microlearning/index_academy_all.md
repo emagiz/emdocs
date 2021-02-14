@@ -23,9 +23,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="#" class="card">
+		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Crash Course Platform</h4>
+				<h4 class="title">Crash Course API Gateway</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -42,9 +42,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="#" class="card">
+		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Crash Course Platform</h4>
+				<h4 class="title">Crash Course Platfor Event Streaming</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -61,9 +61,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="#" class="card">
+		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Crash Course Platform</h4>
+				<h4 class="title">Crash Course Messaging</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">

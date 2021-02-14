@@ -74,7 +74,7 @@
     </li>
 	 </li>
         <li class="strip">
-            <a href="../../docs/microlearning/capture-configure-a-integration" class="strip__link">
+            <a href="../../docs/microlearning/crashcourse-platform-capture-configure-a-integration" class="strip__link">
                 <label for="" class="strip__label">
                 <span>0</span>
                 Capture - Configure an Integration
@@ -276,7 +276,7 @@
             </div>
         </a>
     </li>
-		 </li>
+	</li>
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-platform-design-project-settings" class="strip__link">
                 <label for="" class="strip__label">
@@ -293,18 +293,432 @@
             </div>
         </a>
     </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-adding-flows-to-create" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Adding flows to Create
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-transformation-xml-to-xml" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Transformation XML to XML
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-data-type-transformations" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Data type transformations
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-transformation-xpath-basic" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Transformation - Xpath Basic
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-flow-editor-basics" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Flow Editor  - Basics
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-splitting-messages" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Split Messages
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-support-objects-introduction" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Support objects - Introduction
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-understanding-unittesting" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Understanding Unit Testing
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-creating-test-messages" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Create test messages
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-editing-test-messages" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Editing test messages
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-deleting-test-messages" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Deleting test messages
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-configuring-unit-test" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Configuring a Unit Test
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-running-unit-test" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Executing a Unit Test
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-promote-flows-to-deploy" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Promoting flows to Deploy
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-setup-deployment-plan" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Setting up a Deployment plan
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-create-new-release" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Creating a new Release
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-property-management" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - How to manage your properties in eMagiz
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-execute-deployment-plan" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Execute Deployment plan
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-install-local-connector" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Install local eMagiz runtime connector
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-runtime-dashboard" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Runtime Dashboard
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+     </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-deploy-actualize-properties" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Deploy - Update new property values
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-manage-determining-origin-of-error-message" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Manage - Determining origin of error message
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Manage - Interpreting Runtime Statistics
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-manage-alerting-in-emagiz" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Manage - Alerting in eMagiz
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-manage-portal-security-basic" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Manage - Portal Security - Basics
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
     </ul>
     </main>
     </div>
 </div>
-
-<!-- # Crash Course Platform
-
-
-| id | Microlearning | Duration | Developer | Architect | Support<br>Engineer |
-| ---- | ---- | ---- | ---- | ---- | ---- |
-|1. |[From Business to IT](crashcourse-platform-intro-businessit.md)| 2 min | X | X | X |
-|2. |[Getting the technical requirements](crashcourse-platform-intro-technrequirements.md)| 5 min | X | | |
-|3. | | 6 min | X | X | X |
-|4. | | 5 min | X | X | X |
-|5. | | 2 min | X | X | X | -->

@@ -1,3 +1,19 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="master">
+		<!-- <div class="dropdown">
+			<select class="dropdown__dropdown">
+			<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
+				<option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
+				<option value="moving-onto-the-next-step">Moving onto the next step</option>    
+			</select>
+			<div class="dropdown__nav">
+			<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
+			<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
+		</div> -->
+		</main>
+	</div>
+</div>
 # Configure a message type
 
 In this microlearning we will focus on learning how to configure a message type. 
