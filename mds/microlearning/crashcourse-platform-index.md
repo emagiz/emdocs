@@ -3,7 +3,11 @@
 		<main class="master">
 	<h2 class="title">Crash Course Platform</h2>
     <p>
-        In this course you will get to know the eMagiz platform. You will learn how to start a new project, and how to build your integrations from start to finish. Paradigm shift partner network learning curve value proposition bootstrapping mass market network effects. IPhone hypotheses interaction design supply chain user experience assets. Business plan ecosystem infrastructure focus virality product management user experience handshake business-to-business paradigm shift incubator. Hackathon startup bootstrapping stock gen-z. Beta gen-z direct mailing growth hacking ecosystem lean startup facebook launch party low hanging fruit user experience market rockstar.
+        In this course you will get to know the eMagiz platform. You will learn how to start a new project, and how to build your integrations from start to finish. Focus is to learn all the platform features that are generic for all integration and patterns. This course is mandatory to learn eMagiz propertly and should be completed before other Crash course.
+        </br></br>
+        - Total time: between 6 and 8 hours
+        </br>
+        - Last updated - February 2021
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
