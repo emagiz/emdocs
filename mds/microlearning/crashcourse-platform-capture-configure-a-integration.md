@@ -6,7 +6,7 @@ Configuring the integration itself is the third and final step in designing a in
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 1th 2021
-- Required reading time: 6 minutes
+- Required reading time: 8 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

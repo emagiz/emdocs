@@ -1,11 +1,3 @@
-
-<div>
-<previous class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Previous</previous><home class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Module Home</home><next class="button" onclick="window.location.href='https://emagiz.github.io/docs/microlearning/microlearning-editing-test-messages';">Next</next>
-</br>
-
-</div>
-
-
 # Creating Test Messages for Unit Testing
 
 In this microlearning we will focus on the creation of test messages which you can use while configuring and executing unit tests. Should you have any questions, please contact academy@emagiz.com.
@@ -33,8 +25,6 @@ By choosing one of these option as your starting point you can easily create a t
 
 Next we will explain how you can best use each of these methods to your advantage
 
----------------------------------------------------
-
 ## 3. Creating Test messages
 
 To create a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz you open the flow you want to unit test.
@@ -53,7 +43,7 @@ eMagiz provides you with four distinct options to add/create test messages on th
 
 <p align="center"><img src="../../img/microlearning/ml-creating-test-messages--create-testmessage-overview.png"></p>
 
-### 3.1 Create message from scratch
+### 3.1 From scratch
 
 In some cases you have no information to go on when you want to unit test your flow. In these cases you can use the option called Empty message.
 With this option you can create a message from scratch.
@@ -66,7 +56,7 @@ Simply select the option Empty message and press Create. In the pop-up that foll
 
 When you are satisfied press Save. If you have doubts about the choice you made press back. If you made a mistake and want to start over again completly press Cancel.
 
-### 3.2 Create message based on a example message
+### 3.2 Based on a example message
 
 Ideally example messages are known in advance and part of the Discovery. 
 In eMagiz there is a centralized place where you store all relevant files and data belonging to an integration and that is Capture. 
@@ -92,7 +82,7 @@ eMagiz will now create a new test message based on your selection. In the pop-up
 
 When you are satisfied press Save. If you have doubts about the choice you made press back. If you made a mistake and want to start over again completly press Cancel.
 
-### 3.3. Create message based on eMagiz definition
+### 3.3. Based on eMagiz definition
 
 If you have used the eMagiz tooling in Design you have yet another choice to base your test messages on. This option is the option to create a message based on a eMagiz definition.
 To start things off let us select the option eMagiz definition. 
@@ -115,7 +105,7 @@ eMagiz will now create a new test message based on your selection. In the pop-up
 
 When you are satisfied press Save. If you have doubts about the choice you made press back. If you made a mistake and want to start over again completly press Cancel.
 
-### 3.4 Create message based on external definition
+### 3.4 Based on external definition
 
 If you have an external definition (.XSD) that is not yet attached to Capture nor the basis of a eMagiz definition you have the option to manually upload this definition so it can be the basis of your test message.
 To do so you have to select the option External definition.
@@ -140,8 +130,6 @@ After you press Create eMagiz will create a new test message based on your selec
 
 When you are satisfied press Save. If you have doubts about the choice you made press back. If you made a mistake and want to start over again completly press Cancel.
 
----------------------------------------------------
-
 ## 4. Assignment
 
 Create a test message for a onramp or offramp flow within your (Academy) project based on a eMagiz definition and create a test message for a onramp or offramp flow within your (Academy) project based on a example message.
@@ -160,8 +148,6 @@ By choosing one of these option as your starting point you can easily create a t
 ## 6. Suggested additional readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
-
----------------------------------------------------
 
 ## 7. Silent demonstration video
 

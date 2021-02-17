@@ -5,7 +5,7 @@ In this microlearning we will focus on the various options to create and edit pr
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 4th 2021
-- Required reading time: 10 minutes
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

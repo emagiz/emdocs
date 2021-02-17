@@ -5,7 +5,7 @@ In this microlearning we will focus on the various options to create and edit re
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 7th 2021
-- Required reading time: 10 minutes
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -28,7 +28,7 @@ The first step is to create a new release using the New Release button. This all
 
 Once the name is provided, please note the three small circles under the name. These denote on what environment this release is active (black or green color), and quickly looking for the green circle you will find the active release of a specific environment.
 
-### 3.2 Selecting the flows to add to the release
+### 3.2 Adding flows to Release
 Based on the version selected, and the committed flows from the Create phase, the release content is determined. You have various compare options between releases to understand what exactly has changed between releases to verify if the list of flows created is the good one. You can compare Releases (and to the Create phase) by holding the CRTL button and selecting two releases. The canvas will then highlight the differences in the following manner:
 
 - Blue: the flow is changed functionally (new version created) or the flow is connected to the lastest buildnumber of emagiz
@@ -41,7 +41,7 @@ A release may contain flow components from different patterns. In the bottom rig
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic4.png"></p>
 
-### 3.3 Setting the Release as active
+### 3.3 Set Release as active
 Once the release is created, there is an asterix before the name. This means that the release is not active yet. With the three-dots-option button right next to the name of the release, you have various options for that release. Select the option set as active to make this the release that the deployment plan will use to deploy the updated, new and changed flows with. 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic2.png"></p>

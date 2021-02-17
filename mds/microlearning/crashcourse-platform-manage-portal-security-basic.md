@@ -27,19 +27,19 @@ Securing the portal is done in various ways.
 In this microlearning the focus will be on user access to the portal, to projects and how to determine that a user has exactly the rights he/she needs to execute their job.
 We will discuss each of these aspects below one by one.
 
-### 3.1 User access to https://my.emagiz.com
+### 3.1 User access to the portal
 User can be added with their email address by the eMagiz Partner Manager, upon which the user gets an email to sign-in. 
 A temporary password is created and emailed as well, which has to be changed at the first login to the iPaaS Portal. Users are connected to organizations in eMagiz.
 In the adminstration section of the user, a MFA token can be used to enble the Multifactor Authentication on a user level. 
 Typical authenticators on a smartphone can be used such as Google Authenticator. 
 An MFA reponse is required for bus owners to manage the permissions on a project level and for any Edit activity in Production environments. See next sections for more details on these functions.
 
-### 3.2 Users access to Integration Projects
+### 3.2 Users access to projects
 Users can be added to Integration projects, which hold all the configurations required to run the different integrations for the TAP environments. 
 Integration projects are connected to organizations in eMagiz to ensure the integration project remains within limits of the license agreements. 
 Users can be added to integration projects of the organization where the user belongs to. Users can't be added to integration projects of other clients. 
 
-### 3.3 User authorizations to Integration projects.
+### 3.3 User authorizations to projects
 Every integration project has a bus owner who can distribute rights across functionalities and environments. 
 In the picture below, one can see the various options available across the Integration Life Cycle (ILM) Phases Capture through Manage. 
 The bus owner manages the user permissions and needs to have the MFA authentication level activated before making any changes. 
@@ -51,7 +51,7 @@ The bus owner manages the user permissions and needs to have the MFA authenticat
 
 <p align="center"><img src="../../img/microlearning/ml-portal-security-basic--integration-project-rights.png"></p>
 
-### 3.4 Partner user access to Client environments
+### 3.4 Partner user access to projects
 Partner organizations are supported in eMagiz. 
 Bus owners can select user from their own organization or from the connected partner organization. 
 The connection between client and partners organization is managed by eMagiz administrators

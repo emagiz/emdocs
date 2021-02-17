@@ -43,7 +43,7 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
 
-## 7. Silent demonstration video - TO ADDa
+## 7. Silent demonstration video
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 

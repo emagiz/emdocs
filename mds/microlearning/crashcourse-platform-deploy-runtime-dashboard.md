@@ -5,7 +5,7 @@ In this microlearning you will learn the way you can see and validate which flow
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 10th 2021
-- Required reading time: 5 minutes
+- Required reading time: 3 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

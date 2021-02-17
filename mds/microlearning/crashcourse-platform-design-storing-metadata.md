@@ -6,7 +6,7 @@ In this microlearning we will build on that by learning how you can store metada
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 2th 2021
-- Required reading time: 2 minutes
+- Required reading time: 3 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

@@ -5,7 +5,7 @@ In this microlearning we will educate you on what the Design Architecture is, wh
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 2th 2021
-- Required reading time: 4 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

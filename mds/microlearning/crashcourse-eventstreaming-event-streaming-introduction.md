@@ -5,7 +5,7 @@ In this microlearning we will give an Introduction into Event Streaming and look
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 22th 2021
-- Required reading time: 12 minutes
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

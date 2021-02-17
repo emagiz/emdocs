@@ -33,7 +33,7 @@ In this section we will discuss how you can create, delete and/or edit propertie
 - Via the properties TAP overview in Deploy
 - Via the Set release properties option when creating a Release
 
-### 3.1 Via the property overview in Deploy
+### 3.1 Property overview in Deploy
 
 In the Deploy phase of eMagiz there is a overview page called Properties. This is the main overview from which you can do property management and therefore gives you the most functionality.
 
@@ -50,7 +50,7 @@ The upside of this overview is that you are flexible in what you can do, meaning
 The downside is that you cannot easily compare properties across environment and further more the action is immediately executed. 
 This means that when someone else restarts a flow using a property a couple seconds later the reality is already changed
 
-### 3.2 Via the properties TAP overview in Deploy
+### 3.2 Property TAP overview in Deploy
 
 Another overview in the Deploy phase of eMagiz is the Properties TAP overview. This is a re-imagination of the properties in the properties view based on the environments.
 This means that in this overview you can see all properties over all environments (assuming you have sufficient rights to see properties across environments).
@@ -67,7 +67,7 @@ The upside of this overview is that you can edit properties for all environments
 The downside of this overview is that you cannot create a new property and the action is immediately executed.
 This means that when someone else restarts a flow using a property a couple seconds later the reality is already changed (and not specifically only on the environment you have currently selected)
 
-### 3.3 Via the Set release properties option when creating a Release
+### 3.3 Set release properties option when creating a Release
 
 A third overview in the Deploy phase of eMagiz gives you the option to link properties to a certain release **on a certain environment**.
 This gives you the option to prepare the list of new properties and property values that need to be changed before you do the deployment and linked them directly to the release.

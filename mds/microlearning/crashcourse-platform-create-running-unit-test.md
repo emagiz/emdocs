@@ -5,7 +5,7 @@ In this microlearning we will focus on running a unit test.
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 7th 2021
-- Required reading time: 7 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

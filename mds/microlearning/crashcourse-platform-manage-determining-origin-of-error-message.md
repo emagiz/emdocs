@@ -30,7 +30,7 @@ You can determine the origin of a error message with a two step approach:
 1. Analyze the flow of data through your integraton landscape with the help of the Manage Dashboard
 2. Zoom in on the flow that holds the component that raised the error to identify the specific component
 
-### 3.1 Analyze the flow of data through your integraton landscape
+### 3.1 Analyze the flow of data
 
 As specified before the first step in determining the origin of a error message is to look at the flow of data. In messaging this means from entry via onramp, routing, offramp to exit. 
 In API Gateway terms this would mean from entry to exit. In Event Streaming terms this would mean on event processor level.
@@ -43,7 +43,7 @@ On this dashboard you see all flows on which atleast one error has been raised. 
 but since you are looking for a error message that does not seem to be the likely case in this scenario. 
 Based on this information and your knowledge of how the data you are testing or checking flows through your integration landscape you should be able to pinpoint in which flow something went wrong.
 
-### 3.2 Zoom in on the flow that holds the component that raised the error
+### 3.2 Zoom in on the flow that raised the error
 
 After you have determined the specific flow that has raised the error you can double click on the flow to see the details of the error messages that have been raised on this flow.
 

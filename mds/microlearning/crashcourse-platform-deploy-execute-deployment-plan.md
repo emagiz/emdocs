@@ -5,7 +5,7 @@ In this microlearning we will focus on situation where a existing property needs
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 9th 2021
-- Required reading time: 5 minutes
+- Required reading time: 3 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

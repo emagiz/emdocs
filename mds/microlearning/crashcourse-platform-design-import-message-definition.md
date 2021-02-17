@@ -7,7 +7,7 @@ In this microlearning we will learn how you can import these message defintions 
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 4th 2021
-- Required reading time: 4 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
