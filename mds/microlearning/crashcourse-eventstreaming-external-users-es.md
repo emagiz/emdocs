@@ -47,7 +47,7 @@ The result of adding two external users that fit our use case will look as follo
 
 <p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-result.png"></p>
 
-### 3.2 Handing out rights to a user on a topic
+### 3.2 Handing out rights to a user
 
 With the help of the Access Control List (ACL) you can define which user has access to which topic and even specify whether a user can:
 
@@ -65,7 +65,7 @@ When you press Add ACL entry you can fill in the following pop-up. In this pop-u
 
 The moment you are happy with your choices you can press Save and eMagiz will make sure that the user has access to that topic from that point on.
 
-### 3.3 Handing over the connection details
+### 3.3 Sharing the connection details
 
 Now that you have given a certain user certain rights on a certain topic the ball is in the court of the external party. They now need to set up a connection to the eMagiz cluster.
 

@@ -100,7 +100,7 @@ Based on the previous calculation and the number of partitions (more partitions 
 
 Results in 1.5 / 3 = 0.5 GB in Retention Bytes. As the name indicates this value needs to be added in bytes. For this example we end up with 524288000 bytes.
 
-### 3.3 Check available topic storage via Design Architecture
+### 3.3 Check available topic storage
 
 When you are finished with configuring the properties per topic you can validate whether the expected data storage based on your configuration fits within the available amount of topic storage.
 You can do this with the help of Design Architecture.

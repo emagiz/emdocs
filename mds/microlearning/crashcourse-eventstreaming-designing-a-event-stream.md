@@ -32,14 +32,14 @@ In this section we will discuss how you can design a event stream by following t
 - Define the data object you want to exchange with the help of a event stream, name this accordingly and draw lines indicating the flow of data between these systems
 - Check your work in Design via the Design overview.
 
-### 3.1 Define the system(s) in Capture that you want to connect
+### 3.1 Define the system(s) in Capture
 
 As with all integration patterns the process starts in Capture. In Capture you have the option to add systems to the canvas that have the ability to connect to a topic.
 To indicate this ability on system level you have the option to select Event Streaming as default integration pattern on system level.
 
 <p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-system-config.png"></p>
 
-### 3.2 Define the data object you want to exchange with the help of a event stream, name this accordingly and draw lines indicating the flow of data between these systems
+### 3.2 Define the data object you want to exchange
 
 After you have created the system and filled the details in you can add integrations from and to eMagiz. When looking at Event Streaming within the scope of eMagiz the integration (in messaging) equals a topic (in event streaming).
 If you draw a line from a system to eMagiz you define that the system from which you have drawn the line is a 'producing' system. A 'producing' system is a system that writes data to one or more topics. If a systems write to more topics you draw more lines.
@@ -54,7 +54,7 @@ The moment you have captured these systems you will end up with something like t
 
 <p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-result.png"></p>
 
-### 3.2 Check your work in Design via the Design overview.
+### 3.2 Check your work in Design
 
 Design is the crucial phase when it comes to Event Streaming. More on all of the specific functionalities Design offers you in other microlearnings. 
 In this microlearning we will focus on the Design overview and how you can use this to verify what you have captured

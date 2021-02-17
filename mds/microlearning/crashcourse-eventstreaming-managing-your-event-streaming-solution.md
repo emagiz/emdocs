@@ -34,7 +34,7 @@ This overview consists of three perspectives on your configuration and actual us
 - Per topic, per partition overview of the size in Bytes of each partition.
 - Per topic, per consumer group overview how many message those consumers are behind
 
-### 3.1 Per topic overview of the configuration of your topics within the eMagiz cluster
+### 3.1 Per topic overview
 
 In the grid on the left side of your screen you see all topics that are related to your event streaming solution. 
 Per topic eMagiz has specified the settings that you have configured in the Design phase of eMagiz (retention hours and retention bytes).
@@ -44,7 +44,7 @@ Furthermore it shows the size of each partition.
 <p align="center"><img src="../../img/microlearning/ml-managing-your-event-streaming-solution--topic-statistics-config.png"></p>
 
 
-### 3.2 Per topic, per partition overview of the size in Bytes of each partition.
+### 3.2 Per topic, per partition overview
 
 In the grid on the top right of your screen you can see (after you have selected one of the topics in the left hand grid) per partition of that topic how much data is currently being stored on each partition.
 
@@ -59,7 +59,7 @@ The moment there is a big gap between what is configured and what is actually us
 If you fail to do so you can run out of Topic Storage for other topics which will mean that you cannot further extend your event streaming solution.
 
 
-### 3.3 Per topic, per consumer group overview how many message those consumers are behind
+### 3.3 Per topic, per consumer group overview
 
 The third overview related to event streaming is located at the bottom right of your screen. After you have selected a specific topic you can see per consumer (group) how much messages they are behind.
 

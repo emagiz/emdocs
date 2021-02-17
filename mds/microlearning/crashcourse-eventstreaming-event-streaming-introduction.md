@@ -34,7 +34,7 @@ We will explain what Event Streaming is based on the following perspectives:
 - Data is stored inside the platform for a certain amount of time (retention)
 - Event data is continuous being sent or made available
 
-### 3.1 Publish data without building a specific data integration
+### 3.1 Publish data without building a data integration
 
 Event Streaming revolves around a cluster of topics that contain data. External parties can write data to said topics without having to know who will consume the data.
 Compare it to a news item that gets published on a news website. The editor publishes the data on the news site without 
@@ -45,7 +45,7 @@ Subsequently it is up to the consuming entities to read the data and process the
 
 <p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--centralized-data-set.png"></p>
 
-### 3.2 Publisher and subscriber are de-coupled and don't need to be aware of each other specifically
+### 3.2 Publisher and subscriber are de-coupled
 
 Because there is a centralized managed cluster of topics to which a producer can write data without having to wait for acknowledgement of the consumer(s) 
 you can de-couple all publishers and subscriber. This makes sure that your microservices landscape can be strongly de-coupled.
@@ -58,7 +58,7 @@ It is further up to the consumer to subscribe to that data and process it in a w
 
 <p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--de-coupling-publish-subscribe.jpg"></p>
 
-### 3.3 Data is stored inside the platform for a certain amount of time (retention)
+### 3.3 Data is retained inside the platform
 
 Because publishers and subscribers are totally unaware of each other a centralized piece 
 of the puzzle needs to make sure that data is kept at that centralized location (the topic) for a certain amount of time. 
@@ -70,7 +70,7 @@ Correctly determining the retention policy in terms of event streaming is theref
 
 <p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--retention-construction.jpg"></p>
 
-### 3.4 Event data is continuous being sent or made available
+### 3.4 Event data is continuous in nature
 
 The 'streaming' part of the event stream says it all. In this scenario the data (compiled of a continous series of events) keeps on being sent to the topic and is therefore continously available for consumers to process.
 
