@@ -56,7 +56,7 @@ In this way it has become the sole responsibility of the producer to publish dat
 
 It is further up to the consumer to subscribe to that data and process it in a way that adds value to their specific business application.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--de-coupling-publish-subscribe.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--de-coupling-publish-subscribe.jpg"></p>
 
 ### 3.3 Data is stored inside the platform for a certain amount of time (retention)
 
@@ -68,7 +68,7 @@ transactional nature of delivering a specific message to each consumer as you wo
 
 Correctly determining the retention policy in terms of event streaming is therefore one of the crucial parts of a successfull implementation of event streaming.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--retention-construction.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--retention-construction.jpg"></p>
 
 ### 3.4 Event data is continuous being sent or made available
 

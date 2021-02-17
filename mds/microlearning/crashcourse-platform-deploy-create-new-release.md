@@ -24,7 +24,7 @@ Below the steps to create a new release and the options available.
 ### 3.1 Creating a Release in TEST
 The first step is to create a new release using the New Release button. This allows to provide a name for the Release and the revisions type (Major, Minor or Patch). Depending on the purpose of the release, the right versioning can be selected. Provide sufficient comments to recognize the objective of the release.
 
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic1.png.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic1.png"></p>
 
 Once the name is provided, please note the three small circles under the name. These denote on what environment this release is active (black or green color), and quickly looking for the green circle you will find the active release of a specific environment.
 
@@ -35,16 +35,16 @@ Based on the version selected, and the committed flows from the Create phase, th
 - Red: a flow in the first Release selected is no longer present compared the second release selected
 - Green/white: this flow is added compared to the second release selected
   
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic4.png.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic4.png"></p>
 
 A release may contain flow components from different patterns. In the bottom right the different patterns are displayed and the steps above can be repeated for every pattern. There are small circles right above the patterns to understand the changes made in these views. The are following the same color indication pattern as above 
 
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic4.png.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic4.png"></p>
 
 ### 3.3 Setting the Release as active
 Once the release is created, there is an asterix before the name. This means that the release is not active yet. With the three-dots-option button right next to the name of the release, you have various options for that release. Select the option set as active to make this the release that the deployment plan will use to deploy the updated, new and changed flows with. 
 
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic2.png.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic2.png"></p>
 
 
 ## 4. Assignment

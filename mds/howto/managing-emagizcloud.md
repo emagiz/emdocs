@@ -222,7 +222,7 @@ Follow these steps carefully in order to acquire the desired result. Before we g
 7.	Execute all standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard
 
 ## How-to steps Slot Standby
-Follow these steps carefully in order to acquire the desired result. With this button you have the option to put the Slot to sleep. This can be a valid option when you don’t use the slot 24/7 to reduce the costs that come with running a slot.
+Follow these steps carefully in order to acquire the desired result. With this button you have the option to put the Slot to sleep. This can be a valid option when you don’t use the slot 24/7. Once the setting is done, the environment will standby from 5pm GMT which is 6pm CET (winter time) or 7pm CET (summer time).
 1.	Navigate to Deploy -> Architecture for the bus you want to perform this action
 2.	Select the correct environment for which you want to perform this action. See figure below for how you can do this
 
@@ -237,7 +237,7 @@ Follow these steps carefully in order to acquire the desired result. With this b
 6.	Read the confirmation pop up and if you agree press Yes. eMagiz will now shutdown all runtimes in the correct order and prevent messages from being transported.
 
 ## How-to steps Slot Wakeup
-Follow these steps carefully in order to acquire the desired result. With this button you have the option to wake the Slot up. This can be a valid option when you don’t use the slot 24/7 to reduce the costs that come with running a slot.
+Follow these steps carefully in order to acquire the desired result. With this button you have the option to wake the Slot up. This can be a valid option when you don’t use the slot 24/7. Once the setting is done, the environment will start at 5am GMT which is 6am CET (winter time) or 7am CET (summer time).
 1.	Navigate to Deploy -> Architecture for the bus you want to perform this action
 2.	Select the correct environment for which you want to perform this action. See figure below for how you can do this
 
