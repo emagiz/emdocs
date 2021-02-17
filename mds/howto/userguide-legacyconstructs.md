@@ -1,7 +1,7 @@
 ## Identification Legacy parts
 
 Below you will find several sections that identify parts of the framework that are deemed legacy and are replaced by newer and better alternatives. The guide is split up per legacy part. Per section we describe the legacy method, the new method and how to migrate from legacy to new. Should you have any questions, please contact productmanagement@emagiz.com.
-Last update: August 8th 2020
+Last update: February 17th 2021
 
 
 ## Pre-requisites
@@ -60,28 +60,45 @@ Now you have successfully transformed the XSLT into the Message Mapping in Desig
 20.	Navigate to Create
 21.	Open the flow for which you want to migrate
 22.	Open the tabs System message, CDM message and Transformation one by one to verify if the results of the previous steps in Design are visible in Create.
-23.	Press Start Editing
-24.	Navigate to Resources
-25.	Press Add bus resources to flow
-26.	Search for the correct resources and add them to the flow
+23. If the results **not** visible continue with step 24. If the results **are** visible continue with step 36
+24. Press Start Editing
+25. Navigate to Resources
+26. Press Add bus resources to flow
+26.	Search for other standard resources and add them to the flow (take any resource that is related to another flow to ensure that the link between the flow and any resource is severed)
 -	In a onramp you need the system message validation and the transformation from system to CDM
 -	In a offramp you need the CDM message validation and the transformation from CDM to system
-27.	Link the resources to their respective components in the flow
+27. Press Stop Editing
+28. In case you are working on a offramp also open the exit accompanying the offramp and continue with step 29. If not continue with step 33
+29. Press Start Editing
+30. Navigate to Resources
+31. Press Add bus resources to flow
+32.	Search for other standard resources and add them to the flow (take any resource that is related to another flow to ensure that the link between the flow and any resource is severed)
+-	In a exit you need a system message validation
+33. Navigate to Create -> Resources and search for the resources that eMagiz should have created for you (based on the naming convention)
+34. Remove those resources
+35. Navigate back to the flow for which you want the resources to be generated correctly
+36.	Press Start Editing
+37.	Navigate to Resources
+38.	Press Add bus resources to flow
+39.	Search for the correct resources and add them to the flow
+-	In a onramp you need the system message validation and the transformation from system to CDM
+-	In a offramp you need the CDM message validation and the transformation from CDM to system
+40.	Link the resources to their respective components in the flow
 After this you have successfully linked the new transformation tooling resources to your flow in Create
-28.	Verify based on the XSLT downloaded in step 3 if changes have to be made to the transformation made in step 19. This can de done by comparing the old and new XSLT. The new XSLT can be downloaded via the Resources tab of the flow
--	If no changes are necessary, continue with step 30
--	If changes are necessary, continue with step 29
-29.	Recreate the old mapping logic via the Transformation page in the flow. This can be done in various ways
+41.	Verify based on the XSLT downloaded in step 3 if changes have to be made to the transformation made in step 19. This can de done by comparing the old and new XSLT. The new XSLT can be downloaded via the Resources tab of the flow
+-	If no changes are necessary, continue with step 43
+-	If changes are necessary, continue with step 42
+42.	Recreate the old mapping logic via the Transformation page in the flow. This can be done in various ways
 -	Filter
 -	Transformation
 -	Static Input
 -	Aggregation
 -	Grouping
 Now you have migrated from the old to the new tooling. Last step will be to verify everything works exactly the same as before. This can be done in two ways
-30.	Test your changes
+43.	Test your changes
 -	If possible, test your flowing by using the Unit Test functionality. For more information see [User Guide Unit testing](userguide-unitttest.md)
 -	Otherwise test it by deploying the flow and sending a message.
-31.	Verify your results
+44.	Verify your results
 -	If the result is the same you are finished
 -	If changes exists, analyze them and make changes to the transformation until you have reached the correct result
 Congratulation, you have successfully migrated your flow from the old transformation tooling to the new transformation tooling.
