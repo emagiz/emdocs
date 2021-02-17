@@ -94,10 +94,10 @@ As you can see the complete setup is already created for you and the various par
 - Next to that you have all support objects needed to run the flow.
 - One down we have the job launch configuration. 
 	- This configuration makes sure that the job, with certain parameters, is launched at a certain point in time. It is up to the user what this point of time is.
-- All the way in the right corner we have the job listener configuration
+- All the way in the left corner we have the job listener configuration
 	- This piece of the flow waits for a signal that the job is complete and upon completion will refresh the materialized view (and therefore updating the overview we want).
 - In the bottom center we have some specific support objects that are relevant for this particular data pipeline implementation
-- Last but not least, on the right bottom we have the functionality that automatically cleans up the job dashboard.
+- Last but not least, on the right hand bottom corner we have the functionality that automatically cleans up the job dashboard.
 
 The only thing you need to do is to rename the properties where it says message to the technicalname of what you have just added (i.e. sale, event) 
 
@@ -145,7 +145,7 @@ To illustrate the effect of setting up your data pipeline via eMagiz to refresh 
 ## 4. Assignment
 
 The assignment is complex this time and comes with a lot of requirements as this talks about a complete integration. 
-So only procede with this assignment if you have access to Mendix and AWS Redshift on top of eMagiz.
+So only proceed with this assignment if you have access to Mendix and AWS Redshift in addition to eMagiz.
 
 If so, the assignment is to succesfully refresh a AWS materialized view that answers the question What were the total sales per event?
 
