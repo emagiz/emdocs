@@ -109,7 +109,6 @@
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
-			
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Support Engineer</div>
