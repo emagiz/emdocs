@@ -96,8 +96,6 @@ For example when you need to call a backend operation that hosts a SOAP webservi
 
 In future microlearnings we will discuss these scenarios in more detail. 
 
-
-
 ## 4. Assignment
 
 Configure a basic GET operation in the eMagiz API Gateway.

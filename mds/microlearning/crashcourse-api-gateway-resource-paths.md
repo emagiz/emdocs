@@ -46,54 +46,19 @@ If this adheres to the best practice simply use that. More on that specific rela
 A list of best practices can be found here:
 https://restfulapi.net/resource-naming/
 
-### 3.1 Determining the HTTP Operations in eMagiz
-
-When you look at the conceptual idea of the API Gateway, exposing backend operations via a centralized location to the outside world 
-it stands to reason that when you setup your API Gateway (i.e. the front-end facing part) start with the backend operation you want to expose. 
-
-When the backend operation also adheres to the RESTful principles you can simply reuse that HTTP method. 
-For example if they have a GET operation to request all HTTP Operations you should also have a GET operation on the API Gateway side.
-
-You can easily do so in eMagiz by editing the API Gateway integration in Design via the context menu or by double clicking on it.
-
-<p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration.png"></p>
-
-In this pop-up you can select the (backend) System Operation you want to expose via the API Gateway.
-
-<p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up.png"></p>
-
-By pressing the button Select System Operation you will see an overview of all available operations
-
-<p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up-available-operations.png"></p>
-
-Select the GET operation and eMagiz will update your integration. The result of this example will be that external clients can execute a 
-GET call to retrieve HTTP methods from the system called Crash Course - API Gateway via the help of the eMagiz API Gateway.
-
-<p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up-result.png"></p>
-
-Obviously in case the external party does not adhere to the RESTful principle or does not even publish a REST endpoint but a SOAP endpoint or 
-something else instead you need to remember the basic principle when determining the correct HTTP Operation for the job.
-
-For example when you need to call a backend operation that hosts a SOAP webservice from which you can retrieve data (but not create or update it) you should use the GET operation **without** a body.
-
-In future microlearnings we will explain how you can use transformations in eMagiz to call such a SOAP webservice with a GET call as a starting point. 
+In the following microlearning on HTTP Operations we will bring the HTTP Resource (Paths) together with the HTTP Operations. 
+That combination is the basis for any integration that runs via the API Gateway.
 
 ## 4. Assignment
 
-Configure a basic GET operation in the eMagiz API Gateway.
+Read up on the best practices when it comes to the naming of HTTP Resource Paths and see if you can relate this to the eMagiz implementation.
 This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-Each HTTP Method represents a certain action on a resource. Of the most frequently used ones we can make a nice comparison to the CRUD operations:
-
-HTTP Operations:		CRUD Operations:
-- POST					- Create
-- GET					- Read
-- PUT					- Update
-- DELETE				- Delete
-
-In eMagiz you start your thought process at the backend operation and from there you set up your API Gateway.
+- Start at the backend operation
+- Determine usability of what is provided to you
+- Take action based on that analysis
 
 ## 6. Suggested Additional Readings
 
@@ -102,6 +67,4 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
-
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-http-operations.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+As this is a more theoretical microlearning no demonstration video is created. See you in the next microlearning.
