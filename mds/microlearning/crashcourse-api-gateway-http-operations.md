@@ -51,7 +51,24 @@ When you look at the conceptual idea of the API Gateway, exposing backend operat
 it stands to reason that when you setup your API Gateway (i.e. the front-end facing part) start with the backend operation you want to expose. 
 
 When the backend operation also adheres to the RESTful principles you can simply reuse that HTTP method. 
-For example if they have a GET operation to request all HTTP Operations you should also have a GET operation on the API Gateway side.
+For example if they have a GET operation to a HTTP Operation that you want to expose you should also have a GET operation on the API Gateway side.
+
+To expose a backend operation directly in the API Gateway double click on the backend system and look for the Endpoint operations that are available
+
+<p align="center"><img src="../../img/microlearning/ml-api-http-operations--endpoint-operations.png"></p>
+
+Select one of them and press the button Expose in Gateway. This will lead you to the following pop-up. 
+In this pop-up select the message type (the resource) that you want to link this operation to and press expose.
+
+<p align="center"><img src="../../img/microlearning/ml-api-http-operations--endpoint-operations-message-type.png"></p>
+
+The result is that you will see the following pop-up (which is also the main configuration and edit screen in case you want to alter something).
+
+<p align="center"><img src="../../img/microlearning/ml-api-http-operations--api-gateway-exposed-from-backend-edit.png"></p>
+
+The moment you are content with this action press Save and let eMagiz configure the exposed operation correctly.
+
+### 3.2 Editing the HTTP Operation in eMagiz
 
 You can easily do so in eMagiz by editing the API Gateway integration in Design via the context menu or by double clicking on it.
 
@@ -70,12 +87,14 @@ GET call to retrieve HTTP methods from the system called Crash Course - API Gate
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up-result.png"></p>
 
-Obviously in case the external party does not adhere to the RESTful principle or does not even publish a REST endpoint but a SOAP endpoint or 
-something else instead you need to remember the basic principle when determining the correct HTTP Operation for the job.
+In this screen there are also other things you could edit that will come in handy in other scenario's.
+
+For example, in case the external party does not adhere to the RESTful principle or does not even publish a REST endpoint but a SOAP endpoint or 
+something else entirely you need to remember the basic principles when determining the correct HTTP Operation for the job.
 
 For example when you need to call a backend operation that hosts a SOAP webservice from which you can retrieve data (but not create or update it) you should use the GET operation **without** a body.
 
-In future microlearnings we will explain how you can use transformations in eMagiz to call such a SOAP webservice with a GET call as a starting point. 
+In future microlearnings we will discuss these scenarios in more detail. 
 
 ## 4. Assignment
 
