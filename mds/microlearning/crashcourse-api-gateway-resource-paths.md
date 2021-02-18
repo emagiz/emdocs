@@ -1,8 +1,8 @@
-# HTTP Operations
+# HTTP Resource (Paths)
 
-In this microlearning we will focus on learning about HTTP Operations.
+In this microlearning we will focus on learning about HTTP Resource (Paths).
 A crucial part of setting up your (API) Gateway with the help of RESTful services is 
-knowing what HTTP Operations are and how you can use them to control what parties can change via your (API) Gateway.
+knowing to which resources (i.e. Order, Client, Employee) you want to give external parties access via your (API) Gateway.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -13,37 +13,38 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around HTTP Operations in conjuction with the API Gateway solution of eMagiz.
-With HTTP Operations we mean: Identify the action (i.e. Create, Read, Update or Delete) that needs to be performed on a resource (i.e. Client, Order, Employee)
+This microlearning centers around HTTP Resource (Paths) in conjuction with the API Gateway solution of eMagiz.
+With HTTP Resource Paths we mean: Identify the resource (i.e. Client, Order, Employee) and define the descriptive path (i.e. /v1/order, /v1/order/{uuid}) a external party can call to execute the operation
 With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world in order to give them access to applications that are linked to your business process
 
-Each HTTP Method represents a certain action on a resource. Of the most frequently used ones we can make a nice comparison to the CRUD operations:
+When determining the correct resource path to expose to the outside world start at what you want to make publicly available.
+For example, when you want to make it possible for external parties to retrieve a collection of orders without any filter a valid resource path can be:
+- /orders
 
-HTTP Operations:		CRUD Operations:
-- POST					- Create
-- GET					- Read
-- PUT					- Update
-- DELETE				- Delete
+If you have multiple resources that you want to make available that all have something to do with the order process you could add each of them to a 'group' to add a extra layer of information:
+- /order-management/orders
+- /order-management/trips
 
-So the POST represents a Create action, the GET a read action, etc.
+To determine the correct notation also take into account how the backend system that you want to expose via the API Gateway has determined their HTTP Resource (Paths). 
+If this adheres to the best practice simply use that. More on that specific relation in later microlearnings.
 
-This also means that when you do a GET (a read action) it should **not** alter the resource you are requesting from your backend operation if you want to adhere to the RESTful principles.
+A list of best practices can be found here:
+https://restfulapi.net/resource-naming/
 
-## 3. HTTP Operations
-A crucial part of setting up your (API) Gateway with the help of RESTful services is 
-knowing what HTTP Operations are and how you can use them to control what parties can change via your (API) Gateway.
+## 3. HTTP Resource (Paths)
+When determining the correct resource path to expose to the outside world start at what you want to make publicly available.
+For example, when you want to make it possible for external parties to retrieve a collection of orders without any filter a valid resource path can be:
+- /orders
 
-Each HTTP Method represents a certain action on a resource. Of the most frequently used ones we can make a nice comparison to the CRUD operations:
+If you have multiple resources that you want to make available that all have something to do with the order process you could add each of them to a 'group' to add a extra layer of information:
+- /order-management/orders
+- /order-management/trips
 
-HTTP Operations:		CRUD Operations:
-- POST					- Create
-- GET					- Read
-- PUT					- Update
-- DELETE				- Delete
+To determine the correct notation also take into account how the backend system that you want to expose via the API Gateway has determined their HTTP Resource (Paths). 
+If this adheres to the best practice simply use that. More on that specific relation in later microlearnings.
 
-So the POST represents a Create action, the GET a read action, etc.
-
-This also means that when you do a GET (a read action) it should **not** alter the resource you are requesting from your backend operation if you want to adhere to the RESTful principles.
+A list of best practices can be found here:
+https://restfulapi.net/resource-naming/
 
 ### 3.1 Determining the HTTP Operations in eMagiz
 
@@ -97,8 +98,7 @@ In eMagiz you start your thought process at the backend operation and from there
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and read the following links:
-- https://www.restapitutorial.com/lessons/httpOperations.html#:~:text=The%20primary%20or%20most%2Dcommonly,but%20are%20utilized%20less%20frequently.
-- https://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html
+- https://restfulapi.net/resource-naming/
 
 ## 7. Silent demonstration video
 
