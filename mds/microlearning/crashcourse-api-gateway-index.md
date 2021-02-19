@@ -27,23 +27,7 @@
                 <div class="strip__attribute-label">All</div>
             </div>
         </a>
-        </li>
-        <li class="strip">
-             <a href="../../docs/microlearning/crashcourse-api-gateway-configure-roles-and-users" class="strip__link">
-            <label for="" class="strip__label">
-                <span>1</span>
-                Configuring Roles and Users
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">6 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
-            </div>
-            </a>
-        </li>
+        </li>        
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-api-data-model" class="strip__link">
             <label for="" class="strip__label">
@@ -133,6 +117,22 @@
             <label for="" class="strip__label">
                 <span>1</span>
                 Security
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+            </a>
+        </li>
+		<li class="strip">
+             <a href="../../docs/microlearning/crashcourse-api-gateway-configure-roles-and-users" class="strip__link">
+            <label for="" class="strip__label">
+                <span>1</span>
+                Configuring Roles and Users
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
