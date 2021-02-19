@@ -74,6 +74,8 @@ To get even more control you can assign standard occurences of errors while in t
 
 Select the type, fill in the remainder of the details and press Save. After you have updated your all entry and deployed it this new functionality will be in effect.
 
+<p align="center"><img src="../../img/microlearning/ml-error-handling-from-a-client-perspective--custom-error-handler-type.png"></p>
+
 ### 3.4 eMagiz Monitoring
 
 Apart from sending the response back to the client eMagiz will also write a warning to the log the moment something goes wrong after eMagiz has accepted the request.

@@ -37,16 +37,6 @@ If you want to create a certain topic you simply select the checkbox that is sti
 
 The moment you are satisfied with your choice you can Press Save Selection to tell eMagiz that you want to Create the topic(s) you have just selected.
 
-### 3.2 Set up the Infra for Event Streaming
-
-The first time you add a topic to the Create phase of eMagiz, as a best practice, you should also configure the Infra flow.
-You can do so by accessing the context menu when you navigate to the Stream overview in Create and right click in the center of the screen but not on the topic(s) themselve(s).
-
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-context-menu.png"></p>
-
-After you have selected the option called Open stream Infra you only have to press Stop editing and give a description of what you have changed.
-Simply fill in that this was a mandatory step to successfully setup your Event Streaming config.
-
 ### 3.3 Register the topic on the cluster
 
 After you have created the topic in Create you can access the topic information of your topic with the help of the context menu on topic level.
@@ -54,27 +44,20 @@ If you go to the Create overview of the Stream pattern you can right click on th
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info.png"></p>
 
-In the pop-up that is opened when you select the option you can see the details of your configuration. For this step the crucial part is the topic name. In this example eventst
+In the pop-up that is opened when you select the option you can see the details of your configuration. This name will be used by eMagiz to register the topic on the cluster.
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info-pop-up.png"></p>
 
-You can copy or remember this name. If you have done so you can close the pop-up and navigate to Deploy. 
-In Deploy there is a specific Event Streaming section which you can access in the top bar on the left.
+To tell eMagiz to register the cluster navigate to Deploy -> Releases. In here you can open the context menu on the Create phase
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-event-streaming-config.png"></p>
+<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-context-menu-create-phase.png"></p>
 
-This overview holds the cluster configuration, the users that have been registered at cluster level, the topics on the cluster and defines which user has what rights on what topic.
+In this context menu you have the option called Batch Update. By selecting this option eMagiz will automatically register all new topics to your cluster.
 
-To register the topic we will for now focus on the Topic tab of this overview.
+You can check the results of this action in the Event streaming section in Deploy by opening the Topic tab.
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-event-streaming-config-topic-tab.png"></p>
 
-We want to add a topic, therefore we press the Add Topic button. 
-In the pop-up that follows we fill in the Topic Name that we have copied / remembered from our Create settings and we say we don't want to create an ACL just yet. More on that in the next Microlearning.
-
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-event-streaming-config-add-topic-pop-up.png"></p>
-
-After you have pressed save you will have successfully registered the topic on your cluster.
 
 ## 4. Assignment
 

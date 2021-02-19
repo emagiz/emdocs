@@ -13,7 +13,7 @@ Should you have any questions, please contact academy@emagiz.com.
 
 ## 2. Key concepts
 This micro learning centers around designing a event stream.
-With event stream we mean: Definition to follow.
+With event stream we mean: A decoupled service that works best within a microservices architecture with each application having its own core function for high volumes.
 
 To design a event stream you must do the following:
 

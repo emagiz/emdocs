@@ -69,7 +69,11 @@ You have the option to change these properties by right clicking on the integrat
 
 <p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--topic-properties-context-menu.png"></p>
 
-In the pop-up you will see you can expand the Advanced settings information. Here you can set these settings. See below for what these settings mean and how you can determine them
+In the pop-up you will see a Basic and Advanced tab. In the Advanced tab you can configure these settings. 
+
+<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--topic-properties-config-advanced.png"></p>
+
+See below for what these settings mean and how you can determine them.
 
 #### 3.2.1 Retention Hours
 
