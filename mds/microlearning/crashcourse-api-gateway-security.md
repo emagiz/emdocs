@@ -11,8 +11,8 @@ ensure that although a user can access the API Gateway they still cannot perform
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 11th 2021
-- Required reading time: 5 minutes
+- Last update: February 19th 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

@@ -6,8 +6,8 @@ knowing what HTTP Operations are and how you can use them to control what partie
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 11th 2021
-- Required reading time: 5 minutes
+- Last update: February 19th 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

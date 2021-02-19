@@ -8,8 +8,8 @@ For API the data model represents the structure of messages that you want to pub
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 11th 2021
-- Required reading time: 4 minutes
+- Last update: February 19th 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
