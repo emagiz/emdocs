@@ -13,20 +13,20 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
         <li class="strip">
-            <a href="#" class="strip__link">
-            <label for="" class="strip__label">
-                <span>1</span>
-                API gateway - Introduction
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">12 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
-            </div>
-        </a>
+            <a href="../../docs/microlearning/crashcourse-api-gateway-introduction" class="strip__link">
+                <label for="" class="strip__label">
+                    <span>1</span>
+                    API gateway - Introduction
+                </label>
+                <div class="strip__attribute">
+                    <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                    <div class="strip__attribute-label">5 minutes</div>
+                </div>
+                <div class="strip__attribute">
+                    <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                    <div class="strip__attribute-label">All</div>
+                </div>
+            </a>
         </li>        
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-api-data-model" class="strip__link">
