@@ -79,7 +79,7 @@ Execute these steps on the training environment. Ensure to have both runtimes ac
 
 The user guide section has a complete user guide for installing on-premise connectors including memory settings. There is also a user guide for installation on Linux based servers.
 
-## 7. Silent demonstration video - TO ADDa
+## 7. Silent demonstration video
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 

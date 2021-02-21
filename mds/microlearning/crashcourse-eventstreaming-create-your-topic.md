@@ -37,7 +37,7 @@ If you want to create a certain topic you simply select the checkbox that is sti
 
 The moment you are satisfied with your choice you can Press Save Selection to tell eMagiz that you want to Create the topic(s) you have just selected.
 
-### 3.3 Register the topic on the cluster
+### 3.2 Register the topic on the cluster
 
 After you have created the topic in Create you can access the topic information of your topic with the help of the context menu on topic level.
 If you go to the Create overview of the Stream pattern you can right click on the topic itself to retrieve the topic information.

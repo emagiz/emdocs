@@ -100,7 +100,7 @@
              <a href="../../docs/microlearning/crashcourse-api-gateway-parameters" class="strip__link">
             <label for="" class="strip__label">
                 <span>1</span>
-                Parameters (Query,Path)
+                Parameters (Path, Query)
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
