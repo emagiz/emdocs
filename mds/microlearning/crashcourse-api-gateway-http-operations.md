@@ -1,21 +1,21 @@
 # HTTP Operations
 
-In this microlearning we will focus on learning about HTTP Operations.
+In this microlearning, we will focus on learning about HTTP Operations.
 A crucial part of setting up your (API) Gateway with the help of RESTful services is 
 knowing what HTTP Operations are and how you can use them to control what parties can change via your (API) Gateway.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th 2021
+- Last update: February 19th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around HTTP Operations in conjuction with the API Gateway solution of eMagiz.
+This microlearning centers around HTTP Operations in conjunction with the API Gateway solution of eMagiz.
 With HTTP Operations we mean: Identify the action (i.e. Create, Read, Update or Delete) that needs to be performed on a resource (i.e. Client, Order, Employee)
-With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world in order to give them access to applications that are linked to your business process
+With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world to give them access to applications that are linked to your business process
 
 Each HTTP Method represents a certain action on a resource. Of the most frequently used ones we can make a nice comparison to the CRUD operations:
 
@@ -48,17 +48,17 @@ This also means that when you do a GET (a read action) it should **not** alter t
 ### 3.1 Determining the HTTP Operations in eMagiz
 
 When you look at the conceptual idea of the API Gateway, exposing backend operations via a centralized location to the outside world 
-it stands to reason that when you setup your API Gateway (i.e. the front-end facing part) start with the backend operation you want to expose. 
+it stands to reason that when you set up your API Gateway (i.e. the front-end facing part) start with the backend operation you want to expose. 
 
 When the backend operation also adheres to the RESTful principles you can simply reuse that HTTP method. 
-For example if they have a GET operation to a HTTP Operation that you want to expose you should also have a GET operation on the API Gateway side.
+For example, if they have a GET operation to an HTTP Operation that you want to expose you should also have a GET operation on the API Gateway side.
 
-To expose a backend operation directly in the API Gateway double click on the backend system and look for the Endpoint operations that are available
+To expose a backend operation directly in the API Gateway double click on the backend system and look for the available Endpoint operations
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--endpoint-operations.png"></p>
 
 Select one of them and press the button Expose in Gateway. This will lead you to the following pop-up. 
-In this pop-up select the message type (the resource) that you want to link this operation to and press expose.
+In this pop-up select, the message type (the resource) that you want to link this operation to and press expose.
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--endpoint-operations-message-type.png"></p>
 
@@ -70,11 +70,11 @@ The moment you are content with this action press Save and let eMagiz configure 
 
 ### 3.2 Editing the HTTP Operation in eMagiz
 
-You can easily do so in eMagiz by editing the API Gateway integration in Design via the context menu or by double clicking on it.
+You can easily do so in eMagiz by editing the API Gateway integration in Design via the context menu or by double-clicking on it.
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration.png"></p>
 
-In this pop-up you can select the (backend) System Operation you want to expose via the API Gateway.
+In this pop-up, you can select the (backend) System Operation you want to expose via the API Gateway.
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up.png"></p>
 
@@ -87,19 +87,19 @@ GET call to retrieve HTTP methods from the system called Crash Course - API Gate
 
 <p align="center"><img src="../../img/microlearning/ml-api-http-operations--edit-api-integration-pop-up-result.png"></p>
 
-In this screen there are also other things you could edit that will come in handy in other scenario's.
+In this screen, there are also other things you could edit that will come in handy in other scenarios.
 
 For example, in case the external party does not adhere to the RESTful principle or does not even publish a REST endpoint but a SOAP endpoint or 
 something else entirely you need to remember the basic principles when determining the correct HTTP Operation for the job.
 
-For example when you need to call a backend operation that hosts a SOAP webservice from which you can retrieve data (but not create or update it) you should use the GET operation **without** a body.
+For example, when you need to call a backend operation that hosts a SOAP web service from which you can retrieve data (but not create or update it) you should use the GET operation **without** a body.
 
-In future microlearnings we will discuss these scenarios in more detail. 
+In future microlearnings, we will discuss these scenarios in more detail. 
 
 ## 4. Assignment
 
 Configure a basic GET operation in the eMagiz API Gateway.
-This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
+This assignment can be completed with the help of an associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
@@ -111,7 +111,7 @@ HTTP Operations:		CRUD Operations:
 - PUT					- Update
 - DELETE				- Delete
 
-In eMagiz you start your thought process at the backend operation and from there you set up your API Gateway.
+In eMagiz, you start your thought process at the backend operation and from there you set up your API Gateway.
 
 ## 6. Suggested Additional Readings
 

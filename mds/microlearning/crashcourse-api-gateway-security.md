@@ -1,17 +1,17 @@
 # Security
 
-In this microlearning we will focus on securing the API Gateway. To ensure that not everyone can access the operations that you have made available you need security.
+In this microlearning, we will focus on securing the API Gateway. To ensure that not everyone can access the operations that you have made available you need security.
 Security in itself is a broad term.
 
-The focal point of this microlearning are the general security measures that specify how clients should prove to the API Gateway that they are who they say they are.
-In other words the available methods within eMagiz to verify this
+The focal point of this microlearning is the general security measures that specify how clients should prove to the API Gateway that they are who they say they are.
+In other words, the available methods within eMagiz to verify this
 
 In the microlearnings that will follow we will zoom in on configuring roles and users to 
 ensure that although a user can access the API Gateway they still cannot perform operations for which they are not authorized.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th 2021
+- Last update: February 19th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -20,7 +20,7 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 This microlearning centers around securing the API Gateway in general.
 With securing we mean: Configuring a method that will be used to validate that the clients are who they say they are
-With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world in order to give them access to applications that are linked to your business process
+With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world to give them access to applications that are linked to your business process
 
 When you want to set up your security in combination with the eMagiz API Gateway we offer three options out of the box:
 - API Key
@@ -34,8 +34,8 @@ All three methods can be supplemented with the requirement that a client needs t
 To ensure that not everyone can access the operations that you have made available you need security.
 Security in itself is a broad term.
 
-The focal point of this microlearning are the general security measures that specify how clients should prove to the API Gateway that they are who they say they are.
-In other words the available methods within eMagiz to verify this.
+The focal point of this microlearning is the general security measures that specify how clients should prove to the API Gateway that they are who they say they are.
+In other words, the available methods within eMagiz to verify this.
 
 When you want to set up your security in combination with the eMagiz API Gateway we offer three options out of the box:
 - API Key
@@ -55,26 +55,26 @@ Below we will talk about each of these three options.
 
 ### 3.1 API Key
 
-The simplest form of authentication is with the help of a so called API Key. 
-This is the most low level solution available in terms of authorization. 
-In this case the client will send a specific key that they have received from us in a certain header and we will check if the value is correct. 
+The simplest form of authentication is with the help of a so-called API Key. 
+This is the most low-level solution available in terms of the authorization. 
+In this case, the client will send a specific key that they have received from us in a certain header and we will check if the value is correct. 
 If not the client will receive a 401 Unauthorized
 
 Best practice is to name the header Authorization. A example of how you can configure this is:
 
 <p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-api-key.png"></p>
 
-This method is frequently used in situation that demand less technical complexity and deal with less sensitive data. 
-A eMagiz best practice is to always combine this option with the use of a client certificate whenever possible.
+This method is frequently used in a situation that demands less technical complexity and deals with less sensitive data. 
+An eMagiz best practice is to always combine this option with the use of a client certificate whenever possible.
 
 ### 3.2 OpenID Connect
 
-Both OpenID Connect and OAuth 2.0 work with a authorization server. On this server it is specified if you have rights and if so to what exactly.
-To authenticate themselves they first have to send a request to the authorization server and use the bearer in the response to execute the following action.
+Both OpenID Connect and OAuth 2.0 work with an authorization server. On this server it is specified if you have rights and if so to what exactly.
+To authenticate themselves they first have to send a request to the authorization server. In all subsequent calls, they will have to use the information in the bearer to authenticate themselves.
 
-As you can see this becomes a lot more complex to implement for a outside party. On the flip side it is a lot better in terms of security.
+As you can see this becomes a lot more complex to implement for an outside party. On the flip side, it is a lot better in terms of security.
 
-Within the eMagiz Cloud we can provide you with such a authorization server that is specifically for implementing your eMagiz API Gateway solution. 
+Within the eMagiz Cloud, we can provide you with such an authorization server that is specifically for implementing your eMagiz API Gateway solution. 
 To configure this option simply configure the security scheme as follows:
 
 <p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-open-id-connect.png"></p>
@@ -83,16 +83,16 @@ To configure this option simply configure the security scheme as follows:
 
 As said OpenID Connect and OAuth 2.0 are very similar solutions. Only not all OAuth 2.0 providers accept OpenID connect.
 
-Another reason to not use the authorization server that eMagiz can provide you is the fact you already have your own authorization server (i.e. Azure AD) in which you already manage this.
+Another reason to not use the authorization server that eMagiz can provide you is the fact you already have your authorization server (i.e. Azure AD) in which you already manage this.
 
-For cases that are covered by either of those reasons we offer the OAuth 2.0 option. 
-This is the most complex to configure for a user to configure as we see the other two as default and this one will take a little bit more configuration.
+For cases that are covered by either of those reasons, we offer the OAuth 2.0 option. 
+This is the most complex configuration option for a user to configure as we see the other two as default and this one will take a little bit more configuration.
 
 To configure this option configure the security scheme as follows:
 
 <p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-oauth.png"></p>
 
-The exact Issuer URL and Token URL will obviously differ based on the OAuth 2.0 provider you want to use.
+The exact Issuer URL and Token URL will differ based on the OAuth 2.0 provider you want to use.
 
 ## 4. Assignment
 

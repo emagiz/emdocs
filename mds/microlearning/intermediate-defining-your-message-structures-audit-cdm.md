@@ -4,7 +4,7 @@ In this microlearning we will focus on how you can audit the CDM within your pro
 
 Should you have any questions, please contact academy@emagiz.com.
 
-Last update: December 17th 2020
+Last update: December 17th, 2020
 
 Required reading time: 3 minutes
 
@@ -13,32 +13,32 @@ Required reading time: 3 minutes
 - Understanding of CDM concept
 
 ## 2. Key concepts
-This micro learning centers around auditing your eMagiz project on CDM level.
+This microlearning centers around auditing your eMagiz project on the CDM level.
 
-With audit we mean: Making it clear who changed the CDM at a certain moment in time.
+By audit we mean: Making it clear who changed the CDM at a certain moment in time.
 
-With CDM we mean: The canonical data model that defines the data structure and relationships between these data structures that are generic, uniform and representative of how this data is looked upon within our organization.
+With CDM we mean: The canonical data model that defines the data structure and relationships between these data structures that are generic, uniform, and representative of how this data is looked upon within our organization.
 
 Auditing the CDM can be done by navigating to the CDM in the Design phase and selecting the button called History located in the bottom bar.
 
 ## 3. Audit the CDM
 
 If you want to audit the CDM (look at the history of changes made to the CDM by whom) you can navigate to the Design phase of your project and open the CDM. 
-In this CDM view you have a button on the lower bottom bar called History.
+In this CDM view, you have a button on the lower bottom bar called History.
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--accessing-history-overview.png"></p>
 
-When you click on this button you will see a grid showing you the detailed history of who has done what in the past on CDM level.
+When you click on this button you will see a grid showing you the detailed history of who has done what in the past on the CDM level.
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--showing-history-overview.png"></p>
 
-Within this overview you have the option to search on several indicators such as who made the change or what that person described they changed 
+Within this overview, you have the option to search on several indicators such as who made the change or what that person described they changed 
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--search-history-overview.png"></p>
 
 ### 3.1 Editing the CDM
 
-Having a view on the history of the CDM adds value if you can register certain changes made on CDM level. 
+Having a view of the history of the CDM adds value if you can register certain changes made on the CDM level. 
 To correctly describe these changes made you rely on the person making the change. This is why it is of utmost importance that when you edit the CDM
 you specify exactly what you have changed.
 
@@ -47,8 +47,8 @@ The moment you have pressed Start Editing you can add, edit and delete entities 
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--edit-mode-cdm.png"></p>
 
-When you are satisfied with your changes you can press Stop editing. After you haved pressed Stop editing you will see a popup.
-In this popup you have define whether you have made a major change, minor change or patch update to the CDM and describe what you have changed
+When you are satisfied with your changes you can press Stop editing. After you have pressed Stop editing you will see a popup.
+In this pop-up, you have to define whether you have made a major change, minor change, or patch update to the CDM and describe what you have changed
 
 <p align="center"><img src="../../img/microlearning/ml-audit-cdm--new-version-popup.png"></p>
 
@@ -63,8 +63,8 @@ After this ask a colleague for a peer review to see if they can determine by loo
 
 ## 5. Key takeaways
 
-Having audit functionality on CDM level provides tracibility and accountability for a key aspect of messaging integrations.
-To make sure that auditing can be done correctly it is crucial that the person that does the editing makes it clear what has been changed.
+Having audit functionality on the CDM level provides traceability and accountability for a key aspect of messaging integrations.
+To make sure that auditing can be done correctly the person that does the editing must make it clear what has been changed.
 
 ## 6. Suggested Additional Readings
 

@@ -1,9 +1,10 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">Mendix Connectivity</h2>
+	<h2 class="title">Defining your message structures</h2>
     <p>
-       In this course we will focus on connecting Mendix with eMagiz with the help of the eMagiz Mendix Connector.
+       In this course we will learn more with regards to how you can best define your message structures. 
+	   In this course, we will build on what we learned in the crash courses to enable you to successfully define data models and accompanying message structures
         </br></br>
         - Total time: between 15 and 30 minutes
         </br>
@@ -12,10 +13,10 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
         <li class="strip">
-            <a href="../../docs/microlearning/basic-mendix-connectivity-install-emagiz-mendix-connector" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-defining-your-message-structures-audit-cdm" class="strip__link">
             <label for="" class="strip__label">
                 <span>2</span>
-                Install an eMagiz Mendix Connector
+                Audit the CDM
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
@@ -28,26 +29,10 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/basic-mendix-connectivity-configure-emagiz-mendix-connector" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-defining-your-message-structures-data-model-attribute-confidentiality" class="strip__link">
             <label for="" class="strip__label">
                 <span>2</span>
-                Configure an eMagiz Mendix Connector
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">3 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-            </a>
-        </li>
-        <li class="strip">
-            <a href="../../docs/microlearning/basic-mendix-connectivity-update-emagiz-mendix-connector" class="strip__link">
-            <label for="" class="strip__label">
-                <span>2</span>
-                Update an eMagiz Mendix Connector
+                Confidential Attributes
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
