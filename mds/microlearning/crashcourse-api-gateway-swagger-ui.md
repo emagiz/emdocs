@@ -1,6 +1,6 @@
 # Swagger UI
 
-In this microlearning we will focus on learning how you can use the Swagger UI.
+In this microlearning, we will focus on learning how you can use the Swagger UI.
 To test your API Gateway and more importantly to let others test your API Gateway solution the Swagger UI can play a vital role. Among others it specifies:
 - Authorization
 - HTTP Resource Paths
@@ -10,7 +10,7 @@ To test your API Gateway and more importantly to let others test your API Gatewa
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th 2021
+- Last update: February 19th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -41,7 +41,7 @@ You can do that by configuring the following property:
 
 ### 3.1 Access Swagger UI
 
-When you solution is running (cloud or on your local device) you can access the Swagger UI. 
+When your solution is running (cloud or on your local device) you can access the Swagger UI. 
 In case you are running the gateway in the eMagiz Cloud for all environments you can access the Swagger UI page via the Runtime Dashboard of the Gateway.
 
 <p align="center"><img src="../../img/microlearning/ml-swagger-ui--button-runtime-dashboard.png"></p>
@@ -52,7 +52,7 @@ In case you want to run your API Gateway solution on your local device for testi
 
 - http://localhost:{gateway.entry.port}/swaggerui/swaggerui
 
-Obviously you need to replace the {gateway.entry.port} with the port that you have configured yourself. So when you choose the port 9092 the URL would be:
+Obviously, you need to replace the {gateway.entry.port} with the port that you have configured yourself. So when you choose port 9092 the URL would be:
 
 - http://localhost:9092/swaggerui/swaggerui
 
@@ -67,10 +67,10 @@ By clicking on that you get a pop-up where you need to fill in the authorization
 
 <p align="center"><img src="../../img/microlearning/ml-swagger-ui--swagger-ui-authorization.png"></p>
 
-Below that you see all operations grouped per integration. In this simple example case we only have one operation on one integration as you can see.
+Below that, you see all operations grouped per integration. In this simple example case, we only have one operation on one integration as you can see.
 
-By clicking on a operation you can see the detail information of that operation. In here you can see the Example Value and Schema. 
-In the Schema you can see what is mandatory indicated by the red asterisk icon in front of the attribute or element
+By clicking on an operation you can see the detailed information of that operation. Here you can see the Example Value and Schema. 
+In the Schema, you can see what is mandatory indicated by the red asterisk icon in front of the attribute or element
 
 <p align="center"><img src="../../img/microlearning/ml-swagger-ui--swagger-ui-example-value.png"></p>
  
@@ -79,18 +79,18 @@ In the Schema you can see what is mandatory indicated by the red asterisk icon i
 
 ### 3.3 Testing with Swagger UI
 
-Furthermore there is a try it out button. After you have pressed this button you will see a button called Execute appear. 
+Furthermore, there is a try-it-out button. After you have pressed this button you will see a button called Execute appear. 
 By pressing this button you will test the API Gateway functionality.
 
 <p align="center"><img src="../../img/microlearning/ml-swagger-ui--swagger-ui-execute-try-it-out.png"></p>
 
-The Swagger UI will give feedback based on what happened after you have pressed the button execute
+The Swagger UI will give feedback based on what happened after you have pressed the button to execute
 
 <p align="center"><img src="../../img/microlearning/ml-swagger-ui--feedback-inswagger-ui.png"></p>
 
 ## 4. Assignment
 
-Run your API Gateway locally and access the Swagger UI via the browser. Authenticate yourself and test atleast one operation.
+Run your API Gateway locally and access the Swagger UI via the browser. Authenticate yourself and test at least one operation.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
