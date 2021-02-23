@@ -1,6 +1,6 @@
 # Create your Topic
 
-In this microlearning we will focus on how you can create your topic based on what you have designed.
+In this microlearning, we will focus on how you can create your topic based on what you have designed.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -13,10 +13,10 @@ Should you have any questions, please contact academy@emagiz.com.
 - An active Event Streaming license
 
 ## 2. Key concepts
-This micro learning centers around how you can create your topic based on what you have designed.
-With topic we mean: A category/feed name to which event records are stored and published.
+This microlearning centers around how you can create your topic based on what you have designed.
+By topic we mean: A category/feed name to which event records are stored and published.
 
-Knowing how to create a topic via the eMagiz platform makes it possible to granually make certain topics available for others to produce data on and consume data from.
+Knowing how to create a topic via the eMagiz platform makes it possible to gradually make certain topics available for others to produce data on and consume data from.
 
 Creating a topic in eMagiz is very easy. Below we will detail the specifics of how you can create a topic via eMagiz.
 
@@ -26,7 +26,7 @@ Based on what you have designed in the Capture and Design phase you are now at t
 
 ### 3.1 Transfer topic to Create
 
-When you navigate to the Create phase of eMagiz you have the option to Add integrations to Create. This button is located on the right bottom of your screen.
+When you navigate to the Create phase of eMagiz you have the option to add integrations to Create. This button is located at the right bottom of your screen.
 If you click on this button you will arrive at a page that looks something like this:
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--add-integrations.png"></p>
@@ -40,19 +40,19 @@ The moment you are satisfied with your choice you can Press Save Selection to te
 ### 3.2 Register the topic on the cluster
 
 After you have created the topic in Create you can access the topic information of your topic with the help of the context menu on topic level.
-If you go to the Create overview of the Stream pattern you can right click on the topic itself to retrieve the topic information.
+If you go to the Create overview of the Stream pattern you can right-click on the topic itself to retrieve the topic information.
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info.png"></p>
 
-In the pop-up that is opened when you select the option you can see the details of your configuration. This name will be used by eMagiz to register the topic on the cluster.
+In the pop-up that is opened when you select the option, you can see the details of your configuration. This name will be used by eMagiz to register the topic on the cluster.
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info-pop-up.png"></p>
 
-To tell eMagiz to register the cluster navigate to Deploy -> Releases. In here you can open the context menu on the Create phase
+To tell eMagiz to register the cluster navigate to Deploy -> Releases. Here you can open the context menu on the Create phase
 
 <p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-context-menu-create-phase.png"></p>
 
-In this context menu you have the option called Batch Update. By selecting this option eMagiz will automatically register all new topics to your cluster.
+In this context menu, you have the option called Batch Update. By selecting this option eMagiz will automatically register all new topics to your cluster.
 
 You can check the results of this action in the Event streaming section in Deploy by opening the Topic tab.
 
@@ -65,13 +65,13 @@ Add your topic to Create. This assignment can be completed with the help of the 
 
 ## 5. Key takeaways
 
-- It is easy to Create a topic in eMagiz, simply select the topic you want and press Save Selection
+- It is easy to create a topic in eMagiz, simply select the topic you want and press Save Selection
 - Don't forget to set up your infra the first time you start working with Event Streaming
 - After you have created your topic you can register the topic via Deploy.
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 
