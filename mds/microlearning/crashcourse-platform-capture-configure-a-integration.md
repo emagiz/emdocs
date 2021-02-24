@@ -1,6 +1,3 @@
-<<<<<<< Updated upstream
-# Configure an integration
-=======
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
@@ -26,7 +23,6 @@
 
 
 # Configure a integration
->>>>>>> Stashed changes
 
 In this microlearning, we will focus on learning how to configure an integration. 
 Configuring the integration itself is the third and final step in designing an integration within eMagiz
