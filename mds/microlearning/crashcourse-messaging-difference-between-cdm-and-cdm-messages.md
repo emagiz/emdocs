@@ -12,7 +12,7 @@ Should you have any questions, please contact academy@emagiz.com.
 
 ## 2. Key concepts
 This microlearning centers around understanding the difference between CDM and CDM messages.
-By queue CDM we mean: The Canonical Data Model that plays a vital and central role while exchanging data between various systems via the messaging pattern
+By CDM we mean: The Canonical Data Model that plays a vital and central role while exchanging data between various systems via the messaging pattern
 
 - The complete CDM consists of the collection of entities that are used or going to be used in the various CDM messages
 
