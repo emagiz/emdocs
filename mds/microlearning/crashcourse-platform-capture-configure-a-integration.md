@@ -1,4 +1,32 @@
+<<<<<<< Updated upstream
 # Configure an integration
+=======
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="master">
+		<!-- <div class="dropdown">
+<select class="dropdown__dropdown">
+<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
+    <option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
+    <option value="moving-onto-the-next-step">Moving onto the next step</option>    
+</select>
+<div class="dropdown__nav">
+<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
+<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
+</div> -->
+
+<ul class="doc-nav">
+    <li class="doc-nav__item"><a href="/docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+    <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+    <li class="doc-nav__item"><a href="#3-configure-a-integration" class="doc-nav__link">Theory</a></li>
+    <li class="doc-nav__item"><a href="#4-assignment" class="doc-nav__link">Practice</a></li>
+    <li class="doc-nav__item"><a href="#7-silent-demonstration-video" class="doc-nav__link">Solution</a></li>
+</ul>
+
+
+
+# Configure a integration
+>>>>>>> Stashed changes
 
 In this microlearning, we will focus on learning how to configure an integration. 
 Configuring the integration itself is the third and final step in designing an integration within eMagiz
@@ -7,6 +35,8 @@ Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 23th 2021
 - Required reading time: 8 minutes
+
+# INTRO
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -154,3 +184,6 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
 <iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-integration.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</main>
+</div>
+</div>
