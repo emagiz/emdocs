@@ -4,8 +4,8 @@ In this microlearning, we will focus on how you can read the information availab
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 23th, 2021
-- Required reading time: 5 minutes
+- Last update: February 24th, 2021
+- Required reading time: 8 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
