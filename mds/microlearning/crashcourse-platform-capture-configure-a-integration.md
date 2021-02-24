@@ -1,6 +1,5 @@
-<<<<<<< Updated upstream
 # Configure an integration
-=======
+
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
@@ -23,11 +22,6 @@
     <li class="doc-nav__item"><a href="#7-silent-demonstration-video" class="doc-nav__link">Solution</a></li>
 </ul>
 
-
-
-# Configure a integration
->>>>>>> Stashed changes
-
 In this microlearning, we will focus on learning how to configure an integration. 
 Configuring the integration itself is the third and final step in designing an integration within eMagiz
 
@@ -36,7 +30,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - Last update: February 23th 2021
 - Required reading time: 8 minutes
 
-# INTRO
+# Intro
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
