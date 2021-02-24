@@ -31,53 +31,122 @@ In many cases, you want to validate your assumptions by checking the queue stati
 
 For example, when you want to verify how many messages have arrived on a certain queue within a certain time window you can use the queue statistics overview for this.
 
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--complete-overview.png"></p>
+
 Below we will delve into each of these four parts and explain a bit more about them. 
-That way you can use the queue statistics to interpret what happened within your messaging flows at any given moment
+That way you can use the queue statistics to interpret what happened within your messaging flows at any given moment. 
+To assist you in tracking anomalies in your project you can use eMagiz alerting. To learn more on that please take a look at the microlearning on that subject.
 
 ### 3.1 Total messages in queue
 
-When you navigate to the Create phase of eMagiz you have the option to add integrations to Create. This button is located at the right bottom of your screen.
-If you click on this button you will arrive at a page that looks something like this:
+The first metric we are going to look at is the total messages in queue. 
+As the name implies this metric tells us how many messages currently reside on the queue and have **yet to be** processed.
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--add-integrations.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--total-messages-in-queue-flat-line.png"></p>
 
-If you want to create a certain topic you simply select the checkbox that is still available (white background, green border) for both the producing and consuming side.
+Having a flat-line, such as in the picture above can mean two things:
+- The queue can keep up with the supply (i.e. the number of messages added to the queue is **lower** than the number of messages that are processed on the queue)
+- There is no supply (i.e. the number of messages added to the queue equals zero)
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--add-integrations-selected.png"></p>
+As you can see from the above interpretation one metric by itself will never paint the whole picture. 
+Let's continue by looking at a scenario in which the total messages in queue are gradually increasing.
 
-The moment you are satisfied with your choice you can Press Save Selection to tell eMagiz that you want to Create the topic(s) you have just selected.
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--total-messages-in-queue-increase.png"></p>
 
-### 3.2 Register the topic on the cluster
+Seeing this behavior can also mean two things:
+- The queue is **not** able to keep up with the supply (i.e. the number of messages added to the queue is **higher** than the number of messages that are processed on the queue)
+- Nobody is processing the data on the queue (i.e. no consumer wants to consume the data from the queue and process it)
 
-After you have created the topic in Create you can access the topic information of your topic with the help of the context menu on topic level.
-If you go to the Create overview of the Stream pattern you can right-click on the topic itself to retrieve the topic information.
+The first of these two potential reasons is most likely temporary in nature. 
+In case you get a sudden burst of data that is supplied to the queue will need some time to process all data. 
+In such a scenario you will see the metric increase at first and afterward decrease to zero (flat-line) again.
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info.png"></p>
+The second of these two potential reasons could be more structural. 
+This can happen because the consumer is broken or not active. This will lead to a steady increase in data that won't return to zero without a user action correcting the behavior.
 
-In the pop-up that is opened when you select the option, you can see the details of your configuration. This name will be used by eMagiz to register the topic on the cluster.
+### 3.2 Total messages added to queue
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-create-topic-info-pop-up.png"></p>
+The second metric we are going to look at is the total messages added to queue.
+As the name implies this metric tells us how many messages were supplied to the queue within a given timeframe.
 
-To tell eMagiz to register the cluster navigate to Deploy -> Releases. Here you can open the context menu on the Create phase
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--total-messages-added-to-queue-standard.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-context-menu-create-phase.png"></p>
+In the example shown above, you can see that between minute 24 and minute 46 we have a steady flow of data that is supplied to this queue. 
+Based on the actual implementation of your flows the pattern of how data is supplied to your queue can differ. 
+The main expectation is that data is supplied to the queue at some point in time. In some cases, you will expect data almost all the time. 
+In some cases only between 9 and 17 on weekdays. And in other cases, you only expect data in the evening when nobody will be hindered by it.
 
-In this context menu, you have the option called Batch Update. By selecting this option eMagiz will automatically register all new topics to your cluster.
+If this metric shows that data is supplied to the queue and the total messages in queue metric show a flat-line on zero messages everything works as expected.
+When this metric shows that data is supplied to the queue and the total messages in the queue metric show the same **exact** increase you can conclude that no data is being consumed from the queue.
+In case the metric shows that data is supplied to the queue and the total messages in queue metric shows a **less steep** increase you can conclude that the queue is **not** able to keep up with demand.
 
-You can check the results of this action in the Event streaming section in Deploy by opening the Topic tab.
+Just as with the total messages in queue the number of total messages added to queue maybe not changed over a period leading to a flat-line graph.
+In itself this means nothing. However, if you would have expected messages to be supplied to that queue within that time frame 
+you need to analyze the complete chain of flows more thoroughly to see what is causing the unexpected behavior.
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-event-streaming-config-topic-tab.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--total-messages-added-to-queue-flat-line.png"></p>
 
+
+### 3.3 Number of consumers
+
+The third metric we are going to look at is the number of consumers.
+This metric tells us how many consumers are activated to consume data from that specific queue. 
+
+In most asynchronous (messaging and event streaming) flows the expected number is 1 or 2 consumers. In API Gateway exit gates the number can vary between 1 and 5 depending on the supply on the queue.
+Knowing the expected number of consumers is crucial for a good interpretation of what the reported number of consumers tells you.
+
+Let's assume for the sake of this microlearning that the expected number of consumers on my queue is 1.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--number-of-consumers-expected.png"></p>
+
+With that in mind, the number of consumers that is reported can either be 1 (i.e what we expect), 0 (i.e. too low), or 2 and higher (i.e. too much).
+
+If the reported number of consumers equals the expected number of consumers data will be processed as expected. 
+This means that one message per consumer is processed at any given moment assuming that a message is available to be processed.
+
+However, if the number of consumers is too low or too high you need to analyze the situation.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--number-of-consumers-too-low.png"></p>
+
+As shown above, you can see that the number of consumers drops from 1 to 0 at a certain point in time. This could be caused by:
+
+- A user stopped the queue ensuring no data would be processed anymore
+- The runtime on which the queue is running is stopped (either by the user or by an automatic process)
+- The complete eMagiz project is not running at the moment (either due to a user action or by an automatic process)
+
+Whatever the reason maybe you should investigate what the cause is to keep your environment running stably.
+
+Apart from the consumer count being too low, it can also happen that the consumer count is too high. This could be caused by:
+
+- Incorrect configuration of the flow by a user that leads to an unexpected number of consumers
+- Linking both a Test, Acceptance, and Production system to the same eMagiz environment
+- Fringe situations that appear once in a while
+
+
+### 3.4 Data measurements
+
+The fourth and last metric tells us whether metrics (i.e. data measurements) are coming in.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-messaging-interpreting-queue-statistics--data-measurements.png"></p>
+
+With the help of this metric, we can establish if the queue in question is sending data measurements to the portal or not. 
+As you can see from the example shown above the queue was not activated until somewhere after the 14th minute of the hour. 
+This is entirely consistent with the behavior of the other graphs.
 
 ## 4. Assignment
 
-Add your topic to Create. This assignment can be completed with the help of the Topic you have created/used in the previous assignment on your (Academy) project.
+Interpret the queue statistics of at least two flows within your (Academy) project. 
+This assignment can be completed with the help of your (Academy) project you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- It is easy to create a topic in eMagiz, simply select the topic you want and press Save Selection
-- Don't forget to set up your infra the first time you start working with Event Streaming
-- After you have created your topic you can register the topic via Deploy.
+- There are four parts to the queue statistics:
+	- Total messages in queue
+	- Total messages added to queue
+	- Number of consumers
+	- Data measurements
+- You can best interpret them together as that approach gives you the most context
+- To assist in anomaly detection use the eMagiz alerting
 
 ## 6. Suggested Additional Readings
 
@@ -87,4 +156,4 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-create-your-topic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-interpreting-queue-statistics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
