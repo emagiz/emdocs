@@ -25,7 +25,7 @@ Key considerations when picking up files are:
 ## 3. Pick up Files
 
 One of the easiest connectivity methods to implement within eMagiz is the retrieval of files from a local directory. 
-With this method, eMagiz will periodically look whether (new) files are ready for consumption. There are three key considerations you should take into account when picking up files:
+With this method, eMagiz will periodically look whether (new) files are ready for consumption. There are four key considerations you should take into account when picking up files:
 
 - What are the determining criteria to define when a file is "ready" to be picked up (age, pattern, size, etc.)
 - With what frequency is eMagiz going to check for new files
