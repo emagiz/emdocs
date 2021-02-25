@@ -4,8 +4,8 @@ In this microlearning, we will explain the basics of asynchronous routing that p
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 24th, 2021
-- Required reading time: 3 minutes
+- Last update: February 25th, 2021
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
