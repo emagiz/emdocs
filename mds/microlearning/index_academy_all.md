@@ -61,7 +61,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="#" class="card">
+		<a href="../../docs/microlearning/crashcourse-messaging-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">3 - Crash Course Messaging</h4>
 			</div>
