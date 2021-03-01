@@ -1,27 +1,17 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="micro-learning">
-		<!-- <div class="dropdown">
-<select class="dropdown__dropdown">
-<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
-    <option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
-    <option value="moving-onto-the-next-step">Moving onto the next step</option>    
-</select>
-<div class="dropdown__nav">
-<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
-<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
-</div> -->
-<ul class="doc-nav">
-    <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
-    <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-    <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-    <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-    <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-</ul>
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
 
 <div class="doc">
 
-##### *Intro*
+##### Intro
 
 # From Business to IT
 
