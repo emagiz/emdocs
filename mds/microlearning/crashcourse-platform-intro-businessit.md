@@ -1,4 +1,29 @@
-# From Business to IT with eMagiz
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<!-- <div class="dropdown">
+<select class="dropdown__dropdown">
+<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
+    <option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
+    <option value="moving-onto-the-next-step">Moving onto the next step</option>    
+</select>
+<div class="dropdown__nav">
+<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
+<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
+</div> -->
+<ul class="doc-nav">
+    <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+    <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+    <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+    <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+    <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+</ul>
+
+<div class="doc">
+
+##### *Intro*
+
+# From Business to IT
 
 In this microlearning we will focus on learning how to start off with the eMagiz environment. What steps are required before starting the Capture phase and what do I need to do so effectively?
 
@@ -6,6 +31,7 @@ Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 2nd 2021
 - Required reading time: 2 minutes
+
 
 ## 1. Prerequisites
 - Basic knowledge of integrations in general
@@ -26,6 +52,8 @@ This microlearning positions the eMagiz platform and how it can help to connect 
 		</font>
 </div>
 		
+
+##### Theory
   
 ## 3. Business to IT
 
@@ -45,6 +73,7 @@ The eMagiz platform uses the Integration Lifecycle Manager as guidance to create
 
 <p align="center"><img src="../../img/microlearning/eMagiz-diagram.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 
@@ -56,6 +85,9 @@ There is no assignment for this microlearning other than reviewing the videos fr
 - eMagiz is a comprehensive platform that allows ad-hoc integrators to perform all required activities to run the platform
 - The ILM phases are key in the way of work in eMagiz.
 
+
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 We recommend to read the above link to the eMagiz website and see the features of the platform in more detail.
@@ -66,3 +98,8 @@ We recommend to read the above link to the eMagiz website and see the features o
 ## 7. Silent demonstration video
 
 See above point for understanding the features of the platform.
+
+</div>
+</main>
+</div>
+</div>
