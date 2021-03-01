@@ -5,7 +5,7 @@ In this microlearning, we will introduce the key concepts of the CDM or Canonica
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 25th, 2021
-- Required reading time: 5 minutes
+- Required reading time: 3 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

@@ -6,7 +6,7 @@ In this microlearning we will learn the opposite, how to deliver files **to** a 
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: February 25th, 2021
-- Required reading time: 8 minutes
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
