@@ -15,7 +15,7 @@
 
 # Audit eMagiz Data Models
 
-In this microlearning we will focus on how you can audit the three eMagiz data models (CDM, API Gateway Data Model, Event Streaming Data Model) 
+In this microlearning, we will focus on how you can audit the three eMagiz data models (CDM, API Gateway Data Model, Event Streaming Data Model) 
 within your project to see which changed have taken place and what you should do when changing something in these data models to make it auditable.
 
 Should you have any questions, please contact academy@emagiz.com.
@@ -41,7 +41,7 @@ Auditing the eMagiz data models can be done by navigating to the specific data m
   
 ## 3. Audit the eMagiz Data model
 
-Knowing how changed what at eMagiz Data model level is crucial for proper control and management of these data models.
+Knowing how changed what at the eMagiz Data model level is crucial for proper control and management of these data models.
 
 If you want to audit any of these eMagiz data models (look at the history of changes made to the data model by whom) you can navigate to the Design phase of your project and open the specific data model.
 In the view that you will be presented with you will see a button on the bottom bar called History.
