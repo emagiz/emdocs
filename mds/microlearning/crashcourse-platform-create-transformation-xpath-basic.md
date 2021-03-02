@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Transformation - XPath Basic
 Sometimes the transformation tooling does not provide you with the exact correct transformation option to get the desired result in your output. 
 For those cases you can use a custom (hand written) XPath expression to achieve the desired result.
@@ -18,6 +33,8 @@ This micro learning focuses on XPath Basic in the context of transformations.
 
 With XPath Basic we mean: Understanding on a fundemental level what XPath is, how it is used and how you can use it within the transformation tooling of eMagiz
 
+##### Theory
+
 ## 3. Transformation - XPath Basic
 Sometimes the transformation tooling does not provide you with the exact correct transformation option to get the desired result in your output. 
 For those cases you can use a custom (hand written) XPath expression to achieve the desired result.
@@ -36,7 +53,7 @@ If you want to access a element below the root directly you can use two forward 
 
 For example, take a look at the following **input** message:
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--basic-input-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--basic-input-message.png"></p>
 
 When I want to write a "path" to Projects I would only have to write down / and that is it. However when I want to write a "path" to Project I have two options. 
 I can either start at the root (Absolute XPath) and navigate down from there which would give me /Projects/Project as a valid XPath expression. 
@@ -50,7 +67,7 @@ So this means that in this simple example we have three alternatives to end up w
 
 At this point you probably wonder why anyone would start their journey on the XPath "path" from the root level. Well imagine the following **input** message:
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--second-basic-input-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--second-basic-input-message.png"></p>
 
 As you can see from this example taking the third option of our previous example would end up getting two results (both the ID under Project and the ID under Status). 
 Obviously there are also scenario one could think of that would benefit from starting **not** on the root level of the **input** message. So always consider the context when writing down your XPath.
@@ -84,7 +101,7 @@ To handle namespaces while reading and writing XPath you have two options:
 By definining the prefix of the namespace (i.e. sys, cdm, ns) you can reference to this prefix while reading and writing your XPath. 
 Let's return to our original example, only this time the **input** message has a namespace:
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--namespace-input-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--namespace-input-message.png"></p>
 
 As you can see the notation has slightly changed. A prefix has occurred before each element and attribute called sys. To seperate the prefix from the name of the element or attribute a colon (:) is used.
 The XPath also needs to change to get the desired result. We need to take the prefix into account. This wil result in the following valid XPath options:
@@ -100,7 +117,7 @@ Therefore we see a lot of use of the wildcard when writing a custom XPath in eMa
 
 Using the wildcard will result in the following valid XPath options:
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--wildcard-xpath.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--wildcard-xpath.png"></p>
 
 ### 3.5 Custom XPath in Transformation
 Now that we have a basic conceptual understanding of XPath let us turn our attention towards relating this information to eMagiz. 
@@ -111,7 +128,7 @@ However sometimes it is necessary to write a custom XPath.
 
 Let us look at a example in eMagiz:
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--emagiz-transformation-xpath.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--emagiz-transformation-xpath.png"></p>
 
 In this example you see two notes on two attributes. One on the DateTime on Order Level and one on the Description on OrderLine level. The requirements are:
 
@@ -130,7 +147,7 @@ This is because the starting point of our "path" is the Order entity already.
 To ensure that we only place the DateTime value of the first OrderLine in the DateTime field on Order level in the **output** message we need to change the XPath.
 To do so enter Start Editing Mode and navigate to the Transformation. In here select the option Transformation and then Custom XPath
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--emagiz-transformation-xpath-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--emagiz-transformation-xpath-pop-up.png"></p>
 
 In here we need to ensure that we only take the DateTime value from the **first** OrderLine. To do so we need to specify which of the OrderLines we want as input.
 You can specify that by using the following notation:
@@ -141,7 +158,7 @@ You can specify that by using the following notation:
 
 This would change our XPath to OrderLine[1]/DateTime. So let us fill that in and press Save.
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--emagiz-transformation-xpath-pop-up-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--emagiz-transformation-xpath-pop-up-filled-in.png"></p>
 
 Now let us turn our focus toward the second part of this example. Remember what we said earlier. 
 The starting point of your "path" within a transformation is determined by the starting point of the line that is drawn to the entity you are currently working with.
@@ -159,11 +176,13 @@ With a string-join you can join two input attributes together in a certain order
 
 This would change our XPath to string-join((DateTime,ID),'-'). So let us fill that in and press Save.
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--emagiz-transformation-xpath-pop-up-filled-in-string-join.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--emagiz-transformation-xpath-pop-up-filled-in-string-join.png"></p>
 
 When I tested this I got the following result. In a later microlearning we will teach you all about testing these things yourself.
 
-<p align="center"><img src="../../img/microlearning/ml-transformation-xpath-basic--emagiz-transformation-custom-xpath-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xpath-basic--emagiz-transformation-custom-xpath-result.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -179,6 +198,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - Consider the namespace
 - Within the transformation the starting point of each XPath depends on where the line on entity level was drawn from
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and/or read more information on the following link:
@@ -188,4 +209,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-transformation-xpath-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-transformation-xpath-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

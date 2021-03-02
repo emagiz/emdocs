@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Creating a new Release
 
 In this microlearning we will focus on the various options to create and edit releases as part of Release Management with eMagiz.
@@ -16,6 +31,8 @@ Should you have any questions, please contact academy@emagiz.com.
 eMagiz provides the capability to manage your deployments effectively so that all your updated flow components as created in the previous ILM phases of eMagiz. In the previous microlearning you have seen how the flows are deployed across the different eMagiz runtime - this microlearnings defines what exactly needs to be deployed. 
 
 This micro learning centers around creating (and managing) a eMagiz Release.
+
+##### Theory
 
 ## 3. Creating a new Releaes
 
@@ -46,6 +63,7 @@ Once the release is created, there is an asterix before the name. This means tha
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-create-new-release-pic2.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 
@@ -56,6 +74,8 @@ Go to your personal environment, and try to add a new release for your environme
 - The Release defined what is to be deployed on a specific environment, as compared to the Deployment plan that determines what is to be deployed
 - Use proper naming and clean your old releases regularly. Non-active releases only can be deleted
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -65,3 +85,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-create-new-release.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

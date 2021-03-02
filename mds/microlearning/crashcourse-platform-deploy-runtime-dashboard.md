@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Runtime Dashboard
 
 In this microlearning you will learn the way you can see and validate which flows are active or running on a specific runtime in eMagiz. 
@@ -20,6 +35,8 @@ eMagiz holds some terminology around these runtimes
 2 - In the Create phase you have seen the onramps and offramps, as well as the routing and error flows. These are running inside the container runtime, often referred as the container. In the Cloud formation, the JMS and Container are located on a single Cloud machine
 3 - There are also exit and entry flows that run inside runtimes, and these runtimes are referred as the connector runtimes or just connector. These connector can run on Cloud Connector machine or Local Connector machines.
 
+##### Theory
+
 ## 3. Exploring the Runtime dashboard
 
 1. Navigation - use the selection on the left hand panel to select the runtime you wish to inspect
@@ -37,6 +54,7 @@ eMagiz holds some terminology around these runtimes
 	
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-runtime-dashboard-pic1.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 Once you have installed the runtimes as described in the previous microlearnings, inspect the runtime dashboard. Stop, start flows.
@@ -47,6 +65,7 @@ Once you have installed the runtimes as described in the previous microlearnings
 - The runtime dashboard helps to understand what flows are running and what the associated status is
 - You need edit rights to perform actions in the Runtime dashboard
 
+##### Solution
 
 ## 6. Suggested Additional Readings
 
@@ -57,3 +76,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-runtime-dashboard.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

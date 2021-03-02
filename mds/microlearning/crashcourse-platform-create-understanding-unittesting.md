@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Understanding Unit Testing
 
 In this microlearning we will focus on the positioning of Unit Testing in the eMagiz platform. Should you have any questions, please contact academy@emagiz.com.
@@ -13,8 +28,9 @@ In this microlearning we will focus on the positioning of Unit Testing in the eM
 ## 2. Key concepts
 Unit testing refers to the idea that units of developed code, or in this case integration flows/components, are tested agains fit for use. Often these unit test are run automatically to verify each individual component, but in this case the unit test are also supporting the actual development of a eMagiz flows. Unit test are always combined with specific pieces of elements that make the unit operational, such as test data, test messages, or access to services that produce data. Sometimes specific mock services are used to simulate real time behavior.
 
-<p align="center"><img src="../../img/microlearning/understanding-unittesting-pict1.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy--understanding-unittesting-pict1.png"></p>
 
+##### Theory
 
 ## 3. Creating Unit tests in eMagiz
 
@@ -27,6 +43,8 @@ Unit tests in eMagiz are created in the Create phase while developing your flow.
 
 Configuring the right test messages to validate the flow are key in eMagiz. These test messages allow to represent the specific user scenario's that the business has provide for validation.
 
+##### Practice
+
 ## 4. Assignment
 
 There is no specific assignment for this Micro Learning
@@ -34,6 +52,8 @@ There is no specific assignment for this Micro Learning
 ## 5. Key takeaways
 
 Unit tests are a powerful way in which flows components can be tested without the specific need to deploy them on the eMagiz runtimes using releases and deployment plans. Individual behavior can be tested and verified, without the to run expensive debug components inside the actual flow. its recommend to maximize the use of unit tests during the development of new flows, so that issues can be fixed quicker and reproduced easily.
+
+##### Solution
 
 ## 6. Suggested additional readings
 
@@ -44,5 +64,7 @@ Unit tests are a powerful way in which flows components can be tested without th
 
 There is no specific demonstration video for this Micro Learning
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+</div>
+</main>
+</div>
+</div>

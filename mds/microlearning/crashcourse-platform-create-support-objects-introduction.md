@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Support objects - Introduction
 Apart from having components in the flow editor that make sure that the message is received, validated, transformed and/or send you can also use so called support objects while building your flow.
 There are a lot of support objects in various categories. As this is a introduction we are not going to discuss all of them in detail.
@@ -16,6 +31,8 @@ Should you have any questions, please contact academy@emagiz.com.
 This micro learning focuses on support objects.
 
 With support objects we mean: Component that help the functional components do the work they are supposed to do
+
+##### Theory
 
 ## 3. Support objects - Introduction
 Apart from having components in the flow editor that make sure that the message is received, validated, transformed and/or send you can also use so called support objects while building your flow.
@@ -37,11 +54,11 @@ In the remainder of this microlearning we will zoom in on two of these support o
 When retrieving (pulling) files from a certain directory you might want to determine some criteria based on which you will either retrieve (or not retrieve) the files located in that directory.
 To register such a list you can add a support object called Composite file list filter.
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--composite-file-list-filter-selection.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--composite-file-list-filter-selection.png"></p>
 
 Opening the support object will give you the following pop-up. In this pop-up you have a myriad of options you can use for filtering files
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--composite-file-list-filter-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--composite-file-list-filter-pop-up.png"></p>
 
 The combination that is most used and is effective in most cases is become a best practice within eMagiz when using this filter option on the retrieval of files.
 This combination is:
@@ -51,7 +68,7 @@ This combination is:
 - Age file list filter (minimum age is 10000)
 - Simple pattern file list filter (property reference)
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--composite-file-list-filter-pop-up-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--composite-file-list-filter-pop-up-filled-in.png"></p>
 
 By ordering the filters in this way you make optimal use of the functionality in eMagiz and ensure that everytime you will check for new files all new and existing files will get another shot.
 
@@ -68,32 +85,34 @@ So be carefull experimenting with this one without consulting another teammember
 
 To make sure that your file inbound channel adapter takes the filter into accoun you have to link the support object to the file inbound channel adapter.
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--link-to-file-inbound-channel-adapter.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--link-to-file-inbound-channel-adapter.png"></p>
 
 ### 3.2 Authentication
 In almost all cases some form of Authentication is needed when calling a REST webservice. One type of authentication is basic authentication. 
 This is the easiest form of authentication and least complex one. To ensure that the authentication is sent correctly to the REST webservice you can use a support object in eMagiz called a REST Template
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--rest-template.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--rest-template.png"></p>
 
 Opening the support object will give you the following pop-up. In this pop-up you have several options that could add authorization to your call to the HTTP endpoint.
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--rest-template-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--rest-template-pop-up.png"></p>
 
 For now we will focus on the Basic access authorization. 
 After you select this option you can fill in property references to the username and password you need to execute the basic authentication.
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--rest-template-basic-access.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--rest-template-basic-access.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--rest-template-basic-access-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--rest-template-basic-access-filled-in.png"></p>
 
 After you have saved this setting you will see that a Interceptor has been added to the REST Template
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--rest-template-input.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--rest-template-input.png"></p>
 
 You can press Save here and the only thing remaining to make it work in combination with the HTTP outbound gateway is to link it to the HTTP outbound gateway
 
-<p align="center"><img src="../../img/microlearning/ml-support-objects-introduction--link-to-http-outbound-gateway.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-support-objects-introduction--link-to-http-outbound-gateway.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -106,6 +125,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - Support objects can help in various categories
 - Each support object has a specific task and use case
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -114,4 +135,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-support-objects-introduction.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-support-objects-introduction.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

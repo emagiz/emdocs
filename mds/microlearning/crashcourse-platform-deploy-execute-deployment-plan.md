@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Actualize properties
 
 In this microlearning we will focus on situation where a existing property needs a change of value and how to put this value into effect in your environmemt.
@@ -18,6 +33,8 @@ This micro learning centers around the execution of a Deployment plan. The deplo
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-execute-deployment-plan-pic1.png"></p>
 
+##### Theory
+
 ## 3. Execute a Deployment plan
 
 Provided there is a deployment plan, the execution is initialized from the Releases section. The button highlighted in the figure above is the button to start the deployment plan. The page below is then displayed as an example of the page that shows the progress of the deployment steps. Pressing the green play button will start the execution of the deployment plan.
@@ -34,6 +51,7 @@ Some key notes to consider during the execution of the plan
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-execute-deployment-plan-pic3.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 Try to deploy a plan using an active release and observe the results taking the above points into account.
@@ -45,6 +63,8 @@ Try to deploy a plan using an active release and observe the results taking the 
 - Be aware if the specific considerations involved 
 - Tune the deployment plan continuously to make it better all the time.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -54,3 +74,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-execute-deployment-plan.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

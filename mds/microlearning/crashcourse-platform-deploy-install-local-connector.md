@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Install eMagiz runtime on local server
 
 In this microlearning we will focus on installing the eMagiz environment locall
@@ -26,6 +41,8 @@ To install a runtime, please be aware that eMagiz needs an environment that sati
 
 ## 2. Key concepts
 eMagiz uses a runtime component as a container where flow components can be deployed in. There are infrastructure components that act as flows, and there are functional flow components. Furthermore, there are routing and error flows. By deploying these runtimes across various locations across the integration architecture, you can make these flows work as a chain to realize a complete integration. In the platform training, you need to use the JMS runtime and container runtime, and make this run on your local machine.
+
+##### Theory
 
 ## 3. Steps involved to run eMagiz on local server 
 
@@ -64,6 +81,8 @@ If you see an error or the popup closes itself immediately, please check the abo
 -	You are able to reach the runtime via the runtime dashboard.
 -	You see runtime statistics in Manage.
 
+##### Practice
+
 ## 4. Assignment
 
 Execute these steps on the training environment. Ensure to have both runtimes active, and see of the flows can be seen active in the Runtime Dashboard
@@ -74,6 +93,7 @@ Execute these steps on the training environment. Ensure to have both runtimes ac
 - Using the JMS and the Container runtimes created by the eMagiz Portal, you can test your work properly during the microlearning training sessions
 - Above instructions are also valid for making the installation on a server where a runtime needs to be deployed locally.
  
+##### Solution
 
 ## 6. Suggested Additional Readings
 
@@ -84,3 +104,8 @@ The user guide section has a complete user guide for installing on-premise conne
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-install-local-connector.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

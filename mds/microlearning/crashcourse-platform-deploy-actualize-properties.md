@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Actualize properties
 
 In this microlearning we will focus on situation where a existing property needs a change of value and how to put this value into effect in your environmemt.
@@ -15,6 +30,8 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 Changing the value of any property is rather easy, yet the value is not taken into account by the flow before that flow is restarted properly due to the nature in which eMagiz is using Java.
 
+##### Theory
+
 ## 3. Actualize properties
 
 Below are the steps to take to change the value of a property and putting that into effect.
@@ -27,6 +44,7 @@ Below are the steps to take to change the value of a property and putting that i
 **Considerations**
 - Starting and stopping flows can be done in direct sequence, unless you change the property of that particular flow multiple times within 2 minutes. eMagiz needs in that case 2 minutes to store the propertly value properly.
 
+##### Practice
 
 ## 4. Assignment
 
@@ -39,6 +57,8 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 - Make a good plan before you change the property so that there are no unforeseen side effects
 - In case the value is changed several time, the flow will need 2 minutes breathing time before the updated property value is take into account.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -47,4 +67,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-property-management.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-property-management.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

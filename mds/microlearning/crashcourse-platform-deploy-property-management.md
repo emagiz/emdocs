@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Property management
 
 In this microlearning we will focus on the various options to create and edit properties i.e. property management.
@@ -23,6 +38,8 @@ There are three ways in which you can create, edit and/or delete these propertie
 - Via the Set release properties option when creating a Release
 
 Below we will discuss each of these steps separaretly.
+
+##### Theory
 
 ## 3. Editing properties
 
@@ -85,6 +102,7 @@ To mitigate that last downside a little you can combine this functionality with 
 If you select the Check properties option (because you know there are new properties that need to be added) you now have the option to save 
 those properties and its value as a release property (meaning it won’t become active until the moment you want it to become active).
 
+##### Practice
 
 ## 4. Assignment
 
@@ -101,6 +119,8 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 - Each option has his upsides and downsides. Consider these the moment you want to create, edit and/or delete properties
 - Whichever method you choose, preparation is key. Know what you want to change!
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -110,3 +130,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/microlearning-property-management.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

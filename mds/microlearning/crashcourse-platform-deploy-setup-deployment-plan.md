@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Setting up a deployment plan
 
 In this microlearning we will focus on the various options to create and edit properties i.e. property management.
@@ -20,6 +35,7 @@ The Deployment plan is defined in the Deployment Plan section under Deploy. Each
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-setup-deployment-plan-pic1.png"></p>
 
+##### Theory
 
 ## 3. Defining the Deployment plan
 
@@ -55,6 +71,7 @@ The follow ways will help to keep the plan up to date:
 - Copy the plan to the next environment to align all plans in the same way.
 - Ensure to have a Prepare deployment step in your work definition (sprint) and improve the depployment at each iteration
 
+##### Practice
 
 ## 4. Assignment
 
@@ -67,6 +84,8 @@ Go to your personal environment, and try to add a deployment plan for your envir
 - The deployment plan is a must have to deploy all the changes in an active release on a enviroment
 - Keep the plan up to date is easy, and takes away the manual effort to deploy flows on the different runtimes. 
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -76,3 +95,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-setup-deployment-plan-video.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>
