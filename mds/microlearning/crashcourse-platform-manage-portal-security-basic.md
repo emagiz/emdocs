@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 ## Portal Security - Basic
 Securing your solution and your data is a shared responsibiliy between eMagiz and you. 
 
@@ -21,6 +36,8 @@ The portal security consists of multiple parts:
 - Password Policy & Validity
 
 For each aspect it is good to know how the security is set up by eMagiz.
+
+##### Theory
 
 ## 3. Portal Security - Basic
 Securing the portal is done in various ways. 
@@ -49,7 +66,7 @@ The bus owner manages the user permissions and needs to have the MFA authenticat
 - Bus owners are assigned to integration projects by eMagiz Administrators
 - An audit trail is kept of the changes made in the project permission structure
 
-<p align="center"><img src="../../img/microlearning/ml-portal-security-basic--integration-project-rights.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-portal-security-basic--integration-project-rights.png"></p>
 
 ### 3.4 Partner user access to projects
 Partner organizations are supported in eMagiz. 
@@ -61,6 +78,8 @@ Below the relevant items for the password policy in eMagiz Portal
 
 - There is no expiry policy on the password - eMagiz has a Forget Password functionality. 
 - Password must be 8 - 20 characters long, cannot contain white spaces, and must contain at least one digit, one upper case and one lower case letter."
+
+##### Practice
 
 ## 4. Assignment
 
@@ -78,6 +97,8 @@ The portal security consists of multiple parts:
 
 For each aspect it is good to know how the security is set up by eMagiz.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -86,4 +107,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-portal-security-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-manage-portal-security-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+
+</div>
+</main>
+</div>
+</div>

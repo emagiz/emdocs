@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # What is a message definition
 In this microlearning we will educate you what we mean when we talk about message definition
 
@@ -16,6 +31,8 @@ With message definition we mean: A visual representation of how the elements are
 
 In other words, the message definition helps you see in what structure data will be send or received
 
+##### Theory
+
 ## 3. What is a message definition
 
 A message definition is a visual representation of how the elements are related to each other, whether they are mandatory and the data types they have that can be used in the message mapping.
@@ -24,22 +41,24 @@ In all integration patterns (Messaging, API Gateway and Event Streaming) we have
 On the one hand we have message definition that relate to the system itself. This tells us something on how the system will send or receive data.
 On the other hand we have message definitions that relate to eMagiz. These are generic and consistent across systems (i.e. CDM messages, Gateway messages, Topic messages).
 
-<p align="center"><img src="../../img/microlearning/ml-what-is-a-message-definition--design-overview.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-definition--design-overview.png"></p> 
 
 In this phase you can open the context menu on integration level (remember, that is a line between eMagiz and a external system). 
 The context menu will look slightly different per integration pattern. These differ as the use cases for each pattern differ slightly.
 
-<p align="center"><img src="../../img/microlearning/ml-what-is-a-message-definition--context-menu-messaging-definition.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-definition--context-menu-messaging-definition.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-what-is-a-message-definition--context-menu-api-definition.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-definition--context-menu-api-definition.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-what-is-a-message-definition--context-menu-es-definition.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-definition--context-menu-es-definition.png"></p>
 
 Selecting one of the above options will lead you to a overview similar to the one I show below
 
-<p align="center"><img src="../../img/microlearning/ml-what-is-a-message-definition--message-definition.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-definition--message-definition.png"></p>
 
 In this overview you can actualize the message definition.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -51,6 +70,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - A message definition is a visual representation of how the elements are related to each other, whether they are mandatory and the data types they have that can be used in the message mapping
 - Some message definitions are specific for a system. Others are generic across systems
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -59,4 +80,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-what-is-a-message-definition.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-what-is-a-message-definition.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

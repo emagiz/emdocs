@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 ## Alerting in eMagiz
 Assessing the health of your systems is critical in a stable and robust integration solution. 
 Getting alerts when something deviates is a crucial part of guaranteeing the stable and robust integration solution.
@@ -22,6 +37,8 @@ There are four areas on which you can configure alerting:
 
 Setting up the alerting in these four areas has common steps and specific steps
 
+##### Theory
+
 ## 3. Alerting in eMagiz
 Assessing the health of your systems is critical in a stable and robust integration solution. 
 Getting alerts when something deviates is a crucial part of guaranteeing the stable and robust integration solution.
@@ -38,7 +55,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 -	Always send alerts to generic mailboxes or multiple persons. This to prevent problems when someone is unable to check their email. 
 -	Use the include option. This means that you select all flows or runtimes for which a certain trigger is relevant. This prevents unnecessary triggers the moment you add an integration to Create. See figure below for an example
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--include-option.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--include-option.png"></p>
 
 -	Always link a tag with a trigger. Tags can be re-used. Triggers need to be as specific as possible
 -	Always use a generic description for your trigger so it is clear to all what the function of the trigger is
@@ -47,7 +64,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 -	All business tags are prefixed with Business
 -	Use the deployment plan to tell you which alerts you might need to update based on your Production deployment
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--deployment-plan-help.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--deployment-plan-help.png"></p>
 
 ### 3.2 Create or Update alerting
 
@@ -66,14 +83,14 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- If you want to raise alerts on all **statistics (runtime and queue)** that is generated on your environment select the option Measurement Data
 	- If you want to raise alerts on all **statistics (runtime and queue)** that is **not** generated on your environment select the option Missing Data
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--the-four-options.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--the-four-options.png"></p>
 
 7.	Link the tag to the trigger you have just created and enable the trigger
 
 ### 3.3 Trigger Error Messages
 1.	After you have selected the option Error messages as trigger type you will see the following pop up.
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-error-messages-pop-up.png"></p>
 
 2.	For triggers on error message you have three options as you can see from the above pop up:
 	- The exception class. If you want to use this trigger condition continue with step 3
@@ -81,7 +98,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- The header with name. If you want to use this trigger condition continue with step 9
 3.	Select the checkbox before the exception class. The screen will change to the following
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-exception-class.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-error-messages-pop-up-exception-class.png"></p>
 
 4.	Select if you want the exception class to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
 5.	Select the correct exception class for which the trigger needs to raise an alert. Examples are:
@@ -91,7 +108,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- com.emagiz.components.error.ErrorToXmlTransformer.RestErrorResponseBody
 6.	Select the checkbox before the exception message. The screen will change to the following
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-exception-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-error-messages-pop-up-exception-message.png"></p>
 
 7.	Select if you want the exception message to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
 8.	Select the correct exception message for which the trigger needs to raise an alert. Examples are:
@@ -100,7 +117,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- failed to receive JMS response within timeout of
 9.	Select the checkbox before the header with name. The screen will change to the following
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-error-messages-pop-up-header-with-name.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-error-messages-pop-up-header-with-name.png"></p>
 
 10.	Select if you want the name of the header to be equal to, not equal to, contains, does not contain, matches or does not match. The advice would be to make the alerting as specific as possible so choose: equal to, contains or matches
 11.	Select the correct name of the header for which the trigger needs to raise an alert. Examples are:
@@ -116,7 +133,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 ### 3.4 Trigger Log entries
 1.	After you have selected the option Log entries as trigger type you will see the following pop up
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-log-entries-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-log-entries-pop-up.png"></p>
 
 2.	Select to which runtimes you will apply the trigger. For this also select the most specific option (advice is the following objects). Options are:
 	- The following objects
@@ -143,17 +160,17 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- Runtime. If you want to select this option continue with step 2
 	- JMS queue. If you want to select JMS queue continue with step 5
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-choice.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-measurement-data-choice.png"></p>
 
 2.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advise is to use the following objects option
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-runtimes-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-measurement-data-runtimes-pop-up.png"></p>
 
 3.	Next step would be to select the Trigger condition on which you want the trigger to raise an error. For each option you have furthermore the option to select is greater than or is less than. 
 4.	Use the runtime statistics of the runtime(s) for which you want to configure the trigger to determine the correct thresholds.
 5.	You will be prompted with the following pop up. First step is to select the JMS queues for which the trigger will be executed. Once again the advise is to use the following objects option
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-measurement-data-jms-queue-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-measurement-data-jms-queue-pop-up.png"></p>
 
 6.	Next step would be to select the Trigger condition on which you want the trigger to raise an error. For each option you have furthermore the option to select is greater than or is less than. 
 7.	Mainly the two following options are used in all busses (and are supplied standard by eMagiz):
@@ -166,11 +183,11 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 	- Runtime. If you want to select this option continue with step 2
 	- JMS queue. If you want to select JMS queue continue with step 6
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-choice.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-missing-data-choice.png"></p>
 
 2.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advice is to use the following objects option
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-runtimes-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-missing-data-runtimes-pop-up.png"></p>
 
 3.	The two following options are used in all busses (and are supplied standard by eMagiz):
 	- One for data measurements
@@ -178,7 +195,7 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 4.	If you feel you need to change and/or add/adapt triggers of this kind please take a look at those eMagiz generated for you. Those are generated based on the best practice
 5.	You will be prompted with the following pop up. First step is to select the Runtimes for which the trigger will be executed. Once again the advice is to use the following objects option
 
-<p align="center"><img src="../../img/microlearning/ml-alerting-in-emagiz--alert-missing-data-jms-queue-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-alerting-in-emagiz--alert-missing-data-jms-queue-pop-up.png"></p>
 
 6.	For trigger conditions you have the following options:
 	- Data measurements. Loss of data measurements is already covered on runtime level, with the queued messages and number of consumers trigger. Therefore this is not needed unless you have a specific scenario.
@@ -188,6 +205,8 @@ To access the Alerting overview you navigate to Manage -> Alerting.
 9.	Check continuously on yes
 10.	Evaluate only on: Select all days (default option)
 Between: 19:00 and 20:00. Be aware eMagiz talks UTC time so take that into account when selecting the correct values.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -204,6 +223,8 @@ There are four areas on which you can configure alerting:
 
 Setting up the alerting in these four areas has common steps and specific steps
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -212,4 +233,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-alerting-in-emagiz.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-manage-alerting-in-emagiz.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+
+</div>
+</main>
+</div>
+</div>

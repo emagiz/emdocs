@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/expert-solution-architecture-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Determining Needed Memory
 
 In this microlearning, we will focus on how can stay in control of your integration landscape with the help of determining the needed memory footprint for your integration landscape.
@@ -22,6 +37,8 @@ With integration landscape we mean: A overview of all data integrations that are
 - eMagiz works with pre-determined sizes that are represented via an S, M, L, XL structure. Every size has a certain amount of memory available
 - When you exceed such a threshold you should upgrade (or downgrade) your memory in consultation with your partner manager
 - Overhead for OS and support functionality (auto-healing, alerting, monitoring) needs to be taken into account
+
+##### Theory
 
 ## 3. Determining Needed Memory
 
@@ -224,6 +241,8 @@ it to the recommended size which is shown beside the configured size, by opening
 
 In case there is room left you have scaled accordingly. If there still is extra room required you should move another level up until you reach the desired level.
 
+##### Practice
+
 ## 4. Assignment
 
 Do your calculation based on what we learned in this microlearning and compare the solution to what eMagiz suggests under Check Size Status
@@ -238,6 +257,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - Calculating memory can be challenging. Always confer with others before taking action
 - You can compare your calculations with the calculations of eMagiz.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -247,3 +268,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/expert-solution-architecture-determining-needed-memory.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

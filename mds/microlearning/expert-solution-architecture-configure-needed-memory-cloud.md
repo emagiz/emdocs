@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/expert-solution-architecture-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Configure Needed Memory - Cloud
 
 In the last microlearning, we learned how you together with eMagiz can determine the memory that is needed to run your solution.
@@ -22,6 +37,8 @@ With configuration we mean: Based on the calculations assign the correct heap an
 - Configuration of memory takes place in Deploy Architecture
 - eMagiz provides you with a recalculate button that will do the calculation for you
 - Use the calculation made by eMagiz and checked by you to fill in the numbers if you deviate from the recommended settings
+
+##### Theory
 
 ## 3. Configure Needed Memory - Cloud
 
@@ -70,6 +87,8 @@ On this page, you can track the progress of your update. When it says Update com
 
 <p align="center"><img src="../../img/microlearning/expert-solution-architecture-configure-needed-memory-cloud--track-update-status.png"></p>
 
+##### Practice
+
 ## 4. Assignment
 
 Compare the configuration of what is configured in Deploy Architecture with the calculation you made for the previous assignment
@@ -82,6 +101,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - Use the calculation made by eMagiz and checked by you to fill in the numbers if you deviate from the recommended settings
 - When you are satisfied apply the changes to the eMagiz cloud slot linked to your project
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -89,3 +110,9 @@ If you are interested in this topic and want more information on it please read 
 ## 7. Silent demonstration video
 
 As the assignment linked to this microlearning can only be executed in conjuncture with the eMagiz cloud we have opted to not make a video for now.
+
+
+</div>
+</main>
+</div>
+</div>

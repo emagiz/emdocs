@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 ## Interpreting Runtime Statistics
 Assessing the health of your systems is critical in a stable and robust integration solution. 
 One of the aspects of assessing the health of your systems is looking at the runtime statistics.
@@ -25,6 +40,8 @@ There are six graphs that tell part of the story:
 
 The added value lies in combining the information from each of them into a coherent interpretation
 
+##### Theory
+
 ## 3. Interpreting Runtime Statistics
 Assessing the health of your systems is critical in a stable and robust integration solution. 
 One of the aspects of assessing the health of your systems is looking at the runtime statistics.
@@ -47,14 +64,14 @@ The top left hand graph shows the CPU usage of the JVM (Java Virtual Machine) ak
 4.	Threads
   
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--total-jvm-cpu-usage.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--total-jvm-cpu-usage.png"></p>
 
 
 #### 3.1.2 Number of live threads
 
 The top right hand graph shows the number of live threads that are currently running on your JVM (runtime). Each thread represents a task that is executed on that JVM. This could be the consumption of a message, the registration of a queue, etc. An ever growing number of live threads indicates that there might be something wrong.
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--number-of-live-threads.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--number-of-live-threads.png"></p>
 
 #### 3.1.3 Total JVM Memory Usage
 
@@ -67,14 +84,14 @@ The second graph on the left hand side shows the total JVM Memory Usage of the J
 6.	internal (stores other internal data that does not fit into any of the other areas)
 As a user you can influence these heap and native memory settings under Deploy -> Architecture to create the best balance. eMagiz supports this by advising you on the desired setting per JVM (runtime).
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--total-jvm-memory-usage.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--total-jvm-memory-usage.png"></p>
 
 #### 3.1.4 Data measurements
 
 The second graph on the right hand side shows the data measurements of the particular JVM (runtime) that you have selected from the dropdown menu. Each minute various data points (measurements) with regards to the runtime are send to the portal. This graph indicates that the measurements indeed have been successfully send and processed by the portal. 
 The moment you start seeing gaps in your graphs you will also see comparable gaps in this graph indicating that data measurements are not coming through. The fact that data measurements are not shown here could indicate problems on the JVM.
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--data-measurements.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--data-measurements.png"></p>
 
 
 #### 3.1.5 Heap memory usage
@@ -83,14 +100,14 @@ The bottom left hand graph shows the heap memory usage of your JVM (runtime). Th
 To make sure that unused objects are removed Java uses the Garbage Collection. It is the task of garbage collection (GC) in the Java virtual machine (JVM) to automatically determine what memory is no longer being used by a Java application and to recycle this memory for other uses.
 The moment you see a nice drop every now and then (zigzag shape) this means the garbage collection has removed all unused memory to free it up for the processing of subsequent messages.
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--heap-memory-usage.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--heap-memory-usage.png"></p>
 
 #### 3.1.6 Non-heap memory usage
 
 The bottom right hand graph shows the non-heap memory usage of your JVM (runtime). With the introduction of Java 8 the way Java handles memory has changed. This change also included that non-heap has been changed to the term native memory.
 In this graph you can see if the native memory is within range. Contrary to heap memory, non-heap memory is less likely to vary under load. Once an application has loaded all of the classes that it will use and the JIT is fully warmed up, things will settle into a steady state.
 
-<p align="center"><img src="../../img/microlearning/ml-interpreting-runtime-statistics--non-heap-memory-usage.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics--non-heap-memory-usage.png"></p>
 
 
 ### 3.2 Relation between graphs
@@ -132,6 +149,8 @@ If you still see strange behavior you should check under the log entries and/or 
 
 **	Not all scenarios that could happen have been specified above. The scenarios written here are to show a certain way of thinking that is needed to trouble shoot.
 
+##### Practice
+
 ## 4. Assignment
 
 The assignment is simple this time. Simply navigate to the runtime statistics overview in eMagiz and analyze the graphs of atleast one runtime.
@@ -149,6 +168,8 @@ There are six graphs that tell part of the story:
 
 The added value lies in combining the information from each of them into a coherent interpretation
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and read more on the following links:
@@ -161,4 +182,9 @@ https://www.eginnovations.com/blog/what-is-garbage-collection-java/
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-interpreting-runtime-statistics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-manage-interpreting-runtime-statistics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+
+</div>
+</main>
+</div>
+</div>

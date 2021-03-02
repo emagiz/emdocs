@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/intermediate-data-pipelines-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Data pipeline - Mendix to AWS Redshift
 
 In this microlearning, we will learn how you can set up a data pipeline between Mendix and AWS Redshift with the help of eMagiz. 
@@ -27,6 +42,8 @@ The business question is as follows:
 
 - What were the total sales per event?
 
+##### Theory
+
 ## 3. Data pipeline - Mendix to AWS Redshift
 
 Imagine you are a global event organizer and want to track which events were hits and misses during the year. 
@@ -42,16 +59,16 @@ Afterward, we will continue with the transfer part and we will finish at the sin
 
 To let the data pipeline retrieve data from your Mendix application you need to publish your data via a Published OData service.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix.png"></p> 
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix.png"></p> 
 
 The result of this action should look similar to this
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix-result.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix-result.png"></p>
 
 To add resources to this OData service you can press the Add icon on this screen or navigate to the domain model to add the relevant resources.
 Regardless of the option that you choose, the end result should be something like this:
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix-added-resources.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--publish-odata-service-mendix-added-resources.png"></p>
 
 Now we have successfully published the relevant data that we need to answer our question.
 
@@ -64,16 +81,16 @@ Because we have two tables (Sales and Events) we need two data pipelines.
 Selecting the correct data pipeline can be done in Design. This way eMagiz will do all the heavy lifting for you. 
 Double click on the integration that you want to edit and select Import Entry Connector
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--import-entry-connector.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--import-entry-connector.png"></p>
 
 The next step would be to select the correct entry connector that you want to import from the store. In this case the Mendix Redshift one.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--import-entry-connector-select-mendix-redshift.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--import-entry-connector-select-mendix-redshift.png"></p>
 
 To finish up our Design phase set the option Data pipeline to Yes. This will ensure that you only need to deploy the entry and not the onramp when you are in Deploy.
 The result should look as follows.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--import-entry-connector-select-result.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--import-entry-connector-select-result.png"></p>
 
 Don't forget to do the same for the other data pipeline that you need to configure
 
@@ -82,11 +99,11 @@ Don't forget to do the same for the other data pipeline that you need to configu
 After you have transferred the data pipelines to Create you can edit the entry flows. 
 eMagiz will tell you that the information will be retrieved from the store.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--import-from-store.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--import-from-store.png"></p>
 
 Select Import from Store and let eMagiz do all the heavy lifting. The result of this action will be a flow that looks as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--import-from-store-result-create.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--import-from-store-result-create.png"></p>
 
 As you can see the complete setup is already created for you and the various parts have been nicely organized and separated. Let us do a quick walkthrough:
 - Starting at the top left corner we have the Job configuration. 
@@ -131,16 +148,18 @@ GROUP BY event.eventname
 
 See below for an explanation of how this SQL query works.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--datapipeline-create-materialized-view.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--datapipeline-create-materialized-view.png"></p>
 
 ### 3.4 Running the data pipeline
 Now that we have configured Mendix (source), eMagiz (transfer), and AWS Redshift (sink) it is time to run the data pipelines. Don't forget to configure the properties correctly.
 
 To illustrate the effect of setting up your data pipeline via eMagiz to refresh the materialized view that can answer our question I have two pictures. A before and an after picture.
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--datapipeline-materialized-view-before.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--datapipeline-materialized-view-before.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-datapipeline-mendix-to-aws-redshift--datapipeline-materialized-view-after.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift--datapipeline-materialized-view-after.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -157,6 +176,8 @@ This assignment can be completed with the help of an associated Mendix project l
 - With the help of materialized views in AWS Redshift you can easily zoom in and aggregate on data after it has happened for BI reporting
 - Data pipelines are a standardized piece of software in eMagiz that can be implemented with ease
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and visit the following links:
@@ -168,4 +189,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether the refresh has worked in AWS Redshift.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-datapiline-mendix-to-aws-redshift.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-datapipelines-datapipeline-mendix-to-aws-redshift.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Project Settings
 
 In this microlearning we will educate you on which project settings you need to define in Design to ensure that you can transfer your solution to Create.
@@ -25,6 +40,8 @@ The Project settings define:
 - Use cluster
 - Connection type
 
+##### Theory
+
 ## 3. Project Settings
 
 In this microlearning we will discuss how to configure the project settings to represent the correct structure of how your project will be running.
@@ -47,7 +64,7 @@ The second segment defines settings that might change over time as your integrat
 
 Editing either one of these settings can be done via the Edit Settings button:
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--edit-project-settings.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--edit-project-settings.png"></p> 
 
 ### 3.1 Generic Project Settings
 
@@ -56,7 +73,7 @@ The advice is to shorten your display name within seven characters to represent 
 
 An example of such a implementation would be:
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--generic-project-settings.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--generic-project-settings.png"></p> 
 
 ### 3.2 Specific Project Settings
 
@@ -67,7 +84,7 @@ Let us take a look at each of these settings one by one to see what they are abo
 The number of process containers defines how many runtimes will be used to run your core flows (i.e. onramp, offramp, routing, error). 
 The default setting is 1 process container. 
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--number-of-process-containers.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--number-of-process-containers.png"></p> 
 
 However the moment your integration landscape grows beyond a certain number of flows you should think about dividing the load between multiple process containers.
 The current limit we advise is a maximum of 60 flows per process container.
@@ -75,7 +92,7 @@ The current limit we advise is a maximum of 60 flows per process container.
 #### 3.2.1 IaaS
 We offer two choices when it comes to where you are deploying your integration (eMagiz Cloud in AWS or On-premise). The third option (Root) is deemed end of life
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--IaaS-options.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--IaaS-options.png"></p>
 
 Best practice for test projects and academy related projects is to run them on-premise (meaning in this case your own laptop). 
 Best practice for actual projects is to run them in the eMagiz Cloud (AWS)
@@ -102,7 +119,7 @@ we strongly advice that you apply the change in settings **per** environment.
 
 You can apply these settings **per** environment via the Design Architecture overview by selecting the option Apply settings.
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--apply-settings-design-architecture.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--apply-settings-design-architecture.png"></p>
 
 ### 3.4 Transfer settings to Create
 Furthermore the moment you change your project settings **after** you have transferred atleast one flow to Create you should also update the settings in Create to reflect the new reality.
@@ -110,9 +127,11 @@ You can do so by navigating to Create -> Settings -> Transfer Settings from Desi
 
 If there are differences on one of the specified categories you should press the Transfer button to sync Design and Create.
 
-<p align="center"><img src="../../img/microlearning/ml-project-settings--transfer-settings-from-design.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--transfer-settings-from-design.png"></p>
 
 Be aware that changing these settings can have a impact on a multitude of flows, therefore proceed with caution and be patient to see results
+
+##### Practice
 
 ## 4. Assignment
 
@@ -131,6 +150,8 @@ This assignment can be completed within the Academy project that you have create
 	- Use failover
 - Applying them should be done with caution and with reason
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -139,4 +160,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-project-settings.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-project-settings.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

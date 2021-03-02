@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Importing a message definition
 Earlier in this module we already learned what message definitions are and how you can manually create them. 
 As you can imagine having to do everything by hand can be cumbersome. Therefore eMagiz provides you with the option to import a message definition.
@@ -19,6 +34,8 @@ With import we mean: Selecting a input definition which eMagiz will use to gener
 
 In other words, letting eMagiz drag the entities and attributes on the canvas and connect them to each other with all the correct datatypes and whether or not a element or attribute is optional.
 
+##### Theory
+
 ## 3. Importing a message definition
 
 Importing a message definition can be done in various places. 
@@ -33,33 +50,33 @@ When we zoom into the specifics of the API Gateway integration pattern we will a
 
 Having said that let us delve into the specifics of this functionality. Once again you can navigate to Design and select the integration of your choose to access the context menu.
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--context-menu-system-message-messaging.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--context-menu-system-message-messaging.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--context-menu-system-message-api-gateway.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--context-menu-system-message-api-gateway.png"></p>
 
 After you have selected this option you will be directed to the system message overview. If this is the first time you acess this overview it should look empty
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--empty-system-message-page.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--empty-system-message-page.png"></p>
 
 On the bottom left, next to Start Editing you have a Import button. You can use this Import button when you are in Start Editing mode.
 As the integration pattern differ slightly the import options available differ also a bit. Below we will discuss the various 
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--import-options-messaging.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-options-messaging.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--import-options-api-gateway.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-options-api-gateway.png"></p>
 
 ### 3.1 Import from Capture
 Importing a definition from Capture is currently only possible for the messaging pattern. 
 When you select this option you get a pop-up showing you all integration attachments from Capture with the type XSD.
 Select the one you want and press Import to import the definition
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--import-from-capture.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-from-capture.png"></p>
 
 ### 3.2 Import from XSD
 Importing a definition from XSD is possible for both the messaging as well as the API Gateway pattern. 
 In both cases you can select this option and select the correct XSD (located on your laptop) and press Import
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--import-from-xsd.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-from-xsd.png"></p>
 
 ### 3.3 Import from CDM
 Importing a definition from CDM is only possible within the messaging pattern. 
@@ -78,8 +95,9 @@ With this option you can re-use existing solutions within your own eMagiz projec
 ### 3.6 Importing result
 Regardless of the option that you choose the end result should be a visual representation of the definition that you wanted to import.
 
-<p align="center"><img src="../../img/microlearning/ml-import-message-definition--import-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-result.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 
@@ -93,6 +111,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - Per integration pattern eMagiz offers a varying set of importing options
 - The end result of your import should be a visual representation of your definition
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -101,4 +121,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-importing-a-message-definition.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-import-message-definition.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

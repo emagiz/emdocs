@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Set as mapped in message mapping
 In this microlearning we will educate you on the second step of realizing a message mapping which is set as mapped. 
 This is a optional step and is only necessary in case atleast one mandatory attribute in your target definition cannot be filled based on anything within the target definition/
@@ -17,11 +32,13 @@ With set as mapped we mean: Registering that a certain attribute will be filled 
 
 In other words, enriching the output based on a static input instead of something in the input definition
 
+##### Theory
+
 ## 3. Set as mapped in message mapping
 
 Let us return to where we stopped in the last microlearning by showing the message mapping overview with the lines we drew
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-drawed-lines.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-drawed-lines.png"></p>
 
 As you see, the Description attribute on Crash Course level is not mapped yet but is mandatory. 
 To register that we want to use a static input we have to press Start Editing to enter the Start Editing Mode.
@@ -53,6 +70,8 @@ After you have saved the note a icon will appear on the attribute letting you an
 
 <p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-icon.png"></p>
 
+##### Practice
+
 ## 4. Assignment
 
 Navigate to Design and open the message mapping option of atleast one integration within your project. 
@@ -64,6 +83,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - With the set as mapped functionality you can register for (mandatory) attributes that the input is a static value
 - Adding notes can help improve the quality of work and help you to explain to others why you have made certain choices
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -72,4 +93,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-set-as-mapped-in-message-mapping.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Technical requirements before starting in eMagiz
 
 In this microlearning we will focus on learning how to start off with the eMagiz environment before entering into the Capture phase. What things to I need to know before starting?
@@ -13,7 +28,9 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key Concepts
 
 This microlearning will list out the techical requirements that need to be gathered before starting in eMagiz. Often DevOps teams are using DoR to understand what is needed before start the work - this helps to input such lists. Technical requirements in this context are the things that describe the integration, and are needed to perform the Capture & Design phase of eMagiz. Next to that, the proper solution needs to be selected for the integration problem. Different integration patterns exist which are described after this whole module.  
-  
+
+##### Theory 
+ 
 ## 3. Technical requirements
 
 Below are the things to consider when implementing eMagiz for a new integration. These are things to discuss in the triangle business, eMagiz Developer and Architect.
@@ -26,6 +43,8 @@ Below are the things to consider when implementing eMagiz for a new integration.
 
 **4. Connectivity** - What are the involved connectivity contraints involved? Consider items such as VPNs into the client infrastructure, security considerations, involved parties and their maturity level to easily connect or provide details. 
 
+##### Practice
+
 ## 4. Assignment
 
 There is no assignment for this microlearning other than reviewing the videos from the website mentioned below.
@@ -35,6 +54,8 @@ There is no assignment for this microlearning other than reviewing the videos fr
 - Consider specifics for integration
 - eMagiz is a comprehensive platform that allows ad-hoc integrators to perform all required activities to run the platform
 - The ILM phases are key in the way of work in eMagiz.
+
+##### Solution
 
 ## 6. Suggested Additional Readings
 
@@ -56,3 +77,7 @@ Please take a moment to view these integration pattern video's to help create th
 <iframe width="500" height="250" src="https://www.youtube.com/embed/Dy7hDzdE3tI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
+</div>
+</main>
+</div>
+</div>

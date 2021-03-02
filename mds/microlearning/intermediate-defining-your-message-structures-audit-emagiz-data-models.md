@@ -2,7 +2,7 @@
 	<div class="ez-academy__body">
 		<main class="micro-learning">
 		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="doc-nav__link">Home</a></li>
 			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
 			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
 			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -51,15 +51,15 @@ The conceptual idea will be explained in this microlearning with the help of the
 If you want to audit the CDM (look at the history of changes made to the CDM by whom) you can navigate to the Design phase of your project and open the CDM. 
 In this CDM view, you have a button on the bottom bar called History.
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--accessing-history-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--accessing-history-overview.png"></p>
 
 When you click on this button you will see a grid showing you the detailed history of who has done what in the past on the CDM level.
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--showing-history-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--showing-history-overview.png"></p>
 
 Within this overview, you have the option to search on several indicators such as who made the change or what that person described they changed 
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--search-history-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--search-history-overview.png"></p>
 
 ### 3.1 Editing the CDM
 
@@ -70,14 +70,14 @@ you specify exactly what you have changed.
 To edit the CDM you click on the Start Editing button located in the left bottom corner of your screen. 
 The moment you have pressed Start Editing you can add, edit and delete entities and attributes on this canvas.
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--edit-mode-cdm.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--edit-mode-cdm.png"></p>
 
 When you are satisfied with your changes you can press Stop editing. After you have pressed Stop editing you will see a popup.
 In this pop-up, you have to define whether you have made a major change, minor change, or patch update to the CDM and describe what you have changed
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--new-version-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--new-version-popup.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures--new-version-popup-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--new-version-popup-filled-in.png"></p>
 
 As you can see what you write down in terms of what you have changed is crucial so others can easily see what exactly has been changed.
 

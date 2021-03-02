@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Determining origin of error message
 
 In this microlearning we will focus on how you can quickly and easily determining the origin of a error message. In other words determine which component broke within your flow.
@@ -24,6 +39,8 @@ You can do this by looking at the detail page related to that flow. On this page
 
 When you know the component you have determined the origin of your error message.
 
+##### Theory
+
 ## 3. Determining origin of error message
 
 You can determine the origin of a error message with a two step approach:
@@ -37,7 +54,7 @@ In API Gateway terms this would mean from entry to exit. In Event Streaming term
 
 This flow of data (for messaging) can be analyzed with the help of the Dashboard that is available in Manage.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard.png"></p>
 
 On this dashboard you see all flows on which atleast one error has been raised. In the case where no errors have been raised in the last two weeks you will see your complete landscape, 
 but since you are looking for a error message that does not seem to be the likely case in this scenario. 
@@ -47,7 +64,7 @@ Based on this information and your knowledge of how the data you are testing or 
 
 After you have determined the specific flow that has raised the error you can double click on the flow to see the details of the error messages that have been raised on this flow.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard-detail-page.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard-detail-page.png"></p>
 
 This detail page is divided into three sections
 
@@ -56,14 +73,14 @@ This detail page is divided into three sections
 The first section, located on the left hand side of your screen shows the list of all errors that have been raised on this flow and specifies the actual error that was triggered by a certain component in your flow.
 This section, in combination with the second section (the one in the middle) is instrumental in determining the cause of the error message. They however are of less interest when looking for the origin of the error message.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard-detail-page-left-hand-panel.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard-detail-page-left-hand-panel.png"></p>
 
 #### 3.2.2 The header and payload of the message, the moment the message caused an error.
 
 The second section, located in the middle of your screen shows the header and payload information of the specific message you have selected in the left hand panel and the exception that was raised.
 This section, in combination with the first section (the one on the left hand) is instrumental in determining the cause of the error message. They however are of less interest when looking for the origin of the error message.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard-detail-page-middle-panel.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard-detail-page-middle-panel.png"></p>
 
 #### 3.2.3 The components
 
@@ -73,7 +90,7 @@ By having that information we know the origin of the error message. This section
 
 As illustrated in the picture below the component highlighted with red is the component that raised the error.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard-detail-page-right-hand-panel.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard-detail-page-right-hand-panel.png"></p>
 
 ### 3.3 Flow not known errors
 
@@ -84,8 +101,9 @@ Not all errors that are raised by eMagiz can be linked to a specific flow. Examp
 These errors are not shown in the dashboard itself, but are instead shown on the right hand panel under your filtering option under the segment "Flow not known". 
 So if you cannot find any error within your integration yet the message has not reached it end goal please take a look at that section to see whether you can link one of those error messages to your integration.
 
-<p align="center"><img src="../../img/microlearning/ml-determining-origin-of-error-messages--manage-dashboard-flow-not-known-errors.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages--manage-dashboard-flow-not-known-errors.png"></p>
 
+##### Practice
 
 ## 4. Assignment
 
@@ -98,6 +116,8 @@ Determine the origin of atleast five error messages that have been raised within
 - In some cases the error cannot be linked to a specific flow, leading to a "Flow not known" error
 - After having identified the flow where a message has stranded or having determined that the error must be in the "Flow not known" section you can zoom in on this flow to see on which component your message has stranded
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
@@ -106,4 +126,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-determining-origin-of-error-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-manage-determining-origin-of-error-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

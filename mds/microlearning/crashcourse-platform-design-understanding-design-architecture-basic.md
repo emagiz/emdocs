@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Understanding Design Architecture - Basic
 
 In this microlearning we will educate you on what the Design Architecture is, what you can use it for and how it can help you.
@@ -20,12 +35,14 @@ The Design Architecture gives you insights into:
 - What is the machine size needed to run my instances
 - Can I still develop more integration solutions within the current sizing parameters
 
+##### Theory
+
 ## 3. Understanding Design Architecture
 
 The Design Architecture overview is accessible under Design. In Design you can click on Architecture to get to the overview. 
 The following Design Architecture could look similar to what you would see the first time you open this page. A lot to improve as you can see.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--rough-overview.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--rough-overview.png"></p> 
 
 As you can see in the overview of the architecture we have several machines within our integration landscape (i.e. localhost, local machine, External 01, etc.) and each machine has several systems running on it.
 
@@ -37,7 +54,7 @@ The machine called localhost in this example is a so called core machine. This m
 
 Depending on your specific implementation you are in need of some of them or all of them. If you do not need them eMagiz will grey them out indicating that the system in question can be ignored.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--core-machine.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--core-machine.png"></p>
 
 ### 3.2 Connector Machine(s)
 The machine called local machine in this example is a so called connector machines. 
@@ -49,15 +66,15 @@ Within eMagiz we make a distinction between two types of connector machine(s):
 
 Both are also represented differently within this picture. The on-premise systems are blue and behind one firewall. 
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--on-prem-connector-machine.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--on-prem-connector-machine.png"></p>
 
 The connector machine(s) in the eMagiz Cloud are running in between firewalls and are green.
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--emagiz-cloud-connector-machine.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--emagiz-cloud-connector-machine.png"></p>
 
 Cleaning the picture up and removing the systems that are unnecessary gives us a way nicer overview
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--nice-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--nice-overview.png"></p>
 
 ### 3.3 Determining size
 Apart from determining where a instance (runtime) should be running (cloud or on-premise) the Design Architecture 
@@ -65,18 +82,20 @@ also helps in determining the size a machine would need to have to support the p
 
 When you activate the Start Editing mode you will notice that you can alter the size of the green machines (those that are managed by eMagiz) 
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--core-machine-start-editing.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--core-machine-start-editing.png"></p>
 
 To help you determine the size of the machine eMagiz has the option to check the size status
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--check-size-status.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--check-size-status.png"></p>
 
 In the pop-up that follows we specify how the memory advice of eMagiz is calculated (the figure on the left above a machine). 
 This can help you determine the correct sizing for your machine, now and in the future
 
-<p align="center"><img src="../../img/microlearning/ml-understanding-design-architecture-basic--check-size-status-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--check-size-status-popup.png"></p>
 
 Obviously there is much more to tell about the Design Architecture but more on that in later microlearnings.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -89,6 +108,8 @@ This assignment can be completed with the help of a associated Mendix project li
 - Design Architecture gives you the tools that you need to determine a correct sizing for your environment
 - Machines are divided in so called core and connector machines
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -97,4 +118,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-understanding-design-architecture-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-understanding-design-architecture-basic.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>
