@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Pick up Files
 
 In this microlearning, we will explain the basics of retrieving files from a local directory (i.e. a directory that is directly accessible within the network where the eMagiz process is running)
@@ -22,6 +37,8 @@ Key considerations when picking up files are:
 - Has eMagiz the appropriate rights to read from the directory where the messages are to be retrieved from
 - What is the format (i.e. XML, JSON, EDI, TXT, CSV, etc.) of the files that eMagiz needs to retrieve
 
+##### Theory
+
 ## 3. Pick up Files
 
 One of the easiest connectivity methods to implement within eMagiz is the retrieval of files from a local directory. 
@@ -31,7 +48,6 @@ With this method, eMagiz will periodically look whether (new) files are ready fo
 - With what frequency is eMagiz going to check for new files
 - Has eMagiz the appropriate rights to read from the directory where the messages are to be retrieved from
 - What is the format (i.e. XML, JSON, EDI, TXT, CSV, etc.) of the files that eMagiz needs to retrieve
-
 
 ### 3.1 Determining Criteria
 
@@ -122,6 +138,8 @@ The result of linking the components together will lead to the following solutio
 
 With all this in mind, you have successfully learned how to set up your first connectivity via a messaging flow in eMagiz!
 
+##### Practice
+
 ## 4. Assignment
 
 Build an entry that retrieves files from an external source and ensures that the data is delivered on the onramp queue. 
@@ -134,6 +152,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 	- With what frequency is eMagiz going to check for new files
 	- Has eMagiz the appropriate rights to read from the directory where the messages are to be retrieved from
 	- What is the format (i.e. XML, JSON, EDI, TXT, CSV, etc.) of the files that eMagiz needs to retrieve
+
+##### Solution
 	
 ## 6. Suggested Additional Readings
 
@@ -142,4 +162,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-pick-up-files.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-pick-up-files.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Drop Files
 
 In the last microlearning, we discussed how we can retrieve files **from** a local directory. 
@@ -23,6 +38,7 @@ Key considerations when dropping files are:
 - If a file with the same name already exists what do we do
 - How to name the file that you are writing to the directory
 
+##### Theory
 
 ## 3. Drop Files
 
@@ -107,6 +123,8 @@ As you can see from the example we will now dynamically create the file name bas
 Whichever method you choose to create the file name does not matter as long as you have thought about it. 
 Most important thing is that you choose an option to keep control over what is happening.
 
+##### Practice
+
 ## 4. Assignment
 
 Build an exit that drops files on a local directory. 
@@ -119,6 +137,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 	- Has eMagiz the appropriate rights to read from the directory where the messages are to be retrieved from
 	- If a file with the same name already exists what do we do
 	- How to name the file that you are writing to the directory
+
+##### Solution
 	
 ## 6. Suggested Additional Readings
 
@@ -127,4 +147,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-drop-files.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-drop-files.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

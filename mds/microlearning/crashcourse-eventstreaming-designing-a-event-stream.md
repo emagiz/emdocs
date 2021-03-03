@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-eventstreaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Designing an Event Stream
 
 In this microlearning, we will focus on how you can design an Event Streaming Solution with the help of the first two phases of eMagiz (i.e Capture and Design).
@@ -23,6 +38,8 @@ To design an event stream you must do the following:
 
 Below we will discuss each of these steps separately.
 
+##### Theory
+
 ## 3. Designing an Event Stream
 
 Within the eMagiz platform, you can easily design an event stream.
@@ -37,22 +54,22 @@ In this section we will discuss how you can design an event stream by following 
 As with all integration patterns the process starts in Capture. In Capture, you have the option to add systems to the canvas that can connect to a topic.
 To indicate this ability on the system-level you have the option to select Event Streaming as the default integration pattern on the system level.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-system-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--capture-es-system-config.png"></p>
 
 ### 3.2 Define the data object you want to exchange
 
 After you have created the system and filled the details in you can add integrations from and to eMagiz. When looking at Event Streaming within the scope of eMagiz the integration (in messaging) equals a topic (in event streaming).
 If you draw a line from a system to eMagiz you define that the system from which you have drawn the line is a 'producing' system. A 'producing' system is a system that writes data to one or more topics. If a systems write to more topics you draw more lines.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-producing-integration.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--capture-es-producing-integration.png"></p>
 
 If you draw a line from eMagiz to a system you define that the system to which you have drawn the line is a 'consuming' system. A 'consuming' system is a system that reads data from one or more topics. If a system reads from more topics you draw more lines.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-consuming-integration.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--capture-es-consuming-integration.png"></p>
 
 The moment you have captured these systems you will end up with something like this.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--capture-es-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--capture-es-result.png"></p>
 
 ### 3.2 Check your work in Design
 
@@ -63,7 +80,7 @@ In this microlearning, we will focus on the Design overview and how you can use 
 
 In Design, you see an overview of your landscape including all first-class integration patterns (messaging, API gateway, and event streaming).
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--design-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--design-overview.png"></p>
 
 For Event Streaming integrations you see one or more numbers per integration. These numbers mean as follows (left to right):
 
@@ -77,20 +94,21 @@ For Event Streaming integrations you see one or more numbers per integration. Th
 If you have configured your system in such a way that you have specified that this system has a default integration pattern of Event Streaming you only need to fill in the technical name in Design
 as eMagiz already has set the message format to JSON. This is done because the defacto standard of Event Streaming messages is JSON.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--design-technical-config-system.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--design-technical-config-system.png"></p>
 
 ##### 3.2.1.2 Red background in Design on integration level
 
 If you see a red background behind the number this indicates that you have indicated that a system is consuming data from a specific topic (integration) 
 but have not yet indicated how the data will be produced on the topic.
 
-<p align="center"><img src="../../img/microlearning/ml-designing-a-event-stream--design-consumer-without-producer.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-designing-a-event-stream--design-consumer-without-producer.png"></p>
 
 There are two ways to set this straight:
 
 1. Go back to Capture and draw a line to indicate that a specific system directly produces messages on that topic. For more information on this revisit the section surrounding Capture in this microlearning
 2. Add an Event processor. More on this later in the course
 
+##### Practice
 
 ## 4. Assignment
 
@@ -110,6 +128,8 @@ This assignment can be completed within the Capture and Design phase of your (Ac
 - To verify whether there are mismatches you can use the visual queues eMagiz provides you within the Design overview
 - Based on the Design overview you can see in one view the metadata related to your data flow
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and read the user guide provided on this topic.
@@ -118,4 +138,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-designing-a-event-stream.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-eventstreaming-designing-a-event-stream.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

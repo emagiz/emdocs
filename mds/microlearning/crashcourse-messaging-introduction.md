@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Messaging - Introduction
 
 In this microlearning, we will introduce the key concepts of the Messaging in the way that eMagiz provides this capability.
@@ -14,6 +29,7 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 Organizations use many applications to support their business processes, and in regular landscape all of these applications are required to exchange data with each other to fulfill business processes. Some of the required data might be outside the organization. The messaging integration pattern allows to process messages that contain data in a secure, reliable manner. Whether that is processed synchronously or asynchronously – both are handled in the Messaging in eMagiz. Nearly all message formats and exchange protocols are supported. This last is one of the core advantages to overcome format and protocol limitatios of to be connected systems.
 
+##### Theory
 
 ## 3. Key elements of Messaging
 
@@ -40,6 +56,7 @@ eMagiz provides a specific runtime in which the different flow components of the
 
 <p align="center"><img src="../../img/microlearning/crashcourse-messaging-introduction-pic2.png"></p> 
 
+##### Practice
 
 ## 4. Assignment
 
@@ -48,6 +65,8 @@ Review the video below to ensure all concepts are clear
 ## 5. Key takeaways
 
 eMagiz provides a Messaging integration patterns that can be used to solve complex integrations where to be connected systems use complex formats and structures. Furthermore, messaging as a pattern is design in eMagiz in such a way that all integrations requirements can be met for implementing business solutions with eMagiz. 
+
+##### Solution
 
 ## 6. Suggested Additional Readings
 
@@ -58,3 +77,8 @@ eMagiz provides a Messaging integration patterns that can be used to solve compl
 This video provides an introduction of the Messaging concept
 
 <iframe width="1907" height="1073" src="https://www.youtube.com/embed/Dy7hDzdE3tI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Difference between CDM and CDM messages
 
 To conclude our section on microlearnings that all have something to do with the CDM we wrap things up by learning what the difference is between CDM and CDM messages.
@@ -16,6 +31,8 @@ By CDM we mean: The Canonical Data Model that plays a vital and central role whi
 
 - The complete CDM consists of the collection of entities that are used or going to be used in the various CDM messages
 
+##### Theory
+
 ## 3. Difference between CDM and CDM messages
 
 Simply put the difference between the CDM and the CDM messages is as follows:
@@ -32,6 +49,8 @@ changes to show the structure of the message and to show which parts of the CDM 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-messaging-difference-between-cdm-and-cdm-messages--cdm-overview-message-type-selected.png"></p>
 
+##### Practice
+
 ## 4. Assignment
 
 Open the CDM of your (Academy) project and subsequently open one of the CDM messages that are created within your (Academy) project and spot the differences. 
@@ -42,6 +61,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 - The CDM holds all entities and attributes that are relevant within the context of your complete integration landscape.
 - The CDM message is tailor-made for a specific piece of data (i.e. Order, Invoice, Employee) and only holds the entities and attributes relevant for that piece of data.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
@@ -51,3 +72,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-difference-between-cdm-and-cdm-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

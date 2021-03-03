@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-eventstreaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Event Streaming - Introduction
 
 In this microlearning, we will give an introduction to Event Streaming and look a little bit into how this is implemented in eMagiz.
@@ -22,6 +37,8 @@ Below you find several key concepts that define (parts of) event streaming:
 
 We will elaborate on these concepts a bit more so you have a good introduction before we start linking Event Streaming to eMagiz in the upcoming microlearnings.
 
+##### Theory
+
 ## 3. Event Streaming - Introduction
 
 In this microlearning, we want to take you on a short journey to explain the fundamental concepts of what Event Streaming is. 
@@ -43,7 +60,7 @@ knowing who will consume the data and when they will consume the data.
 The same principle applies to other types of data. By having a centralized point where authorized parties can publish their data for others to consume you have enough to exchange that data between parties.
 Subsequently, it is up to the consuming entities to read the data and process the data in a way that aids their business process.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--centralized-data-set.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-event-streaming-introduction--centralized-data-set.png"></p>
 
 ### 3.2 Publisher and subscriber are de-coupled
 
@@ -56,7 +73,7 @@ In this way, it has become the sole responsibility of the producer to publish da
 
 It is further up to the consumer to subscribe to that data and process it in a way that adds value to their specific business application.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--de-coupling-publish-subscribe.jpg"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-event-streaming-introduction--de-coupling-publish-subscribe.jpg"></p>
 
 ### 3.3 Data is retained inside the platform
 
@@ -68,7 +85,7 @@ transactional nature of delivering a specific message to each consumer as you wo
 
 Correctly determining the retention policy in terms of event streaming is, therefore, one of the crucial parts of a successful implementation of event streaming.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--retention-construction.jpg"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-event-streaming-introduction--retention-construction.jpg"></p>
 
 ### 3.4 Event data is continuous in nature
 
@@ -81,7 +98,7 @@ If so, please the message on a different topic from which a third application ca
 
 This is a very rudimentary scenario that can be optimized a lot but it gives an idea of what Event Streaming can do for you.
 
-<p align="center"><img src="../../img/microlearning/ml-event-streaming-introduction--log-record-event-streaming.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-event-streaming-introduction--log-record-event-streaming.png"></p>
 
 ### 3.5 Example situations Event Streaming
 
@@ -92,7 +109,13 @@ This is a very rudimentary scenario that can be optimized a lot but it gives an 
 - A media publisher streams billions of clickstream records from its online properties, aggregates and enriches the data with demographic information about users, and optimizes content placement on its site, delivering relevancy and a better experience to its audience.
 - An online gaming company collects streaming data about player-game interactions and feeds the data into its gaming platform. It then analyzes the data in real-time, offers incentives and dynamic experiences to engage its players.
 
-## 4. Key takeaways
+##### Practice
+
+## 4. Assignment
+
+For this microlearning there is no assignment.
+
+## 5. Key takeaways
 
 Event Streaming is a decoupled service that works best within a microservices architecture with each application having its core function for high volumes.
 
@@ -103,7 +126,9 @@ Critical perspectives when looking at Event Streaming are:
 - Data is stored inside the platform for a certain amount of time (retention)
 - Event data is continuous being sent or made available
 
-## 5. Suggested Additional Readings
+##### Solution
+
+## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please see the following links:
 
@@ -117,3 +142,8 @@ If you are interested in this topic and want more information on it please see t
 This video gives a nice introduction to Event Streaming concerning the eMagiz platform.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VRGz3z_T3mw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

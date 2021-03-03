@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Setting Up the CDM
 
 In the last microlearning, we learned what the CDM is and how you should use it when building messaging integrations.
@@ -22,6 +37,7 @@ Key considerations when setting up the CDM are:
 - Choose one naming convention and one language
 - Discuss which characteristics (i.e. attributes) belong to which entities
 
+##### Theory
 
 ## 3. Setting Up the CDM
 
@@ -107,6 +123,8 @@ This behavior is shown below
 
 <p align="center"><img src="../../img/microlearning/crashcourse-messaging-setting-up-the-cdm--promote-to-cdm-result.png"></p>
 
+##### Practice
+
 ## 4. Assignment
 
 Add the content of a system message to the CDM via the drag and drop functionality eMagiz offers on the CDM level. 
@@ -120,6 +138,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 	- Choose one naming convention and one language
 	- Discuss which characteristics (i.e. attributes) belong to which entities
 - Always take these considerations in mind when maintaining your CDM
+
+##### Solution
 	
 ## 6. Suggested Additional Readings
 
@@ -129,4 +149,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-setting-up-the-cdm.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-setting-up-the-cdm.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

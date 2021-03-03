@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-eventstreaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Topic and Topic Properties
 
 In this microlearning, we will focus on topics and the properties of these topics.
@@ -29,6 +44,8 @@ Below we will discuss what a topic is in more depth and we will zoom in on the t
 
 After you have configured your topic(s) the way you had in mind you can check your work via the Design Architecture overview. 
 In this overview, you can see whether there is enough room available in terms of GB's of Topic Storage.
+
+##### Theory
 
 ## 3. Topic and Topic Properties
 
@@ -67,11 +84,11 @@ These two settings mainly determine the amount of GB in storage is necessary on 
 As you can imagine the longer you retain data and the more data you retain the higher the costs will be.
 You have the option to change these properties by right-clicking on the integration to show the context menu so you can select the topic properties option.
 
-<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--topic-properties-context-menu.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--topic-properties-context-menu.png"></p>
 
 In the pop-up, you will see a Basic and Advanced tab. In the Advanced tab, you can configure these settings. 
 
-<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--topic-properties-config-advanced.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--topic-properties-config-advanced.png"></p>
 
 See below for what these settings mean and how you can determine them.
 
@@ -109,7 +126,7 @@ Results in 1.5 / 3 = 0.5 GB in Retention Bytes. As the name indicates this value
 When you are finished with configuring the properties per topic you can validate whether the expected data storage based on your configuration fits within the available amount of topic storage.
 You can do this with the help of Design Architecture.
 
-<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--design-architecture.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--design-architecture.png"></p>
 
 As you can see in the picture above the Design Architecture represents not only the runtimes needed to run your flows 
 but also defines the amount of configured and the amount of recommended topic storage by eMagiz.
@@ -117,7 +134,9 @@ but also defines the amount of configured and the amount of recommended topic st
 If we zoom in on the right-hand panel you can see on the bottom of that panel an entry that is relevant for Event Streaming. 
 With this entry, you can easily see the amount of GB that is configured (based on the topic property settings) and see how much GB is still available based on your current contractual agreements.
 
-<p align="center"><img src="../../img/microlearning/ml-topic-and-topic-properties--design-architecture-topic-storage-available.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--design-architecture-topic-storage-available.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -133,6 +152,8 @@ This assignment can be completed within the Design phase of your (Academy) proje
 - Think about your retention policy when implementing the Event Streaming solution to get a grip on the cost aspect of Event Streaming
 - Check your configuration with the help of Design Architecture to make sure that the configured amount of GB is allowed under your current contract
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and browse through the following links:
@@ -143,4 +164,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-topic-and-topic-properties.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-eventstreaming-topic-and-topic-properties.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

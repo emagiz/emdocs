@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Filter
 
 In the crash course on the Platform level, we already discussed filtering in the transformation and highlighted the validating filter as that component is a standard in any flow that transforms data.
@@ -20,6 +35,8 @@ On flow level eMagiz distinguishes three filter options:
 - XML Validating Filter
 - Standard Filter
 - XPath Filter
+
+##### Theory
 
 ## 3. Filter
 
@@ -72,6 +89,8 @@ To do so we need to fill in the correct XPath and place the component at the cor
 
 Once again, don't forget about the namespace
 
+##### Practice
+
 ## 4. Assignment
 
 Add an XPath filter to your flow that checks whether your message after transforming still has at least one entry in a list. 
@@ -85,6 +104,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 	- XPath Filter
 - Each option comes with a specific function
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and read the following links:
@@ -97,3 +118,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-filter.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

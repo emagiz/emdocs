@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Asynchronous Routing
 
 In this microlearning, we will explain the basics of asynchronous routing that plays a vital role in the distribution of messages within the five-layer model of messaging.
@@ -18,6 +33,8 @@ The asynchronous routing has three relevant parts:
 - All asynchronous onramps send their data to the routing
 - Based on a decision made within the routing the message is routed to one or more offramp queues
 - Each offramp queue will receive data based on the decision unless you add another filter before the messages are sent to the offramp queue
+
+##### Theory
 
 ## 3. Asynchronous routing
 
@@ -107,6 +124,8 @@ is that you have one single point of entry, one single piece of decision logic, 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-messaging-asynchronous-routing--simple-asynchronous-routing-example.png"></p>
 
+##### Practice
+
 ## 4. Assignment
 
 Build your asynchronous routing based on the best practice for one of the offramps that are available within your (Academy) project. 
@@ -118,6 +137,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 - Control the output with a filter to prevent data to be sent to a queue too early
 - Use the annotations to write down the step by step guide within your asynchronous routing
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -125,4 +146,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-asynchronous-routing.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-asynchronous-routing.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

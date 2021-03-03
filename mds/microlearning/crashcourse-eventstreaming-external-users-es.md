@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-eventstreaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # External Users - Event Streaming
 
 In this microlearning, we will focus on how the registration of external users within the context of Event Streaming and how to give these users the correct rights on a topic-level basis.
@@ -20,6 +35,8 @@ Knowing how to register external users and give them the correct rights makes it
 
 Registering external users in eMagiz and handing out rights is very easy. Below we will detail the specifics of how you can create a topic via eMagiz.
 
+##### Theory
+
 ## 3. External Users and their rights
 
 Based on what you have created in the Create phase you can now infer from that setup which external users need to be created. 
@@ -29,23 +46,23 @@ Each system that is drawn within eMagiz represents an external user within the c
 
 When you navigate to the Deploy phase of eMagiz you have the option to Add External Users for Event Streaming. You can do this by navigating to the Event Streaming section in Deploy.
 
-<p align="center"><img src="../../img/microlearning/ml-create-your-topic--es-deploy-event-streaming-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--es-deploy-event-streaming-config.png"></p>
 
 In this overview, you can select the tab called External users
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-external-users-config.png"></p>
 
 On this page, you can add an external user by selecting the New button and giving the external user a name. 
 
 The best practice would be to use the technical name or the display name of the systems you have created in the phases before.
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-pop-up-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-external-users-config-pop-up-filled-in.png"></p>
 
 If you want to get rid of a certain user you can select it and press Delete. After that, the user is gone.
 
 The result of adding two external users that fit our use case will look as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-external-users-config-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-external-users-config-result.png"></p>
 
 ### 3.2 Handing out rights to a user
 
@@ -57,11 +74,11 @@ With the help of the Access Control List (ACL) you can define which user has acc
 
 This way you can make sure that a party that is supposed to only consume data only gets read access on a topic. This helps to prevent that this party inadvertently starts writing data on the topic.
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-acl-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-acl-config.png"></p>
 
 When you press Add ACL entry you can fill in the following pop-up. In this pop-up you select the user, the topic and the rights said user must-have on a topic.
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-acl-config-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-acl-config-pop-up.png"></p>
 
 The moment you are happy with your choices you can press Save and eMagiz will make sure that the user has access to that topic from that point on.
 
@@ -73,7 +90,7 @@ To make sure they will succeed in this they will have to have the following four
 
 1. eMagiz bootstrap server URL. This can be found under the Config tab of Deploy -> Event Streaming
 
-<p align="center"><img src="../../img/microlearning/ml-external-users-es--es-deploy-event-streaming-config-details.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-config-details.png"></p>
 
 		Be aware that in this example the actual bootstrap server URL is wiped clean for security reasons
 2. Truststore containing the CA of the eMagiz Cluster. You can request this via productmanagement@emagiz.com
@@ -81,6 +98,8 @@ To make sure they will succeed in this they will have to have the following four
 4. The topic name
 
 If you hand these four pieces of information over to the external party that wants to connect to a certain topic they should be able to connect to the topic.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -93,6 +112,8 @@ This assignment can be completed with the help of the Topic you have created/use
 - Don't give systems rights they should not have
 - Collect all relevant information so you can easily tell the external party how to connect to the eMagiz cluster
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
@@ -101,4 +122,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-external-users-es.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-eventstreaming-external-users-es.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

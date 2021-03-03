@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Interpreting queue statistics
 
 In this microlearning, we will focus on how you can read the information available on queue level for all integrations that use the messaging pattern.
@@ -19,6 +34,8 @@ There are four parts to the queue statistics:
 - Total messages added to queue
 - Number of consumers
 - Data measurements
+
+##### Theory
 
 ## 3. Interpreting queue statistics
 
@@ -133,6 +150,8 @@ With the help of this metric, we can establish if the queue in question is sendi
 As you can see from the example shown above the queue was not activated until somewhere after the 14th minute of the hour. 
 This is entirely consistent with the behavior of the other graphs.
 
+##### Practice
+
 ## 4. Assignment
 
 Interpret the queue statistics of at least two flows within your (Academy) project. 
@@ -148,6 +167,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 - You can best interpret them together as that approach gives you the most context
 - To assist in anomaly detection use the eMagiz alerting
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
@@ -157,3 +178,8 @@ If you are interested in this topic and want more information on it please read 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-interpreting-queue-statistics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

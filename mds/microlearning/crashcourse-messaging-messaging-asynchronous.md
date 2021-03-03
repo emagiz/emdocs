@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-messaging-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Messaging Asynchronous
 
 In this microlearning, we will explain the basics of the asynchronous messaging pattern.
@@ -21,6 +36,8 @@ Key characteristics of asynchronous messaging are:
 - Messages can temporarily be kept in the queue if an end system to which the messages need to be delivered is scheduled to go offline
 - Supports one-to-many distribution of messages over the integration landscape
 
+##### Theory
+
 ## 3. Messaging Asynchronous
 
 Asynchronous messaging is the pre-dominant option when you implement a messaging integration via eMagiz. 
@@ -41,6 +58,8 @@ Because of this loosely coupling between systems via the asynchronous five-layer
 On top of that, it gives you the option to temporarily keep data in a queue if there is a case of scheduled maintenance in one of the receiving systems. 
 The sending system can continue to send data to eMagiz and eMagiz will keep it in the queue until the scheduled maintenance is finished.
 
+##### Practice
+
 ## 4. Assignment
 
 Analyze an asynchronous messaging flow from entry to exit and determine which queues are used in the process. 
@@ -54,6 +73,8 @@ This assignment can be completed with the help of your (Academy) project you hav
 	- Systems can therefore be loosely connected
 	- Messages can temporarily be kept in the queue if an end system to which the messages need to be delivered is scheduled to go offline
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -61,4 +82,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-asynchronous.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-messaging-messaging-asynchronous.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>
