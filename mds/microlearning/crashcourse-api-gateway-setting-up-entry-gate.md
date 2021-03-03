@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Setting up entry gate
 
 In this microlearning, we will focus on setting up the entry gate for the API Gateway.
@@ -18,6 +33,8 @@ With API Gateway we mean: A collection of RESTful API operations that can be pub
 
 The entry gate is created by eMagiz without the need of any user making manual changes to the entry gate. This accelerates the building of an API Gateway solution a lot.
 
+##### Theory
+
 ## 3. Setting up entry gate
 
 The central part where all data traffic is coming in is called the entry gate when we talk about the API Gateway. 
@@ -30,6 +47,8 @@ Furthermore, every time you add a new API integration to Create eMagiz will auto
 In case you have made changes to existing operations you will have to use the Reset flow option to ensure that the latest changes are indeed actualized in the entry gate. 
 This can be done without harm as eMagiz has standardized the entry gate for you and you don't have to make changes manually.
 
+##### Practice
+
 ## 4. Assignment
 
 Add a new API integration to Create and see how eMagiz (re)creates the all entry flow for you.
@@ -41,6 +60,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - eMagiz will automatically build the all entry for you
 - No manual changes are necessary
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -49,4 +70,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-setting-up-entry-gate.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-setting-up-entry-gate.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

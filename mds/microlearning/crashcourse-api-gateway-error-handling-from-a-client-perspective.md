@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Error Handling from a Client Perspective
 
 In this microlearning, we will focus on understanding how the error handling for the API Gateway works in a general sense.
@@ -28,6 +43,8 @@ The eMagiz API Gateway will always give back HTTP Response codes along the follo
 - 500-level (Server error) — Server failed to fulfill a valid request due to an error with the server
 
 Of these levels, the 200-level for Success calls and the 400-level and 500-level are most frequently used within the context of eMagiz.
+
+##### Theory
 
 ## 3. Error Handling from a Client Perspective
 
@@ -62,19 +79,19 @@ You can imagine that doing that is not the ideal situation. Therefore eMagiz pro
 
 To do so navigate to Design and open the catalog. In the catalog select the operation for which you want to configure this and select the tab Responses
 
-<p align="center"><img src="../../img/microlearning/ml-error-handling-from-a-client-perspective--control-error-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective--control-error-message.png"></p>
 
 On this screen, you can select the button New. In the pop-up that follows you can specify the HTTP Status Code response and define the body of the message
 
-<p align="center"><img src="../../img/microlearning/ml-error-handling-from-a-client-perspective--set-response-code.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective--set-response-code.png"></p>
 
 To get even more control you can assign standard occurrences of errors while in transit to a certain HTTP Status Code. You can do so by pressing New under Custom Error Handler
 
-<p align="center"><img src="../../img/microlearning/ml-error-handling-from-a-client-perspective--custom-error-handler.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective--custom-error-handler.png"></p>
 
 Select the type, fill in the remainder of the details, and press Save. After you have updated your all entry and deployed it this new functionality will be in effect.
 
-<p align="center"><img src="../../img/microlearning/ml-error-handling-from-a-client-perspective--custom-error-handler-type.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective--custom-error-handler-type.png"></p>
 
 ### 3.4 eMagiz Monitoring
 
@@ -100,9 +117,11 @@ In case you have a transformation case you need to configure the outbound compon
 
 In the most standard case, eMagiz will auto-generate the following flow for you
 
-<p align="center"><img src="../../img/microlearning/ml-configure-exit-gate--auto-generated-flow.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-exit-gate--auto-generated-flow.png"></p>
 
 Just as with the entry gate we try to auto-generate as much as possible to make your life easier the moment you start in the Create phase.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -119,6 +138,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - eMagiz also writes errors to the log for monitoring and alerting
 - You can control the information the client receives in case of an error
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and read the following link:
@@ -129,4 +150,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-error-handling-from-a-client-perspective.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

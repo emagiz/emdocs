@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Setting up exit gate
 
 In this microlearning, we will focus on setting up the exit gate for the API Gateway.
@@ -19,6 +34,8 @@ With API Gateway we mean: A collection of RESTful API operations that can be pub
 The exit gate is created by eMagiz based on the configuration in Design. In passthrough cases, you only need to add authentication.
 In cases of transformation, you need to specify the outbound component (i.e. HTTP, Web service, JDBC, SFTP, etc.) and the authentication.
 
+##### Theory
+
 ## 3. Setting up exit gate
 
 Each backend operation has a specific exit gate that will handle all incoming traffic, connect to the backend operation and send the response back to the client that is calling the API.
@@ -37,9 +54,11 @@ In case you have a transformation case you need to configure the outbound compon
 
 In the most standard case, eMagiz will auto-generate the following flow for you
 
-<p align="center"><img src="../../img/microlearning/ml-configure-exit-gate--auto-generated-flow.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-exit-gate--auto-generated-flow.png"></p>
 
 Just as with the entry gate we try to auto-generate as much as possible to make your life easier the moment you start in the Create phase.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -55,6 +74,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - eMagiz will automatically build the biggest portion of the exit gate for you
 - Some manual changes are necessary
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -63,4 +84,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-setting-up-exit-gate.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-setting-up-exit-gate.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

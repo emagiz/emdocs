@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # HTTP Resource (Paths)
 
 In this microlearning, we will focus on learning about HTTP Resource (Paths).
@@ -31,6 +46,8 @@ If this adheres to the best practice simply use that. More on that specific rela
 A list of best practices can be found here:
 https://restfulapi.net/resource-naming/
 
+##### Theory
+
 ## 3. HTTP Resource (Paths)
 When determining the correct resource path to expose to the outside world start at what you want to make publicly available.
 For example, when you want to make it possible for external parties to retrieve a collection of orders without any filter a valid resource path can be:
@@ -49,6 +66,8 @@ https://restfulapi.net/resource-naming/
 In the following microlearning on HTTP Operations, we will bring the HTTP Resource (Paths) together with the HTTP Operations. 
 That combination is the basis for any integration that runs via the API Gateway.
 
+##### Practice
+
 ## 4. Assignment
 
 Read up on the best practices when it comes to the naming of HTTP Resource Paths and see if you can relate this to the eMagiz implementation.
@@ -59,6 +78,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - Start at the backend operation
 - Determine usability of what is provided to you
 - Take action based on that analysis
+
+##### Solution
 
 ## 6. Suggested Additional Readings
 

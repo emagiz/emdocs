@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Security
 
 In this microlearning, we will focus on securing the API Gateway. To ensure that not everyone can access the operations that you have made available you need security.
@@ -29,6 +44,8 @@ When you want to set up your security in combination with the eMagiz API Gateway
 
 All three methods can be supplemented with the requirement that a client needs to send along a client certificate when executing the call.
 
+##### Theory
+
 ## 3. Security
 
 To ensure that not everyone can access the operations that you have made available you need security.
@@ -46,7 +63,7 @@ All three methods can be supplemented with the requirement that a client needs t
 
 To choose the security measure for your API Gateway you can navigate to Design and open the context menu on API level (the API segment in the middle of the Design overview)
 
-<p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-context-menu.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-security-api-gateway--security-context-menu.png"></p>
 
 Choosing this option will lead you to the following screen. Here you can add a New security scheme or edit the existing one. 
 Take into account that you should select one security scheme that is in place for all your environments.
@@ -62,7 +79,7 @@ If not the client will receive a 401 Unauthorized
 
 Best practice is to name the header Authorization. A example of how you can configure this is:
 
-<p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-api-key.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-security-api-gateway--security-api-key.png"></p>
 
 This method is frequently used in a situation that demands less technical complexity and deals with less sensitive data. 
 An eMagiz best practice is to always combine this option with the use of a client certificate whenever possible.
@@ -77,7 +94,7 @@ As you can see this becomes a lot more complex to implement for an outside party
 Within the eMagiz Cloud, we can provide you with such an authorization server that is specifically for implementing your eMagiz API Gateway solution. 
 To configure this option simply configure the security scheme as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-open-id-connect.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-security-api-gateway--security-open-id-connect.png"></p>
 
 ### 3.3 OAuth 2.0
 
@@ -90,9 +107,11 @@ This is the most complex configuration option for a user to configure as we see 
 
 To configure this option configure the security scheme as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-security-api-gateway--security-oauth.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-security-api-gateway--security-oauth.png"></p>
 
 The exact Issuer URL and Token URL will differ based on the OAuth 2.0 provider you want to use.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -108,6 +127,8 @@ This assignment can be completed with the help of the (Academy) project that you
 	- OpenID Connect
 	- OAuth 2.0
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -116,4 +137,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-security.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-security.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

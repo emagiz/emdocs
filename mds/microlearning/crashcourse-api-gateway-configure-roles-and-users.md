@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Configure roles and users
 
 In this microlearning, we will focus on learning how you can configure roles and users for the API Gateway.
@@ -19,6 +34,8 @@ With API Gateway we mean: A collection of RESTful API operations that can be pub
 
 In eMagiz, you have a clear way to define ‘consuming’ entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
 The first part is done in Capture and Design. The second part is done in Deploy
+
+##### Theory
 
 ## 3. Configure roles and users
 
@@ -44,7 +61,7 @@ If you already have a system that also wants to 'consume' an API Gateway you don
 
 A possible solution of two separate 'consuming' systems of the same resource can be represented as follows
 
-<p align="center"><img src="../../img/microlearning/ml-configure-roles-and-users--capture-filled-in-consuming-systems.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-roles-and-users--capture-filled-in-consuming-systems.png"></p>
 
 ### 3.2 Design
 
@@ -56,7 +73,7 @@ By activating the checkbox in Design you’re telling eMagiz that this particula
 In the example below, it means that the 'consuming' system (i.e. the role) Microlearning Read Write has access to the GET HTTP Methods operation 
 whereas the 'consuming' system (i.e. the role) Microlearning Write has no access to the GET HTTP Methods operation
 
-<p align="center"><img src="../../img/microlearning/ml-configure-roles-and-users--design-handed-out-rights.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-roles-and-users--design-handed-out-rights.png"></p>
  
 ### 3.3 Deploy
 
@@ -67,7 +84,7 @@ After you have verified the settings and are satisfied with how the rights per r
 per environment by pressing the Apply to environment button.
 By pressing this button you indicate that the choices you made in Design can be actualized in Deploy for that particular environment.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-roles-and-users--deploy-apply-to-environment.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-roles-and-users--deploy-apply-to-environment.png"></p>
 
 After you have pressed the Apply to environment button you can retrieve the relevant authentication information per user under the corresponding property 
 so you can communicate this value with the external party that needs to call the API.
@@ -79,11 +96,11 @@ This method ensures that you do not mix the authentication and authorization of 
 
 After you have pressed the import button you can select for which user you want to create a User. Here you can only select those users that have access to this project. 
 
-<p align="center"><img src="../../img/microlearning/ml-configure-roles-and-users--deploy-import-portal-user.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-roles-and-users--deploy-import-portal-user.png"></p>
 
 After you have created the User you can assign roles. To Assign a role you select the freshly imported user and select the tab called Assign Roles
 
-<p align="center"><img src="../../img/microlearning/ml-configure-roles-and-users--deploy-tab-assigned-roles.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-roles-and-users--deploy-tab-assigned-roles.png"></p>
 
 Based on your needs you can give the portal user all roles or assign a subset of the roles to the portal user.
 
@@ -94,6 +111,8 @@ By pressing this button you indicate that the choices you made in Design can be 
 Read the pop-up you get after pressing this button carefully as it says what your next move is. A critical part is restarting the all entry flow.
 
 After you have restarted the all.entry flow you can test the settings via the Swagger UI which you can access via the Runtime Dashboard -> View Swagger UI. More on that in the next microlearning.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -107,6 +126,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - A 'consuming' system equals a role
 - A 'consuming' tenant or system equals a user
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -115,4 +136,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-roles-and-users.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-configure-roles-and-users.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

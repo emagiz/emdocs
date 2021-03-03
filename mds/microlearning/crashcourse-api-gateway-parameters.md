@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Parameters (Path, Query)
 
 In this microlearning, we will focus on learning about parameters that can be part of the resource path.
@@ -27,6 +42,8 @@ There are two main parameters when working with APIs:
 - Query
 	- Extension of the resource path
 	- Optional (mostly)
+
+##### Theory
 
 ## 3. Parameters (Path, Query)
 
@@ -90,36 +107,36 @@ When that is not the case however you can add and edit the path parameters to yo
 The first step is to open the API Gateway Catalog. 
 This can be done through a right-click on the API component in the center of your Design overview to select the option Edit Catalog.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--access-api-catalog-in-design.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--access-api-catalog-in-design.png"></p>
 
 Here you see an overview of all resource paths, operations, and also parameters
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design.png"></p>
 
 In case you want to add a path parameter you need to first change the resource path to identify which part of the resource path is based on the dynamic entry of a parameter value.
 In this case, we want to limit the scope of what people can retrieve when calling the HTTP methods endpoint to one specific HTTP method.
 
 To do so we select the resource path and press Edit
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-edit-resource-path.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-edit-resource-path.png"></p>
 
 In the pop-up that follows you will be able to edit the resource path accordingly. This change should result in something like this. When you are happy you can press Save.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-edit-resource-path-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-edit-resource-path-result.png"></p>
 
 The second step would be to add this parameter and link it to this resource path. You can do that on the same screen. On the right side of the screen, you have the parameters tab
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameters.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameters.png"></p>
 
 By pressing the button new you can add your parameter with the help of the following pop-up.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameter-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameter-config.png"></p>
 
 The crucial element in this pop-up is the name of the parameter. That should match with the name of the parameter you have changed in the resource path itself. In this example that would be: method
 
 The rest is correct by default. For illustrative purposes, it would be good to add an example of a value that is expected. Save when ready
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameter-config-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameter-config-result.png"></p>
 
 If you want to change something simply select the parameter and press Edit to edit the parameter
 
@@ -128,29 +145,30 @@ When that is not the case however you can add and edit the query parameters to y
 The first step is to open the API Gateway Catalog. 
 This can be done through a right-click on the API component in the center of your Design overview to select the option Edit Catalog.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--access-api-catalog-in-design.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--access-api-catalog-in-design.png"></p>
 
 Here you see an overview of all resource paths, operations, and also parameters
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design.png"></p>
 
 In the case of a path parameter, we needed to specify where in the path it would end up. 
 For query parameters, we don't need to do so because they are always an extension of the resource path at the **end** of a resource path.
 
 On the right side of the screen, you have the parameters tab
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameters.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameters.png"></p>
 
 By pressing the button new you can add your parameter with the help of the following pop-up.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameter-config.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameter-config.png"></p>
 
 To add a query parameter you give the parameter a name here and you select the option Query instead of Path. An example of this filled-in looks as follows.
 
-<p align="center"><img src="../../img/microlearning/ml-api-gateway-parameters--api-catalog-in-design-parameter-config-result-query.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-api-gateway-parameters--api-catalog-in-design-parameter-config-result-query.png"></p>
 
 If you want to change something simply select the parameter and press Edit to edit the parameter
 
+##### Practice
 
 ## 4. Assignment
 
@@ -172,6 +190,8 @@ To summarize the difference between path and query parameters:
 - Path parameters are always mandatory whereas query parameters are mostly optional
 - Path parameters narrow the scope down to a single iteration whereas query parameters offer you the option to filter a result set
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -180,4 +200,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-api-gateway-parameters.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-api-gateway-parameters.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

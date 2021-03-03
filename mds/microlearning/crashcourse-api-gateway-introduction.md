@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # API Gateway - Introduction
 
 In this microlearning, we will introduce the key concepts of the API Gateway as eMagiz provides this capability.
@@ -35,6 +50,7 @@ Other considerations or keynotes when to use an API Gateway are:
 - Dependency between developments should be reduced - less coupled services 
 - Access to the same data can come in from many different systems
 
+##### Theory
 
 ## 3. Managing your API Gateway in the ILM
 The API Gateway is fully embedded into the eMagiz Low-code Enterprise iPaaS so that users have a similar user experience when configuring the API Gateway, a Messaging integration, or an Event Stream. All the platform features in the different ILM phases can take into account the API Gateway configuration. What is important to realize is that the primary focus of the API Gateway configuration is to allow all configuration work to take place in the Design phase. You will find out that most or often all the Create models are automatically generated. Only in specific cases where specific customization is required, the created objects can be modified. Newly created Designs could result in the rework of the customization in the Create object. 
@@ -68,6 +84,8 @@ These components can be made part of the Release and Deployment plans. The Deplo
 **5. Manage phase specific to the API Gateway**
 In this phase, everything works as usual. Error messages of eMagiz will be routed in the Error messages, and the queue statistics are available as a separate entry in the left-hand menu. 
 
+##### Practice
+
 ## 4. Assignment
 
 Review the video below to ensure all concepts are clear
@@ -75,6 +93,8 @@ Review the video below to ensure all concepts are clear
 ## 5. Key takeaways
 
 eMagiz provides an integrated API Gateway in the platform that holds all the required features and is integrated into the overall way of work and cloud architectures of the platform.
+
+##### Solution
 
 ## 6. Suggested Additional Readings
 
@@ -87,3 +107,8 @@ If you are interested in this topic and want more information on it please read 
 This video provides an introduction to the API Gateway of eMagiz
 
 <iframe width="1907" height="1073" src="https://www.youtube.com/embed/8TBXq9SVdL8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>
