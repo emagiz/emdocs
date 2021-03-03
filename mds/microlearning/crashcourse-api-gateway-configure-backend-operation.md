@@ -98,7 +98,7 @@ The next step will be to add an operation via the option New under Operations in
 
 As there are no parameters in this case you have now successfully configured your first backend operation. When you close this screen you will see the results on system level
 
-<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-backend-manage--pop-up-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-backend--pop-up-result.png"></p>
 
 Now you can Save or add another operation to add to your specification.
 

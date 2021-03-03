@@ -54,7 +54,7 @@ In this section we will discuss how you can create, delete and/or edit propertie
 
 In the Deploy phase of eMagiz there is a overview page called Properties. This is the main overview from which you can do property management and therefore gives you the most functionality.
 
-<p align="center"><img src="../../img/microlearning/ml-property-management--properties-overview-deploy.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-property-management--properties-overview-deploy.png"></p>
 
 As you can see from the screenshot above you can create properties via the New button, Edit properties via the Edit button and Delete properties via the delete button.
 To make life a little bit easier in this overview there are various entities you can search on (i.e. Is Global, Runtime, Name and Value)
@@ -72,11 +72,11 @@ This means that when someone else restarts a flow using a property a couple seco
 Another overview in the Deploy phase of eMagiz is the Properties TAP overview. This is a re-imagination of the properties in the properties view based on the environments.
 This means that in this overview you can see all properties over all environments (assuming you have sufficient rights to see properties across environments).
 
-<p align="center"><img src="../../img/microlearning/ml-property-management--property-tap-overview-deploy.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-property-management--property-tap-overview-deploy.png"></p>
 
 With the help of this overview you can easily compare values between environment but you can also see easily whether a property already exists on Test but not yet on Acceptance and/or Production.
 
-<p align="center"><img src="../../img/microlearning/ml-property-management--property-tap-overview-deploy-filtered.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-property-management--property-tap-overview-deploy-filtered.png"></p>
 
 When you have sufficient rights to edit properties across environments you can edit the values of properties in Test, Acceptance and Production without having to switch to a different environment.
 
@@ -89,7 +89,7 @@ This means that when someone else restarts a flow using a property a couple seco
 A third overview in the Deploy phase of eMagiz gives you the option to link properties to a certain release **on a certain environment**.
 This gives you the option to prepare the list of new properties and property values that need to be changed before you do the deployment and linked them directly to the release.
 
-<p align="center"><img src="../../img/microlearning/ml-property-management--set-release-properties-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-property-management--set-release-properties-overview.png"></p>
 
 Due to the fact that the properties are now linked to a Release it means that the creation and or changing of said properties is dependent on the moment you set the release active.
 In other words, the moment you deploy your new release or select the option Set Release as Active eMagiz will automatically update the property overview based on your new configuration.
@@ -129,7 +129,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-property-management.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-deploy-property-management.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
