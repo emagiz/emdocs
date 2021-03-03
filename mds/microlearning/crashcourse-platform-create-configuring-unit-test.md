@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Configuring a Unit Test
 
 In this microlearning we will focus on configuring a unit test.
@@ -21,6 +36,8 @@ In this right panel there is a button called Add Test. By pressing this button y
 
 The moment you already have unit tests available within the context of your flow you can edit these by selecting the edit icon on that specific unit test.
 
+##### Theory
+
 ## 3. Configuring a Unit Test
 
 Configuration of a unit test can happen on two occassions. On the one hand you want to add a new unit test to test a scenario for which you have not yet a unit test available. 
@@ -34,11 +51,11 @@ After you have opened the flow you should press the button on the bottom bar cal
 In this overview you will see the flow as you have build it and in the right hand panel there is a button located called Add test. 
 By pressing this button you add a new unit test to the context of the flow on which you are currently working on.
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--add-test-button.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--add-test-button.png"></p>
 
 After you have pressed this button a new entry in your list of unit tests will appear. Obviously when your list is still empty this will be your first entry, congrats!
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--added-a-test.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--added-a-test.png"></p>
 
 As you can see from the picture above you are now in a mode ready to configure your unit test.
 
@@ -49,23 +66,23 @@ To properly configure a unit test you should follow these steps:
 - If available and relevant for your scenario select the test message that embodies the expected outcome of the scenario you want to test. Be aware this is an optional step.
 - When you are content with your selection press Done.
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--selecting-the-input.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--selecting-the-input.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--selected-input-output.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--selected-input-output.png"></p>
 
 As you can see from the picture above the view has changed again. To finish the configuration please add a descriptive name to the unit test. This way you and others that work with you can keep them apart.
 
 To enter a name of the unit test you simply hover over the just created unit test on the point just before the - icon and click on the edit icon (pencil)
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entering-a-name.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entering-a-name.png"></p>
 
 This action makes it possible for you to enter a name. As mentioned before keep the name as descriptive as possible. For an example see below.
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entered-a-name.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entered-a-name.png"></p>
 
 The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
 
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-test-message-icon.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-icon.png"></p>
 
 When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit.
 If you are satisfied with your name simply select the checkmark icon. In case you have doubts or want to cancel press the X icon.
@@ -78,22 +95,22 @@ Apart from Adding a Unit test you can also edit a unit test if you for example w
 
 To edit the name of the unit test you simply hover over the just created unit test on the point just before the - icon and click on the edit icon (pencil)
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entering-a-name.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entering-a-name.png"></p>
 
 This action makes it possible for you to enter a name. As mentioned before keep the name as descriptive as possible. For an example see below.
 
-<p align="center"><img src="../../img/microlearning/ml-configuring-a-unit-test--entered-a-name.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entered-a-name.png"></p>
 
 The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
 
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-test-message-icon.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-icon.png"></p>
 
 When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit.
 If you are satisfied with your name simply select the checkmark icon. In case you have doubts or want to cancel press the X icon.
 
 To edit the input and/or output message that will be used in your unit test you press the Edit button
 
-<p align="center"><img src="../../img/microlearning/ml-editing-test-messages--edit-input-output.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-input-output.png"></p>
 
 After you have pressed this button you can select another input (and/or output) message just as we have learned in the Add a unit test segment.
 
@@ -105,6 +122,8 @@ Sometimes you even want to get rid of certain unit test. Maybe they have become 
 Whatever the reason may be you can remove a unit test from the list of unit tests that is linked to the flow.
 
 To do so simply press the Remove button for the unit test that you want to remove. After you pressed this button the unit test is gone from the list.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -121,6 +140,8 @@ The second unit test should have as input a minimal representation of the system
 - Selecting an input message is mandatory
 - Selecting an output message is optional
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
@@ -129,4 +150,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-configuring-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

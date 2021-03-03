@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Configure a system
 
 In this microlearning, we will focus on learning how to configure a system. 
@@ -20,6 +35,8 @@ To configure a system you need the following:
 - The name of the system
 - Basic information about the system
 
+##### Theory
+
 ## 3. Configure a system
 
 As specified before with configure we mean adding, editing, and/or deleting a system. Below we will detail per action what you should do.
@@ -28,9 +45,9 @@ As specified before with configure we mean adding, editing, and/or deleting a sy
 
 To add a system simply drop the system (regular or multi-tenant) on the canvas
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-system--drag-system-on-canvas-start.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-system--drag-system-on-canvas-start.png"></p> 
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-system--drag-system-on-canvas.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-system--drag-system-on-canvas.png"></p> 
 
 After you have released the system in the correct place you will immediately be presented with the following pop-up. In this pop-up fill in the following elements:
 
@@ -41,7 +58,7 @@ After you have released the system in the correct place you will immediately be 
 
 When you fill in these elements you have registered the relevant meta-information for yourself and others to relate to the system in question
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-system--fill-in-system-details.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-system--fill-in-system-details.png"></p>
 
 If you are satisfied with your work you can update the status and press Save.
 
@@ -51,7 +68,7 @@ To edit a system you simply double click on the system (or edit it via the conte
 
 For example, you could change the Status to Done or add a Remark. Editing a system can be done without impact at any given moment as you only edit descriptive fields.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-system--edit-system-details.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-system--edit-system-details.png"></p>
 
 ### 3.3 Deleting a system
 
@@ -65,7 +82,9 @@ The specifics of those situations will be discussed in a separate microlearning.
 
 To delete a system in such a scenario you can simply open the context menu and press Delete system and press OK on the confirmation pop-up.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-system--delete-a-system.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-system--delete-a-system.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -79,6 +98,8 @@ This assignment can be completed with the help of an associated Mendix project l
 - Editing system information can be done at any given time without impact on other ILM phases
 - Deleting a system can only be done (without special steps in preparation) when the system has **not** yet been transferred to Create or has been untransferred from Create.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -87,4 +108,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-system.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-capture-configure-a-system.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

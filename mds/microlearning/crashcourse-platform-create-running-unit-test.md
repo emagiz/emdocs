@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Running a Unit Test
 
 In this microlearning we will focus on running a unit test.
@@ -21,22 +36,24 @@ In this right panel there is a button available per configured unit test. This b
 
 After you have pressed the Run Test button and there are properties used in your flow you should fill these in otherwise your unit test will fail.
 
+##### Theory
+
 ## 3. Running a Unit Test
 
 You can simple run a unit test by pressing the Run test button. After this eMagiz will show you the following popup. 
 In case properties are used in the flow you are about to test you need to add values for these properties.
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--run-test-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--run-test-popup.png"></p>
 
 Adding properties is relatively simple. You can Edit the value (meaning you only want to use this value for this particular unit test) 
 or you can define a default value that will be used in all unit tests. 
 In both cases you first select the data type (i.e. String) and subsequently fill in the value of the property. Be aware that currently the value of a property cannot exceed 200 characters.
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--adding-a-property-value.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--adding-a-property-value.png"></p>
 
 After you have done so the result should look something along what is shown below.
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--added-a-property-value.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--added-a-property-value.png"></p>
 
 Whether you have properties or not just press Run Test (Note: When you are the first of the day using the functionality the Unit Testing bus needs to wake up. Therefore it can take a while until you get a result)
 
@@ -53,12 +70,12 @@ Let’s look into these two ways with a little bit more detail
 As specified before the color of the background is a quick indicator to the user telling the user if the executed test was successful or not. If the background turns red it means the test was not successful. 
 Be aware, when you do not define an expected outcome the result of the test will always be a fail and therefore the color will also be red. For an example see below
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--unsuccessful-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--unsuccessful-result.png"></p>
 
 After you have specified the expected outcome of the flow the screen will turn green if the actual result equals (in every detail) the expected outcome. 
 If the actual message does not match the expected outcome the background will turn red. See below for a green result!
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--successful-result.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--successful-result.png"></p>
 
 #### 3.1.2 State of message throughout the flow
 eMagiz will also give you feedback on how the message looks like in every component of the flow it passed. 
@@ -67,9 +84,11 @@ Below is an example of comparing the input and output of the transformation comp
 In here you can see in detail what the transformation has done. 
 This way you can determine whether the change you have just made was indeed successful.
 
-<p align="center"><img src="../../img/microlearning/ml-running-a-unit-test--comparison-between-stages.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-running-a-unit-test--comparison-between-stages.png"></p>
 
 Congratulations, you have successfully learned how to implement a unit test within eMagiz and run it in order for you to develop more effectively and more robust.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -84,6 +103,8 @@ This assignment can be completed within a onramp or offramp flow within your (Ac
 	- background color
 	- state of message
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
@@ -92,4 +113,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-running-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-running-a-unit-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

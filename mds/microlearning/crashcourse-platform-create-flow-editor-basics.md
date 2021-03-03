@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Flow Editor - Basics
 A central part of building your integration in eMagiz is the flow editor. In here you can see what is actually happening in the flow to make the intented process work as you would expect.
 To make your life easier eMagiz will generate a starting point for you based on your configuration choices in Design so you don't start with a complete blank canvas.
@@ -17,6 +32,8 @@ Should you have any questions, please contact academy@emagiz.com.
 This micro learning focuses on the flow editor.
 
 With flow editor we mean: The canvas in Create that allows you to edit the functionality of a flow
+
+##### Theory
 
 ## 3. Flow Editor - Basics
 A central part of building your integration in eMagiz is the flow editor. In here you can see what is actually happening in the flow to make the intented process work as you would expect.
@@ -43,7 +60,7 @@ To connect each of these components together you use channels that connect one c
 ### 3.1 Inbound
 All inbound components represent the input of your flow (i.e. the starting point). Inbound components can be identified through the green color of the components
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--inbound-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--inbound-components.png"></p>
 
 Via these components the flow either **receives** or **retrieves** data from a external source. The inbound components most frequently used are:
 
@@ -60,7 +77,7 @@ The file inbound channel adapter **retrieves** messages from a specific location
 ### 3.2 Outbound
 All outbound components represent the output of the flow (i.e. the end point). Outbound components can be identified through the white color with a green border.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--outbound-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--outbound-components.png"></p>
 
 Via these components the flow either **sends** or **retrieves** data to/from a external source. The outbound components most frequently used are:
 
@@ -79,7 +96,7 @@ The Kafka outbound channel adapter **sends** data to a topic.
 All standard transformations as created as part of the message mapping in Design are automatically transferred and correctly linked to the flow in Create. So that is easy. 
 In all other cases you will have to add a transformation component to the flow. These components are identifiable as blue rectangles in eMagiz
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--transformation-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--transformation-components.png"></p>
 
 The two most often use cases of a transformation component are:
 
@@ -90,9 +107,9 @@ We will talk more on the former later in this course.
 The latter gives you the option to add pieces of metadata to the data that you are processing (i.e. where does it come from, what is it about, where should it go to).
 To do so you can add a Custom header with name and value to the standard enricher component that will be stored on message level.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--standard-header-enricher-component.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--standard-header-enricher-component.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--standard-header-enricher-component-name-value.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--standard-header-enricher-component-name-value.png"></p>
 
 Some other transformation components that are used are:
 
@@ -104,7 +121,7 @@ Some other transformation components that are used are:
 In eMagiz you can split messages based on the input message. 
 If a input message contains a list you can make seperate messages based on each entry in the list with the help of a splitter. These components are identifiable as blue trapeziums in eMagiz.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--splitter-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--splitter-components.png"></p>
 
 We will discuss the splitter components in more detail in a later microlearning.
 
@@ -112,7 +129,7 @@ We will discuss the splitter components in more detail in a later microlearning.
 In eMagiz you can filter messages based on certain criteria a message should adhere to. If a input message does not fit the criteria it will be filtered out. 
 The failure of matching the criteria can lead to silently dropping messages or could lead to an error (the decision is yours). These components are identifiable as yellow pentagons in eMagiz.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--filter-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--filter-components.png"></p>
 
 There are three filter components available of which the XML validating filter is used most often:
 
@@ -129,7 +146,7 @@ In a standard filter or XPath filter you could filter on information in the body
 In eMagiz you can route messages based on criteria. The content to verify if the criteria are met can be either stored in headers or in the body itself.
 These components are identifiable as yellow diamonds in eMagiz.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--router-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--router-components.png"></p>
 
 There are several router components in eMagiz. The ones that are most used are:
 
@@ -141,14 +158,14 @@ As most of the use cases for incorporating a router component on flow level with
 ### 3.7 Support
 In eMagiz support objects can be linked to a functional component to aid the working of that component. These components are identifiable through the grey color of the components
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--support-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--support-components.png"></p>
 
 We will discuss the support components in more detail in a later microlearning.
 
 ### 3.8 Channel
 To connect all these components together (except for the support objects) we need channels. A channel makes sure that the output of component A is send to component B for further processing.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--channel-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--channel-components.png"></p>
 
 Each channel should be given a descriptive name so you and others you work with know what the channel is used for.
 
@@ -156,12 +173,14 @@ Each channel should be given a descriptive name so you and others you work with 
 eMagiz also offers you the option to add a annotation and link it to one or more components. 
 This way you can make it explicit for yourself and others what is exactly happening in those components and why you have opted for a certain option.
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--annotation-components.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--annotation-components.png"></p>
 
 ### 3.10 The Combination
 Combining this altogether results in a flow with atleast a input and output component helped by several support objects. A example of how a working flow looks like is:
 
-<p align="center"><img src="../../img/microlearning/ml-flow-editor-basics--working-flow.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-flow-editor-basics--working-flow.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -175,6 +194,8 @@ This assignment can be completed within the (Academy) project that you have crea
 - A flow needs to have atleast a input and output component paired with the default support objects
 - Every component has a specific function and there are a lot of them
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz or browse through the reference guide to see which components eMagiz offers.
@@ -183,4 +204,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-flow-editor-basics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-flow-editor-basics.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

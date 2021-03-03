@@ -1,26 +1,19 @@
-# Configure an integration
-
 <div class="ez-academy">
 	<div class="ez-academy__body">
-		<main class="master">
-		<!-- <div class="dropdown">
-<select class="dropdown__dropdown">
-<option value="from-business-to-it-with-emagiz">From Business to IT with eMagiz</option>
-    <option value="getting-the-technical-requirements" onclick="window.location.href='../../docs/microlearning/index-crashcourse-messaging';">Getting the technical requirements</option>
-    <option value="moving-onto-the-next-step">Moving onto the next step</option>    
-</select>
-<div class="dropdown__nav">
-<a href="" class="dropdown__previous"><img src="../../img/icon-previous32.svg"/></a>
-<a href="" class="dropdown__next"><img src="../../img/icon-next32.svg"/></a></div>
-</div> -->
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
 
-<ul class="doc-nav">
-    <li class="doc-nav__item"><a href="/docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
-    <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-    <li class="doc-nav__item"><a href="#3-configure-a-integration" class="doc-nav__link">Theory</a></li>
-    <li class="doc-nav__item"><a href="#4-assignment" class="doc-nav__link">Practice</a></li>
-    <li class="doc-nav__item"><a href="#7-silent-demonstration-video" class="doc-nav__link">Solution</a></li>
-</ul>
+<div class="doc">
+
+##### Intro
+
+# Configure an integration
 
 In this microlearning, we will focus on learning how to configure an integration. 
 Configuring the integration itself is the third and final step in designing an integration within eMagiz
@@ -45,6 +38,8 @@ To configure an integration you need the following:
 - Content information (what are you going to exchange)
 - Security information (how are you going to secure the data exchange)
 
+##### Theory
+
 ## 3. Configure an integration
 
 As specified before with configure we mean adding, editing, and/or deleting an integration. Below we will detail per action what you should do.
@@ -53,21 +48,21 @@ As specified before with configure we mean adding, editing, and/or deleting an i
 
 To add an integration you simply drag a line from or to a system on the canvas
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--drag-message-type-on-canvas-start.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--drag-message-type-on-canvas-start.png"></p> 
 
 After you have connected the system to eMagiz (located in the center) you will immediately be presented with the following pop-up. In this pop-up you have a choice to make:
 
 - Re-use a message type (in case another system already supplies Orders and you want to send these Orders to another system for example)
 - Add a new message type
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-first-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--new-message-type-first-popup.png"></p>
 
 In case you want to add a new message type, please study the microlearning **Configure a message type**.
 
 In this microlearning, we will assume that the message type you want to use for this particular integration is already available within your eMagiz project.
 Therefore we will select the message type Configure a message type from the drop-down menu
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--select-message-type.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--select-message-type.png"></p>
 
 ### 3.2 Editing a integration
 
@@ -76,7 +71,7 @@ Editing an integration means filling in the detailed information belonging to th
 Filling in the detailed information in Capture helps you to better Design, Create, Deploy and Manage your integration.
 This detailed information is available when you double click on the line you have just drawn (or select the Edit integration option via the context menu).
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--edit-integration-context-menu.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--edit-integration-context-menu.png"></p>
 
 After you have selected the integration a pop-up will be shown. This pop-up is divided into five segments:
 
@@ -90,7 +85,7 @@ After you have selected the integration a pop-up will be shown. This pop-up is d
 This segment answers several general questions surrounding this integration. 
 If you have correctly added the message type you will notice that these questions are already filled at the moment you open them. 
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--edit-message-type-general.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--edit-message-type-general.png"></p>
 
 The moment you want to change an answer given earlier on these questions this is the place to do so.
 
@@ -106,7 +101,7 @@ In this segment you will answer questions on:
 
 If you have filled in all this information you have learned a lot about how you need to Design and Create your integration.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--edit-message-type-message-transport.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--edit-message-type-message-transport.png"></p>
 
 #### 3.2.3 Message Content
 The third segment is focused on the content of the message. 
@@ -119,13 +114,13 @@ In this question you can add various documents retrieved from the external party
 
 You can do so by adding attachments to this specific implementation of the message type.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--add-example-message-attachment.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--add-example-message-attachment.png"></p>
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--add-xsd-attachment.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--add-xsd-attachment.png"></p>
 
 All attachments linked to this specific implementation of the message type are shown in a grid on this third segment.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--message-content-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--message-content-overview.png"></p>
 
 #### 3.2.4 Security
 
@@ -135,26 +130,28 @@ In the example we are working out the external party will send data to eMagiz vi
 Therefore the Security details should reflect the way eMagiz will secure this connection to make sure that the integrity of the data is not comprised. 
 The best practice for **SOAP** Webservices is an API Key + Client certification for client authentication.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--security-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--security-overview.png"></p>
  
 #### 3.2.5 Remarks
 The fifth and last segment is called Remarks. In this segment, you can add everything you want. 
 For example, you could add your notes of meetings with the business that will help your fellow developer to actually build the solution in Create.
  
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--remarks-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--remarks-overview.png"></p>
 
 The moment you are satisfied with the information registered in Capture on integration level you can switch the status of the integration to done.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--set-status-done.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--set-status-done.png"></p>
 
 ### 3.3 Deleting a integration
 
 Deleting an integration can be done with the help of the context menu on integration level. If you right-click on the line you have just finished you will see an option Delete Integration.
 Selecting that option will delete your integration.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-integration--delete-integration.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--delete-integration.png"></p>
 
 Be aware that you can only delete an integration if the integration is not part of the Create phase (anymore).
+
+##### Practice
 
 ## 4. Assignment
 
@@ -169,6 +166,8 @@ This assignment can be completed with the help of an associated Mendix project l
 - Filling in the detailed information in Capture helps you to better Design, Create, Deploy and Manage your integration.
 - Deleting an integration can only be done **after** the integration has been untransferred from Create (or never existed in Create in the first place)
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -177,7 +176,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-integration.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-capture-configure-a-integration.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </main>
 </div>
 </div>

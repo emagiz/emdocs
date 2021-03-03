@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Using a tag
 
 In this microlearning we will focus on using a tag. 
@@ -17,6 +32,8 @@ This microlearning centers around using a tag.
 With using we mean: Utilizing functionality to assist the user in achieving their goal
 With tag we mean: A label under which you can group a set of systems and/or integrations
 
+##### Theory
+
 ## 3. Using a tag
 
 As specified before with uszing we mean utilizing functionality to assist the user in achieving their goal. 
@@ -28,17 +45,19 @@ After you have added a tag and linked it to one or more systems and integrations
 
 The starting point of this illustrative example is the Capture Overview. As you can see in the picture below you see all integrations and systems in Capture of your eMagiz project.
 
-<p align="center"><img src="../../img/microlearning/ml-using-a-tag--capture-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-using-a-tag--capture-overview.png"></p>
 
 The moment you select the tag called Sprint 1 (which identifies our scope) you will see that the overview only shows the relevant systems and integrations.
 
-<p align="center"><img src="../../img/microlearning/ml-using-a-tag--capture-overview-sprint-1.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-using-a-tag--capture-overview-sprint-1.png"></p>
 
 The same happens when you select the tag called Event Stream (which identifies a pattern).
 
-<p align="center"><img src="../../img/microlearning/ml-using-a-tag--capture-overview-event-stream.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-using-a-tag--capture-overview-event-stream.png"></p>
 
 Good to know that these tags are also available in all other ILM phases to help you get a better overview of your integration landscape.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -53,6 +72,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - With tagging you can make several overviews based on the standard overview created by eMagiz
 - Tags are available in all ILM phases to create a overview
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -61,4 +82,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-using-a-tag.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-capture-using-a-tag.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

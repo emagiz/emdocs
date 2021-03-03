@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Configure a message type
 
 In this microlearning we will focus on learning how to configure a message type. 
@@ -21,6 +36,8 @@ To configure a message type you need the following:
 - The name of the message type
 - Basic information about the message type
 
+##### Theory
+
 ## 3. Configure a message type
 
 As specified before with configure we mean adding, editing and/or deleting a message type. Below we will detail per action what you should do.
@@ -29,18 +46,18 @@ As specified before with configure we mean adding, editing and/or deleting a mes
 
 To add a message type you simply drag a line from or to a system on the canvas
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--drag-message-type-on-canvas-start.png"></p> 
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--drag-message-type-on-canvas-start.png"></p> 
 
 After you have connected the system to eMagiz (located in the center) you will immediately be presented with the following pop-up. In this pop-up you have a choice to make:
 
 - Re-use a message type (in case another system already supplies Orders and you want to send these Orders to another system for example)
 - Add new message type
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-first-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--new-message-type-first-popup.png"></p>
 
 In this case we will choose the option New message type. Selecting this option will lead to a second pop-up
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-second-popup.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--new-message-type-second-popup.png"></p>
 
 In this pop-up you need to fill in the correct details regarding your message type. The critical ones are:
 
@@ -63,22 +80,22 @@ and could be the reason you are surprised by problems in a Production environmen
 
 See below for a example of how to fill this information in a clear manner
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-second-popup-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--new-message-type-second-popup-filled-in.png"></p>
 
 If you are satisfied with your work you can press Save. This action will lead you back to the first pop-up with a distinctive difference, the message type is filled in.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--new-message-type-first-popup-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--new-message-type-first-popup-filled-in.png"></p>
 
 If everything is okay you can press Save and as a result eMagiz will update the Capture overview
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--updated-capture-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--updated-capture-overview.png"></p>
 
 #### 3.2.2 Editing a message type
 
 To edit this general set of information on message type level navigate to **Capture -> Settings -> Message Types**. In this overview you see all message types related to your eMagiz project.
 In here you can search for the message type you want to Edit, select it and press Edit.
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--edit-message-type-in-message-type-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--edit-message-type-in-message-type-overview.png"></p>
 
 In here you can change the information you have first filled in when you wanted to create a new message type. 
 As a message type can de re-used over multiple integrations (lines in Capture) be carefull what you change here as it will automatically update the information on integration level.
@@ -90,16 +107,18 @@ Furthermore we strongly advice not to change the technical name of a message typ
 Deleting a message type can be done after you have deleted all integrations that make use of the message type. 
 Therefore in order to delete a message type you first need to delete all integrations (lines) in Capture that make use of your message type
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--delete-integration.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--delete-integration.png"></p>
 
 Be aware that you can only delete a integration if the integration is not part of the Create phase (anymore).
 
 After you have done this you can navigate to **Capture -> Settings -> Message Types**. In this overview you see all message types related to your eMagiz project.
 In here you can search for the message type you want to Delete, select it and press Delete. 
 
-<p align="center"><img src="../../img/microlearning/ml-configure-a-message-type--message-type-overview.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-message-type--message-type-overview.png"></p>
 
 If you have deleted all integrations correctly the message type will be removed.
+
+##### Practice
 
 ## 4. Assignment
 
@@ -114,6 +133,8 @@ This assignment can be completed with the help of a associated Mendix project li
 - Editing information on message type level also edits information on integration level
 - Deleting a message type can only be done **after** all integrations have been deleted.
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
@@ -122,4 +143,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-configure-a-message-type.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-capture-configure-a-message-type.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>

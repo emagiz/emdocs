@@ -1,3 +1,18 @@
+<div class="ez-academy">
+	<div class="ez-academy__body">
+		<main class="micro-learning">
+		<ul class="doc-nav">
+			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+		</ul>
+
+<div class="doc">
+
+##### Intro
+
 # Splitting messages
 Sometimes you receive or need to retrieve a batch file of data containing a large number of iterations on the same object (i.e Project, Employee, Order, Invoice, etc.)
 that you want or need to process individually from one another. To do so you can use the splitter functionality of eMagiz to split the incoming messages into multiple messages.
@@ -17,6 +32,8 @@ This microlearning focuses on splitting messages.
 
 With splitting messages we mean: Cutting up the input messages in multiple output messages with the same format
 
+##### Theory
+
 ## 3. Splitting messages
 Sometimes you receive or need to retrieve a batch file of data containing a large number of iterations on the same object (i.e Project, Employee, Order, Invoice, etc.)
 that you want or need to process individually from one another. To do so you can use the splitter functionality of eMagiz to split the incoming messages into multiple messages.
@@ -25,7 +42,7 @@ There are two split options available on flow level in eMagiz:
 - Standard splitter
 - Xpath splitter
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--splitter-options-flow.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--splitter-options-flow.png"></p>
 
 In this microlearning, we will turn our attention to the Xpath splitter as that option is used in 99% of the cases we encounter when someone wants to split a message.
 With the help of the Xpath splitter, you can split the message based on the result of an Xpath expression.
@@ -43,14 +60,14 @@ That is a crucial point in quickly getting the right XPath for the job
 
 In this use case, we want to split our list of Projects into single Project messages that will validate against our system message.
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--splitter-system-message.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--splitter-system-message.png"></p>
 
 To do so we need to place an XPath splitter before validating the system message. 
 As a reminder, the best practice is that after every mutation on the message level you validate to check your work.
 
 On flow level the solution therefore would look as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--splitter-flow-level-solution.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--splitter-flow-level-solution.png"></p>
 
 Now it becomes time for the crucial part of this component. Determining the correct XPath to split my message to end up with a valid system message.
 To be able to determine the correct XPath we need to know:
@@ -61,7 +78,7 @@ To be able to determine the correct XPath we need to know:
 Let us first determine what the structure of the input message is. In most cases, you can derive this from the documentation supplied by the external party. 
 In this case the structure is provided by us:
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--splitter-input-message-structure.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--splitter-input-message-structure.png"></p>
 
 Furthermore, we give you an example of how such an input message could look like:
 
@@ -90,7 +107,7 @@ In this example, no namespace is used. We conclude this based on two things:
 No, that we have all the information we need to determine the correct XPath let us take a look at the component to see what and how we need to fill in the XPath expression. 
 Double click on the splitter component to access the following pop-up
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--xpath-splitter-pop-up.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--xpath-splitter-pop-up.png"></p>
 
 As you can see the component needs to know the correct XPath expression and needs to know whether a namespace is used. 
 As we don't have a namespace in this example it becomes less complicated to figure out the correct XPath.
@@ -104,7 +121,7 @@ So we need to continue with our navigation into the next element in our input st
 This means that the Xpath will be: /Projects/Project. This is also the desired result of our XPath expression 
 as this will split on Project level giving us three separate and valid system messages.
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--xpath-splitter-pop-up-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--xpath-splitter-pop-up-filled-in.png"></p>
 
 ### 3.2 Variations
 The above XPath expression is not the only expression that will yield a correct result. 
@@ -117,7 +134,9 @@ This wildcard option states that all namespaces and namespace prefixes are valid
 
 Incorporating such a wildcard within our initial XPath would look as follows:
 
-<p align="center"><img src="../../img/microlearning/ml-splitting-messages--xpath-splitter-pop-up-filled-in-wildcard.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-splitting-messages--xpath-splitter-pop-up-filled-in-wildcard.png"></p>
+
+##### Practice
 
 ## 4. Assignment
 
@@ -132,6 +151,8 @@ This assignment can be completed within the (Academy) project that you have crea
 	- Whether the input messages has a namespace
 	- Always start at the root of the input message when writing an XPath outside of the transformation
 
+##### Solution
+
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and read the info on the following links:
@@ -141,4 +162,9 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/microlearning-splitting-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-splitting-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</main>
+</div>
+</div>
