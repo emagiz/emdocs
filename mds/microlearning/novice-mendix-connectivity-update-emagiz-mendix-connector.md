@@ -13,7 +13,7 @@
 
 ##### Intro
 
-# Update a eMagiz Mendix Connector
+# Update an eMagiz Mendix Connector
 
 In this microlearning, we will focus on updating an eMagiz Mendix Connector. 
 With the help of this Mendix module created by the eMagiz team, you can easily connect between Mendix and eMagiz for data integration.
@@ -39,7 +39,7 @@ To update an eMagiz Mendix Connector you need the following:
 
 ##### Theory
 
-## 3. Update a eMagiz Mendix Connector
+## 3. Update an eMagiz Mendix Connector
 
 To update the eMagiz Mendix Connector in a Mendix app, the following steps need to be performed.
 

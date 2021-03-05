@@ -56,7 +56,7 @@
             </div>
         </a>
         </li>
-<li class="strip">
+		<li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-impact-message-history-on-message-size" class="strip__link">
             <label for="" class="strip__label">
                 <span>2</span>

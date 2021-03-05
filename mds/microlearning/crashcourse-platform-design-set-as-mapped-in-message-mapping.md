@@ -45,11 +45,11 @@ To register that we want to use a static input we have to press Start Editing to
 
 After that we navigate to the attribute in question, right mouse click and set as mapped.
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-set-as-mapped-context-menu.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-set-as-mapped-context-menu.png"></p>
 
 To indicate that a certain attribute has been registered as set as mapped eMagiz will show a cube icon in front of the attribute
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-set-as-mapped.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-set-as-mapped.png"></p>
 
 As you can see, all mandatory elements have been mapped with the help of our message mapping. Therefore we can conclude that the message mapping is done.
 
@@ -59,16 +59,16 @@ As you can see, all mandatory elements have been mapped with the help of our mes
 A nice addition to the functionality surrounding message mapping is that you can add notes to tell others if a certain mutation on the input field is necessary or what the static input should be.
 You can add a note by right clicking on the attribute and selecting the option New/Edit Note
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-add-note.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note.png"></p>
 
 Selecting this option will lead you to the following pop-up. In this pop-up you can fill in some information that can help others that will create the transformation later on in Create.
 A example of such an entry would be:
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-filled-in.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-filled-in.png"></p>
 
 After you have saved the note a icon will appear on the attribute letting you and others know that some notation has been made on that attribute that is worth reading.
 
-<p align="center"><img src="../../img/microlearning/ml-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-icon.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-icon.png"></p>
 
 ##### Practice
 

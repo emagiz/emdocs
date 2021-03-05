@@ -20,9 +20,8 @@ within your project to see which changed have taken place and what you should do
 
 Should you have any questions, please contact academy@emagiz.com.
 
-Last update: December 17th, 2020
-
-Required reading time: 3 minutes
+- Last update: January 22th 2021
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

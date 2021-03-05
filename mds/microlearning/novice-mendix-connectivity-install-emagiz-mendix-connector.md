@@ -39,7 +39,7 @@ To install an eMagiz Mendix Connector you need the following:
 
 ##### Theory
 
-## 3. Install a eMagiz Mendix Connector
+## 3. Install an eMagiz Mendix Connector
 
 To install the eMagiz Mendix Connector in a Mendix app, the following steps need to be performed.
 

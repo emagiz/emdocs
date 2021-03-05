@@ -130,7 +130,7 @@ After clicking on the root icon you can choose the entity that should be the roo
 Click on this entity and eMagiz will give a pop-up with a warning that you are changing the root entity of a message defintion. 
 This warning gives you a headsup that all your progress of the message in the right side will be lost.
 
-<p align="center"><img src="../../img/microlearning/ml-creating-a-messagedefinition--changing-the-message-definition-root-warning.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-design-creating-a-messagedefinition--changing-the-message-definition-root-warning.png"></p>
 
 You have two options. If you agree this will be the root of your message definition press Change root. If you made a mistake and want to start over again completly press Cancel.
 When change root is chosen the message definition will only exist of the selected entity with all the attributes.
