@@ -42,7 +42,7 @@ To configure an integration you need the following:
 
 ## 3. Configure an integration
 
-As specified before with configure we mean adding, editing, and/or deleting an integration. Below we will detail per action what you should do.
+As specified before with configure we refer to adding, editing, and/or deleting an integration. Below we will explain the steps in detail.
 
 ### 3.1 Adding a integration
 
@@ -60,15 +60,17 @@ After you have connected the system to eMagiz (located in the center) you will i
 In case you want to add a new message type, please study the microlearning **Configure a message type**.
 
 In this microlearning, we will assume that the message type you want to use for this particular integration is already available within your eMagiz project.
-Therefore we will select the message type Configure a message type from the drop-down menu
+Therefore we will select the message type Configure a message type from the drop-down menu.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--select-message-type.png"></p>
 
 ### 3.2 Editing a integration
 
-Editing an integration means filling in the detailed information belonging to the integration and subsequently change the information.
+Editing an integration can mean two things within the context of eMagiz. 
+The first time you connect a system to eMagiz it means filling in the detailed information belonging to the integration.
+Later on, editing is keeping the information up to date when changes occur.
 
-Filling in the detailed information in Capture helps you to better Design, Create, Deploy and Manage your integration.
+Providing detailed information in Capture helps you to better Design, Create, Deploy and Manage your integration. 
 This detailed information is available when you double click on the line you have just drawn (or select the Edit integration option via the context menu).
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--edit-integration-context-menu.png"></p>
@@ -87,15 +89,15 @@ If you have correctly added the message type you will notice that these question
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--edit-message-type-general.png"></p>
 
-The moment you want to change an answer given earlier on these questions this is the place to do so.
+Here you can adjust the previously provided information.
 
 #### 3.2.2 Message Transport
-The second segment has all to do with the transport of the message (i.e. how will the data be sent to eMagiz or from eMagiz to an external system).
+The second segment has to do with the transport of the message (i.e. how will the data be sent to eMagiz or from eMagiz to an external system).
 
 In this segment you will answer questions on:
 - how the messages will be send (i.e. REST web service, file drop, etc.)
 - In what format the messages are exchanged (i.e. JSON, XML, EDI, CSV, etc.)
-- whether the data is pushed (i.e the receiving systems waits idly until a message is sent to it) or pulled (i.e the receiving systems is actively checking for new messages)
+- whether the data is pushed (i.e. the receiving systems waits idly until a message is sent to it) or pulled (i.e. the receiving systems is actively checking for new messages)
 - The preferred option to exchange data (i.e. REST web service, SOAP web service, etc.)
 - The status of the interface (i.e. what already exists on both sides for this)
 
@@ -124,8 +126,9 @@ All attachments linked to this specific implementation of the message type are s
 
 #### 3.2.4 Security
 
-The fourth segment has everything to do with security. In this segment, you can fill in all information related to the security of the connection between eMagiz and the external party.
-In the example we are working out the external party will send data to eMagiz via a SOAP Webservice. 
+The fourth segment has everything to do with security. 
+In this segment, you can fill in all information related to the security of the connection between eMagiz and the external party. 
+In the example we are working on the external party will send data to eMagiz via a SOAP Webservice. 
 
 Therefore the Security details should reflect the way eMagiz will secure this connection to make sure that the integrity of the data is not comprised. 
 The best practice for **SOAP** Webservices is an API Key + Client certification for client authentication.
@@ -134,7 +137,7 @@ The best practice for **SOAP** Webservices is an API Key + Client certification 
  
 #### 3.2.5 Remarks
 The fifth and last segment is called Remarks. In this segment, you can add everything you want. 
-For example, you could add your notes of meetings with the business that will help your fellow developer to actually build the solution in Create.
+For example, you could add your notes of meetings with the business that will help your fellow developer to build the solution in Create.
  
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--remarks-overview.png"></p>
 
@@ -144,7 +147,8 @@ The moment you are satisfied with the information registered in Capture on integ
 
 ### 3.3 Deleting a integration
 
-Deleting an integration can be done with the help of the context menu on integration level. If you right-click on the line you have just finished you will see an option Delete Integration.
+Deleting an integration can be done with the help of the context menu on integration level. 
+If you right-click on the line you have just finished you will see an option Delete Integration. 
 Selecting that option will delete your integration.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-configure-a-integration--delete-integration.png"></p>
