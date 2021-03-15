@@ -14,34 +14,34 @@
 ##### Intro
 
 # Adding flows to Create
-The moment you are satisfied with your work in Design you can add the flow to Create in order for the flow to be build.
+The moment you are satisfied with your work in Design you can add the flow to Create for the flow to be built.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 4th 2021
+- Last update: February 4th, 2021
 - Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning focuses on adding flows to create.
+This microlearning focuses on adding flows to create.
 
-With adding flows we mean: Making a flow available in the Create phase of eMagiz so it can be build / generated.
+By adding flows we mean: Making a flow available in the Create phase of eMagiz so it can be build/generated.
 
 ##### Theory
 
 ## 3. Adding flows to Create
 
-Adding flows to Create is a relatively simple action to perform. Simply navigate to Create and in the Create overview there is a button located on the bottom left called Add integrations.
+Adding flows to Create is a relatively simple action to perform. Simply navigate to Create and in the Create overview, there is a button located on the bottom left called Add integrations.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-adding-flows-to-create--add-integrations-button.png"></p>
 
-Selecting this option leads you to a overview where you can add (and remove) flows to and from Create.
+Selecting this option leads you to an overview where you can add (and remove) flows to and from Create.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-adding-flows-to-create--add-integrations-overview.png"></p>
 
-In this overview all integrations that have already been transferred to Create are indicated as a blue cube with a checkmark in the middle
+In this overview, all integrations that have already been transferred to Create are indicated as a blue cube with a checkmark in the middle
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-adding-flows-to-create--added-integrations.png"></p>
 
@@ -60,7 +60,7 @@ To verify that your integration has been added you can navigate to the Create ov
 
 ### 3.1 Generate infra flows
 To ensure that all your flows are running correctly and can connect to the JMS properly you need so-called Infra flows. 
-The first time you start in Create and everytime after you add a new system to Create don't forget to press the button called Generate all infras.
+The first time you start in Create and every time after you add a new system to Create don't forget to press the button called Generate all infras.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-adding-flows-to-create--generate-all-infras.png"></p>
 

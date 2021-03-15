@@ -34,7 +34,7 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 This microlearning centers around Swagger UI for the API Gateway solution of eMagiz.
 With Swagger UI we mean: A user interface that external parties can access via the browser to see the specifications of your API Gateway and test their solutions at the same time
-With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world in order to give them access to applications that are linked to your business process
+With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world to give them access to applications that are linked to your business process
 
 Having a Swagger UI is of great importance to let others test your API Gateway Solution. The Swagger UI comes with:
 - Authorization
@@ -68,7 +68,7 @@ In case you want to run your API Gateway solution on your local device for testi
 
 - http://localhost:{gateway.entry.port}/swaggerui/swaggerui
 
-Obviously, you need to replace the {gateway.entry.port} with the port that you have configured yourself. So when you choose port 9092 the URL would be:
+You need to replace the {gateway.entry.port} with the port that you have configured yourself. So when you choose port 9092 the URL would be:
 
 - http://localhost:9092/swaggerui/swaggerui
 

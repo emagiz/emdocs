@@ -15,8 +15,8 @@
 
 # Storing Metadata - Design Architecture
 
-In the previous microlearning we learned a bit about the Design Architecture. 
-In this microlearning we will build on that by learning how you can store metadata on machine level to get clarity on what is happening.
+In the previous microlearning, we learned a bit about Design Architecture. 
+In this microlearning, we will build on that by learning how you can store metadata on a machine level to get clarity on what is happening.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -27,7 +27,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning centers around learning how to store metadata on machine level to give you and your colleagues insights into what is happening.
+This microlearning centers around learning how to store metadata on a machine level to give you and your colleagues' insights into what is happening.
 
 With metadata we mean: Information that tells us something about the characteristics of a machine (i.e. host, name, contact, IP-whitelisting)
 
@@ -61,8 +61,8 @@ As you can see from the examples given it is quite easy to register some informa
 
 ## 4. Assignment
 
-The assignment is easy this time. Add relevant information on atleast one machine within your project that could clarify specific information on machine level.
-This assignment can be completed with the help of a associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
+The assignment is easy this time. Add relevant information on at least one machine within your project that could clarify specific information on the machine level.
+This assignment can be completed with the help of an associated Mendix project linked to the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
@@ -79,7 +79,7 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-This video demonstrates a working solution and how you can validate whether the refresh has actually worked in AWS Redshift.
+This video demonstrates a working solution and how you can validate whether you have successfully completed the assignment.
 
 <iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-design-storing-metadata.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

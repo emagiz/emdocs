@@ -14,19 +14,19 @@
 ##### Intro
 
 # Set as mapped in message mapping
-In this microlearning we will educate you on the second step of realizing a message mapping which is set as mapped. 
-This is a optional step and is only necessary in case atleast one mandatory attribute in your target definition cannot be filled based on anything within the target definition/
+In this microlearning, we will educate you on the second step of realizing a message mapping which is set as mapped. 
+This is an optional step and is only necessary in the case at least one mandatory attribute in your target definition cannot be filled based on anything within the target definition/
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 3th 2021
+- Last update: February 3th, 2021
 - Required reading time: 2 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning centers around understanding how you can place a attribute on set as mapped while doing the message mapping.
+This microlearning centers around understanding how you can place an attribute on set as mapped while doing the message mapping.
 
 With set as mapped we mean: Registering that a certain attribute will be filled with a static input
 
@@ -40,33 +40,33 @@ Let us return to where we stopped in the last microlearning by showing the messa
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-drawed-lines.png"></p>
 
-As you see, the Description attribute on Crash Course level is not mapped yet but is mandatory. 
+As you see, the Description attribute on the Crash Course level is not mapped yet but is mandatory. 
 To register that we want to use a static input we have to press Start Editing to enter the Start Editing Mode.
 
-After that we navigate to the attribute in question, right mouse click and set as mapped.
+After that, we navigate to the attribute in question, right mouse click, and set it as mapped.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-set-as-mapped-context-menu.png"></p>
 
-To indicate that a certain attribute has been registered as set as mapped eMagiz will show a cube icon in front of the attribute
+To indicate that a certain attribute has been registered set as mapped eMagiz will show a cube icon in front of the attribute
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-set-as-mapped.png"></p>
 
 As you can see, all mandatory elements have been mapped with the help of our message mapping. Therefore we can conclude that the message mapping is done.
 
-**Note**: In the case that you have made a mistake and did not want to set this specific attribute to set as mapped you can right click on the attribute to access the context menu and select unset as mapped.
+**Note**: In the case that you have made a mistake and did not want to set this specific attribute to set as mapped you can right-click on the attribute to access the context menu and select unset as mapped.
 
 ### 3.1 Adding notes
 A nice addition to the functionality surrounding message mapping is that you can add notes to tell others if a certain mutation on the input field is necessary or what the static input should be.
-You can add a note by right clicking on the attribute and selecting the option New/Edit Note
+You can add a note by right-clicking on the attribute and selecting the option New/Edit Note
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note.png"></p>
 
-Selecting this option will lead you to the following pop-up. In this pop-up you can fill in some information that can help others that will create the transformation later on in Create.
+Selecting this option will lead you to the following pop-up. In this pop-up, you can fill in some information that can help others that will create the transformation later on in Create.
 A example of such an entry would be:
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-filled-in.png"></p>
 
-After you have saved the note a icon will appear on the attribute letting you and others know that some notation has been made on that attribute that is worth reading.
+After you have saved the note an icon will appear on the attribute letting you and others know that some notation has been made on that attribute that is worth reading.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-set-as-mapped-in-message-mapping--message-mapping-overview-add-note-icon.png"></p>
 
@@ -74,8 +74,8 @@ After you have saved the note a icon will appear on the attribute letting you an
 
 ## 4. Assignment
 
-Navigate to Design and open the message mapping option of atleast one integration within your project. 
-Register atleast one of the output attributes as set as mapped and add a note to this attribute telling what the input of the attribute should be.
+Navigate to Design and open the message mapping option of at least one integration within your project. 
+Register at least one of the output attributes as set as mapped and add a note to this attribute telling what the input of the attribute should be.
 This assignment can be completed within the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways

@@ -113,7 +113,7 @@ This is a very rudimentary scenario that can be optimized a lot but it gives an 
 
 ## 4. Assignment
 
-For this microlearning there is no assignment.
+For this microlearning, there is no assignment.
 
 ## 5. Key takeaways
 

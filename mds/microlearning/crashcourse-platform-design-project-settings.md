@@ -15,7 +15,7 @@
 
 # Project Settings
 
-In this microlearning we will educate you on which project settings you need to define in Design to ensure that you can transfer your solution to Create.
+In this microlearning, we will educate you on which project settings you need to define in Design to ensure that you can transfer your solution to Create.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -26,9 +26,9 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning centers around the Project Settings in Design
+This microlearning centers around the Project Settings in Design
 
-With Project settings we mean: A set of configuration items that defines how the setup of the project will look like.
+With Project settings we mean: A set of configuration items that define how the setup of the project will look like.
 
 The Project settings define:
 - Technical name
@@ -44,7 +44,7 @@ The Project settings define:
 
 ## 3. Project Settings
 
-In this microlearning we will discuss how to configure the project settings to represent the correct structure of how your project will be running.
+In this microlearning, we will discuss how to configure the project settings to represent the correct structure of how your project will be running.
 
 eMagiz will fill in several settings for you and those you don't need to change. These settings are:
 
@@ -55,7 +55,7 @@ eMagiz will fill in several settings for you and those you don't need to change.
 The other settings can be divided into two segments. The first segment defines settings that you need to set once and never have to change anymore.
 Under this segment we define the following settings:
 - Technical name
-- Namespace url
+- Namespace URL
 
 The second segment defines settings that might change over time as your integration landscape is growing which leads to different choices:
 - Nr. of process containers
@@ -68,8 +68,8 @@ Editing either one of these settings can be done via the Edit Settings button:
 
 ### 3.1 Generic Project Settings
 
-The generic project settings that need to be defined once are the technical name and the namespace url. 
-The advice is to shorten your display name within seven characters to represent the technical name and let the namespace url reflect what your eMagiz project is about (i.e name of a business, organizational unit, etc.).
+The generic project settings that need to be defined once are the technical name and the namespace URL. 
+The advice is to shorten your display name to seven characters to represent the technical name and let the namespace URL reflect what your eMagiz project is about (i.e name of a business, organizational unit, etc.).
 
 An example of such a implementation would be:
 
@@ -94,49 +94,49 @@ We offer two choices when it comes to where you are deploying your integration (
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--IaaS-options.png"></p>
 
-Best practice for test projects and academy related projects is to run them on-premise (meaning in this case your own laptop). 
-Best practice for actual projects is to run them in the eMagiz Cloud (AWS)
+The best practice for test projects and academy-related projects is to run them on-premise (meaning in this case your laptop). 
+The best practice for actual projects is to run them in the eMagiz Cloud (AWS)
 
 #### 3.2.1 Use failover
 The third setting that could change over time is the setting to use a failover or not.
 
 Using failover will add high availability and redundancy of the JMS servers to the solution, but also requires more hardware to deploy on.
-Note that in most cases using failover with only a single process container is not very useful, as this makes the process container a single point of failure.
+Note that in most cases using failover with only a single process container is not very useful, as this makes the process container the single point of failure.
 
-This means that you have to decide whether your project should be always up and running (also in case of trouble on one of the JMS servers) or if it is okay that downtime can occur in those situation.
-Furthermore it means that this setting also impacts the setting for the nr. of process containers. 
+This means that you have to decide whether your project should be always up and running (also in case of trouble on one of the JMS servers) or if it is okay that downtime can occur in those situations.
+Furthermore, it means that this setting also impacts the setting for the nr. of process containers. 
 
-If you use failover and have less then 60 flows you should have 2 process containers. 
+If you use failover and have less than 60 flows you should have 2 process containers. 
 If you have between 60-120 flows and use failover you should have 4 process containers. As you can imagine the logic continues onwards if you continue to grow.
 
 
 ### 3.3 Applying Settings
-The moment you are satisfied with your settings you need to apply the settings in order for the Design Architecture to reflect your choices.
-The first time you set up these settings you can press the Apply Settings button in this overview as it will immediately apply the settings to Test, Acceptance and Production.
+The moment you are satisfied with your settings you need to apply the settings for the Design Architecture to reflect your choices.
+The first time you set up these settings you can press the Apply Settings button in this overview as it will immediately apply the settings to Test, Acceptance, and Production.
 
-However the moment you are already running your eMagiz integration landscape on these environments on Test, Acceptance and Production 
-we strongly advice that you apply the change in settings **per** environment.
+However, the moment you are already running your eMagiz integration landscape on these environments on Test, Acceptance, and Production 
+we strongly advise that you apply the change in settings **per** environment.
 
 You can apply these settings **per** environment via the Design Architecture overview by selecting the option Apply settings.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--apply-settings-design-architecture.png"></p>
 
 ### 3.4 Transfer settings to Create
-Furthermore the moment you change your project settings **after** you have transferred atleast one flow to Create you should also update the settings in Create to reflect the new reality.
+Furthermore, the moment you change your project settings **after** you have transferred at least one flow to Create you should also update the settings in Create to reflect the new reality.
 You can do so by navigating to Create -> Settings -> Transfer Settings from Design.
 
-If there are differences on one of the specified categories you should press the Transfer button to sync Design and Create.
+If there are differences in one of the specified categories you should press the Transfer button to sync Design and Create.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-project-settings--transfer-settings-from-design.png"></p>
 
-Be aware that changing these settings can have a impact on a multitude of flows, therefore proceed with caution and be patient to see results
+Be aware that changing these settings can have an impact on a multitude of flows, therefore proceed with caution and be patient to see results
 
 ##### Practice
 
 ## 4. Assignment
 
-Navigate to Design -> Settings and check if all settings are filled in. If not fill in the required settings (technical name and namespace url) 
-and set IaaS to on-premise **(only if you use a Academy project and not a real project for this assignment)**
+Navigate to Design -> Settings and check if all settings are filled in. If not fill in the required settings (technical name and namespace URL) 
+and set IaaS to on-premise **(only if you use an Academy project and not a real project for this assignment)**
 This assignment can be completed within the Academy project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways

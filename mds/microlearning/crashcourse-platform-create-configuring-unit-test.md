@@ -15,24 +15,24 @@
 
 # Configuring a Unit Test
 
-In this microlearning we will focus on configuring a unit test.
+In this microlearning, we will focus on configuring a unit test.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 7th 2021
+- Last update: January 7th, 2021
 - Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of Unit testing concept
+- Understanding of the Unit testing concept
 - On- or offramp (without splitter or router) that needs to be tested
 
 ## 2. Key concepts
-This micro learning centers around configuring a unit test.
-With unit testing we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
+This microlearning centers around configuring a unit test.
+With unit testing, we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
 
-Configuring a unit test can be done via the right hand panel menu while being in the Configure Tests screen of your Create flow.
-In this right panel there is a button called Add Test. By pressing this button you have the ability to configure your unit test.
+Configuring a unit test can be done via the right-hand panel menu while being in the Configure Tests screen of your Create flow.
+In this right panel, there is a button called Add Test. By pressing this button you can configure your unit test.
 
 The moment you already have unit tests available within the context of your flow you can edit these by selecting the edit icon on that specific unit test.
 
@@ -40,20 +40,20 @@ The moment you already have unit tests available within the context of your flow
 
 ## 3. Configuring a Unit Test
 
-Configuration of a unit test can happen on two occassions. On the one hand you want to add a new unit test to test a scenario for which you have not yet a unit test available. 
-On the other hand you want to be able to edit a existing unit test to alter the input, output or naming of the existing unit test.
+Configuration of a unit test can happen on two occasions. On the one hand, you want to add a new unit test to test a scenario for which you have not yet a unit test available. 
+On the other hand, you want to be able to edit an existing unit test to alter the input, output, or naming of the existing unit test.
 
 ### 3.1 Add a Unit Test
 
-To add a unit test you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz you open the flow you want to unit test.
+To add a unit test you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz, you open the flow you want to unit test.
 After you have opened the flow you should press the button on the bottom bar called Configure tests 
 
-In this overview you will see the flow as you have build it and in the right hand panel there is a button located called Add test. 
-By pressing this button you add a new unit test to the context of the flow on which you are currently working on.
+In this overview, you will see the flow as you have built it and in the right-hand panel, there is a button located called Add test. 
+By pressing this button you add a new unit test to the context of the flow on which you are currently working.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--add-test-button.png"></p>
 
-After you have pressed this button a new entry in your list of unit tests will appear. Obviously when your list is still empty this will be your first entry, congrats!
+After you have pressed this button a new entry in your list of unit tests will appear. When your list is still empty this will be your first entry, congrats!
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--added-a-test.png"></p>
 
@@ -80,18 +80,18 @@ This action makes it possible for you to enter a name. As mentioned before keep 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entered-a-name.png"></p>
 
-The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
+The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possibility to edit the message.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-icon.png"></p>
 
 When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit.
 If you are satisfied with your name simply select the checkmark icon. In case you have doubts or want to cancel press the X icon.
 
-By following these steps you have succesfully added a unit test to your flow.
+By following these steps you have successfully added a unit test to your flow.
 
 ### 3.2 Edit a Unit Test
 
-Apart from Adding a Unit test you can also edit a unit test if you for example would like to change the input, output and/or name of the unit test.
+Apart from Adding a Unit test, you can also edit a unit test if you for example would like to change the input, output, and/or name of the unit test.
 
 To edit the name of the unit test you simply hover over the just created unit test on the point just before the - icon and click on the edit icon (pencil)
 
@@ -101,7 +101,7 @@ This action makes it possible for you to enter a name. As mentioned before keep 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-configuring-a-unit-test--entered-a-name.png"></p>
 
-The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possiblity to edit the message.
+The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possibility to edit the message.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-icon.png"></p>
 
@@ -118,8 +118,8 @@ The moment you are satisfied with your changes you press Done and your changes h
 
 ### 3.3 Removing a Unit Test
 
-Sometimes you even want to get rid of certain unit test. Maybe they have become obsolete due to changes within the flow, or maybe multiple test were created with the same intent.
-Whatever the reason may be you can remove a unit test from the list of unit tests that is linked to the flow.
+Sometimes you even want to get rid of certain unit tests. Maybe they have become obsolete due to changes within the flow, or maybe multiple tests were created with the same intent.
+Whatever the reason maybe you can remove a unit test from the list of unit tests that are linked to the flow.
 
 To do so simply press the Remove button for the unit test that you want to remove. After you pressed this button the unit test is gone from the list.
 
@@ -128,7 +128,7 @@ To do so simply press the Remove button for the unit test that you want to remov
 ## 4. Assignment
 
 Configure two unit tests. One unit test should have as input a complete representation of the system message in Design. 
-The second unit test should have as input a minimal representation of the system message in Design and as output the expected CDM message. This assignment can be completed within a onramp or offramp flow within your (Academy) project that you have created in the previous assignment.
+The second unit test should have as input a minimal representation of the system message in Design and as output the expected CDM message. This assignment can be completed within an onramp or offramp flow within your (Academy) project that you have created in the previous assignment.
 
 ## 5. Key takeaways
 
@@ -144,7 +144,7 @@ The second unit test should have as input a minimal representation of the system
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
 
 ## 7. Silent demonstration video
 

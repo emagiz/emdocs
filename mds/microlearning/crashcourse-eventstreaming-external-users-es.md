@@ -76,7 +76,7 @@ This way you can make sure that a party that is supposed to only consume data on
 
 <p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-acl-config.png"></p>
 
-When you press Add ACL entry you can fill in the following pop-up. In this pop-up you select the user, the topic and the rights said user must-have on a topic.
+When you press Add ACL entry you can fill in the following pop-up. In this pop-up you select the user, the topic, and the rights said user must-have on a topic.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-external-users-es--es-deploy-event-streaming-acl-config-pop-up.png"></p>
 

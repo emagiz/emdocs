@@ -72,7 +72,7 @@ For example, you could change the Status to Done or add a Remark. Editing a syst
 
 ### 3.3 Deleting a system
 
-Adding a system is the starting point of your integration and both editing and deleting a system can happen at any given moment.
+Adding a system is the starting point of your integration. Both editing and deleting a system can happen at any given moment.
 Although editing a system has no impact regardless of the state of the system in subsequent phases of the ILM the same does not apply for deleting a system.
 
 When a system has been transferred to Create you cannot delete the system anymore in Capture without removing it first from Create. 

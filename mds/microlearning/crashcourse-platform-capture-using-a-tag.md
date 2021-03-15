@@ -15,9 +15,9 @@
 
 # Using a tag
 
-In this microlearning we will focus on using a tag. 
+In this microlearning, we will focus on using a tag. 
 As discussed in the previous microlearning it is nice to configure a tag but without using it you should not even start configuring it.
-In this microlearning we will look into how you can use the tagging functionality to improve your work.
+In this microlearning, we will look into how you can use the tagging functionality to improve your work.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -36,8 +36,8 @@ With tag we mean: A label under which you can group a set of systems and/or inte
 
 ## 3. Using a tag
 
-As specified before with uszing we mean utilizing functionality to assist the user in achieving their goal. 
-In this case the main goal of tagging is to create several overviews (i.e. determine scope, determine message pattern, determine dependencies) based on the overviews available in each ILM phase.
+As specified before with using we refer to utilizing functionality to assist the user in achieving their goal. 
+In this case, the main goal of tagging is to create several overviews (i.e. determine the scope, determine message pattern, determine dependencies) within the overviews available in each ILM phase.
 
 After you have added a tag and linked it to one or more systems and integrations you can use this tag to filter. In this example we will filter our Capture overview based on two different parameters:
 - Scope (which systems and integrations are in Sprint 1)
@@ -55,13 +55,13 @@ The same happens when you select the tag called Event Stream (which identifies a
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-capture-using-a-tag--capture-overview-event-stream.png"></p>
 
-Good to know that these tags are also available in all other ILM phases to help you get a better overview of your integration landscape.
+It is good to know that these tags are also available in the other ILM phases to help you get a better overview of your integration landscape.
 
 ##### Practice
 
 ## 4. Assignment
 
-This time we have a two part assignment:
+This time we have a two-part assignment:
 - Add a tag identifying the scope of a project or sprint and link it to the systems and integrations that are part of this scope
 - Filter the Capture overview based on this tag to see what tagging can do for you
 
@@ -69,8 +69,8 @@ This assignment can be completed with the help of the (Academy) project that you
 
 ## 5. Key takeaways
 
-- With tagging you can make several overviews based on the standard overview created by eMagiz
-- Tags are available in all ILM phases to create a overview
+- With tagging, you can make several overviews based on the standard overview created by eMagiz
+- Tags are available in all ILM phases to create an overview
 
 ##### Solution
 

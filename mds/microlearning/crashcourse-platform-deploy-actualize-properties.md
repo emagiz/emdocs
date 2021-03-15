@@ -15,11 +15,11 @@
 
 # Actualize properties
 
-In this microlearning we will focus on situation where a existing property needs a change of value and how to put this value into effect in your environmemt.
+In this microlearning, we will focus on the situation where an existing property needs a change of its value and how to put this value into effect in your environment.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 7th 2021
+- Last update: February 7th, 2021
 - Required reading time: 3 minutes
 
 ## 1. Prerequisites
@@ -36,13 +36,13 @@ Changing the value of any property is rather easy, yet the value is not taken in
 
 Below are the steps to take to change the value of a property and putting that into effect.
 
-1. Locate the property via of the access points for properties (refer to the Properties Management microlearning)
+1. Locate the property via the access points for properties (refer to the Properties Management microlearning)
 2. Change the value of the property and press save
 3. Locate the Runtime dashboard and find the flow for which the property has changed
 4. Ensure the properly stop and start the flow
 
 **Considerations**
-- Starting and stopping flows can be done in direct sequence, unless you change the property of that particular flow multiple times within 2 minutes. eMagiz needs in that case 2 minutes to store the propertly value properly.
+- Starting and stopping flows can be done in direct sequence, unless you change the property of that particular flow multiple times within 2 minutes. eMagiz needs in that case 2 minutes to store the property value properly.
 
 ##### Practice
 
@@ -55,13 +55,13 @@ This assignment can be completed within the Deploy phase of your (Academy) proje
 ## 5. Key takeaways
 
 - Make a good plan before you change the property so that there are no unforeseen side effects
-- In case the value is changed several time, the flow will need 2 minutes breathing time before the updated property value is take into account.
+- In case the value is changed several times, the flow will need 2 minutes of breathing time before the updated property value is taken into account.
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the helptext provided by eMagiz when executing these actions.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 

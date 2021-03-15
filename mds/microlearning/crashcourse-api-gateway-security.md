@@ -73,7 +73,7 @@ Below we will talk about each of these three options.
 ### 3.1 API Key
 
 The simplest form of authentication is with the help of a so-called API Key. 
-This is the most low-level solution available in terms of the authorization. 
+This is the most low-level solution available in terms of authorization. 
 In this case, the client will send a specific key that they have received from us in a certain header and we will check if the value is correct. 
 If not the client will receive a 401 Unauthorized
 

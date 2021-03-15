@@ -17,70 +17,70 @@
 A central part of the eMagiz platform is the ability to transform data from one structure to another structure. 
 As you can remember from our microlearning on message mappings this process starts in Design.
 
-Obviously it would be great if drawing a line, saying that a is the input for b would always be enough. Sadly though that is not always the case (the easiest example is the set as mapped option).
+It would be great if drawing a line, saying that a is the input for b would always be enough. Sadly though that is not always the case (the easiest example is the set as a mapped option).
 For all cases where only drawing a line does not suffice you can alter the transformation between a and b with the help of the Create Transformation.
 
-Within Create you can transform between multiple message formats. In this microlearning we will focus on the simplest one, XML to XML.
+Within Create you can transform between multiple message formats. In this microlearning, we will focus on the simplest one, XML to XML.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 9th 2021
+- Last update: February 9th, 2021
 - Required reading time: 8 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This micro learning focuses on the transformation in Create (XML to XML).
+This microlearning focuses on the transformation in Create (XML to XML).
 
 With transformation we mean: Transforming the data in such a manner that the source message will lead to a valid target message
 
 ##### Theory
 
 ## 3. Transformation - XML to XML
-In the Create phase of eMagiz you can build upon the message mapping made in Design. 
-When you open your flow by double clicking on it (or opening it via the context menu) you will see the following visual representation of the flow itself
+In the Create phase of eMagiz, you can build upon the message mapping made in Design. 
+When you open your flow by double-clicking on it (or opening it via the context menu) you will see the following visual representation of the flow itself
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--flow-editor-overview.png"></p>
 
-More on what this overview represents later on in this module. For now let us turn our attention to the Transformation part of a flow. 
+More on what this overview represents later on in this module. For now, let us turn our attention to the Transformation part of a flow. 
 
-Note that the transformation option is only available for flows that are setup for processing (i.e. transforming) data:
+Note that the transformation option is only available for flows that are set up for processing (i.e. transforming) data:
 
 - **Messaging**: Onramp and Offramp
 - **API Gateway**: Exit gate
-- **Event Streaming**: Event processor
+- **Event Streaming**: The event processor
 
 When you select the Transformation option eMagiz will show you what you have drawn while executing your message mapping in Design.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--create-transformation.png"></p>
 
 The above picture should have a familiar feeling as it closely resembles what we have determined while doing our message mapping.
-However you can also see some differences between the two. In Create you have several options at hand to correctly transform the data, while being in Start Editing Mode.
-Below we will discuss each of these options briefly. Apart from the set of generic options a lot more can be done but we will leave that out of the discussion for now.
+However, you can also see some differences between the two. In Create you have several options at hand to correctly transform the data while being in Start Editing Mode.
+Below we will discuss each of these options briefly. Apart from the set of generic options, a lot more can be done but we will leave that out of the discussion for now.
 
 Before we delve into the specific options let us first enter Start Editing mode.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--start-editing-mode.png"></p>
 
 ### 3.1 Filter
-As you can see, eMagiz already added a yellow trapezium (a turned one atleast). This icon indicates a filter. 
+As you can see, eMagiz already added a yellow trapezium (a turned one at least). This icon indicates a filter. 
 As you can see the Description attribute is optional (written in Italic) therefore we only want to fill the Description 
 attribute in the target message when the Description field in the source message exists (meaning the tag exists in the message) and is not empty
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--filter-attribute-explanation.png"></p>
 
-Apart from filtering on attributes you can also filter on entities. For example, in this case I could say that I only want a Design entity if the ID is ID-4.
+Apart from filtering on attributes, you can also filter on entities. For example, in this case, I could say that I only want a Design entity if the ID is ID-4.
 This you can easily do by adding a filter on the target entity called Design. To do so press the + icon in front of this entity and select the yellow filter icon.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--editing-options-entity-level.png"></p>
 
-As a result you will be presented with the following pop-up. In here you can choose from the input attributes that fall under the entity from which you have drawn your line in the message mapping.
+As a result, you will be presented with the following pop-up. Here you can choose from the input attributes that fall under the entity from which you have drawn your line in the message mapping.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--entitity-filter-options.png"></p>
 
-This solution works perfectly for us in this example case. Select the ID as input attribute, leave is equal true as it is and fill in ID-4. 
-This makes sure that only Design entities in the input with a ID with content ID-4 will be transformed to the target message.
+This solution works perfectly for us in this example case. Select the ID as input attribute, leave it equal true as it is and fill in ID-4. 
+This makes sure that only Design entities in the input with an ID with content ID-4 will be transformed to the target message.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--entitity-filter-solution.png"></p>
 
@@ -94,14 +94,14 @@ Transformation actions are visually represented as a blue rectangle.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-transformation.png"></p>
 
-For example, let us say that we only want to have the first three character of the input attribute ID on CrashCourse level. To do so we select the transform option and enter the following pop-up
+For example, let us say that we only want to have the first three characters of the input attribute ID on the CrashCourse level. To do so we select the transform option and enter the following pop-up
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-transformation-options.png"></p>
 
-In here we see several options that we can use. As the input is a string and we want the first three characters we can use the substring option. 
+Here we see several options that we can use. As the input is a string and we want the first three characters we can use the substring option. 
 Note, that based on the data type of the input attribute other options will be presented to you by eMagiz.
 
-In this case we fill in 1 as the start position and 3 for the length. This will ensure that eMagiz will only place the first three characters of the ID it receives in the target message.
+In this case, we fill in 1 as the start position and 3 for the length. This will ensure that eMagiz will only place the first three characters of the ID it receives in the target message.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-transformation-option-filled-in.png"></p>
 
@@ -120,12 +120,12 @@ So let's take a look at the note to see what it said exactly. To read it hover o
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-static-input-read-note.png"></p>
 
-Okay, now that we know again what we wanted to fill in lets take you through the steps of how you can make this happen.
+Okay, now that we know again what we wanted to fill in let us take you through the steps of how you can make this happen.
 First, select the option static input (green circle). This will lead you to the following pop-up
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-static-input-pop-up.png"></p>
 
-As the note states we always want to fill in the string value: Microlearning eMagiz Academy. In other words we need to fill in a constant with this value. That should look as follows.
+As the note states, we always want to fill in the string value: Microlearning eMagiz Academy. In other words, we need to fill in a constant with this value. That should look as follows.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-static-input-pop-up-solution.png"></p>
 
@@ -146,8 +146,8 @@ To get what I mean let us take a look at the pop-up for a conditional
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-conditional-pop-up.png"></p>
 
-As you can see a lot of similarities between the filter and the conditional. The only difference is that the conditional provides you with a escape opportunity.
-So let us define that escape. In this case we want that whenever the ID does not exists (or is empty) the value ID-1 should appear. The result will look like this
+As you can see a lot of similarities between the filter and the conditional. The only difference is that the conditional provides you with an escape opportunity.
+So let us define that escape. In this case, we want that whenever the ID does not exist (or is empty) the value ID-1 should appear. The result will look like this
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--attribute-conditional-pop-up-filled-in.png"></p>
 
@@ -155,7 +155,7 @@ To visually tell you and others that a conditional has been added the yellow dia
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-transformation-xml-to-xml--conditional-result.png"></p>
 
-For those of you paying attention it should be clear that the way I have configured the examples there is no way that the conditional will ever lead to a output of ID-1.
+For those of you paying attention, it should be clear that the way I have configured the examples there is no way that the conditional will ever lead to an output of ID-1.
 Having said that the above examples give a good indication of the various options you have at your disposal to transform messages without having to possess complex programming skills.
 
 ##### Practice
@@ -163,13 +163,13 @@ Having said that the above examples give a good indication of the various option
 ## 4. Assignment
 
 Navigate to Create and open a flow in which a transformation could occur. After you have done so enter Start Editing Mode and open the transformation.
-For this transformation add atleast one filter and one static input to your transformation. 
+For this transformation add at least one filter and one static input to your transformation. 
 This assignment can be completed within the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
 - eMagiz provides you with several out of the box options to correctly transform your data to end up with a valid target message
-- All options have their own unique use case
+- All options have their unique use case
 
 ##### Solution
 
