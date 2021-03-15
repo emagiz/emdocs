@@ -44,7 +44,7 @@ You can access a message mapping when you navigate to the Design phase of eMagiz
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-mapping--design-overview.png"></p> 
 
 In this phase, you can open the context menu on the integration level (remember, that is a line between eMagiz and an external system). 
-The context menu will look slightly different per the integration pattern. These differ as the use cases for each pattern differ slightly.
+The context menu will look slightly different for each integration pattern. These differ as the use case for each pattern differs slightly.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-mapping--context-menu-messaging-mapping.png"></p>
 
@@ -52,7 +52,7 @@ The context menu will look slightly different per the integration pattern. These
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-mapping--context-menu-es-mapping.png"></p>
 
-Selecting one of the above options will lead you to an overview similar to the one I show below
+Selecting one of the above options will lead you to an overview similar to the one shown below.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-what-is-a-message-mapping--message-mapping-overview.png"></p>
 

@@ -46,7 +46,8 @@ After you enter this mode you will see a subtle change in the background color o
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-drawing-lines-in-message-mapping--message-mapping-overview-start-editing.png"></p>
 
-Now it is time to draw lines. To help you eMagiz identifies which mandatory elements still need to be mapped. In this case, since we are at the beginning that is the root element.
+Now it is time to draw lines. To help you eMagiz identifies which mandatory elements still need to be mapped. 
+In this case, since we are at the beginning the mandatory element we start with is the root element.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-drawing-lines-in-message-mapping--message-mapping-overview-emagiz-feedback.png"></p>
 
