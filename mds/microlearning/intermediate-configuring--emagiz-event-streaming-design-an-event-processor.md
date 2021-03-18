@@ -88,7 +88,7 @@ You have now successfully designed an event processor that is capable of transpo
 
 ## 4. Assignment
 
-Create an Event processor between an input and output topic within your (Academy) project.
+Design an Event processor between an input and output topic within your (Academy) project.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
