@@ -62,7 +62,7 @@ The default setting for this component is to track all channels within a flow.
 
 This is fine in 99% of the cases. However, in this case with recurring steps and therefore huge amounts of channels it could hurt you.
 
-### 3.1 Complex Implemenation
+### 3.1 Complex Implementation
 
 In some flows, you have steps that are recurring in nature (i.e. steps that happen more often than once) you can imagine that the number of channels that are kept in the message history can become astronomical.
 We have even seen cases where the message channel had more than 11000 channels. 
