@@ -82,7 +82,7 @@ This way you can safeguard yourself against future problems.
 
 ## 4. Assignment
 
-Navigate to a flow within your (Academy) project and change the default message history to only log messages that end with the word entry.
+Navigate to a flow within your (Academy) project and change the default message history to only log channels that end with the word entry.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
