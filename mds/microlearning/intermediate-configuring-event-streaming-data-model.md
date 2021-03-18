@@ -2,7 +2,7 @@
 	<div class="ez-academy__body">
 		<main class="micro-learning">
 		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="doc-nav__link">Home</a></li>
 			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
 			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
 			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -23,8 +23,8 @@ For Event Streaming the data model represents the structure of messages that are
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th, 2021
-- Required reading time: 6 minutes
+- Last update: March 18th, 2021
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
