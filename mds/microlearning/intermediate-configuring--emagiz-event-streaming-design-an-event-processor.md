@@ -20,8 +20,8 @@ With the help of this event processor, you can easily transport, filter, and tra
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 27th, 2021
-- Required reading time: 4 minutes
+- Last update: March 18th, 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Intermediate knowledge of the eMagiz platform
