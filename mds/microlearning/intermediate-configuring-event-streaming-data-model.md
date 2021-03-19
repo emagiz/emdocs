@@ -44,7 +44,7 @@ And has as a goal to create a landscape-wide overview of the collection of eleme
 
 ## 3. Event Streaming Data Model
 
-As with every integration, pattern eMagiz gives you the option to create your data model. 
+As with every integration pattern eMagiz gives you the option to create your data model. 
 This data model can be based on standards, can be custom made or a combination of both. 
 
 For Event Streaming the data model represents the structure of messages that are exchanged between parties with the help of topics.
