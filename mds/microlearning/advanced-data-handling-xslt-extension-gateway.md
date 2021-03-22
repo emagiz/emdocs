@@ -2,7 +2,7 @@
 	<div class="ez-academy__body">
 		<main class="micro-learning">
 		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="../../docs/microlearning/advanced-data-handling-index" class="doc-nav__link">Home</a></li>
 			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
 			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
 			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -13,93 +13,169 @@
 
 ##### Intro
 
-# Creating an event processor with transformation
+# XSLT Extension Gateway
 
-In this microlearning, we will focus on creating the event processor in eMagiz for what we call a transformation case.
-With the help of such an event processor, you can easily transport, filter, and transform data between two topics.
+In this microlearning, we will focus on the XSLT extension gateway. 
+The XSLT extension gateway is a component in eMagiz that helps you to enrich your output XML message by retrieving data from an outside source.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: March 19th, 2021
+- Last update: March 22th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
-- Intermediate knowledge of the eMagiz platform
-- An Event Streaming License
-- Knowledge of the Event Streaming Pattern
-- Followed the crash course on Event Streaming
+- Advanced knowledge of the eMagiz platform
+- Advanced knowledge of XSLT
 
 ## 2. Key concepts
-This microlearning centers around creating an event processor with transformation.
-By event processor we mean: A flow within eMagiz that consumes data from one topic and transports the data to another topic. In between, you have the option to filter or transform the data (i.e. event)
-By transformation we mean: A method to ensure that the data structure of the input can be changed towards a specific output data structure
+This microlearning centers around the XSLT extension gateway component in eMagiz
+By XSLT extension gateway we mean: A component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source
 
-To create a event processor with transformer we need to have designed an event processor and the accompanying transformation. Lucky for us we just did that in the previous microlearning.
+
+Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
 
 ##### Theory
 
-## 3. Creating an event processor with transformation
+## 3. XSLT Extension Gateway
 
-An Event processor is a flow within eMagiz that retrieves data from one topic (the so-called input topic) and transports the data to another topic (the so-called output topic).
-During the transport of the data, you can transform the event or filter out events that don't fit your criteria.
-In this transformation scenario we will transform the data between the input and the output to ensure the proper data structure for our output.
+An XSLT Extension Gateway is a component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source.
+Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
+This response is in turn used to enrich your output message with the correct information.
 
-### 3.1 Determine Event Processor Design
-The first step of creating your event processor is determining whether you have already designed an event processor.
-When you have established which event processor that you have designed needs to be transferred to the Create phase you can continue.
-For this microlearning, we assume that the event processor is already designed.
+### 3.1 Setting up the XSLT Extension Gateway
 
-<p align="center"><img src="../../img/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation--design-view-event-processor.png"></p>
+The first step of setting up an XSLT Extension Gateway is to add the XSLT Extension Gateway component to your flow and create two channels (one for the request and one for the response).
+You can do so by dragging the correct component on the canvas, creating the channels and linking the channels to the XSLT Extension Gateway.
+An example of how this will look is shown below:
 
-### 3.2 Add integrations
-The first step is to add the integration to the Create phase of eMagiz. This process is the same for each pattern (Messaging, API Gateway, Event Streaming).
-So simply navigate to the Create phase and select the button Add integrations (located in the left bottom of the screen).
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-added-to-canvas.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation--add-integrations.png"></p>
+### 3.2 Connect to the outside source
 
-In here you select at least one of the topics to go to Create. eMagiz is smart enough to automatically transfer the other as well. You can always select them both, that will work also.
-After you have pressed Save Selection and everything went to plan you will see a pop-up similar to the one that is shown below
+As stated before, via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
+In this example we will assume that you want to retrieve a Token from a REST Webservice that you need as part of your authorization when executing subsequent calls.
 
-<p align="center"><img src="../../img/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation--go-to-create.png"></p>
+In this case we will have to call a certain endpoint via a POST method. In the body of our message we need to send the username and password that we have received from the outside source.
+This outside source expects the body in XML.
 
-Press the button called Go to Create to get back to the Create overview.
+To make this a reality in eMagiz we first need to add an HTTP Outbound Gateway to the canvas and fill in the details.
 
-### 3.3 The Create overview
-In the overview of the Stream pattern that is presented, you can zoom in on the event processor to see what the input and output topic of the event processor is.
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--http-outbound-gateway-xslt-extension.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation--event-processor-view.png"></p>
+This automatically links the XSLT extension gateway to the HTTP oubound gateway, provided you selected the correct request and response channel.
 
-### 3.4 Event streaming flow
-From here we can navigate to the flow by double-clicking on the event processor or via the context menu (accessible via a right mouse click).
-When you open the flow eMagiz will present you with something as depicted below. A simple flow with an input,an output, a transformation and two validation components. 
-This flow is responsible for the following actions:
-- Consume data from input topic
-- Validate structure of incoming data
-- Transform data between input and output
-- Validate result of transformation
-- Produce data on output topic
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--http-outbound-gateway-xslt-extension-result.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation--event-processor-flow.png"></p>
+### 3.3 Error handling
 
-Assuming that the transformation needs no changes based on what you have created in Design, the only thing left for you to do is to press Stop Editing as eMagiz has already created the complete flow for you.
+It could happen that something goes wrong while retrieving the relevant data from the outside will using the XSLT Extension Gateway. 
+To ensure that the error handling does its work you need to link the XSLT Extension Gateway to the default error handling of eMagiz.
 
-If you do need to make a change to the transformation you can do so with the guidance from previous microlearnings. When you are finished press Stop Editing and create a new version with a good description, ready to be deployed.
+You can easily do so by opening the XSLT Extension Gateway component, navigating to the Advanced tab, selecting the correct Error channel and setting the Reply timeout.
 
-You have now successfully created an event processor that is capable of transforming data between the Input Topic and the Output Topic.
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-error-channel.png"></p>
+
+The result of this action will be that the XSLT extension will send his errors to the standard error handling process of eMagiz.
+
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-error-channel-result.png"></p>
+
+### 3.4 Write the XSLT
+
+To succesfully call an XSLT extension gateway your custom XSLT needs five things:
+
+- A parameter that defines which component the XSLT extension gateway is within the flow
+- A variable that calls the XSLT extension gateway and will hold the result
+- A variable that defines what the input for your XSLT extension gateway will be
+- A template match that copies your input
+- A template match that ensures that the result of your XSLT extension gateway is correctly outputted
+
+An example of such an XSLT is depicted below. Within the XSLT we have described which part is responsible for what exactly. 
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:ezx="http://www.emagiz.com/ns/xml/1.0/"
+	version="2.0">
+	<xsl:param name="Username"/>	
+	<xsl:param name="Password"/>	
+	
+	<!-- This segment will house the parameter that will identify which component to call within the flow -->
+	
+	<xsl:param name="ExtGateway"/>	
+	
+	<!-- This segment will house the variable that will identify when you want to call the extension gateway, what the input of the extension gateway should be and what you want as a result -->
+	
+	<xsl:variable name="Token" select="if (exists(//ID) and //ID != '') then ezx:call-xslt-extension-gateway($ExtGateway, $RetrieveToken) else ''"/>
+	
+	<!-- This segment will copy the incoming message to the output -->
+	
+	<xsl:template match="@* | node()">
+		<xsl:copy>
+			<xsl:apply-templates select="@* | node()"/>
+		</xsl:copy>
+	</xsl:template>
+	
+	<!-- This segment will ensure that the Token will be filled in correctly -->
+	
+	<xsl:template match="Token">
+			<Token>
+				<xsl:value-of select="$Token"/>
+			</Token>			
+	</xsl:template>
+	
+	
+	<!-- The variable defined below will be the input to retrieve the token from the outside source -->
+	
+	<xsl:variable name="RetrieveToken">
+		<xsl:if test="exists(//ID) and //ID != ''">
+			<root>
+				<username><xsl:value-of select="$Username"/></username>
+				<password><xsl:value-of select="$Password"/></password>
+			</root>
+		</xsl:if>
+	</xsl:variable>
+</xsl:stylesheet>
+
+Now that we have an example of a custom XSLT that we can use we now need to make sure that this XSLT will work within the context of our flow.
+
+### 3.5 Connect XSLT to flow
+
+The first step we need to take is to link the resource to the flow. To do so you navigate to the tab Resources on flow level, while in "Start Editing" mode.
+In this tab you have the option to Upload new resource
+
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--upload-new-resource.png"></p>
+
+When you select this option you can upload your custom XSLT. Ensure that you select the correct resource type and give the resource a good descriptive name
+
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--upload-new-resource-filled-in.png"></p>
+
+Now that we have added the resource to the flow we can return to the flow overview and add a XSLT transformer component to the canvas and fill in the details
+
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-transformer-basic.png"></p>
+
+When you are finished with the basic config you can move to the Advanced section. In this section we need to define the values for our parameter(s).
+The end result will look something like this:
+
+<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-transformer-advanced.png"></p>
+
+As you can see the ExtGateway parameter refers to the ID of the XSLT extension gateway component within our flow. 
+Now that we have set our XSLT transformer component up correctly the we have automatically linked the XSLT Transformer to the XSLT extension gateway.
+
+With these steps you can successfully use the XSLT extension gateway component in eMagiz. Based on your use case the details of the configuration can differ.
 
 ##### Practice
 
 ## 4. Assignment
 
-Create an Event processor between an input and output topic within your (Academy) project.
+Create within your flow an XSLT extension gateway setup as depicted above. The linking of the XSLT transformer to the XSLT extension gateway can be skipped in the exercise.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- An event processor transports data between an input and an output topic
-- When you use the transformation functionality on top of the event processor you can manipulate the structure of your output based on the requirements
-- In eMagiz, you can easily create an event processor by using the Add integrations functionality to transfer the event processor from Design to Create
-- eMagiz autogenerates the flow. The only user action that is needed is to verify the transformation, adjust if needed, and when satifisfied press Save
+- An XSLT Extension Gateway is a component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source.
+- Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
+- This response is in turn used to enrich your output message with the correct information.
+- Setting up an XSLT extension gateway means several components need to work in perfect unison
+- Don't forget about the error handling
+
 
 ##### Solution
 
@@ -111,7 +187,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
 
-<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/advanced-data-handling-xslt-extension-gateway.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
