@@ -16,9 +16,7 @@
 # Determining Needed Memory
 
 In this microlearning, we will focus on how can stay in control of your integration landscape with the help of determining the needed memory footprint for your integration landscape.
-As your integration landscape changes over time the need for more (or less) memory is evident. 
-
-.Therefore it is crucial to know how you can determine the memory correctly.
+As your integration landscape changes over time the need for more (or less) memory is evident. Therefore it is crucial to know how you can determine the memory correctly.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -37,6 +35,7 @@ With integration landscape we mean: A overview of all data integrations that are
 - eMagiz works with pre-determined sizes that are represented via an S, M, L, XL structure. Every size has a certain amount of memory available
 - When you exceed such a threshold you should upgrade (or downgrade) your memory in consultation with your partner manager
 - Overhead for OS and support functionality (auto-healing, alerting, monitoring) needs to be taken into account
+- The calculations and logic described below are applicable for the Messaging, API Gateway and Event Streaming pattern
 
 ##### Theory
 
@@ -255,7 +254,8 @@ This assignment can be completed with the help of the (Academy) project that you
 - When you exceed such a threshold you should upgrade (or downgrade) your memory in consultation with your partner manager
 - Overhead for OS and support functionality (auto-healing, alerting, monitoring) needs to be taken into account
 - Calculating memory can be challenging. Always confer with others before taking action
-- You can compare your calculations with the calculations of eMagiz.
+- You can compare your calculations with the calculations of eMagiz
+- The calculations and logic described below are applicable for the Messaging, API Gateway and Event Streaming pattern
 
 ##### Solution
 

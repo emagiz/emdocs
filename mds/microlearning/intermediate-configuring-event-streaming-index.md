@@ -58,6 +58,38 @@
                 <div class="strip__attribute-label">All</div>
             </div>
             </a>
+        </li>
+		<li class="strip">
+            <a href="../../docs/microlearning/intermediate-configuring-event-streaming-event-processor-transformation" class="strip__link">
+            <label for="" class="strip__label">
+                <span>2</span>
+                Design an Event Processor with Transformation
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            </a>
+        </li>
+		<li class="strip">
+            <a href="../../docs/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation" class="strip__link">
+            <label for="" class="strip__label">
+                <span>2</span>
+                Create an Event Processor with Transformation
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            </a>
         </li>        
     </ul>
     </main>
