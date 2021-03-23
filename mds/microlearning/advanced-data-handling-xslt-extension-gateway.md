@@ -185,7 +185,7 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. Disclaimer, you only see the eMagiz part but if you follow the above steps you are good to go!
+This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
 <iframe width="1280" height="720" src="../../vid/microlearning/advanced-data-handling-xslt-extension-gateway.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
