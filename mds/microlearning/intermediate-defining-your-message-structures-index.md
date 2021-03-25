@@ -15,7 +15,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>7</span>
                 Audit the CDM
             </label>
             <div class="strip__attribute">
@@ -31,7 +31,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-defining-your-message-structures-data-model-attribute-confidentiality" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>7</span>
                 Confidential Attributes
             </label>
             <div class="strip__attribute">

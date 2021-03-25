@@ -16,7 +16,7 @@
 # API Data Model
 
 In this microlearning, we will focus on learning about the API Data model.
-As with every integration, pattern eMagiz gives you the option to create your data model. 
+As with every integration pattern eMagiz gives you the option to create your data model. 
 This data model can be based on standards (i.e. OTM5), can be custom made, or a combination of both. 
 
 For API the data model represents the structure of messages that you want to publish to the outside (other parties or other internal systems) world. 

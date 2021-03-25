@@ -15,7 +15,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-event-streaming-connectors-using-kafka-module-mendix" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>6</span>
                 Using the Kafka module in Mendix
             </label>
             <div class="strip__attribute">

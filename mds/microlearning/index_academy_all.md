@@ -6,7 +6,7 @@
 	<div class="card-container">
 		<a href="../../docs/microlearning/crashcourse-platform-index" class="card card--featured">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">0 - Crash Course Platform</h4>
+				<h4 class="title">Crash Course Platform</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -25,7 +25,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-api-gateway-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">1 - Crash Course API Gateway</h4>
+				<h4 class="title">Crash Course API Gateway</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -44,7 +44,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">2 - Crash Course Platform Event Streaming</h4>
+				<h4 class="title">Crash Course Platform Event Streaming</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -63,7 +63,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-messaging-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">3 - Crash Course Messaging</h4>
+				<h4 class="title">Crash Course Messaging</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -96,7 +96,7 @@
 	<div class="card-container">
 		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">0 - Crash Course Platform</h4>
+				<h4 class="title">Crash Course Platform</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -115,7 +115,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-api-gateway-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">1 - Crash Course API Gateway</h4>
+				<h4 class="title">Crash Course API Gateway</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -134,7 +134,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">2- Crash Course Event Streaming</h4>
+				<h4 class="title">Crash Course Event Streaming</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -153,7 +153,7 @@
 		</a>
 		<a href="../../docs/microlearning/crashcourse-messaging-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">3- Crash Course Messaging</h4>
+				<h4 class="title">Crash Course Messaging</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -186,6 +186,25 @@
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">3</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Configuring Event Streaming</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">5</label>
 				</li>
 			</ul>
 		</a>
