@@ -223,7 +223,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">1</label>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>
@@ -280,7 +280,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">2</label>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>
