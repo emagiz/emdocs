@@ -29,6 +29,22 @@
         </a>
         </li>
         <li class="strip">
+            <a href="../../docs/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models" class="strip__link">
+            <label for="" class="strip__label">
+                <span>7</span>
+                Control usage of CDM elements
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">7 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
             <a href="../../docs/microlearning/intermediate-defining-your-message-structures-data-model-attribute-confidentiality" class="strip__link">
             <label for="" class="strip__label">
                 <span>7</span>
