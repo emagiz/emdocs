@@ -14,9 +14,11 @@
 	   </br></br>
 	   In the second part of our course, we will learn how our actions and configurations in Create can impact the message size and therefore the performance of the solution.
         </br></br>
+        In the third part of our course, we will look at some specific implementations that you might need when implementing very specific use cases
+        </br></br>
         - Total time: between 40 and 60 minutes
         </br>
-        - Last updated - February 2021
+        - Last updated - April 2021
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
@@ -69,6 +71,46 @@
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/expert-solution-architecture-h2-database-for-other-applications" class="strip__link">
+            <label for="" class="strip__label">
+                <span>9</span>
+                H2 Database for other applications
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">8 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Architect</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/expert-solution-architecture-aws-direct-connect" class="strip__link">
+            <label for="" class="strip__label">
+                <span>9</span>
+                AWS Direct Connect
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Architect</div>
             </div>
         </a>
         </li>		
