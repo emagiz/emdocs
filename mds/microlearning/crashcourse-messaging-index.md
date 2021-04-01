@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Messaging - Introduction
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-messaging-asynchronous" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Messaging Asynchronous
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-what-is-cdm" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Understanding the eMagiz CDM
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-setting-up-the-cdm" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Setting Up the CDM
             </label>
             <div class="strip__attribute">
@@ -82,7 +82,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-difference-between-cdm-and-cdm-messages" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Difference between CDM and CDM messages
             </label>
             <div class="strip__attribute">
@@ -102,7 +102,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-filter" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Filter
             </label>
             <div class="strip__attribute">
@@ -118,7 +118,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-asynchronous-routing" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Asynchronous Routing
             </label>
             <div class="strip__attribute">
@@ -134,7 +134,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-pick-up-files" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Pick up Files
             </label>
             <div class="strip__attribute">
@@ -150,7 +150,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-drop-files" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Drop Files
             </label>
             <div class="strip__attribute">
@@ -166,7 +166,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-interpreting-queue-statistics" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>3</span>
                 Interpreting queue statistics
             </label>
             <div class="strip__attribute">
