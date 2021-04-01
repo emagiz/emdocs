@@ -36,7 +36,7 @@ With manage, we mean: Stay in control of which alerting tags are used within you
 
 ##### Theory
 
-## 3. H2 Database for other applications
+## 3. Manage Alerting Tags
 
 In our previous dalliance with this subject we already discussed parts of what we will discuss in this microlearning. This microlearning is mainly meant to reiterate the importance of using proper tags when setting up your alerting. Managing your tags means staying in control what the function of a certain tag is, knowing whether tags are still used and acting on that knowledge. There are three key aspects you should take into account when managing your alerting tags:
 
