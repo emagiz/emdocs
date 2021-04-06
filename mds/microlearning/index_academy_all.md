@@ -207,6 +207,44 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Defining your message structures</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">4</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/intermediate-data-pipelines-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Data Pipelines</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Configuring Event Streaming</h4>
@@ -245,28 +283,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card">
+		<a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Defining your message structures</h4>
-			</div>
-			<ul class="card__footer">
-				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
-					<label for="" class="card__footer-label">Intermediate</label>
-				</li>
-				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
-					<label for="" class="card__footer-label">All</label>
-				</li>
-				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">4</label>
-				</li>
-			</ul>
-		</a>
-		<a href="../../docs/microlearning/intermediate-data-pipelines-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Data Pipelines</h4>
+				<h4 class="title">REST Webservice Connectivity</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -279,7 +298,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">1</label>
+					<label for="" class="card__footer-label">5</label>
 				</li>
 			</ul>
 		</a>
