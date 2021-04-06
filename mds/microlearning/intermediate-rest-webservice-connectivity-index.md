@@ -5,7 +5,7 @@
     <p>
        In this course, we will learn how you can use REST functionality within eMagiz. In this course we will build on what we have learned previously in the Crash Course Platform. For this course the focus will be on configuring the components that are needed to host and call a REST endpoint, various authorization methods, validation, headers and certificates.
         </br></br>
-        - Total time: between 10 and 20 minutes
+        - Total time: between 40 and 60 minutes
         </br>
         - Last updated - April 2021
     </p>
