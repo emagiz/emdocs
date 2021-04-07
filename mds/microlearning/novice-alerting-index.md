@@ -12,7 +12,7 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
         <li class="strip">
-            <a href="../../docs/microlearning/basic-alerting-manage-alerting-tags" class="strip__link">
+            <a href="../../docs/microlearning/novice-alerting-manage-alerting-tags" class="strip__link">
             <label for="" class="strip__label">
                 <span>4</span>
                 Manage Alerting Tags
@@ -32,7 +32,7 @@
         </a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/basic-alerting-linking-tags-to-triggers" class="strip__link">
+            <a href="../../docs/microlearning/novice-alerting-linking-tags-to-triggers" class="strip__link">
             <label for="" class="strip__label">
                 <span>4</span>
                 Linking Tag(s) to Trigger (s)

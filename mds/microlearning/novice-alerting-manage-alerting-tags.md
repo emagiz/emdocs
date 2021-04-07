@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/microlearning/basic-alerting-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/microlearning/novice-alerting-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -50,25 +50,25 @@ To manage your alerting tags you navigate to Manage -> Alerting -> Tags
 
 The beneficial nature of having the option to tag certain triggers within alerting is that the tag tells you and those you work with why that specific tag is chosen to be linked to a trigger. Therefore it is of utmost importance that the tag is descriptive in nature. A good example of a descriptive tag is the following:
 
-<p align="center"><img src="../../img/microlearning/basic-alerting-manage-alerting-in-emagiz--example-decriptive-tag.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-alerting-manage-alerting-in-emagiz--example-decriptive-tag.png"></p>
 
 On the other hand a tag, such as the following, is consider a bad practice
 
-<p align="center"><img src="../../img/microlearning/basic-alerting-manage-alerting-in-emagiz--example-non-decriptive-tag.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-alerting-manage-alerting-in-emagiz--example-non-decriptive-tag.png"></p>
 
 ### 3.1 Differentiate who requested the tag (Business, Support, Standard)
 
 On top of making a tag descriptive it can also really help to differentiate within your tagging who requested a certain trigger. This way you can identify who maintains certain triggers, who benefits from having a certain trigger, who will most likely receive notifications, etc. Especially in larger more complex environments it gives you the option to quickly see whether a comparable tag already exists or not.
 
-<p align="center"><img src="../../img/microlearning/basic-alerting-manage-alerting-in-emagiz--example-decriptive-tag-business.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-alerting-manage-alerting-in-emagiz--example-decriptive-tag-business.png"></p>
 
 ### 3.2 Remove tags that are not linked to a trigger anymore
 
 In order to stay in control of your alerting tags you should remove tags that are not linked to any trigger anymore. Fair warning on this one is that the Cloud Alert, Error Message and Data limit reached tag can and must not be deleted. You can determine wheter a tag is still in use in a trigger by navigating to the trigger overview and search on the Tag name. If no results come up you should remove the tag from your enviroment.
 
-<p align="center"><img src="../../img/microlearning/basic-alerting-manage-alerting-in-emagiz--trigger-overview-unfiltered.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-alerting-manage-alerting-in-emagiz--trigger-overview-unfiltered.png"></p>
 
-<p align="center"><img src="../../img/microlearning/basic-alerting-manage-alerting-in-emagiz--trigger-overview-filtered.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-alerting-manage-alerting-in-emagiz--trigger-overview-filtered.png"></p>
 
 After you have verified that a certain tag is indeed not used anymore you navigate back to the tags overview, select the tag in question and press Delete. As a result the tag will disappear from the list.
 
@@ -96,7 +96,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
-<iframe width="1280" height="720" src="../../vid/microlearning/basic-alerting-manage-alerting-in-emagiz.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-alerting-manage-alerting-in-emagiz.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
 
 </div>
 </main>

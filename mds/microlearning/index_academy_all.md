@@ -169,7 +169,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/basic-alerting-index" class="card">
+		<a href="../../docs/microlearning/novice-alerting-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Alerting</h4>
 			</div>
