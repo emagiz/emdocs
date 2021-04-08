@@ -28,7 +28,9 @@ Should you have any questions, please contact academy@emagiz.com.
 - Have an environment where you can add releases and that is operational to try out the deployment plan
 
 ## 2. Key concepts
-eMagiz provides the capability to manage your deployments effectively so that all your updated flow components as created in the previous ILM phases of eMagiz. In the previous microlearning, you have seen how the flows are deployed across the different eMagiz runtime - this microlearning defines what exactly needs to be deployed. 
+eMagiz provides the capability to manage your deployments effectively so that all your updated flow components as created in the previous ILM phases of eMagiz. In the previous microlearning, you have seen how the flows are deployed across the different eMagiz runtime - this microlearning defines what exactly needs to be deployed.
+
+When you create a release you create a set/view of all flows that should run on your environment on a specific date and time. 
 
 This microlearning centers around creating (and managing) an eMagiz Release.
 
@@ -73,6 +75,7 @@ Go to your environment, and try to add a new release for your environment. Explo
 
 - The Release defined what is to be deployed on a specific environment, as compared to the Deployment plan that determines what is to be deployed
 - Use proper naming and clean your old releases regularly. Non-active releases only can be deleted
+- When you create a release you create a set/view of all flows that should run on your environment on a specific date and time
 
 ##### Solution
 
