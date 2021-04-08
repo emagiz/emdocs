@@ -15,179 +15,115 @@
 
 # Transformation - JSON to XML
 
-In this microlearning, we will focus on the XSLT extension gateway. 
-The XSLT extension gateway is a component in eMagiz that helps you to enrich your output XML message by retrieving data from an outside source.
+In this microlearning, we will focus on transforming JSON to XML within the tooling of eMagiz. With the help of this microlearning you will know how to transform from JSON to XML with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: March 22th, 2021
-- Required reading time: 6 minutes
+- Last update: April 8th, 2021
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
-- Advanced knowledge of the eMagiz platform
-- Advanced knowledge of XSLT
+- Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around the XSLT extension gateway component in eMagiz
-By XSLT extension gateway we mean: A component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source
+This microlearning centers around transforming JSON to XML
+By transforming we mean: Making sure that the input message is transformed in a valid output message by defining how this should happen
 
-
-Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
+eMagiz natively supports the transformation of JSON to XML with the help of:
+- Data models in Design
+- Message mapping in Design
+- Create transformation in Create
+- Support Objects
 
 ##### Theory
 
 ## 3. Transformation - JSON to XML
 
-An XSLT Extension Gateway is a component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source.
-Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
-This response is in turn used to enrich your output message with the correct information.
+In this microlearning, we will focus on transforming JSON to XML within the tooling of eMagiz. With the help of this microlearning you will know how to transform from JSON to XML with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
 
-### 3.1 Setting up the XSLT Extension Gateway
+eMagiz natively supports the transformation of JSON to XML with the help of:
+- Data models in Design
+- Message mapping in Design
+- Create transformation in Create
+- Support Objects
 
-The first step of setting up an XSLT Extension Gateway is to add the XSLT Extension Gateway component to your flow and create two channels (one for the request and one for the response).
-You can do so by dragging the correct component on the canvas, creating the channels and linking the channels to the XSLT Extension Gateway.
-An example of how this will look is shown below:
+### 3.1 Data models in Design
 
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-added-to-canvas.png"></p>
+Just as you are used to you simply create the correct system definition in Design as you would do when you would create a data model for XML message. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
 
-### 3.2 Connect to the outside source
+One extra thing to take into account when handling JSON is the root entity. Contrary to XML it is not mandatory to name your root entity when handling JSON. This means that when you create your data model you should verify beforehand whether the system to which you want to send your messages has a named root entity or not.
 
-As stated before, via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
-In this example we will assume that you want to retrieve a Token from a REST Webservice that you need as part of your authorization when executing subsequent calls.
+An example of a JSON message where the root entity is not named is shown below as the first example. The second example you see below is an example of a JSON message where the root entity is named.
 
-In this case we will have to call a certain endpoint via a POST method. In the body of our message we need to send the username and password that we have received from the outside source.
-This outside source expects the body in XML.
+{ 
+    {"ID": 1234}
+}
 
-To make this a reality in eMagiz we first need to add an HTTP Outbound Gateway to the canvas and fill in the details.
+{"Root":
+    {"ID": 1234}
+}
 
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--http-outbound-gateway-xslt-extension.png"></p>
+If you need to send a name along with the JSON root in your output message you should create an extra entity in your data model with which your system message definition will start.
 
-This automatically links the XSLT extension gateway to the HTTP oubound gateway, provided you selected the correct request and response channel.
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--system-message-named-root.png"></p>
 
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--http-outbound-gateway-xslt-extension-result.png"></p>
+Regardless whether the root of your output JSON message is named you also don't need to forget to define your message format. This can be done on system level (in case all communication happens in JSON) or it can happen on system message level. On system message level you have a button called Change message format which you can press while being in "Start Editing Mode". This action will show a pop-up. In here you can switch between XML and JSON as message format. Ensure that the message format is JSON
 
-### 3.3 Error handling
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--change-message-format.png"></p>
 
-It could happen that something goes wrong while retrieving the relevant data from the outside will using the XSLT Extension Gateway. 
-To ensure that the error handling does its work you need to link the XSLT Extension Gateway to the default error handling of eMagiz.
+### 3.2 Message mapping in Design
 
-You can easily do so by opening the XSLT Extension Gateway component, navigating to the Advanced tab, selecting the correct Error channel and setting the Reply timeout.
+Just as you are used to you simply create the correct message mapping in Design as you would do when you would create a message mapping for XML messages. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
 
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-error-channel.png"></p>
+### 3.2 Create transformation in Create
 
-The result of this action will be that the XSLT extension will send his errors to the standard error handling process of eMagiz.
+Just as you are used to you simply create the correct transformation functionality (filter, transformation, static input, etc.) as you would do when you would create the correct transformation functionality for XML messages. If you are unsure how to do this please revisit the section on Create in the Crash Course Platform.
 
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-extension-gateway-error-channel-result.png"></p>
+### 3.3 Needed support objects
 
-### 3.4 Write the XSLT
+However eMagiz needs to be told whether a input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you build an API Gateway flow this will be done automatically based on the settings in Design. The crucial part in this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
 
-To succesfully call an XSLT extension gateway your custom XSLT needs five things:
+In this case we want to transform from JSON to XML and therefore you need a JSON source factory within your flow. In this component you need to define your virtual root based on your system message in Design. This is always the name of the root entity as defined as your system message in Design. In the example shown above this will mean that the virtual root for this example is root.
 
-- A parameter that defines which component the XSLT extension gateway is within the flow
-- A variable that calls the XSLT extension gateway and will hold the result
-- A variable that defines what the input for your XSLT extension gateway will be
-- A template match that copies your input
-- A template match that ensures that the result of your XSLT extension gateway is correctly outputted
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--json-source-factory.png"></p>
 
-An example of such an XSLT is depicted below. Within the XSLT we have described which part is responsible for what exactly. 
+The JSON source factory is needed for your validation. However to also support the transformation from JSON to XML you need an additional support object called Result to string transformer
 
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:ezx="http://www.emagiz.com/ns/xml/1.0/"
-	version="2.0">
-	<xsl:param name="Username"/>	
-	<xsl:param name="Password"/>	
-	
-	<!-- This segment will house the parameter that will identify which component to call within the flow -->
-	
-	<xsl:param name="ExtGateway"/>	
-	
-	<!-- This segment will house the variable that will identify when you want to call the extension gateway, what the input of the extension gateway should be and what you want as a result -->
-	
-	<xsl:variable name="Token" select="if (exists(//ID) and //ID != '') then ezx:call-xslt-extension-gateway($ExtGateway, $RetrieveToken) else ''"/>
-	
-	<!-- This segment will copy the incoming message to the output -->
-	
-	<xsl:template match="@* | node()">
-		<xsl:copy>
-			<xsl:apply-templates select="@* | node()"/>
-		</xsl:copy>
-	</xsl:template>
-	
-	<!-- This segment will ensure that the Token will be filled in correctly -->
-	
-	<xsl:template match="Token">
-			<Token>
-				<xsl:value-of select="$Token"/>
-			</Token>			
-	</xsl:template>
-	
-	
-	<!-- The variable defined below will be the input to retrieve the token from the outside source -->
-	
-	<xsl:variable name="RetrieveToken">
-		<xsl:if test="exists(//ID) and //ID != ''">
-			<root>
-				<username><xsl:value-of select="$Username"/></username>
-				<password><xsl:value-of select="$Password"/></password>
-			</root>
-		</xsl:if>
-	</xsl:variable>
-</xsl:stylesheet>
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--result-to-string-transformer.png"></p>
 
-Now that we have an example of a custom XSLT that we can use we now need to make sure that this XSLT will work within the context of our flow.
+Don't forget to properly link the support objects to the correct flow components in order for it to work. In the onramp you need to link the JSON source factory to the validation component and both support objects to the transformation.
 
-### 3.5 Connect XSLT to flow
-
-The first step we need to take is to link the resource to the flow. To do so you navigate to the tab Resources on flow level, while in "Start Editing" mode.
-In this tab you have the option to Upload new resource
-
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--upload-new-resource.png"></p>
-
-When you select this option you can upload your custom XSLT. Ensure that you select the correct resource type and give the resource a good descriptive name
-
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--upload-new-resource-filled-in.png"></p>
-
-Now that we have added the resource to the flow we can return to the flow overview and add a XSLT transformer component to the canvas and fill in the details
-
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-transformer-basic.png"></p>
-
-When you are finished with the basic config you can move to the Advanced section. In this section we need to define the values for our parameter(s).
-The end result will look something like this:
-
-<p align="center"><img src="../../img/microlearning/advanced-data-handling-xslt-extension-gateway--xslt-transformer-advanced.png"></p>
-
-As you can see the ExtGateway parameter refers to the ID of the XSLT extension gateway component within our flow. 
-Now that we have set our XSLT transformer component up correctly the we have automatically linked the XSLT Transformer to the XSLT extension gateway.
-
-With these steps you can successfully use the XSLT extension gateway component in eMagiz. Based on your use case the details of the configuration can differ.
+After having done this you can use the unit testing functionality of eMagiz to test your work. If you are unsure how this functionality works please take a look at the segment on unit testing in the Crash Course Platform.
 
 ##### Practice
 
 ## 4. Assignment
 
-Create within your flow an XSLT extension gateway setup as depicted above. The linking of the XSLT transformer to the XSLT extension gateway can be skipped in the exercise.
+Create a transformation between JSON and XML. Ensure that you have a working solution by running a unit test.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- An XSLT Extension Gateway is a component within eMagiz that gives you the option to retrieve additional data while executing the transformation from an outside source.
-- Via the XSLT extension gateway you can retrieve data from multiple sources (REST Webservice, SOAP Webservice, Database, etc.) as long as the outside source can supply a response in near real-time.
-- This response is in turn used to enrich your output message with the correct information.
-- Setting up an XSLT extension gateway means several components need to work in perfect unison
-- Don't forget about the error handling
+- eMagiz natively supports the transformation of JSON to XML with the help of:
+    - Data models in Design
+    - Message mapping in Design
+    - Create transformation in Create
+    - Support Objects
+- Ensure that you link the support objects correctly
+- Don't forget to define the message format
 
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the release notes provided by eMagiz that accompany the eMagiz Mendix Connector version you have selected.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
 
 ## 7. Silent demonstration video
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
-<iframe width="1280" height="720" src="../../vid/microlearning/advanced-data-handling-xslt-extension-gateway.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-create-your-transformations-json-to-xml.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

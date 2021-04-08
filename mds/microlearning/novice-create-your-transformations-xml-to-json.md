@@ -23,8 +23,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - Required reading time: 7 minutes
 
 ## 1. Prerequisites
-- Advanced knowledge of the eMagiz platform
-- Advanced knowledge of XSLT
+- Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
 This microlearning centers around transforming XML to JSON
