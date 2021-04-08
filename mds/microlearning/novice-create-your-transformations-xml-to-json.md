@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/novice-create-your-transformations-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/novice-create-your-transformations-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -15,7 +15,7 @@
 
 # Transformation - XML to JSON
 
-In this microlearning, we will focus on transforming XML to JSON within the tooling of eMagiz. With the help of this microlearning you will know how to transform from XML to JSON with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
+In this microlearning, we will focus on transforming XML to JSON within the tooling of eMagiz. With the help of this microlearning, you will know how to transform from XML to JSON with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -39,7 +39,7 @@ eMagiz natively supports the transformation of XML to JSON with the help of:
 
 ## 3. Transformation - XML to JSON
 
-In this microlearning, we will focus on transforming XML to JSON within the tooling of eMagiz. With the help of this microlearning you will know how to transform from XML to JSON with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
+In this microlearning, we will focus on transforming XML to JSON within the tooling of eMagiz. With the help of this microlearning, you will know how to transform from XML to JSON with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
 
 eMagiz natively supports the transformation of XML to JSON with the help of:
 - Data models in Design
@@ -67,7 +67,7 @@ If you need to send a name along with the JSON root in your output message you s
 
 <p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xml-to-json--system-message-named-root.png"></p>
 
-Regardless whether the root of your output JSON message is named you also don't need to forget to define your message format. This can be done on system level (in case all communication happens in JSON) or it can happen on system message level. On system message level you have a button called Change message format which you can press while being in "Start Editing Mode". This action will show a pop-up. In here you can switch between XML and JSON as message format. Ensure that the message format is JSON
+Regardless of whether the root of your output JSON message is named you also don't need to forget to define your message format. This can be done on the system level (in case all communication happens in JSON) or it can happen on the system message level. On the system message level, you have a button called Change message format which you can press while being in "Start Editing Mode". This action will show a pop-up. Here you can switch between XML and JSON as the message format. Ensure that the message format is JSON
 
 <p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xml-to-json--change-message-format.png"></p>
 
@@ -81,17 +81,17 @@ Just as you are used to you simply create the correct transformation functionali
 
 ### 3.3 Needed support objects
 
-However eMagiz needs to be told whether a input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you build an API Gateway flow this will be done automatically based on the settings in Design. The crucial part in this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
+However, eMagiz needs to be told whether the input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you build an API Gateway flow this will be done automatically based on the settings in Design. The crucial part of this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
 
-In this case we want to transform from XML to JSON and therefore you need a JSON Result factory within your flow. In this component you need to define your virtual root based on your system message in Design. This is always the name of the root entity as defined as your system message in Design. In the example shown above this will mean that the virtual root for this example is root.
+In this case, we want to transform from XML to JSON and therefore you need a JSON Result factory within your flow. In this component, you need to define your virtual root based on your system message in Design. This is always the name of the root entity as defined as your system message in Design. In the example shown above, this will mean that the virtual root for this example is root.
 
 <p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xml-to-json--json-result-factory.png"></p>
 
-The JSON result factory is needed for your validation. However to also support the transformation from XML to JSON you need an additional support object called JSON result transformer
+The JSON result factory is needed for your validation. However, to also support the transformation from XML to JSON you need an additional support object called JSON result transformer
 
 <p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xml-to-json--json-result-transformer.png"></p>
 
-Don't forget to properly link the support objects to the correct flow components in order for it to work. In the offramp you need to link the support objects to the transformation. In the exit you need to link the JSON result factory to the validation.
+Don't forget to properly link the support objects to the correct flow components for them to work. In the offramp, you need to link the support objects to the transformation. In the exit, you need to link the JSON result factory to the validation.
 
 After having done this you can use the unit testing functionality of eMagiz to test your work. If you are unsure how this functionality works please take a look at the segment on unit testing in the Crash Course Platform.
 
