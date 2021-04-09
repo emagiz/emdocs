@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-install-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>6</span>
                 What is an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-install-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>6</span>
                 Install an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-configure-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>6</span>
                 Configure an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-update-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>6</span>
                 Update an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">

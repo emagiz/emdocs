@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-json-to-xml" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>11</span>
+                    <span>4</span>
                     Transformation - JSON to XML
                 </label>
                 <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-xml-to-json" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>11</span>
+                    <span>4</span>
                     Transformation - XML to JSON
                 </label>
                 <div class="strip__attribute">
