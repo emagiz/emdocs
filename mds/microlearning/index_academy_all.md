@@ -18,7 +18,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">42</label>
+					<label for="" class="card__footer-label">43</label>
 				</li>
 			</ul>
 		</a>
@@ -108,7 +108,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">42</label>
+					<label for="" class="card__footer-label">43</label>
 				</li>
 			</ul>
 		</a>
@@ -169,7 +169,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/crashcourse-messaging-index" class="card">
+		<a href="../../docs/microlearning/novice-create-your-transformations-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Create your transformations</h4>
 			</div>
@@ -260,7 +260,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">1</label>
+					<label for="" class="card__footer-label">4</label>
 				</li>
 			</ul>
 		</a>
@@ -355,7 +355,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">3</label>
+					<label for="" class="card__footer-label">5</label>
 				</li>
 			</ul>
 		</a>
