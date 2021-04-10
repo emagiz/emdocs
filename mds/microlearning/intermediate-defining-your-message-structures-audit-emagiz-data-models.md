@@ -38,7 +38,7 @@ Auditing the eMagiz data models can be done by navigating to the specific data m
 
 ##### Theory
   
-## 3. Audit the eMagiz Data model
+## 3. Audit eMagiz Data Models
 
 Knowing how changed what at the eMagiz Data model level is crucial for proper control and management of these data models.
 
