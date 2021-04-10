@@ -13,94 +13,74 @@
 
 ##### Intro
 
-# Audit eMagiz Data Models
+# User Acceptance Testing
 
-In this microlearning, we will focus on how you can audit the three eMagiz data models (CDM, API Gateway Data Model, Event Streaming Data Model) 
-within your project to see which changed have taken place and what you should do when changing something in these data models to make it auditable.
+In this microlearning, we will focus on user acceptance testing. At some point in time you have build your solution and have executed a system integration test. Now it becomes time to include the business (users) with your tests. This is what we call a user acceptance test. The focus of this test is far more functional in nature compared to the system integration test and the goal of the test is to let the business (users) accept the solution. After passing this test you can think about going to Production with the solution.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 22th 2021
-- Required reading time: 5 minutes
+- Last update: April 10th 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of the data model concept
+- Understanding of the flow testing functionality
 
 ## 2. Key concepts
-This microlearning centers around auditing your eMagiz project on the eMagiz data model level.
+This microlearning centers around user acceptance testing.
 
-By audit we mean: Making it clear who changed the data model at a certain moment in time.
+By user acceptance testing we mean: A test that is designed to let the users (business) test the functionality based on various scenarios. Based on the results of the test you can either go live or need to go back to the drawing board. 
 
-With data model we mean: The data model that defines the data structure and relationships between these data structures that are generic, uniform, and representative of how this data is looked upon within our organization.
-
-Auditing the eMagiz data models can be done by navigating to the specific data model in question in the Design phase and selecting the button called History located in the bottom bar.
+At some point in time you have build your solution and have executed a system integration test. Now it becomes time to include the business (users) with your tests. This is what we call a user acceptance test. The focus of this test is far more functional in nature compared to the system integration test and the goal of the test is to let the business (users) accept the solution. After passing this test you can think about going to Production with the solution.
 
 ##### Theory
   
-## 3. Audit the eMagiz Data model
+## 3. User Acceptance Testing
 
-Knowing how changed what at the eMagiz Data model level is crucial for proper control and management of these data models.
+The purpose of performing end-to-end testing is to identify system dependencies and to ensure that the data integrity is maintained between various system components and systems. This means that each change made to an integration should be tested to make sure that production-like scenarios don’t lead to any unexpected errors when the new functionality is released to production. 
+During the development of new features, you will need multiple testing methods. Each method has a different purpose to help you in the different steps of thsee development process. Not in every case each test is applicable however they are still recommended. Examples include:
+-	Unit testing
+	- Offline testing
+	- Flow testing
+	- Integration testing
+-	Regression testing
+-	Performance testing
+-	End-to-end testing (UAT)
 
-If you want to audit any of these eMagiz data models (look at the history of changes made to the data model by whom) you can navigate to the Design phase of your project and open the specific data model.
-In the view that you will be presented with you will see a button on the bottom bar called History.
+<p align="center"><img src="../../img/microlearning/intermediate-testing-in-emagiz-user-acceptance-testing--various-steps-of-testing-highlight-uat.png"></p>
 
-The conceptual idea will be explained in this microlearning with the help of the CDM (the eMagiz data model for messaging). The same idea applies to the other eMagiz data models available.
+An important step is to determine as early as possible the different scenarios which you need to test during your end-to-end test. The earlier you have these clear, the better you are able to test your changes during the process. This will improve the quality of the integration. Before starting the Create phase, the test scenario’s should be agreed upon with the business owners. This is one of the Definition of Done items from the Discovery (Capture & Design) phase we advice.
 
-If you want to audit the CDM (look at the history of changes made to the CDM by whom) you can navigate to the Design phase of your project and open the CDM. 
-In this CDM view, you have a button on the bottom bar called History.
+During the development, you have considered what the steps and effects are of the new functionality and change. While implementing, you need to test continuously to verify if the changes made behave as expected. The eMagiz platform offers you features which help you during these tests. While doing development you can use the flow testing functionality in eMagiz to test your small units/flows.
 
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--accessing-history-overview.png"></p>
+However at some point you need to link these units/flows together. That is when you as a developer should want to do a system integration testing to determine for yourselves that everything that you and others within the team have worked to connect two systems together actually works across all those scenario's. This way you know that this solution is ready for (User) Acceptance Testing.
 
-When you click on this button you will see a grid showing you the detailed history of who has done what in the past on the CDM level.
-
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--showing-history-overview.png"></p>
-
-Within this overview, you have the option to search on several indicators such as who made the change or what that person described they changed 
-
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--search-history-overview.png"></p>
-
-### 3.1 Editing the CDM
-
-Having a view of the history of the CDM adds value if you can register certain changes made on the CDM level. 
-To correctly describe these changes made you rely on the person making the change. This is why it is of utmost importance that when you edit the CDM
-you specify exactly what you have changed.
-
-To edit the CDM you click on the Start Editing button located in the left bottom corner of your screen. 
-The moment you have pressed Start Editing you can add, edit and delete entities and attributes on this canvas.
-
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--edit-mode-cdm.png"></p>
-
-When you are satisfied with your changes you can press Stop editing. After you have pressed Stop editing you will see a popup.
-In this pop-up, you have to define whether you have made a major change, minor change, or patch update to the CDM and describe what you have changed
-
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--new-version-popup.png"></p>
-
-<p align="center"><img src="../../img/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models--new-version-popup-filled-in.png"></p>
-
-As you can see what you write down in terms of what you have changed is crucial so others can easily see what exactly has been changed.
+When you have succesfully performed your system integration test you should schedule and execute a user acceptance test (UAT). With this test the users (business) will test what you (and your team) have build to ensure that it works as expected. A crucial part of this test is user involvement and a focus on functional scenarios. In essence you should not have to look into eMagiz at this point as your solution should do what it is build for. If you notice that you spend a lot of time in eMagiz while this test is executed you should consider testing your own solutions better before going into a user acceptance test (UAT).
 
 ##### Practice
 
 ## 4. Assignment
 
-Edit the CDM within your (Academy) project and describe what you have changed after you are satisfied with your change. 
-After this ask a colleague for a peer review to see if they can determine by looking at the History what has been changed.
+Browse the internet to learn more on User Acceptance Testing. Use the suggested additional readings as a starting point. Furthermore see if you and your teammembers already do this or not.
 
 ## 5. Key takeaways
 
-Having audit functionality on the eMagiz data model level provides traceability and accountability for a key aspect of your integrations.
-To make sure that auditing can be done correctly the person that does the editing must make it clear what has been changed.
+- There are various stages of testing
+- User Acceptance Test (UAT) verifies that all intented functional scenarios as devised by the users (business) are indeed working as expected
+- You need a User Acceptance Test (UAT) before going live
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
+If you are interested in this topic and want more information on it please read the following links:
+
+- https://www.softwaretestinghelp.com/what-is-user-acceptance-testing-uat/
+- https://www.guru99.com/user-acceptance-testing.html
 
 ## 7. Silent demonstration video
 
-<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-defining-your-message-structures-audit-emagiz-data-models.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+As this is a more theoretical microlearning we have no video for this
 
 </div>
 </main>

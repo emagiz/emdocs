@@ -8,7 +8,7 @@
 	   </br></br>
 	   Furthermore we will take a look at user acceptance testing. A crucial part in delivering a stable integration solution to the customer.
         </br></br>
-        - Total time: between 20 and 30 minutes
+        - Total time: between 10 and 20 minutes
         </br>
         - Last updated - April 2021
     </p>
@@ -22,7 +22,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">13 minutes</div>
+                <div class="strip__attribute-label">4 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
@@ -38,7 +38,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">13 minutes</div>
+                <div class="strip__attribute-label">4 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
