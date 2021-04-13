@@ -264,7 +264,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/intermediate-testing-in-emagiz" class="card">
+		<a href="../../docs/microlearning/intermediate-testing-in-emagiz-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Testing in eMagiz</h4>
 			</div>
