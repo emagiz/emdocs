@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-api-gateway-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -16,12 +16,11 @@
 # HTTP Resource (Paths)
 
 In this microlearning, we will focus on learning about HTTP Resource (Paths).
-A crucial part of setting up your (API) Gateway with the help of RESTful services is 
-knowing to which resources (i.e. Order, Client, Employee) you want to give external parties access via your (API) Gateway.
+A crucial part of setting up your (API) Gateway with the help of RESTful services is knowing to which resources (i.e. Order, Client, Employee) you want to give external parties access via your (API) Gateway.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th, 2021
+- Last update: April 14th, 2021
 - Required reading time: 4 minutes
 
 ## 1. Prerequisites
@@ -49,6 +48,8 @@ https://restfulapi.net/resource-naming/
 ##### Theory
 
 ## 3. HTTP Resource (Paths)
+This microlearning focuses on the theoretical part of HTTP Resources regardless of a specific implementation in eMagiz. In the microlearnings that will come, we will use this theoretical knowledge when we configure our API Gateway further.
+
 When determining the correct resource path to expose to the outside world start at what you want to make publicly available.
 For example, when you want to make it possible for external parties to retrieve a collection of orders without any filter a valid resource path can be:
 - /orders

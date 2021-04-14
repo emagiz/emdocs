@@ -20,7 +20,7 @@ A crucial part of setting up your (API) Gateway with the help of RESTful service
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 19th, 2021
+- Last update: April 14th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -38,9 +38,9 @@ When setting up your API Gateway integration the process of doing things is to s
 ## 3. Configure a backend operation
 
 When you look at the conceptual idea of the API Gateway, exposing backend operations via a centralized location to the outside world 
-it stands to reason that when you set up your API Gateway (i.e. the front-end facing part) start with the backend operation you want to expose. 
+it stands to reason that when you set up your API Gateway (i.e. the front-end facing part) you start with the backend operation you want to expose. 
 
-To configure the backend system that holds the operation(s) double click on the system to enter the following pop-up
+Configuring backend operations is done in the Design phase of eMagiz. When you are in the Design overview you can double click on the backend system that holds the operation(s). This action will show you the following pop-up
 
 <p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-configure-backend-operations--system-edit.png"></p>
 
@@ -49,7 +49,7 @@ In here you need to fill in the technical name, just as with any other system. F
 - Does the system talk JSON or XML
 - Can you specify the backend operations either via an import of the OpenAPI 3.0 spec or via a manual action
 
-If the answer to the above decisions is JSON and yes the default setting are correct and you should continue to either import the OpenAPI 3.0 spec or manually configure at least one backend operation.
+If the answer to the above decisions is JSON and yes the default settings are correct you should continue to either import the OpenAPI 3.0 spec or manually configure at least one backend operation.
 More on that later in this microlearning.
 
 In case the answer to the first decision is XML you should switch the default format to XML and unselect the OpenAPI 3.0 spec. The result should be something like this.
