@@ -62,6 +62,9 @@ You will need the following App Store Modules (if you do not yet have them in yo
 - LibraryLogging
 - Encryption
 
+If you have not yet imported the Encryption module into your project ensure that you define the constant called EncryptionKey based on the information as specified by Mendix.
+Furthermore, note that the MxModelReflection can be used to make your microflows accessible as an on receive microflow when you configure your consumer(s).
+
 #### 3.1.2 eMagiz Kafka Module
 
 The eMagiz Kafka Module is made available via the portal (in a similar manner as with the eMagiz Mendix Connector). We will work towards making the module available in the Mendix Store as well.
