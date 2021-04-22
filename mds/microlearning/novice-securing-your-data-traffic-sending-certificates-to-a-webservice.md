@@ -13,7 +13,7 @@
 
 ##### Intro
 
-# What are certificates
+# Sending certificates to a webservice
  
 In this microlearning, we will learn how you can send a certificate to a SOAP web service.
 
@@ -39,7 +39,7 @@ In another microlearning, we will learn how to create the keystore and truststor
 
 ##### Theory
   
-## 3. What are certificates
+## 3. Sending certificates to a webservice
 
 In this microlearning, we will learn how you can send a certificate to a SOAP web service.
 

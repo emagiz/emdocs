@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">Securing your Data Traffic</h2>
     <p>
-       In this course, we will focus on certificates and how these certificates can secure your data traffic between systems.
+       In this course, we will build on our knowledge on certificates and learn more on the topic of securing your data traffic. If you are unsure what certificates are please revisit the novice course on this topic for context.
         </br></br>
         - Total time: between 15 and 25 minutes
         </br>
@@ -12,9 +12,9 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
         <li class="strip">
-            <a href="../../docs/microlearning/novice-securing-your-data-traffic-what-are-certificates" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-securing-your-data-traffic-securing-a-hosted-webservice-with-certificates-in-the-emagiz-cloud" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>32</span>
                 What are certificates
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-securing-your-data-traffic-sending-certificates-to-a-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>32</span>
                 Sending certificates to a webservice
             </label>
             <div class="strip__attribute">
