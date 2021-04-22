@@ -19,7 +19,7 @@ In this microlearning, we will focus on the eMagiz platform and the various comp
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: April 10th, 2021
+- Last update: April 22th, 2021
 - Required reading time: 9 minutes
 
 ## 1. Prerequisites
