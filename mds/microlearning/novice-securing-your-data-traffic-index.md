@@ -5,7 +5,7 @@
     <p>
        In this course, we will focus on certificates and how these certificates can secure your data traffic between systems.
         </br></br>
-        - Total time: between 20 and 30 minutes
+        - Total time: between 15 and 25 minutes
         </br>
         - Last updated - April 2021
     </p>
