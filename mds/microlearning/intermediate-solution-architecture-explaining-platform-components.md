@@ -24,7 +24,6 @@ Should you have any questions, please contact academy@emagiz.com.
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of the flow testing functionality
 
 ## 2. Key concepts
 This microlearning centers around explaining the components that make up the platform.

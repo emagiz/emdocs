@@ -24,7 +24,7 @@ Should you have any questions, please contact academy@emagiz.com.
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of the flow testing functionality
+- Basic knowledge of the build number component within the eMagiz Platform
 
 ## 2. Key concepts
 This microlearning centers around upgrading your build numbers.
