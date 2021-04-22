@@ -20,7 +20,7 @@ In this microlearning, we will learn how you can secure the (SOAP/REST) web serv
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: April 22th, 2021
-- Required reading time: 5 minutes
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
