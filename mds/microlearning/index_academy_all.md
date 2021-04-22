@@ -340,6 +340,26 @@
 				</li>
 			</ul>
 		</a>
+		</a>
+			<a href="../../docs/microlearning/intermediate-create-your-transformations-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Create your transformations</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">3</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/advanced-data-handling-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Data Handling</h4>
@@ -356,6 +376,26 @@
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
+		</a>
+			<a href="../../docs/microlearning/intermediate-devops-perspectives-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">DevOps perspectives</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>
@@ -462,6 +502,12 @@
 		<div class="moduleitemdarkgreen">Data Pipelines</div>
 		<div class="moduleitemdetail">
 			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/intermediate-data-pipelines-index';">Start</modbutton></a></div>
+		</div>
+	</li>
+	<li class="moduleitem">
+		<div class="moduleitemdarkgreen">Advanced Testing with eMagiz</div>
+		<div class="moduleitemdetail">
+			<div></br><a align="center"><img src="../../img/microlearning/Logo_eMagiz_wit.png"></br><modbutton class="button" onclick="window.location.href='../../docs/microlearning/advanced-testing-in-emagiz-index';">Start</modbutton></a></div>
 		</div>
 	</li>
 	</ul>
