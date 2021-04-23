@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-upgrading-build-numbers" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>10</span>
                 Upgrading Build Numbers
             </label>
             <div class="strip__attribute">

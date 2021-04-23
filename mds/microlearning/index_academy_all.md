@@ -207,6 +207,44 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/novice-lifecycle-management-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Lifecycle Management</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Novice</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/novice-securing-your-data-traffic-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Securing your Data Traffic</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Novice</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">2</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/novice-mendix-connectivity-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Mendix Connectivity</h4>
@@ -245,6 +283,25 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-solution-architecture-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Solution Architecture</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-data-pipelines-index" class="card">
 			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
 				<h4 class="title">Data Pipelines</h4>
@@ -280,6 +337,25 @@
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">2</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/intermediate-securing-your-data-traffic-index" class="card">
+			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+				<h4 class="title">Securing your Data Traffic</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>
