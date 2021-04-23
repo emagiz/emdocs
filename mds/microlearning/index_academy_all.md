@@ -170,7 +170,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-create-your-transformations-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/TransformationModules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Create your transformations</h4>
 			</div>
 			<ul class="card__footer">
@@ -303,7 +303,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-data-pipelines-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/DataPipelines_Modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Data Pipelines</h4>
 			</div>
 			<ul class="card__footer">
@@ -418,7 +418,7 @@
 		</a>
 		</a>
 			<a href="../../docs/microlearning/intermediate-create-your-transformations-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/TransformationModules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Create your transformations</h4>
 			</div>
 			<ul class="card__footer">
