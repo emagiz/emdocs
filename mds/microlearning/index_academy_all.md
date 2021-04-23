@@ -171,7 +171,7 @@
 		</a>
 		<a href="../../docs/microlearning/novice-create-your-transformations-index" class="card">
 			<div class="card__body" style="background: url(../../img/TransformationModules.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">Create your transformations</h4>
+				<h4 class="title">Create transformations</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -208,7 +208,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-lifecycle-management-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management</h4>
 			</div>
 			<ul class="card__footer">
@@ -227,8 +227,8 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-securing-your-data-traffic-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Securing your Data Traffic</h4>
+			<div class="card__body" style="background: url(../../img/Security_Modules.svg) center no-repeat; background-size: 18%;">
+				<h4 class="title">Securing Data Traffic</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -246,7 +246,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-mendix-connectivity-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/mendixlogo.png) center no-repeat; background-size: 40%;">
 				<h4 class="title">Mendix Connectivity</h4>
 			</div>
 			<ul class="card__footer">
@@ -265,8 +265,8 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Defining your message structures</h4>
+			<div class="card__body" style="background: url(../../img/MessageStructure.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Defining message structures</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -284,7 +284,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-solution-architecture-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 17%;">
 				<h4 class="title">Solution Architecture</h4>
 			</div>
 			<ul class="card__footer">
@@ -322,7 +322,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-testing-in-emagiz-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/Testing_modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Testing in eMagiz</h4>
 			</div>
 			<ul class="card__footer">
@@ -341,8 +341,8 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-securing-your-data-traffic-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">Securing your Data Traffic</h4>
+			<div class="card__body" style="background: url(../../img/Security_Modules.svg) center no-repeat; background-size: 18%;">
+				<h4 class="title">Securing Data Traffic</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -360,7 +360,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Configuring Event Streaming</h4>
 			</div>
 			<ul class="card__footer">
@@ -379,7 +379,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-event-streaming-connectors-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Event Streaming Connectors</h4>
 			</div>
 			<ul class="card__footer">
@@ -398,8 +398,8 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
-				<h4 class="title">REST Webservice Connectivity</h4>
+			<div class="card__body" style="background: url(../../img/REST_modules.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">REST Connectivity</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -419,7 +419,7 @@
 		</a>
 			<a href="../../docs/microlearning/intermediate-create-your-transformations-index" class="card">
 			<div class="card__body" style="background: url(../../img/TransformationModules.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">Create your transformations</h4>
+				<h4 class="title">Create transformations</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -437,7 +437,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/advanced-data-handling-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/DataHandling_modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Data Handling</h4>
 			</div>
 			<ul class="card__footer">
@@ -457,7 +457,7 @@
 		</a>
 		</a>
 			<a href="../../docs/microlearning/intermediate-devops-perspectives-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/DevOpsPerspectives_module.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">DevOps perspectives</h4>
 			</div>
 			<ul class="card__footer">
@@ -476,7 +476,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/expert-solution-architecture-index" class="card">
-			<div class="card__body" style="background: url(../../img/placeholder.jpg) center no-repeat; background-size: cover;">
+			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 17%;">
 				<h4 class="title">Solution Architecture</h4>
 			</div>
 			<ul class="card__footer">
