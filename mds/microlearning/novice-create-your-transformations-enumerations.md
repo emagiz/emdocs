@@ -20,7 +20,7 @@ In this microlearning, we will focus on the use of enumerations when transformin
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: May 6th, 2021
-- Required reading time: 7 minutes
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

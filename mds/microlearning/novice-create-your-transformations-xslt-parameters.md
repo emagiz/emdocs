@@ -13,105 +13,79 @@
 
 ##### Intro
 
-# Transformation - JSON to XML
+# XSLT Parameters
 
-In this microlearning, we will focus on transforming JSON to XML within the tooling of eMagiz. With the help of this microlearning, you will know how to transform from JSON to XML with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
+In this microlearning, we will focus on XSLT parameters. With the help of this microlearning, you will learn what XSLT parameters are and how you can use them within the eMagiz platform to successfully transform data.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: April 8th, 2021
-- Required reading time: 7 minutes
+- Last update: May 6th, 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around transforming JSON to XML
-By transforming we mean: Making sure that the input message is transformed in a valid output message by defining how this should happen
+This microlearning centers around XSLT parameters
+By XSLT parameters we mean: A functionality within the XSLT language with which you can inject a static (i.e. property) or dynamic (i.e. message header) value into the output message
 
-eMagiz natively supports the transformation of JSON to XML with the help of:
-- Data models in Design
-- Message mapping in Design
-- Create transformation in Create
-- Support Objects
+XSLT parameters need to be:
+- Defined on transformation level
+- Defined as static input (or part of an XPath) in the transformation
+- Filled with a static or dynamic value
 
 ##### Theory
 
-## 3. Transformation - JSON to XML
+## 3. XSLT Parameters
 
-In this microlearning, we will focus on transforming JSON to XML within the tooling of eMagiz. With the help of this microlearning, you will know how to transform from JSON to XML with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
+In this microlearning, we will focus on XSLT parameters. With the help of this microlearning, you will learn what XSLT parameters are and how you can use them within the eMagiz platform to successfully transform data.
 
-eMagiz natively supports the transformation of JSON to XML with the help of:
-- Data models in Design
-- Message mapping in Design
-- Create transformation in Create
-- Support Objects
+XSLT parameters need to be:
+- Defined on transformation level
+- Defined as static input (or part of an XPath) in the transformation
+- Filled with a static or dynamic value
 
-### 3.1 Data models in Design
+With the help of such an XSLT parameter, you can inject a static or dynamic value. These values can be supplied with the help of properties or with the help of headers. In this case, we want to fill the attribute Sender in the output message with a static value that differs per environment. To do so we opt for a property as we can specify the value for it on a per-environment basis.
 
-Just as you are used to you simply create the correct system definition in Design as you would do when you would create a data model for XML message. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
+To correctly set up the logic to inject an XSLT parameter into your transformation you need to do three things in the Create phase. Before we delve into the specifics let us first navigate to the Create phase, open a flow and enter "Start Editing" mode.
 
-One extra thing to take into account when handling JSON is the root entity. Contrary to XML it is not mandatory to name your root entity when handling JSON. This means that when you create your data model you should verify beforehand whether the system to which you want to send your messages has a named root entity or not.
+After you have done so please navigate to the Transformation view in Create. Here you first need to define the parameter in terms of name and datatype. To do so select the wrench icon and press New. You will see the following pop-up on your screen
 
-An example of a JSON message where the root entity is not named is shown below as the first example. The second example you see below is an example of a JSON message where the root entity is named.
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xslt-parameters--parameter-pop-up.png"></p>
 
-{ 
-    {"ID": 1234}
-}
+In this pop-up, you can enter the name and the datatype. In this case, we will call the parameter Sender with a nonEmptyString as a datatype. After you have pressed Save you should end up with the following result.
 
-{"Root":
-    {"ID": 1234}
-}
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xslt-parameters--parameter-config-result.png"></p>
 
-If you need to send a name along with the JSON root in your output message you should create an extra entity in your data model with which your system message definition will start.
+Now that we have defined the parameter we need to use it to fill the output for the element called Sender. In this case, we use a static input as input. You can also use parameters as part of an XPath or an XSLT snippet. When you select the option static input you can choose the option called Parameter. Here you can select the parameter you have just defined. The result should be something similar to this.
 
-<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--system-message-named-root.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xslt-parameters--parameter-static-input-config.png"></p>
 
-Regardless of whether the root of your output JSON message is named you also don't need to forget to define your message format. This can be done on the system level (in case all communication happens in JSON) or it can happen on the system message level. On the system message level, you have a button called Change message format which you can press while being in "Start Editing Mode". This action will show a pop-up. Here you can switch between XML and JSON as the message format. Ensure that the message format is JSON
+After we have finished configuring the transformation we need to ensure that we fill the actual parameter with a value. This we do on the component level in the flow itself. Open the transformation component and navigate to the Advanced tab.
 
-<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--change-message-format.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xslt-parameters--parameter-advanced-tab-empty.png"></p>
 
-### 3.2 Message mapping in Design
+As you can see this Advanced tab houses a section for your XSLT parameters. Here you can define the name of the XSLT parameter and the corresponding value. If you want to use a static value use the Value option in the pop-up. If you want to use a dynamic value use the Expression option in the pop-up. In our case, you should fill in something like below. When you are satisfied press Save.
 
-Just as you are used to you simply create the correct message mapping in Design as you would do when you would create a message mapping for XML messages. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-xslt-parameters--parameter-advanced-tab-xslt-param-pop-up-filled-in.png"></p>
 
-### 3.2 Create transformation in Create
-
-Just as you are used to you simply create the correct transformation functionality (filter, transformation, static input, etc.) as you would do when you would create the correct transformation functionality for XML messages. If you are unsure how to do this please revisit the section on Create in the Crash Course Platform.
-
-### 3.3 Needed support objects
-
-However, eMagiz needs to be told whether the input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you build an API Gateway flow this will be done automatically based on the settings in Design. The crucial part of this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
-
-In this case, we want to transform from JSON to XML and therefore you need a JSON source factory within your flow. In this component, you need to define your virtual root based on your system message in Design. This is always the name of the root entity as defined as your system message in Design. In the example shown above, this will mean that the virtual root for this example is root.
-
-<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--json-source-factory.png"></p>
-
-The JSON source factory is needed for your validation. However, to also support the transformation from JSON to XML you need an additional support object called Result to string transformer
-
-<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--result-to-string-transformer.png"></p>
-
-Don't forget to properly link the support objects to the correct flow components for them to work. In the onramp, you need to link the JSON source factory to the validation component, and both support objects to the transformation.
-
-After having done this you can use the unit testing functionality of eMagiz to test your work. If you are unsure how this functionality works please take a look at the segment on unit testing in the Crash Course Platform.
+After this press Save on the component itself and you are good to go. You have successfully managed to configure the flow to use an XSLT parameter while transforming data. Note that in this example you still need to define the property and assign it a value for the flow to work.
 
 ##### Practice
 
 ## 4. Assignment
 
-Create a transformation between JSON and XML. Ensure that you have a working solution by running a unit test.
+Create a transformation while using an XSLT parameter to fill in something in the output message. Ensure that you have a working solution by running a unit test.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- eMagiz natively supports the transformation of JSON to XML with the help of:
-    - Data models in Design
-    - Message mapping in Design
-    - Create transformation in Create
-    - Support Objects
-- Ensure that you link the support objects correctly
-- Don't forget to define the message format
+- For a working solution you need to execute three steps
+    - Define the parameter on transformation level
+    - Defined as static input (or part of an XPath) in the transformation
+    - Define on component level how the parameter should be filled
 
+- A parameter can be filled with the help of a static (i.e. property) or dynamic (i.e. message header) value
 
 ##### Solution
 
@@ -123,7 +97,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
-<iframe width="1280" height="720" src="../../vid/microlearning/novice-create-your-transformations-json-to-xml.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-create-your-transformations-xslt-parameters.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

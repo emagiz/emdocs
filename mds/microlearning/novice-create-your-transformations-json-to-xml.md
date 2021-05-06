@@ -30,6 +30,7 @@ This microlearning centers around transforming JSON to XML
 By transforming we mean: Making sure that the input message is transformed in a valid output message by defining how this should happen
 
 eMagiz natively supports the transformation of JSON to XML with the help of:
+- Default message format
 - Data models in Design
 - Message mapping in Design
 - Create transformation in Create
@@ -42,12 +43,21 @@ eMagiz natively supports the transformation of JSON to XML with the help of:
 In this microlearning, we will focus on transforming JSON to XML within the tooling of eMagiz. With the help of this microlearning, you will know how to transform from JSON to XML with the help of the tooling in Design and Create. To illustrate the functionality we define what needs to be done in various phases of eMagiz.
 
 eMagiz natively supports the transformation of JSON to XML with the help of:
+- Default message format
 - Data models in Design
 - Message mapping in Design
 - Create transformation in Create
 - Support Objects
 
-### 3.1 Data models in Design
+### 3.1 Default message format
+
+In the Design phase of eMagiz, you have the option on the system level to define the message format. In case a system speaks JSON you should set the value to JSON. If the system speaks XML you should set the value to XML.
+
+<p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--default-message-format.png"></p>
+
+Setting this up correctly will help you tremendously in the Create phase.
+
+### 3.2 Data models in Design
 
 Just as you are used to you simply create the correct system definition in Design as you would do when you would create a data model for XML message. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
 
@@ -71,17 +81,19 @@ Regardless of whether the root of your output JSON message is named you also don
 
 <p align="center"><img src="../../img/microlearning/novice-create-your-transformations-json-to-xml--change-message-format.png"></p>
 
-### 3.2 Message mapping in Design
+### 3.3 Message mapping in Design
 
 Just as you are used to you simply create the correct message mapping in Design as you would do when you would create a message mapping for XML messages. If you are unsure how to do this please revisit the section on Design in the Crash Course Platform. 
 
-### 3.2 Create transformation in Create
+### 3.4 Create transformation in Create
 
 Just as you are used to you simply create the correct transformation functionality (filter, transformation, static input, etc.) as you would do when you would create the correct transformation functionality for XML messages. If you are unsure how to do this please revisit the section on Create in the Crash Course Platform.
 
-### 3.3 Needed support objects
+### 3.5 Needed support objects
 
-However, eMagiz needs to be told whether the input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you build an API Gateway flow this will be done automatically based on the settings in Design. The crucial part of this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
+However, eMagiz needs to be told whether the input and/or output message is JSON. To tell this to the flow component you will need some support objects. If you have defined your default message format correctly (i.e. set it to JSON) eMagiz will auto-generate the relevant support objects for you.
+
+Whether or not eMagiz has auto-generated the components the remainder of this section is interesting to take knowledge of.  The crucial part of this is the virtual root. Remember we told you to create an extra entity in Design in your system message when the root of the JSON had a name? This is the reason why. As JSON can in theory have multiple roots which XML cannot have, yet we use the same underlying technology in eMagiz to transform both of them (JSON to JSON, JSON to XML, XML to JSON, XML to XML) you need to take this into account.
 
 In this case, we want to transform from JSON to XML and therefore you need a JSON source factory within your flow. In this component, you need to define your virtual root based on your system message in Design. This is always the name of the root entity as defined as your system message in Design. In the example shown above, this will mean that the virtual root for this example is root.
 
@@ -105,6 +117,7 @@ This assignment can be completed with the help of the (Academy) project that you
 ## 5. Key takeaways
 
 - eMagiz natively supports the transformation of JSON to XML with the help of:
+    - Default message format
     - Data models in Design
     - Message mapping in Design
     - Create transformation in Create
