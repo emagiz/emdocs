@@ -15,66 +15,72 @@
 
 # Remove flows from Create
 
-In this microlearning, we will focus on how you can link your alerting tag(s) to alerting trigger(s).
-In a previous microlearning we already discussed parts of this. In this microlearning we will zoom in on the Trigger section of Alerting.
+In this microlearning, we will focus on how to remove flows from Create and what things to consider before you remove your flows from Create. Whether you want to remove a flow for ever as it has become outdated as part of your lifecycle management or whether you want to temporarily remove and later re-add your flow you can do so with the help of this functionality.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: April 1th 2021
+- Last update: May 5th, 2021
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around linking tag(s) to trigger(s).
-With linking, we mean: Categorize a certain trigger with the help of tag functionality
+This microlearning centers around removing flows from Create.
+With removing from Create, we mean: Throwing away all previous work out of Create without keeping track of the history of the flow
 
-- Make tags descriptive in nature
-- Re-use tags over multiple triggers that have the same aim
-- In case of a start, daily and end alert use the same tag for all of them
+- The action removes the flows from the Create overview without containing the history
+- The action is a prerequisite for removing the integration in Capture (after it was already Created once)
+- Before you execute the action ensure that all references to the old flows are removed from Deploy
+
 
 ##### Theory
 
 ## 3. Remove flows from Create
 
-In our previous dalliance with this subject we already discussed parts of what we will discuss in this microlearning. This microlearning is mainly meant to reiterate the importance of using proper tags when setting up your alerting. Linking the correct tag(s) to your trigger(s) will help you to clarify how the alerting structure for your project is set up. This is not only nice when you want to revisit the alerting section but it is also very usefull in communication with the business and with a support desk. This way you can create a common truth surrounding a common language. Key parts in achieving this are:
+In this microlearning, we will focus on how to remove flows from Create and what things to consider before you remove your flows from Create. Whether you want to remove a flow for ever as it has become outdated as part of your lifecycle management or whether you want to temporarily remove and later re-add your flow you can do so with the help of this functionality. 
 
-- Make tags descriptive in nature
-- Re-use tags over multiple triggers that have the same aim
-- In case of a start, daily and end alert use the same tag for all of them
+Key parts with regards to this functionality are:
 
-To link tag(s) to trigger(s) you navigate to Manage -> Alerting -> Triggers
+- The action removes the flows from the Create overview without containing the history
+- The action is a prerequisite for removing the integration in Capture (after it was already Created once)
+- Before you execute the action ensure that all references to the old flows are removed from Deploy
 
-In this overview you can simply select a specific trigger to see the detailed configuration of the trigger. Depending on the type of trigger that you open the avaiable tabs within the pop-up and the information shown in the pop-up can differ. Below we show two distinct examples:
+As you can imagine there is a need to be able to remove flows from Create after they have previously build. The main reason would be that the system that was once connected to your integration landscape is no longer used or has become out dated. As part of the lifecycle management of your integration landscape we advice to remove those integrations from the Create phase. This functionality helps you with that. Do note that removing a flow from Create is a prerequisite of removing the integration (line) in Capture and Design. So to do proper lifecycle management you start at Manage and work your way back to Capture to correctly and completely remove the solution from your integration landscape
 
-<p align="center"><img src="../../img/microlearning/novice-alerting-linking-tags-to-triggers--example-trigger-detail-data-measurements.png"></p>
+Another potential use case for this functionality is when you have made a mistake in Design or Capture with regards to directionality or naming. In those cases you can also remove the flows from Create and re-add it on a later moment in time when those aspects are configured properly. Do note that not all configuration changes in Design or Capture need to be preceeded by removing the flows from Create. In general most of what is in Design and Capture can be changed after an integration has been moved to Create. The exceptions to this rule are:
 
-<p align="center"><img src="../../img/microlearning/novice-alerting-linking-tags-to-triggers--example-trigger-detail-log-entry.png"></p>
+- Technical name of the system and/or integration
+- Directionality (does eMagiz send data to the system or does it receive data from the system)
+- The chosen integration pattern (i.e. Event Streaming, API Gateway or Messaging)
+- Whether the integration is synchronous or asynchronous
 
-As you can see from these examples is that the number of tabs within the pop-up differ. The first tab is were the configuration of the trigger happens. In all the other tabs you need to link the tag(s) to the trigger. To do so simply press Add in one of these tabs, search for the Tag you want to link to this trigger, select it and press Select.
+All in all, there are various reasons why you might consider to remove flows from Create. To remove flows from Create you navigate to the Create phase and press on the button located at the left-hand bottom of the screen called Add integrations. This action will lead you to the following overview
 
-<p align="center"><img src="../../img/microlearning/novice-alerting-linking-tags-to-triggers--example-trigger-detail-no-tag.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-flow-management-remove-flows-from-create--add-integrations-overview-create.png"></p>
 
-<p align="center"><img src="../../img/microlearning/novice-alerting-linking-tags-to-triggers--example-trigger-detail-select-tag.png"></p>
+In this overview you can see which integrations have not yet been added (indicated by the empty box with a green line) and you can see which integrations have been added to Create (indicated by the blue box with the checkmark). Those integrations that have been added previously are candidates for removal. You can remove the integration from Create by clicking on it. The widget will indicate the intended action by turning the blue box with the checkmark to a red box with a cross in the middle.
 
-<p align="center"><img src="../../img/microlearning/novice-alerting-linking-tags-to-triggers--example-trigger-detail-one-tag.png"></p>
+<p align="center"><img src="../../img/microlearning/novice-flow-management-remove-flows-from-create--add-integrations-overview-candidate-for-removal.png"></p>
 
-When you are happy with your selection you can press Save on trigger level and eMagiz will link the tag to the trigger.
+The moment you are satisfied with your choices you should press the Save selection button, located on the left-hand bottom of the screen. As a result eMagiz will notify you whether the removal has been succesfull or not. This way you now whether your action was succesful. Afterwards you can go back to the Create overview by clicking on the Go to Create option.
+
+<p align="center"><img src="../../img/microlearning/novice-flow-management-remove-flows-from-create--add-integrations-removal-conformation-pop-up.png"></p>
+
+Now you have learned how to remove a flow from Create. As always think before you start to randomly remove stuff from Create as you cannot get it back anymore.
 
 ##### Practice
 
 ## 4. Assignment
 
-Link an (extra) tag to a trigger.
+Determine whether there is a integration that is deemed out of life and can therefore be removed with ease.  If there is no such integration available please don't remove anything that others might need.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Assist in creating a common language
-- Make tags descriptive in nature
-- Re-use tags over multiple triggers that have the same aim
-- In case of a start, daily and end alert use the same tag for all of them
+- The action removes the flows from the Create overview without containing the history
+- The action is a prerequisite for removing the integration in Capture (after it was already Created once)
+- Before you execute the action ensure that all references to the old flows are removed from Deploy
 
 ##### Solution
 
@@ -86,7 +92,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
-<iframe width="1280" height="720" src="../../vid/microlearning/novice-alerting-linking-tags-to-triggers.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-flow-management-remove-flows-from-create.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
 
 </div>
 </main>
