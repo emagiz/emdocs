@@ -15,7 +15,7 @@
 
 # Property History
 
-In this microlearning, we will focus on the history of properties. In previous microlearnings we already discussed the concept of properties. The focus for this microlearning will be learning how you can see who changed which property when. As you can imagine this is ideal for audit purposes but also can be a big help when analyzing the behaviour of the flow.
+In this microlearning, we will focus on the history of properties. In previous microlearnings, we already discussed the concept of properties. The focus for this microlearning will be learning how you can see who changed which property when. As you can imagine this is ideal for audit purposes but also can be a big help when analyzing the behavior of the flow.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -38,7 +38,7 @@ There are two main use cases for this overview
 
 ## 3. Property History
 
-In this microlearning, we will focus on the history of properties. In previous microlearnings we already discussed the concept of properties. The focus for this microlearning will be learning how you can see who changed which property when. As you can imagine this is ideal for audit purposes but also can be a big help when analyzing the behaviour of the flow.
+In this microlearning, we will focus on the history of properties. In previous microlearnings, we already discussed the concept of properties. The focus for this microlearning will be learning how you can see who changed which property when. As you can imagine this is ideal for audit purposes but also can be a big help when analyzing the behavior of the flow.
 
 There are two main use cases for this overview
 
@@ -46,17 +46,17 @@ There are two main use cases for this overview
 - It gives you the ability to analyze certain behavior and based on the property history overview draw conclusion
 
 
-The property history overview in eMagiz is an overview page that defines on a per enviroment basis (i.e. a seperated overview for Test, Acceptance and Production) which properties have been created and/or changed, who changed them and when they were changed.
+The property history overview in eMagiz is an overview page that defines on a per-environment basis (i.e. a separated overview for Test, Acceptance, and Production) which properties have been created and/or changed, who changed them and when they were changed.
 
-This overview is located within the properties context in Deploy. So when you navigate to Deploy and open the properties overview you will see on your left-hand side several menu options. One of these options is called History.
+This overview is located within the property context in Deploy. So when you navigate to Deploy and open the properties overview you will see on your left-hand side several menu options. One of these options is called History.
 
 <p align="center"><img src="../../img/microlearning/novice-release-management-property-history--history-menu-activated.png"></p>
 
-By clicking on it an overview will be presented to the user that defines what has changed, by whom and when.
+By clicking on it an overview will be presented to the user that defines what has changed, by whom, and when.
 
 <p align="center"><img src="../../img/microlearning/novice-release-management-property-history--history-overview.png"></p>
 
-As the above picture shows within this overview you can filter on property name (what), users (who) and date (when) to focus your search for answers. This is in a nutshell what the property history overview is good for and how to use it to your advantage.
+As the above picture shows within this overview you can filter on the property name (what), users (who), and date (when) to focus your search for answers. This is in a nutshell what the property history overview is good for and how to use it to your advantage.
 
 ##### Practice
 
@@ -81,7 +81,7 @@ If you are interested in this topic and want more information on it please read 
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
 
-<iframe width="1280" height="720" src="../../vid/microlearning/novice-release-management-property-history.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-release-management-property-history.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>   
 
 </div>
 </main>
