@@ -15,7 +15,7 @@
 
 # Cleanup a designed integration
  
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to cleanup your designed integration.
+In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -42,7 +42,7 @@ There are four key considerations before cleaning up a captured integration:
   
 ## 3. Cleanup a designed integration
 
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to cleanup your designed integration.
+In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
 
 There are four key considerations before cleaning up a captured integration:
 
@@ -51,13 +51,13 @@ There are four key considerations before cleaning up a captured integration:
 - Is the integration removed from Create?
 - What should I clean up in Design that is not automatically done when I cleanup Capture?
 
-As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successfull.
+As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successful.
 
-Good to know is that most in Design will automatically be removed when you clean up the captured integration. More on the specifics of  that in the next microlearning ([Cleanup a captured integration](novice-lifecycle-management-cleanup-a-captured-integration.md)). For now it is good to know that the CDM is untouched by that action. That means to ensure a proper cleanup you should verify if certain elements in the CDM are not used anymore and are therefore ready to be cleaned up.
+Good to know is that most in Design will automatically be removed when you clean up the captured integration. More on the specifics of  that in the next microlearning ([Cleanup a captured integration](novice-lifecycle-management-cleanup-a-captured-integration.md)). For now, it is good to know that the CDM is untouched by that action. That means to ensure a proper cleanup you should verify if certain elements in the CDM are not used anymore and are therefore ready to be cleaned up.
 
-To do so you can search on CDM leved for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
+To do so you can search on CDM level for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
 
-For this microlearning it is good to know that apart from the CDM everything in Designed will be cleaned up when you cleanup the captured integration.
+For this microlearning, it is good to know that apart from the CDM everything in Designed will be cleaned up when you clean up the captured integration.
 
 ##### Practice
 

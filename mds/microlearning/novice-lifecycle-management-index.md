@@ -15,6 +15,22 @@
             <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
             <label for="" class="strip__label">
                 <span>10</span>
+                What is lifecycle management
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+        </li>
+    <li class="strip">
+            <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
+            <label for="" class="strip__label">
+                <span>10</span>
                 Cleanup a designed integration
             </label>
             <div class="strip__attribute">
