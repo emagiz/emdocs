@@ -19,8 +19,8 @@ In this microlearning, we will focus on the last step of cleaning up your integr
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: April 22th, 2021
-- Required reading time: 7 minutes
+- Last update: May 14th, 2021
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -51,7 +51,7 @@ There are four key considerations before cleaning up a captured integration:
 - Is the integration removed from Create?
 - Is the eMagiz data model (i.e. CDM, API Gateway Data model) cleaned?
 
-As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successfully deleted.
+As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successfull.
 
 However, there is no check done on all these aspects when you want to delete the integration. Therefore it is up to you to uphold the quality. There is one exception to this and that is the fact that the integration needs to be removed from Create before you can clean it up (i.e. delete) in Capture. If the integration is not yet removed from Create you will see the following pop-up:
 
