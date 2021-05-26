@@ -2,7 +2,7 @@
 	<div class="ez-academy__body">
 		<main class="micro-learning">
 		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="../../docs/microlearning/advanced-testing-in-emagiz-index" class="doc-nav__link">Home</a></li>
 			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
 			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
 			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -13,14 +13,14 @@
 
 ##### Intro
 
-# Creating an event processor with transformation
+# eMagiz Debugger
 
 In this microlearning we will provide  context with regards to the debugger functionality. How you can effectively use it and when you should stay away from using it completely.
 
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: April 22nd, 2021
-- Required reading time: 10 minutes
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Intermediate knowledge of the eMagiz platform
@@ -49,7 +49,7 @@ If you cannot use the Unit testing functionality for the (regression) test you c
 
 ##### Theory
 
-## 3. 
+## 3. eMagiz Debugger
 
 ### 3.1 Explaining the inner workings of the Debugger
 
@@ -90,8 +90,7 @@ As specified above as a user there are two actions you can take to influence the
 
 ## 4. Assignment
 
-Create an Event processor between an input and output topic within your (Academy) project.
-This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+There is no assignment for this microlearning
 
 ## 5. Key takeaways
 
