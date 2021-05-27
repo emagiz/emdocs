@@ -82,14 +82,14 @@
 	</div>
 	<h2 class="title">Courses</h2>
 	<ul class="tabs">
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_developer" class="tabs__link">Developer</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_architect" class="tabs__link">Architect</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_novice" class="tabs__link">Novice</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_developer" class="tabs__link">Developer</a></li>
+		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_architect" class="tabs__link">Architect</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_novice" class="tabs__link">Novice</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
 	</ul>
 	<div class="card-container">
 		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
