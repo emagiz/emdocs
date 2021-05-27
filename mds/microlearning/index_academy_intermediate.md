@@ -4,7 +4,7 @@
 	<h2 class="title">eMagiz Academy</h2>
 	<div class="card-container">
 		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card card--featured">
-			<div class="card__body" style="background: url(../../img/MessageStructure.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/MessageStructure.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Defining message structures</h4>
 			</div>
 			<ul class="card__footer">

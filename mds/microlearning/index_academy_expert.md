@@ -4,7 +4,7 @@
 	<h2 class="title">eMagiz Academy</h2>
     <div class="card-container">
     <a href="../../docs/microlearning/expert-solution-architecture-index" class="card card--featured">
-			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 17%;">
+			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Solution Architecture</h4>
 			</div>
 			<ul class="card__footer">
@@ -25,14 +25,14 @@
 	</div>
 	<h2 class="title">Courses</h2>
 	<ul class="tabs">
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_developer" class="tabs__link">Developer</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_architect" class="tabs__link">Architect</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_novice" class="tabs__link">Novice</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
-		<li class="tabs__item tabs__item--active"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_developer" class="tabs__link">Developer</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_architect" class="tabs__link">Architect</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_novice" class="tabs__link">Novice</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
+		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
 	</ul>
 	<div class="card-container">		
 		<a href="../../docs/microlearning/expert-solution-architecture-index" class="card">
