@@ -188,7 +188,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-emagiz-cloud-management-index" class="card">
-			<div class="card__body" style="background: url(../../img/TransformationModules.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/cloud-management-module.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">eMagiz Cloud Management</h4>
 			</div>
 			<ul class="card__footer">
