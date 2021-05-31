@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-file-based-connectivity-header-line" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>12</span>
                 Header Line
             </label>
             <div class="strip__attribute">
@@ -28,10 +28,10 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/novice-emagiz-cloud-management-cloud-templates-explained" class="strip__link">
+            <a href="../../docs/microlearning/novice-file-based-connectivity-processing-a-file-per-line" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
-                Cloud Templates Explained
+                <span>12</span>
+                Processing a File per Line
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
@@ -39,31 +39,15 @@
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
+                <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart-runtime" class="strip__link">
+            <a href="../../docs/microlearning/novice-file-based-connectivity-characterset" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
-                Restart runtime
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">4 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
-            </div>
-        </a>
-        </li>
-        <li class="strip">
-            <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart--or-stop-machine" class="strip__link">
-            <label for="" class="strip__label">
-                <span>5</span>
-                (Re)start or stop machine
+                <span>12</span>
+                Character set
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
@@ -71,26 +55,26 @@
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
+                <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
         </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/novice-emagiz-cloud-management-verify-status-ongoing-change" class="strip__link">
+        <li class="strip">
+            <a href="../../docs/microlearning/novice-file-based-connectivity-archiving" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
-                Verify the status of ongoing change
+                <span>12</span>
+                Archiving
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">4 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
+                <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
-        </li>		  
+        </li>			  
     </ul>
     </main>
     </div>

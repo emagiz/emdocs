@@ -19,8 +19,8 @@ In some cases, you want to treat each unique part of your input file as its mess
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: May 28th, 2021
-- Required reading time: 5 minutes
+- Last update: May 31th, 2021
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
