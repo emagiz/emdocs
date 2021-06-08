@@ -99,8 +99,8 @@ The following parts only pertain to the eMagiz Connector for Mendix versions **p
 
 To get a new version of the eMagiz Mendix Connector in a Mendix app, the following steps from above need to be performed:
 
-   1) [Step 1 - Download](upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
-   2) [Step 2 - Import](upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
-   3) When it comes to [step 3 - Configuration](upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3 - Configuration](upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
-   4) Ensure to double check the functioning of the eMagiz Connector in case Mendix V8 is used - please refer to the [User Guide for the eMagiz Connector for Mendix 8](userguide-emagizmendix-V8.md) for more information
+   1) [Step 1 - Download](archive-candidate-upgrade-eMagizMendixConnector.md#1-download-the-emagiz-mendix-connector)
+   2) [Step 2 - Import](archive-candidate-upgrade-eMagizMendixConnector.md#2-importing-emagiz-mendix-connector)
+   3) When it comes to [step 3 - Configuration](archive-candidate-upgrade-eMagizMendixConnector.md#3-configuration), there is no need to do all the configurations again because they should have already been done when an older version of the connector was installed. So, just to make sure that everything should function correctly, you should go through all the bullet points mentioned in [step 3 - Configuration](archive-candidate-upgrade-eMagizMendixConnector.md#3-configuration) and check if there is nothing unusual.
+   4) Ensure to double check the functioning of the eMagiz Connector in case Mendix V8 is used - please refer to the [User Guide for the eMagiz Connector for Mendix 8](archive-candidate-userguide-emagizmendix-V8.md) for more information
    5) In the [best practice document for the eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) there is a list of possible errors and quick fixes for them, so in case you have any errors you should check it because you might find a solution there. It is highly recommended to try the eMagiz Cleanup Tool.

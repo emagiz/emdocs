@@ -3,7 +3,7 @@
 This document describes what the requirements are for a eMagiz runtime installation on-premise on a Linux machine as well as a step by step guideline how to install a runtime on-premise. 
 An on-premise installation often occurs in an architecture where the runtime should run within your own or your customer’s network. 
 This is recommended for all connectors that communicate with a system that is located inside your network or if you would like to test locally on your computer. 
-For an installation of a runtime on a Windows system please see [On-premise eMagiz runtime installation document Windows](runtime-installations-onpremise-windows.md)
+For an installation of a runtime on a Windows system please see [On-premise eMagiz runtime installation document Windows](archive-candidate-runtime-installations-onpremise-windows.md)
 
 ## Requirements
 To install a runtime, please be aware that eMagiz needs an environment that satisfies certain requirements. 
@@ -63,11 +63,11 @@ If you install your JMS and container as well within your network and not in the
 ## Java runtime and eMagiz runtime compatibility
 Java is required to run eMagiz instances, however Java and eMagiz are continuously developing their software. This means that at some point in time older versions of Java and older parts of eMagiz are not supported anymore. 
 
-Please see the [eMagiz Platform release considerations](eMagiz_Platform_release_considerations.md) which runtime version, buildnumbers, Java version and so forth are still supported within the eMagiz platform.
+Please see the [eMagiz Platform release considerations](archive-candidate-eMagiz_Platform_release_considerations.md) which runtime version, buildnumbers, Java version and so forth are still supported within the eMagiz platform.
 
 ## How to install
 
-This chapter will discuss a step to step guideline of how to install a new eMagiz runtime of 5.X or higher. As a reminder this how to is only applicable for a Linux environment. Please see see [On-premise eMagiz runtime installation document Windows](runtime-installations-onpremise-windows.md) on how to install a runtime on a Windows enviroment.
+This chapter will discuss a step to step guideline of how to install a new eMagiz runtime of 5.X or higher. As a reminder this how to is only applicable for a Linux environment. Please see see [On-premise eMagiz runtime installation document Windows](archive-candidate-runtime-installations-onpremise-windows.md) on how to install a runtime on a Windows enviroment.
 
 1.	Log in via Putty  by typing in the host and the port and press load
 2.	When asked for credentials fill in credentials (Be aware, Linux does not accept ctrl+v and does not show the password or an indication of the password). Right mouse click to copy the password and press enter
