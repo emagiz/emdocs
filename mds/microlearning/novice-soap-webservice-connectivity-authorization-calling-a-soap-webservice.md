@@ -13,14 +13,14 @@
 
 ##### Intro
 
-# Endpoint Check
+# Authorization - Calling a SOAP Webservice
  
-When setting up a point at which your customers can talk to you eMagiz offers various methods of creating such a point. One of those options is by hosting a SOAP Webservice in eMagiz that handles XML messages asynchronously or synchronously. One last check to perform before you can communicate with the external parties that the endpoint is available to receive messages and up and running. In this microlearning, we will learn how you can perform such a check.
+When talking to external parties via a SOAP web service they will most likely require some form of authorization. Within eMagiz, you have various options to send the correct authorization towards that external system. The one that is most used when communicating with external parties is a username/password combination (i.e. basic authentication). In this microlearning, we will focus on that scenario and discuss some of the other possibilities that eMagiz offers out of the box.
 
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: June 11th, 2021
-- Required reading time: 7 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -28,97 +28,65 @@ Should you have any questions, please contact academy@emagiz.com.
 ## 2. Key concepts
 This microlearning centers around the endpoint check.
 
-By endpoint check, we mean: determine whether the WSDL is accessible on the correct endpoint so we can forward the URL to the WSDL + the URL to call to our external parties
+By authorization, we mean: The act of proving to the external party that you are indeed who you claim to be
 
-The endpoint consists of the following elements:
-- Starts with https:// or http://
-- Second part is the host (i.e. where is the endpoint running)
-- Third part is the port on which the incoming traffic is accepted
-- These three things combined make up the first part of our endpoint that will vary per environment
-- Following that we have a static remainder of the endpoint that is build up as follows: /ws/{path-specific-servlet-mapping}/
-- If you want to get to the WSDL simply add the name of the WSDL and the .wsdl extension to the endpoint when viewing it in the browser
+- Main form used is a username/password combination (i.e. basic authentication)
+- Other standard eMagiz options are:
+    - Mendix authentication
+    - Metacom authentication
+    - Zimbra authentication
 
 ##### Theory
   
-## 3. Endpoint Check
+## 3. Authorization - Calling a SOAP Webservice
 
-hen setting up a point at which your customers can talk to you eMagiz offers various methods of creating such a point. One of those options is by hosting a SOAP Webservice in eMagiz that handles XML messages asynchronously or synchronously. One last check to perform before you can communicate with the external parties that the endpoint is available to receive messages and up and running. In this microlearning, we will learn how you can perform such a check.
+When talking to external parties via a SOAP web service they will most likely require some form of authorization. Within eMagiz, you have various options to send the correct authorization towards that external system. The one that is most used when communicating with external parties is a username/password combination (i.e. basic authentication). In this microlearning, we will focus on that scenario and discuss some of the other possibilities that eMagiz offers out of the box.
 
-The endpoint consists of the following elements:
-- Starts with https:// or http://
-- Second part is the host (i.e. where is the endpoint running)
-- Third part is the port on which the incoming traffic is accepted
-- These three things combined make up the first part of our endpoint that will vary per environment
-- Following that we have a static remainder of the endpoint that is build up as follows: /{context-path}/{path-specific-servlet-mapping}/
-- If you want to get to the WSDL simply add the name of the WSDL and the .wsdl extension to the endpoint when viewing it in the browser
+- Main form used is a username/password combination (i.e. basic authentication)
+- Other standard eMagiz options are:
+    - Mendix authentication
+    - Metacom authentication
+    - Zimbra authentication
 
-As you can see the endpoint can be divided into two parts. One part is dynamic across environments and one part is static across environments. Let us first determine how we can find out the first part of our endpoint. 
+### 3.1 Username password credentials
 
-### 3.1 HTTPS or HTTP
+To set up the authorization we need to navigate to the Create phase of eMagiz and open the flow in which we want to add the authorization. Here we can add a support object called HTTP Components message sender. 
 
-We start at the top with the determination of HTTPS or HTTP. A simple rule of thumb is that when running in the eMagiz Cloud the endpoint starts with https:// and when the endpoint is running locally (i.e. on-premise) the endpoint starts with http:// (unless you secure it yourself, more on that later).
+<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-authorization-calling-a-soap-webservice--http-components-message-sender.png"></p>
 
-### 3.2 Host
+When you open the component you can choose Username password credentials in the drop-down and fill in properties to represent the password and username.
 
-The next part of the endpoint is the host. The host is effectively the (virtual) machine on which the endpoint is running. When hosting an endpoint in the eMagiz cloud the host part is the combination between the DNS left-most label on Route level and the cloudslot on which your environment is running. The first part of the equation can be found under Deploy -> Architecture. The second part can be found under Deploy -> Properties by looking for the {technicalnameproject}.amqp01.host. You need to combine the two elements via a dash (-). An example of this would then be spwbsrv-test-cloud0001.emagizcloud.com. In case of an on-premise installation, you should ask your customer what the IP address or DNS name is to connect to the machine on which your runtime is running. If the runtime is running locally on your laptop the host equals localhost.
+<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-authorization-calling-a-soap-webservice--http-components-message-sender-filled-in.png"></p>
 
-### 3.3 Port
+After you have done so you can link the support object to the functional component by double-clicking on the functional component, navigate to the Advanced tab and select the correct message sender.
 
-Whether or not the port needs to be defined to get to the endpoint is once again determined by the location. If the endpoint is hosted in the eMagiz Cloud the port is *not* part of the endpoint. However, when you host your endpoint locally the endpoint becomes part of your endpoint. Note that to make this piece work in the eMagiz Cloud you should set up your Route properly. More on that in our Cloud Management courses. You can determine the port, for the endpoint or the route, in two steps. First, we navigate to the all entry we have created and open the Jetty component. The first segment of the Jetty Server talks about the server connector. In this part, the port is defined (either via a property or statically).
+<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-authorization-calling-a-soap-webservice--link-message-sender.png"></p>
 
-<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-endpoint-check--server-connector-settings.png"></p>
+### 3.2 Alternatives
 
-If it is defined via a property you can search for the corresponding value under Deploy -> Properties by checking on the property name and filtering on runtime level to get to the port. If it is defined statically you can simply read it here. Note that the best practice is to use a property value as that allows you to use a different range for your port numbering between environments. In other words, it allows you to use the 9000 range for Test, the 8000 range for Acceptance, and the 9000 range for Production. This is also to safeguard against someone accidentally sending data to the wrong environment.
+Some alternatives that eMagiz offers for authentication in combination with calling a SOAP web service are:
 
-### 3.3 Context Path
+- Mendix authentication
+- Metacom authentication
+- Zimbra authentication
 
-The first part of the static remainder of the endpoint is the context. By default, this is filled with /ws but you as a user can alter this. You can check the current value by opening the Jetty component again and looking at the context path that is filled in.
-
-<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-endpoint-check--context-path.png"></p>
-
-### 3.4 Path Specific Servlet Mapping
-
-The last part of our endpoint is determined by the path-specific servlet mapping. You can once again find the value (and change it if you want to) within the Jetty component. In this component, you can see the servlet mappings and see the path that belongs to that servlet. For SOAP Webservice the best practice is to have only one servlet-mapping and in 99% of the cases, the auto-generated value of eMagiz is more than fine.
-
-<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-endpoint-check--path-specific-servlet-mapping.png"></p>
-
-Combining all of this, assuming we run in the eMagiz Cloud, will result in the following endpoint for our Test environment:
-- https://spwbsrv-test-cloud0001.emagizcloud.com/ws/spwbsrv-connector/
-
-Combining all of this, assuming we run locally on our laptop, will result in the following endpoint for our Test environment:
-- http://localhost:9091/ws/spwbsrv-connector/
-
-### 3.5 Getting the WSDL name
-
-To get to the WSDL to verify if it is available to be shared with external parties the last thing you need is the WSDL name. You can find this one, surprisingly enough, in the Jetty component. To get to the WSDL name double click on the servlet that is defined under the heading Servlets and navigate to the Advanced tab. Here you will see the name of the WSDL. If you have adhered to the default of eMagiz the name will mimic the name of your path-specific servlet mapping.
-
-<p align="center"><img src="../../img/microlearning/novice-soap-webservice-connectivity-endpoint-check--wsdl-name.png"></p>
-
-With this information we could reach the WSDL via the following endpoint, assuming we run in the eMagiz Cloud:
-- https://spwbsrv-test-cloud0001.emagizcloud.com/ws/spwbsrv-connector/spwbsrv-connector.wsdl
-
-With this information we could reach the WSDL via the following endpoint, assuming we run locally on our laptop:
-- http://localhost:9091/ws/spwbsrv-connector/spwbsrv-connector.wsdl
-
-With this information, you should be able to access the WSDL and communicate both the endpoint as well as the WSDL to your external parties.
+To learn the specifics of each of these options please read the help text on these components to determine whether they can help you build a successful integration.
 
 ##### Practice
 
 ## 4. Assignment
 
-Determine the endpoint of your SOAP Webservice and retrieve the WSDL.
+Set the standard authorization on an external SOAP web service that you want to call.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- The endpoint consists of the following elements:
-    - Starts with https:// or http://
-    - Second part is the host (i.e. where is the endpoint running)
-    - Third part is the port on which the incoming traffic is accepted
-    - These three things combined make up the first part of our endpoint that will vary per environment
-    - Following that we have a static remainder of the endpoint that is build up as follows: /{context-path}/{path-specific-servlet-mapping}/
-    - If you want to get to the WSDL simply add the name of the WSDL and the .wsdl extension to the endpoint when viewing it in the browser
-- The relevant information can be derived from the Jetty component and by determining where the endpoint is hosted
+- Main form used is a username/password combination (i.e. basic authentication)
+- Other standard eMagiz options are:
+    - Mendix authentication
+    - Metacom authentication
+    - Zimbra authentication
+- Make sure to link the support object to the functional component
 
 ##### Solution
 
@@ -128,7 +96,7 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-<iframe width="1280" height="720" src="../../vid/microlearning/novice-soap-webservice-connectivity-endpoint-check.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/novice-soap-webservice-connectivity-authorization-calling-a-soap-webservice.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">File Based Connectivity</h2>
+	<h2 class="title">SOAP Webservice Connectivity</h2>
     <p>
         In this course, we will learn how you can communicate with external parties via SOAP web services. Part of the course is dedicated to learning how you can easily and correctly set up a SOAP web service that others can call. The other part of the course will shift focus to you calling an external SOAP web service.
         </br></br>
