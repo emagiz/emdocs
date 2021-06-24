@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-event-streaming-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-event-streaming-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -75,7 +75,7 @@ Four characteristics related to topics are:
 
 ### 3.2 Topic properties and their configuration
 
-Apart from the naming of the topic eMagiz also provides you with a set of default settings for your topic. Two of these settings need a closer look from you. These settings are:
+Apart from the naming of the topic eMagiz also provides you with a set of default settings for your topic. Of these settings you should not touch the default settings for replication and partitioning, the default values for these work correctly. Two of these settings need a closer look from you. These settings are:
 
 - Retention Hours
 - Retention Bytes
@@ -117,9 +117,9 @@ Results in 100000 * 3 * 5 = 1.5 GB in Storage capacity per topic.
 Based on the previous calculation and the number of partitions (more partitions equals higher throughput) on your topic you can calculate the Retention Bytes setting
 
 - 1.5 GB Storage capacity
-- 3 partitions
+- 1 partition
 
-Results in 1.5 / 3 = 0.5 GB in Retention Bytes. As the name indicates this value needs to be added in bytes. For this example, we end up with 524288000 bytes.
+Results in 1.5 / 1 = 1.5 GB in Retention Bytes. As the name indicates this value needs to be added in bytes. For this example, we end up with 1524288000 bytes. Please note that this number will be replicated by the replication factor to get to the actual correct amount of storage that you could theoretically write to our Event Streaming Cluster.
 
 ### 3.3 Check available topic storage
 
@@ -136,6 +136,10 @@ With this entry, you can easily see the amount of GB that is configured (based o
 
 <p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--design-architecture-topic-storage-available.png"></p>
 
+If you are exceeding your contractually allowed storage eMagiz will prevent you from deploying any new topics.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-topic-and-topic-properties--design-architecture-topic-storage-not-enough-available.png"></p>
+
 ##### Practice
 
 ## 4. Assignment
@@ -146,9 +150,9 @@ This assignment can be completed within the Design phase of your (Academy) proje
 ## 5. Key takeaways
 
 - A topic is a category/feed name to which event records are stored and published:
-	- Retention on this topic is based on a FIFO principle (start at the beginning of the log)
-	- The amount of GB needed for your solution is the biggest cost driver
-	- Topics are automatically generated in eMagiz when you draw the line in Capture
+    - Retention on this topic is based on a FIFO principle (start at the beginning of the log)
+    - The amount of GB needed for your solution is the biggest cost driver
+    - Topics are automatically generated in eMagiz when you draw the line in Capture
 - Think about your retention policy when implementing the Event Streaming solution to get a grip on the cost aspect of Event Streaming
 - Check your configuration with the help of Design Architecture to make sure that the configured amount of GB is allowed under your current contract
 
