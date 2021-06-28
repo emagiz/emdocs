@@ -56,7 +56,7 @@ The eMagiz API Gateway will always give back HTTP Response codes along the follo
 - 400-level (Client error) — The client sent an invalid request
 - 500-level (Server error) — Server failed to fulfill a valid request due to an error with the server
 
-Of these levels, the 200-level for Success calls and the 400-level and 500-level are most frequently used within the context of eMagiz.
+Of these levels, the 200-level for Success calls and the 400-level and 500-level for Unsuccesfull calls are most frequently used within the context of eMagiz.
 Each request executed by the client can return a Success or a Failure. 
 
 ### 3.1 Success
