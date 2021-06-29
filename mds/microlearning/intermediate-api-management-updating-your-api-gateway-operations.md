@@ -20,7 +20,7 @@ In our crash course on the API Gateway pattern, we have learned about setting up
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: June 28th, 2021
-- Required reading time: 7 minutes
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform

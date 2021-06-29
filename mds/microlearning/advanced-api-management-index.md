@@ -5,7 +5,7 @@
     <p>
        In this course, we will further expand upon our knowledge of the API Gateway pattern in eMagiz. The focus of this course will be on an alternative method of deploying your API Gateway solution. Per default, eMagiz will run the API Gateway solution within the eMagiz Cloud. However, there might be reasons why (part of) the API Gateway solution needs to run on-premise. In this course, that will be our focus.
         </br></br>
-        - Total time for first time completion: between 20 and 30 minutes
+        - Total time for first time completion: between 10 and 20 minutes
         </br>
         - Last updated - June 2021
     </p>
@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise" class="strip__link">
             <label for="" class="strip__label">
-                <span>30</span>
+                <span>56</span>
                 Running (part of) your API Gateway solution on-premise
             </label>
             <div class="strip__attribute">
