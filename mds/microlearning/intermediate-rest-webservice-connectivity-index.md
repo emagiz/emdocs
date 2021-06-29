@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-configuration" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>46</span>
                 Configuration REST web service
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-call-a-rest-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>46</span>
                 Call a REST Webservice
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>46</span>
                 Authorization - Basic Authentication
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-oauth-client-credentials" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>46</span>
                 Authorization - Oauth 2.0 Client Certificates
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-oauth-authorization-code" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>46</span>
                 Authorization - Oauth 2.0 Authorization Code
             </label>
             <div class="strip__attribute">

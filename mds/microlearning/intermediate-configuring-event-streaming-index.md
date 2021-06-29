@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-emagiz-event-streaming-design-an-event-processor" class="strip__link">
             <label for="" class="strip__label">
-                <span>40</span>
+                <span>41</span>
                 Design an Event Processor
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-passthrough-event-processor" class="strip__link">
             <label for="" class="strip__label">
-                <span>40</span>
+                <span>41</span>
                 Creating a passthrough Event Processor
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-event-streaming-data-model" class="strip__link">
             <label for="" class="strip__label">
-                <span>10</span>
+                <span>41</span>
                 Event Streaming Data Model
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-event-streaming-event-processor-transformation" class="strip__link">
             <label for="" class="strip__label">
-                <span>40</span>
+                <span>41</span>
                 Design an Event Processor with Transformation
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-emagiz-event-streaming-creating-a-event-processor-with-transformation" class="strip__link">
             <label for="" class="strip__label">
-                <span>40</span>
+                <span>41</span>
                 Create an Event Processor with Transformation
             </label>
             <div class="strip__attribute">
