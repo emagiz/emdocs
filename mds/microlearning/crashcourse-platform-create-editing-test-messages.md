@@ -1,80 +1,97 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
 ##### Intro
 
-# Editing Test Messages for Unit Testing
+# Editing Test Messages for Test Cases
 
-In this microlearning, we will focus on editing test messages which you can use while configuring and executing unit tests.
+In this microlearning, we will focus on editing test messages which you can use while configuring and executing flow tests.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-Last update: December 17th, 2020
-
+Last update: July 7th, 2021
 Required reading time: 2 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of the Unit testing concept
-- On- or offramp (without splitter or router) that needs to be tested
+- Understanding of the Flow testing concept
 
 ## 2. Key concepts
-This microlearning centers around editing test messages for unit testing.
-With unit testing, we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
+This microlearning centers around editing test messages for flow testing.
+With flow testing, we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
 
-Editing a test message can be done via the left-hand panel menu showing all messages related to that specific flow and selecting the message you want to edit by hovering over it.
+Editing a test message can be done in two ways.
+- Select a specific test case for which you want to edit the message(s) and access the context menu on the flow to Edit messages.
+- Use the Test messages button to see all linked test messages to a certain flow which you can edit one by one
 
 ##### Theory
 
-## 3. Editing Test messages
+## 3. Editing Test Messages for Test Cases
 
-To edit a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz, you open the flow you want to unit test.
-After you have opened the flow you should press the button on the bottom bar called Configure tests 
-
-In this overview you can open the left-hand panel by selecting the arrow pointing to the right in the left-hand part of your screen to show all messages linked to that flow:
+To edit a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz, you open the flow you want to flow test.
+After you have opened the flow you should press the button on the bottom bar called Configure tests. This will lead you to the following canvas:
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--configure-test-overview.png"></p>
 
-The moment you hover over a certain message you will see two icons appear. One, the pencil, indicates the possibility to edit the message.
+Within this canvas there are two ways to edit your test messages:
+- Select a specific test case for which you want to edit the message(s) and access the context menu on the flow to Edit messages.
+- Use the Test messages button to see all linked test messages to a certain flow which you can edit one by one
 
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-icon.png"></p>
+### 3.1 Editing via Canvas
 
-When you are satisfied with your choice you can click on the edit icon. The result will be a popup showing you the message you can edit. 
+Let us first zoom in on the first option. To do so first select the test case for which you want to edit your test messages. You can do so by clicking on the Test case in question in the left bottom pane. When you do so successfully the test case will be highlighted in green and the canvas will change. 
+
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--select-mode-test-case.png"></p>
+
+While in this mode you can hover over any input (identifiable via a flag icon) or output component (identifiable via a finish icon) and access the context menu (via a right click) on the canvas.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-context-menu.png"></p>
+
+When you click on Edit messages a pop-up will show the linked message(s) in terms of content and headers. In this pop-up, you can edit the content and the headers. Note that changes made here are automatically applied so think before you act. When you are satisfied you can press Save to exit the pop-up.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-popup.png"></p>
 
-When you are satisfied with the changes you have made press Save. If you made a mistake or are unsure about whether you want these changes press Cancel.
-Please do remember that the moment you have successfully edited and saved your test message you cannot go back to the previous version of the test message as there is no undo option then anymore.
+### 3.2 Editing via Test messages
+
+Apart from the option we just discussed there is an alternative approach to editing messages. With this approach you don't need to select a specific test case for which you want to edit messages. Pressing the button called Test messages (located on the bottom bar) presents you with a list of all test messages that are linked to this flow.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--test-messages-popup.png"></p>
+
+In this pop-up you can select a specific test messages and click edit to edit it. Note that the edit screen is identical to the one we discussed above with the other alternative. Therefore the same rules apply here also.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-create-editing-test-messages--edit-test-message-popup.png"></p>
 
 ##### Practice
 
 ## 4. Assignment
 
-Edit one of the test messages for an onramp or offramp flow within your (Academy) project that you have created in the previous assignment.
+Edit one of the test messages for a flow within your (Academy) project that you have created in the previous assignment.
 
 ## 5. Key takeaways
 
-Editing a test message is easy and can be quickly done by clicking the edit icon and making the necessary changes to the message.
+- Within this canvas there are two ways to edit your test messages:
+	- Select a specific test case for which you want to edit the message(s) and access the context menu on the flow to Edit messages.
+	- Use the Test messages button to see all linked test messages to a certain flow which you can edit one by one
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions. 
 
 ## 7. Silent demonstration video
 
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-editing-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This part is currently under construction to reflect the latest changes.
 
 </div>
 </main>

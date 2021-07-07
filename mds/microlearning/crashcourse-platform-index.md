@@ -471,6 +471,23 @@
     </li>
     </li>
         <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-configuring-flow-test" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Configuring a Flow Test
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">7 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
             <a href="../../docs/microlearning/crashcourse-platform-create-creating-test-messages" class="strip__link">
                 <label for="" class="strip__label">
                 <span>0</span>
@@ -479,6 +496,23 @@
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
                 <div class="strip__attribute-label">7 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-create-running-flow-test" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Create - Running a Flow Test
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
@@ -513,40 +547,6 @@
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
                 <div class="strip__attribute-label">2 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
-    </li>
-    </li>
-        <li class="strip">
-            <a href="../../docs/microlearning/crashcourse-platform-create-configuring-unit-test" class="strip__link">
-                <label for="" class="strip__label">
-                <span>0</span>
-                Create - Configuring a Unit Test
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">7 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
-    </li>
-    </li>
-        <li class="strip">
-            <a href="../../docs/microlearning/crashcourse-platform-create-running-unit-test" class="strip__link">
-                <label for="" class="strip__label">
-                <span>0</span>
-                Create - Executing a Unit Test
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>

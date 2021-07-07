@@ -13,23 +13,22 @@
 
 ##### Intro
 
-# Creating Test Messages for Unit Testing
+# Creating Test Messages for Test Cases
 
-In this microlearning, we will focus on the creation of test messages which you can use while configuring and executing unit tests. Should you have any questions, please contact academy@emagiz.com.
+In this microlearning, we will focus on the creation of test messages which you can use while configuring and executing flow tests. Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: January 7th, 2021
+- Last update: July 7th, 2021
 - Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Understanding of the Unit testing concept
-- On- or offramp (without splitter or router) that needs to be tested
+- Understanding of the Flow testing concept
 
 ## 2. Key concepts
-This microlearning centers around the creation of test messages for unit testing.
-With unit testing, we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
+This microlearning centers around the creation of test messages for flow testing.
+With flow testing, we mean: Testing each separate component (unit) within the context of a flow based on a supplied input (and an expected outcome).
 
-To create test messages you can use for unit testing in eMagiz we provide you with four options:
+To create test messages you can use for flow testing in eMagiz we provide you with four options:
 
 - Create a message from scratch
 - Create a message based on an example message
@@ -42,16 +41,14 @@ Next, we will explain how you can best use each of these methods to your advanta
 
 ##### Theory
 
-## 3. Creating Test messages
+## 3. Creating Test Messages for Test Cases
 
-To create a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz, you open the flow you want to unit test.
-After you have opened the flow you should press the button on the bottom bar called Configure tests 
-
-In this overview you can drag a new message on an input or output component to Create a new message:
+To create a test message you navigate to the Create phase of eMagiz. Within the Create phase of eMagiz, you open the flow you want to flow test.
+After you have opened the flow you should press the button on the bottom bar called Configure tests. This will lead you to the following canvas:
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-creating-test-messages--configure-test-overview.png"></p>
 
-eMagiz provides you with four distinct options to add/create test messages based on certain elements within or outside the portal. Each of these options is discussed in detail below:
+As we learned from our previous microlearning we first need to add (or edit) an test case. While in edit mode on the configure tests canvas you have the option to create messages that can be used within the context of the test case. eMagiz provides you with four distinct options to add/create test messages based on certain elements within or outside the portal. Each of these options is discussed in detail below:
 
 - Create a message from scratch
 - Create a message based on an example message
@@ -62,7 +59,7 @@ eMagiz provides you with four distinct options to add/create test messages based
 
 ### 3.1 From scratch
 
-In some cases, you have no information to go on when you want to unit test your flow. In these cases, you can use the option called Empty message.
+In some cases, you have no information to go on when you want to flow test your flow. In these cases, you can use the option called Empty message.
 With this option, you can create a message from scratch.
 
 This means that you have the option to copy-paste or write out your message by hand.
@@ -81,14 +78,14 @@ You can also use this place to store example messages you have received from an 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-creating-test-messages--capture-testmessages.png"></p>
 
-If you have added example messages in Capture or if there are existing messages in Create already you can now use these messages to create test messages for your unit test.
+If you have added example messages in Capture or if there are existing messages in Create already you can now use these messages to create test messages for your flow test.
 First, select the option From the existing file. Secondly, you have to choose whether you want your input message from Capture or Create
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-creating-test-messages--select-from-capture.png"></p>
 
 If you choose Capture you can select all example messages you have added to this flow in Capture. 
 If you choose to Create you can select either all existing test messages attached to the current flow or select existing test messages within your project.
-Remember our definition of what a unit test is. Based on that definition it is logical to choose the option Capture.
+Remember our definition of what a flow test is. Based on that definition it is logical to choose the option Capture.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-creating-test-messages--select-from-create.png"></p>
 
@@ -104,7 +101,7 @@ When you are satisfied press Save. If you have doubts about the choice you made 
 If you have used the eMagiz tooling in Design you have yet another choice to base your test messages on. This option is the option to create a message based on an eMagiz definition.
 To start things off let us select the option eMagiz definition. 
 Within this context, we have to choose whether we want to use an eMagiz definition linked to this flow or one that is linked to the project as a whole.
-Remember our definition of what a unit test is. Based on that definition it is logical to choose the option Current flow.
+Remember our definition of what a flow test is. Based on that definition it is logical to choose the option Current flow.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-create-creating-test-messages--select-from-emagiz-definition.png"></p>
 
@@ -151,30 +148,26 @@ When you are satisfied press Save. If you have doubts about the choice you made 
 
 ## 4. Assignment
 
-Create a test message for an onramp or offramp flow within your (Academy) project based on an eMagiz definition and create a test message for an onramp or offramp flow within your (Academy) project based on an example message.
+Create a test message for a flow within your (Academy) project based on an eMagiz definition and create a test message for a flow within your (Academy) project based on an example message.
 
 ## 5. Key takeaways
 
-To create test messages you can use for unit testing in eMagiz we provide you with four options:
-
-- Create a message from scratch
-- Create a message based on an example message
-- Create message based on eMagiz definition
-- Create a message based on an external definition
-
-By choosing one of these options as your starting point you can easily create a test message.
+- To create test messages you can use for flow testing in eMagiz we provide you with four options:
+	- Create a message from scratch
+	- Create a message based on an example message
+	- Create message based on eMagiz definition
+	- Create a message based on an external definition
+- By choosing one of these options as your starting point you can easily create a test message.
 
 ##### Solution
 
 ## 6. Suggested additional readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions and read the user guide on unit testing which you can find in the documentation portal.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 
-This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
-
-<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+This part is currently under construction to reflect the latest changes.
 
 </div>
 </main>
