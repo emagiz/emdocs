@@ -454,10 +454,10 @@
     </li>
     </li>
         <li class="strip">
-            <a href="../../docs/microlearning/crashcourse-platform-create-understanding-unittesting" class="strip__link">
+            <a href="../../docs/microlearning/crashcourse-platform-create-understanding-flowtesting" class="strip__link">
                 <label for="" class="strip__label">
                 <span>0</span>
-                Create - Understanding Unit Testing
+                Create - Understanding Flow Testing
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
