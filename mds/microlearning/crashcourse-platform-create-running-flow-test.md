@@ -131,9 +131,10 @@ This assignment can be completed within an onramp or offramp flow within your (A
 ## 6. Suggested Additional Readings
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
+
 ## 7. Silent demonstration video
 
-This part is currently under construction to reflect the latest changes.
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-running-a-flow-test.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

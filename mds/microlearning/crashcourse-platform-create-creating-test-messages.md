@@ -167,7 +167,7 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-This part is currently under construction to reflect the latest changes.
+<iframe width="1280" height="720" src="../../vid/microlearning/crashcourse-platform-create-creating-test-messages.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
