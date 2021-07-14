@@ -96,7 +96,7 @@ After this you have successfully linked the new transformation tooling resources
 -	Grouping
 Now you have migrated from the old to the new tooling. Last step will be to verify everything works exactly the same as before. This can be done in two ways
 43.	Test your changes
--	If possible, test your flowing by using the Unit Test functionality. For more information see [User Guide Unit testing](userguide-unitttest.md)
+-	If possible, test your flowing by using the Unit Test functionality. For more information see [User Guide Unit testing](crashcourse-platform-create-configuring-flow-test.md)
 -	Otherwise test it by deploying the flow and sending a message.
 44.	Verify your results
 -	If the result is the same you are finished
@@ -150,13 +150,13 @@ Migrating from the old way of handling errors in a synchronous flow to the new w
 
 13.	Add a JMS outbound channel adapter and send the messages to the eMagiz error flow of your project. This way the message will show up in the Error messages overview of eMagiz but all timeout errors won’t show up anymore. 
 14.	Test your changes
--	If possible, test your flowing by using the Unit Test functionality. For more information see [User Guide Unit testing](userguide-unitttest.md)
+-	If possible, test your flowing by using the Unit Test functionality. For more information see [User Guide Unit testing](crashcourse-platform-create-configuring-flow-test.md)
 -	Otherwise test it by deploying the flow and sending a message.
 15.	Verify your results
 -	If the result is the same you are finished
 -	If changes exists, analyze them and make changes to the transformation until you have reached the correct result
 
-Of course it is possible to use a combination of the suggestion made in step 11, 12 and 13 to configure the error handling to your specific use case. If you are planning on implementing a new synchronous flow please consider the API Gateway functionality. For more information please see [ User Guide API Gateway](userguide-apigateway.md)
+Of course it is possible to use a combination of the suggestion made in step 11, 12 and 13 to configure the error handling to your specific use case. If you are planning on implementing a new synchronous flow please consider the API Gateway functionality. For more information please see [ User Guide API Gateway](crashcourse-api-gateway-index.md)
 
 Congratulations, you have successfully migrated the error handling of your synchronous flows to the new best practice
 
@@ -290,7 +290,7 @@ In the advanced tab of the Inbound gateway you furthermore have the option to ad
 ### How to get to the new approach
 
 Migrating from the old way of hosting a custom REST webservice to the new way of hosting a custom REST webservices needs several steps to make it work correctly. Follow them carefully to achieve the desired result.
-In this case a detailed user guide is already available within the portal. So instead of listing the steps once more we advice you to read that user guide. Please go to [Hosting a REST Webservice](hosting-rest-webservice.md)
+In this case a detailed user guide is already available within the portal. So instead of listing the steps once more we advice you to read that user guide. Please go to [Hosting a REST Webservice](intermediate-rest-webservice-connectivity-index.md)
 
 ## 6. Removing headers from your message
 

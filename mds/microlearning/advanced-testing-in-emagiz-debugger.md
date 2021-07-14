@@ -35,7 +35,7 @@ On a user level, users need to configured in to allows access to this functional
 Furthermore, the debugger can be used across Test, Acceptance and Production. Users need Edit rights to these environments before they can use this functionality. This helps to grant access to only the users that need to have debug rights.
 
 ## Flow Testing
-Please note that within the eMagiz platform the Flow Testing functionality is available to use on most onramps and offramps. The debugger can be a nice addition to your arsenal when testing the functionality you have build. However, eMagiz advices to use the Flow Testing feature so that during the Create phase the functionality can already be tested. There is no need to deploy anything yet, or stop/start certain parts of the eMagiz deployed flows. Because flow testing not only shows the messages as they pass through the channels but also provides feedback on your test scenarios we advice to use flow testing when you can. For more information on Unit testing please see [User Guide Flow testing](userguide-unitttest.md). 
+Please note that within the eMagiz platform the Flow Testing functionality is available to use on most onramps and offramps. The debugger can be a nice addition to your arsenal when testing the functionality you have build. However, eMagiz advices to use the Flow Testing feature so that during the Create phase the functionality can already be tested. There is no need to deploy anything yet, or stop/start certain parts of the eMagiz deployed flows. Because flow testing not only shows the messages as they pass through the channels but also provides feedback on your test scenarios we advice to use flow testing when you can. For more information on Unit testing please see [User Guide Flow testing](crashcourse-platform-create-configuring-flow-test.md). 
 
 In other scenarios you can use the debugger to test your functionality. Before activating the debugger always think about what you want to test and what the expected result should be.
 For example, when you need to make a change to the offramp transformation it is wise to only debug that offramp as you want to test the change made in the offramp. If the change has an impact on the exit you should also debug the exit at once.
@@ -94,7 +94,7 @@ There is no assignment for this microlearning
 
 ## 5. Key takeaways
 
-- Use Flow Testing when you can. For more information on unit testing see [User Guide Flow testing](userguide-unitttest.md)
+- Use Flow Testing when you can. For more information on unit testing see [User Guide Flow testing](crashcourse-platform-create-configuring-flow-test.md)
 - Don't fire up debug screens for each separate flow in the process. Think before you test on what you want to test and where the test will most likely fail or pass. Debug only that flow
 - Don't change the settings eMagiz provides you by default
 - Don't debug in Production without a good reason. Think about the consequences.
