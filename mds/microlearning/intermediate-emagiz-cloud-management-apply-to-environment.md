@@ -13,40 +13,61 @@
 
 ##### Intro
 
-# Restart runtime
+# Apply to environment
 
-In this microlearning, we will focus on the action to restart a runtime. In some cases, it can be beneficial to restart a runtime.
+In this microlearning, we will focus on the "apply to environment" action. As we saw in previous microlearnings and will see in microlearnings to come with regards to cloud management is that some actions in Deploy Architecture have a direct effect (i.e. Slot Wakeup, Restart Runtime, Reset Runtime, etc.) and others have an indirect effect (i.e. Add Route, Add Certificate, Remove Runtime, etc.). For the actions that have an indirect effect on the eMagiz Cloud, you need the "apply to environment" functionality to actualize the changes on the eMagiz Cloud level.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: May 27th, 2021
-- Required reading time: 4 minutes
+- Last update: July 21th, 2021
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Basic knowledge on cloud management
+- Basic knowledge of cloud management
 
 ## 2. Key concepts
-This microlearning centers around restarting a runtime
-With runtime, we mean: This is the component in which the individual integration flows are deployed into
+This microlearning centers around the apply to environment action
+With "apply to environment", we mean: Actualizing all changes, with an indirect effect, within the eMagiz Cloud that were made by users on the Deploy Architecture canvas after the last press on this button
 
-- By restarting the runtime, you restart all flows (including infra) of the runtime you have selected
-    - Flows return in original state
+- Apply to environment actualizes all changes with an indirect effect
+- It gives you the option to change multiple things at once before applying the bulk change. This is to reduce downtime
+- It ensures that the eMagiz Cloud is only affected when a user want to affect it
 
 ##### Theory
 
-## 3. Restart runtime
+## 3. Apply to environment
 
-In this microlearning, we will focus on the action to restart a runtime. In some cases, it can be beneficial to restart a runtime. Before we delve into how to let us first consider the effect and implications of our actions.
+In this microlearning, we will focus on the "apply to environment" action. As we saw in previous microlearnings and will see in microlearnings to come with regards to cloud management is that some actions in Deploy Architecture have a direct effect (i.e. Slot Wakeup, Restart Runtime, Reset Runtime, etc.) and others have an indirect effect (i.e. Add Route, Add Certificate, Remove Runtime, etc.). For the actions that have an indirect effect on the eMagiz Cloud you need the "apply to environment" functionality to actualize the changes on the eMagiz Cloud level.
 
-- By restarting the runtime, you restart all flows (including infra) of the runtime you have selected
-    - Flows return in original state
+The Apply to environment functionality gives you:
+- Apply to environment actualizes all changes with an indirect effect
+- It gives you the option to change multiple things at once before applying the bulk change. This is to reduce downtime
+- It ensures that the eMagiz Cloud is only affected when a user want to affect it
 
-As you can see this action does not alter the state of your runtime by being executed. To execute this action please navigate to Deploy -> Architecture (if you are not there already). After you have done so you can access the context menu of a particular runtime (via a right mouse click) and select the option called restart runtime.
+Below we have categorized each action to see whether they have a direct effect on the eMagiz Cloud or an Indirect effect. This is to give context per action what is the consequence of your action.
 
-<p align="center"><img src="../../img/microlearning/novice-emagiz-cloud-management-restart-runtime--context-menu-runtime.png"></p>
+| <p align="center">**Direct Effect**</p>| <p align="center">**Indirect Effect**</p>|
+| ------ | ------ |
+| Restart Runtime (Not JMS) | Add Route |
+| Restart Runtime (JMS) | Update Route |
+| Reset Runtime (Not JMS) | Delete Route |
+| Reset Runtime (JMS) | Add Certificate |
+| Restart Runtime (Not JMS) | Update Certificate |
+| Restart Connector Machine | Delete Certificate |
+| Restart Core Machine | Add runtime to connector machine |
+| Stop Connector Machine | Add runtime to core machine |
+| Stop Core Machine | Remove runtime from connector machine |
+| Start Connector Machine | Remove runtime from core machine |
+| Start Core Machine | Update memory settings runtime (not JMS) |
+| Wake up Cloud Slot | Update memory settings runtime (JMS) |
+| Put Cloud Slot to sleep | Change Cloud Template |
+| Clean Store | |
+| Upgrade Cloud Slot* | |
 
-After a grace period please execute the standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard.
+*Note that the upgrade of the cloud slot can be planned for a later moment in time.
+
+So in short when you execute one (or more) actions on Deploy Architecture that have an indirect effect you need to press Apply to Environment to actualize the changes within the eMagiz Cloud. Note that each action, whether it is direct or indirect, will cause a reaction and subsequent change within the eMagiz Cloud. So be cautious about changing things too many times over.
 
 ##### Practice
 
