@@ -41,7 +41,7 @@ In this microlearning, we will focus on the action to restart a runtime. In some
 - By restarting the runtime, you restart all flows (including infra) of the runtime you have selected
     - Flows return in original state
 
-As you can see this action does not alter the state of your runtime by being executed. To execute this action please navigate to Deploy -> Architecture (if you are not there already). After you have done so you can access the context menu of a particular runtime (via a right mouse click) and select the option called restart runtime.
+As you can see this action does not alter the state of your runtime by being executed. To execute this action please navigate to Deploy -> Architecture (if you are not there already). After you have done so you can access the context menu of a particular runtime (via a right mouse click), while in "Start Editing" mode, and select the option called restart runtime.
 
 <p align="center"><img src="../../img/microlearning/novice-emagiz-cloud-management-restart-runtime--context-menu-runtime.png"></p>
 
