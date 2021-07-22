@@ -10,7 +10,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| |
 | | - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
 | - [Configuring AWS Direct Connect](direct-connect.md)| - [Best practices for SFTP](sftp-best-practice.md)| |
-| | - [Debugging guidelines](debugging-guidelines.md)| - [Typical errors in eMagiz](typical_errors_emagiz.md) |
+| | - [Debugging guidelines](debugging-guidelines.md)| |
 | | - [WS-Security Explained](ws-security.md) | - [User management](user-management.md) |
 | | - [WS-Addressing Explained](ws-addressing.md) | - [Migration Path - Job Dashboard Cleanup](migration-path-job-dashboard-cleanup.md) |
 | | | - [Migration Path - AWS Redshift Refresh](migration-path-aws-redshift-refresh.md) |
