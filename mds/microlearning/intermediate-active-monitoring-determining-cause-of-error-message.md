@@ -21,7 +21,7 @@ Being able to quickly and correctly analyze what is going wrong within a certain
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: July 21th, 2021
+- Last update: July 22th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -92,7 +92,7 @@ To verify whether the intended change works we will retest the process to verify
 
 ## 4. Assignment
 
-Create a test message for a flow within your (Academy) project based on an eMagiz definition and create a test message for a flow within your (Academy) project based on an example message.
+Analyze the cause of at least one error message within your (Academy) . Subsequently make the correct changes to the flow to fix the problem.
 
 ## 5. Key takeaways
 

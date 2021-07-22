@@ -13,93 +13,83 @@
 
 ##### Intro
 
-# Reset runtime
+# Determining the origin of log entries
 
-In a previous microlearning, we learned about restarting runtimes. In that microlearning, we learned that restarting the runtime does not affect flows, data, psychical hardware, or otherwise. It is simply jump-starting the runtime or machine once more. In this microlearning, however, we will focus on the action to reset a runtime. A reset on the other hand is the more aggressive approach and does have a significant effect. In other words, the main difference is that with a reset you begin with a clean slate compared to the simple restart.
-
-Having said that there are some cases where it can become beneficial to reset a runtime. For instance when running into memory issues or when doing large bulk build number upgrades.
+In this microlearning, we will focus on how you can quickly and easily determine the origin of log entries. In other words, what caused the logging.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: July 21th, 2021
+- Last update: July 22th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Basic knowledge of cloud management
+- Understanding of Monitoring concept
+- One or more log entries raised in the last two weeks within the context of your (Academy) project
 
 ## 2. Key concepts
-This microlearning centers around resetting a runtime
-With resetting, we mean: Ensure that we begin with a clean slate and forget about what happened before
+This microlearning centers around determining the origin of log entries.
+By origin, in this context, we mean: Identifying which flow wrote an entry to the log that might be in need of analysis.
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
-
+- Determining in which flow a log entry is raised can be done with the help of the Manage phase in eMagiz. 
+    - In the Manage phase you have an option called Monitoring. In this overview, you will see all logging that is relevant without your project.
+- This overview allows you to filter on various elements, such as runtime, type, and timestamp. This way you can conduct a more focused search.
+- Double-clicking on a log entry provides you with the relevant details
+- Note that log entries are not shown in full when they exceed a certain size so takes this into account when logging
+- When you know the flow and the details you have determined the origin of the log entry
 
 ##### Theory
 
-## 3. Reset runtime
+## 3. Determining the origin of log entries
 
-In a previous microlearning, we learned about restarting runtimes. In that microlearning, we learned that restarting the runtime does not affect flows, data, psychical hardware, or otherwise. It is simply jump-starting the runtime or machine once more. In this microlearning, however, we will focus on the action to reset a runtime. A reset on the other hand is the more aggressive approach and does have a significant effect. In other words, the main difference is that with a reset you begin with a clean slate compared to the simple restart.
+You can determine the origin of a log entry with a two-step approach:
+1. Search in the Monitoring overview for log entries
+2. Select a specific log entry for further analysis
 
-Having said that there are some cases where it can become beneficial to reset a runtime. For instance when running into memory issues or when doing large bulk build number upgrades.
+### 3.1 Monitoring overview Manage
 
-In short, the reset action can be described by the following:
+To see and analyze the log entries you need to navigate to Manage -> Monitoring. This overview shows all log entries within your project that have been written to the log in the last fourteen days (assuming you did adhere to the fair use policy). Within this overview, you have the ability to search on various options such as runtime, type, and timestamp. 
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry--manage-monitoring-unfiltered.png"></p>
 
-To execute this action please navigate to Deploy -> Architecture (if you are not there already). After you have done so you can access the context menu of a particular runtime (via a right mouse click), while in "Start Editing" mode, and select the option called reset runtime.
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry--manage-monitoring-filtered.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-emagiz-cloud-management-reset-runtime--context-menu-runtime.png"></p>
+### 3.2 Select a specific log entry for further analysis
 
-After a grace period please execute the standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard.
+After you have filtered the log entries to your liking you can select a specific log entry by double-clicking on the log entry. By doing so a pop-up will be presented in which the details of the log entry are written. On this details page, the flow and message are the most relevant from a user perspective.
 
-Note that when you have a custom H2 database on runtime level (i.e. for storing metadata) the H2 database will be deleted as well when you execute the Reset action. To safeguard against this you could store your H2 database on EFS. Please take a look at the help text for the URL field on the JDBC H2 connection pool component for more information.
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry--manage-monitoring-log-entry-details.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-emagiz-cloud-management-reset-runtime--help-text-h2-efs.png"></p>
+Note that some log entries are grouped as they appeared in short proximity after each other and have to do with the same logging.
+
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry--manage-monitoring-log-entry-details-grouped.png"></p>
 
 ##### Practice
 
 ## 4. Assignment
 
-There is no assignment for this microlearning.
+Determine the origin of at least five log entries that have been raised within your (Academy) project in the last two weeks. If your project has no log entries be creative in messing up stuff to create a log entry for which you can then determine the origin.
 
 ## 5. Key takeaways
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
+- Determining in which flow a log entry is raised can be done with the help of the Manage phase in eMagiz. 
+    - In the Manage phase you have an option called Monitoring. In this overview, you will see all logging that is relevant without your project.
+- This overview allows you to filter on various elements, such as runtime, type, and timestamp. This way you can conduct a more focused search.
+- Double-clicking on a log entry provides you with the relevant details
+- Note that log entries are not shown in full when they exceed a certain size so takes this into account when logging
+- When you know the flow and the details you have determined the origin of the log entry
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-There are no suggested additional readings on this topic
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 
-There is no demonstration video of this functionality. 
+This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
+
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

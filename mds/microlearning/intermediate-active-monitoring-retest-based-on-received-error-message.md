@@ -13,83 +13,55 @@
 
 ##### Intro
 
-# Reset runtime
+# Retest based on received error message
 
-In a previous microlearning, we learned about restarting runtimes. In that microlearning, we learned that restarting the runtime does not affect flows, data, psychical hardware, or otherwise. It is simply jump-starting the runtime or machine once more. In this microlearning, however, we will focus on the action to reset a runtime. A reset on the other hand is the more aggressive approach and does have a significant effect. In other words, the main difference is that with a reset you begin with a clean slate compared to the simple restart.
-
-Having said that there are some cases where it can become beneficial to reset a runtime. For instance when running into memory issues or when doing large bulk build number upgrades.
+In our previous microlearning, we learned about determining the cause of an error message. In that microlearning, we learned that with the help given by eMagiz you as a user can determine the cause of an error message. However to validate your assumption you need to test your change before announcing to the world the error has been fixed. In this microlearning, we will focus on the part of retesting your flow(s) to validate that your change did indeed solve the error. We will use the flow testing functionality to perform these tests.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: July 21th, 2021
-- Required reading time: 6 minutes
+- Last update: July 22th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 - Basic knowledge of cloud management
 
 ## 2. Key concepts
-This microlearning centers around resetting a runtime
-With resetting, we mean: Ensure that we begin with a clean slate and forget about what happened before
+This microlearning centers around retesting based on received error message
+With retesting, we mean: Testing after a change has occurred whether the change in question resolves the given error.
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
+- Retesting is a way to validate your assumptions
+- If you have multiple scenarios that could happen within the context of your flow ensure to test them all for regression
+- By retesting you deliver better quality to the client
 
 
 ##### Theory
 
-## 3. Reset runtime
+## 3. Retest based on received error message
 
-In a previous microlearning, we learned about restarting runtimes. In that microlearning, we learned that restarting the runtime does not affect flows, data, psychical hardware, or otherwise. It is simply jump-starting the runtime or machine once more. In this microlearning, however, we will focus on the action to reset a runtime. A reset on the other hand is the more aggressive approach and does have a significant effect. In other words, the main difference is that with a reset you begin with a clean slate compared to the simple restart.
+In our previous microlearning, we learned about determining the cause of an error message. In that microlearning, we learned that with the help given by eMagiz you as a user can determine the cause of an error message. However to validate your assumption you need to test your change before announcing to the world the error has been fixed. In this microlearning, we will focus on the part of retesting your flow(s) to validate that your change did indeed solve the error. We will use the flow testing functionality to perform these tests.
 
-Having said that there are some cases where it can become beneficial to reset a runtime. For instance when running into memory issues or when doing large bulk build number upgrades.
+In our previous microlearning, we fixed what we thought caused the issue. Now we will retest the flow(s) linked to the error to see if we were right. To do so navigate to the Create phase and open the flow in which you made a change. Open the test canvas within the flow designer. Here we adjust the expected message to state that we expect whatever value is in Onderdeel to end up in Component. After we have made the adjustment we run the flow test again to see whether or not our change ensures that the Component attribute is filled in. For detailed information on flow testing please check out the Crash Course Platform. As a result, we expect to see a blue background.
 
-In short, the reset action can be described by the following:
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message--result-retest.png"></p>
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
+Now that we now we have a successful test we should use the expected message on the CDM level as input for a second test on the offramp level to see whether this message will pass the validation. Just so we can safely say we checked everything. To do so simply create a new test case in which you use an existing file as input for the starting point of your flow. For detailed information on flow testing please check out the Crash Course Platform. This one you should also run to see the results. Once again you are aiming for a blue background or at least that the message passes the validation component.
 
-To execute this action please navigate to Deploy -> Architecture (if you are not there already). After you have done so you can access the context menu of a particular runtime (via a right mouse click), while in "Start Editing" mode, and select the option called reset runtime.
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message--result-retest-offramp-test.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-emagiz-cloud-management-reset-runtime--context-menu-runtime.png"></p>
-
-After a grace period please execute the standard checks, i.e checking the logs under Manage -> Log Entries and verify if you can access the runtimes via runtime dashboard.
-
-Note that when you have a custom H2 database on runtime level (i.e. for storing metadata) the H2 database will be deleted as well when you execute the Reset action. To safeguard against this you could store your H2 database on EFS. Please take a look at the help text for the URL field on the JDBC H2 connection pool component for more information.
-
-<p align="center"><img src="../../img/microlearning/intermediate-emagiz-cloud-management-reset-runtime--help-text-h2-efs.png"></p>
+Now that we have passed the validation we can safely assume that our fix worked. The last thing to do is to give the flow in which we changed something a new version so we can deploy it to the proper environment(s). To do so simply navigate to the flow in question and ensure that a new version is created.
 
 ##### Practice
 
 ## 4. Assignment
 
-There is no assignment for this microlearning.
+Retest at least one flow within your (Academy) for which you have analyzed the cause in the previous microlearning. Subsequently provide a new version of the flow to Deploy.
 
 ## 5. Key takeaways
 
-- A reset is the more aggressive approach compared to a restart. 
-- The reset does the following on cloud level:
-    - Stops the runtime service (if running) 
-    - Removes data (except Artemis folder + revision info)
-    - Removes local repository folder 
-    - Starts the runtime service (if stopped at step 1)
-- With a reset, you start with a clean slate
-    - Flow version could be different based on changes in the release
-    - Custom H2 database is emptied
+- Retesting is a way to validate your assumptions
+- If you have multiple scenarios that could happen within the context of your flow ensure to test them all for regression
+- By retesting you deliver better quality to the client
 
 ##### Solution
 
@@ -99,7 +71,7 @@ There are no suggested additional readings on this topic
 
 ## 7. Silent demonstration video
 
-There is no demonstration video of this functionality. 
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
