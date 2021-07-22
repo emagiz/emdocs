@@ -5,7 +5,7 @@
     <p>
        In this course, we will look at how you can successfully monitor your complete integration data model with the help of elements from the eMagiz Portal. In this course, we will take a look at determining the cause of error messages, the origin of log entries, and we will learn some interesting things on retesting after receiving an error message.
         </br></br>
-        - Total time: between 30 and 45 minutes
+        - Total time: between 20 and 30 minutes
         </br>
         - Last updated - July 2021
     </p>

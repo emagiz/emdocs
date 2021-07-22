@@ -20,7 +20,7 @@ In this microlearning, we will focus on how you can quickly and easily determine
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: July 22th, 2021
-- Required reading time: 6 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
