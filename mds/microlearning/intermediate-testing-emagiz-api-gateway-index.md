@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">Alerting</h2>
+	<h2 class="title">Testing API Gateway</h2>
     <p>
        In this course, we will zoom in on some ways you could test your API Gateway solution.
         </br></br>

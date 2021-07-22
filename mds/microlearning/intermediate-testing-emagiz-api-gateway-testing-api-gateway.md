@@ -55,11 +55,11 @@ In the [Crash Course Platform](../microlearning/crashcourse-platform-index.md) w
 When you navigate to the Swagger UI page you will see that there is a try-it-out button per operation. After you have pressed this button you will see a button called Execute appear. 
 By pressing this button you will test the API Gateway functionality of a specific operation as if you were the client.
 
-<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-swagger-ui--swagger-ui-execute-try-it-out.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-testing-emagiz-api-gateway-testing-the-api-gateway--swagger-ui-execute-try-it-out.png"></p>
 
 The Swagger UI will give feedback based on what happened after you have pressed the button to execute
 
-<p align="center"><img src="../../img/microlearning/crashcourse-api-gateway-swagger-ui--feedback-inswagger-ui.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-testing-emagiz-api-gateway-testing-the-api-gateway--feedback-inswagger-ui.png"></p>
 
 ##### Practice
 
