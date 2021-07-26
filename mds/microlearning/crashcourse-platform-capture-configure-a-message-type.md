@@ -20,7 +20,7 @@ Configuring a message type is the second step in designing an integration within
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 1th 2021
+- Last update: July 26th 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -64,19 +64,10 @@ In this pop-up, you need to fill in the correct details regarding your message t
 - Display name
 - Technical name
 - Default integration pattern (coupled with Asynchronous)
-- Amount/frequency of messages
-- Timing/spread of messages
-- Size of messages
-- How critical are these messages
-- Is the order of the messages relevant
 
-While the first two are critical because you need a unique name within your eMagiz project to prevent errors, the other information elements are interesting for a different reason.
+While the first two are critical because you need a unique name within your eMagiz project to prevent errors, the other information element is interesting for a different reason.
 
-These information elements are a critical first step in determining what the most suitable way of transporting the data is. 
-This can help you determine early on whether extra monitoring is needed and can it can help you make better decisions in terms of memory needed to process the data that will be exchanged.
-
-Not providing this information, or submitting random data hurts you in the long term when we look at the changeability and maintainability of your eMagiz project. 
-This could lead to problems in a Production environment that could have been prevented.
+This information element is a good first step in determining which integration pattern to use when dealing with this data.
 
 See the example below on how to register this information correctly.
 
@@ -100,7 +91,7 @@ Here you can search for the message type you want to Edit, select it and press E
 Here you can change the information you have first submitted when you created a new message type. 
 A message type can be re-used over multiple integrations (lines in Capture) so be careful what you change here as it will automatically update the information on the integration level.
 
-Furthermore, we strongly advise not to change the technical name of a message type the moment you have already transferred one (or more) integration(s) that make use of this message type to Create.
+Furthermore, we strongly advise **not** to change the technical name of a message type the moment you have already transferred one (or more) integration(s) that make use of this message type to Create.
 
 ### 3.3 Deleting a message type
 
