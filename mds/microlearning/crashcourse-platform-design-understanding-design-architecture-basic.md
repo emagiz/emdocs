@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -19,7 +19,7 @@ In this microlearning, we will educate you on what Design Architecture is, what 
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 2th 2021
+- Last update: July 26th 2021
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
@@ -49,16 +49,16 @@ As you can see in the overview of the architecture we have several machines with
 ### 3.1 Core Machine
 The machine called localhost in this example is a so-called core machine. This machine (or machines if you scale up) plays host to the core functionalities of eMagiz:
 - JMS
-- Process Container (holds all onramps, offramps, routers, and error for messaging processes)
+- Process Container (holds all onramps, offramps, routers, and the error process for messaging processes)
 - Event Streaming Container (holds all onramps and offramps for event stream processes)
 
-Depending on your specific implementation you need some of them or all of them. If you do not need them eMagiz will grey them out indicating that the system in question can be ignored.
+Depending on your specific implementation you need some of them or all of them. If you do not need them you can exclude them. As a result, eMagiz will grey them out indicating that the system in question can be ignored.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--core-machine.png"></p>
 
 ### 3.2 Connector Machine(s)
 The machine called a local machine in this example is a so-called connector machine. 
-These machines are connected to the internet as this is the place where you exchange data with other systems.
+These machines are the place where you exchange data with other systems. As this is the place to connect to other systems internet connectivity is a must.
 
 Within eMagiz we make a distinction between two types of connector machine(s):
 - Connector machine(s) running in the eMagiz Cloud managed by eMagiz
@@ -93,7 +93,7 @@ This can help you determine the correct sizing for your machine, now and in the 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-understanding-design-architecture-basic--check-size-status-popup.png"></p>
 
-There is much more to tell about the Design Architecture but more on that in later microlearnings.
+There is much more to tell about Design Architecture but more on that in later microlearnings.
 
 ##### Practice
 
