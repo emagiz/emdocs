@@ -27,6 +27,22 @@
                 <div class="strip__attribute-label">All</div>
             </div>
         </a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/intermediate-solution-architecture-understanding-design-architecture" class="strip__link">
+            <label for="" class="strip__label">
+                <span>20</span>
+                Understanding Design Architecture
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
         </li>        				
     </ul>
     </main>
