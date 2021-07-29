@@ -13,9 +13,9 @@
 
 ##### Intro
 
-# Topic Storage
+# H2 Database, Function
  
-A key element within using the Event Streaming platform is the topic storage. As you have learned in the crash course platform the event streaming pattern is all about topics and retention. As you can imagine the total amount of GB configured in retention across environments and topics defines the total amount of configured topic storage. In this microlearning, we will learn how you can determine the configured size of the topic storage (per environment). Further, we will learn what you should do in case you exceed your allotted amount of topic storage.
+When you utilize the messaging platform you are bound to see this component automatically appear in all your entries when you create those entries for the first time. However, we see that there is quite some confusion on what the function of this component is in the entry. In this microlearning, we will try our best to explain that function to you. In another microlearning, further down the road, we will discuss other applications of the H2 database.
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -26,45 +26,51 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers on topic storage.
+This microlearning centers on the function of the H2 Database.
 
-With topic storage we mean: The total configured amount of retention on all topics (across environments) 
+With H2 Database we mean: A database structured that can be created and used with the help of eMagiz components
 
-The focal point of this microlearning will be topic storage.
+The focal point of this microlearning will be to figure out why the H2 database is part of any auto-generated entry.
 
 - The key aspects are:
-    - eMagiz compares the allotted topic storage (contractually allowed) with the configured topic storage
-    - eMagiz sells topic storage per integration data model (so no separate GBs for Test, Acceptance, and Production)
-    - eMagiz shows configured topic storage per environment so you can assign yourself how much of the allotted GB you want to use per environment
+    - H2 Database temporarily stores data
+    - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
+    - Holds data in case the queue (the onramp) cannot be reached
+    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
 ##### Theory
   
-## 3. Topic Storage
+## 3. H2 Database, Function
 
-A key element within using the Event Streaming platform is the topic storage. As you have learned in the crash course platform the event streaming pattern is all about topics and retention. As you can imagine the total amount of GB configured in retention across environments and topics defines the total amount of configured topic storage. In this microlearning, we will learn how you can determine the configured size of the topic storage (per environment). Further, we will learn what you should do in case you exceed your allotted amount of topic storage.
+When you utilize the messaging platform you are bound to see this component automatically appear in all your entries when you create those entries for the first time. However, we see that there is quite some confusion on what the function of this component is in the entry. In this microlearning, we will try our best to explain that function to you. In another microlearning, further down the road, we will discuss other applications of the H2 database.
 
-The focal point of this microlearning will be topic storage.
+The focal point of this microlearning will be to figure out why the H2 database is part of any auto-generated entry.
 
 - The key aspects are:
-    - eMagiz compares the allotted topic storage (contractually allowed) with the configured topic storage
-    - eMagiz sells topic storage per integration data model (so no separate GBs for Test, Acceptance, and Production)
-    - eMagiz shows configured topic storage per environment so you can assign yourself how much of the allotted GB you want to use per environment
+    - H2 Database temporarily stores data
+    - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
+    - Holds data in case the queue (the onramp) cannot be reached
+    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
-Let us first check how we can determine the configured topic storage per enviroment and how you can compare that to the assigned topic storage per environment. To do so we have to navigate towards Design -> Architecture. Within Design Architecture you will a grey block called topic storage.
+As you probably noticed by now is that every time you create a new entry in eMagiz some components are automatically generated for you.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--topic-storage-design-architecture.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry.png"></p>
 
-In this block you will see the configured size on the left (so the total configured retention across topics on this environment) and the assigned (i.e. allotted) size on the right. As long as the number on the right is higher or equals the number on the left you can continue building and deploying your event streaming solution. However the moment the number on the right is lower compared to the number on the left (see below) you have exceeded the assigned size.
+A subset of these components creates the desired H2 database including structure to receive and process messages. Those components are highlighted in the picture below.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--topic-storage-design-architecture-not-enough-storage.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry-h2-components.png"></p>
 
-You can also see this comparison in the right hand panel on the Design Architecture canvas.
+The support objects ensure that the H2 database is created and that the data in it is encrypted. Furthermore, they make sure that the database is stored in the proper location and has the correct structure. All of this is nothing you as a user should worry about. Those support objects are created with the best possible settings.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--topic-storage-design-architecture-comparison.png"></p>
+Another part of the flow is the grey circle that will become part of your main flow. This component is called a message bridge. With the help of the message bridge, you can link up certain channels to throttle messages and make sure that the endpoint (in this case the queue) does not have to do the polling on the database to check for new messages. The default setting for this component is that every 500 milliseconds 10 messages are picked up. Based on desired throughput and volume you could tweak those settings to best suit your needs. Do be aware that you should not randomly start tweaking settings.
 
-When this happens you could first take a hard look at how you have configured the retention settings per topic. Maybe you will spot large differences between the configured size and the actual retention size on a topic. If so you could downscale the retention settings (in terms of bytes and hours) in order to reduce the number of configured GBs on that environment. Note that you can vary the retention policy of a topic per environment. This allows you to make small Test topics and large(r) Production topics. To figure out whether the configured retention settings match the actual retention on topic level you can use the Manage phase in eMagiz. If you want to learn more on this please check out this [microlearning](crashcourse-eventstreaming-managing-your-event-streaming-solution.md).
+Furthermore, this message bridge is linked to a support object (transaction manager). This configuration allows the poller action to be part of the transaction and therefore gives the ability to perform a rollback in case of error. This is crucial when you want to guarantee message delivery. If you would not have something like this and for whatever reason, the connection between the entry and the queue (the onramp) is gone messages will be lost.
 
-In case you cannot scale down your retention settings you need to contact your partner manager in order to come to an agreement on more allotted topic storage on a contractual basis. Note that just as with cloud approval only an eMagiz cloud administrator can change the assigned configuration. This to prevent misuse of the platform in terms of retention.
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry-h2-transaction-manager.png"></p>
+
+So what eMagiz gives you is a standardized database structure that temporarily stores messages (in case of connection issues). This is to ensure guaranteed delivery of the incoming message on the first queue in eMagiz (the onramp). As a bonus, the component helps you to smooth out the messages that are placed on the queue for further processing. With the help of this component, you prevent that when an external system offers 1000 messages within seconds all 1000 will end up on the queue at the same time. If that would happen you could run the risk of overloading your queue leading to larger issues (potentially even an 'out of memory' of the container).
+
+Hopefully, this microlearning will give you some context on why the H2 database is automatically generated by eMagiz in every entry and plays a crucial role in holding up to the promise of guaranteed delivery of messages within the platform.
 
 ##### Practice
 
@@ -75,9 +81,10 @@ Reflect on the choices made within various projects and see if you would, with w
 ## 5. Key takeaways
 
 - The key aspects are:
-    - eMagiz compares the allotted topic storage (contractually allowed) with the configured topic storage
-    - eMagiz sells topic storage per integration data model (so no separate GBs for Test, Acceptance, and Production)
-    - eMagiz shows configured topic storage per environment so you can assign yourself how much of the allotted GB you want to use per environment
+    - H2 Database temporarily stores data
+    - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
+    - Holds data in case the queue (the onramp) cannot be reached
+    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
 ##### Solution
 
