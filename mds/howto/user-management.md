@@ -9,7 +9,7 @@ Below we will discuss both of these sections in more detail.
 ## User management on platform level
 On platform level there are several forms of user management embedded within the portal. 
 In this section we will discuss user access to integration projects, 
-user authorizations to integration projects, the role of the bus owner,  transferring your bus owner role and the company admin role.
+user authorizations to integration projects, the role of the bus owner,  transferring your bus owner role and the company contact role.
 
 ### Users access to Integration Projects
 Users can be added to Integration projects, which hold all the configurations required to run the different integrations for the TAP environments. 
