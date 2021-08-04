@@ -415,6 +415,44 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-index" class="card">
+			<div class="card__body" style="background: url(../../img/Error_Handling_Modules.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Understanding Error Handling</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">3</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/intermediate-key-concepts-emagiz-event-streaming-index" class="card">
+			<div class="card__body" style="background: url(../../img/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Key concepts Event Streaming</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-configuring-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Configuring Event Streaming</h4>
