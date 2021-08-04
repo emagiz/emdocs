@@ -125,7 +125,7 @@ You will find plenty background items available on the Internet.
 
 ## 7. Silent demonstration video
 
-Not applicable
+As this is a more theoretical microlearning we have no video for this.
 
 
 </div>
