@@ -60,9 +60,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-index" class="card">
-			<div class="card__body" style="background: url(../../img/REST_modules.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">REST Connectivity</h4>
+		<a href="../../docs/microlearning/intermediate-discover-your-integration-landscape-index" class="card">
+			<div class="card__body" style="background: url(../../img/Discover_Integrations.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Discover your integration landscape</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -71,11 +71,11 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
-					<label for="" class="card__footer-label">Developer</label>
+					<label for="" class="card__footer-label">All</label>
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">5</label>
+					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
 		</a>
@@ -92,6 +92,44 @@
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
 	</ul>
 	<div class="card-container">
+		<a href="../../docs/microlearning/intermediate-discover-your-integration-landscape-index" class="card">
+			<div class="card__body" style="background: url(../../img/Discover_Integrations.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Discover your integration landscape</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>		
+		<a href="../../docs/microlearning/intermediate-key-concepts-emagiz-messaging-index" class="card">
+			<div class="card__body" style="background: url(../../img/messaging_crashcourse.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Key concepts eMagiz Messaging</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card">
 			<div class="card__body" style="background: url(../../img/MessageStructure.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Defining message structures</h4>
@@ -357,6 +395,25 @@
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">3</label>
+				</li>
+			</ul>
+		</a>		
+		<a href="../../docs/microlearning/intermediate-orchestration-of-data-packets-index" class="card">
+			<div class="card__body" style="background: url(../../img/orchestration_modules.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Orchestration of data packets</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
 		</a>
