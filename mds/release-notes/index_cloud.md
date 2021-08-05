@@ -2,6 +2,7 @@
 
 |Template number | Lane|
 |---|---|
+|[R18](cloud-single-r18.md)| Single|
 |[R17](cloud-single-r17.md)| Single|
 |[R15](cloud-single-r15.md)| Single|
 |[R14](cloud-single-r14.md)| Single|
