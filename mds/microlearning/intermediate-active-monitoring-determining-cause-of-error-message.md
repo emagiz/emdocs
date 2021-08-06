@@ -34,7 +34,7 @@ This microlearning centers around determining the cause of error messages
 By determining the cause, we mean: Figuring out what it was that was responsible for the generation of an error.
 
 - The component that raises the error could differ from the component that causes the error
-- Validation errors are in most cases caused by an error within the transformation
+- Validation errors on eMagiz data model level are in most cases caused by an error within the transformation
 - A list of typical errors is available in the documentation portal
 
 
@@ -48,7 +48,7 @@ Being able to quickly and correctly analyze what is going wrong within a certain
 
 Key aspects to consider are:
 - The component that raises the error could differ from the component that causes the error
-- Validation errors are in most cases caused by an error within the transformation
+- Validation errors on eMagiz data model level are in most cases caused by an error within the transformation
 - A list of typical errors is available in the documentation portal
 
 To determine the cause of an error we need to start our journey in the Manage phase. In this phase, you have an overview of your messaging landscape in the Dashboard. Here you can quickly determine the origin of the error message as we learned previously. However, this dashboard is also very useful when determining the cause of the error message. By clicking on a flow in the Dashboard you open the details page. On this page, you see per error message the relevant information (headers, payload, history, and the exception). In this case, we are interested in the exception. The exception can tell us more about what kind of error we are dealing with. An example of such an exception is:
@@ -97,7 +97,7 @@ Analyze the cause of at least one error message within your (Academy) . Subseque
 ## 5. Key takeaways
 
 - The component that raises the error could differ from the component that causes the error
-- Validation errors are in most cases caused by an error within the transformation
+- Validation errors on eMagiz data model level are in most cases caused by an error within the transformation
 - A list of typical errors is available in the documentation portal
 - Try to train yourself in recognizing patterns
 
