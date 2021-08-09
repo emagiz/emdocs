@@ -87,7 +87,7 @@ The last consideration we need to make concerns security. The **API gateway** pa
 
 Taking this all into consideration should guide you to select a particular integration pattern based on various business and technical checks and balances.
 
-### 3.2 Licensing & Implementation Costs
+### 3.2 Licensing, Implementation Costs, and Resource Costs
 
 Apart from the above considerations, there are also costs involved in making the decision. Unlocking a specific pattern will incur a licensing fee. So only using a particular pattern for only one integration solution might be less attractive. On the other hand, each pattern has differing implementation costs within eMagiz. Below you will see the patterns ranked based on the implementation costs (low to high):
 
@@ -95,7 +95,7 @@ Apart from the above considerations, there are also costs involved in making the
 - API Gateway
 - Messaging
 
-So that means that you might save money in the short with sticking what you know but could end up paying more due to (significantly) higher implementation costs. Hopefully, this microlearning will help you to make the correct decision per integration question.
+So that means that you might save money in the short with sticking what you know but could end up paying more due to (significantly) higher implementation costs. Another piece of the puzzle is the resource costs. For this aspect also the resource costs differ per integration pattern. Here we see that taking a messaging solution would incur the highest resource costs. API Gateway and Event Streaming roughly take up the same amount of resource costs. We want to note that a large portion of the resource costs for Event Streaming lies in storage. So when you can reduce that component, the Event Streaming option would become even more cost-friendly. Hopefully, this microlearning will help you to make the correct decision per integration question.
 
 
 ##### Practice

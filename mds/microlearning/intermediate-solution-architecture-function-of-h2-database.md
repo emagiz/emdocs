@@ -36,7 +36,7 @@ The focal point of this microlearning will be to figure out why the H2 database 
     - H2 Database temporarily stores data
     - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
     - Holds data in case the queue (the onramp) cannot be reached
-    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
+    - Smoothen the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
 ##### Theory
   
@@ -50,7 +50,7 @@ The focal point of this microlearning will be to figure out why the H2 database 
     - H2 Database temporarily stores data
     - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
     - Holds data in case the queue (the onramp) cannot be reached
-    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
+    - Smoothen the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
 As you probably noticed by now is that every time you create a new entry in eMagiz some components are automatically generated for you.
 
@@ -84,7 +84,7 @@ Reflect on the choices made within various projects and see if you would, with w
     - H2 Database temporarily stores data
     - Acts as a bridge between the entry (where data arrives or is retrieved) and the first queue (the onramp)
     - Holds data in case the queue (the onramp) cannot be reached
-    - Smooths out the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
+    - Smoothen the amount of data that is transported from the connector to the container runtime as it periodically checks for new data
 
 ##### Solution
 

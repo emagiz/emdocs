@@ -79,7 +79,7 @@ Here are some things to keep in mind when peer reviewing the work .
 	- Sizing impact understood and valid
 - Design
 	- Check solution architecture validity
-	- D-esign 100% filled and clear
+	- Design 100% filled and clear
 	- CDM Root entity mapped
 	- Set as mapped – avoid line mapping
 	- Use annotation where possible
@@ -110,8 +110,7 @@ Here are some things to keep in mind when peer reviewing the work .
 
 ## 4. Assignment
 
-Build an entry that retrieves files from an external source and ensures that the data is delivered on the onramp queue. 
-This assignment can be completed with the help of your (Academy) project you have created/used in the previous assignment.
+See how peer reviews are currently implemented within the projects on which you work to see if you can learn something from the information you have gathered via this microlearning.
 
 ## 5. Key takeaways
 

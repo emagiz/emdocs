@@ -89,7 +89,7 @@ All data that is exchanged between an external system and a cloud instance goes 
 In terms of security this means the following benefits from being behind the carwash:
 
 - The connection is HTTPS instead of HTTP via the emagiz.com certificate
-- Your VMs are protected because only the carwash only allows relevant traffic to get through
+- Your VMs are protected because the carwash only allows relevant traffic to get through
 - It gives you the ability to submit a certificate request via the Support portal to ensure two-way SSL (both server as well as client certificate validation).
 
 ##### Practice
