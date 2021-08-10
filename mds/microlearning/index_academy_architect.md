@@ -264,7 +264,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-discover-your-integration-landscape-index" class="card">
-			<div class="card__body" style="background: url(../../img/Discover_Integrations.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/Discover_Integrations.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">Discover your integration landscape</h4>
 			</div>
 			<ul class="card__footer">
@@ -454,7 +454,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-index" class="card">
-			<div class="card__body" style="background: url(../../img/Error_Handling_Modules.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/Error_Handling_Modules.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">Understanding Error Handling</h4>
 			</div>
 			<ul class="card__footer">
