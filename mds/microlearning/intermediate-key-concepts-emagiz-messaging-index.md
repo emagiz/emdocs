@@ -28,7 +28,7 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-key-concepts-emagiz-event-streaming-retention-policy" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-key-concepts-emagiz-messaging-entry-not-a-queue" class="strip__link">
             <label for="" class="strip__label">
                 <span>17</span>
                  Entry, not a queue
