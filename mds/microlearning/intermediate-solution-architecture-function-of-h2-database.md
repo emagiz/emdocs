@@ -54,11 +54,11 @@ The focal point of this microlearning will be to figure out why the H2 database 
 
 As you probably noticed by now is that every time you create a new entry in eMagiz some components are automatically generated for you.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-function-of-h2-database--auto-generation-entry.png"></p>
 
 A subset of these components creates the desired H2 database including structure to receive and process messages. Those components are highlighted in the picture below.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry-h2-components.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-function-of-h2-database--auto-generation-entry-h2-components.png"></p>
 
 The support objects ensure that the H2 database is created and that the data in it is encrypted. Furthermore, they make sure that the database is stored in the proper location and has the correct structure. All of this is nothing you as a user should worry about. Those support objects are created with the best possible settings.
 
@@ -66,7 +66,7 @@ Another part of the flow is the grey circle that will become part of your main f
 
 Furthermore, this message bridge is linked to a support object (transaction manager). This configuration allows the poller action to be part of the transaction and therefore gives the ability to perform a rollback in case of error. This is crucial when you want to guarantee message delivery. If you would not have something like this and for whatever reason, the connection between the entry and the queue (the onramp) is gone messages will be lost.
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-topic-storage--auto-generation-entry-h2-transaction-manager.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-function-of-h2-database--auto-generation-entry-h2-transaction-manager.png"></p>
 
 So what eMagiz gives you is a standardized database structure that temporarily stores messages (in case of connection issues). This is to ensure guaranteed delivery of the incoming message on the first queue in eMagiz (the onramp). As a bonus, the component helps you to smooth out the messages that are placed on the queue for further processing. With the help of this component, you prevent that when an external system offers 1000 messages within seconds all 1000 will end up on the queue at the same time. If that would happen you could run the risk of overloading your queue leading to larger issues (potentially even an 'out of memory' of the container).
 
