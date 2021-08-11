@@ -4,20 +4,20 @@
 	<h2 class="title">eMagiz Academy</h2>
     <div class="card-container">
     <a href="../../docs/microlearning/expert-solution-architecture-index" class="card card--featured">
-			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 10%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Solution Architecture</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
 					<label for="" class="card__footer-label">Expert</label>
 				</li>
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
 					<label for="" class="card__footer-label">All</label>
 				</li>
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">5</label>
 				</li>
 			</ul>
@@ -36,20 +36,20 @@
 	</ul>
 	<div class="card-container">		
 		<a href="../../docs/microlearning/expert-solution-architecture-index" class="card">
-			<div class="card__body" style="background: url(../../img/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 17%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/SolutionArchitecture_Modules.svg) center no-repeat; background-size: 17%;">
 				<h4 class="title">Solution Architecture</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--level" src="../../img/icon-level24.svg"/>
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
 					<label for="" class="card__footer-label">Expert</label>
 				</li>
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--roles" src="../../img/icon-roles24.svg"/>
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/microlearning/academy_index/icon-roles24.svg"/>
 					<label for="" class="card__footer-label">All</label>
 				</li>
 				<li class="card__footer-item">
-					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/icon-lessons24.svg"/>
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/microlearning/academy_index/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">5</label>
 				</li>
 			</ul>
