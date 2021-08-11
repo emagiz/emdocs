@@ -18,11 +18,11 @@
                 Configuration REST web service
             </label>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">11 minutes</div>
             </div>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
@@ -34,11 +34,11 @@
                 Call a REST Webservice
             </label>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">7 minutes</div>
             </div>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
@@ -50,11 +50,11 @@
                 Authorization - Basic Authentication
             </label>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
@@ -66,11 +66,11 @@
                 Authorization - Oauth 2.0 Client Certificates
             </label>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">7 minutes</div>
             </div>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
@@ -82,11 +82,11 @@
                 Authorization - Oauth 2.0 Authorization Code
             </label>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/icon-duration32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">5 minutes</div>
             </div>
             <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/icon-roles32.svg"/>
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
                 <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
