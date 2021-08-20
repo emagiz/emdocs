@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-the-api-gateway-transforming-messages" class="strip__link">
             <label for="" class="strip__label">
-                <span>62</span>
+                <span>38</span>
                 Transforming messages
             </label>
             <div class="strip__attribute">
