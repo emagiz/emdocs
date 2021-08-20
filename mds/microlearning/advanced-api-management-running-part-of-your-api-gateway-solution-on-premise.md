@@ -19,7 +19,7 @@ In our crash course on the API Gateway pattern, we have assumed the standard cas
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: June 29th, 2021
+- Last update: August 20th, 2021
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -32,8 +32,8 @@ By on-premise, we mean: Locally installed and run software on servers that are o
 
 - Key questions are:
     - Can you reach the backend operation outside of the internal network?
-    - Can you reach all backend operations from the same server?
-    - How many backend operations need this special treatment?
+    - Which backend operations are only reachable from within the clients network?
+    - Do all systems that are linked to the backend operations need to run within the clients network?
 
 ##### Theory
   
@@ -43,8 +43,8 @@ In our crash course on the API Gateway pattern, we have assumed the standard cas
 
 - Key questions are:
     - Can you reach the backend operation outside of the internal network?
-    - Can you reach all backend operations from the same server?
-    - How many backend operations need this special treatment?
+    - Which backend operations are only reachable from within the clients network?
+    - Do all systems that are linked to the backend operations need to run within the clients network?
 
 In the remainder of this microlearning, we will learn how you can answer these questions and define the steps necessary to implement your choice.
 
@@ -58,31 +58,25 @@ The easiest way to test whether an endpoint is reachable is by calling it and se
 
 To summarize, when the answer to this question is yes the inquiry can stop here. At this point, you have already established that your API Gateway solution can run in the cloud. If the answer is no, you know that (part of) your API Gateway solution should run on-premises. In that case, we need to continue with our next question.
 
-The next question we ask ourselves is: Can you reach all backend operations from the same server? Now that we have determined that some backend operations need to be called from within the network of the client the next question becomes whether all of these backend operations are reachable from the same server. If so you only need one API Gateway container on-premise (for now). If not you need one per server. Note that one of these servers can also be a cloud connector within the eMagiz Cloud (as that is still the preferred option).
+The next question we ask ourselves is: Which backend operations are only reachable from within the clients network? Now that we have determined that some backend operations need to be called from within the network of the client the next question becomes which backend operations we are talking about. Identifying whether all backend operations of your API Gateway or part of them is needed to make the correct decisions in Design. As we will see later on in this microlearning there is an option in eMagiz that determines on system level whether the backend operations should run on-premise. By knowing upfront on a system basis whether it should run on-premise improves your decision making while implementing the solution.
 
-The third and final question in this inquiry is: How many backend operations need this special treatment? The moment you exceed the advised number of operations on one container (60) you should split the operations over multiple API Gateway containers. Depending on the actual number you can arrive at the correct amount of API Gateway operations.
+The third and final question in this inquiry is: Do all systems that are linked to the backend operations need to run within the clients network? If this is the case you would need to take this into account for each system that is linked to the API Gateway solution. In those cases you need to define on each of the systems that you are running a split gateway.
 
 To summarize, the first question determines whether it is necessary. The second and third questions are follow-up questions that are only relevant in case you have answered the first question in the affirmative. Now that we have learned how to determine whether or not (part of) your API Gateway solution should run on-premise it is time to learn how we could implement this in the eMagiz platform.
 
 ### 3.2 Implementing it in the platform
 
-To implement the solution we need to change our Design settings at first. To do so navigate to the Design phase of eMagiz and enter the Settings page (located in the top left corner).
+To implement the solution we need to change our Design settings on system level first. To do so navigate to the Design phase of eMagiz and double click on the system that represents the backend operations that should run on-premise. In here there is an option called Split Gateway. Activating this option tells eMagiz that you want to run your backend operations that are linked to this specific system on-premise.
 
-<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--design-settings.png"></p>
+<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--design-system-settings.png"></p>
 
-Here we click on the API Gateway settings. This will show the following page. Within this page, we can edit the number of API Gateway containers.
+In case you have an existing system that now needs to run on-premise please check out our release blog on how to execute the migration (https://www.emagiz.com/en/release-blog-en/160-split-decision/). In case the system is new you can add your backend operation(s) to Create and build your solution. The moment you transfer your exit gate to Deploy eMagiz will automatically assign the exit gate to the on-premise runtime instead of the API Gateway container.
 
-<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--design-settings-api-gw.png"></p>
+<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--deploy-container-result.png"></p>
 
-To do so please press Edit Settings and change the number of containers to the desired amount. In this example, I will change it to two. Note that when you Save it an information pop-up will be shown telling you that the settings are not automatically applied to Design Architecture. This to prevent weird situations in running environments.
+Note that all other exit gates will remain on the API Gateway container that is running on the cloud. The API Gateway container that is running in the cloud is also the API Gateway container that should host the 'all entry'.
 
-<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--edit-design-settings-api-gw.png"></p>
-
-This means that our next step is to navigate to our Design Architecture. Here we can press the Apply settings button to apply the settings on a **per** environment basis. After you have done so a second API Gateway container will appear. You can simply move the second gateway to the on-premise server. It should look something as follows:
-
-<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--design-architecture-api-gw-multiple-containers-on-premise.png"></p>
-
-When you are satisfied all that is remaining are the regular steps when you upgrade your number of containers in the Design phase. Do not forget to containerize (divide) your flows on a per-container basis to ensure that only the exit gates that need to run on-premise are running on-premise. All other exit gates should remain on the API Gateway container that is running on the cloud. The API Gateway container that is running in the cloud is also the API Gateway container that should host the 'all entry'.
+<p align="center"><img src="../../img/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise--deploy-container-api-gateway.png"></p>
 
 ##### Practice
 
@@ -95,11 +89,11 @@ This assignment can be completed with the help of the (Academy) project that you
 
 - Key questions are:
     - Can you reach the backend operation outside of the internal network?
-    - Can you reach all backend operations from the same server?
-    - How many backend operations need this special treatment?
+    - Which backend operations are only reachable from within the clients network?
+    - Do all systems that are linked to the backend operations need to run within the clients network?
 - Only run on-premises if it is necessary
-- Always try to run the 'all entry' in the eMagiz cloud
-- Don't forget to containerize (divide) your flows on a per-container basis
+- Always run the 'all entry' in the eMagiz cloud
+- Don't forget to tell eMagiz to split your gateway on Design system level
 
 ##### Solution
 
@@ -109,7 +103,10 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-As this is a more theoretical microlearning we did not provide a video for this one.
+This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
+
+<iframe width="1280" height="720" src="../../vid/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 </div>
 </main>
