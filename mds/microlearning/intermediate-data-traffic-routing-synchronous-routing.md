@@ -85,7 +85,7 @@ Steps to follow when adding an integration to the routing:
 3. For every unique value, there is a channel to which the messages need to be sent to
 4. eMagiz will deliver the response of your message on the correct queue
 
-### 3.3 The result
+### 3.5 The result
 
 The result of setting up your synchronous routing in this manner is that you have one single point of entry, one single piece of decision logic, and a way to control the output per specific output channel.
 

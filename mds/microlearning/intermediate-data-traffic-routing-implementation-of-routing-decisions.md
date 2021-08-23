@@ -15,94 +15,108 @@
 
 # Implementation of routing decisions
 
-This microlearning will explain the basics of synchronous routing within the messaging pattern, which plays a vital role in synchronously handling messages within the five-layer messaging model.
+This microlearning will explain two implementation options for routing messages. We will first look at the header value router, and subsequently, we will take a look at the recipient list router. Both are frequently used within the platform to route data traffic.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
 - Last update: August 23th, 2021
-- Required reading time: 6 minutes
+- Required reading time: 7 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around synchronous routing for messaging flows in eMagiz.
-By synchronous routing, we mean The process that routes messages that it receives to the correct outbound queue based on some metadata and waits for a response that needs to be sent back to the original process that delivered the message.
+This microlearning centers around the implementation of routing decisions.
+By routing decisions, we mean The act of determining to which output channel(s) a message should be sent by the flow.
 
-The synchronous routing has four relevant parts:
-- All synchronous onramps send their data to the routing
-- Based on a decision made within the routing, the message is routed to one of the available offramp queues
-- You need to deploy the complete five layers at once to prevent timeouts while deploying half of your solution
-- In contrast with asynchronous routing the synchronous routing only has one output tied to an input (instead of a possible one towards many)
+Essential characteristics of the header value router:
+- Based on the value of one header, the routing decision is made
+- Each header value can only be linked to one output channel
+- The component expects that the message is sent to an output channel. If not, it throws an error.
+
+Essential characteristics of the recipient list router:
+- Each output channel that is added becomes a new recipient
+- Can multiply a single message infinitely
+- Each recipient can receive a message always or only based on a specific condition
+- The component expects that the message is sent to an output channel. If not, it throws an error.
 
 ##### Theory
 
-## 3. Synchronous routing
+## 3. Implementation of routing decisions
 
-Synchronous routing plays a crucial role in distributing messages from one onramp to a specific offramp and waiting for the result to be passed back to the onramp again. 
+This microlearning will explain two implementation options for routing messages. We will first look at the header value router, and subsequently, we will take a look at the recipient list router. Both are frequently used within the platform to route data traffic.
 
-The asynchronous routing has four relevant parts:
-- All synchronous onramps send their data to the routing
-- Based on a decision made within the routing, the message is routed to one of the available offramp queues
-- You need to deploy the complete five layers at once to prevent timeouts while deploying half of your solution
-- In contrast with asynchronous routing the synchronous routing only has one output tied to an input (instead of a possible one towards many)
+Essential characteristics of the header value router:
+- Based on the value of one header, the routing decision is made
+- Each header value can only be linked to one output channel
+- The component expects that the message is sent to an output channel. If not, it throws an error.
 
-If you want to learn more about asynchronous routing instead of synchronous routing, please check out this [microlearning](crashcourse-messaging-asynchronous-routing.md). In synchronous routing, you not only route messages towards a certain offramp. On top of that, the routing waits for a response. Subsequently, it will route the message back to the correct onramp from which the message originated. This process happens based on a header value that is automatically determined and set by eMagiz.
+Essential characteristics of the recipient list router:
+- Each output channel that is added becomes a new recipient
+- Can multiply a single message infinitely
+- Each recipient can receive a message always or only based on a specific condition
+- The component expects that the message is sent to an output channel. If not, it throws an error.
 
-### 3.1 Make a decision
+In the remainder of this microlearning, we will first look at implementing the header value router. Afterward, we will see how to implement a recipient list router. To close the microlearning off, we will look at error handling within these components and which options are available to tweak the error handling to your liking.
 
-In synchronous routing, you can build your decision model on which the routing needs to decide.
+### 3.1 Header value router
 
-The best practice for setting up your synchronous routing process is to use the value of one of the two standard headers automatically generated in each onramp in eMagiz within the messaging pattern. The header in question is called {technicalnameofproject}_messageType. You can use this header for your routing decision. This logic means you will need a header value router as the decision point of your synchronous routing.
+To implement the header value router, you need to navigate to the Create phase of your integration data model and open the flow you want to make the routing decisions. A typical flow in which the header value router is of use is synchronous routing. For more information on the synchronous routing, please check out this [microlearning](intermediate-data-traffic-routing-synchronous-routing.md). 
 
-In the header value router component this will look as follows:
+Once you have opened your flow, you need to enter "Start editing" mode. This mode allows you to change the flow in question and add the header to the flow. When you have done so, it becomes time to configure the header value router. In the header value router component, this will look as follows:
 
-<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-synchronous-routing--routing-decision.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions--routing-decision.png"></p>
 
 In this simple case, we only have one channel as a result because all routings start simple. 
 The moment you add new offramps to your project, you need to add the latest entry to this list.
 Doing so is easy when you are in Start Editing Mode. Open the router component and select the button New Mapping.
 
-<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-synchronous-routing--new-value-mapping.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions--new-value-mapping.png"></p>
 
-Here, you fill in the correct message type and select the channel you want to route the message.
+Here, you fill in the correct message type and select the channel to route the message.
 When you are satisfied, you can press Save, and eMagiz will register the new entry.
 
 Don't forget to make a new version and deploy it to actualize your changes.
 
-### 3.2 Control output
+### 3.2 Recipient list router
 
-In contrast to asynchronous routing, you cannot deploy half your solution beforehand, leading to timeouts within the process. To control the output of synchronous routing flows, you should temporarily halt traffic by stopping your flows and communicating a moment of downtime. Afterward, you deploy the last part of your solution (i.e., the exit) first and from there work your way back to the entry. When you deploy your solution like this, you will ensure that the chances of timeouts resulting from deployments are significantly reduced. 
+Another possible component to use to route messages is called the recipient list router. The big difference between this component and the other router components is that, in essence, it will send multiple messages (for each recipient, one message). Whereas the header value router we learned about before will send the message to one of the possible output channels based on the header value, the recipient list router will send the message to each recipient in the list. This functionality is beneficial when you need to process multiple messages slightly differently, but all those messages need to be sent to the same system.
 
-### 3.4 Step by step guide
+<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions--standard-recipient-list-router.png"></p>
 
-Furthermore, as a best practice, we give you a short guide to add to your synchronous routing as annotations to ensure that you always know what you need to do to make this a reality.
+If you want to multiple a message only when certain conditions are met, you can do this within the recipient list router component. To do so, you need to edit a recipient and open the advanced tab. On this tab, you can define a selector expression. The goal of the selector expression is only to allow messages that adhere to specific criteria. This way, you can limit whether one particular message traverses that channel.
 
-Steps to follow when adding an integration to the routing:
+<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions--selector-expression.png"></p>
 
-1. In the routing, a header value router should be used as the first building block after receiving the input.
-2. In this header value router, a header name has to be defined **once**. The correct notation is {technicalnameofproject}_messageType
-3. For every unique value, there is a channel to which the messages need to be sent to
-4. eMagiz will deliver the response of your message on the correct queue
+Note that you can use any valid SpEL expression to act as your selector expression.
 
-### 3.3 The result
+### 3.4 Error handling
 
-The result of setting up your synchronous routing in this manner is that you have one single point of entry, one single piece of decision logic, and a way to control the output per specific output channel.
+The default configuration means that an error is thrown when eMagiz cannot send the input message to at least one channel. However, on the advanced tab of both components, there are ways to change this behavior. You should explicitly define where the message should go if none of the specified channels are resolved correctly to change the behavior. You can do this by selecting a default output channel. If the messages should not continue, the default output channel should be the null channel. When eMagiz cannot resolve any criteria, but the message should continue, you need to select one of the channels as the default output channel.
 
-<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-synchronous-routing--simple-synchronous-routing-example.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions--default-output-channel.png"></p>
+
+Note that when you use the null channel, the message will be silently dropped by eMagiz.
 
 ##### Practice
 
 ## 4. Assignment
 
-Build your synchronous routing based on the best practice for one of the offramps available within your (Academy) project. 
+Look for places where you could use one of these routing components to aid your integration process within your (Academy) project. 
 This assignment can be completed with the help of your (Academy) project you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Use one component that decides to route messages to a specific channel
-- Control the output by cleverly deploying your solution
-- Use the annotations to write down the step by step guide within your synchronous routing
+Essential characteristics of the header value router:
+- Based on the value of one header, the routing decision is made
+- Each header value can only be linked to one output channel
+- The component expects that the message is sent to an output channel. If not, it throws an error.
+
+Essential characteristics of the recipient list router:
+- Each output channel that is added becomes a new recipient
+- Can multiply a single message infinitely
+- Each recipient can receive a message always or only based on a specific condition
+- The component expects that the message is sent to an output channel. If not, it throws an error.
 
 ##### Solution
 
@@ -114,7 +128,7 @@ If you are interested in this topic and want more information, please read the h
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-data-traffic-routing-synchronous-routing.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>

@@ -117,7 +117,7 @@ This to prevent that messages are sent to a system that does not expect them the
 8 This filter should look like this: '${routing.monitor.detorem.enabled}' == 'true'. 
 The naming convention of said property is routing.targetsystem.messagetype.enabled.
 
-### 3.3 The result
+### 3.5 The result
 
 The result of setting up your asynchronous routing in this manner 
 is that you have one single point of entry, one single piece of decision logic, and a way to control the output per specific output channel.
