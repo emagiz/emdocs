@@ -474,7 +474,7 @@
 		</a>
 			<a href="../../docs/microlearning/intermediate-create-your-transformations-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/TransformationModules.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">Create transformations</h4>
+				<h4 class="title">Create your transformations</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -487,7 +487,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">3</label>
+					<label for="" class="card__footer-label">4</label>
 				</li>
 			</ul>
 		</a>
