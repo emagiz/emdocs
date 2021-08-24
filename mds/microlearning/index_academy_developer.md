@@ -415,6 +415,25 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-design-transformations-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/MessageStructure.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Design your transformations</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">2</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-defining-your-message-structures-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/MessageStructure.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Defining message structures</h4>
