@@ -31,7 +31,7 @@ This microlearning centers around cleaning up a designed integration.
 
 By designed integration we mean: A line that symbolizes data traffic between a system and eMagiz for which the solution is designed (i.e. message definition, message mapping, design settings)
 
-There are four key considerations before cleaning up a captured integration:
+There are four key considerations before cleaning up a designed integration:
 
 - Is the integration/flow not mentioned anymore in any alerting in Manage?
 - Is the integration removed from all releases?
@@ -44,7 +44,7 @@ There are four key considerations before cleaning up a captured integration:
 
 In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
 
-There are four key considerations before cleaning up a captured integration:
+There are four key considerations before cleaning up a designed integration:
 
 - Is the integration/flow not mentioned anymore in any alerting in Manage?
 - Is the integration removed from all releases?
@@ -57,7 +57,7 @@ Good to know is that most in Design will automatically be removed when you clean
 
 To do so you can search on CDM level for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
 
-For this microlearning, it is good to know that apart from the CDM everything in Designed will be cleaned up when you clean up the captured integration.
+For this microlearning, it is good to know that apart from the CDM everything in Designe will be cleaned up when you clean up the designed integration.
 
 ##### Practice
 
@@ -68,7 +68,7 @@ This assignment can be completed with the help of the (Academy) project that you
 
 ## 5. Key takeaways
 
-- There are four key considerations before cleaning up a captured integration:
+- There are four key considerations before cleaning up a designed integration:
     - Is the integration/flow not mentioned anymore in any alerting in Manage?
     - Is the integration removed from all releases?
     - Is the integration removed from Create?
