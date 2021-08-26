@@ -1,0 +1,127 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:complexType name="ledger">
+      <xs:sequence>
+         <xs:element name="journalCode" type="xs:string"/>
+         <xs:element name="periodNumber" type="xs:string"/>
+         <xs:element name="divisionNumber" type="xs:integer"/>
+         <xs:element maxOccurs="unbounded"
+                     minOccurs="0"
+                     name="posting"
+                     type="posting"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="optional"/>
+   </xs:complexType>
+   <xs:complexType name="posting">
+      <xs:sequence>
+         <xs:element name="sequenceNumber" type="xs:integer"/>
+         <xs:element name="transactionType" type="xs:integer"/>
+         <xs:element name="entryDate" type="xs:date"/>
+         <xs:element minOccurs="0" name="externalInvoiceNumber" type="xs:string"/>
+         <xs:element name="statusCode" type="xs:integer"/>
+         <xs:element name="Voucher" type="Voucher"/>
+         <xs:element name="Allocation" type="Allocation"/>
+         <xs:element name="Amounts" type="Amounts"/>
+         <xs:element name="VAT" type="VAT"/>
+         <xs:element name="Advances" type="Advances"/>
+         <xs:element name="relation" type="relation"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="optional"/>
+   </xs:complexType>
+   <xs:complexType name="Voucher">
+      <xs:sequence>
+         <xs:element name="voucherNumber" type="xs:integer"/>
+         <xs:element name="invoiceNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="invoiceType" type="xs:string"/>
+         <xs:element minOccurs="0" name="externalInvoiceNumber" type="xs:string"/>
+         <xs:element name="voucherDate" type="xs:date"/>
+         <xs:element minOccurs="0" name="expiryDate" type="xs:date"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Allocation">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="ledgerAccountNumber" type="xs:int"/>
+         <xs:element name="divisionNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="deviatingPeriodNumber" type="xs:string"/>
+         <xs:element minOccurs="0" name="costCentreCode" type="xs:integer"/>
+         <xs:element name="costCode" type="xs:integer"/>
+         <xs:element minOccurs="0" name="personelNumber" type="xs:integer"/>
+         <xs:element name="fileNumber" type="xs:integer"/>
+         <xs:element name="activityCode" type="xs:integer"/>
+         <xs:element name="costchargeSequenceNumber" type="xs:integer"/>
+         <xs:element name="accrualBookingSequenceNumber" type="xs:integer"/>
+         <xs:element name="accrualBookingType" type="xs:integer"/>
+         <xs:element minOccurs="0" name="financialReferenceNumber" type="xs:string"/>
+         <xs:element name="projectNumber" type="xs:integer"/>
+         <xs:element name="projectNumberSubCode" type="xs:integer"/>
+         <xs:element name="projectNumberOfHours" type="xs:float"/>
+         <xs:element minOccurs="0" name="documentNumber" type="xs:string"/>
+         <xs:element minOccurs="0" name="counterAccountNumber" type="xs:integer"/>
+         <xs:element name="counterAccountCostCentre" type="xs:integer"/>
+         <xs:element minOccurs="0" name="statisticalPeriodNumber" type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Amounts">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="indicationDebitCredit" type="xs:string"/>
+         <xs:element name="transactionAmount" type="xs:float"/>
+         <xs:element name="transactionAmountInCurrency" type="xs:float"/>
+         <xs:element minOccurs="0" name="currencyCode" type="xs:string"/>
+         <xs:element name="currencyUnit" type="xs:integer"/>
+         <xs:element name="exchangeRate" type="xs:float"/>
+         <xs:element minOccurs="0" name="exchangeDifference" type="xs:float"/>
+         <xs:element name="amountPaymentDiscount" type="xs:float"/>
+         <xs:element name="amountCashDiscountInCurr" type="xs:float"/>
+         <xs:element name="percentagePaymentDiscount" type="xs:float"/>
+         <xs:element name="termOfPaymentDiscount" type="xs:integer"/>
+         <xs:element name="amountCreditSqueeze" type="xs:float"/>
+         <xs:element name="amountCreditSqueezeInCurrency" type="xs:float"/>
+         <xs:element name="termOfCreditSqueeze" type="xs:integer"/>
+         <xs:element minOccurs="0" name="numberOfUntis" type="xs:integer"/>
+         <xs:element name="transactionTurnover" type="xs:float"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="VAT">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="countryCodeVat" type="xs:string"/>
+         <xs:element name="goodsServices" type="xs:integer"/>
+         <xs:element minOccurs="0" name="codeIntraCommunityTransaction" type="xs:string"/>
+         <xs:element minOccurs="0" name="typeOfVAT" type="xs:integer"/>
+         <xs:element minOccurs="0" name="vatCode" type="xs:integer"/>
+         <xs:element minOccurs="0" name="vatPercentage" type="xs:float"/>
+         <xs:element name="vatAmount" type="xs:float"/>
+         <xs:element name="vatAmountInCurrency" type="xs:float"/>
+         <xs:element minOccurs="0" name="vatBase" type="xs:float"/>
+         <xs:element minOccurs="0" name="vatBaseInCurrency" type="xs:float"/>
+         <xs:element minOccurs="0" name="vatList" type="xs:boolean"/>
+         <xs:element minOccurs="0" name="externalVatCode" type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="Advances">
+      <xs:sequence>
+         <xs:element minOccurs="0" name="advancesType" type="xs:string"/>
+         <xs:element minOccurs="0" name="advancesPeriodNumber" type="xs:string"/>
+         <xs:element minOccurs="0" name="advancesFlowIndicator" type="xs:integer"/>
+         <xs:element minOccurs="0" name="advancesReference" type="xs:string"/>
+         <xs:element minOccurs="0" name="advancesDocumentNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="advancesCarrierPrefix" type="xs:string"/>
+         <xs:element minOccurs="0" name="advancesAirWayBillNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="advancesDepartment" type="xs:string"/>
+         <xs:element minOccurs="0" name="advancesShipmentNumber" type="xs:integer"/>
+         <xs:element minOccurs="0"
+                     name="advancesExtendedShipmentNumber"
+                     type="xs:string"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="relation">
+      <xs:sequence>
+         <xs:element name="relationNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="relationType" type="xs:integer"/>
+         <xs:element name="divisionNumber" type="xs:integer"/>
+         <xs:element minOccurs="0" name="vatIdNumber" type="xs:string"/>
+         <xs:element minOccurs="0" name="externalRelationID" type="xs:string"/>
+         <xs:element minOccurs="0" name="ledgerAccountNumber" type="xs:integer"/>
+      </xs:sequence>
+      <xs:attribute name="type" type="xs:string" use="optional"/>
+   </xs:complexType>
+   <xs:element name="ledger" type="ledger"/>
+</xs:schema>
