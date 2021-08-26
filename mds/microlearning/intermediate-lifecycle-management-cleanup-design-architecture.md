@@ -13,69 +13,61 @@
 
 ##### Intro
 
-# Cleanup a designed integration
+# Cleanup Design Architecture
  
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
+In this microlearning, we will focus on the verifying the Design Architecture when deleting a specific flow or system. 
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: May 14th, 2021
+- Last update: August 26st, 2021
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
-- Basic knowledge of the eMagiz platform
-- Basic knowledge of the build number component within the eMagiz Platform
+- Basic knowledge of the eMagiz platform 
+
 
 ## 2. Key concepts
-This microlearning centers around cleaning up a designed integration.
+This microlearning centers around cleaning up Design Architecture. The Design Architecture as you have seen in previous microlearnings is the place to place the designed system at the right connector machine (Cloud or on-premises). When cleaning your model it can happen that a specific system needs to be removed or relocated. The cleaned flow might be the last in the system, and therefore the system needs to be removed. Next to that, the removed flow may cause a different design decision towards the location of the system.
 
-By designed integration we mean: A line that symbolizes data traffic between a system and eMagiz for which the solution is designed (i.e. message definition, message mapping, design settings)
-
-There are four key considerations before cleaning up a captured integration:
-
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
 
 ##### Theory
   
-## 3. Cleanup a designed integration
+## 3. Cleanup Design Architecture
 
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
 
-There are four key considerations before cleaning up a captured integration:
+**1. Removal of a machine**
 
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
+We are assuming that the flow in question is already removed untill the Capture phase. The system would already be removed in case it was the last flow of the system
 
-As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successful.
+- Go to Design Architecture
+- Find an empty machine in case there is one
+- Remove the machine using the menu under right click
 
-Good to know is that most in Design will automatically be removed when you clean up the captured integration. More on the specifics of  that in the next microlearning ([Cleanup a captured integration](novice-lifecycle-management-cleanup-a-captured-integration.md)). For now, it is good to know that the CDM is untouched by that action. That means to ensure a proper cleanup you should verify if certain elements in the CDM are not used anymore and are therefore ready to be cleaned up.
+<p align="center"><img src="../../img/microlearning/intermediate-lifecycle-management-cleanup-design-architecture-1.png"></p>
 
-To do so you can search on CDM level for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
 
-For this microlearning, it is good to know that apart from the CDM everything in Designed will be cleaned up when you clean up the captured integration.
+**2. Relocate system**
+We are assuming that the flow in question is already removed untill the Capture phase. The system would still be present as more flows exist
+
+Steps
+- Go to Design Architecture
+- Find an runtime in case there is one
+- Using drag & drop you can move the runtime to the new machine as required
+
+Considerations
+- Move the runtime to a new machine in case an existing machine has sufficient memory for the updated runtime (which has a new memory advice). See the microlearning ([Understanding Design Architecture - Basic](crashcourse-platform-design-understanding-design-architecture-basic.md)) section 3.3 for more information on checking the size of a machine.
+
 
 ##### Practice
 
 ## 4. Assignment
 
-Determine whether a designed integration within your project can be cleaned up. If so read the microlearning [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md).
-This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+Determine whether whether your Design Architecture requires cleaning. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- There are four key considerations before cleaning up a captured integration:
-    - Is the integration/flow not mentioned anymore in any alerting in Manage?
-    - Is the integration removed from all releases?
-    - Is the integration removed from Create?
-    - What should I clean up in Design that is not automatically done when I cleanup Capture?
-- Before deletion eMagiz will ask for confirmation
-- Deletion means that you cannot get it back anymore
-- The process of removing parts of the CDM will be discussed in more detail later on.
+- Review of the Design Architecture is very important to do at a regular basis. Cleaning a flow should be always be followed by the review if the Design Architecture needs a cleanup
+- Cleaning up the Design phase may also result in an update of the memory settings of the connector runtime. Please take a moment to review the appropriate microlearning for this: ([Intermediate Cloud Management](intermediate-emagiz-cloud-management-index.md)).
 
 ##### Solution
 

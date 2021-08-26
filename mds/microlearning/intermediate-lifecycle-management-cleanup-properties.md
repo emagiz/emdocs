@@ -13,69 +13,43 @@
 
 ##### Intro
 
-# Cleanup a designed integration
+# Cleanup properties
  
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
-
+In this microlearning, we will focus on cleaning up your properties that you use in a particular environment (TEST, ACCEPTANCE or PRODUCTION)
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: May 14th, 2021
+- Last update: August 26th, 2021
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
-- Basic knowledge of the build number component within the eMagiz Platform
+
 
 ## 2. Key concepts
-This microlearning centers around cleaning up a designed integration.
-
-By designed integration we mean: A line that symbolizes data traffic between a system and eMagiz for which the solution is designed (i.e. message definition, message mapping, design settings)
-
-There are four key considerations before cleaning up a captured integration:
-
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
+This microlearning centers around cleaning up properties. Properties are an important mean to add variable values to flows that usually depend on the environment where the flow is running. Please refer to the ([Property Management microlearning](crashcourse-platform-deploy-property-management.md)) for more information.
 
 ##### Theory
   
-## 3. Cleanup a designed integration
+## 3. Cleanup properties
 
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
+Navigate to the Deploy and select the environment for which you want to verify unused properties. In the properties page there is a button called Find Unused that will check if properties are unused based on the active release.
 
-There are four key considerations before cleaning up a captured integration:
+<p align="center"><img src="../../img/microlearning/intermediate-lifecycle-management-cleanup-properties-1.png"></p>
 
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
+Things to consider:
+- In case you have duplicated properties for your process container (to keep them the same across), you may experience that there are unused properties in case a flow is only present on 1 process container. Take care to review before pressing the delete button
 
-As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successful.
-
-Good to know is that most in Design will automatically be removed when you clean up the captured integration. More on the specifics of that in the next microlearning ([Cleanup a captured integration](novice-lifecycle-management-cleanup-a-captured-integration.md)). For now, it is good to know that the CDM is untouched by that action. That means to ensure a proper cleanup you should verify if certain elements in the CDM are not used anymore and are therefore ready to be cleaned up.
-
-To do so you can search on CDM level for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
-
-For this microlearning, it is good to know that apart from the CDM everything in Designed will be cleaned up when you clean up the captured integration.
 
 ##### Practice
 
 ## 4. Assignment
 
-Determine whether a designed integration within your project can be cleaned up. If so read the microlearning [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md).
-This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+Determine whether properties in your project can be cleaned up. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- There are four key considerations before cleaning up a captured integration:
-    - Is the integration/flow not mentioned anymore in any alerting in Manage?
-    - Is the integration removed from all releases?
-    - Is the integration removed from Create?
-    - What should I clean up in Design that is not automatically done when I cleanup Capture?
-- Before deletion eMagiz will ask for confirmation
-- Deletion means that you cannot get it back anymore
-- The process of removing parts of the CDM will be discussed in more detail later on.
+- Ensure to keep your properties manageable by reviewing this list after each production release, or during the peer review of a flow
+
 
 ##### Solution
 
