@@ -663,6 +663,25 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-lifecycle-management-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">DevOps perspectives</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">5</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-securing-your-data-traffic-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 18%;">
 				<h4 class="title">Securing Data Traffic</h4>
