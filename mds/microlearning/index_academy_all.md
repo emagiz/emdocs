@@ -416,7 +416,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/intermediate-design-transformations-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/MessageStructure.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/TransformationModules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Design your transformations</h4>
 			</div>
 			<ul class="card__footer">
