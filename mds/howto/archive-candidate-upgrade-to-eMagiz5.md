@@ -27,7 +27,7 @@ CAUTION: Updating to Java 8 and upgrading to Artemis will result in a higher Hea
   
   ## 3. Preparation steps 
 
-3.1) **Using the [releases documentation](deploy-releases.md)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](deploy-releases.md)
+3.1) **Using the [releases documentation](archive-candidate-deploy-releases)** create a copy of your latest Create phase for every environment(testing, acceptance and production) which can be considered the eMagiz 4 backup of this process so rename them accordingly(e.g. eMagiz4 backup). Make sure that each backup contains the versions of the flows that are currently running on that environment and only the flows that are completely running on production (both the onramp and its connector flows are running). It is recommended that the acceptance and production environments have the same flows running. It can be done by using the point 2.4 from [this documentation](archive-candidate-deploy-releases)
 
 3.2) For on premise connectors make sure that the firewall has the amqp port 8443 opened
 
@@ -77,7 +77,7 @@ BEFORE PROCEEDING WITH THE NEXT STEPS: be aware that there is a development free
 
 **Note** Buses that run on deprecated HornetQ technology use a proxy server to connect to the portal. This means that your runtime dashboard will stop working when you start the Artemis jms server for the first time. Please contact the eMagiz team ahead of time to inform them of your upcoming migration.
 
-5.1) **Go to** Deploy -> Releases -> [Details](deploy-releases.md) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
+5.1) **Go to** Deploy -> Releases -> [Details](archive-candidate-deploy-releases) of the "eMagiz 5 migration" release -> Update to latest versions. Afterwards, in the same screen press "Set as active".   
 
 5.2) **Go to** Deploy -> Releases and for the active release press the install button and further install all the new versions of the flows displayed. After it finishes, in order to make sure that all flows were installed, press the install button again and make sure that there are no flows left uninstalled. Another way of checking would be to **go to** Deploy -> Runtime dashboard and press "Check release state". (Make sure that required properties are not being removed during this step).
 
@@ -150,7 +150,7 @@ If a change in the auto-recovery mechanism settings are needed, you can do it in
 
   2) In case the standard configuration of the connector infra has been modified, it should be checked to make sure the desired values are still in place.
   
-  3) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following [documentation](upgrade-eMagizMendixConnector.md). The eMagiz Mendix Connector version you need to download is 3.0.0. **It is mandatory** to do a cleanup of the project directory after finishing upgrading the eMagiz Mendix Connector.
+  3) Next part is about upgrading the eMagiz Mendix Connector of the Mendix project. In order to do that, you can use the following related documentation for upgrading the Mendix eMagiz Connector. The eMagiz Mendix Connector version you need to download is 3.0.0. **It is mandatory** to do a cleanup of the project directory after finishing upgrading the eMagiz Mendix Connector.
   
   4) **Go to** Deploy ->  Releases, press install for the release you created. In the popup page that opens, download the ".emc" package needed for deploying the eMagiz Mendix connector of the Mendix project where you have just upgraded the eMagiz Mendix connector.  
   
@@ -172,7 +172,7 @@ If a change in the auto-recovery mechanism settings are needed, you can do it in
      
      9.3) If you have multiple connector flows, firstly start the exit connectors and then the entry connectors. If you do it the other way around, the queues of the exit connectors start being filled up and the bus will have problems.
      
-     9.4) In case your connector does not work check the [eMagiz Mendix Connector health checks](upgrade-to-eMagiz5.md#emc-health-checks) 
+     9.4) In case your connector does not work check the [eMagiz Mendix Connector health checks](archive-candidate-upgrade-to-eMagiz5#emc-health-checks) 
   
  ### eMagiz Mendix Connector Health checks
  

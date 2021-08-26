@@ -15,7 +15,7 @@
 
 # Transformation - XPath Intermediate
 
-Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic.md). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
+Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
@@ -42,7 +42,7 @@ Some of the more widely used XPath options are:
 
 ## 3. Transformation - XPath Intermediate
 
-Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more straightforward cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic.md). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
+Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more straightforward cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
 
 Some of the more widely used XPath options are:
 - if then else
@@ -60,7 +60,7 @@ Note that you can verify what your input is in each of the three parts of the XP
 
 ### 3.2 Concat
 
-The concat option is a variation on the string-join we saw in the [XPath Basic microlearning](crashcourse-platform-create-transformation-XPath-basic.md). The significant difference between the concat and the string-join is that with the concat, you do not define one single separator between the various elements. With the concat, you define per step how certain parts should be linked together. So, for example, **concat(SomeAttribute,' ', SomeOtherAttribute,'-', AThirdAttribute, AFourthAttribute)** uses different separators between the various elements we want to join together in a new string.
+The concat option is a variation on the string-join we saw in the [XPath Basic microlearning](crashcourse-platform-create-transformation-XPath-basic). The significant difference between the concat and the string-join is that with the concat, you do not define one single separator between the various elements. With the concat, you define per step how certain parts should be linked together. So, for example, **concat(SomeAttribute,' ', SomeOtherAttribute,'-', AThirdAttribute, AFourthAttribute)** uses different separators between the various elements we want to join together in a new string.
 
 ### 3.3 Exists check
 

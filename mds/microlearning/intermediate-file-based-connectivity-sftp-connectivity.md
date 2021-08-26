@@ -137,7 +137,7 @@ In this component, we need to define the remote directory where the files need t
 
 <p align="center"><img src="../../img/microlearning/intermediate-file-based-connectivity-sftp-connectivity--sftp-outbound-channel-adapter-filled-in.png"></p>
 
-Apart from these configurations on the basic tab, we also need to fill in two configuration options on the Advanced level. The first thing to determine is the Mode. Here you can choose which of the various Modes of writing data to the SFTP is relevant. More on that function can be learned in this [microlearning](crashcourse-messaging-drop-files#33-what-to-do-when-a-file-already-exists.md). If you use Replace (the default), you do not have to fill in anything. The second part is to add a request handler advice chain (this is a general best practice when communicating with the outside world via eMagiz).
+Apart from these configurations on the basic tab, we also need to fill in two configuration options on the Advanced level. The first thing to determine is the Mode. Here you can choose which of the various Modes of writing data to the SFTP is relevant. More on that function can be learned in this [microlearning](crashcourse-messaging-drop-files#33-what-to-do-when-a-file-already-exists). If you use Replace (the default), you do not have to fill in anything. The second part is to add a request handler advice chain (this is a general best practice when communicating with the outside world via eMagiz).
 
 <p align="center"><img src="../../img/microlearning/intermediate-file-based-connectivity-sftp-connectivity--sftp-outbound-channel-adapter-filled-in-advanced.png"></p>
 
