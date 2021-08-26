@@ -75,6 +75,22 @@
             </div>
         </a>
         </li>
+		 <li class="strip">
+            <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-managing-onpremises-runtime" class="strip__link">
+            <label for="" class="strip__label">
+                <span>23</span>
+                Managaging your on-premises eMagiz runtime
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">5 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+        </li>
     </ul>
     </main>
     </div>
