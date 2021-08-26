@@ -13,79 +13,74 @@
 
 ##### Intro
 
-# Cleanup a designed integration
+
+# Cleanup Alerting in Manage
  
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
+In this microlearning, we'll take a look how to cleanup Alerting from an eMagiz project.
 
-Should you have any questions, please contact academy@emagiz.com.
+Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: May 14th, 2021
-- Required reading time: 5 minutes
+- Last update: August 25th, 2021
+- Required reading time: 2 minutes
 
 ## 1. Prerequisites
-- Basic knowledge of the eMagiz platform
-- Basic knowledge of the build number component within the eMagiz Platform
+- Novice knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around cleaning up a designed integration.
-
-By designed integration we mean: A line that symbolizes data traffic between a system and eMagiz for which the solution is designed (i.e. message definition, message mapping, design settings)
-
-There are four key considerations before cleaning up a captured integration:
-
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
+This microlearning is about cleaning up the Alerting as configured in the Manage phase. Alerts can be set on various ways and levels - please inspect the related microlearnings around alerting to understand more about that. During the cleanup of various systems, flows and runtime, the Alerting needs to remain current with the integration model. 
 
 ##### Theory
   
-## 3. Cleanup a designed integration
+## 3. Cleanup the Alerting in Manage
 
-In this microlearning, we will focus on the second to last step of cleaning up your integration. As we learned in previous microlearnings the lifecycle management process starts in Manage and ends in Capture. Following that logic, the second to last step of the process is to clean up your designed integration.
+### 3.1 Scenario's when to cleanup the Alerting phase
 
-There are four key considerations before cleaning up a captured integration:
+1. A user is no longer active on the integration model. The use may still be referenced in the notification settings and should be removed
+2. A specific runtime is removed from the integration model that is referenced in the Alerting
+3. A flow or integration is removed from the integration model that is reference in the Alerting
 
-- Is the integration/flow not mentioned anymore in any alerting in Manage?
-- Is the integration removed from all releases?
-- Is the integration removed from Create?
-- What should I clean up in Design that is not automatically done when I cleanup Capture?
+### 3.1 Steps to clean
 
-As you can see a theme starts to develop itself. Each of the considerations focuses on a particular phase within eMagiz. We start at Manage, move to Deploy, Create and Design before we end up in Capture. Doing this properly will ensure that the deletion of the integration and everything that accompanies it will be successful.
+Navigate to the Triggers first.
 
-Good to know is that most in Design will automatically be removed when you clean up the captured integration. More on the specifics of  that in the next microlearning ([Cleanup a captured integration](novice-lifecycle-management-cleanup-a-captured-integration.md)). For now, it is good to know that the CDM is untouched by that action. That means to ensure a proper cleanup you should verify if certain elements in the CDM are not used anymore and are therefore ready to be cleaned up.
+1. Locate Queue specific
+If you have configured the alerting following the best practice outlined in the user guide for Alerting, the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
+- Standard – Queue consumers too high
+- Standard – Queue consumers too low
 
-To do so you can search on CDM level for unused parts of the CDM. When you have identified them you can remove them. We will discuss this topic in more detail later on in [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md). So before you will do this in a real project take stock of that microlearning.
+2. Locate Runtime specific
+If you are removing the last flow belonging to a system and you have followed the best practice outlined here the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
+- Standard – Data measurements missing
+- Standard – Log entries missing
+- Standard – Error log entry
 
-For this microlearning, it is good to know that apart from the CDM everything in Designed will be cleaned up when you clean up the captured integration.
+3. Once you have located the candidates, update and/or remove the triggers relevant for update
+4. Review if you need to remove a notification setting in case a trigger is removed. If yes, remove it.
+5. Review if you need to remove a tag in case the tag is not used in any trigger. If yes, remove it.
+
 
 ##### Practice
 
 ## 4. Assignment
 
-Determine whether a designed integration within your project can be cleaned up. If so read the microlearning [Cleaning up the CDM](intermediate-defining-your-message-structures-cleaning-up-the-cdm.md).
+
+Determine whether you can clean up parts of the Alerts from the project that you work on. If so, execute the cleanup.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- There are four key considerations before cleaning up a captured integration:
-    - Is the integration/flow not mentioned anymore in any alerting in Manage?
-    - Is the integration removed from all releases?
-    - Is the integration removed from Create?
-    - What should I clean up in Design that is not automatically done when I cleanup Capture?
-- Before deletion eMagiz will ask for confirmation
-- Deletion means that you cannot get it back anymore
-- The process of removing parts of the CDM will be discussed in more detail later on.
+- Cleaning up the Alert phase is important to ensure no false positive alerts are created/used
+- Review the Alert setting at each release to production (post deployment step) to keep things manageable
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the release notes provided by eMagiz
+None
 
 ## 7. Silent demonstration video
 
-As this is a more theoretical microlearning we have no video for this
+None
 
 </div>
 </main>
