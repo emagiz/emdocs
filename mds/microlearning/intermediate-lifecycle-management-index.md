@@ -5,7 +5,7 @@
     <p>
        In this course, we will focus on the next set of steps for lifecycle management within the eMagiz Platform. In the previous course on this subject, we learned the basics. Now it has become time to expand our knowledge. In this course, we will focus on various cleanup steps. Learning about these steps is critical when an already build and deployed solution needs to be removed from your integration data model.
         </br></br>
-        - Total time: between 20 and 30 minutes
+        - Total time: between 35 and 45 minutes
         </br>
         - Last updated - August 2021
     </p>
