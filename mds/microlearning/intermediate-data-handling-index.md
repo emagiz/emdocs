@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">Data traffic routing</h2>
+	<h2 class="title">Data handling</h2>
     <p>
        In this course, we will focus on various parts of the platform to handle data in a non-standard way. We will use lists of values to get another value, and we will take a look at base64 encoding and decoding.
         </br></br>
