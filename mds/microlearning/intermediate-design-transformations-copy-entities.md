@@ -66,9 +66,7 @@ None
 
 ## 7. Silent demonstration video
 
-This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned. 
-
-<iframe width="1280" height="720" src="../../vid/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+None
 
 </div>
 </main>
