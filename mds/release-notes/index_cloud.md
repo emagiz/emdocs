@@ -12,6 +12,7 @@
 |[R11](cloud-single-r11.md)| Single|
 |[R10](cloud-single-r10.md)| Single|
 |[R5](cloud-single-r5.md)| Single|
+|[R12](cloud-double-r12.md)| Double|
 |[R11](cloud-double-r11.md)| Double|
 |[R11 intermediate](cloud-double-r11-intermediate.md)| Double|
 |[R10](cloud-double-r10.md)| Double|
