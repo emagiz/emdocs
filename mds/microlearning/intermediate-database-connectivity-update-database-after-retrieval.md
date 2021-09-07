@@ -13,60 +13,59 @@
 
 ##### Intro
 
-# Copy entities in your design mapping
+# Update database after retrieval
  
-In this microlearning, we will focus on duplicating specific elements of a target defintion. 
+In the previous [microlearning](intermediate-database-connectivity-sql-query.md) we discussed the fundamentals of SQL queries. In this microlearning, we will learn how you could update the record(s) in the database the moment after you have read the information from the database. This functionality can help you update a status field to ensure you won't keep reading the same record(s) repeatedly.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: August 24th, 2021
-- Required reading time: 5 minutes
+- Last update: September 7th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 
 ## 2. Key concepts
-Copying entities in the Design phase can help to overcome specific situations where conditional mapping to fill list entities is required. For instance based on a value in the source entity, the target entity is filled differently based on source value. For instance when the target message definition requires a repeating entity that is duplicated as many times as required and is filled with different values from the source definition (parameter entity repeated with as many parameters as required).
+eMagiz offers the option to execute an update statement right after a select statement. In the database, this can be useful when tracking the status.
 
 ##### Theory
   
-## 3. Copy entities in the transformation
+## 3. Update database after retrieval
 
-Navigate in the Design phase to the specific message mapping, topic mapping, request or response mapping. In the edit modus, you can right click on the specific target entity and press Copy. 
+In the previous [microlearning](intermediate-database-connectivity-sql-query.md) we discussed the fundamentals of SQL queries. In this microlearning, we will learn how you could update the record(s) in the database the moment after you have read the information from the database. This functionality can help you update a status field to ensure you won't keep reading the same record(s) repeatedly.
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_2.png"></p>
+To update the records we just read from the table, we need a slightly different update statement. As you probably remember the update statement in the previous example was written as follows UPDATE mytable SET changeddate = :headers[timestamp] where id = :headers[id]. However, with this functionality, the update statement should look like this UPDATE mytable SET processed = TRUE where id IN (:id).
 
-Once that option is clicked, the following view appears. There is a (+1) added to the entity level field, which indicates that there is one copy of this entity avalilable for specific transformation requirements. Pressing the Copy option once more indicates that there are 2 extra copies of that entity available. The mapping of source and target remains (and needs to be) exactly the same.
+As you can see, there are some subtle differences in the SQL query you need to achieve the proper result—most notable, the where statement is written differently. In the update statement, we need here; we need to define our input (IN) columns and values. Based on the input values that were returned via our SELECT statement, the update action is triggered. Within eMagiz, this is configured as follows.
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_3.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-database-connectivity-update-database-after-retrieval--select-and-update-combined.png"></p>
 
-The net result in the Create phase transformation is that there are as many additional entities available as configured in the Design phase. Which makes it possible to make specific transformations that allows to make conditional mapping possible of the attributes in that entity. For instance, based on the value of an attribute another attribute is giving different values.
-
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_5.png"></p>
+In this example, we search for all rows within the table for which the value in the column processed is equal to false. If so, the select statement will return each row. After the query returns all rows, the update query will ensure that all these rows will be updated by changing the value in the column processed to true. This way, you ensure these records won't be retrieved the next time we execute the select statement.
 
 ##### Practice
 
 ## 4. Assignment
 
-Follow the instructions as above to ensure the way to use the interface is clear. Than see the net effect in the Create transformation, and see if you have an example available. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+See if you can find any database implementation within the projects you can access. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Copying entities is indicated in the Design phase whilst editing the design transformation
-- Adding notes is key to ensure the reasons why are document
-- Copy entities should be peer reviewed to ensure the right solution is implemented
-
+- eMagiz offers the option to execute an update statement right after a select statement
+- In the database, this can be useful when tracking the status.
+- The update statement will update all rows returned via the select statement, assuming they pass the where clause
 
 ##### Solution
 
-## 6. Suggested Additional Readings
-
-None
+If you are interested in this topic and want more information, please read the help text provided by eMagiz and read more information on the following link:
+- https://www.w3schools.com/sql/default.Asp
 
 ## 7. Silent demonstration video
 
-None
+This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
+
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-database-connectivity-update-database-after-retrieval.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 </div>
 </main>

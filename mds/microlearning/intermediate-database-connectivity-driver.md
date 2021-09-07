@@ -13,60 +13,54 @@
 
 ##### Intro
 
-# Copy entities in your design mapping
+# Driver
  
-In this microlearning, we will focus on duplicating specific elements of a target defintion. 
+In this microlearning, we will delve a bit deeper into connecting eMagiz with an external database. We will take a look at how to get the driver and reference it from your flow.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: August 24th, 2021
-- Required reading time: 5 minutes
+- Last update: September 7th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 
 ## 2. Key concepts
-Copying entities in the Design phase can help to overcome specific situations where conditional mapping to fill list entities is required. For instance based on a value in the source entity, the target entity is filled differently based on source value. For instance when the target message definition requires a repeating entity that is duplicated as many times as required and is filled with different values from the source definition (parameter entity repeated with as many parameters as required).
+Each type of external database has its unique driver. So the driver for an Oracle database differs from the driver needed for a Postgres or MySQL database. Furthermore, the version of the database could influence which driver you need. Also, it would be best if you searched for JDBC drivers as other drivers do not work with the eMagiz setup. Last but not least, you might need assistance in uploading the driver if the package exceeds 1 MB.
 
 ##### Theory
   
-## 3. Copy entities in the transformation
+## 3. Driver
 
-Navigate in the Design phase to the specific message mapping, topic mapping, request or response mapping. In the edit modus, you can right click on the specific target entity and press Copy. 
+In this microlearning, we will delve a bit deeper into connecting eMagiz with an external database. We will take a look at how to get the driver and reference it from your flow. Before we can reference the driver within the flow, we first need to find a suitable driver. The driver needs to match the following criteria:
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_2.png"></p>
+- Suitable for the type of database
+- JDBC driver
+- Suitable for the version of the database you are connecting with
 
-Once that option is clicked, the following view appears. There is a (+1) added to the entity level field, which indicates that there is one copy of this entity avalilable for specific transformation requirements. Pressing the Copy option once more indicates that there are 2 extra copies of that entity available. The mapping of source and target remains (and needs to be) exactly the same.
-
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_3.png"></p>
-
-The net result in the Create phase transformation is that there are as many additional entities available as configured in the Design phase. Which makes it possible to make specific transformations that allows to make conditional mapping possible of the attributes in that entity. For instance, based on the value of an attribute another attribute is giving different values.
-
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_5.png"></p>
+You can google for suitable drivers. However, some of them have already been used in other projects and will therefore be made available via the new store soon. Once you have found a suitable driver, the next step is to import the relevant resource into your project (in a similar manner as you would typically do). From there on, you only have to fill in the correct reference in the driver field. The best practice would be to use a property reference to fill in the proper reference when deploying. The correct reference should look as follows com.microsoft.sqlserver.jdbc.SQLServerDriver. Check out the help text on the component to see other driver references for different types of databases.
 
 ##### Practice
 
 ## 4. Assignment
 
-Follow the instructions as above to ensure the way to use the interface is clear. Than see the net effect in the Create transformation, and see if you have an example available. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+See if you can find any database implementation within the projects you can access. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Copying entities is indicated in the Design phase whilst editing the design transformation
-- Adding notes is key to ensure the reasons why are document
-- Copy entities should be peer reviewed to ensure the right solution is implemented
+- Each type of external database has its unique driver
+- You need a JDBC driver
+- You might need assistance in uploading the driver if the package exceeds 1 MB
 
 
 ##### Solution
 
-## 6. Suggested Additional Readings
-
-None
+If you are interested in this topic and want more information, please read the help text provided by eMagiz.
 
 ## 7. Silent demonstration video
 
-None
+As this is more of theoretical microlearning, there is no video accompanying the microlearning.
 
 </div>
 </main>

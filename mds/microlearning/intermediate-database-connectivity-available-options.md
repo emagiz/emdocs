@@ -13,60 +13,60 @@
 
 ##### Intro
 
-# Copy entities in your design mapping
+# Available options
  
-In this microlearning, we will focus on duplicating specific elements of a target defintion. 
+In this microlearning, we will introduce database connectivity and look at the various options available to connect the eMagiz platform to multiple databases.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: August 24th, 2021
-- Required reading time: 5 minutes
+- Last update: September 7th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 
 ## 2. Key concepts
-Copying entities in the Design phase can help to overcome specific situations where conditional mapping to fill list entities is required. For instance based on a value in the source entity, the target entity is filled differently based on source value. For instance when the target message definition requires a repeating entity that is duplicated as many times as required and is filled with different values from the source definition (parameter entity repeated with as many parameters as required).
+Via eMagiz you can set up a connection to an external database with the help of several components in eMagiz. The workings of the H2 database in relation to eMagiz is described in other microlearnings and therefore will not be adressed in this microlearning. The support object called JDBC BoneCP data source is needed to set up the initial connection with the external database. Once you have established the connection you can retrieve data from the database and/or write data to the database.
 
 ##### Theory
   
-## 3. Copy entities in the transformation
+## 3. Available options
 
-Navigate in the Design phase to the specific message mapping, topic mapping, request or response mapping. In the edit modus, you can right click on the specific target entity and press Copy. 
+In this microlearning, we will introduce database connectivity and look at the various options available to connect the eMagiz platform to multiple databases. In a previous microlearning we learned about how the H2 database is used in an entry to act as bridge between the client calling eMagiz and the first queue of eMagiz. Later on we will learn how you could use the H2 databasse for other applications. The specific microlearnings can be found [here](intermediate-solution-architecture-function-of-h2-database.md) and [here](expert-solution-architecture-h2-database-for-other-applications.md).
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_2.png"></p>
+To determine the available options we have in eMagiz to connect to databases we start our journey in the Create phase of the platform. As you know, in this phase you will construct a set of components in such a way that they provide you with a functional result. In this case the functional result is the connection with the database. As the underlying framework has its roots in Java we want to search for components that reference JDBC. JDBC stands for Java Database Connectivity. When we execute that search on the components in Create we get the following results:
 
-Once that option is clicked, the following view appears. There is a (+1) added to the entity level field, which indicates that there is one copy of this entity avalilable for specific transformation requirements. Pressing the Copy option once more indicates that there are 2 extra copies of that entity available. The mapping of source and target remains (and needs to be) exactly the same.
+<p align="center"><img src="../../img/microlearning/intermediate-database-connectivity-available-options--available-jdbc-components-in-create.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_3.png"></p>
+As you can see from the list there are inbound and outbound components. The inbound components are relevant when you want to retrieve data from the database. The outbound components for when you want to write to the database. Furthermore there is a transformation component and support objects. The transformation component can be used to transform the result of your retrieve action into an XML message. The support objects are needed for setting up the connectivity with the database and for other purposes (such as the creation of a H2 database).
 
-The net result in the Create phase transformation is that there are as many additional entities available as configured in the Design phase. Which makes it possible to make specific transformations that allows to make conditional mapping possible of the attributes in that entity. For instance, based on the value of an attribute another attribute is giving different values.
+When we zoom in on the support objects we see six different support objects. Of those six there is one support object, the JDBC BoneCP data source object, that you should use if you want to set up a connection with an external database. If we zoom in on this component we see that we need to have a reference to the Driver (more on that later), the database itself and to a set of credentials.
 
-<p align="center"><img src="../../img/microlearning/intermediate-design-transformations-copy-entities_5.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-database-connectivity-available-options--config-option-connectivity.png"></p>
+
+Note that you should get this information from the external party, ideally while capturing the integration in the Capture phase.
 
 ##### Practice
 
 ## 4. Assignment
 
-Follow the instructions as above to ensure the way to use the interface is clear. Than see the net effect in the Create transformation, and see if you have an example available. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+See if you can find any database implementation within the projects you can access. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- Copying entities is indicated in the Design phase whilst editing the design transformation
-- Adding notes is key to ensure the reasons why are document
-- Copy entities should be peer reviewed to ensure the right solution is implemented
+- Via eMagiz you can set up a connection to an external database with the help of several components in eMagiz
+- Support object called JDBC BoneCP data source is needed to set up the initial connection
+- Once you have established the connection you can retrieve data from the database and/or write data to the database
 
 
 ##### Solution
 
-## 6. Suggested Additional Readings
-
-None
+If you are interested in this topic and want more information on it, please read the help text provided by eMagiz.
 
 ## 7. Silent demonstration video
 
-None
+As this is more of theoretical microlearning, there is no video accompanying the microlearning.
 
 </div>
 </main>
