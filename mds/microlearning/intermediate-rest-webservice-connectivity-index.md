@@ -7,7 +7,7 @@
         </br></br>
         - Total time: between 40 and 60 minutes
         </br>
-        - Last updated - April 2021
+        - Last updated - September 2021
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
@@ -28,10 +28,58 @@
         </a>
         </li>
         <li class="strip">
+            <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-validation" class="strip__link">
+            <label for="" class="strip__label">
+                <span>46</span>
+                Validation
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">11 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-http-headers" class="strip__link">
+            <label for="" class="strip__label">
+                <span>46</span>
+                HTTP Headers
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">11 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-call-a-rest-webservice" class="strip__link">
             <label for="" class="strip__label">
                 <span>46</span>
                 Call a REST Webservice
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">7 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-certificates-when-calling-a-rest-webservice" class="strip__link">
+            <label for="" class="strip__label">
+                <span>46</span>
+                Certificates when calling a REST webservice
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
