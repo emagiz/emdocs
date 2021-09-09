@@ -5,7 +5,7 @@
     <p>
        In this course, we will learn how you can use REST functionality within eMagiz. In this course we will build on what we have learned previously in the Crash Course Platform. For this course the focus will be on configuring the components that are needed to host and call a REST endpoint, various authorization methods, validation, headers and certificates.
         </br></br>
-        - Total time: between 40 and 60 minutes
+        - Total time: between 60 and 90 minutes
         </br>
         - Last updated - September 2021
     </p>
@@ -35,7 +35,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">11 minutes</div>
+                <div class="strip__attribute-label">5 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -51,7 +51,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">11 minutes</div>
+                <div class="strip__attribute-label">5 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -83,7 +83,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">7 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>

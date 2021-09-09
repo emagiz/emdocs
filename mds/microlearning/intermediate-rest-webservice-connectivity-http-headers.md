@@ -13,98 +13,87 @@
 
 ##### Intro
 
-# Authorization - Basic Authentication
+# HTTP Headers
 
-In the previous microlearning, we discussed how you can call a REST web service. In this microlearning, we will focus on the simplest form of authentication when it comes to calling a REST Webservice. This form is called Basic Authentication. Knowing how you can easily configure the correct authentication pattern for the REST Webservice you need to call will significantly improve the quality and speed at which you can deliver your solution.
+This microlearning will look at how you can use HTTP Headers on incoming REST calls within your operational process of transporting (and transforming) information between systems. 
  
-Should you have any questions, please contact academy@emagiz.com.
+Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: April 6th, 2021
-- Required reading time: 6 minutes
+- Last update: September 9th, 2021
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Intermediate knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers around using Basic Authentication as the form of authentication when calling a REST Webservice.
-With REST, we mean: A web service that adheres to the RESTful principles
-With Basic Authentication, we mean: A specific authentication implementation based on a username/password combination
+This microlearning centers around using incoming HTTP headers when transporting (and transforming) information.
+With HTTP Headers, we mean: HTTP headers are the name or value pairs displayed in the request and response messages of message headers for Hypertext Transfer Protocol (HTTP).
 
-- The application (eMagiz) pushes data to an external REST web service (or API)
-- To do so eMagiz needs to be authorized to read and/or write data
-- Basic authentication was an industry standard that is still widely implemented.
+- Each HTTP Header has a name
+- There is a list of standard HTTP headers defined (https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
+- HTTP Header is not the same as a parameter (path, query)
 
 ##### Theory    
 
-## 3. Authorization - Basic Authentication
+## 3. HTTP Headers
 
-In the previous microlearning, we discussed how you can call a REST web service. In this microlearning, we will focus on the simplest form of authentication when it comes to calling a REST Webservice. This form is called Basic Authentication. Knowing how you can easily configure the correct authentication pattern for the REST Webservice you need to call will significantly improve the quality and speed at which you can deliver your solution.
+This microlearning will look at how you can use HTTP Headers on incoming REST calls within your operational process of transporting (and transforming) information between systems.
 
-To ensure that the proper authorization is sent along with the call to the REST web service we need a support object. Support objects are components in eMagiz that support the working of other components. In this case, we need a REST Template as our support object.
+- Each HTTP Header has a name
+- There is a list of standard HTTP headers defined (https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
+- A HTTP Header is not the same as a parameter (path, query)
 
-### 3.1 REST Template
+To use the HTTP header information in our operational process, we need to transform our (relevant) HTTP headers to message headers. When achieving that, the information becomes part of the message, and we can use this information for the transportation (and transformation) of data.
 
-When you navigate to the Create phase you can open an exit flow and see whether you already have an HTTP outbound component within your exit flow. If not please add an HTTP outbound component (gateway or channel adapter) to the flow. In the previous microlearning, we focused on these components so we won't focus on these components in this microlearning.
+To do so, we navigate to the Create phase. In the Create phase, we open the all-entry flow in which we host our REST service. In this flow, we need to add a default HTTP header mapper to create a message header for each corresponding HTTP header.
 
-To ensure that a certain authorization is added to this HTTP outbound component we need to add the support object called REST Template to the flow:
+<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-http-headers--default-http-header-mapper.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--rest-template-search.png"></p>
+After adding the component to the canvas, it becomes time to fill in the correct configuration to ensure that the relevant HTTP header(s) are transformed into message headers. Within the component, you can fill in the Inbound header names, the Outbound header names, and a user-defined header prefix.
 
-After you have added the support object to the canvas and given it a name you can open it by double clicking on the component. eMagiz will show you the following pop-up:
+<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-http-headers--default-http-header-mapper-empty.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--rest-template-empty.png"></p>
+In this case, we need the Inbound header names (just as the help text tells us). You can define specific header names in this field, but you could also get all HTTP headers by filling in HTTP_REQUEST_HEADERS. The best practice is to be as detailed as possible and only create message headers you need later. In this example, we retrieve the authorization via an Authorization header, and we want to check whether or not the client calling our REST service is authorized to do so. To make this work, we need to create a message header with the name Authorization that the HTTP header Authorization will fill. To get that to work, we fill in the word Authorization in the Inbound header names field.
 
-As you can see here you can select various authentication schemes. In this microlearning, the focus is on Basic Authentication therefore we select the button called Basic access authentication. Selecting this option will open another pop-up. In this pop-up, we need to fill in the relevant information for the authentication scheme that we have selected.
+<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-http-headers--default-http-header-mapper-filled-in.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--pop-up-empty.png"></p>
+You can press Save to store your changes when you have defined the proper name(s).
 
-In this case, we have to fill in the username and password that will be used to authorize ourselves with the external party. As always in scenarios where an information element can change between environments, you should use a property reference and determine the correct value on a per-environment basis.
+### 3.2 Link HTTP header mapper to HTTP Inbound Component
 
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--pop-up-filled-in.png"></p>
+Now that we have successfully configured the HTTP header mapper, the last thing we need to do is link the HTTP header mapper to the HTTP Inbound Component in your flow. To do so, open the HTTP Inbound Component by double-clicking on the component. After you have opened the component, you need to navigate to the advanced tab. On this tab, you can select an HTTP header mapper. Select the one we have just configured from the drop-down menu and press Save.
 
-When you are satisfied you can press Save. This will lead you back to the original pop-up that now indicates the authentication scheme you have selected.
+<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-http-headers--link-http-header-mapper-to-http-inbound-component.png"></p>
 
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--rest-template-filled-in.png"></p>
+Now you have successfully linked the HTTP header mapper to the HTTP Inbound Gateway. If you ever want to validate whether a support object is linked to your component, click on it once. That way, eMagiz will show the selected component and all other components that are linked to it.
 
-Once again you can press Save if you are satisfied with your configuration.
-
-### 3.2 Link REST Template to HTTP Outbound Component
-
-Now that we have successfully configured the REST Template the last thing we need to do is link the REST Template to the HTTP Outbound component in your flow. To do so open the HTTP Outbound component by double-clicking on the component. After you have opened the component you need to navigate to the advanced tab. On this tab, you can select a REST Template. Select the one we have just configured from the drop-down menu and press Save.
-
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--link-rest-template-to-http-outbound-component.png"></p>
-
-Now you have successfully linked the REST Template to the HTTP Outbound Gateway. If you ever want to validate whether a support object is indeed linked to your component simply click on it once. That way eMagiz will show the selected component and all other components that are linked to it.
-
-<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication--link-rest-template-to-http-outbound-component-visual.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-http-headers--link-http-header-mapper-to-http-inbound-component-visual.png"></p>
 
 ##### Practice
 
 ## 4. Assignment
 
-Navigate to a flow within your (Academy) project in which you call a REST Webservice.
-Add Basic Authentication as an authentication scheme to this flow and ensure that the logic will work.
+Navigate to a flow within your (Academy) project in which you host a REST Webservice.
+Add a default HTTP header mapper to create a message header based on the value of an HTTP header.
 This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- eMagiz pushes data to or retrieves data from the external party
-- eMagiz offers two HTTP Outbound components to call a REST Webservice. Choose based on whether you want a response or not
-- To do so eMagiz needs to be authorized to read and/or write data
-- Basic authentication was an industry standard that is still widely implemented.
-- Don't forget to link the support object to the HTTP Outbound component
+- eMagiz offers a component that creates a message header based on the defined HTTP headers
+- This is useful when you need this information further downstream
+- Best practice is to be specific about which information you need
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
+If you are interested in this topic and want more information, please read the help text provided by eMagiz.
 
 ## 7. Silent demonstration video
 
 This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
 
-<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/microlearning/intermediate-rest-webservice-connectivity-http-headers.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
