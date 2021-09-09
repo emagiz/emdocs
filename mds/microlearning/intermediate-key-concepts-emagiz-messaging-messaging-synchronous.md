@@ -29,7 +29,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 This microlearning centers around the synchronous messaging pattern in eMagiz.
 By synchronous, we mean The process that processes data and subsequently informs the caller what the status is.
 
-Key characteristics of asynchronous messaging are:
+Key characteristics of synchronous messaging are:
 
 - Blocking. The sender initiates the process and waits for a response before continuing with the following message
 - Systems depend on the responses of other systems for their function
@@ -56,6 +56,8 @@ With this method, the sending party supplies the data to eMagiz via a push mecha
 Note that this means that when one message is currently being processed, all other messages have to patiently wait until the message is processed as we speak delivered back to the caller. As there is a time constraint on the messages (25 seconds as eMagiz default), you can see why this option is less suitable within the messaging engine. The most pain is felt in the routing. Just as with asynchronous routing, the synchronous routing processes all synchronous messages that pass through your messaging engine. As a result, this means that when one synchronous process is busy, it can even hold up other synchronous processes. The API Gateway pattern is a more suitable alternative for handling the request-response pattern via an integration platform such as eMagiz. If you want to learn more on that, please check out the [crashcourse](crashcourse-api-gateway-index.md).
 
 Another aspect of the synchronous messaging pattern to consider is that the system from which you want to retrieve data (or push data to) based on the request made by the caller needs to be online. If it is not online, eMagiz won't receive a response, and the caller cannot continue their work. This fact creates a dependency between systems that could reduce the perceived reliability of your integration solution. With asynchronous messaging, you could take measures to mitigate these risks, such as a retry mechanism.
+
+A third aspect to consider is whether you can set a generic point of entry through which all clients can communicate via eMagiz to many other systems. In those cases, you could look at the API Gateway solution as an alternative to synchronous messaging, as it comes with several benefits. More on the basics of the API Gateway can be found in this [crashcourse](crashcourse-api-gateway-index.md).
 
 ### 3.1 Practical use case
 

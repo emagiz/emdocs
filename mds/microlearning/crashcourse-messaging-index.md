@@ -132,7 +132,7 @@
             </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/crashcourse-messaging-asynchronous-routing" class="strip__link">
+            <a href="../../docs/microlearning/crashcourse-messaging-asynchronous-error-handling" class="strip__link">
             <label for="" class="strip__label">
                 <span>3</span>
                 Asynchronous Error Handling
