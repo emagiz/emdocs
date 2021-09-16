@@ -1,0 +1,6 @@
+.strip-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  counter-reset: stripCounter;
+}

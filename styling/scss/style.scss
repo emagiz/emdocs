@@ -1,0 +1,18 @@
+@import "base/variables";
+@import "base/overwrites";
+
+// Main class to ensure only the Academy pages are affected
+.ez-academy {
+  @import "base/base";
+  @import "base/inputs";
+  @import "base/typography";
+
+  @import "components/card";
+  @import "components/card-container";
+  @import "components/doc-nav";
+  @import "components/dropdown";
+  @import "components/micro-learning";
+  @import "components/strip-container";
+  @import "components/strip";
+  @import "components/tabs";
+}

@@ -1,0 +1,56 @@
+.micro-learning {
+  max-height: calc(100vh - 170px);
+  overflow-y: hidden;
+  display: grid;
+  grid-template-areas: "nav" "doc";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  > .doc {
+    padding-left: 24px;
+    padding-right: 24px;   
+    grid-area: doc;
+    overflow-y: auto;
+    h1,
+    h2,
+    h3,
+    h4 {
+      //position: sticky;
+      top: 0;
+      background-color: $brand-gray-lightest;
+    }
+    h1 {
+      //position: sticky;
+      font-size: 36px;
+      top: 0;
+    }
+    h2 {
+      font-size: 28px;
+      top: 36px;
+    }
+    h3 {
+      font-size: 24px;
+      top: 66px;
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    a{
+      
+      color: $brand-secondary;
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+    .anchor {
+        top: 0 !important;
+      }
+      ul {
+        list-style: disc;
+        padding-left: 32px;
+        > li {
+          display: list-item;
+        }
+      }
+  }
+}
