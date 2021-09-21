@@ -1,6 +1,9 @@
 # Cloud templates
+
 |Template number | Lane|
 |---|---|
+|[R18](cloud-single-r18.md)| Single|
+|[R17](cloud-single-r17.md)| Single|
 |[R15](cloud-single-r15.md)| Single|
 |[R14](cloud-single-r14.md)| Single|
 |[R13](cloud-single-r13.md)| Single|
@@ -9,6 +12,9 @@
 |[R11](cloud-single-r11.md)| Single|
 |[R10](cloud-single-r10.md)| Single|
 |[R5](cloud-single-r5.md)| Single|
+|[R12](cloud-double-r12.md)| Double|
+|[R11](cloud-double-r11.md)| Double|
+|[R11 intermediate](cloud-double-r11-intermediate.md)| Double|
 |[R10](cloud-double-r10.md)| Double|
 |[R9](cloud-double-r9.md)| Double|
 |[R9 intermediate](cloud-double-r9-intermediate.md)| Double|
