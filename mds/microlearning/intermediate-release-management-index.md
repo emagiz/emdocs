@@ -30,7 +30,7 @@
     </ul>
 	<ul class="strip-container">
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-devops-perspectives-making-clear-what-you-changed" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-release-management-assigning-flows-2-containers" class="strip__link">
             <label for="" class="strip__label">
                 <span>27</span>
                 Assigning flows to containers

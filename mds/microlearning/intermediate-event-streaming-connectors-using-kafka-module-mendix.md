@@ -27,6 +27,8 @@ Should you have any questions, please contact academy@emagiz.com.
 - Basic knowledge of the Mendix platform
 - Mendix project in which you can test this functionality
 - Kafka cluster you can use to test against.
+- Access to the eMagiz Event catalog in order to obtain the required Keystore & Truststore.
+	- To learn more about the eMagiz Event Catalog please refer to the microlearning which can be found here [eMagiz Event Catalog](crashcourse-eventstreaming-catalog.md)
 
 ## 2. Key concepts
 This microlearning centers around using the Kafka module of eMagiz in Mendix.

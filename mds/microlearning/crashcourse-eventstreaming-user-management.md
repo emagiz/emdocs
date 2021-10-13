@@ -82,6 +82,8 @@ After you have created the user you can assign roles to the user. With this link
 
 With this, we have configured the roles and users to confirm what we designed in the Design phase of eMagiz.
 
+**NOTE:** You can download the trust and keystore from the user management section on the user level. Alternative is to use the Event Catalog described in this module which is something accessible for external to eMagiz users. See also [eMagiz Event Catalog](crashcourse-eventstreaming-catalog.md).
+
 ### 3.3 Apply to Environment
 
 One last thing to do is to actualize the state of the eMagiz cloud in terms of users and roles. This action can be achieved via the Apply to environment button. In the case where this action won't work, you will get a warning from eMagiz telling you what went wrong.
