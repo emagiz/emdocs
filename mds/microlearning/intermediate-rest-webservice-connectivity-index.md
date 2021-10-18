@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-configuration" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Configuration REST web service
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-validation" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Validation
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-http-headers" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 HTTP Headers
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-call-a-rest-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Call a REST Webservice
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-certificates-when-calling-a-rest-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Certificates when calling a REST webservice
             </label>
             <div class="strip__attribute">
@@ -94,7 +94,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-basic-authentication" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Authorization - Basic Authentication
             </label>
             <div class="strip__attribute">
@@ -110,7 +110,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-oauth-client-credentials" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Authorization - Oauth 2.0 Client Certificates
             </label>
             <div class="strip__attribute">
@@ -126,7 +126,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-rest-webservice-connectivity-authorization-oauth-authorization-code" class="strip__link">
             <label for="" class="strip__label">
-                <span>46</span>
+                <span>47</span>
                 Authorization - Oauth 2.0 Authorization Code
             </label>
             <div class="strip__attribute">

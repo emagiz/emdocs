@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-securing-your-data-traffic-creating-a-jks" class="strip__link">
             <label for="" class="strip__label">
-                <span>33</span>
+                <span>34</span>
                 Creating a JKS
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-securing-your-data-traffic-securing-a-hosted-webservice-with-certificates-in-the-emagiz-cloud" class="strip__link">
             <label for="" class="strip__label">
-                <span>33</span>
+                <span>34</span>
                 Securing a hosted webservice with certificates in the eMagiz Cloud
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-securing-your-data-traffic-securing-a-hosted-webservice-with-certificates-on-premise" class="strip__link">
             <label for="" class="strip__label">
-                <span>33</span>
+                <span>34</span>
                 Securing a hosted webservice with certificates on-premise
             </label>
             <div class="strip__attribute">

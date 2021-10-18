@@ -17,7 +17,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-pipelines-understanding-data-pipelines" class="strip__link">
             <label for="" class="strip__label">
-                <span>24</span>
+                <span>25</span>
                 Understanding Data Pipelines
             </label>
             <div class="strip__attribute">
@@ -33,7 +33,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-pipelines-job-dashboard-for-data-pipeline" class="strip__link">
             <label for="" class="strip__label">
-                <span>24</span>
+                <span>25</span>
                 Data pipeline - Job Dashboard
             </label>
             <div class="strip__attribute">
@@ -49,7 +49,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-pipelines-datapipeline-mendix-to-aws-redshift" class="strip__link">
             <label for="" class="strip__label">
-                <span>24</span>
+                <span>25</span>
                 Data pipeline - Mendix to AWS Redshift
             </label>
             <div class="strip__attribute">
@@ -65,7 +65,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-pipelines-datapipeline-mendix-to-sftp" class="strip__link">
             <label for="" class="strip__label">
-                <span>24</span>
+                <span>25</span>
                 Data pipeline - Mendix to SFTP
             </label>
             <div class="strip__attribute">

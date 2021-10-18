@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
             <label for="" class="strip__label">
-                <span>58</span>
+                <span>59</span>
                 Cleanup a deployed runtime
             </label>
             <div class="strip__attribute">

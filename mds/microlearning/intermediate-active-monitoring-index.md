@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-active-monitoring-determining-cause-of-error-message" class="strip__link">
             <label for="" class="strip__label">
-                <span>28</span>
+                <span>29</span>
                 Determining cause of error message
             </label>
             <div class="strip__attribute">
@@ -34,7 +34,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message" class="strip__link">
             <label for="" class="strip__label">
-                <span>28</span>
+                <span>29</span>
                 Retest based on received error message
             </label>
             <div class="strip__attribute">
@@ -54,7 +54,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-active-monitoring-determining-origin-of-log-entry" class="strip__link">
             <label for="" class="strip__label">
-                <span>28</span>
+                <span>29</span>
                 Determining origin of log entry
             </label>
             <div class="strip__attribute">

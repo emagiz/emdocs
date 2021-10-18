@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-release-management-managing-releases-best-practice" class="strip__link">
             <label for="" class="strip__label">
-                <span>27</span>
+                <span>28</span>
                 Managing releases - Best practice
             </label>
             <div class="strip__attribute">
@@ -32,7 +32,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-release-management-assigning-flows-2-containers" class="strip__link">
             <label for="" class="strip__label">
-                <span>27</span>
+                <span>28</span>
                 Assigning flows to containers
             </label>
             <div class="strip__attribute">

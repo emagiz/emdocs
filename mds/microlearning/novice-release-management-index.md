@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-release-management-packages" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>7</span>
                 (Deployment) Packages
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-release-management-property-history" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>7</span>
                 Property History
             </label>
             <div class="strip__attribute">

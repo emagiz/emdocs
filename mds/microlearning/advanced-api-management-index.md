@@ -14,8 +14,8 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-api-management-running-part-of-your-api-gateway-solution-on-premise" class="strip__link">
             <label for="" class="strip__label">
-                <span>56</span>
-                Running (part of) your API Gateway solution on-premise
+                <span>57</span>
+                Running part of your API Gateway solution on-premise
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>

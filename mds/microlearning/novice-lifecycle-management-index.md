@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-what-is-lifecycle-management" class="strip__link">
             <label for="" class="strip__label">
-                <span>10</span>
+                <span>11</span>
                 What is lifecycle management
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
             <label for="" class="strip__label">
-                <span>10</span>
+                <span>11</span>
                 Cleanup a designed integration
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-captured-integration" class="strip__link">
             <label for="" class="strip__label">
-                <span>10</span>
+                <span>11</span>
                 Cleanup a captured integration
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-upgrading-build-numbers" class="strip__link">
             <label for="" class="strip__label">
-                <span>10</span>
+                <span>11</span>
                 Upgrading Build Numbers
             </label>
             <div class="strip__attribute">
