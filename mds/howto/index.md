@@ -4,16 +4,16 @@ In the sections below, you will find some online documents that are relevant for
 | <p align="center">**Deployment & Migration**</p>| <p align="center">**Best Practices & Security**</p>| <p align="center">**Implementation**</p>|
 | ------ | ------ | ------ |
 |<img width=600/><p align="center"><img src="../../img/howto/Deployment_icon.png">|<img width=600/><p align="center"><img src="../../img/howto/BestPractice_icon.jpg"></p>|<img width=600/><p align="center"><img src="../../img/howto/How2_icon.png"></p>|
-| |- [eMagiz Security Guide](security-guide.md) |- [Daily monitoring with eMagiz](daily-monitoring.md) |
-| | - [Community Management](community-management.md)| - [End to End testing in eMagiz](end2end-testing.md)|
-| |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | |
-| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md)| - [LCM - Cross Check Integration Model](life-cycle-management.md)| |
-| | - [Adding MFA to your account](add-mfa-userlevel.md)| - [Recovery Guide](recovery-guide.md) |
-| - [Configuring AWS Direct Connect](direct-connect.md)| - [Best practices for SFTP](sftp-best-practice.md)| |
+| - [Migration from Root cloud to AWS Cloud](migrate-root2aws.md)|- [eMagiz Security Guide](security-guide.md) |- [Daily monitoring with eMagiz](daily-monitoring.md) |
+| - [Configuring AWS Direct Connect](direct-connect.md)| - [Community Management](community-management.md)| - [End to End testing in eMagiz](end2end-testing.md)|
+| |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | - [Recovery Guide](recovery-guide.md) |
+| | - [LCM - Cross Check Integration Model](life-cycle-management.md)| - [User management](user-management.md) |
+| | - [Adding MFA to your account](add-mfa-userlevel.md)| - [Migration Path - Job Dashboard Cleanup](migration-path-job-dashboard-cleanup.md) |
+| | - [Best practices for SFTP](sftp-best-practice.md)| - [Migration Path - AWS Redshift Refresh](migration-path-aws-redshift-refresh.md) |
 | | - [Debugging guidelines](debugging-guidelines.md)| |
-| | - [WS-Security Explained](ws-security.md) | - [User management](user-management.md) |
-| | - [WS-Addressing Explained](ws-addressing.md) | - [Migration Path - Job Dashboard Cleanup](migration-path-job-dashboard-cleanup.md) |
-| | | - [Migration Path - AWS Redshift Refresh](migration-path-aws-redshift-refresh.md) |
+| | - [WS-Security Explained](ws-security.md) | |
+| | - [WS-Addressing Explained](ws-addressing.md) |  |
+| | | |
 
 | <p align="center">**User guides**</p>| <p align="center">**Event Streaming**</p>| <p align="center">**API Gateway**</p>|
 | ------ | ------ | ------ |

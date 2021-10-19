@@ -721,7 +721,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/intermedidate-lifecycle-management-index" class="card">
+		<a href="../../docs/microlearning/intermediate-lifecycle-management-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management</h4>
 			</div>
