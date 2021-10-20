@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-routes" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>24</span>
                 Routes
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-certificates" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>24</span>
                 Certificates
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-apply-to-environment" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>24</span>
                 Apply to environment
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-reset-runtime" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>24</span>
                 Reset runtime
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/intermediate-emagiz-cloud-management-managing-onpremises-runtime" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>24</span>
                 Managaging your on-premises eMagiz runtime
             </label>
             <div class="strip__attribute">

@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-alerting-manage-alerting-tags" class="strip__link">
             <label for="" class="strip__label">
-                <span>8</span>
+                <span>9</span>
                 Manage Alerting Tags
             </label>
             <div class="strip__attribute">
@@ -34,7 +34,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-alerting-linking-tags-to-triggers" class="strip__link">
             <label for="" class="strip__label">
-                <span>8</span>
+                <span>9</span>
                 Linking Tag(s) to Trigger (s)
             </label>
             <div class="strip__attribute">

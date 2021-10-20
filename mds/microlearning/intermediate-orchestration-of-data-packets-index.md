@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-orchestration-of-data-packets-queues-how-do-they-work" class="strip__link">
             <label for="" class="strip__label">
-                <span>36</span>
+                <span>37</span>
                  Queues - How do they work
             </label>
             <div class="strip__attribute">

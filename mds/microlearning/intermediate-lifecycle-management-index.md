@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-created-integration" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>33</span>
                 Cleanup a created integration
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-resource" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>33</span>
                 Cleanup a resource
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-properties" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>33</span>
                 Cleanup properties
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-alerting" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>33</span>
                 Cleanup alerting
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-design-architecture" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>33</span>
                 Cleanup design architecture
             </label>
             <div class="strip__attribute">

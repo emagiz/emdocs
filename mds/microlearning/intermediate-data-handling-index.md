@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-handling-base64-decoding" class="strip__link">
             <label for="" class="strip__label">
-                <span>25</span>
+                <span>26</span>
                 Base64 decoding
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-handling-base64-encoding" class="strip__link">
             <label for="" class="strip__label">
-                <span>25</span>
+                <span>26</span>
                 Base64 encoding
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-handling-compare-content-to-propertylist" class="strip__link">
             <label for="" class="strip__label">
-                <span>25</span>
+                <span>26</span>
                 Compare content to the property list
             </label>
             <div class="strip__attribute">

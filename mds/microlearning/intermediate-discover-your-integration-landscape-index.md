@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-discover-your-integration-landscape-determining-integration-pattern" class="strip__link">
             <label for="" class="strip__label">
-                <span>16</span>
+                <span>17</span>
                  Determining Integration Pattern
             </label>
             <div class="strip__attribute">

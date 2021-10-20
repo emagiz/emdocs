@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-key-concepts-emagiz-event-streaming-retention-policy" class="strip__link">
             <label for="" class="strip__label">
-                <span>35</span>
+                <span>36</span>
                  Retention Policy
             </label>
             <div class="strip__attribute">

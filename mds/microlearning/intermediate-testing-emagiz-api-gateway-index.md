@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-alerting-setting-up-notifications" class="strip__link">
             <label for="" class="strip__label">
-                <span>39</span>
+                <span>40</span>
                 Testing API Gateway
             </label>
             <div class="strip__attribute">

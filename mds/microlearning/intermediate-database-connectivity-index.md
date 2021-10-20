@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-database-connectivity-available-options" class="strip__link">
             <label for="" class="strip__label">
-                <span>43</span>
+                <span>44</span>
                 Available Options
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-database-connectivity-driver" class="strip__link">
             <label for="" class="strip__label">
-                <span>43</span>
+                <span>44</span>
                 Driver
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-database-connectivity-sql-query" class="strip__link">
             <label for="" class="strip__label">
-                <span>43</span>
+                <span>44</span>
                 SQL Query
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-database-connectivity-update-database-after-retrieval" class="strip__link">
             <label for="" class="strip__label">
-                <span>43</span>
+                <span>44</span>
                 Update database after retrieval
             </label>
             <div class="strip__attribute">

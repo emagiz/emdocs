@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-messaging-synchronous" class="strip__link">
             <label for="" class="strip__label">
-                <span>35</span>
+                <span>36</span>
                  Messaging Synchronous
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-error-handling-from-a-support-perspective" class="strip__link">
             <label for="" class="strip__label">
-                <span>35</span>
+                <span>36</span>
                  API Gateway for Support
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-messaging-synchronous" class="strip__link">
             <label for="" class="strip__label">
-                <span>35</span>
+                <span>36</span>
                  Event Streaming
             </label>
             <div class="strip__attribute">

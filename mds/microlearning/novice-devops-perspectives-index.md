@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-devops-perspectives-using-ilm-tollgates-while-executing-sprints" class="strip__link">
             <label for="" class="strip__label">
-                <span>11</span>
+                <span>12</span>
                 Using ILM tollgates while executing sprints
             </label>
             <div class="strip__attribute">
@@ -34,7 +34,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-devops-perspectives-annotations" class="strip__link">
             <label for="" class="strip__label">
-                <span>11</span>
+                <span>12</span>
                 Annotations
             </label>
             <div class="strip__attribute">
