@@ -264,7 +264,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/novice-mendix-connectivity-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 40%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Mendix Connectivity</h4>
 			</div>
 			<ul class="card__footer">
