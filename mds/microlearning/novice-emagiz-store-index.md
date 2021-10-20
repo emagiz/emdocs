@@ -31,7 +31,7 @@
             <a href="../../docs/microlearning/novice-emagiz-store-selecting-store-items" class="strip__link">
             <label for="" class="strip__label">
                 <span>5</span>
-                Selecting Store Items
+                Selecting Store Items in Create
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
@@ -47,7 +47,7 @@
             <a href="../../docs/microlearning/novice-emagiz-store-importing-store-items" class="strip__link">
             <label for="" class="strip__label">
                 <span>5</span>
-                Importing Store Items
+                Importing Store Items in Create
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
@@ -63,7 +63,7 @@
             <a href="../../docs/microlearning/novice-emagiz-store-configuring-store-items" class="strip__link">
             <label for="" class="strip__label">
                 <span>5</span>
-                Configuring Store Items
+                Configuring Store Items in Create
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
