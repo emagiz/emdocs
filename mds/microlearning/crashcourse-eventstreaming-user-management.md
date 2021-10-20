@@ -82,7 +82,12 @@ After you have created the user you can assign roles to the user. With this link
 
 With this, we have configured the roles and users to confirm what we designed in the Design phase of eMagiz.
 
-**NOTE:** You can download the trust and keystore from the user management section on the user level. Alternative is to use the Event Catalog described in this module which is something accessible for external to eMagiz users. See also [eMagiz Event Catalog](crashcourse-eventstreaming-catalog.md).
+**NOTE:** You can download the keystore from the user management section on the user level (Deploy - User Management). The truststore is available from the Deploy-Architecture section.
+
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-user-management-deploy-cluster-details.png"></p>
+
+Alternative is to use the Event Catalog described in this module which is something accessible for external to eMagiz users. See also [eMagiz Event Catalog](crashcourse-eventstreaming-catalog.md).
+
 
 ### 3.3 Apply to Environment
 
