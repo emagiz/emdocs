@@ -4,7 +4,7 @@
 	<h2 class="title">eMagiz Academy Use Cases</h2>
 	<div class="card-container">
 		<a href="../../docs/microlearning/index_academy_usecase_sending_data-restservice" class="card card--featured">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 10%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 5%;">
 				<h4 class="title">Sending data to a REST Web Service</h4>
 			</div>
 			<ul class="card__footer">
