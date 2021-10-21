@@ -11,7 +11,7 @@
 
 <div class="doc">
 
-##### Intro
+#####Intro
 
 # Introduction
 This micro-learning will focus on some considerations for putting the eMagiz runtime at the right location in the architecture. 
