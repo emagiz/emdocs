@@ -88,10 +88,10 @@
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_novice" class="tabs__link">Novice</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
-		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
+		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
-		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_usecase_all" class="tabs__link">Use Casess</a></li>
+		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_usecase_all" class="tabs__link">Use Cases</a></li>
 	</ul>
 	<div class="card-container">
 		<a href="../../docs/microlearning/index_academy_usecase_sending_data-restservice" class="card">
