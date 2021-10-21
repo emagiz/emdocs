@@ -14,22 +14,20 @@
 
 # Edit memory for on-premise runtime (Windows)
 
-Sometimes you have runtimes running on-premises. What we mean by that is that the runtimes are running within a data center of the customer instead of running in the eMagiz Cloud. For running a runtime on-premise we support running them on either Windows or Linux as the operating system. In this microlearning, we will learn how you can edit the memory settings of a runtime that is deployed on-premise on Windows.
+Sometimes you have runtimes running on-premises. What we mean by that is that the runtimes are running within a data center of the customer instead of running in the eMagiz Cloud. For running a runtime on-premise we support running them on either Windows or Linux as the operating system. In this microlearning, we will learn how you can edit the memory settings of a runtime that is deployed on-premise on Linux.
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: July 28th, 2021
-- Required reading time: 6 minutes
+- Last update: October 20th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
 
 ## 2. Key concepts
-This microlearning centers on editing the memory settings for an on-premise runtime that is running on Windows
+This microlearning centers on editing the memory settings for an on-premise runtime that is running on Linux.  With an on-premise runtime we mean: A runtime that is running within a data center of the customer instead of running in the eMagiz Cloud
 
-With an on-premise runtime we mean: A runtime that is running within a data center of the customer instead of running in the eMagiz Cloud
-
-The focal point of this microlearning will be to learn how you can safely edit the memory settings for an on-premise runtime running on Windows
+The focal point of this microlearning will be to learn how you can safely edit the memory settings for an on-premise runtime running on Linux
 
 - The key aspects are:
     - eMagiz can help you determine the correct size you need to configure via Design -> Architecture
@@ -40,9 +38,9 @@ The focal point of this microlearning will be to learn how you can safely edit t
   
 ## 3. Edit memory for on-premise runtime (Windows)
 
-Sometimes you have runtimes running on-premises. What we mean by that is that the runtimes are running within a data center of the customer instead of running in the eMagiz Cloud. For running a runtime on-premise we support running them on either Windows or Linux as the operating system. In this microlearning, we will learn how you can edit the memory settings of a runtime that is deployed on-premise on Windows.
+Sometimes you have runtimes running on-premises. What we mean by that is that the runtimes are running within a data center of the customer instead of running in the eMagiz Cloud. For running a runtime on-premise we support running them on either Windows or Linux as the operating system. In this microlearning, we will learn how you can edit the memory settings of a runtime that is deployed on-premise.
 
-The focal point of this microlearning will be to learn how you can safely edit the memory settings for an on-premise runtime running on Windows
+The focal point of this microlearning will be to learn how you can safely edit the memory settings for an on-premise runtime.
 
 - The key aspects are:
     - eMagiz can help you determine the correct size you need to configure via Design -> Architecture
@@ -59,7 +57,7 @@ When selecting the option View container a pop-up will be shown. Within this pop
 
 <p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows--pop-up-details.png"></p>
 
-### 3.2 Edit memory
+### 3.2 Edit memory on Linux based runtimes
 
 Now that we know what the advised size is we can navigate to our on-premise installation location to edit the memory settings. Below we will detail the various steps needed to make this happen.
 

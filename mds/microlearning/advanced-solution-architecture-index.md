@@ -12,38 +12,6 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
         <li class="strip">
-            <a href="../../docs/microlearning/advanced-solution-architecture-select-integrationpattern" class="strip__link">
-            <label for="" class="strip__label">
-                <span>48</span>
-                Selecting the correct integration pattern for your business case
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">10 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer, Architect</div>
-            </div>
-        </a>
-        </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/advanced-solution-architecture-h2-database-workings" class="strip__link">
-            <label for="" class="strip__label">
-                <span>48</span>
-                H2 Database, workings
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">10 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer, Architect</div>
-            </div>
-            </a>
-        </li>
-        <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-runtime-decision" class="strip__link">
             <label for="" class="strip__label">
                 <span>48</span>

@@ -11,10 +11,10 @@
 
 <div class="doc">
 
-##### Intro
+##### Introduction
 
 # Introduction
-This micro-learning will focus 
+This micro-learning will focus on describing the general architecture of the API Gateway. After this microlearning, the background of the API GW architecture should be clear
 
 Should you have any questions, please contact academy@emagiz.com.
 
@@ -23,14 +23,19 @@ Should you have any questions, please contact academy@emagiz.com.
 
 ## 1. Prerequisites
 - Intermediate knowledge of the eMagiz platform
-- Good working experience in the Create phase and transformations.
+- Good working experience in the Design phase Architecture and Deploy Architecture
+- Created several API gateway integrations
 
 ## 2. Key concepts
 
 
 ##### Theory
 
-## 3. Transforming XML to EDI messages
+## 3. Architecture components API Gateway
+
+The following picture displays a general architecture of the API Gateway. This picture has been taken from the eMagiz Design Architecture section as that illustrates the below key points.
+
+<p align="center"><img src="../../img/microlearning/advanced-solution-architecture-apigw-architecture-1.png"></p>
 
 
 
