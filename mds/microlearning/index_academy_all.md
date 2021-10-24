@@ -90,7 +90,6 @@
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_intermediate" class="tabs__link">Intermediate</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_advanced" class="tabs__link">Advanced</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_expert" class="tabs__link">Expert</a></li>
-		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_usecase_all" class="tabs__link">Use Cases</a></li>
 	</ul>
 	<div class="card-container">
 		<a href="../../docs/microlearning/crashcourse-platform-index" class="card">
@@ -1003,7 +1002,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">6</label>
+					<label for="" class="card__footer-label">4</label>
 				</li>
 			</ul>
 		</a>
