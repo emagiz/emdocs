@@ -42,7 +42,7 @@ Some of the more widely used XPath options are:
 
 ## 3. Transformation - XPath Intermediate
 
-Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more straightforward cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
+Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more straightforward cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-xpath-basic). In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that we see are used a lot across projects.
 
 Some of the more widely used XPath options are:
 - if then else
