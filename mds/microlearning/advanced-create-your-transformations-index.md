@@ -27,31 +27,15 @@
             </div>
         </a>
         </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/advanced-create-your-transformations-xml-2-edi" class="strip__link">
-            <label for="" class="strip__label">
-                <span>53</span>
-                Transforming XML messages to EDI
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">10 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-            </a>
-        </li>
         <li class="strip">
             <a href="../../docs/microlearning/advanced-create-your-transformations-xpath-advanced" class="strip__link">
             <label for="" class="strip__label">
                 <span>53</span>
-                XPath advanced insights
+                XPath Advanced
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">10 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -67,7 +51,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">10 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>

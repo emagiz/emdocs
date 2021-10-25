@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/microlearning/novice-emagiz-store-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-create-your-transformations-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -13,66 +13,92 @@
 
 ##### Intro
 
-# eMagiz Store - Introduction
-This micro-learning will focus on positioning the eMagiz Store. 
+# Handling multiple namespaces
 
-Should you have any questions, please contact academy@emagiz.com.
+Sometimes you encounter definitions of external systems that refer to other definitions that are in different namespaces. As a result, the XML message you need to send or receive contains multiple namespaces. As one definition in eMagiz (and in XSD) can only include one namespace and eMagiz does not support references to other definitions, you need to have the ability to transform from one (or zero) namespace to multiple and vice versa. In this microlearning, we will discuss both variants to provide insight on how to achieve this.
 
-- Last update: October 20th, 2021
-- Required reading time: 5 minutes
+Should you have any questions, please get in touch with academy@emagiz.com.
+
+- Last update: October 25th, 2021
+- Required reading time: 6 minutes
 
 ## 1. Prerequisites
-- Basic knowledge of the eMagiz platform
+- Advanced knowledge of the eMagiz platform
 
 ## 2. Key concepts
-The eMagiz Store is a concept in the eMagiz platform that allows users to import reusable content into a specific ILM phase. The Store has elements for each of the model phases Capture, Design and Create, and is focused on expediting the delivery of integrations for users.
+This microlearning focuses on handling multiple namespaces.
+
+With namespace, we mean a set of uniquely named elements and attributes in an XML document.
+
+To achieve this, we need an intermediate step:
+- Remove namespaces (when receiving the message)
+- Adding namespaces (when sending the message)
 
 ##### Theory
 
-## 3. eMagiz Store - Introduction
+## 3. Handling multiple namespaces
 
-###3.1 Store for Create
-The eMagiz store for the Create phase allows users to drag & drop flow fragments into the flow that requires editing. A flow fragments is a combination of 1 or more model components that together can execute a certain piece of work inside that flow. For example a file pickup that includes an archive option and specific file filters. Or the required components that are needed to send a message to a REST/JSON web service that is secured with OAuth2.0. 
+Sometimes you encounter definitions of external systems that refer to other definitions that are in different namespaces. As a result, the XML message you need to send or receive contains multiple namespaces. As one definition in eMagiz (and in XSD) can only include one namespace and eMagiz does not support references to other definitions, you need to have the ability to transform from one (or zero) namespace to multiple and vice versa. In this microlearning, we will discuss both variants to provide insight on how to achieve this.
 
-The Store for the Create phase can be found in the left hand panel of the Flow designer - at the same location as where you select the model components. 
+To achieve this, we need an intermediate step:
+- Remove namespaces (when receiving the message)
+- Adding namespaces (when sending the message)
 
-###3.2 Store for Design
-The eMagiz store for the Design phase allows to select specific operations from available systems such as Exact online, or Salesforce. So these are more datamodel oriented items and more target/source system oriented. The general idea is that you import store content whilst defining your data model message and System definitions. At that moment, you can select to import one or more message defintions. eMagiz will then guide the user to import the system message definition, as well as to import the mapping between data model and message definition. A reusable merge definition can be created between the existing data model (CDM, Gateway model or Event model) and the system definition so that the data model can be updated in a proper way.
+### 3.1 Remove namespaces
 
-Please note that the when the Store item is selected in this phase, the associated flow fragments for the Create phase are automatically attached to the integration. That means when the integration is transferred to Create these flow fragments will automatically be generated into the appropriate flows. eMagiz considers to put these flow fragments into the right flow depending on the type of flow fragment. 
-- Connectivity flow fragments will be imported in exit gates, entry flow, event processors and exit flows
-- Processing flow fragments will be imported in exit gates, event processors, offramp flows and onramp flows
-- Universal flows can be imported in any flow
+Before we can validate our incoming message with the tooling of eMagiz, we need to remove all the namespaces from the message. Luckily there is a custom transformation available in the eMagiz store that removes all namespaces from a message. Search for remove namespace in the eMagiz store. This custom transformation searches for all namespaces and removes them, including their prefixes. See below for an example of how this will work for you.
 
-###3.3 Store for Capture
-The eMagiz Store will be expanded to the Capture phase in upcoming quarters. The current idea is to allow the selection of systems and integrations on level up so that the work on Design and Create becomes even more easy. Once we have made that step, we'll update this section with the right positioning.
+This XSLT transformer will use a custom resource as attached and configured to perform the following actions:
 
-###3.4 Content Management for Store items
-At this moment, the Store content is provided by the eMagiz team only. The concept of a company or private store is under consideration, and for now intra-company content can be moderated by the Copy-Paste functionality in the Create phase. Suggestions for new content can be send to productmanagement@emagiz.com / questions can be asked via the QA forum which may include feedback on a store item.
+1. Remove all namespaces in your XML Message. Example:
 
-###3.5 Licensing Store
-Store content can be imported by any user except for store items that are licensed. For instance the Data Sink is licensed feature, and the Store item for Data Sink can only be imported in case this license is granted in the integration model.
+<?xml version="1.0" encoding="UTF-8"?>
+<sys:root_element xmlns:sys="http://www.emagiz.com/ns/es-store/cdm/1.0/">
+    <sys:envelope>
+            <sys:messagetype>O2C_DESADV</sys:messagetype>
+    </sys:envelope>
+</sys:root_element>
 
-The disclaimer for using Store content can be found here: <addlink>.
+will become
+
+<root_element>
+    <envelope>
+            <messagetype>O2C_DESADV</messagetype>
+    </envelope>
+</root_element>
+
+
+2. Keynotes
+a. This will lead to an attribute name clash if an element contains two attributes with the same local name but different namespace prefix b. Nodes that cannot have a namespace are copied as such
+
+### 3.2 Add namespaces
+
+Adding namespaces is a two-part process within eMagiz currently. To make this work, you should prepare your definition in eMagiz by adding prefixes to each entity and attribute (based on which namespace they should be sent). As a result, you get a specific prefix for each particular namespace. After doing this, you can use a custom transformation (available in the eMagiz store) to transform these prefixes to the correct namespaces. Search for adding namespaces in the eMagiz store to get access to the custom transformation.
+
+For more context on this solution, check out the store documentation and this Q&A interaction:
+- https://my.emagiz.com/p/question/172825635700350785
 
 ##### Practice
 
 ## 4. Assignment
 
-There is no assignment for this microlearning. Please refer to the next microlearning in this module so that you can experience it properly.
+Check out whether removing or adding namespace is used within your project.
+This assignment can be completed within the (Academy) project you created/used in the previous assignment.
 
 ## 5. Key takeaways
 
+- With custom functionality, you can add and remove namespaces
+- You can use the eMagiz store for this
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-There are no suggested additional readings on this topic
+If you are interested in this topic and want more information, please read the help text provided by eMagiz.
 
 ## 7. Silent demonstration video
 
-There is no demonstration video of this functionality. 
+As this is more of theoretical microlearning, there is no video accompanying the microlearning.
 
 </div>
 </main>
