@@ -12,84 +12,152 @@
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
     <li class="strip">
+            <a href="../../docs/microlearning/novice-lifecycle-management-what-is-lifecycle-management" class="strip__link">
+				<label for="" class="strip__label">
+					<span>11</span>
+					What is lifecycle management
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">All</div>
+				</div>
+			</a>
+        </li>
+		<li class="strip">
+            <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
+				<label for="" class="strip__label">
+					<span>11</span>
+					Cleanup a designed integration
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
+        </li>
+		<li class="strip">
+            <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-captured-integration" class="strip__link">
+				<label for="" class="strip__label">
+					<span>11</span>
+					Cleanup a captured integration
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
+        </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/novice-lifecycle-management-upgrading-build-numbers" class="strip__link">
+				<label for="" class="strip__label">
+					<span>11</span>
+					Upgrading Build Numbers
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">7 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Support Engineer</div>
+				</div>
+			</a>
+        </li>	
+		<li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-created-integration" class="strip__link">
-            <label for="" class="strip__label">
-                <span>33</span>
-                Cleanup a created integration
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
+				<label for="" class="strip__label">
+					<span>33</span>
+					Cleanup a created integration
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
         </li>
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-resource" class="strip__link">
-            <label for="" class="strip__label">
-                <span>33</span>
-                Cleanup a resource
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
+				<label for="" class="strip__label">
+					<span>33</span>
+					Cleanup a resource
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
         </li>
-    <li class="strip">
+		<li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-properties" class="strip__link">
-            <label for="" class="strip__label">
-                <span>33</span>
-                Cleanup properties
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
+				<label for="" class="strip__label">
+					<span>33</span>
+					Cleanup properties
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-alerting" class="strip__link">
-            <label for="" class="strip__label">
-                <span>33</span>
-                Cleanup alerting
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">7 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
+			<a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-alerting" class="strip__link">
+				<label for="" class="strip__label">
+					<span>33</span>
+					Cleanup alerting
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">7 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
         </li>
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-design-architecture" class="strip__link">
-            <label for="" class="strip__label">
-                <span>33</span>
-                Cleanup design architecture
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">7 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-        </a>
+				<label for="" class="strip__label">
+					<span>33</span>
+					Cleanup design architecture
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">7 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+			</a>
         </li>					  
     </ul>
     </main>

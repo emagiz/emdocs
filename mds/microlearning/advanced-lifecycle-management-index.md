@@ -11,22 +11,54 @@
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
-    <li class="strip">
-            <a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
-            <label for="" class="strip__label">
-                <span>59</span>
-                Cleanup a deployed runtime
-            </label>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
-            </div>
-        </a>
-        </li>    
+		<li class="strip">
+			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
+				<label for="" class="strip__label">
+					<span>59</span>
+					Cleanup a deployed runtime
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">All</div>
+				</div>
+			</a>
+		</li>
+		<li class="strip">
+			<a href="../../docs/microlearning/advanced-lifecycle-management-impact-buildnumber-upgrade" class="strip__link">
+				<label for="" class="strip__label">
+					<span>59</span>
+					Determining impact of build number upgrade
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">All</div>
+				</div>
+			</a>
+		</li> 
+		<li class="strip">
+			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-running-flow" class="strip__link">
+				<label for="" class="strip__label">
+					<span>59</span>
+					Cleanup a running flow
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">5 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">All</div>
+				</div>
+			</a>
+		</li>   		
     </ul>
     </main>
     </div>
