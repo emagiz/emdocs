@@ -5,7 +5,7 @@
     <p>
        In this course we will focus on sending and receiving data while communicating between Mendix and eMagiz.
         </br></br>
-        - Total time: between 20 and 35 minutes
+        - Total time: between 30 and 45 minutes
         </br>
         - Last updated - October 2021
     </p>
@@ -19,7 +19,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">4 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -51,7 +51,7 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">3 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
