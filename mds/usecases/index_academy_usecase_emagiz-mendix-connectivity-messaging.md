@@ -3,24 +3,23 @@
 		<main class="master">
 	<h2 class="title">eMagiz Use Case - Lifecycle Management</h2>
     <p>
-       In this course, you will find the collection of the relevant Microlearnings that you can refer to to understand all the relevant items around Lifecycle Management. In this context of eMagiz this refers to the maintenance of the integration model and deploy components in terms of removing unused components.
-	   **NOTE:** These microlearnings are sorted from Capture to Deploy. Please make sure to read them carefully and select the appropriate starting point to start cleaning up your model. The ususal approach to work backwards from Manage to Capture.
+      In this course, you will find the collection of the relevant Microlearnings that you can refer to understand all the relevant items around setting up the connection between eMagiz and Mendix within the Messaging pattern. This context of eMagiz refers to using the eMagiz Mendix connector available in the Mendix Marketplace (and in the portal) to exchange data via topics between eMagiz and Mendix. Note that each exit flow connecting eMagiz to Mendix holds a detailed description of all the appropriate steps needed to set up the connection between eMagiz and Mendix while using the latest eMagiz Mendix module (5.0.0).
         </br></br>
-        - Total time for first time completion: between 50 and 60 minutes
+        - Total time for first time completion: between 60 and 75 minutes
         </br>
         - Last updated - Q4 2021
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
           <li class="strip">
-            <a href="../../docs/microlearning/novice-lifecycle-management-what-is-lifecycle-management" class="strip__link">
+            <a href="../../docs/microlearning/novice-mendix-connectivity-what-is-an-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
-                What is lifecycle management
+                <span>4</span>
+                What is an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
+                <div class="strip__attribute-label">4 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -29,10 +28,10 @@
         </a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-captured-integration" class="strip__link">
+            <a href="../../docs/microlearning/novice-mendix-connectivity-install-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a captured integration
+					<span>4</span>
+					Install an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
@@ -40,31 +39,31 @@
 				</div>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
+					<div class="strip__attribute-label">Developer</div>
 				</div>
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
+            <a href="../../docs/microlearning/novice-mendix-connectivity-configure-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a designed integration
+					<span>4</span>
+					Configure an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
+					<div class="strip__attribute-label">10 minutes</div>
 				</div>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
+					<div class="strip__attribute-label">Developer</div>
 				</div>
 			</a>
         </li>
 		 <li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-design-architecture" class="strip__link">
+            <a href="../../docs/microlearning/novice-mendix-connectivity-update-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup design architecture
+					<span>4</span>
+					Update an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
@@ -77,164 +76,68 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-resource" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a resource
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-        </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/novice-flow-management-remove-flows-from-create" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Remove flows from Create
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-        </li>	  
-		<li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-properties" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup properties
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
+            <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-a-synchronous-webservice-in-mendix" class="strip__link">
+            <label for="" class="strip__label">
+                <span>4</span>
+                Calling a synchronous webservice in Mendix
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-alerting" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup alerting
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">7 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
+            <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-a-synchronous-webservice-from-mendix" class="strip__link">
+            <label for="" class="strip__label">
+                <span>4</span>
+                Calling a synchronous webservice from Mendix
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+        </a>
         </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-created-integration" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a created integration
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
+        <li class="strip">
+            <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-an-asynchronous-webservice-in-mendix" class="strip__link">
+            <label for="" class="strip__label">
+                <span>4</span>
+                Calling a asynchronous webservice in Mendix
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            </a>
         </li>
-		<li class="strip">
-			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-running-flow" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a running flow
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-		</li> 
-		<li class="strip">
-            <a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Cleanup a deployed runtime
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-        </li>
-		<li class="strip">
-			<a href="../../docs/microlearning/advanced-lifecycle-management-impact-buildnumber-upgrade" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Determining impact of build number upgrade
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-		</li> 		
-		<li class="strip">
-            <a href="../../docs/microlearning/novice-lifecycle-management-upgrading-build-numbers" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Upgrading Build Numbers
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">7 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
-        </li>	   
-		<li class="strip">
-            <a href="../../docs/microlearning/novice-flow-management-reset-flows" class="strip__link">
-				<label for="" class="strip__label">
-					<span>2</span>
-					Reset Flows
-				</label>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
-				</div>
-				<div class="strip__attribute">
-					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
-				</div>
-			</a>
+        <li class="strip">
+            <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-an-asynchronous-webservice-from-mendix" class="strip__link">
+            <label for="" class="strip__label">
+                <span>4</span>
+                Calling a asynchronous webservice from Mendix
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">6 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">Developer</div>
+            </div>
+            </a>
         </li>
     </ul>
     </main>

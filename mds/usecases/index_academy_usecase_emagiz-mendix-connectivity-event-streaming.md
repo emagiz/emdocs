@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">eMagiz Use Case - eMagiz Mendix Connectivity Event Streaming</h2>
     <p>
-       In this course, you will find the collection of the relevant Microlearnings that you can refer to to understand all the relevant items around setting up the connection between eMagiz and Mendix within the Event Streaming pattern. In this context of eMagiz this refers to using the eMagiz Kafka connector that is available in the Mendix Marketplace (and in the portal) to exchange data via topics between eMagiz and Mendix.
+       In this course, you will find the collection of the relevant Microlearnings that you can refer to understand all the relevant items around setting up the connection between eMagiz and Mendix within the Event Streaming pattern. In this context of eMagiz, this refers to using the eMagiz Kafka connector available in the Mendix Marketplace (and in the portal) to exchange data via topics between eMagiz and Mendix.
         </br></br>
         - Total time for first time completion: between 50 and 60 minutes
         </br>
@@ -19,11 +19,11 @@
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
+                <div class="strip__attribute-label">6 minutes</div>
             </div>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">All</div>
+                <div class="strip__attribute-label">Developer</div>
             </div>
         </a>
         </li>
@@ -35,7 +35,7 @@
 				</label>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
+					<div class="strip__attribute-label">8 minutes</div>
 				</div>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
@@ -51,11 +51,15 @@
 				</label>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-					<div class="strip__attribute-label">5 minutes</div>
+					<div class="strip__attribute-label">10 minutes</div>
 				</div>
 				<div class="strip__attribute">
 					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-					<div class="strip__attribute-label">All</div>
+					<div class="strip__attribute-label">Developer</div>
+				</div>
+                <div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Architect</div>
 				</div>
 			</a>
         </li>
