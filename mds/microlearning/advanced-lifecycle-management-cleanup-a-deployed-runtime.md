@@ -8,10 +8,9 @@
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
             <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
         </ul>
-
 <div class="doc">
 
-##### Intro
+#####Intro
 
 # Cleanup a deployed runtime
  

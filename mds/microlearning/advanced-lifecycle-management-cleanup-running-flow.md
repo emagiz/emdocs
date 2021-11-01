@@ -8,10 +8,9 @@
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
             <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
         </ul>
-
 <div class="doc">
 
-#####Intro
+##### Intro
 
 # Cleanup a running flow 
  
@@ -34,16 +33,16 @@ The most important for this micro-learning to understand is that a flow needs be
 ## 3. Steps to remove a flow from Deploy
 
 
-###3.1 Remove from runtimes
+### 3.1 Remove from runtimes
 
 1. Stop the flow from the runtime where its active. Remove on all runtimes where it is active
 2. Uninstall the flow from the runtime(s) where it was active
 3. Update the Container assignment to remove the flow from the Containers
 
-###3.2 Remove unused Properties
+### 3.2 Remove unused Properties
 Ensure to remove the associated properties from each TAP environment specific to this flow. Refer to the micro-learning that explains that process.
 
-###3.3 Remove alerting triggers
+### 3.3 Remove alerting triggers
 
 Within this Tab navigate to Triggers (look at the Tag name when following these instructions). If you have configured the alerting following the best practice outlined in the user guide for Alerting, the following triggers (at least!!!) need to be changed. For your specific situation more triggers could be relevant
 - Standard – Queue consumers too high
@@ -55,7 +54,7 @@ If you are removing the last flow belonging to a system and you have followed th
 - Standard – Log entries missing
 - Standard – Error log entry
 
-###3.4 Remove from all Releases
+### 3.4 Remove from all Releases
 The key to understand is that the flow to be removed needs to be removed from all the releases in the 3 environments test, acceptance and production. In most cases, it means that a new (series of) release(s) needs to be created and made active in each environment. Older releases can be removed so that no release has this flow included. Once that is achieved, then the flow is removed from the Deploy phase. 
 
 It usually means that it will take a certain grace period before a flow is actually out of Deploy.

@@ -164,13 +164,32 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">1</label>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/advanced-testing-in-emagiz-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Testing_modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Testing in eMagiz</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Advanced</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/advanced-file-based-connectivity-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/file-based-connectivity.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">File based Connectivity</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">

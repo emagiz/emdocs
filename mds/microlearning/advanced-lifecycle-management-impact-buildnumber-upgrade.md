@@ -2,22 +2,13 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-
             <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-lifecycle-management-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
             <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
         </ul>
-
 <div class="doc">
-
-releasen notes
-impact bepalen
-sne;l overzetten
-test en accp draaien
-planbaar amaken 
- 
  
 ##### Intro
 
@@ -44,7 +35,7 @@ eMagiz works hard to limit the number of buildnumbers. The general approach for 
   
 ## 3. Assessing the impact of changing buildnumbers
 
-###3.1 Release notes & impact assessment
+### 3.1 Release notes & impact assessment
 These can be found in the eMagiz Portal under Community --> Release notes. Check for the left hand menu called Build Numbers. Once the release notes are properly read, assess the impact. This effectively means that the key notes around the model components can be used. 
 
 You see often a list of libraries that are updated, and these are the only notes that means that the impact is slim to none. Then make sure to read the notes above around the model components touched. These will help to asses the impact. Some model components have additional capability, and some have a limited capability or a fix.
@@ -56,13 +47,13 @@ Flows containing a Jetty server (support object), primarily used to host REST an
 
 --> Impact: review the runtimes that have flows with a Jetty component and ensure that matching buildnumbers are inside these runtimes for all flows.
 
-###3.2 Upgrade
+### 3.2 Upgrade
 Use the designed options in eMagiz to upgrade the flows to the new buildnumber. See the relevant microlearnings for that.
 
-###3.3 Functional changes
+### 3.3 Functional changes
 Before an environment is updates to the flows with the latest releases, it is advices to first check which flows have functional changes. These flows need to be tested and put into production first so that you can isolate issues in case they occur. Once these flows are tested and live, only then move the flows witht the new buildnumbers from test to production.
 
-###3.4 Approach
+### 3.4 Approach
 It is usually best to update the test and acceptance environment first and leave that running for a certain grace period. So that in case potential issues can be fixed still.
 
 
