@@ -21,7 +21,7 @@ With the help of this Mendix module created by the eMagiz team, you can easily c
 Should you have any questions, please contact academy@emagiz.com.
 
 - Last update: January 27th, 2021
-- Required reading time: 2 minutes
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
