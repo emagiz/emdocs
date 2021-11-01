@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">Mendix Connectivity</h2>
     <p>
-       In this course we will focus on sending and receiving data while communicating between Mendix and eMagiz.
+       In the previous course on Mendix Connectivity, we learned the basics of communication between eMagiz and Mendix. In that course, we focused on installing, configuring, and updating the Mendix module that allows communication between eMagiz and Mendix. This course will zoom in on what configuration steps are needed to exchange specific data between eMagiz and Mendix. Each microlearning within this course is tailored to a particular interaction between eMagiz and Mendix.
         </br></br>
         - Total time: between 30 and 45 minutes
         </br>
