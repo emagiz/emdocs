@@ -38,7 +38,7 @@ The network architecture Below is a technical representation of the connectivity
 
 ##### Theory
 
-## 3. # AWS Direct Connect
+## 3. AWS Direct Connect
 
 This microlearning will explain how traffic needs to be routed over the dedicated connection by adding DNS records to the corporate resolving servers.
 The network architecture Below is a technical representation of the connectivity between the customer network and the AWS deployment of a eMagiz Platform Instance of the customer. 
