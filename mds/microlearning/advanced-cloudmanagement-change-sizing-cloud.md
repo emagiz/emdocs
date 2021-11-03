@@ -12,41 +12,67 @@
  
 ##### Intro
 
-# Impact of builnumber upgrades
+# Change the size of the eMagiz Cloud
  
-In this microlearning, we will focus on the helping you to assess the impact of upgrading to new buildnumbers. 
+In this microlearning, we will discuss how to change the size of the eMagiz Cloud.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: August 27th, 2021
+- Last update: November 2nd, 2021
 - Required reading time: 5 minutes
+
 
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
-- Complete the microlearning that explains how to upgrade to a new buildnumber
+- Completed the relevant microlearnings around Cloud Management till advanced
+- Read the microlearning around the determing the required size of a machine in microlearning https://emagiz.github.io/docs/microlearning/expert-solution-architecture-determining-needed-memory#3-determining-needed-memory
 
 
 ## 2. Key concepts
-With buildnumbers we mean the piece of software that used by a flow to make it operational inside the runtime. Several eMagiz libraries are loaded together with the flow components XML into the runtime (Java container). In essence that means that a new buildnumber means the flow is technically speaking different from the previous buildnumber.
-
-eMagiz works hard to limit the number of buildnumbers. The general approach for buildnumber is that these are backwards compatible, so the impact of moving to the next buildnumber poses a minimal impact and risk.
+With the eMagiz Cloud we mean the specific Cloud slot that is made available for an integration model so that the flows from that model can be deployed and made operational. The Cloud is a Virtual Private Cloud (VPC) is only available for that integration model and is secured properly. In that VPC a series interconnected machines are running.
 
 ##### Theory
+
+## 3. Changing the size of the eMagiz Cloud
+
+#### 3.1 T-Shirt sizing in eMagiz
+eMagiz provides a mean to assess whether the current Cloud configuration is sufficient or not. In the figure below you can see the eMagiz Cloud machines denoted with the green boxes. On the top of each box you will find a T-shirt size indication ranging from S to XL. Each of these sizes corresponds to a specific machine specification where by the memory is the most import to note:
+S - 2 Gb
+M - 4Gb
+L - 8Gb
+XL - 16Gb
+
+<p align="center"><img src="../../img/microlearning/advanced-cloudmanagement-change-sizing-cloud-1.png"></p>
+
+**Advised size**
+The first T-shirt size in the box - white background - is the recommended sizing that eMagiz advices. This is based on the average memory consumption guideline that is explained in the microlearning as mentioned above. In the check size option available via the right click, you will find the sizing estimate for that machine and the reference based on flows. In the example above, an M is recommended for both.
+
+**Actual size**
+The second T-shirt size in the box - green background - is the actual machine size that is used for the Deployment phase. This is something that the user can select and using the toggle while editing the architecture can influence. In the example above an L and an S are configured.
+
+**Approved size**
+In the right-hand size, bottom, you will find the overview of the total machines allows according to your contract. This option can only be set by eMagiz administrators and will only be changed based on actual license agreements
+
+<p align="center"><img src="../../img/microlearning/advanced-cloudmanagement-change-sizing-cloud-2.png"></p>
+
+#### 3.2 Changing the size considerations
+
+In case a specific machine is overloaded / overcommitted, it is time to change the size of that machine. You can toggle to a higher size machine and effectuate in the Deploy Architecture - please check out the relevant microlearnings for that. 
+
+However, the Cloud approval is a step that needs to be taken first and can only happen when the licensing agreement has been altered for that purpose. Please contact you partner manager to arrange such Cloud approvals. Bigger size machines will not be effectuated in Deploy Architecture.
 
 
 ##### Practice
 
 ## 4. Assignment
 
-Take a look at the release notes in the eMagiz Portal to ensure you know where to look.
+Ensure to you your environment to locate the toggle properly, find the overview bottom right to see the Cloud approvals. Check the sizing status once more.
 
 ## 5. Key takeaways
 
-- Keep as close to the latest buildnumber as possible for the entire environment
-- The best option is to have the entire environment run on the same buildnumber 
-- A mix of buildnumbers in a runtime is not a good plan - conflicting behaviors may occur.
-- Read the release notes for builnumbers carefully to assess the impact - in case the impact is minimal proceed with the upgrade
-- Make the buildnumber upgrades planable so the release schedule takes these actions into account.
+- Keep the Cloud sizing the same as the recommended size
+- Check the size regularly to anticipate sizing changes in a timely manner. Use the check size options
+- Validate the architecture with colleagues or ask a review by eMagiz Expert Services.
 
 ##### Solution
 

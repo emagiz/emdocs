@@ -68,7 +68,7 @@ The second part of the configuration is the SOAP Webservice Namespace. When host
 
 ### 3.3 Configuration in eMagiz
 
-Now that we know what means what we can see how we can implement this in eMagiz. In the Capture phase, nothing changes. You simply draw a system on the canvas including at least one line that goes from the system towards eMagiz. When you are done you move to the Design phase in eMagiz. In this phase, you need to correctly set up the operation name(s) and the SOAP Webservice Namespace.
+Now that we know what configurations are required, we can see how we can implement this in eMagiz. In the Capture phase, nothing changes. You simply draw a system on the canvas including at least one line that goes from the system towards eMagiz. When you are done you move to the Design phase in eMagiz. In this phase, you need to correctly set up the operation name(s) and the SOAP Webservice Namespace.
 
 The configuration in Design starts at the system level. At the system level, you need to define the technical name (or let eMagiz automatically fill it in for you) and select the checkbox called Combined Entry Connector. By selecting this checkbox you tell eMagiz that you want to host an endpoint for others to call.
 
