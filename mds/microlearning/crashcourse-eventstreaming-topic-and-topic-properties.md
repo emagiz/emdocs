@@ -27,16 +27,11 @@ Should you have any questions, please contact academy@emagiz.com.
 - Understanding of Event Streaming concept
 
 ## 2. Key concepts
-This microlearning centers around topics and the properties of these topics.
-By topic we mean: A category/feed name to which event records are stored and published.
-With topic properties we mean: A piece of the whole configuration of a topic
+This microlearning centers around topics and the properties of these topics. By topic we mean: A category/feed name to which event records are stored and published. With topic properties we mean: A piece of the whole configuration of a topic
 
-Knowing what topics are and which properties of these topics you can and should think about before 
-creating them is a crucial part of successfully implementing an event streaming pattern via the eMagiz platform.
+Knowing what topics are and which properties of these topics you can and should think about before creating them is a crucial part of successfully implementing an event streaming pattern via the eMagiz platform.
 
-With regards to the properties of a topic, two crucial properties can significantly impact the cost of your implementation.
-These properties are: 
-
+With regards to the properties of a topic, two crucial properties can significantly impact the cost of your implementation. These properties are: 
 - Retention Hours
 - Retention Bytes
 
