@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-solution-architecture-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-create-your-transformations-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -35,11 +35,13 @@ There are a lot of different versions of EDI each indicated with version id. A c
 
 ##### Theory
 
-## 3. Transforming XML to EDI messages
+## 3. Transforming XML to EDI messages (and vice versa)
+
+The important part of generating the System Message for the EDI message is to create the XML structure of that specific EDI message type. The basis voor the System definition is the XML structure that is generated from an EDI message or the structure to create an XML with. Using the EDI version and the message type inside the EDI message, components eMagiz will create the associated XML or EDI structure for you. Once you have this, you can then use that XML as the basis for your System Definition. This is the basis for the System Message validation in your process.
 
 ### 3.1 XML to EDI transformation model component
 
-The important part of generating the System Message for the EDI message that the XML structure of that specific EDI message type. eMagiz has standard model components in the create phase available that can convert an EDI mesasge to an XML message. Below the screenshots of the model component. The important parameter here is which EDI version is used here. Using that information and the message type inside the EDI message this component will create the associated XML structure for you. Once you have this, you can then use that XML as the basis for your System Definition. This is the basis for the System Message validation in your process.
+eMagiz has standard model components in the create phase available that can convert an EDI messages to an XML message. Below the screenshots of the model component. The important parameter here is which EDI version is used here. 
 
 <p align="center"><img src="../../img/microlearning/advanced-create-your-transformations-xml-2-edi-2.png"></p>
 
@@ -83,6 +85,10 @@ It would mean that you need to transfer the integration to Create before complet
 ### 3.6 File type best practise
 
 - In the event you receive an EDI, don't create any file to string alike transformation. Directly transform the file from EDI to XML
+
+### 3.7 Transformations
+
+Once the system definitions are ready, you can use the regular transformation tooling of eMagiz to map definitions from data models to system definitions. In some cases you need multiple namespaces that need to be created for EDI messages - please refer to the microlearning in this same module.
 
 ##### Practice
 
