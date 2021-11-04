@@ -109,12 +109,7 @@ In the case where specific flows are deployed for Event Processing, the regular 
 #### 3.8.4 Users
 Users will have access to produce and consume messages. Users are managed in User Management sections in the eMagiz Portal. Once configured, the credentials are accessible via the Event Catalog. Users can access the topics via SSL and certificates. The Key and Trust stores are available in the Event Catalog - as well as all the required details of the Event Broker to allow access. Other access methods such as Basic Authentication, SASL like options are not supported to access the Event Broker.
 
-
 ##### Practice
-
-## 4. Assignment
-
-There is no specific assigmment here. Please review the Use case for Event streaming more closely to learn more about the configuration in eMagiz.
 
 ## 5. Key takeaways
 
@@ -126,11 +121,6 @@ There is no specific assigmment here. Please review the Use case for Event strea
 ## 6. Suggested Additional Readings
 
 - https://www.emagiz.com/event-streaming/
-
-
-## 7. Silent demonstration video
-
-There is no video available as this is more a theoretical microlearning.
 
 </div>
 </main>
