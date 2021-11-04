@@ -34,14 +34,14 @@ All concepts are discussed in the section below.
 
 Event Streaming is the concept whereby systems can produce data and consume data from a single location. In the integration world this integration pattern is referred to as Publish-Subscribe (or PubSub). The single location is called a topic, the Pulisher is often called a Producer and a Subscriber a Consumer. The key is that a topic may contain multiple Publishers of the same data, and may contain more Subcribers of the same data. Consumers are subscribed to a topic and will receive a notification that triggers a read action. Core focus of Event Streaming is high-volume and high-speed.
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-introduction-1.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-1.png"></p>
 
 ### 3.1 Topics
 Topics are the things where the message or data packets is stored. It is not a conventional database, and uses a logbased approach to store data. Each new data packet is put on top of the stack and an offset indicator is added which helps consumers to understand which message is read or which ones not. The data on the topic can be spread in multiple partions which are the smallest technical unit where a data packet is written into. Having multiple partions makes it possible to read /write data at ultra-high speed by Consumers/Producers.
 
 Data in topics are focus on storing small events which are no bigger than 1 Mb per data packet/message.
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-introduction-2.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-2.png"></p>
 
 ### 3.2 Retention
 
@@ -65,7 +65,7 @@ The default replication mechnanism is that the data will be spread across 3 diff
 ### 3.4 Reading data from a topic
 Consumers can read data from a topic at their own pace and availability. Event Streaming doesn't push messages - consumers need to come and get the data. The offset of a message works as a consumer side cursor at this point. The consumer keeps track of which messages it has already consumed by keeping track of the offset of messages. After reading a message, the consumer advances its cursor to the next offset in the partition and continues. Advancing and remembering the last read offset within a partition is the responsibility of the consumer. Event Streaming has nothing to do with it.
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-introduction-3.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-3.png"></p>
 
 ### 3.4 The Event Streaming Broker
 
@@ -74,7 +74,7 @@ The Event Streaming Broker holds the technical infrastructure to manage all thes
 ### 3.5 Event Processing
 eMagiz reuses the transformation capability to allow transformation of messages. In this pattern, messages are transformed in special type flows called Event processors. The Event processor will use a topic in and topic out which means that data is transported from 1 topic to another. On each topic you can define an event data model. 
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-introduction-4.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-4.png"></p>
 
 ### 3.5 Event Data Model
 For each of the topics in the eMagiz platform, you can define a message definition. These message definitions are used for Event Processors but also for the Event Catalog where external users can browse the topics.
@@ -82,7 +82,7 @@ For each of the topics in the eMagiz platform, you can define a message definiti
 ### 3.6 Event Catalog
 The event catalog allows external users to browse the content for each of the topics where that user has access to. These special type users need to be registered in the eMagiz platform, and upon accessing the eMagiz Portal these users will have a single access to the list of topics and the relevant meta data of that topic.
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-introduction-5.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-5.png"></p>
 
 ### 3.7 Kafka Connector for Mendix
 eMagiz has developed a connector for Mendix that allows the production and consumption of messages from/to the Event broker. Please refer to this page to learn more about this: https://marketplace.mendix.com/link/component/118323
@@ -91,11 +91,11 @@ eMagiz has developed a connector for Mendix that allows the production and consu
 
 A simplied picture below is list to illustrate the overall architecture of Event Streaming in eMagiz. The first picture is the situation where there is a multi-tenant Event Broker and both clients are using Event Processing. 
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-architecture-1.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-architecture-1.png"></p>
 
 The picture below shows the situation where clients are using the Event Broker as passthrough - there is no event processing. So there is no need for an Event Streaming container and JMS.
 
-<p align="center"><img src="../../img/howto/fundamental-event-streaming-architecture-2.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-architecture-2.png"></p>
 
 #### 3.8.1 Event Broker
 eMagiz is hosting an Event Broker inside the eMagiz Cloud and is accessible only via the eMagiz platform. All traffic is routed via the eMagiz platform, and is protected 2-way SSL. The Broker holds the specific Kafka based technology around managing topic, Access Control Lists (ACL), users, retention, etc. All components as decribed in the introduction section of this Fundamental. The broker will respond to the requests made from the eMagiz platform such as putting a message on topic and soforth.
@@ -121,6 +121,10 @@ Users will have access to produce and consume messages. Users are managed in Use
 ## 6. Suggested Additional Readings
 
 - https://www.emagiz.com/event-streaming/
+
+## 7. Silent demonstration video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VRGz3z_T3mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
