@@ -23,7 +23,7 @@
 			</ul>
 		</a>
 		<div class="card-container">
-		<a href="../../docs/fundamental/index_academy_fundamental_event-streaming" class="card">
+		<a href="../../docs/fundamental/fundamental-event-streaming-introduction" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">eMagiz Event Streaming</h4>
 			</div>
@@ -67,7 +67,7 @@
 		</a>		
 	</div>
 	<div class="card-container">
-		<a href="../../docs/fundamental/index_academy_fundamental_event-streaming" class="card">
+		<a href="../../docs/fundamental/fundamental-event-streaming-introduction" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">eMagiz Event Streaming</h4>
 			</div>

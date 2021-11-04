@@ -35,43 +35,25 @@ There are a lot of different versions of EDI each indicated with version id. A c
 
 ##### Theory
 
-## 3. Transforming XML to EDI messages (and vice versa)
+## 3. Setting up the system messages for EDI
 
-The important part of generating the System Message for the EDI message is to create the XML structure of that specific EDI message type. The basis voor the System definition is the XML structure that is generated from an EDI message or the structure to create an XML with. Using the EDI version and the message type inside the EDI message, components eMagiz will create the associated XML or EDI structure for you. Once you have this, you can then use that XML as the basis for your System Definition. This is the basis for the System Message validation in your process.
+### 3.1 Scenario incoming EDI with example
 
-### 3.1 XML to EDI transformation model component
+In the scenario where you want to define the System Message that is incoming, and you have the example EDI message that needs to be modeled, it is adviced to use a Flow Test in Create to learn what the XML structure is for that particular message. You would get only the required XML elements that correspond to the example messages. It is adviced to have several examples messages so that the optimal set can be determined. It would mean that you need to transfer the integration to Create before completing the Design phase.
 
-eMagiz has standard model components in the create phase available that can convert an EDI messages to an XML message. Below the screenshots of the model component. The important parameter here is which EDI version is used here. 
+### 3.2 Scenario incoming EDI without example
 
-<p align="center"><img src="../../img/microlearning/advanced-create-your-transformations-xml-2-edi-2.png"></p>
+In this case, you can't predict the exact XML structure of the EDI message. You could rely on an XSD that is provided by the client or the XSDs that eMagiz provides in the eMagiz Store. Please note that you can download this structure but it contains a full model. Which effectively means that all possible attributes are included and in most cases 80% or more is not used by the EDI messages actually exchanged. Please take moment to create a subset of the full XSD before importing that XSD as System Message.
 
-Please note that you need to put the XML structure in the namespace of this transformation model component: urn:org.milyn.edi.unedifact.v41. The message type XML tag (DESADV, ORDER, etc) does not need to be prefixed.
-<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
-	<xsl:output omit-xml-declaration="yes" indent="yes"/>
-	<xsl:strip-space elements="*"/>
-	<xsl:template match="node()|attribute()">
-		<xsl:copy>
-			<xsl:apply-templates select="node()|attribute()"/>
-		</xsl:copy>
-	</xsl:template>
-	<xsl:template match="*[not(ancestor-or-self::DESADV)]">
-		<xsl:element name="ns:{local-name()}" namespace="urn:org.milyn.edi.unedifact.v41">
-			<xsl:apply-templates select="node()|attribute()"/>
-		</xsl:element>
-	</xsl:template>
-</xsl:stylesheet>
+### 3.3 Scenario outcoming EDI with example
 
+In the scenario where you want to define the System Message that is oucoming, and you have the example EDI message that needs to be modeled, it is adviced to use a Flow Test in Create to learn what the XML structure is for that particular message. You would get only the required XML elements that correspond to the example messages. It is adviced to have several examples messages so that the optimal set can be determined. 
 
-### 3.2 EDI to XML transformation model component
+It would mean that you need to transfer the integration to Create before completing the Design phase. And it means that you need to use the EDI to XML component as described in an earlier microlearing.
 
-As the previous section, but the other EDI model component needs to be selected. See below for a screenshot of that component.
+### 3.4 Transformations
 
-<p align="center"><img src="../../img/microlearning/advanced-create-your-transformations-xml-2-edi-3.png"></p>
-
-### 3.3 File type best practise
-
-- In the event you receive an EDI, don't create any file to string alike transformation. Directly transform the file from EDI to XML
-
+Once the system definitions are ready, you can use the regular transformation tooling of eMagiz to map definitions from data models to system definitions. In some cases you need multiple namespaces that need to be created for EDI messages - please refer to the microlearning in this same module.
 
 ##### Practice
 
@@ -129,7 +111,9 @@ UNZ+2+131'
 eMagiz is able to transform messages from XML to EDI
 
 - Use the proper components to transform the message to the right EDI format
+- Leverage Flow Testing to see the actual outcome of an EDI message to help create the right System Message
 - Validate the XML structure before it's transformed to an EDI message (outgoing)
+- Transform the EDI message to XML before it's validated basedon the XML structure (incoming)
 
 
 ##### Solution

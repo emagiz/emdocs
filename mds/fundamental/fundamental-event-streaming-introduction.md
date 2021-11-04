@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/fundamental/index_academy_fundamental_event-streaming" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/fundamental/index_academy_fundamental_all" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -14,7 +14,7 @@
 
 # eMagiz Event Streaming - Introduction
  
-In this microlearning, we will introduce the most important concepts of Event Streaming.
+In this microlearning, we will introduce the most important concepts of Event Streaming. The focus will be to address the key concepts of this pattern. Please refer to other Fundamentals to learn more about related items, and take a look at the relevant microlearnings available to learn how to configure Event Streaming.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
@@ -87,6 +87,28 @@ The event catalog allows external users to browse the content for each of the to
 ### 3.7 Kafka Connector for Mendix
 eMagiz has developed a connector for Mendix that allows the production and consumption of messages from/to the Event broker. Please refer to this page to learn more about this: https://marketplace.mendix.com/link/component/118323
 
+### 3.8 Architectural components of Event Streaming in eMagiz
+
+A simplied picture below is list to illustrate the overall architecture of Event Streaming in eMagiz. The first picture is the situation where there is a multi-tenant Event Broker and both clients are using Event Processing. 
+
+<p align="center"><img src="../../img/howto/fundamental-event-streaming-architecture-1.png"></p>
+
+The picture below shows the situation where clients are using the Event Broker as passthrough - there is no event processing. So there is no need for an Event Streaming container and JMS.
+
+<p align="center"><img src="../../img/howto/fundamental-event-streaming-architecture-2.png"></p>
+
+#### 3.8.1 Event Broker
+eMagiz is hosting an Event Broker inside the eMagiz Cloud and is accessible only via the eMagiz platform. All traffic is routed via the eMagiz platform, and is protected 2-way SSL. The Broker holds the specific Kafka based technology around managing topic, Access Control Lists (ACL), users, retention, etc. All components as decribed in the introduction section of this Fundamental. The broker will respond to the requests made from the eMagiz platform such as putting a message on topic and soforth.
+
+#### 3.8.2 eMagiz Platform
+The iPaaS platform provides access point where external users can put their produce and consume requests in. The eMagiz iPaaS portal manages the configuration if the Event Streaming broker via the eMagiz platform. For instance the retention settings are set in the eMagiz iPaas Portal and then effectuated in the Event Broker.
+
+#### 3.8.3 JMS and Event Streaming container
+In the case where specific flows are deployed for Event Processing, the regular JMS server will control and manage the traffic. The Event Streaming Container will hold the required flows for Event Processors. The Core machine is not accessible from outside the VPC - as usual for the eMagiz core machine.
+
+#### 3.8.4 Users
+Users will have access to produce and consume messages. Users are managed in User Management sections in the eMagiz Portal. Once configured, the credentials are accessible via the Event Catalog. Users can access the topics via SSL and certificates. The Key and Trust stores are available in the Event Catalog - as well as all the required details of the Event Broker to allow access. Other access methods such as Basic Authentication, SASL like options are not supported to access the Event Broker.
+
 
 ##### Practice
 
@@ -96,7 +118,8 @@ There is no specific assigmment here. Please review the Use case for Event strea
 
 ## 5. Key takeaways
 
-- Event Streaming holds a few important concepts to know. Please ensure to read the above carefully before moving to the next part of this Fundamental.
+- Event Streaming provides a mean for maximum decoupling of producing and consuming systems
+- Event Streaming is a asynchronous pattern by defaults
 
 ##### Solution
 

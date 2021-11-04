@@ -28,7 +28,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/advanced-cloudmanagement-determine-impact-cloudtemplates" class="strip__link">
+			<a href="../../docs/microlearning/advanced-cloudmanagement-change-sizing-cloud" class="strip__link">
 				<label for="" class="strip__label">
 					<span>54</span>
 					Change the sizing of the Cloud
