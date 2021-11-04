@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">eMagiz Academy Use Cases</h2>
 	<div class="card-container">
-		<a href="../../docs/microlearning/index_academy_usecase_pattern_discovery" class="card card--featured">
+		<a href="../../docs/usecase/index_academy_usecase_pattern_discovery" class="card card--featured">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Discover_Integrations.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Integration Pattern Determination</h4>
 			</div>
@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_lifecycle-management" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_lifecycle-management" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management in eMagiz</h4>
 			</div>
@@ -41,7 +41,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_sending_data-restservice" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_sending_data-restservice" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 5%;">
 				<h4 class="title">Sending data to a REST Web Service</h4>
 			</div>
@@ -60,7 +60,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_hosting_soap" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_hosting_soap" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/soap-connectivity-module.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Hosting a SOAP Web Service</h4>
 			</div>
@@ -93,7 +93,7 @@
 		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_usecase_all" class="tabs__link">Use Cases</a></li>
 	</ul>
 	<div class="card-container">
-		<a href="../../docs/microlearning/index_academy_usecase_pattern_discovery" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_pattern_discovery" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Discover_Integrations.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Pattern Determination</h4>
 			</div>
@@ -112,7 +112,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_lifecycle-management" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_lifecycle-management" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Managing Event Streaming topics</h4>
 			</div>
@@ -131,7 +131,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_sending_data-restservice" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_sending_data-restservice" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Sending data to a REST Web Service</h4>
 			</div>
@@ -150,7 +150,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_hosting_soap" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_hosting_soap" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/soap-connectivity-module.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Hosting a SOAP Web Service</h4>
 			</div>
@@ -169,7 +169,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_managing_apistats" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_managing_apistats" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Error_Handling_Modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Managing API Gateway Statistics</h4>
 			</div>
@@ -188,7 +188,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/index_academy_usecase_topic_management" class="card">
+		<a href="../../docs/usecase/index_academy_usecase_topic_management" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Managing Event Streaming topics</h4>
 			</div>
