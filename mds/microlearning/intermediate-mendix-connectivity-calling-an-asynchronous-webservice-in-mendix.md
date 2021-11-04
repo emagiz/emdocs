@@ -46,7 +46,7 @@ With the help of the eMagiz Mendix module created by the eMagiz team, you can ea
 - Using the import mapping to send data to Mendix
 - Sending a string message directly to Mendix
 
-Alternatively, you could use the eMagiz Kafka connector to connect to the event broker that eMagiz offers. For more information on that, please check out this [microlearning](intermediate-event-streaming-connectors-using-Kafka-module-mendix.md).
+Alternatively, you could use the eMagiz Kafka connector to connect to the event broker that eMagiz offers. For more information on that, please check out this [microlearning](intermediate-event-streaming-connectors-using-kafka-module-mendix.md).
 
 Below, we will detail how to configure each option for sending data asynchronously to Mendix.
 

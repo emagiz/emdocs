@@ -15,7 +15,7 @@
 
 # XPath Advanced
 
-Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic.md). In the intermediate microlearning on this subject, we built upon that knowledge. Please check out this [microlearning](intermediate-create-your-transformations-xpath-intermediate.md) if you need a refresher on that. In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that could be useful in your project.
+Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-xpath-basic.md). In the intermediate microlearning on this subject, we built upon that knowledge. Please check out this [microlearning](intermediate-create-your-transformations-xpath-intermediate.md) if you need a refresher on that. In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that could be useful in your project.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
@@ -24,8 +24,11 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
-- [XPath Basic](crashcourse-platform-create-transformation-XPath-basic.md)
+- [XPath Basic](crashcourse-platform-create-transformation-xpath-basic.md)
 - [XPath Intermediate](intermediate-create-your-transformations-xpath-intermediate.md)
+
+crashcourse-platform-create-transformation-xpath-basic
+crashcourse-platform-create-transformation-XPath-basic
 
 ## 2. Key concepts
 This microlearning focuses on more complex XPath operations.
@@ -42,7 +45,7 @@ Some of the more complex XPath options are:
 
 ## 3. XPath Advanced
 
-Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-XPath-basic.md). In the intermediate microlearning on this subject, we built upon that knowledge. Please check out this [microlearning](intermediate-create-your-transformations-xpath-intermediate.md) if you need a refresher on that. In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that could be useful in your project.
+Within the crash course, we already explained XPath conceptually. In that same microlearning, we also looked at some more uncomplicated cases of using XPath within your transformation. If you need to brush up on that knowledge, please check out this [microlearning](crashcourse-platform-create-transformation-xpath-basic.md). In the intermediate microlearning on this subject, we built upon that knowledge. Please check out this [microlearning](intermediate-create-your-transformations-xpath-intermediate.md) if you need a refresher on that. In this microlearning, we will build upon that knowledge and look at some concrete, practical examples that could be useful in your project.
 
 Some of the more complex XPath options are:
 - dateTime calculation
