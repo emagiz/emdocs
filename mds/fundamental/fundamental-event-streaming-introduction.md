@@ -76,18 +76,7 @@ eMagiz reuses the transformation capability to allow transformation of messages.
 
 <p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-4.png"></p>
 
-### 3.5 Event Data Model
-For each of the topics in the eMagiz platform, you can define a message definition. These message definitions are used for Event Processors but also for the Event Catalog where external users can browse the topics.
-
-### 3.6 Event Catalog
-The event catalog allows external users to browse the content for each of the topics where that user has access to. These special type users need to be registered in the eMagiz platform, and upon accessing the eMagiz Portal these users will have a single access to the list of topics and the relevant meta data of that topic.
-
-<p align="center"><img src="../../img/fundamental/fundamental-event-streaming-introduction-5.png"></p>
-
-### 3.7 Kafka Connector for Mendix
-eMagiz has developed a connector for Mendix that allows the production and consumption of messages from/to the Event broker. Please refer to this page to learn more about this: https://marketplace.mendix.com/link/component/118323
-
-### 3.8 Architectural components of Event Streaming in eMagiz
+### 3.6 Architectural components of Event Streaming in eMagiz
 
 A simplied picture below is list to illustrate the overall architecture of Event Streaming in eMagiz. The first picture is the situation where there is a multi-tenant Event Broker and both clients are using Event Processing. 
 
@@ -97,32 +86,31 @@ The picture below shows the situation where clients are using the Event Broker a
 
 <p align="center"><img src="../../img/fundamental/fundamental-event-streaming-architecture-2.png"></p>
 
-#### 3.8.1 Event Broker
+#### 3.6.1 Event Broker
 eMagiz is hosting an Event Broker inside the eMagiz Cloud and is accessible only via the eMagiz platform. All traffic is routed via the eMagiz platform, and is protected 2-way SSL. The Broker holds the specific Kafka based technology around managing topic, Access Control Lists (ACL), users, retention, etc. All components as decribed in the introduction section of this Fundamental. The broker will respond to the requests made from the eMagiz platform such as putting a message on topic and soforth.
 
-#### 3.8.2 eMagiz Platform
-The iPaaS platform provides access point where external users can put their produce and consume requests in. The eMagiz iPaaS portal manages the configuration if the Event Streaming broker via the eMagiz platform. For instance the retention settings are set in the eMagiz iPaas Portal and then effectuated in the Event Broker.
-
-#### 3.8.3 JMS and Event Streaming container
+#### 3.6.2 JMS and Event Streaming container
 In the case where specific flows are deployed for Event Processing, the regular JMS server will control and manage the traffic. The Event Streaming Container will hold the required flows for Event Processors. The Core machine is not accessible from outside the VPC - as usual for the eMagiz core machine.
 
-#### 3.8.4 Users
+#### 3.6.3 Users
 Users will have access to produce and consume messages. Users are managed in User Management sections in the eMagiz Portal. Once configured, the credentials are accessible via the Event Catalog. Users can access the topics via SSL and certificates. The Key and Trust stores are available in the Event Catalog - as well as all the required details of the Event Broker to allow access. Other access methods such as Basic Authentication, SASL like options are not supported to access the Event Broker.
 
 ##### Practice
 
-## 5. Key takeaways
+## 4. Key takeaways
 
 - Event Streaming provides a mean for maximum decoupling of producing and consuming systems
 - Event Streaming is a asynchronous pattern by defaults
 
 ##### Solution
 
-## 6. Suggested Additional Readings
+## 5. Suggested Additional Readings
 
 - https://www.emagiz.com/event-streaming/
 
-## 7. Silent demonstration video
+
+
+## 6. Silent demonstration video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VRGz3z_T3mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
