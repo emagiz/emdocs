@@ -60,6 +60,12 @@ Selecting one of the above options will lead you to an overview similar to the o
 
 In this overview, you can import a definition or create one yourself.
 
+### 3.1 eMagiz datamodels
+
+Above the focus was on the system messages (i.e. the definitions as defined by the external system). Within each of the patterns eMagiz supports (Messaging, API Management, and Event Streaming) we support an eMagiz data model. In these data models you can define how the messages should look like when they pass through the system of eMagiz. When creating a message transformation you always have atleast one eMagiz part that is based on an eMagiz data model. This is needed as you need to transform from the external system to the eMagiz data model for example.
+
+In messaging terms we call this eMagiz data model a CDM for example. Based on the pattern you are implementing the naming can change slightly but the conceptual idea is the same. For more information on the various data models we support for the patterns please check out the suggested additional readings section below.
+
 ##### Practice
 
 ## 4. Assignment
@@ -76,7 +82,11 @@ This assignment can be completed within the (Academy) project that you have crea
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz.
+If you are interested in this topic and want more information on it please read the help text provided by eMagiz. Furthermore check out these links if you want a more in-depth knowledge of the eMagiz data models:
+
+- [API Gateway model](crashcourse-api-gateway-api-data-model.md)
+- [Understanding the eMagiz CDM](crashcourse-messaging-what-is-cdm.md)
+- [Event Streaming data model](intermediate-configuring-event-streaming-data-model.md)
 
 ## 7. Silent demonstration video
 

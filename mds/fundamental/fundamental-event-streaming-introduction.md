@@ -22,7 +22,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 - Required reading time: 10 minutes
 
 ## 1. Prerequisites
-- Completed the crashcourses of eMagiz
+- Some context on Event Streaming will be helpful.
 
 
 ## 2. Key concepts

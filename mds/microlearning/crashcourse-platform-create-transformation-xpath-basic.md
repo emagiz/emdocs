@@ -22,7 +22,7 @@ In other microlearnings, we will discuss the use of XPath **outside** the contex
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: February 9th, 2021
+- Last update: November 8th, 2021
 - Required reading time: 9 minutes
 
 ## 1. Prerequisites
@@ -204,6 +204,10 @@ This assignment can be completed within the (Academy) project that you have crea
 
 If you are interested in this topic and want more information on it please read the help text provided by eMagiz and/or read more information on the following link:
 - https://www.w3schools.com/xml/xpath_intro.asp
+- https://www.tutorialspoint.com/xpath/index.htm
+- https://www.softwaretestinghelp.com/xml-path-language-xpath-tutorial/
+- [XPath - Intermediate](intermediate-create-your-transformations-xpath-intermediate.md)
+- [XPath - Advanced](advanced-create-your-transformations-xpath-advanced.md)
 
 ## 7. Silent demonstration video
 
