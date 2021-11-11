@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">eMagiz Academy Fundamentals</h2>
 		<div class="card-container">
-			<a href="../../docs/fundamental/index_academy_fundamental_emagiz-cloud" class="card card--featured">
+			<a href="../../docs/fundamental/index_academy_fundamental_emagiz-cloud-inner-workings" class="card card--featured">
 				<div class="card__body" style="background: url(../../img/microlearning/academy_index/cloud-management-module.svg) center no-repeat; background-size: 10%;">
 					<h4 class="title">eMagiz Cloud</h4>
 				</div>
@@ -64,7 +64,7 @@
 	</div>
 	<h2 class="title">Fundamentals</h2>
 	<div class="card-container">
-		<a href="../../docs/fundamental/index_academy_fundamental_emagiz-cloud" class="card">
+		<a href="../../docs/fundamental/index_academy_fundamental_emagiz-cloud-inner-workings" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/cloud-management-module.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">eMagiz Cloud</h4>
 			</div>
