@@ -100,19 +100,24 @@ Users will have access to produce and consume messages. Users are managed in Use
 ## 4. Key takeaways
 
 - Event Streaming provides a mean for maximum decoupling of producing and consuming systems
-- Event Streaming is a asynchronous pattern by defaults
+- Event Streaming is a asynchronous pattern by default
+- Event Streaming can be used for large volume events but can als play a role in hybrid integration scenario's
 
 ##### Solution
 
 ## 5. Suggested Additional Readings
 
 - https://www.emagiz.com/event-streaming/
-
+- Crashcourse Event Streaming	:
+- Key Concepts Event Streaming	: https://emagiz.github.io/docs/microlearning/intermediate-key-concepts-emagiz-event-streaming-index
+- Configuring Event Streaming	: https://emagiz.github.io/docs/microlearning/intermediate-configuring-event-streaming-index
+- Event Streaming Connectors	: https://emagiz.github.io/docs/microlearning/intermediate-event-streaming-connectors-index
 
 
 ## 6. Silent demonstration video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VRGz3z_T3mw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="1280" height="720" src="../../vid/fundamental/ES_Fundamental_final.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
