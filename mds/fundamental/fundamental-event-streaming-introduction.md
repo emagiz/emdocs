@@ -117,7 +117,7 @@ Users will have access to produce and consume messages. Users are managed in the
 ## 6. Silent demonstration video
 
 
-<iframe width="1280" height="720" src="../../vid/fundamental/ES_Fundamental_final.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="1280" height="720" src="../../vid/fundamental/fundamental-event-streaming-introduction.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 </main>
