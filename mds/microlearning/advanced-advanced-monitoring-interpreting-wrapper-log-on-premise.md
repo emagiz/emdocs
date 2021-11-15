@@ -15,72 +15,72 @@
 
 # Interpreting wrapper.log on-premise
  
-In some cases, there is a need to listen on a 'custom' queue for data. For example, when retrieving large amounts of data, you might need to place parts of the data on the queue to free up memory to process the complete batch of data. For those (and other) situations, it could be helpful to create 'custom' in-between queues. We need an additional listener on that 'custom' queue to ensure that data will be processed. 
+There is a need to see runtime level logging in cases where it is unclear whether that specific runtime has started up or not. In eMagiz, you won't receive logging if the start-up fails because no established connection can send logging to eMagiz. When this particular runtime runs on-premises, you can see that specific logging on the runtime in the wrapper.log. In this microlearning, we will learn how to find the wrapper log and search within the wrapper log to find the corresponding error and subsequently analyze that error.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: November 1st, 2021
+- Last update: November 15st, 2021
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
-- Intermediate course on Orchestration of data packets
 
 ## 2. Key concepts
-This microlearning centers around listening for data on a custom queue
-With a custom queue, we mean: A queue that is manually defined by an eMagiz user instead of eMagiz itself as a result of an automated process
+This microlearning centers around interpreting the wrapper.log for an on-premise runtime
+With a wrapper.log, we mean: A file that holds start-up and shut down information on a specific runtime
 
-To start listening for data on a custom queue, you need:
+In a wrapper log, you see the following information:
 
-- A JMS message-driven channel adapter within your flow that listens for data on the 'custom' queue
-- The fully qualified name of the 'custom' queue on which to listen
+- Start-up information on JVM level
+- Shutdown information on JVM level
+- Errors on start-up or shutdown
+
 
 ##### Theory
   
-## 3. listening for data on a custom queue
+## 3. Interpreting wrapper.log on-premise
 
-In some cases, there is a need to listen on a 'custom' queue for data. For example, when retrieving large amounts of data, you might need to place parts of the data on the queue to free up memory to process the complete batch of data. For those (and other) situations, it could be helpful to create 'custom' in-between queues. We need an additional listener on that 'custom' queue to ensure that data will be processed. 
+There is a need to see runtime level logging in cases where it is unclear whether that specific runtime has started up or not. In eMagiz, you won't receive logging if the start-up fails because no established connection can send logging to eMagiz. When this particular runtime runs on-premises, you can see that specific logging on the runtime in the wrapper.log. In this microlearning, we will learn how to find the wrapper log and search within the wrapper log to find the corresponding error and subsequently analyze that error.
 
-To start listening for data on a custom queue, you need:
+In a wrapper log, you see the following information:
 
-- A JMS message-driven channel adapter within your flow that listens for data on the 'custom' queue
-- The fully qualified name of the 'custom' queue on which to listen
+- Start-up information on JVM level
+- Shutdown information on JVM level
+- Errors on start-up or shutdown
 
-### 3.1 Setting up the listener
+### 3.1 Where to find the wrapper.log
 
-To set up the listener navigate to the flow in Create in which you want to listen for messages on the 'custom' queue and enter "Start Editing" mode. After doing so, add the JMS message-driven channel adapter to the canvas by dragging it on the canvas. Subsequently, double-click on the component to open it so you can edit it.
+Before we can interpret the wrapper.log, the first action will be to find the wrapper.log. The wrapper.log is available within the data folder of each eMagiz runtime that is running on-premises. To see it, you first need to know the location where you saved and unpacked the runtime zips. Suppose you open the runtime you want to interpret the wrapper log and open the data folder. Within the data folder, there is a folder called log. You will see a file called wrapper which can be opened with a tool such as Notepad++.
 
-<p align="center"><img src="../../img/microlearning/advanced-orchestration-of-data-packets-listening-for-data-on-a-custom-queue--jms-message-listener-empty.png"></p>
+<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-wrapper-log-on-premise--wrapper-log-location.png"></p>
 
-Here, you need to define the channel you want to place the messages you receive, the connection factory, and the queue name you want to listen on. Note that when there is no bus-connection-plain support object available within the context of your flow, copy + paste this component from another flow in which it is available.
+### 3.2 Find additional information
 
-<p align="center"><img src="../../img/microlearning/advanced-orchestration-of-data-packets-listening-for-data-on-a-custom-queue--jms-message-listener-filled-in.png"></p>
+When you open the wrapper.log file, you see all JVM-related logging. Here, you can also see whether things have broken down when starting the JVM or shutting it down. With the help of this information, you can quickly determine whether the start-up or shutdown process is not working as expected. Having this information will be the trigger to see, per the relevant stakeholders, what to do to fix these problems in a structured manner.
 
-The moment you are satisfied, you can press Save on the component. Now you have successfully ensured that you listen for messages on a 'custom' queue.
+One way to do so would be to stop the runtime and delete the data folder without deleting the h2 folder. That would initiate a clean restart of the runtime to alleviate the problems. In case of structural issues, you should dive into the logging and analyze the issues in more detail.
 
 ##### Practice
 
 ## 4. Assignment
 
-Set up functionality to listen on a 'custom' queue from an eMagiz flow. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+Run your own Academy project on your laptop (on-premise), so you can experiment a bit with analyzing the karaf.log on-premise. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- A JMS message-driven channel adapter within your flow that listens for data on the 'custom' queue
-- The fully qualified name of the 'custom' queue on which to listen
-- When the support object named bus-connection-plain is missing, please add it via a copy+paste action
+- The karaf.log can be found within the folder called log under the folder data
+- You can search the log with the help of tools such as Notepad++
+- By looking at the timestamp in the eMagiz Manage Log, you can run a focused search
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information, please read the release notes provided by eMagiz.
+No suggested additional readings for this microlearning.
 
 ## 7. Silent demonstration video
 
-This video demonstrates how you could have handled the assignment and gives you some context on what you have just learned.
-
-<iframe width="1280" height="720" src="../../vid/microlearning/advanced-orchestration-of-data-packets-listening-for-data-on-a-custom-queue.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+As this is a more theoretical microlearning, we have no video for this.
 
 
 </div>
