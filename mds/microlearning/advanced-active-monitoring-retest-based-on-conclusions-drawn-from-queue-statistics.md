@@ -13,83 +13,65 @@
 
 ##### Intro
 
-# Interpreting karaf.log on-premise
- 
-There is a need to see the complete stack trace logged when something goes wrong on runtime in some cases. In eMagiz, only the top-level information is shown and not always the entire stack trace. When this particular runtime runs on-premises, you can see the complete logging on the runtime in the karaf.log. In this microlearning, we will learn how to find the karaf log and search within the karaf log to find the corresponding error and subsequently analyze that error. 
+# Retest based on received error message
 
-Should you have any questions, please get in touch with academy@emagiz.com.
+In our previous microlearning, we learned about determining the cause of an error message. In that microlearning, we learned that with the help given by eMagiz you as a user can determine the cause of an error message. However to validate your assumption you need to test your change before announcing to the world the error has been fixed. In this microlearning, we will focus on the part of retesting your flow(s) to validate that your change did indeed solve the error. We will use the flow testing functionality to perform these tests.
 
-- Last update: November 15th, 2021
-- Required reading time: 5 minutes
+Should you have any questions, please contact academy@emagiz.com.
+
+- Last update: July 22th, 2021
+- Required reading time: 4 minutes
 
 ## 1. Prerequisites
-- Advanced knowledge of the eMagiz platform
+- Basic knowledge of the eMagiz platform
+- Basic knowledge of cloud management
 
 ## 2. Key concepts
-This microlearning centers around interpreting the karaf.log for an on-premise runtime
-With a karaf.log, we mean: A file that holds the logging related to that specific runtime
+This microlearning centers around retesting based on received error message
+With retesting, we mean: Testing after a change has occurred whether the change in question resolves the given error.
 
-In a karaf log, you see (among others) the following information:
+- Retesting is a way to validate your assumptions
+- If you have multiple scenarios that could happen within the context of your flow ensure to test them all for regression
+- By retesting you deliver better quality to the client
 
-- Start and stop information of flows or the complete runtime
-- Manual logging you defined on flows running within that runtime
-- Connection logging indicates whether there are connection problems
-- Errors when something in an entry breaks down
 
 ##### Theory
-  
-## 3. Interpreting karaf.log on-premise
 
-There is a need to see the complete stack trace logged when something goes wrong on runtime in some cases. In eMagiz, only the top-level information is shown and not always the entire stack trace. When this particular runtime runs on-premises, you can see the complete logging on the runtime in the karaf.log. In this microlearning, we will learn how to find the karaf log and search within the karaf log to find the corresponding error and subsequently analyze that error. 
+## 3. Retest based on received error message
 
-In a karaf log, you see (among others) the following information:
+In our previous microlearning, we learned about determining the cause of an error message. In that microlearning, we learned that with the help given by eMagiz you as a user can determine the cause of an error message. However to validate your assumption you need to test your change before announcing to the world the error has been fixed. In this microlearning, we will focus on the part of retesting your flow(s) to validate that your change did indeed solve the error. We will use the flow testing functionality to perform these tests.
 
-- Start and stop information of flows or the complete runtime
-- Manual logging you defined on flows running within that runtime
-- Connection logging indicates whether there are connection problems
-- Errors when something in an entry breaks down
+In our previous microlearning, we fixed what we thought caused the issue. Now we will retest the flow(s) linked to the error to see if we were right. To do so navigate to the Create phase and open the flow in which you made a change. Open the test canvas within the flow designer. Here we adjust the expected message to state that we expect whatever value is in Onderdeel to end up in Component. After we have made the adjustment we run the flow test again to see whether or not our change ensures that the Component attribute is filled in. For detailed information on flow testing please check out the Crash Course Platform. As a result, we expect to see a blue background.
 
-### 3.1 Where to find the karaf.log
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message--result-retest.png"></p>
 
-Before we can interpret the karaf.log, the first action will be to find the karaf.log. The karaf.log is available within the data folder of each eMagiz runtime that is running on-premises. To see it, you first need to know the location where you saved and unpacked the runtime zips. Suppose you open the runtime for which you want to interpret the karaf log and open the data folder. Within the data folder, there is a folder called log. In there, you will see a file called karaf which can be opened with a tool such as Notepad++.
+Now that we now we have a successful test we should use the expected message on the CDM level as input for a second test on the offramp level to see whether this message will pass the validation. Just so we can safely say we checked everything. To do so simply create a new test case in which you use an existing file as input for the starting point of your flow. For detailed information on flow testing please check out the Crash Course Platform. This one you should also run to see the results. Once again you are aiming for a blue background or at least that the message passes the validation component.
 
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--karaf-log-location.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-active-monitoring-retest-based-on-received-error-message--result-retest-offramp-test.png"></p>
 
-When you open the karaf.log file, you will see all logging that took place on that runtime. Note that when there is an extreme amount of logging, new karaf.log files are created. The first one is without a suffix and each of the following with a suffix (1,2,3,4) up to 9. When you exceed, that maximum eMagiz will start wiping the oldest logging to prevent problems with regards to disk size.
-
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--karaf-log-multiple-logs.png"></p>
-
-### 3.2 Find additional information
-
-Now that we know where to find the karaf.log, the next step is to analyze the karaf.log. The most logical scenario to arrive here is when you saw an error in the eMagiz Manage phase that could not be explained without looking at the complete stack trace. By opening and analyzing the karaf.log, you can find the whole stack trace to assist in performing your RCA on the problem at hand. Below you see an error in eMagiz for illustrative purposes.
-
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--error-in-the-log-manage.png"></p>
-
-As you can see, we have the timestamp (in UTC) of when the logging was triggered. Having this information helps us to quickly locate the corresponding logging around that time by searching Notepad++. That way, you can find the related error easily to read the stack trace and interpret the error in more detail.
-
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--search-error-in-karaf-log.png"></p>
+Now that we have passed the validation we can safely assume that our fix worked. The last thing to do is to give the flow in which we changed something a new version so we can deploy it to the proper environment(s). To do so simply navigate to the flow in question and ensure that a new version is created.
 
 ##### Practice
 
 ## 4. Assignment
 
-Run your own Academy project on your laptop (on-premise), so you can experiment a bit with analyzing the karaf.log on-premise. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+Retest at least one flow within your (Academy) for which you have analyzed the cause in the previous microlearning. Subsequently provide a new version of the flow to Deploy.
 
 ## 5. Key takeaways
 
-- The karaf.log can be found within the folder called log under the folder data
-- You can search the log with the help of tools such as Notepad++
-- By looking at the timestamp in the eMagiz Manage Log, you can run a focused search
+- Retesting is a way to validate your assumptions
+- If you have multiple scenarios that could happen within the context of your flow ensure to test them all for regression
+- By retesting you deliver better quality to the client
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-No suggested additional readings for this microlearning.
+There are no suggested additional readings on this topic.
 
 ## 7. Silent demonstration video
 
-As this is a more theoretical microlearning, we have no video for this
+As this is a more theoretical microlearning, we have no video for this.
 
 </div>
 </main>
