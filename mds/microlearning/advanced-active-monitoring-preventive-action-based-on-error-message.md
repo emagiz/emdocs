@@ -13,9 +13,9 @@
 
 ##### Intro
 
-# Interpreting karaf.log on-premise
+# Preventive action based on error message
  
-There is a need to see the complete stack trace logged when something goes wrong on runtime in some cases. In eMagiz, only the top-level information is shown and not always the entire stack trace. When this particular runtime runs on-premises, you can see the complete logging on the runtime in the karaf.log. In this microlearning, we will learn how to find the karaf log and search within the karaf log to find the corresponding error and subsequently analyze that error. 
+In an earlier [microlearning](intermediate-active-monitoring-determining-cause-of-error-message.md), we discussed determining the cause of a single error message. In that microlearning, we focused on the RCA of one single error message. However, there might be situations in which there is not one message that goes wrong but many error messages. Only solving them on an individual basis might not be enough. In those cases, you want to think about specific preventive actions that could be taken to prevent those mistakes from happening again. One example is that a complete integration has undergone changes, but only part of the solution is deployed in a specific environment. This will undoubtedly lead to loads of errors in which one common, preventable mistake is the cause.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
@@ -24,62 +24,49 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
+- Errors in the log that can be analyzed
 
 ## 2. Key concepts
-This microlearning centers around interpreting the karaf.log for an on-premise runtime
-With a karaf.log, we mean: A file that holds the logging related to that specific runtime
+This microlearning centers around preventive action based on error message
+By preventative measure, we mean: Figuring out what was responsible for generating all those errors and determining what could solve that problem.
 
-In a karaf log, you see (among others) the following information:
-
-- Start and stop information of flows or the complete runtime
-- Manual logging you defined on flows running within that runtime
-- Connection logging indicates whether there are connection problems
-- Errors when something in an entry breaks down
+- Search for a common denominator that explains (all) errors
+- Determine whether the fix is platform or process-related
+- Implement the fix to improve your eMagiz solution further
 
 ##### Theory
   
-## 3. Interpreting karaf.log on-premise
+## 3. Preventive action based on error message
 
-There is a need to see the complete stack trace logged when something goes wrong on runtime in some cases. In eMagiz, only the top-level information is shown and not always the entire stack trace. When this particular runtime runs on-premises, you can see the complete logging on the runtime in the karaf.log. In this microlearning, we will learn how to find the karaf log and search within the karaf log to find the corresponding error and subsequently analyze that error. 
+In an earlier [microlearning](intermediate-active-monitoring-determining-cause-of-error-message.md), we discussed determining the cause of a single error message. In that microlearning, we focused on the RCA of one single error message. However, there might be situations in which there is not one message that goes wrong but many error messages. Only solving them on an individual basis might not be enough. In those cases, you want to think about specific preventive actions that could be taken to prevent those mistakes from happening again. One example is that a complete integration has undergone changes, but only part of the solution is deployed in a specific environment. This will undoubtedly lead to loads of errors in which one common, preventable mistake is the cause.
 
-In a karaf log, you see (among others) the following information:
+- Search for a common denominator that explains (all) errors
+- Determine whether the fix is platform or process-related
+- Implement the fix to improve your eMagiz solution further
 
-- Start and stop information of flows or the complete runtime
-- Manual logging you defined on flows running within that runtime
-- Connection logging indicates whether there are connection problems
-- Errors when something in an entry breaks down
+In the example described above, the fault most likely lies within the process itself. Several individuals worked on the integration within the team but failed to communicate correctly, resulting in half a solution in that particular environment. As a result, there was a mismatch between both parts of the integration in eMagiz. This led to errors in the platform. If you would perform a retest based on one error message, you would probably conclude that in Create, the solution works as expected when running a flow test.
 
-### 3.1 Where to find the karaf.log
+That realization should lead you to conclude that Create is not the same as what is currently running in that environment. That, in turn, should be a trigger to start asking questions, to yourself and others, of what went wrong leading up to this mismatch.
 
-Before we can interpret the karaf.log, the first action will be to find the karaf.log. The karaf.log is available within the data folder of each eMagiz runtime that is running on-premises. To see it, you first need to know the location where you saved and unpacked the runtime zips. Suppose you open the runtime for which you want to interpret the karaf log and open the data folder. Within the data folder, there is a folder called log. In there, you will see a file called karaf which can be opened with a tool such as Notepad++.
+In other cases, the deployment resulted in deploying the correct version of everything within the integration. However, as a result, there are still errors that are being thrown on the environment. Once again, the event that leads to the problems is a deployment. However, the cause of the errors is most likely quite different. By first checking the Manage Dashboard, you can quickly see whether all (or at least most) errors are raised within a single flow (or comparable flows). You can already learn a lot about the underlying cause of the problem, especially if you start to zoom in to verify if the same component within that flow raises all the errors. Having that information is critical in determining whether multiple mistakes have the same cause or not.
 
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--karaf-log-location.png"></p>
+The underlying cause could be that two individuals have tested their solution to a tee, determining that their solution works. However, they failed to test whether the changed process A still works against the changed process B. As a result, one of the processes needs a change in Create to align it with the other process to make the complete integration work again. After executing that change, a second deployment is necessary to test if this resolves the previously raised errors.
 
-When you open the karaf.log file, you will see all logging that took place on that runtime. Note that when there is an extreme amount of logging, new karaf.log files are created. The first one is without a suffix and each of the following with a suffix (1,2,3,4) up to 9. When you exceed, that maximum eMagiz will start wiping the oldest logging to prevent problems with regards to disk size.
+As you can see, due to the dependencies between several flows and even parts of flows that ultimately ensure that data is sent from A to B, finding the root cause of your error messages can be challenging. However, doing nothing about these errors is no option as that would hurt the quality of the solution you deliver.
 
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--karaf-log-multiple-logs.png"></p>
-
-### 3.2 Find additional information
-
-Now that we know where to find the karaf.log, the next step is to analyze the karaf.log. The most logical scenario to arrive here is when you saw an error in the eMagiz Manage phase that could not be explained without looking at the complete stack trace. By opening and analyzing the karaf.log, you can find the whole stack trace to assist in performing your RCA on the problem at hand. Below you see an error in eMagiz for illustrative purposes.
-
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--error-in-the-log-manage.png"></p>
-
-As you can see, we have the timestamp (in UTC) of when the logging was triggered. Having this information helps us to quickly locate the corresponding logging around that time by searching Notepad++. That way, you can find the related error easily to read the stack trace and interpret the error in more detail.
-
-<p align="center"><img src="../../img/microlearning/advanced-advanced-monitoring-interpreting-karaf-log-on-premise--search-error-in-karaf-log.png"></p>
+Hopefully, this microlearning has made the thought process you can follow to analyze large volumes of error messages somewhat more clear to you.
 
 ##### Practice
 
 ## 4. Assignment
 
-Run your own Academy project on your laptop (on-premise), so you can experiment a bit with analyzing the karaf.log on-premise. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
+Search for problems within your model and see if you can find out a common problem that causes all those problems. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
 
 ## 5. Key takeaways
 
-- The karaf.log can be found within the folder called log under the folder data
-- You can search the log with the help of tools such as Notepad++
-- By looking at the timestamp in the eMagiz Manage Log, you can run a focused search
+- Search for a common denominator that explains (all) errors
+- Determine whether the fix is platform or process-related
+- Implement the fix to improve your eMagiz solution further
 
 ##### Solution
 
@@ -89,7 +76,7 @@ No suggested additional readings for this microlearning.
 
 ## 7. Silent demonstration video
 
-As this is a more theoretical microlearning, we have no video for this
+As this is a more theoretical microlearning, we have no video for this.
 
 </div>
 </main>
