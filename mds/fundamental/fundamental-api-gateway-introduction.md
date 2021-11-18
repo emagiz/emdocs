@@ -98,6 +98,8 @@ A simplified picture below is a list to illustrate the overall architecture of A
 
 ## 6. Silent demonstration video
 
+<iframe width="1280" height="720" src="../../vid/fundamental/APIGW_Fundamental.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 </div>
 </main>
