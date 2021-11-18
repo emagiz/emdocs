@@ -32,7 +32,7 @@ With a custom queue, we mean: A queue that is manually defined by an eMagiz user
 
 To send data to a custom queue, you need:
 
-- A JMS outbound channel adapter within your flow that listens for data on the 'custom' queue
+- A JMS outbound channel adapter within your flow that sends data to the 'custom' queue
 - The fully qualified name of the 'custom' queue on which to listen
 
 ##### Theory
@@ -43,7 +43,7 @@ In some cases, there is a need to listen on a 'custom' queue for data. For examp
 
 To send data to a custom queue, you need:
 
-- A JMS outbound channel adapter within your flow that listens for data on the 'custom' queue
+- A JMS outbound channel adapter within your flow that sends data to the 'custom' queue
 - The fully qualified name of the 'custom' queue on which to listen
 
 ### 3.1 Setting up the outbound channel adapter
@@ -66,7 +66,7 @@ Set up functionality to send messages to a 'custom' queue from an eMagiz flow. T
 
 ## 5. Key takeaways
 
-- A JMS outbound channel adapter within your flow that listens for data on the 'custom' queue
+- A JMS outbound channel adapter within your flow that sends data to the 'custom' queue
 - The fully qualified name of the 'custom' queue on which to listen
 
 ##### Solution
