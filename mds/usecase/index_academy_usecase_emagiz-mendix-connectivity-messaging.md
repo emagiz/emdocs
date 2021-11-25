@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">eMagiz Use Case - Lifecycle Management</h2>
+	<h2 class="title">eMagiz Use Case - eMagiz Mendix Connectivity Messaging</h2>
     <p>
       In this course, you will find the collection of the relevant Microlearnings that you can refer to understand all the relevant items around setting up the connection between eMagiz and Mendix within the Messaging pattern. This context of eMagiz refers to using the eMagiz Mendix connector available in the Mendix Marketplace (and in the portal) to exchange data via topics between eMagiz and Mendix. Note that each exit flow connecting eMagiz to Mendix holds a detailed description of all the appropriate steps needed to set up the connection between eMagiz and Mendix while using the latest eMagiz Mendix module (5.0.0).
         </br></br>
