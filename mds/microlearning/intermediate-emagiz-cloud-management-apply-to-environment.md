@@ -47,27 +47,27 @@ The Apply to environment functionality gives you:
 
 Below we have categorized each action to see whether they have a direct effect on the eMagiz Cloud or an Indirect effect. This is to give context per action what is the consequence of your action.
 
-| <p align="center">**Direct Effect**</p>| <p align="center">**Indirect Effect**</p>|
-| ------ | ------ |
-| Restart Runtime (Not JMS) | Add Route |
-| Restart Runtime (JMS) | Update Route |
-| Reset Runtime (Not JMS) | Delete Route |
-| Reset Runtime (JMS) | Add Certificate |
-| Restart Runtime (Not JMS) | Update Certificate |
-| Restart Connector Machine | Delete Certificate |
-| Restart Core Machine | Add runtime to connector machine |
-| Stop Connector Machine | Add runtime to core machine |
-| Stop Core Machine | Remove runtime from connector machine |
-| Start Connector Machine | Remove runtime from core machine |
-| Start Core Machine | Update memory settings runtime (not JMS) |
-| Wake up Cloud Slot | Update memory settings runtime (JMS) |
-| Put Cloud Slot to sleep | Change Cloud Template |
-| Clean Store | |
-| Upgrade Cloud Slot* | |
+| <p align="center">**Direct Effect**</p>| <p align="center">**Indirect Effect**</p>
+| ------ | ------
+| Restart Runtime (Not JMS) | Add Route
+| Restart Runtime (JMS) | Update Route
+| Reset Runtime (Not JMS) | Delete Route
+| Reset Runtime (JMS) | Add Certificate
+| Restart Runtime (Not JMS) | Update Certificate
+| Restart Connector Machine | Delete Certificate
+| Restart Core Machine | Add runtime to connector machine
+| Stop Connector Machine | Add runtime to core machine
+| Stop Core Machine | Remove runtime from connector machine
+| Start Connector Machine | Remove runtime from core machine
+| Start Core Machine | Update memory settings runtime (not JMS)
+| Wake up Cloud Slot | Update memory settings runtime (JMS)
+| Put Cloud Slot to sleep | Change Cloud Template
+| Clean Store |
+| Upgrade Cloud Slot* |
 
 *Note that the upgrade of the cloud slot can be planned for a later moment in time.
 
-So in short when you execute one (or more) actions on Deploy Architecture that have an indirect effect you need to press Apply to Environment to actualize the changes within the eMagiz Cloud. Note that each action, whether it is direct or indirect, will cause a reaction and subsequent change within the eMagiz Cloud. So be cautious about changing things too many times over.
+So, in short, when you execute one (or more) actions on Deploy Architecture that have an indirect effect, you need to press Apply to Environment to actualize the changes within the eMagiz Cloud. Note that each move, whether it is direct or indirect, will cause a reaction and subsequent change within the eMagiz Cloud. So be cautious about changing things too many times over. Make sure you are especially careful when using custom folders on runtime level, as they could be deleted and recreated in cases where the machine is recreated. To safeguard yourself against this, place the folder either inside the data folder or directly on efs. Furthermore, we advise stopping the processes that have such custom folders before executing the change. This is especially relevant in the Production environment.
 
 ##### Practice
 
