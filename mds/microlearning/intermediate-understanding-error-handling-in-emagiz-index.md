@@ -44,7 +44,7 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-messaging-synchronous" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-understanding-error-handling-in-emagiz-event-streaming" class="strip__link">
             <label for="" class="strip__label">
                 <span>36</span>
                  Event Streaming

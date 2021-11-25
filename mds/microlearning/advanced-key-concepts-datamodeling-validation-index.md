@@ -6,14 +6,13 @@
        In this course, we will focus on a few more concepts in modeling your data properly.
         </br></br>
         - Total time: between 5 and 10 minutes	
-
         </br>
         - Last updated - November 2021
     </p>
     <h3 class="title">Micro-learnings</h3>
     <ul class="strip-container">
 		<li class="strip">
-			<a href="../../docs/microlearning/advanced-cloudmanagement-determine-impact-cloudtemplates" class="strip__link">
+			<a href="../../docs/microlearning/advanced-key-concepts-datamodeling-validation-edi" class="strip__link">
 				<label for="" class="strip__label">
 					<span>72</span>
 					Understanding EDI modeling in the context of eMagiz

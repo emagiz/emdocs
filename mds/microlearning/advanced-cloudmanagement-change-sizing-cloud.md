@@ -25,7 +25,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
 - Completed the relevant microlearnings around Cloud Management till advanced
-- Read the microlearning around the determing the required size of a machine in microlearning https://emagiz.github.io/docs/microlearning/expert-solution-architecture-determining-needed-memory#3-determining-needed-memory
+- Read the microlearning around the determing the required size of a machine in this [microlearning](expert-solution-architecture-determining-needed-memory.md)
 
 
 ## 2. Key concepts

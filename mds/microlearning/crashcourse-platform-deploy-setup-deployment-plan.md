@@ -41,7 +41,7 @@ The Deployment plan is defined in the Deployment Plan section under Deploy. Each
 
 Below is a screenshot of a very basic Deployment plan. In the next section, we'll take a look at the options available for configuration. These are referred to as steps and can be added with the button New as can be seen below.
 
-<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-setup-deployment-plan-pic1.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-setup-deployment-plan--default-deployment-plan.png"></p>
 
 
 ### 3.1 Enable or disable triggers

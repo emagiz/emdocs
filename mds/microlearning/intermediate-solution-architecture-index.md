@@ -64,7 +64,7 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/intermediate-solution-architecture-understanding-design-architecture" class="strip__link">
+            <a href="../../docs/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows" class="strip__link">
             <label for="" class="strip__label">
                 <span>21</span>
                 Edit memory for on-premise runtime (Windows)

@@ -7,7 +7,7 @@ In the sections below, you will find some online documents that are relevant for
 | - [Migration Path - Root cloud to AWS Cloud](migrate-root2aws.md)|- [eMagiz Security Guide](security-guide.md) |- [Daily monitoring with eMagiz](daily-monitoring.md) |
 | - [Migration Path - Job Dashboard Cleanup](migration-path-job-dashboard-cleanup.md) | - [Community Management](community-management.md)| - [End to End testing in eMagiz](end2end-testing.md)|
 | - [Migration Path - AWS Redshift Refresh](migration-path-aws-redshift-refresh.md) |- [Best practices for eMagiz Mendix Connector](Bestpractices-emagizmendix-connector.md) | - [Recovery Guide](recovery-guide.md) |
-| | - [LCM - Cross Check Integration Model](life-cycle-management.md)| |
+| - [Migration Path - eMagiz Mendix Connector 4.2.0 to 5.0.0](migration-path-emagiz-mendix-connector-4.2.0-to-5.0.0.md) | - [LCM - Cross Check Integration Model](life-cycle-management.md)| |
 | | - [Adding MFA to your account](add-mfa-userlevel.md)| |
 | | - [Best practices for SFTP](sftp-best-practice.md)| |
 | | - [Debugging guidelines](debugging-guidelines.md)| |

@@ -60,7 +60,7 @@
         </a>
         </li>
         <li class="strip">
-            <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart--or-stop-machine" class="strip__link">
+            <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart-or-stop-machine" class="strip__link">
             <label for="" class="strip__label">
                 <span>6</span>
                 (Re)start or stop machine

@@ -37,20 +37,20 @@ Key aspects of the eMagiz Mendix Connector:
 - The goal of the module is to simplify the connection between Mendix and eMagiz and therefore enhance the speed of development and reduce the risks of problems
 - The Mendix module is developed and maintained by eMagiz
 - As of Mendix 8 the inner workings of the module have changed
-- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of the latest version 4.2.0)
+- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of version 4.2.0)
 
 ##### Theory
 
 ## 3. What is an eMagiz Mendix Connector
 
-The eMagiz Mendix Connector is a Mendix module that is developed and maintained by eMagiz that simplifies connect a Mendix application to an eMagiz project for data traffic between both systems.
+The eMagiz Mendix Connector is a Mendix module that is developed and maintained by eMagiz that simplifies connecting a Mendix application to an eMagiz project for data traffic between both systems.
 
 Key aspects of the eMagiz Mendix Connector:
 
 - The goal of the module is to simplify the connection between Mendix and eMagiz and therefore enhance the speed of development and reduce the risks of problems
 - The Mendix module is developed and maintained by eMagiz
 - As of Mendix 8 the inner workings of the module have changed
-- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of the latest version 4.2.0)
+- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of version 4.2.0)
 
 The eMagiz Mendix Connector makes use of Java Actions (Mendix 8 and up) or a web service layer (Mendix 7 and down) to connect Mendix to eMagiz and vice versa. We have changed the connection method to create a process that is better maintainable and easier to realize.
 
@@ -69,7 +69,7 @@ Key aspects of the eMagiz Mendix Connector:
 - The goal of the module is to simplify the connection between Mendix and eMagiz and therefore enhance the speed of development and reduce the risks of problems
 - The Mendix module is developed and maintained by eMagiz
 - As of Mendix 8 the inner workings of the module have changed
-- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of the latest version 4.2.0)
+- No manual actions in Mendix via a Mendix screen are necessary to control the eMagiz parts (as of version 4.2.0)
 
 ##### Solution
 

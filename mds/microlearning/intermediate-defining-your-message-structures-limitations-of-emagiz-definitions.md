@@ -35,7 +35,7 @@ Identifying and knowing about these restrictions will improve your decision maki
 - Imported files cannot be larger than 1MB 
 - xs:all statements cannot be represented in the data model.
 - Iterations (maxOccurs) over a threshold of 50 are not accepted
-- Cross reference between entities that could lead to an invite loop are not accepted
+- Cross reference between entities that could lead to an infinite loop are not accepted
 
 ##### Theory
 
@@ -48,7 +48,7 @@ Identifying and knowing about these restrictions will improve your decision maki
 - Imported files cannot be larger than 1MB 
 - xs:all statements cannot be represented in the data model
 - Iterations (maxOccurs) over a threshold of 50 are not accepted
-- Cross reference between entities that could lead to an invite loop are not accepted
+- Cross reference between entities that could lead to an infinite loop are not accepted
 
 Below we will specify per limiations what this exactly means
 
@@ -69,9 +69,9 @@ In these cases you will have to change your definition to state xs:sequence ever
 
 To prevent weird results when it comes to the creation of data models we do not accept maxOccurs above 50. To succesfully import your definition you should change the maxOccurs setting to unbounded. This way eMagiz will succesfully import the definition. As of today we have never encountered a practical case where this caused issues.
 
-### 3.4 Cross reference between entities that could lead to an invite loop are not accepted
+### 3.4 Cross reference between entities that could lead to an infinite loop are not accepted
 
-In some cases we see definitions in which entities keep referecing each other. This could cause an invite loop to occur when trying to build up the correct structure of your system message. Therefore we do an initial check when importing your file to safeguard ourselves against creating invite loops in our portal that will in the end break the eMagiz portal.
+In some cases we see definitions in which entities keep referecing each other. This could cause an infinite loop to occur when trying to build up the correct structure of your system message. Therefore we do an initial check when importing your file to safeguard ourselves against creating infinite loops in our portal that will in the end break the eMagiz portal.
 
 ##### Practice
 
@@ -87,7 +87,7 @@ Identifying and knowing about these restrictions will improve your decision maki
 - Imported files cannot be larger than 1MB 
 - xs:all statements cannot be represented in the data model
 - Iterations (maxOccurs) over a threshold of 50 are not accepted
-- Cross reference between entities that could lead to an invite loop are not accepted
+- Cross reference between entities that could lead to an infinite loop are not accepted
 
 ##### Solution
 

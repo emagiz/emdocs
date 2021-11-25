@@ -88,7 +88,7 @@ There is no assignment for this microlearning other than reviewing the videos fr
 
 ## 6. Suggested Additional Readings
 
-We recommend to read the link to the eMagiz website and see the features of the platform in more detail.
+We recommend to read the link below to the eMagiz website and see the features of the platform in more detail.
 
 [Features of the eMagiz platform](https://www.emagiz.com/features-of-the-platform/)
 

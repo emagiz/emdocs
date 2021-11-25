@@ -114,7 +114,7 @@ Contains the Mendix module that allows the Mendix project to interact with the e
 
 Note that you can download the available version under Deploy -> On-premises -> Runtime Downloads
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-explaining-platform-components--runtime-downloads.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-explaining-platform-components--runtime-downloads-emc.png"></p>
 
 #### 3.5.1 Supported Versions
 
@@ -128,7 +128,7 @@ Contains the Mendix module that allows the Mendix project to interact with the e
 
 Note that you can download the available version under Deploy -> On-premises -> Runtime Downloads
 
-<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-explaining-platform-components--runtime-downloads.png"></p>
+<p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-explaining-platform-components--runtime-downloads-emk.png"></p>
 
 #### 3.6.1 Supported Versions
 
