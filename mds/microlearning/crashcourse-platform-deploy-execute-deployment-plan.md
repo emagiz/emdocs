@@ -13,7 +13,7 @@
 
 ##### Intro
 
-# Actualize properties
+# Deploy a release
 
 In this microlearning, we will focus on the situation where an existing property needs a change of value and how to put this value into effect in your environment.
 
