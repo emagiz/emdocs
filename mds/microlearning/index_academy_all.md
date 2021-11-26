@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">eMagiz Academy</h2>
+	<h2 class="title">eMagiz Academy Microlearnings</h2>
 		<p>
 		<font size="4" face="verdana" color="black">
        Welcome to the eMagiz Academy section. In this section you will find all the relevant learnings for eMagiz. Below the three main entry points which will assist you to find the right content for your work. 

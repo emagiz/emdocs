@@ -114,7 +114,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-platform-intro-technrequirements" class="strip__link">
                 <label for="" class="strip__label">
-                <span>0</span>
+                <span>1</span>
                 Getting the technical requirements
             </label>
             <div class="strip__attribute">
