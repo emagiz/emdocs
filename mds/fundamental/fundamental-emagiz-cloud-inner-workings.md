@@ -69,7 +69,7 @@ Moving over to the last portion of the overview, we see some of the features we 
 
 Please check out the suggested additional readings section for applied knowledge on how you can control the eMagiz Cloud from the portal and utilize some of these functionalities from the eMagiz portal.
 
-### 3.3 Single lanes vs. Double Lane
+### 3.3 Single lane vs. Double Lane
 
 In the previous overview, we showed a single-lane setup. In the outline below, we deliver what we call a double lane setup. The most fundamental difference between the two is that you have a mirror image of each piece of functionality you are running with the double lane. Having a mirror image of everything reduces the downtime of the environment during maintenance and unexpected outings of your environment. 
 

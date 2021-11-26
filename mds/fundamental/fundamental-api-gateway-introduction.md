@@ -71,7 +71,7 @@ External application users can discover the operations via an online Portal - th
 
 ### 3.6 Architectural components
 
-A simplified picture below is a list to illustrate the overall architecture of API Gateway in the eMagiz Cloud.  
+A simplified picture below illustrates the overall architecture of API Gateway in the eMagiz Cloud.  
 
 <p align="center"><img src="../../img/fundamental/fundamental-api-gateway-introduction-6.png"></p>
 
