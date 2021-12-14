@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-keyconcepts-eventstreaming-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-keyconcepts-apigateway-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -13,7 +13,7 @@
 
 ##### Intro
 
-# Considerations for Event Streaming or Messaging
+# Considerations for API Gateway or Messaging
 
 In this microlearning we'll take a moment to discuss several considerations for making the right choice between the two patterns
 
@@ -22,15 +22,16 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 - Last update: December 2021
 - Required reading time: 10 minutes
 
+
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
-- Completed the relevant microlearnings Key Concepts Event Streaming (level crash course to intermediate)
+- Completed the relevant microlearnings Key Concepts API Gateway (level crash course to intermediate)
 - Completed the relevant microlearnings Key Concepts Messaging (level crash course to intermediate)
 
 ## 2. Key concepts
 Please refer to the following Fundamentals to learn the key concepts of both patterns
 
-- [eMagiz Event Streaming](../../docs/fundamental/fundamental-event-streaming-introduction)
+- [eMagiz API Gateway](../../docs/fundamental/fundamental-api-gateway-introduction)
 - [eMagiz Messaging](../../docs/fundamental/fundamental-event-streaming-introduction)
 
 ##### Theory

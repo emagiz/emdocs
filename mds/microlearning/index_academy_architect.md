@@ -681,6 +681,25 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/advanced-keyconcepts-apigateway-index.md" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/api-management.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Key Concepts API Gateway</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Advanced</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/advanced-lifecycle-management-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management</h4>
