@@ -13,9 +13,8 @@
 
 ##### Intro
 
-# What data is stored on runtime level
- 
-A vital part of the eMagiz architecture is the runtime. The runtime holds all flows related to a particular process or system. Without runtimes to run your flows on, there would be no processing of data. In this microlearning, we will zoom in on the runtime level to discern what data is stored at the runtime level.
+# Monitoring consumer lag in Event Streaming
+In your Event streaming solution, the role of the consumers is important in several ways. One of them is to understand whether the consumer is actually consuming the messages on the topic or whether the consumer is falling behind in consumption.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
@@ -24,26 +23,35 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 
 ## 1. Prerequisites
 - Advanced knowledge of the eMagiz platform
+- Complete relevant Event Streaming microlearnings from Crash course to Intermediate
 
 ## 2. Key concepts
+Consumer lag indicates the lag between Kafka producers and consumers. If the rate of production of data far exceeds the rate at which it is getting consumed, consumer groups will exhibit lag.
 
+It can be understood very succinctly as the gap between the difference between the latest offset and consumer offset. In general, enterprises talk about Kafka but they are referring to the physical Kafka brokers - a server either physical or container that runs Kafka. Brokers are the physical repositories of logs that store and serve Kafka messages. Data storage inside a Kafka broker is done through topics. Topics are divided into partitions and brokers write data into specific partitions. As the broker writes data - it keeps track of the last offset and records it as the log end offset.
+
+Just like Brokers keep track of their write position in each Partition, each Consumer keeps track of “read position” in each partition whose data it is consuming. It is the only way to keep track of the data that it has read.
+
+<p align="center"><img src="../../img/microlearning/advanced-monitoring-eventstreaming-monitor-consumerlag-1.png"></p>
 
 ##### Theory
   
-## 3. What data is stored on runtime level
+## 3. Monitoring lag
+
+Navigate to the Manage phase and select Monitoring. In the left hand menu you will find the Topic Statistics section which is the part we'll need to review the consumer lag. The view below shows an example of a topic where one of the consumer groups is lagging. The highlighted consumer bottom right section is 1292 messages behind which may indicate that this consumer has not yet consumed the messages. Based on the first offset of the partition it can be observed that the consumer can still catch up to read all the data from the topic.
+
+<p align="center"><img src="../../img/microlearning/advanced-monitoring-eventstreaming-monitor-consumerlag-1.png"></p>
 
 
 ##### Practice
 
 ## 4. Assignment
 
-Analyze what you can learn from reading the logging that is produced on the runtime level. This assignment can be completed with the help of the (Academy) project that you have created/used in the previous assignment.
-
+Take a moment to review your Event Streaming solution and find the Manage - Montoring section to see the topic statistics. Review if you can understand the consumer lag in your case
 ## 5. Key takeaways
 
-- Log information (what is happening on this runtime)
-- Temporary data storage (H2, in case of messaging)
-- 'State' of the flow (i.e., which flow version is running and which is active)
+- Consumer lag shows how many message the Consumer is falling behind in Consumption
+- As part of the daily monitoring, topic Statistics are available to help you understand whether there is consumer lag or not
 
 ##### Solution
 
