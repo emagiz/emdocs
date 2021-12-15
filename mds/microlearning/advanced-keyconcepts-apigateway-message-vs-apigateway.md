@@ -40,29 +40,30 @@ Please refer to the following Fundamentals to learn the key concepts of both pat
 
 The following sections are helpful to understand what things to consider in selecting the right pattern. 
 
-- **Asynchronous**
-	- Both patterns are asynchronous in nature. In case a synchronous message is the right choice, pelase refer to the relevant microlearning that compares messaging and API gateway
+- **Synchronous**
+	- Both patterns in this discussion are synchronous in nature. In case a asynchronous message is the right choice, pelase refer to the relevant microlearning that compares Messaging and Event Streaming
 	
 - **Data**
-	- Event Streaming solutions are typically used in large volumes of data whereby each message is relatively small. A typical example is an IoT data stream, but you can use Event Streaming for order, confirmations or other data collections. There is a maximum value for each message on a topic of 1Mb
-	- Messaging can handle larger messages although 1 Mb message are the average that eMagiz considers. In case larger messages exist, Messaging would be a better option
+	- Both patterns can handle similar type data - usually record based
 	
 - **Online vs. offline**
-	- For Messaging, the delivering and receiving system need to be online with high availability ratio's in order to process the messages
-	- For Event Streaming, producers and consumers can choose their own downtime and for small intervals where messages are not produces or consumed
+	- For Messaging, the delivering and receiving system need to be online with high availability ratio's in order to process the messages. The same is true for a backend API provider which needs to be online to provide or consume data from API operations
+
+- **Error handling**
+	- In the case of an API Gateway, the requesting application needs to be handle the error messages that are returned by the API gateway in case there are any. The API Gateway provides the errors from the backend API directly back to the requestor who can then decide how to process the request.
+	- For Messagaging, the errors that are generated are pushed inside the general error process of eMagiz and displayed in the Error Dashboard in the Manage phase. However, the requestor also gets the error messages back from the Messaging system in order to handle these properly
 	
 - **Contract & communication**
 	- Messaging required a fixed contract between the message definitions that are exchanged. A change of definition would result in validation issues and therefore more communication is required
-	- Event Streaming has a more loosly character in a sense that the producer defines the message that is send and publishes it to the consumer. COnsumer can then consume the message and decide how to process the message
+	- For an API Gateway solution, the contract is published via the API Gateway outwards. The basic idea is that the data definition is fixed and standardized, and that requesting application will adapt their request to this definition. In that sense the API Gateway offers standardization in the landscape
 	
 - **Technical disqualifiers**
-	- Use Event Streaming requires the produces and the consumer to have the technical capability to produce and consume messages on a Kafka topic. 
-	- Messaging allows to receive and send messages via many more protocols such as REST, SOAP, File pickup, etc. Please note that eMagiz Messaging can also produce and consume messages from and to topics which can help to support the use of event streaming
-	
-- **Data Storage**
-	- In the Messaging pattern, no data is stored and the data is in full transit
-	- In the Event Streaming pattern, data is persisted for a short time in a storage location. The data is still considered to be in  transit, but making choice where data is persisted too often with minimal change to the message could impact data storage. eMagiz has licensed limits for data storage in Event Streaming.
-	
+	- For an API Gateway, the requestor needs to be able to call a REST based webservice using JSON formatted messages.
+	- Messaging allows other web services such as SOAP, but can also handle XML for instance
+
+- **Centralized User Management**
+	- API gateway offers a easy to configure user management capability to protect operations. Users and roles can be designed in the Design phase, and various authentication methods are allowed such as OAuth2.0 and API Keys. eMagiz offers easy to use configurations for that
+	- For Messaging, no such user management options exit and all needs to be created inside the flows that handle the requests & replies.
 
 ##### Practice
 
@@ -72,7 +73,7 @@ There is no assignment for now in this microlearning
 
 ## 5. Key takeaways
 
-- There are a set of considerations to make decisions for event streaming vs. messaging
+- There are a set of considerations to make decisions for API gateway vs. messaging
 - Make sure to read the eMagiz Fundamentals properly before taking this section into account in your project
 
 ##### Solution
