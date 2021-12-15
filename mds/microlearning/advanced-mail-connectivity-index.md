@@ -28,7 +28,7 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/advanced-database-connectivity-using-mime" class="strip__link">
+            <a href="../../docs/microlearning/advanced-mail-connectivity-using-mime" class="strip__link">
             <label for="" class="strip__label">
                 <span>70</span>
                 Using MIME format to send emails from eMagiz
@@ -43,7 +43,7 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/advanced-database-connectivity-send-email-mailserver" class="strip__link">
+            <a href="../../docs/microlearning/advanced-mail-connectivity-send-email-mailserver" class="strip__link">
             <label for="" class="strip__label">
                 <span>70</span>
                 Sending an email via an Email Server
@@ -59,7 +59,7 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/advanced-database-connectivity-send-email-office365" class="strip__link">
+            <a href="../../docs/microlearning/advanced-mail-connectivity-send-email-office365" class="strip__link">
             <label for="" class="strip__label">
                 <span>70</span>
                 Sending an email via Office365
@@ -75,7 +75,7 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/advanced-database-connectivity-receive-email-mailserver" class="strip__link">
+            <a href="../../docs/microlearning/advanced-mail-connectivity-receive-email-mailserver" class="strip__link">
             <label for="" class="strip__label">
                 <span>70</span>
                 Receiving an email via an Email Server
@@ -91,7 +91,7 @@
 			</a>
         </li>
 		<li class="strip">
-            <a href="../../docs/microlearning/advanced-database-connectivity-receive-email-office365" class="strip__link">
+            <a href="../../docs/microlearning/advanced-mail-connectivity-receive-email-office365" class="strip__link">
             <label for="" class="strip__label">
                 <span>70</span>
                 Receiving an email via Office365
