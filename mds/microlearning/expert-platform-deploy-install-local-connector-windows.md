@@ -100,7 +100,7 @@ For example use: C://eMagiz/test
 Do not use: C://Programs/eMagiz/test/connector/appeee/installation
 2.	Go to the unpacked package and open the folder
 
-### 3.5 Validate  the runtime
+### 3.5 Validate the runtime
 
 1.	In the Bin folder, you can validate if the service can make a connection via karaf.bat. 
 To check the connection of the service, use the right mouse button then execute the file as Administrator.
@@ -149,8 +149,23 @@ In the Tab Log On, you are able to change the user that starts this service, if 
 5.	Test the connection by sending test messages over the bus. In case of the live environment, contact your technical contact to test for you.
 6.	If everything is working correctly, document the steps to access the server and environment and the credentials.
 
+### 3.7 Update the runtime
 
-## 3.7 Multiple Java versions on same server
+Before updating please notice the following:
+- Make sure that you know under which account the service is currently running and make sure the new runtime will also start under that account.
+- In case you have adjusted the memory please check out the following [microlearning](intermediate-solution-architecture-edit-memory-on-premise-runtime-windows.md) on how to make sure that the new runtime will have the same memory
+
+1.	Navigate to Services under Windows and stop the currently running runtime.
+2.  Check whether the newly downloaded runtime works as expected by running it under karaf. See section 3.5 of this document of how to verify this.
+3.  The moment this all works correctly close the karaf and deinstall the current runtime by pressing uninstall-service in the bin folder
+
+![](../../img/howto/runtime-win-install-step14-1.png)
+
+4.  Follow the steps detailed in section 3.6 to correctly install the new runtime.
+5.	Ensure that the old installation folder is completly removed from your on-premise server.
+
+
+## 3.8 Multiple Java versions on same server
 
 When confronted with a situation in which you have to support multiple runtime versions running multiple Java versions this addendum is for you. 
 

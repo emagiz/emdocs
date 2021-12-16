@@ -94,7 +94,21 @@ As the number of flows running on a connector increases the memory also needs to
 	- SystemV Type: sudo /etc/init.d/<SERVICE_NAME>-service start
 - Use the runtime dashboard in the portal to monitor and control the started runtime (e.g. deploy/undeploy flows).
 
-### 3.4 Multiple Java versions
+## 3.4 Update the runtime
+
+Before updating please notice the following:
+- Make sure that you know under which account the service is currently running and make sure the new runtime will also start under that account.
+- In case you have adjusted the memory please check out the following [microlearning](advanced-solution-architecture-change-memory-runtime-linux.md) on how to make sure that the new runtime will have the same memory
+
+-	Log in via Putty by typing in the host and the port and press load
+-  	When asked for credentials fill in credentials (Be aware, Linux does not accept ctrl+v and does not show the password or an indication of the password). Right mouse click to copy the password and press enter
+-  	Navigate to the folder in which the current runtime is installed
+-	Execute a stop command in linux (see section 3.3 for the exact commands)
+-	Uninstall the old runtime (see section 3.3 for the exact commands)
+-	Follow the steps in section 3.3 to install the new runtime correctly
+
+
+### 3.5 Multiple Java versions
 When confronted with a situation in which you have to support multiple runtime versions with multiple Java versions. This is mainly the case when both Acceptance and Production connectors are running on the same server on-premise or when you migrate environments in steps. To determine the correct Java version needed for your runtime please see the attached picture detailed under Java runtime and eMagiz runtime compatibility. Be warned: These steps need to be taken before you install a runtime. If you have already installed the runtime please use the correct Linux uninstall command to uninstall the service before proceeding. When confronted with this situation on a live environment please first discuss your actions with CAPE support.
 
 - Log in via Putty by typing in the host and the port and press load
