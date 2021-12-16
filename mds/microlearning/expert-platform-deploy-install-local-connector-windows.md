@@ -2,7 +2,7 @@
 	<div class="ez-academy__body">
 		<main class="micro-learning">
 		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+			<li class="doc-nav__item"><a href="../../docs/microlearning/expert-solution-architecture-index" class="doc-nav__link">Home</a></li>
 			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
 			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
 			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -15,7 +15,7 @@
 
 # Install eMagiz runtime on a local server
 
-In this microlearning, we will focus on installing the eMagiz environment locally for Linux.
+In this microlearning, we will focus on installing the eMagiz environment locally for Windows.
 
 Should you have any questions, please contact academy@emagiz.com.
 
