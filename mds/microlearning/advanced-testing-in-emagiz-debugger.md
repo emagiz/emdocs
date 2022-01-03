@@ -19,7 +19,7 @@ In this microlearning we will provide  context with regards to the debugger func
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: April 22nd, 2021
+- Last update: January 3th, 2021
 - Required reading time: 7 minutes
 
 ## 1. Prerequisites
@@ -85,6 +85,16 @@ As specified above as a user there are two actions you can take to influence the
 2. Defining how many times you want to check whether there are messages ready to be shown to the user. 
 	-	These messages can either be stored in a H2 database or kept in memory. You can tell the difference by clicking on activate.debug-bridge and see whether a support.h2-tx-manager component is lighting up.
 	-	The more frequently you check for messages the higher the load will become on the system as a whole. Especially when the debugger is linked to the H2 database and you have many flows on a runtime you should not debug that often. Advice is to limit the frequency with which you poll for those situations to once a minute.
+
+### 3.3 Testing with the debugger
+
+To use the debugger, you need to navigate to the Deploy phase of eMagiz. Within the Deploy phase of eMagiz, you open the Runtime Dashboard and select the runtime in question on which the flow you want to debug is located. In this overview, there is a button called Debug.
+
+<p align="center"><img src="../../img/microlearning/advanced-testing-emagiz-debugger-debug-button-runtime-dashboard.png"></p>
+
+When pressing this button, you will enter a new screen to track messages that traverse through the flow you are currently debugging. You can navigate through the channels by clicking on them one by one on the left side of your screen. As a result, the right side of the screen will show the message as it looks on that particular channel.
+
+<p align="center"><img src="../../img/microlearning/advanced-testing-emagiz-debugger-debug-analysis-runtime-dashboard.png"></p>
 
 ##### Practice
 
