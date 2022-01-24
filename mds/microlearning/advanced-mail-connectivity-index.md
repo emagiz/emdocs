@@ -1,4 +1,4 @@
-\<div class="ez-academy">
+<div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
 	<h2 class="title">Advanced Mail Connectivity</h2>
@@ -32,22 +32,6 @@
             <label for="" class="strip__label">
                 <span>70</span>
                 Using MIME format to send emails from eMagiz
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
-                <div class="strip__attribute-label">5 minutes</div>
-            </div>
-            <div class="strip__attribute">
-                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
-                <div class="strip__attribute-label">Developer</div>
-            </div>
-			</a>
-        </li>
-		<li class="strip">
-            <a href="../../docs/microlearning/advanced-mail-connectivity-send-email-mailserver" class="strip__link">
-            <label for="" class="strip__label">
-                <span>70</span>
-                Sending an email via an Email Server
-            </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
                 <div class="strip__attribute-label">5 minutes</div>
