@@ -1025,7 +1025,7 @@
 			</ul>
 		</a>		
 		<a href="../../docs/microlearning/advanced-key-platform-concepts-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/platform_crashcourse.svg) center no-repeat; background-size: 10%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/platform_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Key platform concepts</h4>
 			</div>
 			<ul class="card__footer">
@@ -1254,7 +1254,7 @@
 		</a>
 		<a href="../../docs/microlearning/advanced-database-connectivity-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/database-connectivity.svg.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">Monitoring Event Streaming</h4>
+				<h4 class="title">Database Connectivity</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -1267,7 +1267,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">2</label>
+					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
 		</a>
@@ -1305,7 +1305,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">6</label>
+					<label for="" class="card__footer-label">3</label>
 				</li>
 			</ul>
 		</a>

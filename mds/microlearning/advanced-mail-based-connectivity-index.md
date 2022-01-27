@@ -1,7 +1,7 @@
 <div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
-	<h2 class="title">Advanced Mail Connectivity</h2>
+	<h2 class="title">Mail based Connectivity</h2>
     <p>
         In this course, we will touch on advanced configurations for connecting to Mail based services
         </br></br>

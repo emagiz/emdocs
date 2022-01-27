@@ -1,4 +1,4 @@
-\<div class="ez-academy">
+<div class="ez-academy">
 	<div class="ez-academy__body">
 		<main class="master">
 	<h2 class="title">Advanced configurations for API Gateway</h2>
