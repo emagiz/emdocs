@@ -19,7 +19,7 @@ In this microlearning, we will explain the MIME protocol. Within eMagiz, the MIM
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: January 24th, 2021
+- Last update: January 24th, 2022
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites

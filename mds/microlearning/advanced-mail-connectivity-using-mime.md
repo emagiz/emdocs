@@ -13,14 +13,14 @@
 
 ##### Intro
 
-# Send MIME messages
+# Send emails
 
 We explained the MIME protocol in the previous [microlearning](advanced-mail-connectivity-whatis-mime.md). In this microlearning, we will expand our knowledge by learning how to send emails with the help of MIME messages via the eMagiz platform.
 
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: January 24th, 2021
+- Last update: January 24th, 2022
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
@@ -34,7 +34,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 
 ##### Theory
   
-## 3. Send MIME messages
+## 3. Send emails
 
 We explained the MIME protocol in the previous [microlearning](advanced-mail-connectivity-whatis-mime.md). In this microlearning, we will expand our knowledge by learning how to send emails with the help of MIME messages via the eMagiz platform.
 
