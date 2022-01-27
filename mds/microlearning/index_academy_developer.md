@@ -1253,7 +1253,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/advanced-database-connectivity-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/database-connectivity.svg.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/database-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Database Connectivity</h4>
 			</div>
 			<ul class="card__footer">
