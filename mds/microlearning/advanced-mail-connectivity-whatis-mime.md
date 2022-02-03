@@ -2,7 +2,7 @@
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
-            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-mail-connectivity-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="../../docs/microlearning/advanced-mail-based-connectivity-index" class="doc-nav__link">Home</a></li>
             <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
             <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
             <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
@@ -19,7 +19,7 @@ In this microlearning, we will explain the MIME protocol. Within eMagiz, the MIM
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: January 24th, 2021
+- Last update: January 24th, 2022
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
