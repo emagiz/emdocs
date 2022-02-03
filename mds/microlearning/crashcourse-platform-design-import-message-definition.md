@@ -57,7 +57,7 @@ After you have selected this option you will be directed to the system message o
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--empty-system-message-page.png"></p>
 
-On the bottom left, next to Start Editing you have an Import button. You can use this Import button when you are in Start Editing mode. 
+In the top right panel, next to System Message title you have an Import button. You can use this Import button when you are in Start Editing mode. 
 As the integration pattern differs slightly the import options available differ also. Below we will discuss the various options.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-design-import-message-definition--import-options-messaging.png"></p>
