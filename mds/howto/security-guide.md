@@ -1,6 +1,6 @@
 # eMagiz Security Guide
 
-Protecting your data is a joint responsibility between eMagiz and you. The purpose of this security guide is to make clear the security measures eMagiz has taken in the eMagiz platform, so you can assess the eventual additional measures you need to take to ensure that the eMagiz service cooperates securely with the rest of your application and integration landscape
+Protecting your data is a joint responsibility between eMagiz and you. The purpose of this security guide is to make clear the security measures eMagiz has taken in the eMagiz platform, so you can assess the eventual additional measures you need to take to ensure that the eMagiz service cooperates securely with the rest of your application and integration landscape.
 
 ## 1. Architectural setup eMagiz
 

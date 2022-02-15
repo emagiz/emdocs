@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-event-streaming-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-event-streaming-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -15,11 +15,11 @@
 
 # Create your Topic
 
-In this microlearning, we will focus on how you can create your topic based on what you have designed.
+In this microlearning, we will focus on creating your topic based on what you have designed.
 
-Should you have any questions, please contact academy@emagiz.com.
+Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: January 22th 2021
+- Last update: February 8th, 2022
 - Required reading time: 5 minutes
 
 ## 1. Prerequisites
@@ -28,69 +28,45 @@ Should you have any questions, please contact academy@emagiz.com.
 - An active Event Streaming license
 
 ## 2. Key concepts
-This microlearning centers around how you can create your topic based on what you have designed.
-By topic we mean: A category/feed name to which event records are stored and published.
+This microlearning centers around creating your topic based on what you have designed.
+By topic, we mean A category/feed name to which event records are stored and published.
 
-Knowing how to create a topic via the eMagiz platform makes it possible to gradually make certain topics available for others to produce data on and consume data from.
+Knowing how to create a topic via the eMagiz platform makes it possible to gradually make specific topics available for others to produce and consume data via that topic.
 
-Creating a topic in eMagiz is very easy. Below we will detail the specifics of how you can create a topic via eMagiz.
+Creating a topic in eMagiz is very easy. Below we will detail how you can create a topic via eMagiz.
 
 ##### Theory
 
 ## 3. Create your Topic
 
-Based on what you have designed in the Capture and Design phase you are now at the brink of Creating a topic via the eMagiz platform.
+Based on what you have designed in the Capture and Design phase, eMagiz will make your topic automatically available to be deployed per environment. To deploy a particular topic in an environment, you need to navigate towards Deploy Architecture.
 
-### 3.1 Transfer topic to Create
+### 3.1 Register the topic on the cluster
 
-When you navigate to the Create phase of eMagiz you have the option to add integrations to Create. This button is located at the right bottom of your screen.
-If you click on this button you will arrive at a page that looks something like this:
+Within Deploy Architecture, you will see your Topic Storage, including the newly added topic in green.
 
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--add-integrations.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--deploy-architecture-before-apply.png"></p>
 
-If you want to create a certain topic you simply select the checkbox that is still available (white background, green border) for both the producing and consuming side.
+To ensure that the topic is created in that environment, enter "Start Editing" mode and press Apply to Environment. As a result, eMagiz will make the topic on the Event Streaming cluster and communicate the impact back to you. Once the topic has been created, the widget will show the result. In this example, the green icon will disappear, and the number of grey topics increases with one. The result should look similar as below.
 
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--add-integrations-selected.png"></p>
-
-The moment you are satisfied with your choice you can Press Save Selection to tell eMagiz that you want to Create the topic(s) you have just selected.
-
-### 3.2 Register the topic on the cluster
-
-After you have created the topic in Create you can access the topic information of your topic with the help of the context menu on topic level.
-If you go to the Create overview of the Stream pattern you can right-click on the topic itself to retrieve the topic information.
-
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--es-create-topic-info.png"></p>
-
-In the pop-up that is opened when you select the option, you can see the details of your configuration. This name will be used by eMagiz to register the topic on the cluster.
-
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--es-create-topic-info-pop-up.png"></p>
-
-To tell eMagiz to register the cluster navigate to Deploy -> Releases. Here you can open the context menu on the Create phase
-
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--es-deploy-context-menu-create-phase.png"></p>
-
-In this context menu, you have the option called Batch Update. By selecting this option eMagiz will automatically register all new topics to your cluster.
-
-You can check the results of this action in the Event streaming section in Deploy by opening the Topic tab.
-
-<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--es-deploy-event-streaming-config-topic-tab.png"></p>
+<p align="center"><img src="../../img/microlearning/crashcourse-eventstreaming-create-your-topic--deploy-architecture-after-apply.png"></p>
 
 ##### Practice
 
 ## 4. Assignment
 
-Add your topic to Create. This assignment can be completed with the help of the Topic you have created/used in the previous assignment on your (Academy) project.
+Register your topic on the cluster. This assignment can be completed with the help of the topic you have created/used in the previous assignment on your (Academy) project.
 
 ## 5. Key takeaways
 
-- It is easy to create a topic in eMagiz, simply select the topic you want and press Save Selection
-- After you have created your topic you can register the topic via Deploy.
+- eMagiz will automatically create your topic for you; you only need to register it.
+- It is easy to register a topic in eMagiz; navigate to Deploy Architecture and press Apply to environment in "Start Editing" mode.
 
 ##### Solution
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
+If you are interested in this topic and want more information, please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 

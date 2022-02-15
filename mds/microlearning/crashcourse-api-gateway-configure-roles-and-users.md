@@ -32,7 +32,7 @@ With roles we mean: Any action that is available to be executed on an internal s
 With users we mean: Any action that is available to be executed on an internal system that you want to make publicly available via the API Gateway
 With API Gateway we mean: A collection of RESTful API operations that can be published to the outside world to give them access to applications that are linked to your business process
 
-In eMagiz, you have a clear way to define ‘consuming’ entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
+In eMagiz, you have a clear way to define "consuming" entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
 The first part is done in Capture and Design. The second part is done in Deploy
 
 ##### Theory
@@ -40,7 +40,7 @@ The first part is done in Capture and Design. The second part is done in Deploy
 ## 3. Configure roles and users
 
 A crucial part of setting up your (API) Gateway with the help of RESTful services is defining which client has access to which operation.
-In eMagiz, you have a clear way to define ‘consuming’ entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
+In eMagiz, you have a clear way to define "consuming" entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
 The first part is done in Capture and Design. The second part is done in Deploy
 
 Below we will discuss each of these parts in more detail
@@ -65,7 +65,7 @@ A possible solution of two separate 'consuming' systems of the same resource can
 
 ### 3.2 Design
 
-When you add a ‘consuming’ system of type API Gateway in Capture you have the ability in Design to assign rights to that ‘consuming’ system on one or more operations. 
+When you add a "consuming" system of type API Gateway in Capture you have the ability in Design to assign rights to that "consuming" system on one or more operations. 
 This can be done by activating the checkbox in Design. 
 
 By activating the checkbox in Design you’re telling eMagiz that this particular system (and all underlying users) has the right to access the operation you have just selected.
@@ -121,7 +121,7 @@ This assignment can be completed with the help of the (Academy) project that you
 
 ## 5. Key takeaways
 
-- In eMagiz, you have a clear way to define ‘consuming’ entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
+- In eMagiz, you have a clear way to define "consuming" entities of an API Gateway and assign the correct roles and rights on role and user level. This is done in a two-part process.
 - The first part is done in Capture and Design. The second part is done in Deploy
 - A 'consuming' system equals a role
 - A 'consuming' tenant or system equals a user
