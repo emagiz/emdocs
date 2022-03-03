@@ -63,7 +63,7 @@ In the preconfigured flow that you have imported from the store, there is a segm
 
 In case you have an old data pipeline construction within your integration landscape I would suggest reading the following to see how you can build this functionality yourselves:
 
-[Migration Path - Job Dashboard Cleanup](../howto/migration-path-job-dashboard-cleanup.md)
+[Migration Path - Job Dashboard Cleanup](../migrationpath/migration-path-job-dashboard-cleanup.md)
 
 ### 3.3 Best practices
 

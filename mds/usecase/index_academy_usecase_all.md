@@ -3,7 +3,7 @@
 		<main class="master">
 	<h2 class="title">eMagiz Academy Use Cases</h2>
 	<div class="card-container">
-		<a href="../../docs/usecase/index_academy_usecase_pattern_discovery" class="card card--featured">
+		<a href="../../docs/usecase/usecase_pattern_discovery-index" class="card card--featured">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Discover_Integrations.svg) center no-repeat; background-size: 10%;">
 				<h4 class="title">Pattern Determination</h4>
 			</div>
@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_lifecycle-management" class="card">
+		<a href="../../docs/usecase/usecase_lifecycle-management-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management</h4>
 			</div>
@@ -41,7 +41,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_emagiz-mendix-connectivity-event-streaming" class="card">
+		<a href="../../docs/usecase/usecase_emagiz-mendix-connectivity-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Mendix - Event Streaming</h4>
 			</div>
@@ -60,7 +60,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_emagiz-mendix-connectivity-messaging" class="card">
+		<a href="../../docs/usecase/usecase_emagiz-mendix-connectivity-messaging-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Mendix - Messaging</h4>
 			</div>
@@ -85,7 +85,7 @@
 		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_usecase_all" class="tabs__link">Use Cases</a></li>
 	</ul>
 	<div class="card-container">
-		<a href="../../docs/usecase/index_academy_usecase_pattern_discovery" class="card">
+		<a href="../../docs/usecase/usecase_pattern_discovery-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Discover_Integrations.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Pattern Determination</h4>
 			</div>
@@ -104,7 +104,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_lifecycle-management" class="card">
+		<a href="../../docs/usecase/usecase_lifecycle-management-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Lifecyclemanagement.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Lifecycle Management</h4>
 			</div>
@@ -123,7 +123,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_emagiz-mendix-connectivity-event-streaming" class="card">
+		<a href="../../docs/usecase/usecase_emagiz-mendix-connectivity-event-streaming-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Mendix - Event Streaming</h4>
 			</div>
@@ -142,7 +142,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/index_academy_usecase_emagiz-mendix-connectivity-messaging" class="card">
+		<a href="../../docs/usecase/usecase_emagiz-mendix-connectivity-messaging-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/mendix-connectivity.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Mendix - Messaging</h4>
 			</div>
