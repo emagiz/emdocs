@@ -770,6 +770,40 @@
             </div>
         </a>
     </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-security-add-mfa" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Security - Configure MFA
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">4 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
+    </li>
+        <li class="strip">
+            <a href="../../docs/microlearning/crashcourse-platform-community-management" class="strip__link">
+                <label for="" class="strip__label">
+                <span>0</span>
+                Community Management
+            </label>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+                <div class="strip__attribute-label">4 minutes</div>
+            </div>
+            <div class="strip__attribute">
+                <img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+                <div class="strip__attribute-label">All</div>
+            </div>
+        </a>
+    </li>
     </ul>
     </main>
     </div>

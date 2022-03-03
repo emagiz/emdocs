@@ -91,7 +91,7 @@ Now that we have explained how our Cloud is configured, we will wrap up this fun
 
 ##### Practice
 
-## 5. Key takeaways
+## 4. Key takeaways
 
 - Each eMagiz model result in a separate VPC in the eMagiz Cloud
 - eMagiz models are deployed in the AWS eu-central-01 zone by default - other regions are possible upon request
@@ -104,7 +104,7 @@ Now that we have explained how our Cloud is configured, we will wrap up this fun
 
 ##### Solution
 
-## 6. Suggested Additional Readings
+## 5. Suggested Additional Readings
 
 If you are interested in this topic and want to learn how you can control your Cloud with the help of the eMagiz platform, please check out our microlearnings offering on eMagiz Cloud Management:
 

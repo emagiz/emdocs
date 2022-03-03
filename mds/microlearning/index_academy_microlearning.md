@@ -18,7 +18,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">43</label>
+					<label for="" class="card__footer-label">45</label>
 				</li>
 			</ul>
 		</a>
@@ -82,7 +82,7 @@
 	</div>
 	<h2 class="title">Courses</h2>
 	<ul class="tabs">
-		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_all" class="tabs__link">All</a></li>
+		<li class="tabs__item--active"><a href="../../docs/microlearning/index_academy_microlearning" class="tabs__link">All</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_developer" class="tabs__link">Developer</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_architect" class="tabs__link">Architect</a></li>
 		<li class="tabs__item"><a href="../../docs/microlearning/index_academy_support_engineer" class="tabs__link">Support Engineer</a></li>
@@ -107,7 +107,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">43</label>
+					<label for="" class="card__footer-label">45</label>
 				</li>
 			</ul>
 		</a>
@@ -1345,6 +1345,44 @@
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
 					<label for="" class="card__footer-label">5</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/expert-webservice-security-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 17%;">
+				<h4 class="title">Webservice Security</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Expert</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">2</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/microlearning/expert-recovery-guide-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 17%;">
+				<h4 class="title">Recovery Guide</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Expert</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
 		</a>
