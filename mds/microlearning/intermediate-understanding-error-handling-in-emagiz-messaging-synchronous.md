@@ -60,7 +60,7 @@ As you can imagine there is another part of the flow needed to ensure that an er
 
 <p align="center"><img src="../../img/microlearning/intermediate-understanding-error-handling-in-emagiz-messaging-synchronous--error-handling-error-check.png"></p>
 
-Please note that we have changed the way the error handling works for synchronous flows in the last year. This means that probably not all synchronous flows have been migrated to make use of this new functionality. In case you are interested in migrating please check out this [guide](../howto/userguide-legacyconstructs.md).
+Please note that we have changed the way the error handling works for synchronous flows in the last year. This means that probably not all synchronous flows have been migrated to make use of this new functionality. In case you are interested in migrating please check out this [guide](../migrationpath/migration-path-error-handling-synchronous-messaging-flows.md).
 
 Hopefully, this microlearning has made it somewhat clearer how to handle errors when dealing with synchronous messaging flows.
 

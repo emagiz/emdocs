@@ -109,7 +109,7 @@ Verify if your project adheres to the security rules specified above.
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information please check out the [Security Guide](../howto/security-guide.md)
+If you are interested in this topic and want more information please check out the [Security Guide](../fundamental/fundamental-emagiz-security-guide.md)
 
 ## 7. Silent demonstration video
 

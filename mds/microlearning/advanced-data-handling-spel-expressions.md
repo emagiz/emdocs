@@ -59,7 +59,7 @@ Before we delve into the examples, we first describe the SpEL notation.
 
 A message in eMagiz has two main parts, as you well know. One part is the payload, and the other part is the headers. Both are accessible via a SpEL expression. 
 
-To retrieve data from a payload you can use the following notation in SpEL: #xpath(payload,'//*:uniqueIdentifier'). For more information on using SpEL as an XPath expression please see this [microlearning](advanced-create-your-transformations-xpath-advanced#34-spel-notation-for-xpath.md).
+To retrieve data from a payload you can use the following notation in SpEL: #xpath(payload,'//*:uniqueIdentifier'). For more information on using SpEL as an XPath expression please see this [microlearning](advanced-create-your-transformations-xpath-advanced#3.4-spel-notation-for-xpath.md).
 
 To retrieve data from a header, you can use one of the following notations:
 - headers.nameOfHeader
