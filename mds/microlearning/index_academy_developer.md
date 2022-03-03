@@ -1405,7 +1405,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/microlearning/expert-recovery-guide-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 17%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/recoveryguide.svg) center no-repeat; background-size: 17%;">
 				<h4 class="title">Recovery Guide</h4>
 			</div>
 			<ul class="card__footer">
