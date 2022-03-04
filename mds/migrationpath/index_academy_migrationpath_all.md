@@ -12,7 +12,7 @@
     <h3 class="title">Migration Paths</h3>
     <ul class="strip-container">
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-root-cloud-to-emagiz-cloud" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-root-cloud-to-emagiz-cloud" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Root cloud to eMagiz Cloud
@@ -28,7 +28,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-emagiz-mendix-connector-4.2.0-to-5.0.0" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-emagiz-mendix-connector-4.2.0-to-5.0.0" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					eMagiz Mendix Connector - version 4.2.0 to 5.0.0
@@ -44,7 +44,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-error-handling-synchronous-messaging-flows" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-error-handling-synchronous-messaging-flows" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Error Handling Synchronous Messaging Flows
@@ -60,7 +60,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-emagiz-error-flow" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-emagiz-error-flow" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Error Flow
@@ -76,7 +76,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-aws-redshift-refresh" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-aws-redshift-refresh" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					AWS Redshift Refresh
@@ -92,7 +92,7 @@
 			</a>
 		</li>	
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-job-dashboard-cleanup" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-job-dashboard-cleanup" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Job Dashboard Cleanup
@@ -108,7 +108,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-hosting-a-custom-rest-webservice" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-hosting-a-custom-rest-webservice" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Hosting a custom REST Webservice
@@ -124,7 +124,7 @@
 			</a>
 		</li>	
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-json-related-transformations" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-json-related-transformations" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					JSON Related Transformations
@@ -140,7 +140,7 @@
 			</a>
 		</li>	
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-old-transformation-tooling" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-old-transformation-tooling" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Old Transformation Tooling
@@ -156,7 +156,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-removing-headers-from-your-message" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-removing-headers-from-your-message" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Removing Headers from your message
@@ -172,7 +172,7 @@
 			</a>
 		</li>
 		<li class="strip">
-			<a href="../../docs/microlearning/migration-path-legacy-components" class="strip__link">
+			<a href="../../docs/migrationpath/migration-path-legacy-components" class="strip__link">
 				<label for="" class="strip__label">
 					<span>1</span>
 					Legacy Components
