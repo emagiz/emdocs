@@ -1,4 +1,4 @@
-div class="ez-academy">
+<div class="ez-academy">
     <div class="ez-academy__body">
         <main class="micro-learning">
         <ul class="doc-nav">
