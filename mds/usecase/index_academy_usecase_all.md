@@ -172,7 +172,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
-					<label for="" class="card__footer-label">Developer</label>
+					<label for="" class="card__footer-label">All</label>
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
@@ -191,7 +191,7 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
-					<label for="" class="card__footer-label">Developer</label>
+					<label for="" class="card__footer-label">All</label>
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
@@ -218,7 +218,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/usecase_topic_management-index" class="card">
+		<a href="../../docs/usecase/usecase_data_retrieval_file_based_system-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Data retrieval file-based system</h4>
 			</div>
