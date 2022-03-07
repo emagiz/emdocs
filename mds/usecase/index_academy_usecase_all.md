@@ -160,7 +160,64 @@
 					<label for="" class="card__footer-label">8</label>
 				</li>
 			</ul>
-		</a>		
+		</a>
+		<a href="../../docs/usecase/usecase_hosting_soap-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/soap-connectivity-module.svg) center no-repeat; background-size: 12%;">
+				<h4 class="title">Hosting SOAP Web service</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Use Case</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">5</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/usecase/usecase_hosting_soap-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Calling a REST Web service</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Use Case</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">Developer</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">5</label>
+				</li>
+			</ul>
+		</a>
+		<a href="../../docs/usecase/usecase_topic_management-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Topic Management</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Use Case</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">5</label>
+				</li>
+			</ul>
+		</a>
 	</div>
 </main>
 </div>

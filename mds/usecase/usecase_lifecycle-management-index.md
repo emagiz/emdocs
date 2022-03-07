@@ -15,7 +15,7 @@
           <li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-what-is-lifecycle-management" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>1</span>
                 What is lifecycle management
             </label>
             <div class="strip__attribute">
@@ -31,7 +31,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-captured-integration" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a captured integration
 				</label>
 				<div class="strip__attribute">
@@ -47,7 +47,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-cleanup-a-designed-integration" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a designed integration
 				</label>
 				<div class="strip__attribute">
@@ -63,7 +63,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-design-architecture" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup design architecture
 				</label>
 				<div class="strip__attribute">
@@ -79,7 +79,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-resource" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a resource
 				</label>
 				<div class="strip__attribute">
@@ -95,7 +95,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-flow-management-remove-flows-from-create" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Remove flows from Create
 				</label>
 				<div class="strip__attribute">
@@ -111,7 +111,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-properties" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup properties
 				</label>
 				<div class="strip__attribute">
@@ -127,7 +127,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-alerting" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup alerting
 				</label>
 				<div class="strip__attribute">
@@ -143,7 +143,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-lifecycle-management-cleanup-a-created-integration" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a created integration
 				</label>
 				<div class="strip__attribute">
@@ -159,7 +159,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-running-flow" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a running flow
 				</label>
 				<div class="strip__attribute">
@@ -175,7 +175,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Cleanup a deployed runtime
 				</label>
 				<div class="strip__attribute">
@@ -191,7 +191,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-lifecycle-management-impact-buildnumber-upgrade" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Determining impact of build number upgrade
 				</label>
 				<div class="strip__attribute">
@@ -207,7 +207,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-lifecycle-management-upgrading-build-numbers" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Upgrading Build Numbers
 				</label>
 				<div class="strip__attribute">
@@ -223,7 +223,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-flow-management-reset-flows" class="strip__link">
 				<label for="" class="strip__label">
-					<span>2</span>
+					<span>1</span>
 					Reset Flows
 				</label>
 				<div class="strip__attribute">

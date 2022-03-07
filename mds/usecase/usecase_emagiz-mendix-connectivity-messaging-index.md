@@ -14,7 +14,7 @@
           <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-what-is-an-emagiz-mendix-connector" class="strip__link">
             <label for="" class="strip__label">
-                <span>4</span>
+                <span>3</span>
                 What is an eMagiz Mendix Connector
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-install-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>4</span>
+					<span>3</span>
 					Install an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
@@ -46,7 +46,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-configure-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>4</span>
+					<span>3</span>
 					Configure an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
@@ -62,7 +62,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/novice-mendix-connectivity-update-emagiz-mendix-connector" class="strip__link">
 				<label for="" class="strip__label">
-					<span>4</span>
+					<span>3</span>
 					Update an eMagiz Mendix Connector
 				</label>
 				<div class="strip__attribute">
@@ -78,7 +78,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-a-synchronous-webservice-in-mendix" class="strip__link">
             <label for="" class="strip__label">
-                <span>4</span>
+                <span>3</span>
                 Calling a synchronous webservice in Mendix
             </label>
             <div class="strip__attribute">
@@ -94,7 +94,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-a-synchronous-webservice-from-mendix" class="strip__link">
             <label for="" class="strip__label">
-                <span>4</span>
+                <span>3</span>
                 Calling a synchronous webservice from Mendix
             </label>
             <div class="strip__attribute">
@@ -110,7 +110,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-an-asynchronous-webservice-in-mendix" class="strip__link">
             <label for="" class="strip__label">
-                <span>4</span>
+                <span>3</span>
                 Calling a asynchronous webservice in Mendix
             </label>
             <div class="strip__attribute">
@@ -126,7 +126,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-mendix-connectivity-calling-an-asynchronous-webservice-from-mendix" class="strip__link">
             <label for="" class="strip__label">
-                <span>4</span>
+                <span>3</span>
                 Calling a asynchronous webservice from Mendix
             </label>
             <div class="strip__attribute">

@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-api-gateway-introduction" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>1</span>
+                    <span>0</span>
                     API gateway - Introduction
                 </label>
                 <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 Messaging - Introduction
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-event-streaming-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 Event Streaming - Introduction
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
 		<li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-api-data-model" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 API Gateway model
             </label>
             <div class="strip__attribute">
@@ -82,7 +82,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/crashcourse-messaging-what-is-cdm" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 Understanding the eMagiz CDM
             </label>
             <div class="strip__attribute">
@@ -98,7 +98,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-configuring-event-streaming-data-model" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 Event Streaming Data Model
             </label>
             <div class="strip__attribute">
@@ -114,7 +114,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-platform-intro-technrequirements" class="strip__link">
                 <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                 Getting the technical requirements
             </label>
             <div class="strip__attribute">
@@ -130,7 +130,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/intermediate-discover-your-integration-landscape-determining-integration-pattern" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>0</span>
                  Determining Integration Pattern
             </label>
             <div class="strip__attribute">
@@ -151,7 +151,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/advanced-keyconcepts-eventstreaming-message-vs-eventstreaming" class="strip__link">
 				<label for="" class="strip__label">
-					<span>1</span>
+					<span>0</span>
 					 Messaging vs. Event Streaming
 				</label>
 				<div class="strip__attribute">
@@ -172,7 +172,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/advanced-keyconcepts-apigateway-message-vs-apigateway" class="strip__link">
 				<label for="" class="strip__label">
-					<span>1</span>
+					<span>0</span>
 					 Messaging vs. API Gateway
 				</label>
 				<div class="strip__attribute">

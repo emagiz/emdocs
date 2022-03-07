@@ -14,7 +14,7 @@
           <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-user-management" class="strip__link">
             <label for="" class="strip__label">
-                <span>3</span>
+                <span>2</span>
                 User Management
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-catalog" class="strip__link">
 				<label for="" class="strip__label">
-					<span>3</span>
+					<span>2</span>
 					Catalog
 				</label>
 				<div class="strip__attribute">
@@ -46,7 +46,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-event-streaming-connectors-using-kafka-module-mendix" class="strip__link">
 				<label for="" class="strip__label">
-					<span>3</span>
+					<span>2</span>
 					Using Kafka Module in Mendix
 				</label>
 				<div class="strip__attribute">

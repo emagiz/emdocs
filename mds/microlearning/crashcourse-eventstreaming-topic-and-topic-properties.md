@@ -20,7 +20,7 @@ In this microlearning, we will focus on topics and their properties.
 Should you have any questions, please get in touch with academy@emagiz.com.
 
 - Last update: February 8th, 2022
-- Required reading time: 7 minutes
+- Required reading time: 9 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
