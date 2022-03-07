@@ -128,7 +128,7 @@ If you are interested in this topic and want more information on it please read 
 
 ## 7. Silent demonstration video
 
-<iframe width="1280" height="720" src="https://youtu.be/7TxZGQKXZnQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Certificates - The Adventure](http://i.imgur.com/Ot5DWAW.png)](https://youtu.be/7TxZGQKXZnQ "Certificates - The Adventure")
 
 </div>
 </main>
