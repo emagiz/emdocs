@@ -50,9 +50,9 @@ The state store refers to the storage location of the states of the specific obj
 Once the state store is defined, one needs different operations in order to update the state effectively. 
 - Retrieve - get the values of an object and the attributes
 - Aggregate - Increment a attribute in a state store to +1
-- Enrich - add new attribute of an object in the state store
-- Store - add new object and attributes to store
-- Define - for time based operations
+- Enrich - add new attribute of an object in the state store based on joining several streams
+- Transform - filter data or translate formats
+- Time-window - to aggregate data over time
 
 #### 3.3 State Action & networks
 
@@ -71,7 +71,7 @@ At first hand it looks as if these concepts would only apply to Event Streaming.
 
 #### 3.6 eMagiz specifics
 
-The state store is implemented inside the eMagiz runtime using the H2 database for now. For time related operations another technology is used (Esper), and the functionality is only available on Docker based runtimes (to be release end Q2 2022). You wil find the specific Stateful components inside the Flow Designer as we use in eMagiz to model the flow. Aligned with the general concept of low-code developnment in eMagiz.
+The state store is implemented inside the eMagiz runtime using the H2 database for now. For time related operations another technology is used (Esper), and the functionality is only available on Docker based runtimes (to be release end Q2 2022). You wil find the specific Stateful components inside the Flow Designer as we use in eMagiz to model the flow. Aligned with the general concept of low-code developnment in eMagiz. For State store models, the current data modeling capabilities will be used. 
 
 
 ##### Practice
