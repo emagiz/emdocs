@@ -16,7 +16,7 @@
  
 This fundamental will zoom in on which traceability concepts we have incorporated within the eMagiz portal to ensure that data passes from A to B. We will focus on traceability from three perspectives. At first, we zoom in on whether a message has been sent from A to B. Secondly, we determine whether a specific message has been dispatched from A to B. Thirdly, we focus on proving that the message was indeed sent years after a message has been sent. After this journey, you should have a solid understanding of which options eMagiz offers to trace messages between various systems across the integration platform. 
 
-All these concepts are used for Traceability & Compliancy business requirements
+All these concepts are used for Traceability & Compliancy business requirements.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
