@@ -40,7 +40,13 @@ As a result of these actions, reports came in that data was lost between retriev
 #### 3.3.1 Logging in AWS
 To analyze the problem, we have verified into the eMagiz logging in AWS. During the restart, we see among other errors the following errors. The first indicates that the synchronization with the SFTP got interrupted. The second implies that the delivery of the order response failed because the thread got interrupted.
 
+<p align="center"><img src="../../img/rca-knowledgebase/rca-knowledgebase-data-loss-during-production-change--synchronization-errors-sftp.png"></p>
+
+<p align="center"><img src="../../img/rca-knowledgebase/rca-knowledgebase-data-loss-during-production-change--thread-interrupted.png"></p>
+
 Furthermore, it is noticeable that this specific runtime is restarted several times within two minutes. For example, at 12:16:20, we see logging appearing that connection attempts are made between eMagiz and the SFTP. This ultimately results in messages being picked up by eMagiz at 12:17:05 and onwards.
+
+<p align="center"><img src="../../img/rca-knowledgebase/rca-knowledgebase-data-loss-during-production-change--messages-being-picked-up-again.png"></p>
 
 #### 3.3.2 Analysis of entry
 
