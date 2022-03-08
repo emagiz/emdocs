@@ -62,7 +62,7 @@ Upon further investigation, we see that the H2 database that stores the temporar
 The analysis concluded that the Apply to environment action to solve one problem created another problem within the environment. To safeguard against these actions, take the following steps:
 
 - Change the location of the local directory. The data needs to be stored in the data folder of eMagiz or on EFS. Verify with the help of support that the folder is created in the correct location 
-- Assess the impact of upgrades and shut down business-critical processes before performing an upgrade.
+- Assess the impact of upgrades and shut down business-critical processes before performing an upgrade
 
 </div>
 </main>
