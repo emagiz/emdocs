@@ -316,7 +316,7 @@ At this moment, there is no data stored in eMagiz API Gateways configurations. I
 
 #### 3.8.4 Data management
 
-For more information on the conceptual ideas behind data management within the eMagiz platform, you can look at this [fundamental](fundamental-data-management.md). For more concrete information on how to implement it within an eMagiz flow you could check out this [microlearning](../microlearning/advanced-data-management-data-sink.md) and this [microlearning](../microlearning/advanced-data-management-long-term-archiving.md). All the information within the data sink and the long-term archiving solution is kept within the same VPC in the Cloud and can only be accessed by authorized parties.
+For more information on the conceptual ideas behind data management within the eMagiz platform, you can look at this [fundamental](fundamental-traceability-in-emagiz.md). For more concrete information on how to implement it within an eMagiz flow you could check out this [microlearning](../microlearning/advanced-data-management-data-sink.md) and this [microlearning](../microlearning/advanced-data-management-long-term-archiving.md). All the information within the data sink and the long-term archiving solution is kept within the same VPC in the Cloud and can only be accessed by authorized parties.
 
 ### 3.9 Compliancy
 

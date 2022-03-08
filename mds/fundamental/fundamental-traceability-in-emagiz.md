@@ -3,10 +3,10 @@
         <main class="micro-learning">
         <ul class="doc-nav">
             <li class="doc-nav__item"><a href="../../docs/fundamental/index_academy_fundamental_all" class="doc-nav__link">Home</a></li>
-            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Situation</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Problem</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Analysis</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Result</a></li>
         </ul>
 <div class="doc">
  
