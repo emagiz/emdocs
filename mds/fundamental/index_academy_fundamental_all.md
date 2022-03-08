@@ -177,7 +177,7 @@
 					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
-		</a>		
+		</a>	
 	</div>
 </main>
 </div>

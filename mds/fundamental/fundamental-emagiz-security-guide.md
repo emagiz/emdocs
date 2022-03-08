@@ -332,7 +332,7 @@ During these tests, the pentester will try to achieve goals (penetration of the 
 
 ##### Practice
 
-## 5. Key takeaways
+## 4. Key takeaways
 
 - Protecting your data is a joint responsibility between eMagiz and you
 - The repository is read-only for clients

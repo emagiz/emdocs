@@ -14,7 +14,7 @@
 
 # eMagiz Messaging
  
-In this microlearning, we will introduce the essential concepts of eMagiz Messaging. The focus will be to address the fundamental concepts of this pattern. Please refer to other Fundamentals to learn more about related items and look at the relevant microlearnings available to learn how to configure messaging flows in eMagiz.
+In this fundamental, we will introduce the essential concepts of eMagiz Messaging. The focus will be to address the fundamental concepts of this pattern. Please refer to other Fundamentals to learn more about related items and look at the relevant microlearnings available to learn how to configure messaging flows in eMagiz.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
