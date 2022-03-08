@@ -64,8 +64,6 @@ The analysis concluded that the Apply to environment action to solve one problem
 - Change the location of the local directory. The data needs to be stored in the data folder of eMagiz or on EFS. Verify with the help of support that the folder is created in the correct location 
 - Assess the impact of upgrades and shut down business-critical processes before performing an upgrade
 
-##### Practice
-
 </div>
 </main>
 </div>
