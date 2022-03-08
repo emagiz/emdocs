@@ -59,7 +59,6 @@ The whole process from beginning to end is monitored, and the model owner, along
 
 <p align="center"><img src="../../img/microlearning/advanced-data-management-long-term-archiving-solution.png"></p>
 
-
 ##### Practice
 
 ## 4. Assignment
