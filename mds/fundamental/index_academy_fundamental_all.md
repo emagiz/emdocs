@@ -179,7 +179,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-stateful" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/messaging_crashcourse.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/stateful.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">eMagiz Stateful</h4>
 			</div>
 			<ul class="card__footer">
