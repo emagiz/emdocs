@@ -31,7 +31,7 @@ On a specific working day, unplanned maintenance occurred in a production enviro
 ##### Problem
 
 ### 3.2 Problem
-As a result of these actions, reports came in that data was lost between retrieval from an SFTP and delivery to a Mendix application.
+As a result of these actions, reports came in that data was lost between retrieval from an SFTP and delivery to a Mendix application..
 
 ##### Analysis
 
