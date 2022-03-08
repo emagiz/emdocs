@@ -94,7 +94,7 @@
 				</ul>
 			</a>
 			<a href="../../docs/rca-knowledgebase/index_academy_rca-knowledgebase_all" class="card">
-				<div class="card__body" style="background: url(../../img/microlearning/academy_index/eventstreaming_crashcourse.svg) center no-repeat; background-size: 5%;">
+				<div class="card__body" style="background: url(../../img/microlearning/academy_index/rca-knowledgebase.svg) center no-repeat; background-size: 17%;">
 					<h4 class="title">RCA Knowledge Base</h4>
 				</div>
 				<ul class="card__footer">
