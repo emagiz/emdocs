@@ -33,88 +33,65 @@ All concepts are discussed in the section below.
   
 ## 3. Introducing Stateful
 
+Within eMagiz there is a capability to store pieces of data of a specific object that is transit between systems. The basis idea of messages that are processed by eMagiz is that all of these are in transit. However, in certain cases it is very helpful to preserve a state of an object. That state can help to influence the next data packets that are passing through or trigger a certain action for another system.
+
+An example might be a situation where a sensor is submitting temperature data every 5 seconds on a data stream towards eMagiz. The interesting state of the machine where the sensor is attached to is the average temperature in the last hour. In this case the temperature that is send to the eMagiz should be used to update the state of the machine, and more specifically the average temperature. One needs a data stream from the sensor, a way to aggregate & average out all messages from the last hour, and a way to store the state. Once the temperature reaches a certain threshold, the data is submitted to a next system to raise an alert for a user.
+
+Another example might be a data stream that registers a click on a specific webpage. That data stream is connected to eMagiz, whereby the state of that specific webpage is updated with the number of clicks. Once the number of clicks in the last 30 minutes reaches for instance more than 50, a specific action might be triggered. If that page contains a product, the action might be to display the number of web users active on that product in order to influence the sales of that product. One needs a data stream, a way to count the number of click, and a way to store the state of that webpage.
+
+The example are purely illustrative to understand the concept. 
+
+#### 3.1 State Store
+
+The state store refers to the storage location of the states of the specific objects in the environment. That storage location is part of the eMagiz platform, and embedded in the eMagiz runtime for now. The user needs to define what objects and the attributes of that object are to be stored. Several different objects and states of the objects can be be defined & stored. A state store can be shared across multiple processes that are allowed to update the state of an object.
+
+#### 3.2 State Operations
+
+Once the state store is defined, one needs different operations in order to update the state effectively. 
+- Retrieve - get the values of an object and the attributes
+- Aggregate - Increment a attribute in a state store to +1
+- Enrich - add new attribute of an object in the state store
+- Store - add new object and attributes to store
+- Define - for time based operations
+
+#### 3.3 State Action & networks
+
+Once the state store has values stored, certain triggers can be defined to cause action. For instance, when the temperature is higher than 20 in the example above. These actions can be defined/modeled by the eMagiz user inside flows, whereby the evaluation of state would send a data point to the system that manages the action. For instance, the support team that manages the server park and needs to verify of the airconditioning of the server room is working properly (case high temperature).
+
+One can imagine that a certain action would be to update the state of another object. Or that there are several other data streams are update several states. In that way, you can imagine a complete network of data that work intertwined for you to detect rolling reality of data that can be used for data analysis and real-time decision-making.
+
+#### 3.4 Speed and throughput
+
+Many organizations hold lots of data which can be leveraged for such use cases, and often include IoT like data. Therefore, the data is usually put on event streams that are geared towards speed and throughput. In eMagiz you will find these data points usually in topics that are processed by Event Processor flows.
+
+#### 3.5 Pattern specifics
+
+At first hand it looks as if these concepts would only apply to Event Streaming. But capturing & storing a state of an object would also be handy in other patterns such as Messaging. For instance, when the order of the messages being send matters, or when there is dependency between messages that is needed to determine when a message needs to be send in time.
 
 
-The eMagiz Messaging is the pattern in which you can connect various parties via various connectivity mechanisms to the messaging engine of eMagiz. These external applications can connect in the most appropriate way (i.e., REST, SOAP, SFTP, and many more) to eMagiz. eMagiz will subsequently place the input messages on a specific queue. For example, you can distribute the message to various other external applications and deliver the messages via the connectivity method most desirable for each external application. 
+#### 3.6 eMagiz specifics
 
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--logical-view-landscape.png"></p>
+The state store is implemented inside the eMagiz runtime using the H2 database for now. For time related operations another technology is used (Esper), and the functionality is only available on Docker based runtimes (to be release end Q2 2022). You wil find the specific Stateful components inside the Flow Designer as we use in eMagiz to model the flow. Aligned with the general concept of low-code developnment in eMagiz.
 
-Any messaging integration in eMagiz consists of five layers. The message starts in the entry and moves via the onramp, routing, offramp, and exit to the other application. 
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--five-layers.png"></p>
-
-### 3.1 The five layers of eMagiz Messaging
-
-eMagiz has implemented a five-layered model based on the integration architectural pattern VETRO, which stands for Validate, Enrich, Transform, Route, and Operate. Each of these layers plays a role in the pattern. Below is an explanation of these five layers. Each of these layers will result in integration components referred to as flows in eMagiz. Each of these flows will run strategically across the integration landscape in a specific runtime position (see section "Architectural components" in this document).
-
-1. Entry - in the entry flow, you can configure the connectivity with the system that will send a message to eMagiz. It can be a push from the external system or a pull from eMagiz to the external system. Once the message is received, the message will be queued directly to the next step in the model
-2. Onramp - In this part, the message will be transformed and validated, preparing it for the following steps to send it to the external system. Specific elements exist here also to enrich the message where needed with additional attributes
-3. Routing - Using specific header information, the message can be routed to one of more offramps for further processing
-4. Offramp - In this process, the message passed on from the routing can be first validated if it meets the expected structure and then transformed to the target system. Once processed, the message is put in the exit queue.
-5. Exit - the exit will read the message from the queue and then connect to the target system
-
-### 3.2 Canonical Data Model (CDM)
-The Canonical Data Model is a crucial part of the messaging pattern, which we call the CDM in layman terms. The CDM is the data model at the heart of all your messaging integration and defines how a specific message should look from your point of view. For example, when you have an Order and Invoice integration, the CDM will explain what an Order looks like, how an Invoice looks, and how the two are related (or not). Based on this model, you can select portions of the CDM to act as the CDM message for a specific message type (i.e., Order).
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--cdm-example.png"></p>
-
-Critical considerations in setting up a CDM are:
-
-- Clarity
-- Consistency
-- Logical
-
-### 3.3 Transformation
-As the external parties will most likely not adhere to this standard you defined in the CDM, a crucial part of messaging integration is transforming the structure as supplied (or requested) by the external party to and from the CDM. You can quickly transform this data with the help of the eMagiz tooling in the Design phase of eMagiz. See below for an illustration.
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--transformation-example.png"></p>
- 
-### 3.3 Queueing
-Within eMagiz, we use the queueing mechanism to transport messages from one queue to the other. The JMS orchestrates this mechanism of queues. The JMS registers and deregisters queues dynamically when there is a need for the queue to be created or destroyed. For example, a customer needs to be registered on any queue to pick up messages. Once the message is delivered to the next queue and the transaction is finished, the message leaves the previous queue. For a more in-depth analysis of how queues work within the platform, please check out this [microlearning](../microlearning/intermediate-orchestration-of-data-packets-queues-how-do-they-work.md).
-
-### 3.4 Error Handling
-Each messaging flow related to a messaging queue (i.e., onramp, routing, offramp, exit) contains a subprocess that will send the error to the error flow if the operational process fails. As a result, the error will show up in the Dashboard in the Manage phase of eMagiz so the user can analyze it. An example of what this Dashboard looks like can be found below.
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--error-handling-manage-dashboard.png"></p>
-
-With the help of this information, you can easily determine the origin of an error message. For more information on that please check out this [microlearning](../microlearning/crashcourse-platform-manage-determining-origin-of-error-message.md).
-
-### 3.5 Architectural components
-
-Connecting various systems via the messaging pattern allows you to deploy parts of your architecture as close to the system as possible. This means that you can deploy part of the solution in the eMagiz Cloud and part of the runtimes that hold the entries and exits on-premise if the system you want to connect to is also deployed on-premise. This makes the connection between the entry or exit and the system in question more stable in nature.
-
-An example of such a hybrid setup is depicted below.
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--hybrid-architectural-setup.png"></p>
-
-Logically if all your systems are cloud systems, the most logical choice would be to deploy the complete eMagiz model within the eMagiz Cloud. An example of such a cloud setup is depicted below.
-
-<p align="center"><img src="../../img/fundamental/fundamental-messaging-introduction--cloud-architectural-setup.png"></p>
 
 ##### Practice
 
 ## 4. Key takeaways
 
-- Messaging uses five layers to transport data between systems
-- The CDM is a crucial component within messaging
-- To transport the messages, we use the queueing mechanism
-- Errors from the messaging flows show up in the manage dashboard
-- Messaging runtimes should be deployed as close to the system as possible
+- Stateful refers to the concept of storing a state of an object
+- Storing a state is different compared to data in transit which is often refered as stateless data (eMagiz doesn't store or update the data when sending across)
+- Stateful can be applied across all patterns in eMagiz and is embedded into the platform in such a way that it provided the same user experience
+
 
 ##### Solution
 
 ## 5. Suggested Additional Readings
 
-- [Messaging Introduction](https://www.emagiz.com/en/messaging-en/)
-- [Crashcourse Messaging](../microlearning/crashcourse-messaging-index.md)
-- [Orchestration of Data Packets](../microlearning/intermediate-orchestration-of-data-packets-index.md)
-- [Additional Key Concepts Messaging](../microlearning/intermediate-key-concepts-emagiz-messaging-index.md)
-
+N/A
 
 ## 6. Silent demonstration video
 
-<iframe width="1280" height="720" src="../../vid/fundamental/fundamental-messaging-introduction.mp4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+N/A
 
 </div>
 </main>
