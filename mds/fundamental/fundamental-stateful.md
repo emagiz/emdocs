@@ -82,6 +82,7 @@ The state store is implemented inside the eMagiz runtime using the H2 database f
 - Storing a state is different compared to data in transit which is often refered as stateless data (eMagiz doesn't store or update the data when sending across)
 - Stateful can be applied across all patterns in eMagiz and is embedded into the platform in such a way that it provided the same user experience
 
+<p align="center"><img src="../../img/fundamental/ffundamental-stateful-1.png"></p>
 
 ##### Solution
 
