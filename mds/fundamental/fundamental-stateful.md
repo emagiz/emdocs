@@ -27,7 +27,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 
 
 ## 2. Key concepts
-All concepts are discussed in the section below.
+All concepts are discussed in the section below..
 
 ##### Theory
   
