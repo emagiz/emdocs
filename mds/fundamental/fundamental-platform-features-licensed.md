@@ -29,7 +29,7 @@ Should you have any questions, please get in touch with academy@emagiz.com.
 ## 2. Key concepts
 eMagiz contains an overview of the licensed items and features of the platform. You can find them under Administration --> Licenses and will display for the accessible companies the models and it's licensed items. Below a screenshot of such a page of a sample environment. This fundamental will describe the list of additional features list on the top right quadrant of the page.
 
-<p align="center"><img src="../../img/fundamental/fundamental-platform-features-licensed-1.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-platform-features-licensed-3.png"></p>
 
 ##### Theory
   
