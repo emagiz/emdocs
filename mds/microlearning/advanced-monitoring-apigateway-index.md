@@ -31,7 +31,7 @@
             <a href="../../docs/microlearning/advanced-monitoring-apigateway-runtime-statistics" class="strip__link">
             <label for="" class="strip__label">
                 <span>87</span>
-               Monitor API Gateway runtime metrics
+               Monitor API Gateway runtime metrics 
             </label>
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
