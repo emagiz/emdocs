@@ -50,7 +50,7 @@ Container images become containers at runtime and in the case of Docker containe
 
 The runtime of eMagiz can run inside a Docker, and the runtime is made part of the docker image. In the docker image you will find other required pieces such as OS, Java, monitoring services, etc.
 
-<p align="center"><img src="../../img/fundamental/fundamental-runtime-generation3-2"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-runtime-generation3-2.png"></p>
 
 ### 3.4 Impact on Way of Working Gen2 vs. Gen3
 

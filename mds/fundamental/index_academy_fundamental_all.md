@@ -141,7 +141,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-emagiz-security-guide" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Security_Modules.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">eMagiz Security Guide</h4>
 			</div>
 			<ul class="card__footer">
@@ -179,7 +179,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-stateful" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/stateful.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/stateful.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">eMagiz Stateful</h4>
 			</div>
 			<ul class="card__footer">
@@ -198,7 +198,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-traceability-in-emagiz" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/traceability.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/traceability.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">Traceability in eMagiz</h4>
 			</div>
 			<ul class="card__footer">
@@ -217,7 +217,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-platform-features-licensed" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/traceability.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/features.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">Licensed features in eMagiz</h4>
 			</div>
 			<ul class="card__footer">
@@ -236,7 +236,7 @@
 			</ul>
 		</a>
 		<a href="../../docs/fundamental/fundamental-runtime-generation3" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/traceability.svg) center no-repeat; background-size: 20%;">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/generation3.svg) center no-repeat; background-size: 15%;">
 				<h4 class="title">eMagiz runtime Generation3</h4>
 			</div>
 			<ul class="card__footer">

@@ -12,8 +12,7 @@
  
 ##### Intro
 
-# eMagiz Stateful
- 
+# eMagiz Licensed features
 In this fundamental, we'll take a look at licensed features of eMagiz to provide a fundamental description of these.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
