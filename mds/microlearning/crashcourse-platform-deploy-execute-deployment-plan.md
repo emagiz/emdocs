@@ -1,13 +1,13 @@
 <div class="ez-academy">
-	<div class="ez-academy__body">
-		<main class="micro-learning">
-		<ul class="doc-nav">
-			<li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
-			<li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
-			<li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
-			<li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
-			<li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
-		</ul>
+    <div class="ez-academy__body">
+        <main class="micro-learning">
+        <ul class="doc-nav">
+            <li class="doc-nav__item"><a href="../../docs/microlearning/crashcourse-platform-index" class="doc-nav__link">Home</a></li>
+            <li class="doc-nav__item"><a href="#intro" class="doc-nav__link">Intro</a></li>
+            <li class="doc-nav__item"><a href="#theory" class="doc-nav__link">Theory</a></li>
+            <li class="doc-nav__item"><a href="#practice" class="doc-nav__link">Practice</a></li>
+            <li class="doc-nav__item"><a href="#solution" class="doc-nav__link">Solution</a></li>
+        </ul>
 
 <div class="doc">
 
@@ -15,12 +15,12 @@
 
 # Deploy a release
 
-In this microlearning, we will focus on the situation where an existing property needs a change of value and how to put this value into effect in your environment.
+This microlearning will focus on deploying your release to a specific environment.
 
-Should you have any questions, please contact academy@emagiz.com.
+Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: February 9th, 2021
-- Required reading time: 3 minutes
+- Last update: March 17th, 2022
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -29,7 +29,7 @@ Should you have any questions, please contact academy@emagiz.com.
 - A change made in a flow version that is added to a release so you can try it yourself
 
 ## 2. Key concepts
-This microlearning centers around the execution of a Deployment plan. The deployment plan is a series of steps that need to be executed on any TAP environment to make the release defined active inside the eMagiz runtimes. Active in the sense that all changes made to the release compared to the running environment before executing the deployment plan are applied effectively.
+This microlearning will focus on deploying your release to a specific environment. To deploy a release to an environment, we suggest using the deployment plan functionality. The deployment plan is a series of steps that must be executed on any TAP environment to make the release defined active inside the eMagiz runtimes. Involved in the sense that all changes made to the release compared to the running environment before executing the deployment plan are applied effectively.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-execute-deployment-plan-pic1.png"></p>
 
@@ -37,19 +37,26 @@ This microlearning centers around the execution of a Deployment plan. The deploy
 
 ## 3. Execute a Deployment plan
 
-Provided there is a deployment plan, the execution is initialized from the Releases section. The button highlighted in the figure above is the button to start the deployment plan. The page below is then displayed as an example of the page that shows the progress of the deployment steps. Pressing the green play button will start the execution of the deployment plan.
+Provided there is a deployment plan; the execution is initialized from the Releases section. The button highlighted in the figure above is to start the deployment plan. The page below is displayed as an example of the page showing the deployment steps' progress. Pressing the green play button will begin the execution of the deployment plan.
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-execute-deployment-plan-pic2.png"></p>
 
-Some key notes to consider during the execution of the plan
+### 3.1 Key considerations Gen 2
 1. Only the changed, added, or deleted flow will be considered for deployment. No change means that the current flow remains untouched
-2. The runtime that requires updates has to be started / active before anything can be deployed. See the screenshot below to see what happens if the runtime is not running at the moment of execution
+2. The runtime that requires updates must be started / active before anything can be deployed. See the screenshot below to see what happens if the runtime is not running at the moment of execution
 3. The middle section showing the integration landscape is highlighting in what system the deployment of a flow is happening
 4. The right-hand panel shows the log messages from the runtimes where the deployment(s) of flows are taking place
 5. A message will be displayed that the deployment is completed
 6. The deployment plan will be default cleanup old versions of flow (unless specified otherwise in the settings of the deployment plan). 
 
 <p align="center"><img src="../../img/microlearning/crashcourse-platform-deploy-execute-deployment-plan-pic3.png"></p>
+
+### 3.1 Key considerations Gen 3
+1. The deployment step of the machine will only be executed when changes are detected within the current release compared to the previous release.
+2. The middle section showing the integration landscape highlights what part of the landscape is currently updated
+3. The right-hand panel shows the log messages from the runtimes where the deployment(s) is taking place
+4. A message will be displayed that the deployment is completed
+5. There is an alternative way of deploying your runtimes for Gen3. This is via Deploy Architecture and selecting the option Deploy runtimes on machine level
 
 ##### Practice
 
@@ -67,7 +74,7 @@ Try to deploy a plan using an active release and observe the results taking the 
 
 ## 6. Suggested Additional Readings
 
-If you are interested in this topic and want more information on it please read the help text provided by eMagiz when executing these actions.
+If you are interested in this topic and want more information, please read the help text provided by eMagiz when executing these actions.
 
 ## 7. Silent demonstration video
 
