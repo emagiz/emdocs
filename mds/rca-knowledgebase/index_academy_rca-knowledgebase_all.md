@@ -58,7 +58,58 @@
 					<div class="strip__attribute-label">Support Engineer</div>
 				</div>
 			</a>
-		</li>				
+		</li>
+		</li>
+			<li class="strip">
+			<a href="../../docs/rca-knowledgebase/rca-knowledgebase-error-template-match-code-mappings" class="strip__link">
+				<label for="" class="strip__label">
+					<span>1</span>
+					Template match issue for missing code mappings
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">3 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Support Engineer</div>
+				</div>
+			</a>
+		</li>	
+		</li>
+			<li class="strip">
+			<a href="../../docs/rca-knowledgebase/rca-knowledgebase-cleanup-repository-flow-notstarted" class="strip__link">
+				<label for="" class="strip__label">
+					<span>1</span>
+					Flows not installed on runtime
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">3 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Support Engineer</div>
+				</div>
+			</a>
+		</li>
+		</li>
+			<li class="strip">
+			<a href="../../docs/rca-knowledgebase/rca-knowledgebase-multiple-input-datatype-issue" class="strip__link">
+				<label for="" class="strip__label">
+					<span>1</span>
+					Transforming to output via multiple input attributes (data types)
+				</label>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
+					<div class="strip__attribute-label">3 minutes</div>
+				</div>
+				<div class="strip__attribute">
+					<img class="strip__attribute-icon strip__attribute-icon--roles" src="../../img/microlearning/academy_index/icon-roles32.svg"/>
+					<div class="strip__attribute-label">Support Engineer</div>
+				</div>
+			</a>
+		</li>			
     </ul>
     </main>
     </div>
