@@ -66,7 +66,7 @@ Try to deploy a plan using an active release and observe the results taking the 
 
 ## 5. Key takeaways
 
-- The execution of a deployment plan is a smooth process to avoid manual deployments of flows
+- The execution of a deployment plan is a smooth process to avoid manual deployments of flows.
 - Be aware of the specific considerations involved 
 - Tune the deployment plan continuously to make it better all the time.
 
