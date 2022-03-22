@@ -180,7 +180,7 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/usecase/usecase_hosting_soap-index" class="card">
+		<a href="../../docs/usecase/usecase_sending_data-restservice-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/REST_modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Calling a REST Web service</h4>
 			</div>
