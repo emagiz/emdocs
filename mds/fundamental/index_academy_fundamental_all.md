@@ -237,7 +237,7 @@
 		</a>
 		<a href="../../docs/fundamental/fundamental-runtime-generation3" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/generation3.svg) center no-repeat; background-size: 15%;">
-				<h4 class="title">eMagiz runtime Generation3</h4>
+				<h4 class="title">eMagiz runtime Generation 3</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
