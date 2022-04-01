@@ -54,11 +54,11 @@ The runtime of eMagiz can run inside a Docker, and the runtime is made part of t
 
 ### 3.4 Impact on Way of Working Gen2 vs. Gen3
 
-- Releases
-The releases functionality is used for defining the Docker image. Setting the release means creating a new Docker image.
-
 - Deployment Plan
 The deployment has a new option called Deploy runtimes. These steps will be part of a default plan, or can be added as seperate line. Effectively, once a runtime is deployed as part of a Docker image, the image needs to be loaded and executed. That means that current image including all flows will be replaced with a new image. This makes the deployment simple and fast. The option means that all runtimes of a machine will be deployed in matter of seconds
+
+- Releases
+The releases functionality is used for defining the Docker image. Setting the release means creating a new Docker image.
 
 - Deploy Architecture
 On every runtime you can see the running status of a Docker image. In a way, this a replacement for the Runtime Dashboard. The docker image is switched on or off, and flows can't be selectively switched on or off.
@@ -81,11 +81,9 @@ The notion of build numbers no longer exists in the new runtime. Or not so expli
 
 ## 5. Suggested Additional Readings
 
-N/A
-
-## 6. Silent demonstration video
-
-N/A
+- [Setting up a deployment plan](../microlearning/crashcourse-platform-deploy-setup-deployment-plan)
+- [Deploy a release](../microlearning/crashcourse-platform-deploy-execute-deployment-plan.md)
+- [Property Management](../microlearning/crashcourse-platform-deploy-property-management.md)
 
 </div>
 </main>

@@ -66,9 +66,9 @@ For Robots eMagiz offers an RPA technology that allows to scrape data from websi
 In specific cases, eMagiz offers the ability to create secure & dedicated connections to client infrastructure. As an additional layer of securing traffic between Cloud and client infrastructures. eMagiz offers a wide range of specific security measures as can be read in the security guide. A VPN service can created from the dedicated client Cloud environment (please see below link to fundamental eMagiz Cloud). Furthermore, eMagiz offers the option for a Direct Connection, which means in this contex that the connection between the eMagiz Cloud and the client infrastructure is channeled via physical connection lines (as opposed to internet based connections). 
 
 Please consult this microlearning for more information: 
-- https://emagiz.github.io/docs/microlearning/expert-solution-architecture-aws-direct-connect#aws-direct-connect
-- https://emagiz.github.io/docs/fundamental/fundamental-emagiz-security-guide
-- https://emagiz.github.io/docs/fundamental/fundamental-emagiz-cloud-inner-workings
+- [AWS Direct Connect](../microlearning/expert-solution-architecture-aws-direct-connect.md)
+- [Security Guide](../fundamental/fundamental-emagiz-security-guide.md)
+- [Cloud - Inner Workings](../fundamental/fundamental-emagiz-cloud-inner-workings.md)
 
 
 #### 3.7 Softcrow
@@ -90,11 +90,9 @@ eMagiz offers the ability to provide a escrow+ service to clients, whereby not o
 
 ## 5. Suggested Additional Readings
 
-This fundamental contains reference to additional reading in section 3
-
-## 6. Silent demonstration video
-
-N/A
+- [AWS Direct Connect](../microlearning/expert-solution-architecture-aws-direct-connect.md)
+- [Security Guide](../fundamental/fundamental-emagiz-security-guide.md)
+- [Cloud - Inner Workings](../fundamental/fundamental-emagiz-cloud-inner-workings.md)
 
 </div>
 </main>
