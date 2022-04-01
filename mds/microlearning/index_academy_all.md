@@ -8,9 +8,10 @@
 	   </br>
 			<ul>
 			   <li><b>1. Fundamentals</b> - It contains an overview of the most important platform components on a conceptual level</li>
-			   <li><b>2. Microlearnings</b> - It contains all microlearnings with applied knowledge for each of the feature of the platform. There are 4 levels of microlearnings ranging from novice to expert. Further, microlearnings are categorized by roles Developer, Architect and Support Engineer</li>
+			   <li><b>2. Microlearnings</b> - It contains all microlearnings with applied knowledge for each of the platform's features. There are four levels of microlearnings ranging from novice to expert. Further, microlearnings are categorized by roles Developer, Architect, and Support Engineer</li>
 			   <li><b>3. Use Cases</b> - a group of microlearnings that will address a specific integration solution in the platform</li>
 			   <li><b>4. Migration Paths</b> - It contains all migration paths to move from a specific state to the newest state on the platform. Examples are migrations of the eMagiz Mendix connector or moving from the Root cloud to the eMagiz Cloud.</li>
+			   <li><b>5. RCA Knowledge Base</b> - It contains a subset of Root Cause Analysis performed on platform and model issues reported to us. By providing these anonymized versions, we intend people will browse through them when they are confronted with a problem.</li>
 			</ul>
 		</br>
         Last updated - March 2022
