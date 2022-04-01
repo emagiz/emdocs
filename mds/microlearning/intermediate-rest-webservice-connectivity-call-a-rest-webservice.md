@@ -95,7 +95,7 @@ When you click on the Retry Advice button you will be prompted with a pop-up. In
 
 <p align="center"><img src="../../img/microlearning/intermediate-rest-webservice-connectivity-call-a-rest-webservice--http-outbound-component-retry-advice-pop-up-empty.png"></p>
 
-The best practice for this configuration is as follows:
+The best practice for this configuration is as follows for asynchronous solutions:
 - Select the option called Simple Retry Policy
 - Set the max attempts at 6
 - Select the Fixed back off policy
