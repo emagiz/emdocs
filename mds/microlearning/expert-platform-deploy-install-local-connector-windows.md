@@ -19,8 +19,8 @@ In this microlearning, we will focus on installing the eMagiz environment locall
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: November 2021
-- Required reading time: 5 minutes
+- Last update: April 5th, 2022
+- Required reading time: 10 minutes
 
 ## 1. Prerequisites
 To install a runtime, please be aware that eMagiz needs an environment that satisfies certain requirements. These requirements can be different depending on your architectural choices. Most common is the connector inside your network and a JMS and container running outside the network. In that case, if you are running only connectors in this environment, please keep the following requirements in mind:
@@ -65,32 +65,31 @@ Most important is that for each runtime at least 1GB of RAM Memory is available.
 	
 As the number of flows running on a connector increases the memory also needs to be increased. The same logic applies to flows that use up a lot of memory because multiple steps are executed within that flow. Both are solid reasons to use 1GB as a general rule of thumb but at the same time always take into account new developments when setting up the sizing.
 
-
 ### 3.2 Pre-configuration
 
 -	The first step of this How-To is to make sure before installing that the requirements as stated above are met. 
 -	Go to the server where you need to install the runtime.
 -	Check the JAVA_HOME system variable if it is set and is directed to the correct folder. You can do this by going to ‘This Computer’.
 
-![](../../img/howto/runtime-win-install-step3-1.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--folder-structure.png"></p>
 
 - Click with your right mouse button on This PC and go to Properties. The following screen pops up and go to Advanced System Settings.
 
-![](../../img/howto/runtime-win-install-step3-2.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--system-settings.png"></p>
 
 - Go to Environment Variables.
 
-![](../../img/howto/runtime-win-install-step3-3.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--environment-variables.png"></p>
 
 - Check if the JAVA_HOME system veriable exists and it directs to the correct JAVA directory. If it does not exists, please add it.
 
-![](../../img/howto/runtime-win-install-step3-4.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--system-properties.png"></p>
 
 ### 3.3 Download runtime
 
 -	Download the eMagiz runtime of your connector, JMS, or container via the eMagiz Deploy phase in the Containers tab on the server where it needs to be installed. Please note the environment you want the runtime of. If you download the runtime of the wrong environment you will send to or receive data from the wrong environment. For example, you want to test a flow but by downloading the runtime from the incorrect environment you end up sending data to the Production environment. In the case below, we see that we are downloading a connector runtime ordsys for the Test environment.
 
-![](../../img/howto/runtime-win-install-step4-1.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-linux--download-runtime.png"></p>
 
 ### 3.4 Unzip the runtime
 
@@ -106,10 +105,10 @@ Do not use: C://Programs/eMagiz/test/connector/appeee/installation
 To check the connection of the service, use the right mouse button then execute the file as Administrator.
 Please make sure that before you try this you verify that your JMS is running.
 
-![](../../img/howto/runtime-win-install-step4-2.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--activate-karaf.png"></p>
 
 -	A screen will pop up and will show you the following:
-	![](../../img/howto/runtime-win-install-step4-3.png)
+	<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--karaf-feedback.png"></p>
 	-	Use the command ‘log:tail’ to see the full log. You will see the full stack trace. If the installation is successful, you should see something like this as a result:
 		org.eclipse.gemini.blueprint.extender - 2.1.0.RELEASE |  Application context successfully refreshed (ApplicationContext(bundle=nl.capesystemsintegration.demo.bus.commupd.ordsys.connector-infra.spring, config=nl.capesystemsintegration.demo.bus.commupd.ordsys.connector-infra.spring_1.0.0.52.xml))
 
@@ -125,22 +124,19 @@ If you see an error or the popup closes itself immediately, please check the abo
 -	Install the windows service to ensure that the runtime will automatically start and stop when the server starts, stops or restarts.
 You can do this by running the ‘install-service.bat’.
 
-![](../../img/howto/runtime-win-install-step11-1.png)
- 
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--install-service-action.png"></p> 
 
 -	Please check if the service is created. This can be viewed via Services in Windows. You can find Services by using the navigation bar of Windows and searching for Services or typ-in ‘Services.msc’ in your run-window (WINDOWS+R) and press enter.
 You will find in the list of services your eMagiz runtime service.
 
-
-![](../../img/howto/runtime-win-install-step12-1.png)
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--services-overview.png"></p>
 
 If you click on the service, you can either start, stop or restart the service.
 
 -	Click with your right mouse button on the service and select Properties.
 You will see the following screen.
 
-![](../../img/howto/runtime-win-install-step13-1.png)
-
+<p align="center"><img src="../../img/microlearning/expert-platform-deploy-install-local-connector-windows--services-properties.png"></p>
 
 For the start up type, please check Automatically (delayed start)
 In the Tab Log On, you are able to change the user that starts this service, if necessary. This mostly occurs when you are requested to use a different user for the service than your windows user due to security reasons.
@@ -165,7 +161,6 @@ Actions
 -  Follow the steps detailed in section 3.6 to correctly install the new runtime.
 -Ensure that the old installation folder is completly removed from your on-premise server.
 
-
 ## 3.8 Multiple Java versions on same server
 
 When confronted with a situation in which you have to support multiple runtime versions running multiple Java versions this addendum is for you. 
@@ -178,8 +173,6 @@ Be warned: These steps need to be taken before you install a runtime. If you hav
 - Search (CTRL + F) for: rem SET JAVA_HOME and change this to SET JAVA_HOME=<Java path>      The Java path refers to the location (path) where Java (8) is installed. Commonly this path will look like: 	 ‘C:\Program iles\Java\jre1.8.x_xxx’ of ‘C:\Program Files\Java\jdk1.8.x_xxx’.
 Be warned: Make sure no spaces are surrounding the ‘=’ character
 - Save the file as administrator to ensure that changes made in the file are also represented in 
-
-
 
 ##### Practice
 

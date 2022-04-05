@@ -19,7 +19,7 @@ Sometimes you have runtimes running on-premises. What we mean by that is that th
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: July 28th, 2021
+- Last update: April 5th, 2022
 - Required reading time: 6 minutes
 
 ## 1. Prerequisites
@@ -64,15 +64,15 @@ When selecting the option View container a pop-up will be shown. Within this pop
 
 Now that we know what the advised size is we can navigate to our on-premise location to edit the memory settings. Below we will detail the various steps needed to make this happen.
 
-1. At first we navigate to the etc folder of your runtime installation which is named according to the following naming convention -> emagiz_{technicalbusname}-{containertype}-{technicalnameofruntime}_{environment}. In this example that would mean emagiz_commupd-connector-ordsys_test.
+- At first we navigate to the etc folder of your runtime installation which is named according to the following naming convention -> emagiz_{technicalbusname}-{containertype}-{technicalnameofruntime}_{environment}. In this example that would mean emagiz_commupd-connector-ordsys_test.
 
 <p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows--etc-folder-location.png"></p>
 
-2. Within this folder you will find a wrapper.conf file that is named based on the runtime name.
+- Within this folder you will find a wrapper.conf file that is named based on the runtime name.
 
 <p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows--wrapper-conf-file.png"></p>
 
-3. When you open this file you can change the memory settings, both heap, and metaspace. In the figures shown below, you can see which parts of the file you need to change to change the memory settings.
+- When you open this file you can change the memory settings, both heap, and metaspace. In the figures shown below, you can see which parts of the file you need to change to change the memory settings.
 
 **Heap memory:**
 <p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows--heap-memory.png"></p>
@@ -80,8 +80,8 @@ Now that we know what the advised size is we can navigate to our on-premise loca
 **Metaspace memory:**
 <p align="center"><img src="../../img/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows--metaspace-memory.png"></p>
 
-4. Save the file as administrator
-5. Restart the runtime to ensure your changes have been actualized
+- Save the file as administrator
+- Restart the runtime to ensure your changes have been actualized
 
 ##### Practice
 

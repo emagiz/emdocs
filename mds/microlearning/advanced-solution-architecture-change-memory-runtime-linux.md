@@ -19,8 +19,8 @@ Sometimes you have runtimes running on-premises. What we mean by that is that th
 
 Should you have any questions, please contact academy@emagiz.com.
 
-- Last update: October 20th, 2021
-- Required reading time: 4 minutes
+- Last update: April 5th, 2022
+- Required reading time: 5 minutes
 
 ## 1. Prerequisites
 - Basic knowledge of the eMagiz platform
@@ -62,16 +62,16 @@ When selecting the option View container a pop-up will be shown. Within this pop
 
 Now that we know what the advised size is we can navigate to our on-premise installation location to edit the memory settings. Below we will detail the various steps needed to make this happen.
 
-1.	Log in via Putty  by typing in the host and the port and press load
-2.	When asked for credentials fill in credentials (Be aware, Linux does not accept ctrl+v and does not show the password or an indication of the password). Right mouse click to copy the password and press enter 
-3.	Navigate to the directory where you have installed the runtime (Command is: cd {directory structure})
-4.	Open the folder related to the runtime you want to change (Command is: cd emagiz_{technicalbusname}-{containertype}-{techincalnameruntime}_{environment}).
-5.	Open the etc folder within your runtime installation (Command is: cd etc)
-6.	Type in the following command: sudo vi emagiz and press Tab. This way Linux should auto suggest the so called wrapper.conf to be edited and press Enter if so
-7.	Type "i" to enter insert mode
-8.	Change the values of heap and or metaspace memory you want to change (you can navigate through the document with your arrow keys)
-9.	Press ESC and then type ":wq!" then press Enter to save the changes and exit Edit mode. Note: If you would like to exit the file without making any changes press ESC, then type ":q!" and press Enter
-10. Restart the runtime by executing the correct restart command:
+-	Log in via Putty  by typing in the host and the port and press load
+-	When asked for credentials fill in credentials (Be aware, Linux does not accept ctrl+v and does not show the password or an indication of the password). Right mouse click to copy the password and press enter 
+-	Navigate to the directory where you have installed the runtime (Command is: cd {directory structure})
+-	Open the folder related to the runtime you want to change (Command is: cd emagiz_{technicalbusname}-{containertype}-{techincalnameruntime}_{environment}).
+-	Open the etc folder within your runtime installation (Command is: cd etc)
+-	Type in the following command: sudo vi emagiz and press Tab. This way Linux should auto suggest the so called wrapper.conf to be edited and press Enter if so
+-	Type "i" to enter insert mode
+-	Change the values of heap and or metaspace memory you want to change (you can navigate through the document with your arrow keys)
+-	Press ESC and then type ":wq!" then press Enter to save the changes and exit Edit mode. Note: If you would like to exit the file without making any changes press ESC, then type ":q!" and press Enter
+-   Restart the runtime by executing the correct restart command:
 	-	systemd type: sudo systemctl restart <SERVICE_NAME>
 	-	SystemV Type: sudo /etc/init.d/<SERVICE_NAME>-service restart
 
