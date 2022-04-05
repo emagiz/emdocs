@@ -15,7 +15,7 @@
 
 # Importing Store Items
 
-In this microlearning, we will learn how you can import store items from the eMagiz store after finding the one for you. This microlearning aims to get you acquainted with the various options of importing a store item.
+In this microlearning, we will learn how you can import store items from the eMagiz store in the Create phase of eMagiz after finding the one for you. This microlearning aims to get you acquainted with the various options of importing a store item.
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
