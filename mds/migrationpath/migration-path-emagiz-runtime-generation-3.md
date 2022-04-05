@@ -70,9 +70,9 @@ For the first runtime, you migrate to Generation 3; you need to ensure that the 
 
 To update your cloud architecture, press "Apply to Environment" in Deploy Architecture. Note that you need to be in "Start Editing" mode to execute this command.
 
-#### 3.4.2 Update Runtime
+#### 3.4.2 Update A Subsequent Runtime
 
-Apart from updating the cloud template itself, you also need to update the runtime so it will run on Generation 3. To apply the changes from Design Architecture to Deploy Architecture, you need to press the button "Apply to Environment" just as you would now if you add or change a runtime in the current architecture. Note that this update will be included the first time when you update the cloud template.
+Apart from updating the cloud template itself, you also need to update each subsequent runtime so it will run on Generation 3. Note that this update will be included the first time when you update the cloud template. To apply the changes from Design Architecture to Deploy Architecture, you need to press the button "Apply to Environment" just as you would now if you add or change a runtime in the current architecture. 
 
 <p align="center"><img src="../../img/migrationpath/migration-path-migration-path-emagiz-runtime-generation-3--apply-to-environment.png"></p>
 
