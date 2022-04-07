@@ -14,7 +14,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-database-connectivity-configuration" class="strip__link">
             <label for="" class="strip__label">
-                <span>68</span>
+                <span>313</span>
                 Configuration of integration involving databases
             </label>
             <div class="strip__attribute">

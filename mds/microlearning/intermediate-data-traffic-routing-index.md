@@ -14,7 +14,7 @@
     <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-traffic-routing-implementation-of-routing-decisions" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>206</span>
                 Implementation of routing decisions
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-data-traffic-routing-synchronous-routing" class="strip__link">
             <label for="" class="strip__label">
-                <span>23</span>
+                <span>206</span>
                 Synchronous Routing
             </label>
             <div class="strip__attribute">

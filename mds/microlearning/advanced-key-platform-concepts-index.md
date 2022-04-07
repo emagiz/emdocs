@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-key-platform-concepts-what-data-is-stored-on-runtime-level" class="strip__link">
             <label for="" class="strip__label">
-                <span>52</span>
+                <span>303</span>
                 What data is stored on runtime level
             </label>
             <div class="strip__attribute">

@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-testing-emagiz-api-gateway-testing-api-gateway" class="strip__link">
             <label for="" class="strip__label">
-                <span>40</span>
+                <span>222</span>
                 Testing API Gateway
             </label>
             <div class="strip__attribute">

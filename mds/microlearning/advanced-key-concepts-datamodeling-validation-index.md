@@ -14,7 +14,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-key-concepts-datamodeling-validation-edi" class="strip__link">
 				<label for="" class="strip__label">
-					<span>72</span>
+					<span>316</span>
 					Understanding EDI modeling in the context of eMagiz
 				</label>
 				<div class="strip__attribute">

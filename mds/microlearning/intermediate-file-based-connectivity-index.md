@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-file-based-connectivity-ftp-connectivity" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>227</span>
                 FTP Connectivity
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-file-based-connectivity-sftp-connectivity" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>227</span>
                 SFTP Connectivity
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-file-based-connectivity-sftp-security" class="strip__link">
             <label for="" class="strip__label">
-                <span>45</span>
+                <span>227</span>
                 SFTP Security
             </label>
             <div class="strip__attribute">

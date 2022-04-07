@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-cloud-management-emagiz-cloud-management-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>102</span>
                 eMagiz Cloud Management - Introduction
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-cloud-management-cloud-templates-explained" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>102</span>
                 Cloud Templates Explained
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart-runtime" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>102</span>
                 Restart runtime
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-cloud-management-restart-or-stop-machine" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>102</span>
                 (Re)start or stop machine
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-cloud-management-verify-status-ongoing-change" class="strip__link">
             <label for="" class="strip__label">
-                <span>6</span>
+                <span>102</span>
                 Verify the status of ongoing change
             </label>
             <div class="strip__attribute">

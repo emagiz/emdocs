@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-risk-management-considering-impact-of-downtime" class="strip__link">
             <label for="" class="strip__label">
-                <span>73</span>
+                <span>317</span>
                 Considering impact of downtime
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-risk-management-considering-impact-of-message-size-on-stability-of-the-solution" class="strip__link">
             <label for="" class="strip__label">
-                <span>73</span>
+                <span>317</span>
                 Considering impact of size of messages on stability of the solution
             </label>
             <div class="strip__attribute">

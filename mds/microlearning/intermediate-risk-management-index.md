@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-risk-management-considering-dependencies-between-integrations" class="strip__link">
             <label for="" class="strip__label">
-                <span>73</span>
+                <span>231</span>
                 Considering dependencies between integrations
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-risk-management-considering-impact-of-business-logic-in-emagiz" class="strip__link">
             <label for="" class="strip__label">
-                <span>73</span>
+                <span>231</span>
                 Considering impact of business logic in eMagiz
             </label>
             <div class="strip__attribute">

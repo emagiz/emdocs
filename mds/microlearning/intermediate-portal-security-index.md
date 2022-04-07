@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-portal-security-understanding-the-role-of-bus-owner-and-company-contact" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>218</span>
                 Understanding the role of bus owner and company contact
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-portal-security-runtime-security" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>218</span>
                 Runtime Security
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-portal-security-cloud-security" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>218</span>
                 Cloud Security
             </label>
             <div class="strip__attribute">

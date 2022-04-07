@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-keyconcepts-apigateway-message-vs-apigateway" class="strip__link">
             <label for="" class="strip__label">
-                <span>62</span>
+                <span>309</span>
                 API Gateway vs Messaging
             </label>
             <div class="strip__attribute">

@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-system-vs-multi-tenant-system" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 System vs Multi-tenant system
             </label>
             <div class="strip__attribute">
@@ -34,7 +34,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-explaining-platform-components" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 Explaining Platform Components
             </label>
             <div class="strip__attribute">
@@ -50,7 +50,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-understanding-design-architecture" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 Understanding Design Architecture
             </label>
             <div class="strip__attribute">
@@ -66,7 +66,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-edit-memory-on-premise-runtime-windows" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 Edit memory for on-premise runtime (Windows)
             </label>
             <div class="strip__attribute">
@@ -82,7 +82,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-function-of-h2-database" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 H2 Database, Function
             </label>
             <div class="strip__attribute">
@@ -98,7 +98,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-solution-architecture-topic-storage" class="strip__link">
             <label for="" class="strip__label">
-                <span>21</span>
+                <span>204</span>
                 Topic Storage
             </label>
             <div class="strip__attribute">

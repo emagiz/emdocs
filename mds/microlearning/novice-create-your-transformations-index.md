@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-json-to-xml" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>4</span>
+                    <span>100</span>
                     Transformation - JSON to XML
                 </label>
                 <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-xml-to-json" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>4</span>
+                    <span>100</span>
                     Transformation - XML to JSON
                 </label>
                 <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-enumerations" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>4</span>
+                    <span>100</span>
                     Enumerations
                 </label>
                 <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-xslt-parameters" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>4</span>
+                    <span>100</span>
                     XSLT Parameter
                 </label>
                 <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-create-your-transformations-xslt-snippet" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>4</span>
+                    <span>100</span>
                     XSLT Snippet
                 </label>
                 <div class="strip__attribute">

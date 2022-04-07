@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-key-concepts-emagiz-messaging-messaging-synchronous" class="strip__link">
             <label for="" class="strip__label">
-                <span>18</span>
+                <span>201</span>
                  Messaging synchronous
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-key-concepts-emagiz-messaging-entry-not-a-queue" class="strip__link">
             <label for="" class="strip__label">
-                <span>18</span>
+                <span>201</span>
                  Entry, not a queue
             </label>
             <div class="strip__attribute">

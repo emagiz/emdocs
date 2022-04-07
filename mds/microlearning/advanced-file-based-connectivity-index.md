@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-file-based-connectivity-settingup-fileshare" class="strip__link">
             <label for="" class="strip__label">
-                <span>69</span>
+                <span>314</span>
                 Setting up a file share
             </label>
             <div class="strip__attribute">

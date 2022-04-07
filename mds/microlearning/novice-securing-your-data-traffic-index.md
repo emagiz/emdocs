@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-securing-your-data-traffic-what-are-certificates" class="strip__link">
             <label for="" class="strip__label">
-                <span>15</span>
+                <span>110</span>
                 What are certificates
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-securing-your-data-traffic-sending-certificates-to-a-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>15</span>
+                <span>110</span>
                 Sending certificates to a webservice
             </label>
             <div class="strip__attribute">

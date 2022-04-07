@@ -14,7 +14,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-a-deployed-runtime" class="strip__link">
 				<label for="" class="strip__label">
-					<span>59</span>
+					<span>307</span>
 					Cleanup a deployed runtime
 				</label>
 				<div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-lifecycle-management-impact-buildnumber-upgrade" class="strip__link">
 				<label for="" class="strip__label">
-					<span>59</span>
+					<span>307</span>
 					Determining impact of build number upgrade
 				</label>
 				<div class="strip__attribute">
@@ -46,7 +46,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-lifecycle-management-cleanup-running-flow" class="strip__link">
 				<label for="" class="strip__label">
-					<span>59</span>
+					<span>307</span>
 					Cleanup a running flow
 				</label>
 				<div class="strip__attribute">

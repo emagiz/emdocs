@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-keyconcepts-eventstreaming-message-vs-eventstreaming" class="strip__link">
             <label for="" class="strip__label">
-                <span>65</span>
+                <span>311</span>
                 Event Streaming vs Messaging
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-keyconcepts-eventstreaming-impact-retention" class="strip__link">
             <label for="" class="strip__label">
-                <span>65</span>
+                <span>311</span>
 				Impact of Retention Assumptions on Topic Storage Capacity
             </label>
             <div class="strip__attribute">

@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-soap-webservice-connectivity-handling-webservice-timeouts" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>232</span>
                 Handling Webservice Timeouts
             </label>
             <div class="strip__attribute">

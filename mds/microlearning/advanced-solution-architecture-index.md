@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-runtime-decision" class="strip__link">
             <label for="" class="strip__label">
-                <span>49</span>
+                <span>301</span>
                Determining which runtimes needs to run where
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-consequence-size-cloud" class="strip__link">
             <label for="" class="strip__label">
-                <span>49</span>
+                <span>301</span>
                 Consequences of changing sizes and Cloud approval
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-change-memory-runtime-linux" class="strip__link">
             <label for="" class="strip__label">
-                <span>49</span>
+                <span>301</span>
                 Change Memory Sizing of Runtime On-premise Linux
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
 		 <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-apigw-architecture" class="strip__link">
             <label for="" class="strip__label">
-                <span>49</span>
+                <span>301</span>
                 API Gateway Architecture
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-solution-architecture-diffs-design-deploy" class="strip__link">
             <label for="" class="strip__label">
-                <span>49</span>
+                <span>301</span>
                 Key differences Design & Deploy Architecture
             </label>
             <div class="strip__attribute">

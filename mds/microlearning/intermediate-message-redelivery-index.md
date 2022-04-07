@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-message-redelivery-configuration" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>230</span>
                 Configuration
             </label>
             <div class="strip__attribute">
@@ -34,7 +34,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/intermediate-message-redelivery-redelivery-in-manage" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>230</span>
                 Message Redelivery in Manage
             </label>
             <div class="strip__attribute">

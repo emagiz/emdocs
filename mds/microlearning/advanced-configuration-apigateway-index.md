@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-configuration-apigateway-odata" class="strip__link">
             <label for="" class="strip__label">
-                <span>63</span>
+                <span>310</span>
                 Configuration OData for your API Gateway
             </label>
             <div class="strip__attribute">

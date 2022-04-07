@@ -14,7 +14,7 @@
 		<li class="strip">
 				<a href="../../docs/microlearning/intermediate-design-transformations-copy-entities" class="strip__link">
 				<label for="" class="strip__label">
-					<span>19</span>
+					<span>202</span>
 					Copying entities in Design transformations
 				</label>
 				<div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
 				<a href="../../docs/microlearning/intermediate-design-transformations-adding-notes" class="strip__link">
 				<label for="" class="strip__label">
-					<span>19</span>
+					<span>202</span>
 					Adding notes to you Design transformations
 				</label>
 				<div class="strip__attribute">

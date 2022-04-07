@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-devops-perspectives-making-clear-what-you-changed" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>215</span>
                 Making clear what you changed (auditability)
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-devops-perspectives-peerreview" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>215</span>
                 Peer reviews
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-devops-perspectives-daily-monitoring" class="strip__link">
             <label for="" class="strip__label">
-                <span>32</span>
+                <span>215</span>
                 Daily Monitoring
             </label>
             <div class="strip__attribute">

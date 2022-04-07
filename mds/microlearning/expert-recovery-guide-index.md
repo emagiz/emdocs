@@ -14,7 +14,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/expert-recovery-guide-signals-reproducable-steps" class="strip__link">
 				<label for="" class="strip__label">
-					<span>88</span>
+					<span>402</span>
 					Signal received - Recovery Needed
 				</label>
 				<div class="strip__attribute">

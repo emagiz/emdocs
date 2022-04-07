@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-create-your-transformations-edi-2-xml" class="strip__link">
             <label for="" class="strip__label">
-                <span>53</span>
+                <span>305</span>
                 Transforming EDI messages to XML
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-create-your-systemmessage-edi" class="strip__link">
             <label for="" class="strip__label">
-                <span>53</span>
+                <span>305</span>
                 Setting up System Messages for EDI & Transformations
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-create-your-transformations-xpath-advanced" class="strip__link">
             <label for="" class="strip__label">
-                <span>53</span>
+                <span>305</span>
                 XPath Advanced
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-create-your-transformations-handling-multiple-namespaces" class="strip__link">
             <label for="" class="strip__label">
-                <span>53</span>
+                <span>305</span>
                 Handling Multiple Namespaces
             </label>
             <div class="strip__attribute">

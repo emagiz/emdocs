@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-monitoring-apigateway-statistics" class="strip__link">
             <label for="" class="strip__label">
-                <span>87</span>
+                <span>319</span>
                 Monitor API Gateway statistics
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-monitoring-apigateway-runtime-statistics" class="strip__link">
             <label for="" class="strip__label">
-                <span>87</span>
+                <span>319</span>
                Monitor API Gateway runtime metrics 
             </label>
             <div class="strip__attribute">

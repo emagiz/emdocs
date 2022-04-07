@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-data-management-data-sink" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>318</span>
                 Data Sink
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-data-management-long-term-archiving" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>318</span>
 				Long Term Archiving
             </label>
             <div class="strip__attribute">

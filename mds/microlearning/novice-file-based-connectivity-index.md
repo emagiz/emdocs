@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-file-based-connectivity-header-line" class="strip__link">
             <label for="" class="strip__label">
-                <span>13</span>
+                <span>108</span>
                 Header Line
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-file-based-connectivity-processing-a-file-per-line" class="strip__link">
             <label for="" class="strip__label">
-                <span>13</span>
+                <span>108</span>
                 Processing a File per Line
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-file-based-connectivity-characterset" class="strip__link">
             <label for="" class="strip__label">
-                <span>13</span>
+                <span>108</span>
                 Character set
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-file-based-connectivity-archiving" class="strip__link">
             <label for="" class="strip__label">
-                <span>13</span>
+                <span>108</span>
                 Archiving
             </label>
             <div class="strip__attribute">

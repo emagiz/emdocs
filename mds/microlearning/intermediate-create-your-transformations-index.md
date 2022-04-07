@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-create-your-transformations-emagiz-xslt-functions" class="strip__link">
             <label for="" class="strip__label">
-                <span>22</span>
+                <span>205</span>
                  Default eMagiz XSLT Functions
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-create-your-transformations-xpath-intermediate" class="strip__link">
             <label for="" class="strip__label">
-                <span>22</span>
+                <span>205</span>
                  Transformation - XPath Intermediate
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-create-your-transformations-xml-2-flatfile" class="strip__link">
             <label for="" class="strip__label">
-                <span>22</span>
+                <span>205</span>
                 XML to Flat file transformation
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-create-your-transformations-flatfile-2-xml" class="strip__link">
             <label for="" class="strip__label">
-                <span>22</span>
+                <span>205</span>
                  Flat file to XML transformation
             </label>
             <div class="strip__attribute">

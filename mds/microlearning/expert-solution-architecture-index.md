@@ -25,7 +25,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-determining-needed-memory" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>400</span>
                 Determining Needed Memory
             </label>
             <div class="strip__attribute">
@@ -45,7 +45,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-configure-needed-memory-cloud" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>400</span>
                 Configure Needed Memory - Cloud
             </label>
             <div class="strip__attribute">
@@ -61,7 +61,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-impact-message-history-on-message-size" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>400</span>
                 Impact Message History on Message Size
             </label>
             <div class="strip__attribute">
@@ -77,7 +77,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-h2-database-for-other-applications" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>400</span>
                 H2 Database for other applications
             </label>
             <div class="strip__attribute">
@@ -97,7 +97,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/expert-solution-architecture-aws-direct-connect" class="strip__link">
             <label for="" class="strip__label">
-                <span>74</span>
+                <span>400</span>
                 AWS Direct Connect
             </label>
             <div class="strip__attribute">
@@ -117,7 +117,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/expert-platform-deploy-install-local-connector-windows" class="strip__link">
 				<label for="" class="strip__label">
-					<span>74</span>
+					<span>400</span>
 					Install Magiz runtime for Windows
 				</label>
 				<div class="strip__attribute">
@@ -137,7 +137,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/expert-platform-deploy-install-local-connector-linux" class="strip__link">
 				<label for="" class="strip__label">
-					<span>74</span>
+					<span>400</span>
 					Install Magiz runtime for Linux
 				</label>
 				<div class="strip__attribute">

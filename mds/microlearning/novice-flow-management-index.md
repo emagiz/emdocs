@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-flow-management-remove-flows-from-create" class="strip__link">
             <label for="" class="strip__label">
-                <span>8</span>
+                <span>104</span>
                 Remove flows from Create
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-flow-management-reset-flows" class="strip__link">
             <label for="" class="strip__label">
-                <span>8</span>
+                <span>104</span>
                 Reset Flows
             </label>
             <div class="strip__attribute">

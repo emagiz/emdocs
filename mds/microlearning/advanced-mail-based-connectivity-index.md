@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-mail-connectivity-whatis-mime" class="strip__link">
             <label for="" class="strip__label">
-                <span>70</span>
+                <span>315</span>
                 What is the MIME protocal
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-mail-connectivity-using-mime" class="strip__link">
             <label for="" class="strip__label">
-                <span>70</span>
+                <span>315</span>
                 Using MIME format to send emails
             <div class="strip__attribute">
                 <img class="strip__attribute-icon strip__attribute-icon--duration" src="../../img/microlearning/academy_index/icon-duration32.svg"/>
@@ -45,7 +45,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-mail-connectivity-receive-email-mailserver" class="strip__link">
             <label for="" class="strip__label">
-                <span>70</span>
+                <span>315</span>
                 Receiving an email via an Email Server
             </label>
             <div class="strip__attribute">

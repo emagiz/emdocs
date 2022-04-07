@@ -14,7 +14,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/expert-webservice-security-ws-security" class="strip__link">
 				<label for="" class="strip__label">
-					<span>87</span>
+					<span>401</span>
 					WS-Security
 				</label>
 				<div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/expert-webservice-security-ws-addressing" class="strip__link">
 				<label for="" class="strip__label">
-					<span>87</span>
+					<span>401</span>
 					WS-Addressing
 				</label>
 				<div class="strip__attribute">

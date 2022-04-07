@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-configure-your-soap-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Configure your SOAP Webservice
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-securing-your-soap-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Securing your SOAP Webservice
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-validate-incoming-messages" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Validate Incoming Messages
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-endpoint-check" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Endpoint Check
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-soap-headers" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 SOAP Headers
             </label>
             <div class="strip__attribute">
@@ -94,7 +94,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-calling-a-soap-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Calling a SOAP Webservice
             </label>
             <div class="strip__attribute">
@@ -110,7 +110,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-soap-webservice-connectivity-authorization-calling-a-soap-webservice" class="strip__link">
             <label for="" class="strip__label">
-                <span>14</span>
+                <span>109</span>
                 Authorization - Calling a SOAP Webservice
             </label>
             <div class="strip__attribute">

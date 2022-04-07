@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-store-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>101</span>
                 eMagiz Store - Introduction
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-store-importing-store-items-design" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>101</span>
                 Selecting Store Items in Design
             </label>
             <div class="strip__attribute">
@@ -46,7 +46,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-store-selecting-store-items" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>101</span>
                 Selecting Store Items in Create
             </label>
             <div class="strip__attribute">
@@ -62,7 +62,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-store-importing-store-items" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>101</span>
                 Importing Store Items in Create
             </label>
             <div class="strip__attribute">
@@ -78,7 +78,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/novice-emagiz-store-configuring-store-items" class="strip__link">
             <label for="" class="strip__label">
-                <span>5</span>
+                <span>101</span>
                 Configuring Store Items in Create
             </label>
             <div class="strip__attribute">

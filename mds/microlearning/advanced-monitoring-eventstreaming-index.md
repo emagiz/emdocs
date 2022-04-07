@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-monitoring-eventstreaming-monitor-topicsize" class="strip__link">
             <label for="" class="strip__label">
-                <span>67</span>
+                <span>312</span>
                 Monitoring topic size
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
             <a href="../../docs/microlearning/advanced-monitoring-eventstreaming-monitor-consumerlag" class="strip__link">
             <label for="" class="strip__label">
-                <span>67</span>
+                <span>312</span>
                 Monitoring consumer lag
             </label>
             <div class="strip__attribute">

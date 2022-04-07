@@ -17,7 +17,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-testing-in-emagiz-system-integration-testing" class="strip__link">
             <label for="" class="strip__label">
-                <span>27</span>
+                <span>210</span>
                 System Integration Testing
             </label>
             <div class="strip__attribute">
@@ -33,7 +33,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-testing-in-emagiz-user-acceptance-testing" class="strip__link">
             <label for="" class="strip__label">
-                <span>27</span>
+                <span>210</span>
                 User Acceptance Testing
             </label>
             <div class="strip__attribute">

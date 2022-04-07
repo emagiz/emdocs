@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-api-management-constructing-error-handling-api-gateway" class="strip__link">
             <label for="" class="strip__label">
-                <span>31</span>
+                <span>214</span>
                 Constructing Error Handling API Gateway
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/intermediate-api-management-updating-your-api-gateway-operations" class="strip__link">
             <label for="" class="strip__label">
-                <span>31</span>
+                <span>214</span>
                 Updating your API Gateway operations
             </label>
             <div class="strip__attribute">

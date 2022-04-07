@@ -14,7 +14,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-cloudmanagement-determine-impact-cloudtemplates" class="strip__link">
 				<label for="" class="strip__label">
-					<span>54</span>
+					<span>304</span>
 					Determining impact of a Cloud template upgrade
 				</label>
 				<div class="strip__attribute">
@@ -30,7 +30,7 @@
 		<li class="strip">
 			<a href="../../docs/microlearning/advanced-cloudmanagement-change-sizing-cloud" class="strip__link">
 				<label for="" class="strip__label">
-					<span>54</span>
+					<span>304</span>
 					Change the sizing of the Cloud
 				</label>
 				<div class="strip__attribute">

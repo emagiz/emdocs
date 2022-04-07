@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-orchestration-of-data-packets-sending-data-to-a-custom-queue" class="strip__link">
             <label for="" class="strip__label">
-                <span>50</span>
+                <span>302</span>
                 Sending data to a custom queue
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-orchestration-of-data-packets-listening-for-data-on-a-custom-queue" class="strip__link">
             <label for="" class="strip__label">
-                <span>50</span>
+                <span>302</span>
                 Listening for data on a custom queue
             </label>
             <div class="strip__attribute">

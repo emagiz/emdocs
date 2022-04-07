@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-data-handling-xslt-extension-gateway" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>48</span>
+                    <span>300</span>
                     XSLT Extension Gateway
                 </label>
                 <div class="strip__attribute">
@@ -32,7 +32,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/advanced-data-handling-spel-expressions" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>48</span>
+                    <span>300</span>
                     SPeL Expressions
                 </label>
                 <div class="strip__attribute">
