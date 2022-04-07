@@ -19,7 +19,7 @@ In this microlearning, we will learn what you should consider when looking at de
 
 Should you have any questions, please get in touch with academy@emagiz.com.
 
-- Last update: October 19th, 2021
+- Last update: April 6th, 2021
 - Required reading time: 4 minutes
 
 ## 1. Prerequisites
@@ -43,13 +43,23 @@ When looking at dependencies, we ought to consider:
 - Are there dependencies?
 - Will the failure of integration block another?
 
-At first, need to consider whether there are dependencies or whether each integration can perform its job without being influenced by other integrations. In scenarios of no dependence, there is also no risk of dependencies creating a cascade of problems. However, in situations where there are dependencies, one action could impact other integrations. An excellent example in a messaging environment is asynchronous routing. All asynchronous data traffic is passing the asynchronous routing and therefore changes to the routing directly impact all asynchronous integrations. So considering how, if and when to deploy an asynchronous routing is something worth thinking about.
+### 3.1 Determine Dependencies
 
-The same applies to when you deploy other parts of the solution that could impact different integrations. Always ask yourself whether the quality of the answer will be upheld by the action you are about to perform.
+At first, we need to consider whether there are dependencies. In other words, whether each integration can perform its job without being influenced by different integrations. In scenarios of no dependence, there is also no risk of dependencies creating a cascade of problems. However, in situations with dependencies, one action could impact other integrations. An excellent example in a messaging environment is asynchronous routing. All asynchronous data traffic is passing the asynchronous routing, and therefore changes to the routing directly impact all asynchronous integrations. So considering how, if and when to deploy an asynchronous routing is worth thinking about.
 
-Apart from the dependencies while deploying, there can also be dependencies while running the solution. These dependencies are primarily characterized in the sense that you need to receive something first before triggering another process (i.e., Order2Cash). Or for example, in the case of the API Gateway, you might first need to retrieve each invoice and do a subsequent call to retrieve all InvoiceLines. That has the consequence that when the Invoice integration is not working, the InvoiceLines integration will probably also not function as designed. So in a sense, the failure of one integration blocks the business process as it prevents API clients from retrieving the complete invoice in this example.
+The same applies when deploying other parts of the solution that could impact different integrations. Therefore, always ask yourself whether the quality of the solution will be upheld if you act.
 
-Being aware of these dependencies can significantly improve the choices you and the business make in terms of risk mitigation before developing your solutions via the eMagiz platform.
+### 3.2 Dependency Examples
+
+Apart from the dependencies while deploying, there can also be dependencies while running the solution. These dependencies are primarily characterized by the need to receive something first before triggering another process (i.e., Order2Cash). Or for example, in the case of the API Gateway, you might first need to retrieve each invoice and do a subsequent call to retrieve all InvoiceLines. That has the consequence that when the Invoice integration is not working, the InvoiceLines integration will probably also not function as designed. So in a sense, the failure of one integration blocks the business process as it prevents API clients from retrieving the complete invoice in this example.
+
+Being aware of these dependencies can significantly improve the choices you and the business make regarding risk mitigation before developing your solutions via the eMagiz platform.
+
+### 3.3 Mitigation possibilities
+
+Once you have identified dependencies within your eMagiz model, you should consider which mitigation possibilities are available to reduce the risk of an unexpected event having a significant impact on your solution. One mitigation for the deployment dependencies is to create a solid deployment in which you include explicit steps surrounding the dependencies. For some in-depth knowledge of setting up your deployment plan, please follow this [microlearning](crashcourse-platform-deploy-setup-deployment-plan.md).
+
+For dependencies in which one process depends on another process, you could use the alerting functionality of eMagiz to generate relevant alerting when a certain process breaks down. For some additional information on alerting please check out this [microlearning](crashcourse-platform-manage-alerting-in-emagiz.md)
 
 ##### Practice
 
