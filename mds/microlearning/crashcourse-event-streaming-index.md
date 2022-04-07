@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-event-streaming-introduction" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Event Streaming - Introduction
             </label>
             <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-designing-a-event-stream" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Designing an Event Stream
             </label>
             <div class="strip__attribute">
@@ -50,7 +50,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-topic-and-topic-properties" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Topic and Topic properties
             </label>
             <div class="strip__attribute">
@@ -66,7 +66,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-create-your-topic" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Create your Topic
             </label>
             <div class="strip__attribute">
@@ -82,7 +82,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-user-management" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 User Management
             </label>
             <div class="strip__attribute">
@@ -98,7 +98,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-catalog" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Catalog
             </label>
             <div class="strip__attribute">
@@ -114,7 +114,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-eventstreaming-managing-your-event-streaming-solution" class="strip__link">
             <label for="" class="strip__label">
-                <span>2</span>
+                <span>002</span>
                 Managing your Event Streaming Solution
             </label>
             <div class="strip__attribute">

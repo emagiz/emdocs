@@ -14,7 +14,7 @@
         <li class="strip">
             <a href="../../docs/microlearning/crashcourse-api-gateway-introduction" class="strip__link">
                 <label for="" class="strip__label">
-                    <span>1</span>
+                    <span>001</span>
                     API gateway - Introduction
                 </label>
                 <div class="strip__attribute">
@@ -30,7 +30,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-api-data-model" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 API Gateway model
             </label>
             <div class="strip__attribute">
@@ -50,7 +50,7 @@
 		<li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-configure-backend-operation" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Configure A Backend Operation
             </label>
             <div class="strip__attribute">
@@ -66,7 +66,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-resource-paths" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 HTTP Resources
             </label>
             <div class="strip__attribute">
@@ -82,7 +82,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-http-operations" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 HTTP Operations
             </label>
             <div class="strip__attribute">
@@ -98,7 +98,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-parameters" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Parameters (Path, Query)
             </label>
             <div class="strip__attribute">
@@ -114,7 +114,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-security" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Security
             </label>
             <div class="strip__attribute">
@@ -130,7 +130,7 @@
 		<li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-configure-roles-and-users" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Configuring Roles and Users
             </label>
             <div class="strip__attribute">
@@ -146,7 +146,7 @@
         <li class="strip">
 			 <a href="../../docs/microlearning/crashcourse-api-gateway-setting-up-entry-gate" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Setting up an entry gate
             </label>
             <div class="strip__attribute">
@@ -162,7 +162,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-setting-up-exit-gate" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Setting up Exit gate (generic)
             </label>
             <div class="strip__attribute">
@@ -178,7 +178,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-swagger-ui" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 Swagger UI
             </label>
             <div class="strip__attribute">
@@ -194,7 +194,7 @@
         <li class="strip">
              <a href="../../docs/microlearning/crashcourse-api-gateway-error-handling-from-a-client-perspective" class="strip__link">
             <label for="" class="strip__label">
-                <span>1</span>
+                <span>001</span>
                 API Gateway Error Handling from a client perspective
             </label>
             <div class="strip__attribute">
