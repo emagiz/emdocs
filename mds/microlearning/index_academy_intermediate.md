@@ -663,6 +663,25 @@
 				</li>
 			</ul>
 		</a>
+		<a href="../../docs/microlearning/intermediate-message-redelivery-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/message-redelivery.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">Message Redelivery</h4>
+			</div>
+			<ul class="card__footer">
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--level" src="../../img/microlearning/academy_index/icon-level24.svg"/>
+					<label for="" class="card__footer-label">Intermediate</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
+					<label for="" class="card__footer-label">All</label>
+				</li>
+				<li class="card__footer-item">
+					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
+					<label for="" class="card__footer-label">2</label>
+				</li>
+			</ul>
+		</a>
 		<a href="../../docs/microlearning/intermediate-risk-management-index" class="card">
 			<div class="card__body" style="background: url(../../img/microlearning/academy_index/Testing_modules.svg) center no-repeat; background-size: 20%;">
 				<h4 class="title">Risk Management</h4>
@@ -682,9 +701,9 @@
 				</li>
 			</ul>
 		</a>
-		<a href="../../docs/microlearning/intermediate-message-redelivery-index" class="card">
-			<div class="card__body" style="background: url(../../img/microlearning/academy_index/message-redelivery.svg) center no-repeat; background-size: 20%;">
-				<h4 class="title">Message Redelivery</h4>
+		<a href="../../docs/microlearning/intermediate-soap-webservice-connectivity-index" class="card">
+			<div class="card__body" style="background: url(../../img/microlearning/academy_index/soap-connectivity-module.svg) center no-repeat; background-size: 20%;">
+				<h4 class="title">SOAP Webservice Connectivity</h4>
 			</div>
 			<ul class="card__footer">
 				<li class="card__footer-item">
@@ -693,11 +712,11 @@
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--roles" src="../../img/microlearning/academy_index/icon-roles24.svg"/>
-					<label for="" class="card__footer-label">All</label>
+					<label for="" class="card__footer-label">Developer</label>
 				</li>
 				<li class="card__footer-item">
 					<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-					<label for="" class="card__footer-label">2</label>
+					<label for="" class="card__footer-label">1</label>
 				</li>
 			</ul>
 		</a>
