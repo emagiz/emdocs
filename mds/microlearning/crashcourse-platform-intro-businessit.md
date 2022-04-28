@@ -90,7 +90,7 @@ There is no assignment for this microlearning other than reviewing the videos fr
 
 We recommend to read the link below to the eMagiz website and see the features of the platform in more detail.
 
-[Features of the eMagiz platform](https://www.emagiz.com/features-of-the-platform/)
+<a href="https://www.emagiz.com/features-of-the-platform/" target="_blank">Features of the eMagiz platform</a>
 
 
 ## 7. Silent demonstration video

@@ -71,7 +71,7 @@ With the help of this data model, you can create a uniform layer through which y
 
 An example of an API Data model in eMagiz is shown below.
 
-<p align="center"><img src="../../img/microlearning/fundamental-data-models--import-data-model-in-design-filled-in.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-data-models--import-data-model-in-design-filled-in.png"></p>
 
 For further understanding of the API Data Model, please check out this [microlearning](../microlearning/crashcourse-api-gateway-api-data-model.md).
 
@@ -84,7 +84,7 @@ With the help of this data model, you can create a shared understanding between 
 
 An example of an Event Streaming Data model in eMagiz is shown below.
 
-<p align="center"><img src="../../img/microlearning/fundamental-data-models--data-model-in-design-filled-in.png"></p>
+<p align="center"><img src="../../img/fundamental/fundamental-data-models--data-model-in-design-filled-in.png"></p>
 
 For more information on how to further understand the Event Streaming Data Model, please check out this [microlearning](../microlearning/intermediate-configuring-event-streaming-data-model.md)
 

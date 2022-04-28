@@ -113,7 +113,7 @@
 					</li>
 				</ul>
 			</a>
-			<a href="https://www.emagiz.com/en/certification/" class="card card--featured">
+			<a href="https://www.emagiz.com/en/certification/" target="_blank" class="card card--featured">
 				<div class="card__body" style="background: url(../../img/microlearning/academy_index/get_certified.png) center no-repeat; background-size: 20%;">
 					<h4 class="title">Get Certified!!</h4>
 				</div>
