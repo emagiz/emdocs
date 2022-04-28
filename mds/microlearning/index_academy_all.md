@@ -33,7 +33,7 @@
 					</li>
 					<li class="card__footer-item">
 						<img class="card__footer-icon card__footer-icon--lessons" src="../../img/microlearning/academy_index/icon-lessons24.svg"/>
-						<label for="" class="card__footer-label">9</label>
+						<label for="" class="card__footer-label">10</label>
 					</li>
 				</ul>
 			</a>
